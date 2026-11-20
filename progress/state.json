@@ -11,12 +11,14 @@
       ]
     },
     "1.02": {
-      "status": "PENDING",
+      "status": "DONE",
       "attempts": 0,
       "phase": "1",
       "title": "Repo skeleton",
       "est": 10,
-      "needs": []
+      "needs": [],
+      "start": 1795192864.8813274,
+      "minutes": 0.9
     },
     "1.03": {
       "status": "PENDING",

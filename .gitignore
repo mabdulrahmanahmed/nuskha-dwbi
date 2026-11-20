@@ -1,6 +1,11 @@
+# Secrets: connection strings live only here
 config/.env
+# Project virtual environment
+.venv/
+# Generated data is rebuilt from seed 472 by src/generate_sources.py
+data/generated/
+data/*.db
 __pycache__/
 *.pyc
 .ipynb_checkpoints/
 progress/last_call.log
-.venv/

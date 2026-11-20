@@ -10,3 +10,5 @@
 | plan | A unit that fails 3 times is BLOCKED and its dependents SKIPPED instead of stopping the run. | The run never waits for a person; blocked units are fixed at the end. |
 | plan | The build runs locally in a terminal (Ubuntu on WSL, or macOS) instead of a Codespace. | Requested by the user. Progress is committed after every unit so a laptop shutdown loses nothing; `scripts/resume.sh` continues. |
 | plan | Evidence is committed to the local git repository after every unit; pushing to GitHub is optional backup. | No account is needed for the run itself. |
+| setup | `scripts/run_all.sh`, `run_phase.sh` and `finalize.sh` pick the interpreter as `.venv/Scripts/python`, then `.venv/bin/python`, then `python3`/`python`, instead of a hard-coded `python3`. | The build machine is native Windows (Git Bash), where `python3` does not exist; the same scripts still work on WSL, macOS and Colab. |
+| setup | The git repository was initialised in the project folder with a "Project kit" commit before unit 1.02. | CLAUDE.md requires a commit after every unit; the kit had no repository yet. |
