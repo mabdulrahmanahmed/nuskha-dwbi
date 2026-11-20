@@ -125,7 +125,8 @@ def build_items(rng, suppliers: pd.DataFrame) -> pd.DataFrame:
                                for u in items["unit_letter"]]
 
     # Popularity: random within category, scaled so each category gets its target share of lines.
-    pop = rng.lognormal(0.0, 0.7, size=n)
+    # Cheaper products sell more often (popularity falls with price), with random spread.
+    pop = rng.lognormal(0.0, 0.5, size=n) / items["base_price"].to_numpy() ** 0.7
     items["popularity"] = pop
     items["popularity"] = items.groupby("true_category")["popularity"].transform(lambda s: s / s.sum())
     items["popularity"] *= items["true_category"].map(cat.CATEGORIES)

@@ -45,14 +45,16 @@
       "minutes": 7.5
     },
     "1.05": {
-      "status": "PENDING",
+      "status": "DONE",
       "attempts": 0,
       "phase": "1",
       "title": "Generator: stage 1 transactions",
       "est": 15,
       "needs": [
         "1.04"
-      ]
+      ],
+      "start": 1795193461.8363135,
+      "minutes": 5.7
     },
     "1.06": {
       "status": "PENDING",

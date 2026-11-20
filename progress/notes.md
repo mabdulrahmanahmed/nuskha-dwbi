@@ -17,3 +17,9 @@
 - `python -m src.generate_sources --part reference` writes `data/generated/reference/*.csv` (item, branch, branch_name_variant, supplier, loyalty_member, panel_account, panel_name_variant, fx_rate, shelf_price, cost_history, unknown_pos_item, ramadan) and `evidence/01_sources/reference_counts.csv` (13 checks, all PASS).
 - Canonical product code is `P-0<item_id>` (column `product_code`); canonical branch code is the Inventory `store_code`. Unknown till codes for R01: MISC-OPEN, DISC-0412-STR, SAMPLE-PCS.
 - Venv uses system site-packages (slow network); SQLAlchemy/PyMySQL/graphviz/python-docx are pip-installed into it; jupyter/nbconvert are NOT installed yet (needed by 5.02).
+
+## 1.05 Generator: stage 1 transactions (DONE)
+- `src/gen/transactions.py` (rng [472,2]) builds full-history clean receipts/lines, POs/GRNs/lines and quarter-end stock counts, with seasons, trend, customer mix, East Analgesics Sep-2026 spike, BR-GUL Jun-2026 stock-out, keying error (qty 60) and 40 late receipts. `src/gen/sources.py` `materialize(ref, tx, stage)` gives exact source columns per engine format.
+- `python -m src.generate_sources --stage 1` (about 50 s) writes `data/generated/stage1/<db>/<table>.csv` and `stage1/inventory.db`, plus `evidence/01_sources/stage1_row_counts.csv`, `stage1_monthly_totals.{csv,png}` and `planted_patterns.csv`.
+- Stage 1: 12,789 receipts, 27,821 receipt lines, 1,734 GRNs, 4,797 GRN lines (16% USD), 1,035 FX days. Check: `python -m src.check_generated volumes` gives `stage1_volume_checks.csv` (all PASS).
+- Date formats: MySQL 'YYYY-MM-DD HH:MM:SS'; PostgreSQL TIMESTAMPTZ '...+05:00'; Inventory 'DD/MM/YYYY'. CSV empty cell = NULL.

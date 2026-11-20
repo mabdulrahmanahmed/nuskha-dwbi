@@ -9,7 +9,7 @@ Planted patterns (so the analysis has something real to find):
     Vitamins rise before Ramadan
   * customer mix: about 70% walk-in, 22% loyalty, 8% panel by value
   * anomalies: East-region Analgesics spike in Sep 2026 (dengue cluster); one branch
-    (Gulistan-e-Jauhar) almost without sales in Jun 2026 (stock-out); one keying error
+    (Gulshan-e-Iqbal, the largest East branch) almost without sales in Jun 2026 (stock-out); one keying error
     (quantity x 10) on a South-region line in Apr 2026
   * late arrivals: about 40 receipts from Jul-Aug 2026 reach the Sales database only
     in Sep-Oct 2026 (till offline), so they first appear in stage 2
@@ -29,14 +29,14 @@ from src.gen import catalogue as cat
 from src.gen.reference import HISTORY_START
 
 N_MONTHS = 36
-BASE_RECEIPTS = 318          # receipts in the first month before seasons (about 14,000 in total)
+BASE_RECEIPTS = 300          # receipts in the first month before seasons (about 14,000 in total)
 GROWTH = 1.01                # +1% a month
-BASE_POS = 41                # purchase orders in the first month (about 1,800 in total)
+BASE_POS = 43                # purchase orders in the first month (about 1,800 in total)
 CUSTOMER_MIX = {"WALKIN": 0.705, "LOYALTY": 0.225, "PANEL": 0.07}
 STAGE1_CUTOFF = datetime(2026, 8, 31, 23, 59, 59)
 STAGE2_CUTOFF = datetime(2026, 10, 31, 23, 59, 59)
 
-STOCKOUT = ("BR-GLJ", 2026, 6, 0.12)      # branch, year, month, share of normal receipts kept
+STOCKOUT = ("BR-GUL", 2026, 6, 0.05)      # branch, year, month, share of normal receipts kept
 SPIKE = ("East", "Analgesics", 2026, 9, 1.3)  # region, category, year, month, extra lines vs normal
 KEYING_ERROR = ("South", "Cardiovascular", 2026, 4)
 N_LATE_RECEIPTS = 40
