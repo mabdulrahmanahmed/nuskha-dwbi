@@ -92,14 +92,16 @@
       ]
     },
     "1.09": {
-      "status": "PENDING",
+      "status": "DONE",
       "attempts": 0,
       "phase": "1",
       "title": "Source ERDs",
       "est": 10,
       "needs": [
         "1.03"
-      ]
+      ],
+      "start": 1795194463.4655035,
+      "minutes": 1.4
     },
     "2.01": {
       "status": "PENDING",

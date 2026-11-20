@@ -37,3 +37,8 @@
 - Check: `python -m src.check_generated stage2` writes `stage2_diff.csv` (every differing row, with intended=yes), `stage2_diff_summary.csv` and `stage2_checks.csv` (24/24 PASS).
 - Stage 2 totals: 13,833 receipts, 30,417 lines, 1,871 POs, 5,143 GRN lines, 1,096 FX days. Stage 1 output is byte-identical after adding part 4, and both stages reproduce byte-identically on rerun.
 - The 3.05 deletion check should find exactly the 3 receipts listed as 'deleted' in `stage2_intended_changes.csv`.
+
+## 1.09 Source ERDs (DONE)
+- `src/erd.py`: `parse_ddl()` reads CREATE TABLE statements (columns, types, PK, inline/table-level FKs); writes `evidence/01_sources/erd/<dept>_erd.{dot,png}` and `erd_summary.csv`. Inventory's implied links (item_id, store_code) are dashed "not declared". 3.09 can reuse `parse_ddl`/`draw_matplotlib`/`to_dot`.
+- Rendered with matplotlib because Graphviz `dot` is not installed; rerun `python -m src.erd` after installing Graphviz to get Graphviz renders.
+- `evidence/01_sources/README.md` indexes every evidence file of this area.

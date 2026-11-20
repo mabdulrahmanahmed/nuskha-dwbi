@@ -1,0 +1,5 @@
+department,engine,tables,columns,declared_relationships,implied_relationships,png,renderer
+sales,MySQL sales_db,4,21,3,0,erd/sales_erd.png,matplotlib (graphviz not installed)
+finance,MySQL finance_db,3,11,1,0,erd/finance_erd.png,matplotlib (graphviz not installed)
+purchasing,PostgreSQL purchasing_db,6,27,6,0,erd/purchasing_erd.png,matplotlib (graphviz not installed)
+inventory,SQLite inventory.db,4,20,0,3,erd/inventory_erd.png,matplotlib (graphviz not installed)

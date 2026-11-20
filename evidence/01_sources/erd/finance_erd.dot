@@ -1,0 +1,10 @@
+digraph ERD {
+  graph [rankdir=LR, fontname=Helvetica, labelloc=t, fontsize=16,
+         label="Finance department (MySQL finance_db)\nSynthetic data (seed 472)"];
+  node [shape=plain, fontname=Helvetica];
+  edge [fontname=Helvetica, fontsize=10];
+  panel_account [label=<<table border="1" cellborder="0" cellspacing="0" cellpadding="3"><tr><td colspan="2" bgcolor="#dbe7f3"><b>panel_account</b></td></tr><tr><td align="left" port="account_no">PK <b>account_no</b></td><td align="left">INT</td></tr><tr><td align="left" port="company_name"><b>company_name</b></td><td align="left">VARCHAR(100)</td></tr><tr><td align="left" port="credit_limit_pkr"><b>credit_limit_pkr</b></td><td align="left">DECIMAL(12,2)</td></tr><tr><td align="left" port="terms_days"><b>terms_days</b></td><td align="left">SMALLINT</td></tr><tr><td align="left" port="updated_at"><b>updated_at</b></td><td align="left">DATETIME</td></tr></table>>];
+  fx_rate [label=<<table border="1" cellborder="0" cellspacing="0" cellpadding="3"><tr><td colspan="2" bgcolor="#dbe7f3"><b>fx_rate</b></td></tr><tr><td align="left" port="rate_date">PK <b>rate_date</b></td><td align="left">DATE</td></tr><tr><td align="left" port="usd_pkr"><b>usd_pkr</b></td><td align="left">DECIMAL(10,4)</td></tr></table>>];
+  panel_invoice [label=<<table border="1" cellborder="0" cellspacing="0" cellpadding="3"><tr><td colspan="2" bgcolor="#dbe7f3"><b>panel_invoice</b></td></tr><tr><td align="left" port="invoice_no">PK <b>invoice_no</b></td><td align="left">VARCHAR(16)</td></tr><tr><td align="left" port="account_no">FK <b>account_no</b></td><td align="left">INT</td></tr><tr><td align="left" port="month_start"><b>month_start</b></td><td align="left">DATE</td></tr><tr><td align="left" port="amount_pkr"><b>amount_pkr</b></td><td align="left">DECIMAL(12,2)</td></tr></table>>];
+  panel_invoice:account_no -> panel_account:account_no [label="N : 1"];
+}
