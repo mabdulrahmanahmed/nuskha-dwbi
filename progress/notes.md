@@ -11,3 +11,9 @@
 - `sql/01_source_ddl/{sales_mysql,finance_mysql,purchasing_postgres,inventory_sqlite}.sql`: blueprint columns exactly, plus DROP IF EXISTS at the top and synthetic table comments (MySQL COMMENT=, PostgreSQL COMMENT ON, SQLite inline comments).
 - `src/create_sources.py`: `create_inventory_file(path)` (no server needed), `create_department(dept)` via engines from `config/.env`; CLI `python -m src.create_sources [dept...] [--sqlite-file X.db]`.
 - MySQL/PostgreSQL DDL is untested until 1.08 (no `nuskha` DB users yet). MySQL 9.3 is installed: it may enforce inline REFERENCES, so 1.08 must load Sales with `SET FOREIGN_KEY_CHECKS=0` (planted orphan lines R07).
+
+## 1.04 Generator: reference data (DONE)
+- `src/gen/catalogue.py` holds the fixed lists (150 products, 10 branches with till spellings, word lists for fictional names, seasons, Ramadan dates). `src/gen/reference.py` builds the master data with `default_rng([472, 1])`.
+- `python -m src.generate_sources --part reference` writes `data/generated/reference/*.csv` (item, branch, branch_name_variant, supplier, loyalty_member, panel_account, panel_name_variant, fx_rate, shelf_price, cost_history, unknown_pos_item, ramadan) and `evidence/01_sources/reference_counts.csv` (13 checks, all PASS).
+- Canonical product code is `P-0<item_id>` (column `product_code`); canonical branch code is the Inventory `store_code`. Unknown till codes for R01: MISC-OPEN, DISC-0412-STR, SAMPLE-PCS.
+- Venv uses system site-packages (slow network); SQLAlchemy/PyMySQL/graphviz/python-docx are pip-installed into it; jupyter/nbconvert are NOT installed yet (needed by 5.02).

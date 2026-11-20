@@ -33,14 +33,16 @@
       "minutes": 1.5
     },
     "1.04": {
-      "status": "PENDING",
+      "status": "DONE",
       "attempts": 0,
       "phase": "1",
       "title": "Generator: reference data",
       "est": 15,
       "needs": [
         "1.03"
-      ]
+      ],
+      "start": 1795193013.0452523,
+      "minutes": 7.5
     },
     "1.05": {
       "status": "PENDING",
