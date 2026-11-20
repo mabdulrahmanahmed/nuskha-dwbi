@@ -1,0 +1,6 @@
+config/.env
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+progress/last_call.log
+.venv/

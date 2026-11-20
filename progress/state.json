@@ -1,0 +1,497 @@
+{
+  "units": {
+    "1.01": {
+      "status": "PENDING",
+      "attempts": 0,
+      "phase": "1",
+      "title": "Environment (after databases are installed)",
+      "est": 15,
+      "needs": [
+        "1.07"
+      ]
+    },
+    "1.02": {
+      "status": "PENDING",
+      "attempts": 0,
+      "phase": "1",
+      "title": "Repo skeleton",
+      "est": 10,
+      "needs": []
+    },
+    "1.03": {
+      "status": "PENDING",
+      "attempts": 0,
+      "phase": "1",
+      "title": "Source DDL",
+      "est": 10,
+      "needs": [
+        "1.02"
+      ]
+    },
+    "1.04": {
+      "status": "PENDING",
+      "attempts": 0,
+      "phase": "1",
+      "title": "Generator: reference data",
+      "est": 15,
+      "needs": [
+        "1.03"
+      ]
+    },
+    "1.05": {
+      "status": "PENDING",
+      "attempts": 0,
+      "phase": "1",
+      "title": "Generator: stage 1 transactions",
+      "est": 15,
+      "needs": [
+        "1.04"
+      ]
+    },
+    "1.06": {
+      "status": "PENDING",
+      "attempts": 0,
+      "phase": "1",
+      "title": "Generator: defects",
+      "est": 15,
+      "needs": [
+        "1.05"
+      ]
+    },
+    "1.07": {
+      "status": "PENDING",
+      "attempts": 0,
+      "phase": "1",
+      "title": "Generator: stage 2",
+      "est": 15,
+      "needs": [
+        "1.06"
+      ]
+    },
+    "1.08": {
+      "status": "PENDING",
+      "attempts": 0,
+      "phase": "1",
+      "title": "Load and reproducibility",
+      "est": 10,
+      "needs": [
+        "1.01",
+        "1.07"
+      ]
+    },
+    "1.09": {
+      "status": "PENDING",
+      "attempts": 0,
+      "phase": "1",
+      "title": "Source ERDs",
+      "est": 10,
+      "needs": [
+        "1.03"
+      ]
+    },
+    "2.01": {
+      "status": "PENDING",
+      "attempts": 0,
+      "phase": "2",
+      "title": "Warehouse control tables",
+      "est": 10,
+      "needs": [
+        "1.02"
+      ]
+    },
+    "2.02": {
+      "status": "PENDING",
+      "attempts": 0,
+      "phase": "2",
+      "title": "Extract",
+      "est": 15,
+      "needs": [
+        "1.08",
+        "2.01"
+      ]
+    },
+    "2.03": {
+      "status": "PENDING",
+      "attempts": 0,
+      "phase": "2",
+      "title": "Profile before",
+      "est": 10,
+      "needs": [
+        "2.02"
+      ]
+    },
+    "2.04": {
+      "status": "PENDING",
+      "attempts": 0,
+      "phase": "2",
+      "title": "Normalize",
+      "est": 15,
+      "needs": [
+        "2.03"
+      ]
+    },
+    "2.05": {
+      "status": "PENDING",
+      "attempts": 0,
+      "phase": "2",
+      "title": "Profile after",
+      "est": 10,
+      "needs": [
+        "2.04"
+      ]
+    },
+    "2.06": {
+      "status": "PENDING",
+      "attempts": 0,
+      "phase": "2",
+      "title": "Crosswalks",
+      "est": 15,
+      "needs": [
+        "2.04"
+      ]
+    },
+    "2.07": {
+      "status": "PENDING",
+      "attempts": 0,
+      "phase": "2",
+      "title": "Pre-join checks",
+      "est": 10,
+      "needs": [
+        "2.06"
+      ]
+    },
+    "2.08": {
+      "status": "PENDING",
+      "attempts": 0,
+      "phase": "2",
+      "title": "Rejects and duplicates",
+      "est": 15,
+      "needs": [
+        "2.07"
+      ]
+    },
+    "2.09": {
+      "status": "PENDING",
+      "attempts": 0,
+      "phase": "2",
+      "title": "Reconciliation batch 1",
+      "est": 10,
+      "needs": [
+        "2.08"
+      ]
+    },
+    "3.01": {
+      "status": "PENDING",
+      "attempts": 0,
+      "phase": "3",
+      "title": "Warehouse DDL",
+      "est": 10,
+      "needs": [
+        "2.01"
+      ]
+    },
+    "3.02": {
+      "status": "PENDING",
+      "attempts": 0,
+      "phase": "3",
+      "title": "Dimensions",
+      "est": 15,
+      "needs": [
+        "3.01",
+        "2.09"
+      ]
+    },
+    "3.03": {
+      "status": "PENDING",
+      "attempts": 0,
+      "phase": "3",
+      "title": "Facts",
+      "est": 15,
+      "needs": [
+        "3.02"
+      ]
+    },
+    "3.04": {
+      "status": "PENDING",
+      "attempts": 0,
+      "phase": "3",
+      "title": "Rerun test",
+      "est": 10,
+      "needs": [
+        "3.03"
+      ]
+    },
+    "3.05": {
+      "status": "PENDING",
+      "attempts": 0,
+      "phase": "3",
+      "title": "Batch 2",
+      "est": 15,
+      "needs": [
+        "3.04"
+      ]
+    },
+    "3.06": {
+      "status": "PENDING",
+      "attempts": 0,
+      "phase": "3",
+      "title": "SCD Type 1",
+      "est": 10,
+      "needs": [
+        "3.05"
+      ]
+    },
+    "3.07": {
+      "status": "PENDING",
+      "attempts": 0,
+      "phase": "3",
+      "title": "Controlled failure",
+      "est": 10,
+      "needs": [
+        "3.05"
+      ]
+    },
+    "3.08": {
+      "status": "PENDING",
+      "attempts": 0,
+      "phase": "3",
+      "title": "Metadata repository",
+      "est": 15,
+      "needs": [
+        "3.05"
+      ]
+    },
+    "3.09": {
+      "status": "PENDING",
+      "attempts": 0,
+      "phase": "3",
+      "title": "Reverse engineering",
+      "est": 15,
+      "needs": [
+        "1.08"
+      ]
+    },
+    "3.10": {
+      "status": "PENDING",
+      "attempts": 0,
+      "phase": "3",
+      "title": "Six traces",
+      "est": 15,
+      "needs": [
+        "3.08"
+      ]
+    },
+    "3.11": {
+      "status": "PENDING",
+      "attempts": 0,
+      "phase": "3",
+      "title": "Validation suite",
+      "est": 15,
+      "needs": [
+        "3.07",
+        "3.10"
+      ]
+    },
+    "4.01": {
+      "status": "PENDING",
+      "attempts": 0,
+      "phase": "4",
+      "title": "Saved views",
+      "est": 10,
+      "needs": [
+        "3.11"
+      ]
+    },
+    "4.02": {
+      "status": "PENDING",
+      "attempts": 0,
+      "phase": "4",
+      "title": "Queries A1\u2013A6",
+      "est": 15,
+      "needs": [
+        "4.01"
+      ]
+    },
+    "4.03": {
+      "status": "PENDING",
+      "attempts": 0,
+      "phase": "4",
+      "title": "Queries A7\u2013A12",
+      "est": 15,
+      "needs": [
+        "4.01"
+      ]
+    },
+    "4.04": {
+      "status": "PENDING",
+      "attempts": 0,
+      "phase": "4",
+      "title": "Forecast features and baselines",
+      "est": 10,
+      "needs": [
+        "4.01"
+      ]
+    },
+    "4.05": {
+      "status": "PENDING",
+      "attempts": 0,
+      "phase": "4",
+      "title": "Forecast model",
+      "est": 15,
+      "needs": [
+        "4.04"
+      ]
+    },
+    "4.06": {
+      "status": "PENDING",
+      "attempts": 0,
+      "phase": "4",
+      "title": "Anomaly detection",
+      "est": 15,
+      "needs": [
+        "4.01"
+      ]
+    },
+    "4.07": {
+      "status": "PENDING",
+      "attempts": 0,
+      "phase": "4",
+      "title": "Anomaly evaluation and retry",
+      "est": 15,
+      "needs": [
+        "4.05",
+        "4.06"
+      ]
+    },
+    "4.08": {
+      "status": "PENDING",
+      "attempts": 0,
+      "phase": "4",
+      "title": "Power BI data",
+      "est": 10,
+      "needs": [
+        "4.07"
+      ]
+    },
+    "4.09": {
+      "status": "PENDING",
+      "attempts": 0,
+      "phase": "4",
+      "title": "Power BI model",
+      "est": 15,
+      "needs": [
+        "4.08"
+      ]
+    },
+    "4.10": {
+      "status": "PENDING",
+      "attempts": 0,
+      "phase": "4",
+      "title": "Power BI report",
+      "est": 15,
+      "needs": [
+        "4.09"
+      ]
+    },
+    "4.11": {
+      "status": "PENDING",
+      "attempts": 0,
+      "phase": "4",
+      "title": "Power BI fallback guide",
+      "est": 10,
+      "needs": [
+        "4.08"
+      ]
+    },
+    "5.01": {
+      "status": "PENDING",
+      "attempts": 0,
+      "phase": "5",
+      "title": "Colab notebook",
+      "est": 15,
+      "needs": [
+        "4.08"
+      ]
+    },
+    "5.02": {
+      "status": "PENDING",
+      "attempts": 0,
+      "phase": "5",
+      "title": "Headless full run",
+      "est": 15,
+      "needs": [
+        "5.01"
+      ]
+    },
+    "5.03": {
+      "status": "PENDING",
+      "attempts": 0,
+      "phase": "5",
+      "title": "Recommendations",
+      "est": 10,
+      "needs": [
+        "4.07"
+      ]
+    },
+    "5.04": {
+      "status": "PENDING",
+      "attempts": 0,
+      "phase": "5",
+      "title": "Report part 1",
+      "est": 15,
+      "needs": [
+        "5.02"
+      ]
+    },
+    "5.05": {
+      "status": "PENDING",
+      "attempts": 0,
+      "phase": "5",
+      "title": "Report part 2",
+      "est": 15,
+      "needs": [
+        "5.04"
+      ]
+    },
+    "5.06": {
+      "status": "PENDING",
+      "attempts": 0,
+      "phase": "5",
+      "title": "README and evidence index",
+      "est": 10,
+      "needs": [
+        "5.05"
+      ]
+    },
+    "5.07": {
+      "status": "PENDING",
+      "attempts": 0,
+      "phase": "5",
+      "title": "Demo script",
+      "est": 10,
+      "needs": [
+        "5.02"
+      ]
+    },
+    "5.08": {
+      "status": "PENDING",
+      "attempts": 0,
+      "phase": "5",
+      "title": "Viva guides",
+      "est": 15,
+      "needs": [
+        "5.06"
+      ]
+    },
+    "5.09": {
+      "status": "PENDING",
+      "attempts": 0,
+      "phase": "5",
+      "title": "Final audit",
+      "est": 15,
+      "needs": [
+        "5.08"
+      ]
+    }
+  }
+}

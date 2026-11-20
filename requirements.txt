@@ -1,0 +1,11 @@
+pandas
+numpy
+SQLAlchemy>=2
+PyMySQL
+psycopg2-binary
+scikit-learn
+matplotlib
+graphviz
+jupyter
+nbconvert
+python-docx

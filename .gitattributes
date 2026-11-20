@@ -1,0 +1,7 @@
+# Keep Linux line endings so shell scripts and the notebook also run in Google Colab.
+* text=auto eol=lf
+*.png binary
+*.pdf binary
+*.docx binary
+*.pbix binary
+*.db binary
