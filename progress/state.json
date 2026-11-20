@@ -69,14 +69,16 @@
       "minutes": 5.2
     },
     "1.07": {
-      "status": "PENDING",
+      "status": "DONE",
       "attempts": 0,
       "phase": "1",
       "title": "Generator: stage 2",
       "est": 15,
       "needs": [
         "1.06"
-      ]
+      ],
+      "start": 1795194115.1700156,
+      "minutes": 5.8
     },
     "1.08": {
       "status": "PENDING",

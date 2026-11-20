@@ -4,8 +4,10 @@ ALL DATA IS SYNTHETIC. Rerunning gives byte-identical output.
 
 Parts (each in src/gen/, each with its own random stream derived from seed 472):
   1 reference.py     master data: products, branches, suppliers, members, panel, FX, prices, costs
-  2 transactions.py  clean receipts, receipt lines, POs, GRNs, GRN lines, stock counts
-  sources.py         turns them into each source system's tables at a stage
+  2 transactions.py  clean receipts, receipt lines, POs, GRNs, GRN lines, stock counts, planted patterns
+  3 defects.py       planted data-quality defects (R01-R07, D01, U01, legitimate repeats) + ledger
+  4 stage2.py        Sep-Oct 2026 edits: corrections, cancellations, deletions, category fix, new product
+  sources.py         turns all of it into each source system's tables at a stage
 
 Output of `--stage N` (N = 1 for batch 1, 2 for batch 2):
   data/generated/stage<N>/<database>/<table>.csv   one CSV per source table
@@ -14,7 +16,8 @@ Output of `--stage N` (N = 1 for batch 1, 2 for batch 2):
 
 Usage:
   python -m src.generate_sources --part reference     # reference data only (unit 1.04)
-  python -m src.generate_sources --stage 1            # stage-1 sources
+  python -m src.generate_sources --stage 1            # stage-1 sources (batch 1, up to 31 Aug 2026)
+  python -m src.generate_sources --stage 2            # stage-2 sources (batch 2, up to 31 Oct 2026)
 """
 from __future__ import annotations
 
@@ -29,6 +32,7 @@ from src.create_sources import create_inventory_file
 from src.gen.reference import build_reference, check_reference
 from src.gen.defects import plant_defects, unknown_vendor_items
 from src.gen.sources import CUTOFFS, materialize
+from src.gen.stage2 import NEW_ITEM, build_stage2
 from src.gen.transactions import build_transactions
 
 REFERENCE_DIR = GENERATED_DIR / "reference"
@@ -123,6 +127,7 @@ def monthly_totals(tables: dict, stage: int) -> pd.DataFrame:
     lines = lines[(lines.status == "POSTED") & (qty > 0) & (price > 0) & (ts <= pd.Timestamp(CUTOFFS[stage]))]
     # Category through the reference item list (true category); unknown till codes are left out.
     ref_items = pd.read_csv(REFERENCE_DIR / "item.csv")[["item_code", "true_category"]]
+    ref_items.loc[len(ref_items)] = [NEW_ITEM["item_code"], NEW_ITEM["true_category"]]   # stage-2 product
     lines = lines.merge(ref_items, on="item_code", how="inner")
     table = lines.pivot_table(index="month", columns="true_category", values="net", aggfunc="sum", fill_value=0)
     table = table[[c for c in cat.CATEGORIES if c in table.columns]]
@@ -163,7 +168,9 @@ def build_all(stage: int) -> tuple[dict, dict, dict]:
     ref["unknown_vendor_item"] = unknown_vendor_items(ref)
     tx = build_transactions(ref)            # part 2: clean history
     tx = plant_defects(ref, tx)             # part 3: planted defects + ledger
-    tables = materialize(ref, tx, stage)
+    apply_stage2, intended = build_stage2(ref, tx)   # part 4: Sep-Oct edits
+    tx["stage2_intended"] = intended
+    tables = materialize(ref, tx, stage, changes=apply_stage2)
     return ref, tx, tables
 
 
@@ -178,6 +185,8 @@ def run_stage(stage: int) -> dict:
     write_evidence("01_sources", "defect_ledger.csv" if stage == 1 else "defect_ledger_stage2.csv", ledger)
     dup = tx["double_export"]
     write_csv(dup[dup.stage == stage].drop(columns="stage"), stage_dir(stage) / "double_export.csv")
+    if stage == 2:
+        write_evidence("01_sources", "stage2_intended_changes.csv", tx["stage2_intended"])
 
     totals = monthly_totals(tables, stage)
     write_evidence("01_sources", f"stage{stage}_monthly_totals.csv", totals)

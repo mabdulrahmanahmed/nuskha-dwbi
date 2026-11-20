@@ -30,3 +30,10 @@
 - Check: `python -m src.check_generated defects` writes `defect_rate_checks.csv`: 30/30 PASS. It checks rates within ±10% AND that the ledger equals the defective rows found independently in the data.
 - Stage-1 counts are now 12,767 receipts and 28,099 receipt lines (27,821 + 278 legit repeats); 22 headers were removed for R07. GRN lines 4,801 (4,797 + 4 R06).
 - The R06 GRNs are GRN-2023-90001/90002 (PO-2023-90001/90002). Unknown vendor items ZZZ-0001/0002 are in `vendor_item`.
+
+## 1.07 Generator: stage 2 (DONE)
+- `src/gen/stage2.py` (rng [472,4]): 20 qty fixes, 8 panel-name fixes (all stage-1 U01 receipts), 15 VOIDED receipts, 3 hard-deleted receipts (6 lines), 3 CANCELLED GRNs (9 lines), cough syrup (Dextromethorphan Syrup) Gastro -> 'Cough and Cold' (last_updated 15/09/2026), new item 500 'Paracetamol 1000 mg' PAR-1000-STR on 40 Sep-Oct lines. Edits re-save the header and all its lines (new updated_at).
+- `python -m src.generate_sources --stage 2` writes `data/generated/stage2/...`, `evidence/01_sources/defect_ledger_stage2.csv`, `stage2_intended_changes.csv`, `stage2_monthly_totals.{csv,png}`; `stage2/double_export.csv` holds only the stage-2 D01 keys.
+- Check: `python -m src.check_generated stage2` writes `stage2_diff.csv` (every differing row, with intended=yes), `stage2_diff_summary.csv` and `stage2_checks.csv` (24/24 PASS).
+- Stage 2 totals: 13,833 receipts, 30,417 lines, 1,871 POs, 5,143 GRN lines, 1,096 FX days. Stage 1 output is byte-identical after adding part 4, and both stages reproduce byte-identically on rerun.
+- The 3.05 deletion check should find exactly the 3 receipts listed as 'deleted' in `stage2_intended_changes.csv`.

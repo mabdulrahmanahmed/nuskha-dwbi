@@ -148,7 +148,64 @@ def check_defects() -> pd.DataFrame:
     return finish(rows, "defect_rate_checks.csv")
 
 
-CHECKS = {"volumes": check_volumes, "defects": check_defects}
+def diff_stages() -> pd.DataFrame:
+    """Row-level diff of every source table, stage 1 vs stage 2, by primary key."""
+    from src.gen.sources import COLUMNS, KEYS
+
+    rows = []
+    for (db, table) in COLUMNS:
+        a, b = read(1, db, table).fillna(""), read(2, db, table).fillna("")
+        key = KEYS[table]
+        a.index = a[key].agg("|".join, axis=1)
+        b.index = b[key].agg("|".join, axis=1)
+        for k in b.index.difference(a.index):
+            rows.append((db, table, k, "added", ""))
+        for k in a.index.difference(b.index):
+            rows.append((db, table, k, "deleted", ""))
+        common = a.index.intersection(b.index)
+        aa, bb = a.loc[common], b.loc[common, a.columns]
+        changed = (aa != bb).any(axis=1)
+        for k in changed[changed].index:
+            cols = [c for c in a.columns if aa.at[k, c] != bb.at[k, c]]
+            rows.append((db, table, k, "changed", ", ".join(cols)))
+    return pd.DataFrame(rows, columns=["database", "table", "key", "change", "columns_changed"])
+
+
+def check_stage2() -> pd.DataFrame:
+    """Unit 1.07: the stage-1 -> stage-2 diff touches exactly the intended rows."""
+    intended = pd.read_csv(evidence_dir("01_sources") / "stage2_intended_changes.csv", dtype=str)
+    diff = diff_stages()
+    merged = diff.merge(intended, on=["database", "table", "key"], how="outer", suffixes=("", "_intended"),
+                        indicator=True)
+    merged["intended"] = merged["_merge"].map({"both": "yes", "left_only": "NO (unexpected)",
+                                               "right_only": "MISSING (intended but not found)"}).astype(str)
+    merged.loc[(merged._merge == "both") & (merged.change != merged.change_intended), "intended"] = "WRONG CHANGE TYPE"
+    out = merged.drop(columns=["_merge"]).rename(columns={"change_intended": "intended_change"})
+    write_evidence("01_sources", "stage2_diff.csv", out)
+    summary = out.groupby(["database", "table", "change", "intended"], dropna=False).size().rename("rows").reset_index()
+    write_evidence("01_sources", "stage2_diff_summary.csv", summary)
+    print(summary.to_string(index=False))
+
+    rows = [("rows in the stage-1 -> stage-2 diff that were not intended", 0, int((out.intended != "yes").sum()),
+             (out.intended == "yes").all())]
+    for (table, change), n in out[out.intended == "yes"].groupby(["table", "change"]).size().items():
+        rows.append((f"{table}: {change} rows (all intended)", n, n, True))
+    # Spot checks on the story the diff must tell.
+    rec2 = read(2, "sales_db", "receipt")
+    rows.append(("receipts VOIDED in stage 2", 15, int((rec2.status == "VOIDED").sum()), (rec2.status == "VOIDED").sum() == 15))
+    deleted = out[(out.table == "receipt") & (out.change == "deleted")]
+    rows.append(("receipts hard-deleted", 3, len(deleted), len(deleted) == 3))
+    late = intended[intended.reason == "late receipt"]
+    rows.append(("late receipts: receipt date before 1 Sep 2026, first seen in stage 2", 40,
+                 int((pd.to_datetime(rec2.set_index("receipt_no").loc[late.key, "receipt_ts"]) < "2026-09-01").sum()),
+                 len(late) == 40))
+    item2 = read(2, "inventory", "item")
+    syrup = item2[item2.generic_name == "Dextromethorphan Syrup"].category.iloc[0]
+    rows.append(("cough syrup category in stage 2", "Cough and Cold", syrup, syrup == "Cough and Cold"))
+    return finish(rows, "stage2_checks.csv")
+
+
+CHECKS = {"volumes": check_volumes, "defects": check_defects, "stage2": check_stage2}
 
 if __name__ == "__main__":
     name = sys.argv[1] if len(sys.argv) > 1 else "volumes"
