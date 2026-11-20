@@ -52,7 +52,8 @@ def parse_ddl(sql_text: str) -> dict:
     """Read CREATE TABLE statements into Table objects (enough for these four DDL files)."""
     text = re.sub(r"--[^\n]*", "", sql_text)                       # drop comments
     tables = {}
-    for m in re.finditer(r"CREATE TABLE\s+(\w+)\s*\((.*?)\)\s*(?:COMMENT[^;]*)?;", text, re.S | re.I):
+    pattern = r"CREATE TABLE\s+(?:IF NOT EXISTS\s+)?([\w.]+)\s*\((.*?)\)\s*(?:COMMENT[^;]*)?;"
+    for m in re.finditer(pattern, text, re.S | re.I):
         t = Table(m.group(1))
         body = m.group(2)
         # Split the body on commas that are not inside parentheses.
@@ -72,6 +73,8 @@ def parse_ddl(sql_text: str) -> dict:
                 for name in pk_m.group(1).split(","):
                     t.col(name.strip()).pk = True
                 continue
+            if re.match(r"(UNIQUE|CONSTRAINT|CHECK|FOREIGN KEY)\b", raw, re.I):
+                continue                                               # table-level constraint, not a column
             tokens = raw.split()
             name, type_words = tokens[0], []
             for tok in tokens[1:]:
@@ -80,7 +83,7 @@ def parse_ddl(sql_text: str) -> dict:
                 type_words.append(tok)
             col = Column(name, " ".join(type_words))
             col.pk = bool(re.search(r"PRIMARY KEY", raw, re.I))
-            ref = re.search(r"REFERENCES\s+(\w+)\s*(?:\((\w+)\))?", raw, re.I)
+            ref = re.search(r"REFERENCES\s+([\w.]+)\s*(?:\((\w+)\))?", raw, re.I)
             if ref:
                 col.fk = (ref.group(1), ref.group(2))                  # column None = parent's PK
             t.columns.append(col)
@@ -133,8 +136,11 @@ def to_dot(tables: dict, title: str) -> str:
     return "\n".join(lines) + "\n"
 
 
-def draw_matplotlib(tables: dict, title: str, path: Path) -> None:
-    """Fallback renderer: tables as boxes (parents on the left), arrows child -> parent."""
+def draw_matplotlib(tables: dict, title: str, path: Path, positions: dict | None = None) -> None:
+    """Fallback renderer: tables as boxes (parents on the left), arrows child -> parent.
+
+    positions (optional): {table: (column, order)} to place tables by hand, e.g. for star schemas.
+    """
     import matplotlib
     matplotlib.use("Agg")
     import matplotlib.pyplot as plt
@@ -148,7 +154,11 @@ def draw_matplotlib(tables: dict, title: str, path: Path) -> None:
             level[child] = max(level[child], level[parent] + 1)
     row_h, box_w, gap_x, gap_y = 0.32, 3.4, 1.6, 0.6
     pos, y_next = {}, {}
-    for name in sorted(tables, key=lambda n: (level[n], n)):
+    order = {n: n for n in tables}
+    if positions:
+        level = {n: positions[n][0] for n in tables}
+        order = {n: positions[n][1] for n in tables}
+    for name in sorted(tables, key=lambda n: (level[n], order[n])):
         x = level[name] * (box_w + gap_x)
         h = (len(tables[name].columns) + 1) * row_h
         y_top = y_next.get(level[name], 0.0)
@@ -223,6 +233,28 @@ def build_erds() -> list:
     return results
 
 
+def build_star_diagram() -> Path:
+    """Both stars from sql/02_warehouse_ddl/02_dw_stars.sql (dimensions left, facts right)."""
+    tables = parse_ddl((SQL_DIR / "02_warehouse_ddl" / "02_dw_stars.sql").read_text(encoding="utf-8"))
+    tables = {k.replace("dw.", ""): t for k, t in tables.items()}
+    for t in tables.values():
+        t.name = t.name.replace("dw.", "")
+        for c in t.columns:
+            if c.fk:
+                c.fk = (c.fk[0].replace("dw.", ""), c.fk[1])
+    for t in tables.values():                                          # implied PK column names
+        for c in t.columns:
+            if c.fk and c.fk[1] is None:
+                c.fk = (c.fk[0], next(p.name for p in tables[c.fk[0]].columns if p.pk))
+    out = evidence_dir("03_warehouse")
+    title = "Nuskha warehouse: sales and purchase stars (conformed date, product, branch)"
+    (out / "star_schema.dot").write_text(to_dot(tables, title), encoding="utf-8", newline="\n")
+    layout = {"dim_customer": (0, 0), "fact_sales": (1, 0), "dim_date": (2, 0), "dim_product": (2, 1),
+              "dim_branch": (2, 2), "fact_purchase": (3, 0), "dim_supplier": (4, 0)}
+    draw_matplotlib(tables, title, out / "star_schema.png", layout)
+    return out / "star_schema.png"
+
+
 if __name__ == "__main__":
     import pandas as pd
 
@@ -231,3 +263,4 @@ if __name__ == "__main__":
     res = pd.DataFrame(build_erds())
     write_evidence("01_sources", "erd_summary.csv", res)
     print(res.to_string(index=False))
+    print(f"star diagram: {build_star_diagram()}")
