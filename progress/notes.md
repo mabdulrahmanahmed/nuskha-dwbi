@@ -42,3 +42,9 @@
 - `src/erd.py`: `parse_ddl()` reads CREATE TABLE statements (columns, types, PK, inline/table-level FKs); writes `evidence/01_sources/erd/<dept>_erd.{dot,png}` and `erd_summary.csv`. Inventory's implied links (item_id, store_code) are dashed "not declared". 3.09 can reuse `parse_ddl`/`draw_matplotlib`/`to_dot`.
 - Rendered with matplotlib because Graphviz `dot` is not installed; rerun `python -m src.erd` after installing Graphviz to get Graphviz renders.
 - `evidence/01_sources/README.md` indexes every evidence file of this area.
+
+## 1.01 Environment (BLOCKED)
+- Written: `scripts/setup_env.sh` (auto, local and colab modes; local only pip-installs the missing packages, then runs `check_env.py --create`), `scripts/check_env.py` (OK/FAIL per DB; `--create` makes missing databases with the .env user), and `scripts/local_db_users_{mysql,postgres}.sql` (one-time person step).
+- Blocked: user `nuskha` does not exist on MySQL or PostgreSQL, and `config/.env` is missing. Exact fix in docs/BLOCKERS.md. 1.08 is SKIPPED until then (it needs 1.01).
+- jupyter/nbconvert are being pip-installed in the background (slow network); `setup_env.sh` installs them if still missing.
+- For 1.08 later: load `data/generated/stage1/` CSVs (Sales with SET FOREIGN_KEY_CHECKS=0 because of R07 orphans), copy `stage1/inventory.db` to INVENTORY_PATH, build twice and compare checksums.
