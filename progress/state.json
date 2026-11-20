@@ -21,14 +21,16 @@
       "minutes": 0.9
     },
     "1.03": {
-      "status": "PENDING",
+      "status": "DONE",
       "attempts": 0,
       "phase": "1",
       "title": "Source DDL",
       "est": 10,
       "needs": [
         "1.02"
-      ]
+      ],
+      "start": 1795192920.533819,
+      "minutes": 1.5
     },
     "1.04": {
       "status": "PENDING",
