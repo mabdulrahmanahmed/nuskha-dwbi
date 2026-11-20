@@ -23,3 +23,10 @@
 - `python -m src.generate_sources --stage 1` (about 50 s) writes `data/generated/stage1/<db>/<table>.csv` and `stage1/inventory.db`, plus `evidence/01_sources/stage1_row_counts.csv`, `stage1_monthly_totals.{csv,png}` and `planted_patterns.csv`.
 - Stage 1: 12,789 receipts, 27,821 receipt lines, 1,734 GRNs, 4,797 GRN lines (16% USD), 1,035 FX days. Check: `python -m src.check_generated volumes` gives `stage1_volume_checks.csv` (all PASS).
 - Date formats: MySQL 'YYYY-MM-DD HH:MM:SS'; PostgreSQL TIMESTAMPTZ '...+05:00'; Inventory 'DD/MM/YYYY'. CSV empty cell = NULL.
+
+## 1.06 Generator: defects (DONE)
+- `src/gen/defects.py` (rng [472,3,stage]) plants R01–R07, D01, U01 and LEGIT_REPEAT in each stage window; ledger rows are keyed `receipt_no|line_no` or `grn_no|line_no`.
+- Stage-1 outputs: `evidence/01_sources/defect_ledger.csv` (1,320 rows), `defect_ledger_summary.csv`, and `data/generated/stage1/double_export.csv` (the D01 keys the extract must emit twice).
+- Check: `python -m src.check_generated defects` writes `defect_rate_checks.csv`: 30/30 PASS. It checks rates within ±10% AND that the ledger equals the defective rows found independently in the data.
+- Stage-1 counts are now 12,767 receipts and 28,099 receipt lines (27,821 + 278 legit repeats); 22 headers were removed for R07. GRN lines 4,801 (4,797 + 4 R06).
+- The R06 GRNs are GRN-2023-90001/90002 (PO-2023-90001/90002). Unknown vendor items ZZZ-0001/0002 are in `vendor_item`.

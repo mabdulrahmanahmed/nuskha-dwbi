@@ -27,7 +27,8 @@ import pandas as pd
 from src.common import GENERATED_DIR, evidence_dir, write_evidence
 from src.create_sources import create_inventory_file
 from src.gen.reference import build_reference, check_reference
-from src.gen.sources import materialize
+from src.gen.defects import plant_defects, unknown_vendor_items
+from src.gen.sources import CUTOFFS, materialize
 from src.gen.transactions import build_transactions
 
 REFERENCE_DIR = GENERATED_DIR / "reference"
@@ -103,20 +104,26 @@ def write_stage(tables: dict, stage: int) -> pd.DataFrame:
     return pd.DataFrame(counts)
 
 
-def monthly_totals(tables: dict) -> pd.DataFrame:
-    """Net sales (PKR) per month and category from the Sales tables (receipt-date month)."""
+def monthly_totals(tables: dict, stage: int) -> pd.DataFrame:
+    """Net sales (PKR) per month and category from the Sales tables (receipt-date month).
+
+    A quick look at the raw sources, not the warehouse figure: only POSTED lines with a
+    known item, quantity > 0, price > 0 and a receipt date inside the stage are counted,
+    so planted defects do not distort the chart.
+    """
     from src.gen import catalogue as cat
 
     rec = tables["sales_db"]["receipt"]
     lines = tables["sales_db"]["receipt_line"].merge(rec[["receipt_no", "receipt_ts", "status"]], on="receipt_no")
-    lines = lines[lines.status == "POSTED"]
     qty = pd.to_numeric(lines.qty, errors="coerce")
     price = pd.to_numeric(lines.unit_price_pkr, errors="coerce")
     disc = pd.to_numeric(lines.discount_pkr, errors="coerce").fillna(0)
-    lines = lines.assign(net=qty * price - disc, month=pd.to_datetime(lines.receipt_ts).dt.strftime("%Y-%m"))
-    # Category through the reference item list (true category).
+    ts = pd.to_datetime(lines.receipt_ts)
+    lines = lines.assign(net=qty * price - disc, month=ts.dt.strftime("%Y-%m"))
+    lines = lines[(lines.status == "POSTED") & (qty > 0) & (price > 0) & (ts <= pd.Timestamp(CUTOFFS[stage]))]
+    # Category through the reference item list (true category); unknown till codes are left out.
     ref_items = pd.read_csv(REFERENCE_DIR / "item.csv")[["item_code", "true_category"]]
-    lines = lines.merge(ref_items, on="item_code", how="left").fillna({"true_category": "Unknown code"})
+    lines = lines.merge(ref_items, on="item_code", how="inner")
     table = lines.pivot_table(index="month", columns="true_category", values="net", aggfunc="sum", fill_value=0)
     table = table[[c for c in cat.CATEGORIES if c in table.columns]]
     table["Total"] = table.sum(axis=1)
@@ -150,14 +157,29 @@ def monthly_chart(totals: pd.DataFrame, path: Path, title: str) -> None:
     plt.close(fig)
 
 
-def run_stage(stage: int) -> dict:
+def build_all(stage: int) -> tuple[dict, dict, dict]:
+    """Run every generator part in order and return (reference, transactions, source tables)."""
     ref = build_reference()
-    tx = build_transactions(ref)
+    ref["unknown_vendor_item"] = unknown_vendor_items(ref)
+    tx = build_transactions(ref)            # part 2: clean history
+    tx = plant_defects(ref, tx)             # part 3: planted defects + ledger
     tables = materialize(ref, tx, stage)
+    return ref, tx, tables
+
+
+def run_stage(stage: int) -> dict:
+    ref, tx, tables = build_all(stage)
     counts = write_stage(tables, stage)
     write_evidence("01_sources", f"stage{stage}_row_counts.csv", counts)
     print(counts.to_string(index=False))
-    totals = monthly_totals(tables)
+
+    # Defect ledger (every planted row) and the till's double-export list for this stage.
+    ledger = tx["ledger"][tx["ledger"].stage == stage]
+    write_evidence("01_sources", "defect_ledger.csv" if stage == 1 else "defect_ledger_stage2.csv", ledger)
+    dup = tx["double_export"]
+    write_csv(dup[dup.stage == stage].drop(columns="stage"), stage_dir(stage) / "double_export.csv")
+
+    totals = monthly_totals(tables, stage)
     write_evidence("01_sources", f"stage{stage}_monthly_totals.csv", totals)
     monthly_chart(totals, evidence_dir("01_sources") / f"stage{stage}_monthly_totals.png",
                   f"Nuskha monthly net sales, stage {stage} sources (synthetic)")

@@ -61,7 +61,94 @@ def check_volumes() -> pd.DataFrame:
     ], "stage1_volume_checks.csv")
 
 
-CHECKS = {"volumes": check_volumes}
+def _found_defects(stage: int, cutoff: str) -> dict:
+    """Find every defective row directly in a stage's CSVs, independently of the ledger.
+
+    Returns {(table, code): set of 'key|line_no'}. Used to prove the ledger is complete
+    (nothing defective that is not listed) and true (everything listed is defective).
+    """
+    ref_items = pd.read_csv(GENERATED_DIR / "reference" / "item.csv", dtype=str)
+    branch_texts = set(pd.read_csv(GENERATED_DIR / "reference" / "branch_name_variant.csv", dtype=str,
+                                   keep_default_na=False).branch_name_text)
+    panel_texts = set(pd.read_csv(GENERATED_DIR / "reference" / "panel_name_variant.csv", dtype=str,
+                                  keep_default_na=False).panel_company_text)
+    first_fx = pd.read_csv(GENERATED_DIR / "reference" / "fx_rate.csv").rate_date.min()
+    rec, rl = read(stage, "sales_db", "receipt"), read(stage, "sales_db", "receipt_line")
+    grn, gl = read(stage, "purchasing_db", "goods_receipt"), read(stage, "purchasing_db", "grn_line")
+    po = read(stage, "purchasing_db", "purchase_order")
+    dup = pd.read_csv(GENERATED_DIR / f"stage{stage}" / "double_export.csv", dtype=str)
+
+    def keys(df, a, b):
+        return set(df[a] + "|" + df[b])
+
+    rl = rl.merge(rec, on="receipt_no", how="left", suffixes=("", "_h"))
+    gl = gl.merge(grn, on="grn_no", how="left", suffixes=("", "_h")).merge(po[["po_no", "currency"]], on="po_no")
+    found = {
+        ("receipt_line", "R01_MISSING_PRODUCT"): keys(rl[~rl.item_code.isin(ref_items.item_code)], "receipt_no", "line_no"),
+        ("receipt_line", "R02_BAD_QTY"): keys(rl[num(rl.qty) <= 0], "receipt_no", "line_no"),
+        ("receipt_line", "R03_BAD_DATE"): keys(rl[pd.to_datetime(rl.receipt_ts) > cutoff], "receipt_no", "line_no"),
+        ("receipt_line", "R04_BAD_AMOUNT"): keys(rl[num(rl.unit_price_pkr) <= 0], "receipt_no", "line_no"),
+        ("receipt_line", "R05_UNKNOWN_BRANCH"): keys(rl[rl.branch_name.notna() & ~rl.branch_name.isin(branch_texts)],
+                                                     "receipt_no", "line_no"),
+        ("receipt_line", "R07_ORPHAN_LINE"): keys(rl[rl.branch_name.isna()], "receipt_no", "line_no"),
+        ("receipt_line", "U01_UNRESOLVED_CUSTOMER"): keys(rl[(rl.customer_type == "PANEL")
+                                                             & ~rl.panel_company_text.isin(panel_texts)],
+                                                          "receipt_no", "line_no"),
+        ("receipt_line", "D01_EXACT_DUPLICATE"): keys(dup[dup.source_table == "receipt_line"], "receipt_no", "line_no"),
+        ("grn_line", "R01_MISSING_PRODUCT"): keys(gl[~gl.vendor_item_code.isin(ref_items.vendor_item_code)],
+                                                  "grn_no", "line_no"),
+        ("grn_line", "R02_BAD_QTY"): keys(gl[num(gl.boxes_received) <= 0], "grn_no", "line_no"),
+        ("grn_line", "R03_BAD_DATE"): keys(gl[pd.to_datetime(gl.received_at.str[:19]) > cutoff], "grn_no", "line_no"),
+        ("grn_line", "R04_BAD_AMOUNT"): keys(gl[num(gl.cost_per_box) <= 0], "grn_no", "line_no"),
+        ("grn_line", "R06_NO_FX_RATE"): keys(gl[(gl.currency == "USD") & (gl.received_at.str[:10] < first_fx)],
+                                             "grn_no", "line_no"),
+        ("grn_line", "D01_EXACT_DUPLICATE"): keys(dup[dup.source_table == "grn_line"], "receipt_no", "line_no"),
+    }
+    # Legitimate repeats: a line whose (known) item already appears on a lower line of the same
+    # receipt. Unknown codes are left out: two R01 lines may share the same unknown code.
+    same = rl[rl.item_code.isin(ref_items.item_code)].copy()
+    same["ln"] = num(same.line_no)
+    same = same.sort_values(["receipt_no", "ln"])
+    found[("receipt_line", "LEGIT_REPEAT")] = keys(same[same.duplicated(["receipt_no", "item_code"])],
+                                                   "receipt_no", "line_no")
+    return found
+
+
+def check_defects() -> pd.DataFrame:
+    """Unit 1.06: ledger counts per code within +-10% of the blueprint rates, and ledger == data."""
+    from src.gen.defects import RATE_U01, RATES_PURCH, RATES_SALES
+
+    ledger = pd.read_csv(evidence_dir("01_sources") / "defect_ledger.csv", dtype=str)
+    rl, rec = read(1, "sales_db", "receipt_line"), read(1, "sales_db", "receipt")
+    gl = read(1, "purchasing_db", "grn_line")
+    n_rl = len(rl) - (ledger.code == "LEGIT_REPEAT").sum()            # lines before repeats were added
+    n_gl = len(gl) - (ledger.code == "R06_NO_FX_RATE").sum()          # lines before R06 orders were added
+    panel_lines = rl.merge(rec, on="receipt_no").customer_type.eq("PANEL").sum()
+    rows = []
+    for table, rates, base in (("receipt_line", RATES_SALES, n_rl), ("grn_line", RATES_PURCH, n_gl)):
+        for code, rate in rates.items():
+            target, got = rate * base, int(((ledger.source_table == table) & (ledger.code == code)).sum())
+            rows.append((f"{table} {code}: count vs {rate:.1%} of {base} lines (+-10%)", round(target, 1), got,
+                         abs(got - target) <= 0.10 * target))
+    target = RATE_U01 * panel_lines
+    got = int((ledger.code == "U01_UNRESOLVED_CUSTOMER").sum())
+    rows.append((f"receipt_line U01_UNRESOLVED_CUSTOMER: count vs 1% of {panel_lines} panel lines (+-10%)",
+                 round(target, 1), got, abs(got - target) <= 0.10 * target))
+    got = int((ledger.code == "R06_NO_FX_RATE").sum())
+    rows.append(("grn_line R06_NO_FX_RATE: a few lines (1-10)", "1-10", got, 1 <= got <= 10))
+
+    # The ledger must list exactly the defective rows found in the data.
+    found = _found_defects(1, "2026-08-31 23:59:59")
+    for (table, code), keys in sorted(found.items()):
+        listed = set(ledger.source_key[(ledger.source_table == table) & (ledger.code == code)])
+        rows.append((f"{table} {code}: ledger rows = defective rows found in the stage-1 data",
+                     len(keys), len(listed), listed == keys))
+    write_evidence("01_sources", "defect_ledger_summary.csv",
+                   ledger.groupby(["source_table", "code"]).size().rename("rows").reset_index())
+    return finish(rows, "defect_rate_checks.csv")
+
+
+CHECKS = {"volumes": check_volumes, "defects": check_defects}
 
 if __name__ == "__main__":
     name = sys.argv[1] if len(sys.argv) > 1 else "volumes"
