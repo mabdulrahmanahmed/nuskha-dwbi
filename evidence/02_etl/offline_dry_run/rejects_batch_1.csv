@@ -555,83 +555,82 @@ sales_db,receipt_line,SDR-2026-000215|2,R01_MISSING_PRODUCT,item code unknown to
 sales_db,receipt_line,SDR-2026-000224|1,R01_MISSING_PRODUCT,item code unknown to every crosswalk,1
 sales_db,receipt_line,SDR-2026-000261|1,R01_MISSING_PRODUCT,item code unknown to every crosswalk,1
 sales_db,receipt_line,SDR-2026-000274|3,R01_MISSING_PRODUCT,item code unknown to every crosswalk,1
-purchasing_db,grn_line,GRN-2023-00001|6,R01_MISSING_PRODUCT,item code unknown to every crosswalk,1
-purchasing_db,grn_line,GRN-2023-00018|1,R01_MISSING_PRODUCT,item code unknown to every crosswalk,1
-purchasing_db,grn_line,GRN-2023-00044|3,R01_MISSING_PRODUCT,item code unknown to every crosswalk,1
-purchasing_db,grn_line,GRN-2023-00062|1,R03_BAD_DATE,"date missing, unparseable or after the batch cut-off",1
-purchasing_db,grn_line,GRN-2023-00079|1,R01_MISSING_PRODUCT,item code unknown to every crosswalk,1
+purchasing_db,grn_line,GRN-2023-00003|1,R01_MISSING_PRODUCT,item code unknown to every crosswalk,1
+purchasing_db,grn_line,GRN-2023-00022|1,R02_BAD_QTY,quantity <= 0 or missing on a POSTED line,1
 purchasing_db,grn_line,GRN-2023-90001|1,R06_NO_FX_RATE,USD line with no FX rate on or before its date,1
 purchasing_db,grn_line,GRN-2023-90001|2,R06_NO_FX_RATE,USD line with no FX rate on or before its date,1
 purchasing_db,grn_line,GRN-2023-90002|1,R06_NO_FX_RATE,USD line with no FX rate on or before its date,1
 purchasing_db,grn_line,GRN-2023-90002|2,R06_NO_FX_RATE,USD line with no FX rate on or before its date,1
-purchasing_db,grn_line,GRN-2024-00005|1,R02_BAD_QTY,quantity <= 0 or missing on a POSTED line,1
-purchasing_db,grn_line,GRN-2024-00009|4,R04_BAD_AMOUNT,price or cost <= 0 or missing,1
-purchasing_db,grn_line,GRN-2024-00037|3,R02_BAD_QTY,quantity <= 0 or missing on a POSTED line,1
-purchasing_db,grn_line,GRN-2024-00076|1,R04_BAD_AMOUNT,price or cost <= 0 or missing,1
-purchasing_db,grn_line,GRN-2024-00079|2,R04_BAD_AMOUNT,price or cost <= 0 or missing,1
-purchasing_db,grn_line,GRN-2024-00100|1,R02_BAD_QTY,quantity <= 0 or missing on a POSTED line,1
-purchasing_db,grn_line,GRN-2024-00124|2,R01_MISSING_PRODUCT,item code unknown to every crosswalk,1
-purchasing_db,grn_line,GRN-2024-00131|1,R04_BAD_AMOUNT,price or cost <= 0 or missing,1
-purchasing_db,grn_line,GRN-2024-00173|1,R04_BAD_AMOUNT,price or cost <= 0 or missing,1
-purchasing_db,grn_line,GRN-2024-00198|1,R01_MISSING_PRODUCT,item code unknown to every crosswalk,1
-purchasing_db,grn_line,GRN-2024-00255|2,R02_BAD_QTY,quantity <= 0 or missing on a POSTED line,1
-purchasing_db,grn_line,GRN-2024-00277|1,R04_BAD_AMOUNT,price or cost <= 0 or missing,1
-purchasing_db,grn_line,GRN-2024-00281|3,R04_BAD_AMOUNT,price or cost <= 0 or missing,1
-purchasing_db,grn_line,GRN-2024-00295|1,R01_MISSING_PRODUCT,item code unknown to every crosswalk,1
-purchasing_db,grn_line,GRN-2024-00316|2,R02_BAD_QTY,quantity <= 0 or missing on a POSTED line,1
-purchasing_db,grn_line,GRN-2024-00322|1,R03_BAD_DATE,"date missing, unparseable or after the batch cut-off",1
-purchasing_db,grn_line,GRN-2024-00322|2,R03_BAD_DATE,"date missing, unparseable or after the batch cut-off",1
-purchasing_db,grn_line,GRN-2024-00332|1,R01_MISSING_PRODUCT,item code unknown to every crosswalk,1
-purchasing_db,grn_line,GRN-2024-00374|2,R01_MISSING_PRODUCT,item code unknown to every crosswalk,1
-purchasing_db,grn_line,GRN-2024-00387|3,R01_MISSING_PRODUCT,item code unknown to every crosswalk,1
-purchasing_db,grn_line,GRN-2024-00522|1,R02_BAD_QTY,quantity <= 0 or missing on a POSTED line,1
-purchasing_db,grn_line,GRN-2024-00547|2,R02_BAD_QTY,quantity <= 0 or missing on a POSTED line,1
-purchasing_db,grn_line,GRN-2025-00036|2,R01_MISSING_PRODUCT,item code unknown to every crosswalk,1
-purchasing_db,grn_line,GRN-2025-00061|3,R01_MISSING_PRODUCT,item code unknown to every crosswalk,1
-purchasing_db,grn_line,GRN-2025-00082|1,R01_MISSING_PRODUCT,item code unknown to every crosswalk,1
-purchasing_db,grn_line,GRN-2025-00097|1,R01_MISSING_PRODUCT,item code unknown to every crosswalk,1
-purchasing_db,grn_line,GRN-2025-00134|2,R01_MISSING_PRODUCT,item code unknown to every crosswalk,1
-purchasing_db,grn_line,GRN-2025-00162|3,R01_MISSING_PRODUCT,item code unknown to every crosswalk,1
-purchasing_db,grn_line,GRN-2025-00186|2,R02_BAD_QTY,quantity <= 0 or missing on a POSTED line,1
-purchasing_db,grn_line,GRN-2025-00226|1,R02_BAD_QTY,quantity <= 0 or missing on a POSTED line,1
-purchasing_db,grn_line,GRN-2025-00265|1,R04_BAD_AMOUNT,price or cost <= 0 or missing,1
-purchasing_db,grn_line,GRN-2025-00265|2,R01_MISSING_PRODUCT,item code unknown to every crosswalk,1
-purchasing_db,grn_line,GRN-2025-00266|5,R02_BAD_QTY,quantity <= 0 or missing on a POSTED line,1
-purchasing_db,grn_line,GRN-2025-00273|4,R04_BAD_AMOUNT,price or cost <= 0 or missing,1
-purchasing_db,grn_line,GRN-2025-00274|3,R02_BAD_QTY,quantity <= 0 or missing on a POSTED line,1
-purchasing_db,grn_line,GRN-2025-00348|2,R02_BAD_QTY,quantity <= 0 or missing on a POSTED line,1
-purchasing_db,grn_line,GRN-2025-00374|1,R01_MISSING_PRODUCT,item code unknown to every crosswalk,1
-purchasing_db,grn_line,GRN-2025-00383|2,R01_MISSING_PRODUCT,item code unknown to every crosswalk,1
-purchasing_db,grn_line,GRN-2025-00399|1,R02_BAD_QTY,quantity <= 0 or missing on a POSTED line,1
-purchasing_db,grn_line,GRN-2025-00407|2,R01_MISSING_PRODUCT,item code unknown to every crosswalk,1
-purchasing_db,grn_line,GRN-2025-00438|1,R02_BAD_QTY,quantity <= 0 or missing on a POSTED line,1
-purchasing_db,grn_line,GRN-2025-00473|1,R02_BAD_QTY,quantity <= 0 or missing on a POSTED line,1
-purchasing_db,grn_line,GRN-2025-00495|1,R01_MISSING_PRODUCT,item code unknown to every crosswalk,1
-purchasing_db,grn_line,GRN-2025-00502|2,R01_MISSING_PRODUCT,item code unknown to every crosswalk,1
-purchasing_db,grn_line,GRN-2025-00514|3,R04_BAD_AMOUNT,price or cost <= 0 or missing,1
-purchasing_db,grn_line,GRN-2025-00529|3,R01_MISSING_PRODUCT,item code unknown to every crosswalk,1
-purchasing_db,grn_line,GRN-2025-00558|3,R02_BAD_QTY,quantity <= 0 or missing on a POSTED line,1
-purchasing_db,grn_line,GRN-2025-00559|1,R01_MISSING_PRODUCT,item code unknown to every crosswalk,1
-purchasing_db,grn_line,GRN-2025-00561|3,R04_BAD_AMOUNT,price or cost <= 0 or missing,1
-purchasing_db,grn_line,GRN-2025-00571|1,R02_BAD_QTY,quantity <= 0 or missing on a POSTED line,1
-purchasing_db,grn_line,GRN-2025-00587|1,R03_BAD_DATE,"date missing, unparseable or after the batch cut-off",1
-purchasing_db,grn_line,GRN-2025-00587|2,R03_BAD_DATE,"date missing, unparseable or after the batch cut-off",1
-purchasing_db,grn_line,GRN-2025-00590|3,R04_BAD_AMOUNT,price or cost <= 0 or missing,1
-purchasing_db,grn_line,GRN-2026-00057|1,R03_BAD_DATE,"date missing, unparseable or after the batch cut-off",1
-purchasing_db,grn_line,GRN-2026-00057|2,R03_BAD_DATE,"date missing, unparseable or after the batch cut-off",1
-purchasing_db,grn_line,GRN-2026-00121|1,R02_BAD_QTY,quantity <= 0 or missing on a POSTED line,1
-purchasing_db,grn_line,GRN-2026-00155|1,R04_BAD_AMOUNT,price or cost <= 0 or missing,1
-purchasing_db,grn_line,GRN-2026-00159|1,R04_BAD_AMOUNT,price or cost <= 0 or missing,1
-purchasing_db,grn_line,GRN-2026-00206|2,R02_BAD_QTY,quantity <= 0 or missing on a POSTED line,1
-purchasing_db,grn_line,GRN-2026-00222|2,R01_MISSING_PRODUCT,item code unknown to every crosswalk,1
-purchasing_db,grn_line,GRN-2026-00275|1,R01_MISSING_PRODUCT,item code unknown to every crosswalk,1
-purchasing_db,grn_line,GRN-2026-00298|1,R01_MISSING_PRODUCT,item code unknown to every crosswalk,1
-purchasing_db,grn_line,GRN-2026-00313|1,R03_BAD_DATE,"date missing, unparseable or after the batch cut-off",1
-purchasing_db,grn_line,GRN-2026-00313|2,R03_BAD_DATE,"date missing, unparseable or after the batch cut-off",1
-purchasing_db,grn_line,GRN-2026-00313|3,R03_BAD_DATE,"date missing, unparseable or after the batch cut-off",1
-purchasing_db,grn_line,GRN-2026-00329|1,R03_BAD_DATE,"date missing, unparseable or after the batch cut-off",1
-purchasing_db,grn_line,GRN-2026-00329|2,R03_BAD_DATE,"date missing, unparseable or after the batch cut-off",1
-purchasing_db,grn_line,GRN-2026-00349|1,R03_BAD_DATE,"date missing, unparseable or after the batch cut-off",1
-purchasing_db,grn_line,GRN-2026-00349|2,R03_BAD_DATE,"date missing, unparseable or after the batch cut-off",1
-purchasing_db,grn_line,GRN-2026-00378|2,R01_MISSING_PRODUCT,item code unknown to every crosswalk,1
-purchasing_db,grn_line,GRN-2026-00418|1,R01_MISSING_PRODUCT,item code unknown to every crosswalk,1
+purchasing_db,grn_line,GRN-2024-00010|3,R02_BAD_QTY,quantity <= 0 or missing on a POSTED line,1
+purchasing_db,grn_line,GRN-2024-00075|2,R04_BAD_AMOUNT,price or cost <= 0 or missing,1
+purchasing_db,grn_line,GRN-2024-00081|2,R01_MISSING_PRODUCT,item code unknown to every crosswalk,1
+purchasing_db,grn_line,GRN-2024-00089|1,R01_MISSING_PRODUCT,item code unknown to every crosswalk,1
+purchasing_db,grn_line,GRN-2024-00113|3,R02_BAD_QTY,quantity <= 0 or missing on a POSTED line,1
+purchasing_db,grn_line,GRN-2024-00142|3,R02_BAD_QTY,quantity <= 0 or missing on a POSTED line,1
+purchasing_db,grn_line,GRN-2024-00151|1,R01_MISSING_PRODUCT,item code unknown to every crosswalk,1
+purchasing_db,grn_line,GRN-2024-00152|1,R01_MISSING_PRODUCT,item code unknown to every crosswalk,1
+purchasing_db,grn_line,GRN-2024-00190|2,R01_MISSING_PRODUCT,item code unknown to every crosswalk,1
+purchasing_db,grn_line,GRN-2024-00200|1,R01_MISSING_PRODUCT,item code unknown to every crosswalk,1
+purchasing_db,grn_line,GRN-2024-00203|2,R04_BAD_AMOUNT,price or cost <= 0 or missing,1
+purchasing_db,grn_line,GRN-2024-00213|1,R04_BAD_AMOUNT,price or cost <= 0 or missing,1
+purchasing_db,grn_line,GRN-2024-00225|1,R01_MISSING_PRODUCT,item code unknown to every crosswalk,1
+purchasing_db,grn_line,GRN-2024-00241|2,R04_BAD_AMOUNT,price or cost <= 0 or missing,1
+purchasing_db,grn_line,GRN-2024-00271|3,R01_MISSING_PRODUCT,item code unknown to every crosswalk,1
+purchasing_db,grn_line,GRN-2024-00274|2,R02_BAD_QTY,quantity <= 0 or missing on a POSTED line,1
+purchasing_db,grn_line,GRN-2024-00327|1,R02_BAD_QTY,quantity <= 0 or missing on a POSTED line,1
+purchasing_db,grn_line,GRN-2024-00370|1,R02_BAD_QTY,quantity <= 0 or missing on a POSTED line,1
+purchasing_db,grn_line,GRN-2024-00410|2,R01_MISSING_PRODUCT,item code unknown to every crosswalk,1
+purchasing_db,grn_line,GRN-2024-00419|1,R04_BAD_AMOUNT,price or cost <= 0 or missing,1
+purchasing_db,grn_line,GRN-2024-00426|2,R01_MISSING_PRODUCT,item code unknown to every crosswalk,1
+purchasing_db,grn_line,GRN-2024-00536|1,R01_MISSING_PRODUCT,item code unknown to every crosswalk,1
+purchasing_db,grn_line,GRN-2025-00015|3,R01_MISSING_PRODUCT,item code unknown to every crosswalk,1
+purchasing_db,grn_line,GRN-2025-00033|2,R01_MISSING_PRODUCT,item code unknown to every crosswalk,1
+purchasing_db,grn_line,GRN-2025-00086|2,R02_BAD_QTY,quantity <= 0 or missing on a POSTED line,1
+purchasing_db,grn_line,GRN-2025-00116|3,R04_BAD_AMOUNT,price or cost <= 0 or missing,1
+purchasing_db,grn_line,GRN-2025-00200|2,R01_MISSING_PRODUCT,item code unknown to every crosswalk,1
+purchasing_db,grn_line,GRN-2025-00202|2,R02_BAD_QTY,quantity <= 0 or missing on a POSTED line,1
+purchasing_db,grn_line,GRN-2025-00248|1,R03_BAD_DATE,"date missing, unparseable or after the batch cut-off",1
+purchasing_db,grn_line,GRN-2025-00248|2,R03_BAD_DATE,"date missing, unparseable or after the batch cut-off",1
+purchasing_db,grn_line,GRN-2025-00248|3,R03_BAD_DATE,"date missing, unparseable or after the batch cut-off",1
+purchasing_db,grn_line,GRN-2025-00364|2,R04_BAD_AMOUNT,price or cost <= 0 or missing,1
+purchasing_db,grn_line,GRN-2025-00414|2,R04_BAD_AMOUNT,price or cost <= 0 or missing,1
+purchasing_db,grn_line,GRN-2025-00427|1,R02_BAD_QTY,quantity <= 0 or missing on a POSTED line,1
+purchasing_db,grn_line,GRN-2025-00431|4,R02_BAD_QTY,quantity <= 0 or missing on a POSTED line,1
+purchasing_db,grn_line,GRN-2025-00437|1,R03_BAD_DATE,"date missing, unparseable or after the batch cut-off",1
+purchasing_db,grn_line,GRN-2025-00437|2,R03_BAD_DATE,"date missing, unparseable or after the batch cut-off",1
+purchasing_db,grn_line,GRN-2025-00438|1,R03_BAD_DATE,"date missing, unparseable or after the batch cut-off",1
+purchasing_db,grn_line,GRN-2025-00463|1,R03_BAD_DATE,"date missing, unparseable or after the batch cut-off",1
+purchasing_db,grn_line,GRN-2025-00480|2,R02_BAD_QTY,quantity <= 0 or missing on a POSTED line,1
+purchasing_db,grn_line,GRN-2025-00495|2,R04_BAD_AMOUNT,price or cost <= 0 or missing,1
+purchasing_db,grn_line,GRN-2025-00514|1,R02_BAD_QTY,quantity <= 0 or missing on a POSTED line,1
+purchasing_db,grn_line,GRN-2025-00520|3,R02_BAD_QTY,quantity <= 0 or missing on a POSTED line,1
+purchasing_db,grn_line,GRN-2025-00554|2,R02_BAD_QTY,quantity <= 0 or missing on a POSTED line,1
+purchasing_db,grn_line,GRN-2025-00573|9,R02_BAD_QTY,quantity <= 0 or missing on a POSTED line,1
+purchasing_db,grn_line,GRN-2025-00574|2,R01_MISSING_PRODUCT,item code unknown to every crosswalk,1
+purchasing_db,grn_line,GRN-2025-00616|2,R02_BAD_QTY,quantity <= 0 or missing on a POSTED line,1
+purchasing_db,grn_line,GRN-2026-00014|1,R01_MISSING_PRODUCT,item code unknown to every crosswalk,1
+purchasing_db,grn_line,GRN-2026-00087|3,R04_BAD_AMOUNT,price or cost <= 0 or missing,1
+purchasing_db,grn_line,GRN-2026-00112|1,R01_MISSING_PRODUCT,item code unknown to every crosswalk,1
+purchasing_db,grn_line,GRN-2026-00144|2,R04_BAD_AMOUNT,price or cost <= 0 or missing,1
+purchasing_db,grn_line,GRN-2026-00188|1,R01_MISSING_PRODUCT,item code unknown to every crosswalk,1
+purchasing_db,grn_line,GRN-2026-00194|3,R01_MISSING_PRODUCT,item code unknown to every crosswalk,1
+purchasing_db,grn_line,GRN-2026-00198|2,R04_BAD_AMOUNT,price or cost <= 0 or missing,1
+purchasing_db,grn_line,GRN-2026-00201|1,R03_BAD_DATE,"date missing, unparseable or after the batch cut-off",1
+purchasing_db,grn_line,GRN-2026-00201|2,R03_BAD_DATE,"date missing, unparseable or after the batch cut-off",1
+purchasing_db,grn_line,GRN-2026-00201|3,R03_BAD_DATE,"date missing, unparseable or after the batch cut-off",1
+purchasing_db,grn_line,GRN-2026-00209|1,R01_MISSING_PRODUCT,item code unknown to every crosswalk,1
+purchasing_db,grn_line,GRN-2026-00238|4,R01_MISSING_PRODUCT,item code unknown to every crosswalk,1
+purchasing_db,grn_line,GRN-2026-00264|1,R03_BAD_DATE,"date missing, unparseable or after the batch cut-off",1
+purchasing_db,grn_line,GRN-2026-00264|2,R03_BAD_DATE,"date missing, unparseable or after the batch cut-off",1
+purchasing_db,grn_line,GRN-2026-00264|3,R03_BAD_DATE,"date missing, unparseable or after the batch cut-off",1
+purchasing_db,grn_line,GRN-2026-00266|6,R04_BAD_AMOUNT,price or cost <= 0 or missing,1
+purchasing_db,grn_line,GRN-2026-00312|1,R03_BAD_DATE,"date missing, unparseable or after the batch cut-off",1
+purchasing_db,grn_line,GRN-2026-00316|3,R01_MISSING_PRODUCT,item code unknown to every crosswalk,1
+purchasing_db,grn_line,GRN-2026-00320|2,R02_BAD_QTY,quantity <= 0 or missing on a POSTED line,1
+purchasing_db,grn_line,GRN-2026-00363|3,R01_MISSING_PRODUCT,item code unknown to every crosswalk,1
+purchasing_db,grn_line,GRN-2026-00367|1,R01_MISSING_PRODUCT,item code unknown to every crosswalk,1
+purchasing_db,grn_line,GRN-2026-00394|2,R01_MISSING_PRODUCT,item code unknown to every crosswalk,1
+purchasing_db,grn_line,GRN-2026-00406|1,R02_BAD_QTY,quantity <= 0 or missing on a POSTED line,1
+purchasing_db,grn_line,GRN-2026-00416|1,R04_BAD_AMOUNT,price or cost <= 0 or missing,1
+purchasing_db,grn_line,GRN-2026-00422|2,R01_MISSING_PRODUCT,item code unknown to every crosswalk,1
+purchasing_db,grn_line,GRN-2026-00463|2,R01_MISSING_PRODUCT,item code unknown to every crosswalk,1

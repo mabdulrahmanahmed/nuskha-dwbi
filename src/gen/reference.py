@@ -121,7 +121,7 @@ def build_items(rng, suppliers: pd.DataFrame) -> pd.DataFrame:
     # Pack sizes: tablets per strip (1 for bottles and pieces) and strips (units) per box.
     items["tablets_per_strip"] = [int(rng.choice([10, 10, 10, 14, 20])) if u == "S" else 1
                                   for u in items["unit_letter"]]
-    items["strips_per_box"] = [int(rng.choice([10, 20, 30])) if u == "S" else int(rng.choice([6, 12, 24]))
+    items["strips_per_box"] = [int(rng.choice([5, 10, 10])) if u == "S" else int(rng.choice([6, 6, 12]))
                                for u in items["unit_letter"]]
 
     # Popularity: random within category, scaled so each category gets its target share of lines.

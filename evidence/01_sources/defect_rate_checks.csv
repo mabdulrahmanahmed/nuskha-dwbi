@@ -7,15 +7,15 @@ receipt_line R02_BAD_QTY: count vs 0.4% of 27821 lines (+-10%),111.3,111,PASS
 receipt_line R04_BAD_AMOUNT: count vs 0.3% of 27821 lines (+-10%),83.5,83,PASS
 receipt_line D01_EXACT_DUPLICATE: count vs 0.5% of 27821 lines (+-10%),139.1,139,PASS
 receipt_line LEGIT_REPEAT: count vs 1.0% of 27821 lines (+-10%),278.2,278,PASS
-grn_line R03_BAD_DATE: count vs 0.3% of 4797 lines (+-10%),14.4,14,PASS
-grn_line R01_MISSING_PRODUCT: count vs 0.6% of 4797 lines (+-10%),28.8,29,PASS
-grn_line R02_BAD_QTY: count vs 0.4% of 4797 lines (+-10%),19.2,19,PASS
-grn_line R04_BAD_AMOUNT: count vs 0.3% of 4797 lines (+-10%),14.4,14,PASS
-grn_line D01_EXACT_DUPLICATE: count vs 0.5% of 4797 lines (+-10%),24.0,24,PASS
+grn_line R03_BAD_DATE: count vs 0.3% of 4679 lines (+-10%),14.0,14,PASS
+grn_line R01_MISSING_PRODUCT: count vs 0.6% of 4679 lines (+-10%),28.1,28,PASS
+grn_line R02_BAD_QTY: count vs 0.4% of 4679 lines (+-10%),18.7,19,PASS
+grn_line R04_BAD_AMOUNT: count vs 0.3% of 4679 lines (+-10%),14.0,14,PASS
+grn_line D01_EXACT_DUPLICATE: count vs 0.5% of 4679 lines (+-10%),23.4,23,PASS
 receipt_line U01_UNRESOLVED_CUSTOMER: count vs 1% of 1988 panel lines (+-10%),19.9,20,PASS
 grn_line R06_NO_FX_RATE: a few lines (1-10),1-10,4,PASS
-grn_line D01_EXACT_DUPLICATE: ledger rows = defective rows found in the stage-1 data,24,24,PASS
-grn_line R01_MISSING_PRODUCT: ledger rows = defective rows found in the stage-1 data,29,29,PASS
+grn_line D01_EXACT_DUPLICATE: ledger rows = defective rows found in the stage-1 data,23,23,PASS
+grn_line R01_MISSING_PRODUCT: ledger rows = defective rows found in the stage-1 data,28,28,PASS
 grn_line R02_BAD_QTY: ledger rows = defective rows found in the stage-1 data,19,19,PASS
 grn_line R03_BAD_DATE: ledger rows = defective rows found in the stage-1 data,14,14,PASS
 grn_line R04_BAD_AMOUNT: ledger rows = defective rows found in the stage-1 data,14,14,PASS

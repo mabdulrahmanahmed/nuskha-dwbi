@@ -1587,11 +1587,9 @@ inventory,stock_count,BR-SDR|495|30/09/2026,added,,added,quarter-end count Sep 2
 inventory,stock_count,BR-SDR|496|30/09/2026,added,,added,quarter-end count Sep 2026,yes
 inventory,stock_count,BR-SDR|498|30/09/2026,added,,added,quarter-end count Sep 2026,yes
 inventory,stock_count,BR-SDR|499|30/09/2026,added,,added,quarter-end count Sep 2026,yes
-purchasing_db,goods_receipt,GRN-2025-00116,changed,"status, updated_at",changed,GRN CANCELLED,yes
-purchasing_db,goods_receipt,GRN-2025-00484,changed,"status, updated_at",changed,GRN CANCELLED,yes
-purchasing_db,goods_receipt,GRN-2025-00505,changed,"status, updated_at",changed,GRN CANCELLED,yes
-purchasing_db,goods_receipt,GRN-2026-00464,added,,added,new Sep-Oct GRN,yes
-purchasing_db,goods_receipt,GRN-2026-00465,added,,added,new Sep-Oct GRN,yes
+purchasing_db,goods_receipt,GRN-2024-00248,changed,"status, updated_at",changed,GRN CANCELLED,yes
+purchasing_db,goods_receipt,GRN-2025-00564,changed,"status, updated_at",changed,GRN CANCELLED,yes
+purchasing_db,goods_receipt,GRN-2026-00462,changed,"status, updated_at",changed,GRN CANCELLED,yes
 purchasing_db,goods_receipt,GRN-2026-00466,added,,added,new Sep-Oct GRN,yes
 purchasing_db,goods_receipt,GRN-2026-00467,added,,added,new Sep-Oct GRN,yes
 purchasing_db,goods_receipt,GRN-2026-00468,added,,added,new Sep-Oct GRN,yes
@@ -1713,364 +1711,332 @@ purchasing_db,goods_receipt,GRN-2026-00583,added,,added,new Sep-Oct GRN,yes
 purchasing_db,goods_receipt,GRN-2026-00584,added,,added,new Sep-Oct GRN,yes
 purchasing_db,goods_receipt,GRN-2026-00585,added,,added,new Sep-Oct GRN,yes
 purchasing_db,goods_receipt,GRN-2026-00586,added,,added,new Sep-Oct GRN,yes
-purchasing_db,goods_receipt,GRN-2026-00587,added,,added,new Sep-Oct GRN,yes
-purchasing_db,goods_receipt,GRN-2026-00588,added,,added,new Sep-Oct GRN,yes
-purchasing_db,goods_receipt,GRN-2026-00589,added,,added,new Sep-Oct GRN,yes
-purchasing_db,goods_receipt,GRN-2026-00590,added,,added,new Sep-Oct GRN,yes
-purchasing_db,grn_line,GRN-2025-00116|1,changed,updated_at,changed,GRN CANCELLED (re-saved),yes
-purchasing_db,grn_line,GRN-2025-00116|2,changed,updated_at,changed,GRN CANCELLED (re-saved),yes
-purchasing_db,grn_line,GRN-2025-00484|1,changed,updated_at,changed,GRN CANCELLED (re-saved),yes
-purchasing_db,grn_line,GRN-2025-00505|1,changed,updated_at,changed,GRN CANCELLED (re-saved),yes
-purchasing_db,grn_line,GRN-2025-00505|2,changed,updated_at,changed,GRN CANCELLED (re-saved),yes
-purchasing_db,grn_line,GRN-2025-00505|3,changed,updated_at,changed,GRN CANCELLED (re-saved),yes
-purchasing_db,grn_line,GRN-2025-00505|4,changed,updated_at,changed,GRN CANCELLED (re-saved),yes
-purchasing_db,grn_line,GRN-2025-00505|5,changed,updated_at,changed,GRN CANCELLED (re-saved),yes
-purchasing_db,grn_line,GRN-2025-00505|6,changed,updated_at,changed,GRN CANCELLED (re-saved),yes
-purchasing_db,grn_line,GRN-2026-00464|1,added,,added,new Sep-Oct GRN line,yes
-purchasing_db,grn_line,GRN-2026-00464|2,added,,added,new Sep-Oct GRN line,yes
-purchasing_db,grn_line,GRN-2026-00465|1,added,,added,new Sep-Oct GRN line,yes
-purchasing_db,grn_line,GRN-2026-00465|2,added,,added,new Sep-Oct GRN line,yes
-purchasing_db,grn_line,GRN-2026-00465|3,added,,added,new Sep-Oct GRN line,yes
+purchasing_db,grn_line,GRN-2024-00248|1,changed,updated_at,changed,GRN CANCELLED (re-saved),yes
+purchasing_db,grn_line,GRN-2024-00248|2,changed,updated_at,changed,GRN CANCELLED (re-saved),yes
+purchasing_db,grn_line,GRN-2024-00248|3,changed,updated_at,changed,GRN CANCELLED (re-saved),yes
+purchasing_db,grn_line,GRN-2025-00564|1,changed,updated_at,changed,GRN CANCELLED (re-saved),yes
+purchasing_db,grn_line,GRN-2025-00564|2,changed,updated_at,changed,GRN CANCELLED (re-saved),yes
+purchasing_db,grn_line,GRN-2026-00462|1,changed,updated_at,changed,GRN CANCELLED (re-saved),yes
+purchasing_db,grn_line,GRN-2026-00462|2,changed,updated_at,changed,GRN CANCELLED (re-saved),yes
 purchasing_db,grn_line,GRN-2026-00466|1,added,,added,new Sep-Oct GRN line,yes
+purchasing_db,grn_line,GRN-2026-00466|2,added,,added,new Sep-Oct GRN line,yes
+purchasing_db,grn_line,GRN-2026-00466|3,added,,added,new Sep-Oct GRN line,yes
+purchasing_db,grn_line,GRN-2026-00466|4,added,,added,new Sep-Oct GRN line,yes
+purchasing_db,grn_line,GRN-2026-00466|5,added,,added,new Sep-Oct GRN line,yes
+purchasing_db,grn_line,GRN-2026-00466|6,added,,added,new Sep-Oct GRN line,yes
 purchasing_db,grn_line,GRN-2026-00467|1,added,,added,new Sep-Oct GRN line,yes
 purchasing_db,grn_line,GRN-2026-00467|2,added,,added,new Sep-Oct GRN line,yes
-purchasing_db,grn_line,GRN-2026-00467|3,added,,added,new Sep-Oct GRN line,yes
 purchasing_db,grn_line,GRN-2026-00468|1,added,,added,new Sep-Oct GRN line,yes
 purchasing_db,grn_line,GRN-2026-00468|2,added,,added,new Sep-Oct GRN line,yes
 purchasing_db,grn_line,GRN-2026-00468|3,added,,added,new Sep-Oct GRN line,yes
 purchasing_db,grn_line,GRN-2026-00469|1,added,,added,new Sep-Oct GRN line,yes
 purchasing_db,grn_line,GRN-2026-00469|2,added,,added,new Sep-Oct GRN line,yes
 purchasing_db,grn_line,GRN-2026-00470|1,added,,added,new Sep-Oct GRN line,yes
+purchasing_db,grn_line,GRN-2026-00470|2,added,,added,new Sep-Oct GRN line,yes
+purchasing_db,grn_line,GRN-2026-00470|3,added,,added,new Sep-Oct GRN line,yes
+purchasing_db,grn_line,GRN-2026-00470|4,added,,added,new Sep-Oct GRN line,yes
 purchasing_db,grn_line,GRN-2026-00471|1,added,,added,new Sep-Oct GRN line,yes
 purchasing_db,grn_line,GRN-2026-00471|2,added,,added,new Sep-Oct GRN line,yes
-purchasing_db,grn_line,GRN-2026-00471|3,added,,added,new Sep-Oct GRN line,yes
 purchasing_db,grn_line,GRN-2026-00472|1,added,,added,new Sep-Oct GRN line,yes
 purchasing_db,grn_line,GRN-2026-00472|2,added,,added,new Sep-Oct GRN line,yes
+purchasing_db,grn_line,GRN-2026-00472|3,added,,added,new Sep-Oct GRN line,yes
 purchasing_db,grn_line,GRN-2026-00473|1,added,,added,new Sep-Oct GRN line,yes
 purchasing_db,grn_line,GRN-2026-00473|2,added,,added,new Sep-Oct GRN line,yes
+purchasing_db,grn_line,GRN-2026-00473|3,added,,added,new Sep-Oct GRN line,yes
+purchasing_db,grn_line,GRN-2026-00473|4,added,,added,new Sep-Oct GRN line,yes
+purchasing_db,grn_line,GRN-2026-00473|5,added,,added,new Sep-Oct GRN line,yes
 purchasing_db,grn_line,GRN-2026-00474|1,added,,added,new Sep-Oct GRN line,yes
 purchasing_db,grn_line,GRN-2026-00474|2,added,,added,new Sep-Oct GRN line,yes
-purchasing_db,grn_line,GRN-2026-00474|3,added,,added,new Sep-Oct GRN line,yes
 purchasing_db,grn_line,GRN-2026-00475|1,added,,added,new Sep-Oct GRN line,yes
-purchasing_db,grn_line,GRN-2026-00475|2,added,,added,new Sep-Oct GRN line,yes
-purchasing_db,grn_line,GRN-2026-00475|3,added,,added,new Sep-Oct GRN line,yes
-purchasing_db,grn_line,GRN-2026-00475|4,added,,added,new Sep-Oct GRN line,yes
-purchasing_db,grn_line,GRN-2026-00475|5,added,,added,new Sep-Oct GRN line,yes
 purchasing_db,grn_line,GRN-2026-00476|1,added,,added,new Sep-Oct GRN line,yes
 purchasing_db,grn_line,GRN-2026-00476|2,added,,added,new Sep-Oct GRN line,yes
+purchasing_db,grn_line,GRN-2026-00476|3,added,,added,new Sep-Oct GRN line,yes
+purchasing_db,grn_line,GRN-2026-00476|4,added,,added,new Sep-Oct GRN line,yes
 purchasing_db,grn_line,GRN-2026-00477|1,added,,added,new Sep-Oct GRN line,yes
 purchasing_db,grn_line,GRN-2026-00477|2,added,,added,new Sep-Oct GRN line,yes
 purchasing_db,grn_line,GRN-2026-00477|3,added,,added,new Sep-Oct GRN line,yes
+purchasing_db,grn_line,GRN-2026-00477|4,added,,added,new Sep-Oct GRN line,yes
+purchasing_db,grn_line,GRN-2026-00477|5,added,,added,new Sep-Oct GRN line,yes
 purchasing_db,grn_line,GRN-2026-00478|1,added,,added,new Sep-Oct GRN line,yes
 purchasing_db,grn_line,GRN-2026-00478|2,added,,added,new Sep-Oct GRN line,yes
-purchasing_db,grn_line,GRN-2026-00478|3,added,,added,new Sep-Oct GRN line,yes
 purchasing_db,grn_line,GRN-2026-00479|1,added,,added,new Sep-Oct GRN line,yes
 purchasing_db,grn_line,GRN-2026-00479|2,added,,added,new Sep-Oct GRN line,yes
+purchasing_db,grn_line,GRN-2026-00479|3,added,,added,new Sep-Oct GRN line,yes
 purchasing_db,grn_line,GRN-2026-00480|1,added,,added,new Sep-Oct GRN line,yes
 purchasing_db,grn_line,GRN-2026-00480|2,added,,added,new Sep-Oct GRN line,yes
 purchasing_db,grn_line,GRN-2026-00480|3,added,,added,new Sep-Oct GRN line,yes
-purchasing_db,grn_line,GRN-2026-00480|4,added,,added,new Sep-Oct GRN line,yes
-purchasing_db,grn_line,GRN-2026-00480|5,added,,added,new Sep-Oct GRN line,yes
 purchasing_db,grn_line,GRN-2026-00481|1,added,,added,new Sep-Oct GRN line,yes
 purchasing_db,grn_line,GRN-2026-00481|2,added,,added,new Sep-Oct GRN line,yes
+purchasing_db,grn_line,GRN-2026-00481|3,added,,added,new Sep-Oct GRN line,yes
 purchasing_db,grn_line,GRN-2026-00482|1,added,,added,new Sep-Oct GRN line,yes
 purchasing_db,grn_line,GRN-2026-00482|2,added,,added,new Sep-Oct GRN line,yes
 purchasing_db,grn_line,GRN-2026-00482|3,added,,added,new Sep-Oct GRN line,yes
-purchasing_db,grn_line,GRN-2026-00482|4,added,,added,new Sep-Oct GRN line,yes
 purchasing_db,grn_line,GRN-2026-00483|1,added,,added,new Sep-Oct GRN line,yes
+purchasing_db,grn_line,GRN-2026-00483|2,added,,added,new Sep-Oct GRN line,yes
+purchasing_db,grn_line,GRN-2026-00483|3,added,,added,new Sep-Oct GRN line,yes
+purchasing_db,grn_line,GRN-2026-00483|4,added,,added,new Sep-Oct GRN line,yes
 purchasing_db,grn_line,GRN-2026-00484|1,added,,added,new Sep-Oct GRN line,yes
 purchasing_db,grn_line,GRN-2026-00484|2,added,,added,new Sep-Oct GRN line,yes
 purchasing_db,grn_line,GRN-2026-00484|3,added,,added,new Sep-Oct GRN line,yes
 purchasing_db,grn_line,GRN-2026-00484|4,added,,added,new Sep-Oct GRN line,yes
 purchasing_db,grn_line,GRN-2026-00485|1,added,,added,new Sep-Oct GRN line,yes
 purchasing_db,grn_line,GRN-2026-00485|2,added,,added,new Sep-Oct GRN line,yes
-purchasing_db,grn_line,GRN-2026-00485|3,added,,added,new Sep-Oct GRN line,yes
 purchasing_db,grn_line,GRN-2026-00486|1,added,,added,new Sep-Oct GRN line,yes
 purchasing_db,grn_line,GRN-2026-00486|2,added,,added,new Sep-Oct GRN line,yes
 purchasing_db,grn_line,GRN-2026-00486|3,added,,added,new Sep-Oct GRN line,yes
 purchasing_db,grn_line,GRN-2026-00487|1,added,,added,new Sep-Oct GRN line,yes
 purchasing_db,grn_line,GRN-2026-00487|2,added,,added,new Sep-Oct GRN line,yes
-purchasing_db,grn_line,GRN-2026-00487|3,added,,added,new Sep-Oct GRN line,yes
 purchasing_db,grn_line,GRN-2026-00488|1,added,,added,new Sep-Oct GRN line,yes
 purchasing_db,grn_line,GRN-2026-00488|2,added,,added,new Sep-Oct GRN line,yes
 purchasing_db,grn_line,GRN-2026-00488|3,added,,added,new Sep-Oct GRN line,yes
 purchasing_db,grn_line,GRN-2026-00488|4,added,,added,new Sep-Oct GRN line,yes
-purchasing_db,grn_line,GRN-2026-00488|5,added,,added,new Sep-Oct GRN line,yes
 purchasing_db,grn_line,GRN-2026-00489|1,added,,added,new Sep-Oct GRN line,yes
-purchasing_db,grn_line,GRN-2026-00489|2,added,,added,new Sep-Oct GRN line,yes
-purchasing_db,grn_line,GRN-2026-00489|3,added,,added,new Sep-Oct GRN line,yes
-purchasing_db,grn_line,GRN-2026-00489|4,added,,added,new Sep-Oct GRN line,yes
 purchasing_db,grn_line,GRN-2026-00490|1,added,,added,new Sep-Oct GRN line,yes
-purchasing_db,grn_line,GRN-2026-00490|2,added,,added,new Sep-Oct GRN line,yes
-purchasing_db,grn_line,GRN-2026-00490|3,added,,added,new Sep-Oct GRN line,yes
 purchasing_db,grn_line,GRN-2026-00491|1,added,,added,new Sep-Oct GRN line,yes
-purchasing_db,grn_line,GRN-2026-00491|2,added,,added,new Sep-Oct GRN line,yes
 purchasing_db,grn_line,GRN-2026-00492|1,added,,added,new Sep-Oct GRN line,yes
-purchasing_db,grn_line,GRN-2026-00492|2,added,,added,new Sep-Oct GRN line,yes
-purchasing_db,grn_line,GRN-2026-00492|3,added,,added,new Sep-Oct GRN line,yes
 purchasing_db,grn_line,GRN-2026-00493|1,added,,added,new Sep-Oct GRN line,yes
-purchasing_db,grn_line,GRN-2026-00493|2,added,,added,new Sep-Oct GRN line,yes
-purchasing_db,grn_line,GRN-2026-00493|3,added,,added,new Sep-Oct GRN line,yes
-purchasing_db,grn_line,GRN-2026-00493|4,added,,added,new Sep-Oct GRN line,yes
-purchasing_db,grn_line,GRN-2026-00493|5,added,,added,new Sep-Oct GRN line,yes
-purchasing_db,grn_line,GRN-2026-00493|6,added,,added,new Sep-Oct GRN line,yes
-purchasing_db,grn_line,GRN-2026-00493|7,added,,added,new Sep-Oct GRN line,yes
 purchasing_db,grn_line,GRN-2026-00494|1,added,,added,new Sep-Oct GRN line,yes
-purchasing_db,grn_line,GRN-2026-00494|2,added,,added,new Sep-Oct GRN line,yes
-purchasing_db,grn_line,GRN-2026-00494|3,added,,added,new Sep-Oct GRN line,yes
-purchasing_db,grn_line,GRN-2026-00494|4,added,,added,new Sep-Oct GRN line,yes
 purchasing_db,grn_line,GRN-2026-00495|1,added,,added,new Sep-Oct GRN line,yes
 purchasing_db,grn_line,GRN-2026-00495|2,added,,added,new Sep-Oct GRN line,yes
 purchasing_db,grn_line,GRN-2026-00496|1,added,,added,new Sep-Oct GRN line,yes
+purchasing_db,grn_line,GRN-2026-00496|2,added,,added,new Sep-Oct GRN line,yes
 purchasing_db,grn_line,GRN-2026-00497|1,added,,added,new Sep-Oct GRN line,yes
 purchasing_db,grn_line,GRN-2026-00497|2,added,,added,new Sep-Oct GRN line,yes
 purchasing_db,grn_line,GRN-2026-00497|3,added,,added,new Sep-Oct GRN line,yes
 purchasing_db,grn_line,GRN-2026-00498|1,added,,added,new Sep-Oct GRN line,yes
 purchasing_db,grn_line,GRN-2026-00498|2,added,,added,new Sep-Oct GRN line,yes
-purchasing_db,grn_line,GRN-2026-00498|3,added,,added,new Sep-Oct GRN line,yes
 purchasing_db,grn_line,GRN-2026-00499|1,added,,added,new Sep-Oct GRN line,yes
-purchasing_db,grn_line,GRN-2026-00499|2,added,,added,new Sep-Oct GRN line,yes
-purchasing_db,grn_line,GRN-2026-00499|3,added,,added,new Sep-Oct GRN line,yes
 purchasing_db,grn_line,GRN-2026-00500|1,added,,added,new Sep-Oct GRN line,yes
 purchasing_db,grn_line,GRN-2026-00500|2,added,,added,new Sep-Oct GRN line,yes
 purchasing_db,grn_line,GRN-2026-00500|3,added,,added,new Sep-Oct GRN line,yes
 purchasing_db,grn_line,GRN-2026-00500|4,added,,added,new Sep-Oct GRN line,yes
 purchasing_db,grn_line,GRN-2026-00501|1,added,,added,new Sep-Oct GRN line,yes
+purchasing_db,grn_line,GRN-2026-00501|2,added,,added,new Sep-Oct GRN line,yes
 purchasing_db,grn_line,GRN-2026-00502|1,added,,added,new Sep-Oct GRN line,yes
 purchasing_db,grn_line,GRN-2026-00502|2,added,,added,new Sep-Oct GRN line,yes
-purchasing_db,grn_line,GRN-2026-00502|3,added,,added,new Sep-Oct GRN line,yes
 purchasing_db,grn_line,GRN-2026-00503|1,added,,added,new Sep-Oct GRN line,yes
-purchasing_db,grn_line,GRN-2026-00503|2,added,,added,new Sep-Oct GRN line,yes
-purchasing_db,grn_line,GRN-2026-00503|3,added,,added,new Sep-Oct GRN line,yes
-purchasing_db,grn_line,GRN-2026-00503|4,added,,added,new Sep-Oct GRN line,yes
 purchasing_db,grn_line,GRN-2026-00504|1,added,,added,new Sep-Oct GRN line,yes
-purchasing_db,grn_line,GRN-2026-00504|2,added,,added,new Sep-Oct GRN line,yes
 purchasing_db,grn_line,GRN-2026-00505|1,added,,added,new Sep-Oct GRN line,yes
 purchasing_db,grn_line,GRN-2026-00505|2,added,,added,new Sep-Oct GRN line,yes
 purchasing_db,grn_line,GRN-2026-00505|3,added,,added,new Sep-Oct GRN line,yes
-purchasing_db,grn_line,GRN-2026-00505|4,added,,added,new Sep-Oct GRN line,yes
 purchasing_db,grn_line,GRN-2026-00506|1,added,,added,new Sep-Oct GRN line,yes
 purchasing_db,grn_line,GRN-2026-00506|2,added,,added,new Sep-Oct GRN line,yes
 purchasing_db,grn_line,GRN-2026-00507|1,added,,added,new Sep-Oct GRN line,yes
+purchasing_db,grn_line,GRN-2026-00507|2,added,,added,new Sep-Oct GRN line,yes
 purchasing_db,grn_line,GRN-2026-00508|1,added,,added,new Sep-Oct GRN line,yes
 purchasing_db,grn_line,GRN-2026-00508|2,added,,added,new Sep-Oct GRN line,yes
+purchasing_db,grn_line,GRN-2026-00508|3,added,,added,new Sep-Oct GRN line,yes
 purchasing_db,grn_line,GRN-2026-00509|1,added,,added,new Sep-Oct GRN line,yes
 purchasing_db,grn_line,GRN-2026-00509|2,added,,added,new Sep-Oct GRN line,yes
 purchasing_db,grn_line,GRN-2026-00509|3,added,,added,new Sep-Oct GRN line,yes
+purchasing_db,grn_line,GRN-2026-00509|4,added,,added,new Sep-Oct GRN line,yes
 purchasing_db,grn_line,GRN-2026-00510|1,added,,added,new Sep-Oct GRN line,yes
-purchasing_db,grn_line,GRN-2026-00510|2,added,,added,new Sep-Oct GRN line,yes
-purchasing_db,grn_line,GRN-2026-00510|3,added,,added,new Sep-Oct GRN line,yes
 purchasing_db,grn_line,GRN-2026-00511|1,added,,added,new Sep-Oct GRN line,yes
 purchasing_db,grn_line,GRN-2026-00511|2,added,,added,new Sep-Oct GRN line,yes
 purchasing_db,grn_line,GRN-2026-00511|3,added,,added,new Sep-Oct GRN line,yes
 purchasing_db,grn_line,GRN-2026-00512|1,added,,added,new Sep-Oct GRN line,yes
 purchasing_db,grn_line,GRN-2026-00512|2,added,,added,new Sep-Oct GRN line,yes
 purchasing_db,grn_line,GRN-2026-00512|3,added,,added,new Sep-Oct GRN line,yes
-purchasing_db,grn_line,GRN-2026-00512|4,added,,added,new Sep-Oct GRN line,yes
 purchasing_db,grn_line,GRN-2026-00513|1,added,,added,new Sep-Oct GRN line,yes
 purchasing_db,grn_line,GRN-2026-00513|2,added,,added,new Sep-Oct GRN line,yes
+purchasing_db,grn_line,GRN-2026-00513|3,added,,added,new Sep-Oct GRN line,yes
+purchasing_db,grn_line,GRN-2026-00513|4,added,,added,new Sep-Oct GRN line,yes
 purchasing_db,grn_line,GRN-2026-00514|1,added,,added,new Sep-Oct GRN line,yes
 purchasing_db,grn_line,GRN-2026-00514|2,added,,added,new Sep-Oct GRN line,yes
 purchasing_db,grn_line,GRN-2026-00514|3,added,,added,new Sep-Oct GRN line,yes
+purchasing_db,grn_line,GRN-2026-00514|4,added,,added,new Sep-Oct GRN line,yes
 purchasing_db,grn_line,GRN-2026-00515|1,added,,added,new Sep-Oct GRN line,yes
+purchasing_db,grn_line,GRN-2026-00515|2,added,,added,new Sep-Oct GRN line,yes
 purchasing_db,grn_line,GRN-2026-00516|1,added,,added,new Sep-Oct GRN line,yes
 purchasing_db,grn_line,GRN-2026-00516|2,added,,added,new Sep-Oct GRN line,yes
 purchasing_db,grn_line,GRN-2026-00516|3,added,,added,new Sep-Oct GRN line,yes
 purchasing_db,grn_line,GRN-2026-00517|1,added,,added,new Sep-Oct GRN line,yes
 purchasing_db,grn_line,GRN-2026-00517|2,added,,added,new Sep-Oct GRN line,yes
-purchasing_db,grn_line,GRN-2026-00517|3,added,,added,new Sep-Oct GRN line,yes
 purchasing_db,grn_line,GRN-2026-00518|1,added,,added,new Sep-Oct GRN line,yes
 purchasing_db,grn_line,GRN-2026-00518|2,added,,added,new Sep-Oct GRN line,yes
+purchasing_db,grn_line,GRN-2026-00518|3,added,,added,new Sep-Oct GRN line,yes
 purchasing_db,grn_line,GRN-2026-00519|1,added,,added,new Sep-Oct GRN line,yes
 purchasing_db,grn_line,GRN-2026-00519|2,added,,added,new Sep-Oct GRN line,yes
 purchasing_db,grn_line,GRN-2026-00520|1,added,,added,new Sep-Oct GRN line,yes
-purchasing_db,grn_line,GRN-2026-00520|2,added,,added,new Sep-Oct GRN line,yes
 purchasing_db,grn_line,GRN-2026-00521|1,added,,added,new Sep-Oct GRN line,yes
 purchasing_db,grn_line,GRN-2026-00521|2,added,,added,new Sep-Oct GRN line,yes
+purchasing_db,grn_line,GRN-2026-00521|3,added,,added,new Sep-Oct GRN line,yes
 purchasing_db,grn_line,GRN-2026-00522|1,added,,added,new Sep-Oct GRN line,yes
+purchasing_db,grn_line,GRN-2026-00522|2,added,,added,new Sep-Oct GRN line,yes
 purchasing_db,grn_line,GRN-2026-00523|1,added,,added,new Sep-Oct GRN line,yes
 purchasing_db,grn_line,GRN-2026-00523|2,added,,added,new Sep-Oct GRN line,yes
 purchasing_db,grn_line,GRN-2026-00523|3,added,,added,new Sep-Oct GRN line,yes
 purchasing_db,grn_line,GRN-2026-00523|4,added,,added,new Sep-Oct GRN line,yes
-purchasing_db,grn_line,GRN-2026-00523|5,added,,added,new Sep-Oct GRN line,yes
 purchasing_db,grn_line,GRN-2026-00524|1,added,,added,new Sep-Oct GRN line,yes
 purchasing_db,grn_line,GRN-2026-00524|2,added,,added,new Sep-Oct GRN line,yes
 purchasing_db,grn_line,GRN-2026-00524|3,added,,added,new Sep-Oct GRN line,yes
+purchasing_db,grn_line,GRN-2026-00524|4,added,,added,new Sep-Oct GRN line,yes
+purchasing_db,grn_line,GRN-2026-00524|5,added,,added,new Sep-Oct GRN line,yes
+purchasing_db,grn_line,GRN-2026-00524|6,added,,added,new Sep-Oct GRN line,yes
 purchasing_db,grn_line,GRN-2026-00525|1,added,,added,new Sep-Oct GRN line,yes
 purchasing_db,grn_line,GRN-2026-00525|2,added,,added,new Sep-Oct GRN line,yes
 purchasing_db,grn_line,GRN-2026-00525|3,added,,added,new Sep-Oct GRN line,yes
 purchasing_db,grn_line,GRN-2026-00526|1,added,,added,new Sep-Oct GRN line,yes
 purchasing_db,grn_line,GRN-2026-00526|2,added,,added,new Sep-Oct GRN line,yes
 purchasing_db,grn_line,GRN-2026-00526|3,added,,added,new Sep-Oct GRN line,yes
+purchasing_db,grn_line,GRN-2026-00526|4,added,,added,new Sep-Oct GRN line,yes
 purchasing_db,grn_line,GRN-2026-00527|1,added,,added,new Sep-Oct GRN line,yes
 purchasing_db,grn_line,GRN-2026-00527|2,added,,added,new Sep-Oct GRN line,yes
+purchasing_db,grn_line,GRN-2026-00527|3,added,,added,new Sep-Oct GRN line,yes
 purchasing_db,grn_line,GRN-2026-00528|1,added,,added,new Sep-Oct GRN line,yes
 purchasing_db,grn_line,GRN-2026-00528|2,added,,added,new Sep-Oct GRN line,yes
 purchasing_db,grn_line,GRN-2026-00528|3,added,,added,new Sep-Oct GRN line,yes
 purchasing_db,grn_line,GRN-2026-00528|4,added,,added,new Sep-Oct GRN line,yes
 purchasing_db,grn_line,GRN-2026-00529|1,added,,added,new Sep-Oct GRN line,yes
 purchasing_db,grn_line,GRN-2026-00529|2,added,,added,new Sep-Oct GRN line,yes
+purchasing_db,grn_line,GRN-2026-00529|3,added,,added,new Sep-Oct GRN line,yes
 purchasing_db,grn_line,GRN-2026-00530|1,added,,added,new Sep-Oct GRN line,yes
-purchasing_db,grn_line,GRN-2026-00530|2,added,,added,new Sep-Oct GRN line,yes
-purchasing_db,grn_line,GRN-2026-00530|3,added,,added,new Sep-Oct GRN line,yes
 purchasing_db,grn_line,GRN-2026-00531|1,added,,added,new Sep-Oct GRN line,yes
 purchasing_db,grn_line,GRN-2026-00531|2,added,,added,new Sep-Oct GRN line,yes
+purchasing_db,grn_line,GRN-2026-00531|3,added,,added,new Sep-Oct GRN line,yes
 purchasing_db,grn_line,GRN-2026-00532|1,added,,added,new Sep-Oct GRN line,yes
+purchasing_db,grn_line,GRN-2026-00532|2,added,,added,new Sep-Oct GRN line,yes
+purchasing_db,grn_line,GRN-2026-00532|3,added,,added,new Sep-Oct GRN line,yes
 purchasing_db,grn_line,GRN-2026-00533|1,added,,added,new Sep-Oct GRN line,yes
+purchasing_db,grn_line,GRN-2026-00533|2,added,,added,new Sep-Oct GRN line,yes
+purchasing_db,grn_line,GRN-2026-00533|3,added,,added,new Sep-Oct GRN line,yes
 purchasing_db,grn_line,GRN-2026-00534|1,added,,added,new Sep-Oct GRN line,yes
 purchasing_db,grn_line,GRN-2026-00534|2,added,,added,new Sep-Oct GRN line,yes
+purchasing_db,grn_line,GRN-2026-00534|3,added,,added,new Sep-Oct GRN line,yes
+purchasing_db,grn_line,GRN-2026-00534|4,added,,added,new Sep-Oct GRN line,yes
+purchasing_db,grn_line,GRN-2026-00534|5,added,,added,new Sep-Oct GRN line,yes
 purchasing_db,grn_line,GRN-2026-00535|1,added,,added,new Sep-Oct GRN line,yes
 purchasing_db,grn_line,GRN-2026-00535|2,added,,added,new Sep-Oct GRN line,yes
+purchasing_db,grn_line,GRN-2026-00535|3,added,,added,new Sep-Oct GRN line,yes
 purchasing_db,grn_line,GRN-2026-00536|1,added,,added,new Sep-Oct GRN line,yes
+purchasing_db,grn_line,GRN-2026-00536|2,added,,added,new Sep-Oct GRN line,yes
+purchasing_db,grn_line,GRN-2026-00536|3,added,,added,new Sep-Oct GRN line,yes
 purchasing_db,grn_line,GRN-2026-00537|1,added,,added,new Sep-Oct GRN line,yes
 purchasing_db,grn_line,GRN-2026-00537|2,added,,added,new Sep-Oct GRN line,yes
+purchasing_db,grn_line,GRN-2026-00537|3,added,,added,new Sep-Oct GRN line,yes
+purchasing_db,grn_line,GRN-2026-00537|4,added,,added,new Sep-Oct GRN line,yes
 purchasing_db,grn_line,GRN-2026-00538|1,added,,added,new Sep-Oct GRN line,yes
 purchasing_db,grn_line,GRN-2026-00538|2,added,,added,new Sep-Oct GRN line,yes
-purchasing_db,grn_line,GRN-2026-00538|3,added,,added,new Sep-Oct GRN line,yes
 purchasing_db,grn_line,GRN-2026-00539|1,added,,added,new Sep-Oct GRN line,yes
 purchasing_db,grn_line,GRN-2026-00539|2,added,,added,new Sep-Oct GRN line,yes
-purchasing_db,grn_line,GRN-2026-00539|3,added,,added,new Sep-Oct GRN line,yes
-purchasing_db,grn_line,GRN-2026-00539|4,added,,added,new Sep-Oct GRN line,yes
 purchasing_db,grn_line,GRN-2026-00540|1,added,,added,new Sep-Oct GRN line,yes
 purchasing_db,grn_line,GRN-2026-00540|2,added,,added,new Sep-Oct GRN line,yes
 purchasing_db,grn_line,GRN-2026-00540|3,added,,added,new Sep-Oct GRN line,yes
 purchasing_db,grn_line,GRN-2026-00540|4,added,,added,new Sep-Oct GRN line,yes
-purchasing_db,grn_line,GRN-2026-00540|5,added,,added,new Sep-Oct GRN line,yes
 purchasing_db,grn_line,GRN-2026-00541|1,added,,added,new Sep-Oct GRN line,yes
 purchasing_db,grn_line,GRN-2026-00541|2,added,,added,new Sep-Oct GRN line,yes
-purchasing_db,grn_line,GRN-2026-00541|3,added,,added,new Sep-Oct GRN line,yes
 purchasing_db,grn_line,GRN-2026-00542|1,added,,added,new Sep-Oct GRN line,yes
+purchasing_db,grn_line,GRN-2026-00542|2,added,,added,new Sep-Oct GRN line,yes
 purchasing_db,grn_line,GRN-2026-00543|1,added,,added,new Sep-Oct GRN line,yes
 purchasing_db,grn_line,GRN-2026-00543|2,added,,added,new Sep-Oct GRN line,yes
-purchasing_db,grn_line,GRN-2026-00543|3,added,,added,new Sep-Oct GRN line,yes
 purchasing_db,grn_line,GRN-2026-00544|1,added,,added,new Sep-Oct GRN line,yes
 purchasing_db,grn_line,GRN-2026-00544|2,added,,added,new Sep-Oct GRN line,yes
-purchasing_db,grn_line,GRN-2026-00544|3,added,,added,new Sep-Oct GRN line,yes
 purchasing_db,grn_line,GRN-2026-00545|1,added,,added,new Sep-Oct GRN line,yes
 purchasing_db,grn_line,GRN-2026-00545|2,added,,added,new Sep-Oct GRN line,yes
-purchasing_db,grn_line,GRN-2026-00545|3,added,,added,new Sep-Oct GRN line,yes
 purchasing_db,grn_line,GRN-2026-00546|1,added,,added,new Sep-Oct GRN line,yes
+purchasing_db,grn_line,GRN-2026-00546|2,added,,added,new Sep-Oct GRN line,yes
 purchasing_db,grn_line,GRN-2026-00547|1,added,,added,new Sep-Oct GRN line,yes
-purchasing_db,grn_line,GRN-2026-00547|2,added,,added,new Sep-Oct GRN line,yes
 purchasing_db,grn_line,GRN-2026-00548|1,added,,added,new Sep-Oct GRN line,yes
-purchasing_db,grn_line,GRN-2026-00548|2,added,,added,new Sep-Oct GRN line,yes
-purchasing_db,grn_line,GRN-2026-00548|3,added,,added,new Sep-Oct GRN line,yes
-purchasing_db,grn_line,GRN-2026-00548|4,added,,added,new Sep-Oct GRN line,yes
 purchasing_db,grn_line,GRN-2026-00549|1,added,,added,new Sep-Oct GRN line,yes
+purchasing_db,grn_line,GRN-2026-00549|2,added,,added,new Sep-Oct GRN line,yes
 purchasing_db,grn_line,GRN-2026-00550|1,added,,added,new Sep-Oct GRN line,yes
 purchasing_db,grn_line,GRN-2026-00550|2,added,,added,new Sep-Oct GRN line,yes
 purchasing_db,grn_line,GRN-2026-00550|3,added,,added,new Sep-Oct GRN line,yes
 purchasing_db,grn_line,GRN-2026-00550|4,added,,added,new Sep-Oct GRN line,yes
+purchasing_db,grn_line,GRN-2026-00550|5,added,,added,new Sep-Oct GRN line,yes
 purchasing_db,grn_line,GRN-2026-00551|1,added,,added,new Sep-Oct GRN line,yes
-purchasing_db,grn_line,GRN-2026-00551|2,added,,added,new Sep-Oct GRN line,yes
-purchasing_db,grn_line,GRN-2026-00551|3,added,,added,new Sep-Oct GRN line,yes
 purchasing_db,grn_line,GRN-2026-00552|1,added,,added,new Sep-Oct GRN line,yes
 purchasing_db,grn_line,GRN-2026-00552|2,added,,added,new Sep-Oct GRN line,yes
 purchasing_db,grn_line,GRN-2026-00552|3,added,,added,new Sep-Oct GRN line,yes
+purchasing_db,grn_line,GRN-2026-00552|4,added,,added,new Sep-Oct GRN line,yes
+purchasing_db,grn_line,GRN-2026-00552|5,added,,added,new Sep-Oct GRN line,yes
+purchasing_db,grn_line,GRN-2026-00552|6,added,,added,new Sep-Oct GRN line,yes
 purchasing_db,grn_line,GRN-2026-00553|1,added,,added,new Sep-Oct GRN line,yes
 purchasing_db,grn_line,GRN-2026-00553|2,added,,added,new Sep-Oct GRN line,yes
 purchasing_db,grn_line,GRN-2026-00554|1,added,,added,new Sep-Oct GRN line,yes
 purchasing_db,grn_line,GRN-2026-00554|2,added,,added,new Sep-Oct GRN line,yes
 purchasing_db,grn_line,GRN-2026-00554|3,added,,added,new Sep-Oct GRN line,yes
+purchasing_db,grn_line,GRN-2026-00554|4,added,,added,new Sep-Oct GRN line,yes
 purchasing_db,grn_line,GRN-2026-00555|1,added,,added,new Sep-Oct GRN line,yes
 purchasing_db,grn_line,GRN-2026-00555|2,added,,added,new Sep-Oct GRN line,yes
-purchasing_db,grn_line,GRN-2026-00555|3,added,,added,new Sep-Oct GRN line,yes
-purchasing_db,grn_line,GRN-2026-00555|4,added,,added,new Sep-Oct GRN line,yes
-purchasing_db,grn_line,GRN-2026-00555|5,added,,added,new Sep-Oct GRN line,yes
 purchasing_db,grn_line,GRN-2026-00556|1,added,,added,new Sep-Oct GRN line,yes
 purchasing_db,grn_line,GRN-2026-00556|2,added,,added,new Sep-Oct GRN line,yes
 purchasing_db,grn_line,GRN-2026-00556|3,added,,added,new Sep-Oct GRN line,yes
 purchasing_db,grn_line,GRN-2026-00557|1,added,,added,new Sep-Oct GRN line,yes
 purchasing_db,grn_line,GRN-2026-00557|2,added,,added,new Sep-Oct GRN line,yes
 purchasing_db,grn_line,GRN-2026-00557|3,added,,added,new Sep-Oct GRN line,yes
+purchasing_db,grn_line,GRN-2026-00557|4,added,,added,new Sep-Oct GRN line,yes
 purchasing_db,grn_line,GRN-2026-00558|1,added,,added,new Sep-Oct GRN line,yes
 purchasing_db,grn_line,GRN-2026-00558|2,added,,added,new Sep-Oct GRN line,yes
 purchasing_db,grn_line,GRN-2026-00558|3,added,,added,new Sep-Oct GRN line,yes
 purchasing_db,grn_line,GRN-2026-00558|4,added,,added,new Sep-Oct GRN line,yes
 purchasing_db,grn_line,GRN-2026-00559|1,added,,added,new Sep-Oct GRN line,yes
 purchasing_db,grn_line,GRN-2026-00559|2,added,,added,new Sep-Oct GRN line,yes
-purchasing_db,grn_line,GRN-2026-00559|3,added,,added,new Sep-Oct GRN line,yes
-purchasing_db,grn_line,GRN-2026-00559|4,added,,added,new Sep-Oct GRN line,yes
 purchasing_db,grn_line,GRN-2026-00560|1,added,,added,new Sep-Oct GRN line,yes
+purchasing_db,grn_line,GRN-2026-00560|2,added,,added,new Sep-Oct GRN line,yes
 purchasing_db,grn_line,GRN-2026-00561|1,added,,added,new Sep-Oct GRN line,yes
 purchasing_db,grn_line,GRN-2026-00561|2,added,,added,new Sep-Oct GRN line,yes
 purchasing_db,grn_line,GRN-2026-00562|1,added,,added,new Sep-Oct GRN line,yes
 purchasing_db,grn_line,GRN-2026-00562|2,added,,added,new Sep-Oct GRN line,yes
+purchasing_db,grn_line,GRN-2026-00562|3,added,,added,new Sep-Oct GRN line,yes
 purchasing_db,grn_line,GRN-2026-00563|1,added,,added,new Sep-Oct GRN line,yes
 purchasing_db,grn_line,GRN-2026-00563|2,added,,added,new Sep-Oct GRN line,yes
 purchasing_db,grn_line,GRN-2026-00563|3,added,,added,new Sep-Oct GRN line,yes
 purchasing_db,grn_line,GRN-2026-00564|1,added,,added,new Sep-Oct GRN line,yes
 purchasing_db,grn_line,GRN-2026-00564|2,added,,added,new Sep-Oct GRN line,yes
 purchasing_db,grn_line,GRN-2026-00565|1,added,,added,new Sep-Oct GRN line,yes
+purchasing_db,grn_line,GRN-2026-00565|2,added,,added,new Sep-Oct GRN line,yes
+purchasing_db,grn_line,GRN-2026-00565|3,added,,added,new Sep-Oct GRN line,yes
 purchasing_db,grn_line,GRN-2026-00566|1,added,,added,new Sep-Oct GRN line,yes
 purchasing_db,grn_line,GRN-2026-00566|2,added,,added,new Sep-Oct GRN line,yes
+purchasing_db,grn_line,GRN-2026-00566|3,added,,added,new Sep-Oct GRN line,yes
 purchasing_db,grn_line,GRN-2026-00567|1,added,,added,new Sep-Oct GRN line,yes
-purchasing_db,grn_line,GRN-2026-00567|2,added,,added,new Sep-Oct GRN line,yes
 purchasing_db,grn_line,GRN-2026-00568|1,added,,added,new Sep-Oct GRN line,yes
-purchasing_db,grn_line,GRN-2026-00568|2,added,,added,new Sep-Oct GRN line,yes
 purchasing_db,grn_line,GRN-2026-00569|1,added,,added,new Sep-Oct GRN line,yes
-purchasing_db,grn_line,GRN-2026-00569|2,added,,added,new Sep-Oct GRN line,yes
-purchasing_db,grn_line,GRN-2026-00569|3,added,,added,new Sep-Oct GRN line,yes
 purchasing_db,grn_line,GRN-2026-00570|1,added,,added,new Sep-Oct GRN line,yes
+purchasing_db,grn_line,GRN-2026-00570|2,added,,added,new Sep-Oct GRN line,yes
+purchasing_db,grn_line,GRN-2026-00570|3,added,,added,new Sep-Oct GRN line,yes
+purchasing_db,grn_line,GRN-2026-00570|4,added,,added,new Sep-Oct GRN line,yes
 purchasing_db,grn_line,GRN-2026-00571|1,added,,added,new Sep-Oct GRN line,yes
 purchasing_db,grn_line,GRN-2026-00571|2,added,,added,new Sep-Oct GRN line,yes
+purchasing_db,grn_line,GRN-2026-00571|3,added,,added,new Sep-Oct GRN line,yes
+purchasing_db,grn_line,GRN-2026-00571|4,added,,added,new Sep-Oct GRN line,yes
 purchasing_db,grn_line,GRN-2026-00572|1,added,,added,new Sep-Oct GRN line,yes
 purchasing_db,grn_line,GRN-2026-00572|2,added,,added,new Sep-Oct GRN line,yes
 purchasing_db,grn_line,GRN-2026-00572|3,added,,added,new Sep-Oct GRN line,yes
+purchasing_db,grn_line,GRN-2026-00572|4,added,,added,new Sep-Oct GRN line,yes
+purchasing_db,grn_line,GRN-2026-00572|5,added,,added,new Sep-Oct GRN line,yes
 purchasing_db,grn_line,GRN-2026-00573|1,added,,added,new Sep-Oct GRN line,yes
 purchasing_db,grn_line,GRN-2026-00573|2,added,,added,new Sep-Oct GRN line,yes
-purchasing_db,grn_line,GRN-2026-00573|3,added,,added,new Sep-Oct GRN line,yes
-purchasing_db,grn_line,GRN-2026-00573|4,added,,added,new Sep-Oct GRN line,yes
 purchasing_db,grn_line,GRN-2026-00574|1,added,,added,new Sep-Oct GRN line,yes
 purchasing_db,grn_line,GRN-2026-00574|2,added,,added,new Sep-Oct GRN line,yes
+purchasing_db,grn_line,GRN-2026-00574|3,added,,added,new Sep-Oct GRN line,yes
 purchasing_db,grn_line,GRN-2026-00575|1,added,,added,new Sep-Oct GRN line,yes
 purchasing_db,grn_line,GRN-2026-00575|2,added,,added,new Sep-Oct GRN line,yes
-purchasing_db,grn_line,GRN-2026-00575|3,added,,added,new Sep-Oct GRN line,yes
 purchasing_db,grn_line,GRN-2026-00576|1,added,,added,new Sep-Oct GRN line,yes
+purchasing_db,grn_line,GRN-2026-00576|2,added,,added,new Sep-Oct GRN line,yes
 purchasing_db,grn_line,GRN-2026-00577|1,added,,added,new Sep-Oct GRN line,yes
-purchasing_db,grn_line,GRN-2026-00577|2,added,,added,new Sep-Oct GRN line,yes
 purchasing_db,grn_line,GRN-2026-00578|1,added,,added,new Sep-Oct GRN line,yes
 purchasing_db,grn_line,GRN-2026-00578|2,added,,added,new Sep-Oct GRN line,yes
-purchasing_db,grn_line,GRN-2026-00578|3,added,,added,new Sep-Oct GRN line,yes
 purchasing_db,grn_line,GRN-2026-00579|1,added,,added,new Sep-Oct GRN line,yes
 purchasing_db,grn_line,GRN-2026-00579|2,added,,added,new Sep-Oct GRN line,yes
-purchasing_db,grn_line,GRN-2026-00579|3,added,,added,new Sep-Oct GRN line,yes
-purchasing_db,grn_line,GRN-2026-00579|4,added,,added,new Sep-Oct GRN line,yes
 purchasing_db,grn_line,GRN-2026-00580|1,added,,added,new Sep-Oct GRN line,yes
+purchasing_db,grn_line,GRN-2026-00580|2,added,,added,new Sep-Oct GRN line,yes
+purchasing_db,grn_line,GRN-2026-00580|3,added,,added,new Sep-Oct GRN line,yes
+purchasing_db,grn_line,GRN-2026-00580|4,added,,added,new Sep-Oct GRN line,yes
+purchasing_db,grn_line,GRN-2026-00580|5,added,,added,new Sep-Oct GRN line,yes
 purchasing_db,grn_line,GRN-2026-00581|1,added,,added,new Sep-Oct GRN line,yes
 purchasing_db,grn_line,GRN-2026-00581|2,added,,added,new Sep-Oct GRN line,yes
-purchasing_db,grn_line,GRN-2026-00581|3,added,,added,new Sep-Oct GRN line,yes
 purchasing_db,grn_line,GRN-2026-00582|1,added,,added,new Sep-Oct GRN line,yes
 purchasing_db,grn_line,GRN-2026-00582|2,added,,added,new Sep-Oct GRN line,yes
-purchasing_db,grn_line,GRN-2026-00582|3,added,,added,new Sep-Oct GRN line,yes
 purchasing_db,grn_line,GRN-2026-00583|1,added,,added,new Sep-Oct GRN line,yes
 purchasing_db,grn_line,GRN-2026-00583|2,added,,added,new Sep-Oct GRN line,yes
 purchasing_db,grn_line,GRN-2026-00584|1,added,,added,new Sep-Oct GRN line,yes
-purchasing_db,grn_line,GRN-2026-00584|2,added,,added,new Sep-Oct GRN line,yes
 purchasing_db,grn_line,GRN-2026-00585|1,added,,added,new Sep-Oct GRN line,yes
 purchasing_db,grn_line,GRN-2026-00585|2,added,,added,new Sep-Oct GRN line,yes
-purchasing_db,grn_line,GRN-2026-00585|3,added,,added,new Sep-Oct GRN line,yes
-purchasing_db,grn_line,GRN-2026-00585|4,added,,added,new Sep-Oct GRN line,yes
-purchasing_db,grn_line,GRN-2026-00585|5,added,,added,new Sep-Oct GRN line,yes
 purchasing_db,grn_line,GRN-2026-00586|1,added,,added,new Sep-Oct GRN line,yes
 purchasing_db,grn_line,GRN-2026-00586|2,added,,added,new Sep-Oct GRN line,yes
 purchasing_db,grn_line,GRN-2026-00586|3,added,,added,new Sep-Oct GRN line,yes
-purchasing_db,grn_line,GRN-2026-00586|4,added,,added,new Sep-Oct GRN line,yes
-purchasing_db,grn_line,GRN-2026-00587|1,added,,added,new Sep-Oct GRN line,yes
-purchasing_db,grn_line,GRN-2026-00587|2,added,,added,new Sep-Oct GRN line,yes
-purchasing_db,grn_line,GRN-2026-00587|3,added,,added,new Sep-Oct GRN line,yes
-purchasing_db,grn_line,GRN-2026-00588|1,added,,added,new Sep-Oct GRN line,yes
-purchasing_db,grn_line,GRN-2026-00589|1,added,,added,new Sep-Oct GRN line,yes
-purchasing_db,grn_line,GRN-2026-00589|2,added,,added,new Sep-Oct GRN line,yes
-purchasing_db,grn_line,GRN-2026-00589|3,added,,added,new Sep-Oct GRN line,yes
-purchasing_db,grn_line,GRN-2026-00589|4,added,,added,new Sep-Oct GRN line,yes
-purchasing_db,grn_line,GRN-2026-00590|1,added,,added,new Sep-Oct GRN line,yes
-purchasing_db,grn_line,GRN-2026-00590|2,added,,added,new Sep-Oct GRN line,yes
-purchasing_db,grn_line,GRN-2026-00590|3,added,,added,new Sep-Oct GRN line,yes
-purchasing_db,grn_line,GRN-2026-00590|4,added,,added,new Sep-Oct GRN line,yes
-purchasing_db,purchase_order,PO-2026-00463,added,,added,new Sep-Oct order,yes
-purchasing_db,purchase_order,PO-2026-00464,added,,added,new Sep-Oct order,yes
-purchasing_db,purchase_order,PO-2026-00465,added,,added,new Sep-Oct order,yes
 purchasing_db,purchase_order,PO-2026-00466,added,,added,new Sep-Oct order,yes
 purchasing_db,purchase_order,PO-2026-00467,added,,added,new Sep-Oct order,yes
 purchasing_db,purchase_order,PO-2026-00468,added,,added,new Sep-Oct order,yes
@@ -2191,8 +2157,6 @@ purchasing_db,purchase_order,PO-2026-00582,added,,added,new Sep-Oct order,yes
 purchasing_db,purchase_order,PO-2026-00583,added,,added,new Sep-Oct order,yes
 purchasing_db,purchase_order,PO-2026-00584,added,,added,new Sep-Oct order,yes
 purchasing_db,purchase_order,PO-2026-00585,added,,added,new Sep-Oct order,yes
-purchasing_db,purchase_order,PO-2026-00586,added,,added,new Sep-Oct order,yes
-purchasing_db,purchase_order,PO-2026-00587,added,,added,new Sep-Oct order,yes
 purchasing_db,vendor_item,BAS-5000,added,,added,new product launched 1 Sep 2026,yes
 sales_db,pos_item,PAR-1000-STR,added,,added,new product launched 1 Sep 2026,yes
 sales_db,receipt,CLF-2023-000061,changed,updated_at,changed,quantity corrected (receipt re-saved),yes
@@ -3313,8 +3277,8 @@ sales_db,receipt,SDR-2026-000455,added,,added,new Sep-Oct receipt,yes
 sales_db,receipt_line,CLF-2023-000061|1,changed,"qty, updated_at",changed,quantity corrected,yes
 sales_db,receipt_line,CLF-2023-000061|2,changed,updated_at,changed,receipt re-saved (updated_at),yes
 sales_db,receipt_line,CLF-2024-000328|1,changed,updated_at,changed,receipt VOIDED (re-saved),yes
-sales_db,receipt_line,CLF-2024-000486|1,changed,"qty, updated_at",changed,quantity corrected,yes
-sales_db,receipt_line,CLF-2024-000486|2,changed,updated_at,changed,receipt re-saved (updated_at),yes
+sales_db,receipt_line,CLF-2024-000486|1,changed,updated_at,changed,receipt re-saved (updated_at),yes
+sales_db,receipt_line,CLF-2024-000486|2,changed,"qty, updated_at",changed,quantity corrected,yes
 sales_db,receipt_line,CLF-2025-000347|1,changed,updated_at,changed,receipt VOIDED (re-saved),yes
 sales_db,receipt_line,CLF-2025-000347|2,changed,updated_at,changed,receipt VOIDED (re-saved),yes
 sales_db,receipt_line,CLF-2025-000516|1,changed,updated_at,changed,receipt re-saved (updated_at),yes
@@ -3325,8 +3289,8 @@ sales_db,receipt_line,CLF-2025-000568|1,changed,updated_at,changed,receipt re-sa
 sales_db,receipt_line,CLF-2025-000568|2,changed,updated_at,changed,receipt re-saved (updated_at),yes
 sales_db,receipt_line,CLF-2025-000568|3,changed,updated_at,changed,receipt re-saved (updated_at),yes
 sales_db,receipt_line,CLF-2026-000004|1,changed,updated_at,changed,receipt re-saved (updated_at),yes
-sales_db,receipt_line,CLF-2026-000004|2,changed,"qty, updated_at",changed,quantity corrected,yes
-sales_db,receipt_line,CLF-2026-000004|3,changed,updated_at,changed,receipt re-saved (updated_at),yes
+sales_db,receipt_line,CLF-2026-000004|2,changed,updated_at,changed,receipt re-saved (updated_at),yes
+sales_db,receipt_line,CLF-2026-000004|3,changed,"qty, updated_at",changed,quantity corrected,yes
 sales_db,receipt_line,CLF-2026-000212|1,changed,"qty, updated_at",changed,quantity corrected,yes
 sales_db,receipt_line,CLF-2026-000308|1,added,,added,new Sep-Oct or late line,yes
 sales_db,receipt_line,CLF-2026-000308|2,added,,added,new Sep-Oct or late line,yes
@@ -3613,8 +3577,8 @@ sales_db,receipt_line,GBG-2024-000288|4,changed,updated_at,changed,receipt re-sa
 sales_db,receipt_line,GBG-2025-000320|1,changed,updated_at,changed,receipt VOIDED (re-saved),yes
 sales_db,receipt_line,GBG-2025-000320|2,changed,updated_at,changed,receipt VOIDED (re-saved),yes
 sales_db,receipt_line,GBG-2025-000320|3,changed,updated_at,changed,receipt VOIDED (re-saved),yes
-sales_db,receipt_line,GBG-2025-000389|1,changed,"qty, updated_at",changed,quantity corrected,yes
-sales_db,receipt_line,GBG-2025-000389|2,changed,updated_at,changed,receipt re-saved (updated_at),yes
+sales_db,receipt_line,GBG-2025-000389|1,changed,updated_at,changed,receipt re-saved (updated_at),yes
+sales_db,receipt_line,GBG-2025-000389|2,changed,"qty, updated_at",changed,quantity corrected,yes
 sales_db,receipt_line,GBG-2026-000158|1,changed,"qty, discount_pkr, updated_at",changed,quantity corrected,yes
 sales_db,receipt_line,GBG-2026-000181|1,changed,updated_at,changed,receipt re-saved (updated_at),yes
 sales_db,receipt_line,GBG-2026-000181|2,changed,updated_at,changed,receipt re-saved (updated_at),yes
@@ -4191,11 +4155,11 @@ sales_db,receipt_line,GLJ-2026-000512|2,added,,added,new Sep-Oct or late line,ye
 sales_db,receipt_line,GLJ-2026-000513|1,added,,added,new Sep-Oct or late line,yes
 sales_db,receipt_line,GLJ-2026-000514|1,added,,added,new Sep-Oct or late line,yes
 sales_db,receipt_line,GLJ-2026-000514|2,added,,added,new Sep-Oct or late line,yes
-sales_db,receipt_line,GUL-2025-000104|1,changed,"qty, discount_pkr, updated_at",changed,quantity corrected,yes
-sales_db,receipt_line,GUL-2025-000104|2,changed,updated_at,changed,receipt re-saved (updated_at),yes
+sales_db,receipt_line,GUL-2025-000104|1,changed,updated_at,changed,receipt re-saved (updated_at),yes
+sales_db,receipt_line,GUL-2025-000104|2,changed,"qty, discount_pkr, updated_at",changed,quantity corrected,yes
 sales_db,receipt_line,GUL-2025-000104|3,changed,updated_at,changed,receipt re-saved (updated_at),yes
-sales_db,receipt_line,GUL-2025-000566|1,changed,updated_at,changed,receipt re-saved (updated_at),yes
-sales_db,receipt_line,GUL-2025-000566|2,changed,"qty, discount_pkr, updated_at",changed,quantity corrected,yes
+sales_db,receipt_line,GUL-2025-000566|1,changed,"qty, updated_at",changed,quantity corrected,yes
+sales_db,receipt_line,GUL-2025-000566|2,changed,updated_at,changed,receipt re-saved (updated_at),yes
 sales_db,receipt_line,GUL-2026-000276|1,added,,added,new Sep-Oct or late line,yes
 sales_db,receipt_line,GUL-2026-000276|2,added,,added,new Sep-Oct or late line,yes
 sales_db,receipt_line,GUL-2026-000276|3,added,,added,new Sep-Oct or late line,yes
@@ -4731,8 +4695,8 @@ sales_db,receipt_line,MLR-2026-000391|2,added,,added,new Sep-Oct or late line,ye
 sales_db,receipt_line,MLR-2026-000391|3,added,,added,new Sep-Oct or late line,yes
 sales_db,receipt_line,MLR-2026-000391|4,added,,added,new Sep-Oct or late line,yes
 sales_db,receipt_line,NNZ-2024-000106|1,changed,updated_at,changed,receipt re-saved (updated_at),yes
-sales_db,receipt_line,NNZ-2024-000160|1,changed,"qty, updated_at",changed,quantity corrected,yes
-sales_db,receipt_line,NNZ-2024-000160|2,changed,updated_at,changed,receipt re-saved (updated_at),yes
+sales_db,receipt_line,NNZ-2024-000160|1,changed,updated_at,changed,receipt re-saved (updated_at),yes
+sales_db,receipt_line,NNZ-2024-000160|2,changed,"qty, updated_at",changed,quantity corrected,yes
 sales_db,receipt_line,NNZ-2024-000288|1,changed,updated_at,changed,receipt VOIDED (re-saved),yes
 sales_db,receipt_line,NNZ-2024-000288|2,changed,updated_at,changed,receipt VOIDED (re-saved),yes
 sales_db,receipt_line,NNZ-2025-000045|1,deleted,,deleted,receipt hard-deleted at the till,yes
@@ -5310,9 +5274,9 @@ sales_db,receipt_line,PEC-2024-000373|1,changed,"qty, updated_at",changed,quanti
 sales_db,receipt_line,PEC-2025-000271|1,changed,updated_at,changed,receipt re-saved (updated_at),yes
 sales_db,receipt_line,PEC-2025-000300|1,changed,updated_at,changed,receipt VOIDED (re-saved),yes
 sales_db,receipt_line,PEC-2025-000300|2,changed,updated_at,changed,receipt VOIDED (re-saved),yes
-sales_db,receipt_line,PEC-2025-000355|1,changed,updated_at,changed,receipt re-saved (updated_at),yes
+sales_db,receipt_line,PEC-2025-000355|1,changed,"qty, updated_at",changed,quantity corrected,yes
 sales_db,receipt_line,PEC-2025-000355|2,changed,updated_at,changed,receipt re-saved (updated_at),yes
-sales_db,receipt_line,PEC-2025-000355|3,changed,"qty, updated_at",changed,quantity corrected,yes
+sales_db,receipt_line,PEC-2025-000355|3,changed,updated_at,changed,receipt re-saved (updated_at),yes
 sales_db,receipt_line,PEC-2026-000130|1,deleted,,deleted,receipt hard-deleted at the till,yes
 sales_db,receipt_line,PEC-2026-000251|1,added,,added,new Sep-Oct or late line,yes
 sales_db,receipt_line,PEC-2026-000251|2,added,,added,new Sep-Oct or late line,yes
@@ -5540,8 +5504,8 @@ sales_db,receipt_line,PEC-2026-000450|3,added,,added,new Sep-Oct or late line,ye
 sales_db,receipt_line,PEC-2026-000451|1,added,,added,new Sep-Oct or late line,yes
 sales_db,receipt_line,PEC-2026-000451|2,added,,added,new Sep-Oct or late line,yes
 sales_db,receipt_line,PEC-2026-000451|3,added,,added,new Sep-Oct or late line,yes
-sales_db,receipt_line,SDR-2024-000227|1,changed,updated_at,changed,receipt re-saved (updated_at),yes
-sales_db,receipt_line,SDR-2024-000227|2,changed,"qty, updated_at",changed,quantity corrected,yes
+sales_db,receipt_line,SDR-2024-000227|1,changed,"qty, updated_at",changed,quantity corrected,yes
+sales_db,receipt_line,SDR-2024-000227|2,changed,updated_at,changed,receipt re-saved (updated_at),yes
 sales_db,receipt_line,SDR-2025-000367|1,changed,updated_at,changed,receipt VOIDED (re-saved),yes
 sales_db,receipt_line,SDR-2025-000367|2,changed,updated_at,changed,receipt VOIDED (re-saved),yes
 sales_db,receipt_line,SDR-2025-000462|1,changed,updated_at,changed,receipt re-saved (updated_at),yes

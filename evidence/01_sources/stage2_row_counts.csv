@@ -6,9 +6,9 @@ stage,database,table,rows
 2,purchasing_db,supplier,25
 2,purchasing_db,branch,10
 2,purchasing_db,vendor_item,153
-2,purchasing_db,purchase_order,1871
-2,purchasing_db,goods_receipt,1863
-2,purchasing_db,grn_line,5143
+2,purchasing_db,purchase_order,1846
+2,purchasing_db,goods_receipt,1838
+2,purchasing_db,grn_line,5002
 2,inventory,item,151
 2,inventory,store,10
 2,inventory,stock_count,18000

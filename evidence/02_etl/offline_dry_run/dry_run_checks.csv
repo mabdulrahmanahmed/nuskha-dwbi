@@ -22,14 +22,14 @@ batch 1 receipt_line R04_BAD_AMOUNT: ETL result = planted ledger (key for key),8
 batch 1 receipt_line R05_UNKNOWN_BRANCH: ETL result = planted ledger (key for key),56,56,PASS
 batch 1 receipt_line R07_ORPHAN_LINE: ETL result = planted ledger (key for key),56,56,PASS
 batch 1 receipt_line U01_UNRESOLVED_CUSTOMER: ETL result = planted ledger (key for key),20,20,PASS
-batch 1 grn_line D01_EXACT_DUPLICATE: ETL result = planted ledger (key for key),24,24,PASS
-batch 1 grn_line R01_MISSING_PRODUCT: ETL result = planted ledger (key for key),29,29,PASS
+batch 1 grn_line D01_EXACT_DUPLICATE: ETL result = planted ledger (key for key),23,23,PASS
+batch 1 grn_line R01_MISSING_PRODUCT: ETL result = planted ledger (key for key),28,28,PASS
 batch 1 grn_line R02_BAD_QTY: ETL result = planted ledger (key for key),19,19,PASS
 batch 1 grn_line R03_BAD_DATE: ETL result = planted ledger (key for key),14,14,PASS
 batch 1 grn_line R04_BAD_AMOUNT: ETL result = planted ledger (key for key),14,14,PASS
 batch 1 grn_line R06_NO_FX_RATE: ETL result = planted ledger (key for key),4,4,PASS
 batch 1 receipt_line: source rows = valid + rejected + duplicates,28238,28238,PASS
-batch 1 grn_line: source rows = valid + rejected + duplicates,4825,4825,PASS
+batch 1 grn_line: source rows = valid + rejected + duplicates,4706,4706,PASS
 batch 1 sales net amount per month: source valid rows = fact rows (to the paisa),0,0,PASS
 "dim_product: special members present, keys and business keys unique",[-1],151,PASS
 "dim_branch: special members present, keys and business keys unique",[-1],11,PASS
@@ -60,7 +60,7 @@ batch 2 grn_line R02_BAD_QTY: ETL result = planted ledger (key for key),1,1,PASS
 batch 2 grn_line R03_BAD_DATE: ETL result = planted ledger (key for key),1,1,PASS
 batch 2 grn_line R04_BAD_AMOUNT: ETL result = planted ledger (key for key),1,1,PASS
 batch 2 receipt_line: source rows = valid + rejected + duplicates,2428,2428,PASS
-batch 2 grn_line: source rows = valid + rejected + duplicates,353,353,PASS
+batch 2 grn_line: source rows = valid + rejected + duplicates,328,328,PASS
 batch 2 sales net amount per month: source valid rows = fact rows (to the paisa),0,0,PASS
 pre-join: no join changed a row count (batch 2),0,0,PASS
 "batch 2: stage-1 lines updated in place (qty fixes, panel fixes, voids)",92,92,PASS

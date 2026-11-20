@@ -1,5 +1,5 @@
 batch,table,source_rows,valid,rejected,duplicates_removed,balanced,fact_rows
 batch 1,receipt_line,28238,27543,556,139,True,27543
-batch 1,grn_line,4825,4721,80,24,True,4721
+batch 1,grn_line,4706,4604,79,23,True,4604
 batch 2,receipt_line,2428,2369,47,12,True,2369
-batch 2,grn_line,353,346,5,2,True,346
+batch 2,grn_line,328,321,5,2,True,321

@@ -9,3 +9,4 @@ __pycache__/
 *.pyc
 .ipynb_checkpoints/
 progress/last_call.log
+data/offline_dw.duckdb*

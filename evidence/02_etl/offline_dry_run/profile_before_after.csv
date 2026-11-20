@@ -27,9 +27,9 @@ purchasing_db.branch,before (raw),branch,10,0,0,1
 purchasing_db.branch,after (staged),branch,10,0,0,1
 purchasing_db.vendor_item,before (raw),vendor_item,152,0,0,0
 purchasing_db.vendor_item,after (staged),vendor_item,152,0,0,0
-purchasing_db.purchase_order,before (raw),purchase_order,1746,0,0,1
-purchasing_db.purchase_order,after (staged),purchase_order,1746,0,0,1
-purchasing_db.goods_receipt,before (raw),goods_receipt,1736,0,0,1
-purchasing_db.goods_receipt,after (staged),goods_receipt,1736,0,0,1
-purchasing_db.grn_line,before (raw),grn_line,4825,0,0,0
-purchasing_db.grn_line,after (staged),grn_line,4825,0,2,0
+purchasing_db.purchase_order,before (raw),purchase_order,1726,0,0,1
+purchasing_db.purchase_order,after (staged),purchase_order,1726,0,0,1
+purchasing_db.goods_receipt,before (raw),goods_receipt,1717,0,0,1
+purchasing_db.goods_receipt,after (staged),goods_receipt,1717,0,0,1
+purchasing_db.grn_line,before (raw),grn_line,4706,0,0,0
+purchasing_db.grn_line,after (staged),grn_line,4706,0,2,0

@@ -1,0 +1,10 @@
+check,expected,actual,result
+vw_sales_enriched net = fact_sales net (not cancelled),16369512.40,16369512.40,PASS
+vw_sales_product_month net = fact_sales net,16369512.40,16369512.40,PASS
+vw_sales_product_month margin = fact_sales margin,4093284.79,4093284.79,PASS
+vw_purchase_product_month PKR = fact_purchase PKR (not cancelled),16546048.98,16546048.98,PASS
+vw_forecast_features net = fact_sales net,16369512.40,16369512.40,PASS
+vw_region_category_month net = fact_sales net,16369512.40,16369512.40,PASS
+vw_margin_bridge: volume + price + cost effects = margin change,62447.16,62447.21000000002,PASS
+vw_region_category_month: complete grid 3 regions x 8 categories x 36 months,864,864,PASS
+vw_forecast_features: 36 months,36,36,PASS

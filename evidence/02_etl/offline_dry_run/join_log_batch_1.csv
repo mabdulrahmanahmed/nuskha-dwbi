@@ -4,9 +4,9 @@ receipt_line -> xw_product,28099,28099,True,sales
 receipt -> xw_branch,28099,28099,True,sales
 receipt -> xw_customer (card),28099,28099,True,sales
 receipt -> xw_customer (panel text),28099,28099,True,sales
-grn_line -> goods_receipt,4801,4801,True,purchases
-goods_receipt -> purchase_order,4801,4801,True,purchases
-grn_line -> vendor_item,4801,4801,True,purchases
-grn_line -> xw_product,4801,4801,True,purchases
-purchase_order -> xw_branch,4801,4801,True,purchases
-purchase_order -> supplier,4801,4801,True,purchases
+grn_line -> goods_receipt,4683,4683,True,purchases
+goods_receipt -> purchase_order,4683,4683,True,purchases
+grn_line -> vendor_item,4683,4683,True,purchases
+grn_line -> xw_product,4683,4683,True,purchases
+purchase_order -> xw_branch,4683,4683,True,purchases
+purchase_order -> supplier,4683,4683,True,purchases

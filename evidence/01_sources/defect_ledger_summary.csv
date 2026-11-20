@@ -1,6 +1,6 @@
 source_table,code,rows
-grn_line,D01_EXACT_DUPLICATE,24
-grn_line,R01_MISSING_PRODUCT,29
+grn_line,D01_EXACT_DUPLICATE,23
+grn_line,R01_MISSING_PRODUCT,28
 grn_line,R02_BAD_QTY,19
 grn_line,R03_BAD_DATE,14
 grn_line,R04_BAD_AMOUNT,14

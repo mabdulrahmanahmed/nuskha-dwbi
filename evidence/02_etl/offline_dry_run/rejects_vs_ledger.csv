@@ -8,8 +8,8 @@ batch 1,receipt_line,R04_BAD_AMOUNT,83,83,True
 batch 1,receipt_line,R05_UNKNOWN_BRANCH,56,56,True
 batch 1,receipt_line,R07_ORPHAN_LINE,56,56,True
 batch 1,receipt_line,U01_UNRESOLVED_CUSTOMER,20,20,True
-batch 1,grn_line,D01_EXACT_DUPLICATE,24,24,True
-batch 1,grn_line,R01_MISSING_PRODUCT,29,29,True
+batch 1,grn_line,D01_EXACT_DUPLICATE,23,23,True
+batch 1,grn_line,R01_MISSING_PRODUCT,28,28,True
 batch 1,grn_line,R02_BAD_QTY,19,19,True
 batch 1,grn_line,R03_BAD_DATE,14,14,True
 batch 1,grn_line,R04_BAD_AMOUNT,14,14,True

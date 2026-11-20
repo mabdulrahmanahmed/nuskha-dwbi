@@ -31,7 +31,7 @@ from src.gen.defects import WINDOWS, _in_window
 N_QTY_FIX, N_PANEL_FIX, N_VOID, N_DELETE, N_GRN_CANCEL, N_NEW_ITEM_LINES = 20, 10, 15, 3, 3, 40
 CATEGORY_FIX_DATE = "15/09/2026"
 NEW_ITEM = {"item_id": 500, "generic_name": "Paracetamol", "strength": "1000 mg", "true_category": "Analgesics",
-            "sell_unit": "STRIP", "item_code": "PAR-1000-STR", "tablets_per_strip": 10, "strips_per_box": 20,
+            "sell_unit": "STRIP", "item_code": "PAR-1000-STR", "tablets_per_strip": 10, "strips_per_box": 10,
             "unit_price_pkr": 140.0, "std_cost_per_unit": 101.3482, "launched": "2026-09-01"}
 
 
@@ -181,7 +181,7 @@ def build_stage2(ref: dict, tx: dict):
             ignore_index=True)
         frames[("purchasing_db", "vendor_item")] = pd.concat([frames[("purchasing_db", "vendor_item")], pd.DataFrame([{
             "vendor_item_code": new_vendor_code, "supplier_id": int(para500.supplier_id),
-            "description": "PARACETAMOL 1000MG BOX/20", "strips_per_box": NEW_ITEM["strips_per_box"]}])],
+            "description": "PARACETAMOL 1000MG BOX/10", "strips_per_box": NEW_ITEM["strips_per_box"]}])],
             ignore_index=True)
 
     intended_df = pd.DataFrame(intended).drop_duplicates(["database", "table", "key"], keep="first")

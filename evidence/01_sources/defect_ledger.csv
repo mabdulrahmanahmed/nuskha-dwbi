@@ -992,106 +992,104 @@ stage,code,source_system,source_table,source_key,detail
 1,LEGIT_REPEAT,sales_db,receipt_line,ORG-2026-000146|5,"same item as line 1, new line number: keep"
 1,LEGIT_REPEAT,sales_db,receipt_line,SDR-2025-000042|3,"same item as line 2, new line number: keep"
 1,LEGIT_REPEAT,sales_db,receipt_line,PEC-2025-000097|4,"same item as line 3, new line number: keep"
-1,R03_BAD_DATE,purchasing_db,grn_line,GRN-2023-00062|1,received_at keyed as 2033-12-20 14:49:31 (real 2023-12-20 14:49:31)
-1,R03_BAD_DATE,purchasing_db,grn_line,GRN-2025-00587|1,received_at keyed as 2035-12-08 11:30:52 (real 2025-12-08 11:30:52)
-1,R03_BAD_DATE,purchasing_db,grn_line,GRN-2025-00587|2,received_at keyed as 2035-12-08 11:30:52 (real 2025-12-08 11:30:52)
-1,R03_BAD_DATE,purchasing_db,grn_line,GRN-2026-00313|1,received_at keyed as 2036-06-20 17:20:08 (real 2026-06-20 17:20:08)
-1,R03_BAD_DATE,purchasing_db,grn_line,GRN-2026-00313|2,received_at keyed as 2036-06-20 17:20:08 (real 2026-06-20 17:20:08)
-1,R03_BAD_DATE,purchasing_db,grn_line,GRN-2026-00313|3,received_at keyed as 2036-06-20 17:20:08 (real 2026-06-20 17:20:08)
-1,R03_BAD_DATE,purchasing_db,grn_line,GRN-2026-00329|1,received_at keyed as 2036-06-27 11:36:47 (real 2026-06-27 11:36:47)
-1,R03_BAD_DATE,purchasing_db,grn_line,GRN-2026-00329|2,received_at keyed as 2036-06-27 11:36:47 (real 2026-06-27 11:36:47)
-1,R03_BAD_DATE,purchasing_db,grn_line,GRN-2026-00057|1,received_at keyed as 2036-02-01 12:29:54 (real 2026-02-01 12:29:54)
-1,R03_BAD_DATE,purchasing_db,grn_line,GRN-2026-00057|2,received_at keyed as 2036-02-01 12:29:54 (real 2026-02-01 12:29:54)
-1,R03_BAD_DATE,purchasing_db,grn_line,GRN-2024-00322|1,received_at keyed as 2034-08-07 12:32:03 (real 2024-08-07 12:32:03)
-1,R03_BAD_DATE,purchasing_db,grn_line,GRN-2024-00322|2,received_at keyed as 2034-08-07 12:32:03 (real 2024-08-07 12:32:03)
-1,R03_BAD_DATE,purchasing_db,grn_line,GRN-2026-00349|1,received_at keyed as 2036-07-04 15:21:05 (real 2026-07-04 15:21:05)
-1,R03_BAD_DATE,purchasing_db,grn_line,GRN-2026-00349|2,received_at keyed as 2036-07-04 15:21:05 (real 2026-07-04 15:21:05)
-1,R01_MISSING_PRODUCT,purchasing_db,grn_line,GRN-2023-00044|3,vendor_item_code ZZZ-0001 (real TEA-6130)
-1,R01_MISSING_PRODUCT,purchasing_db,grn_line,GRN-2025-00162|3,vendor_item_code ZZZ-0002 (real GAR-9134)
-1,R01_MISSING_PRODUCT,purchasing_db,grn_line,GRN-2024-00124|2,vendor_item_code ZZZ-0001 (real COB-1748)
-1,R01_MISSING_PRODUCT,purchasing_db,grn_line,GRN-2025-00036|2,vendor_item_code ZZZ-0001 (real NIM-2247)
-1,R01_MISSING_PRODUCT,purchasing_db,grn_line,GRN-2026-00275|1,vendor_item_code ZZZ-0002 (real HAR-5143)
-1,R01_MISSING_PRODUCT,purchasing_db,grn_line,GRN-2026-00418|1,vendor_item_code ZZZ-0002 (real BAS-9653)
-1,R01_MISSING_PRODUCT,purchasing_db,grn_line,GRN-2023-00079|1,vendor_item_code ZZZ-0001 (real EMB-3097)
-1,R01_MISSING_PRODUCT,purchasing_db,grn_line,GRN-2025-00374|1,vendor_item_code ZZZ-0002 (real MAP-4520)
-1,R01_MISSING_PRODUCT,purchasing_db,grn_line,GRN-2025-00134|2,vendor_item_code ZZZ-0001 (real HAR-7888)
-1,R01_MISSING_PRODUCT,purchasing_db,grn_line,GRN-2024-00374|2,vendor_item_code ZZZ-0002 (real IND-3638)
-1,R01_MISSING_PRODUCT,purchasing_db,grn_line,GRN-2024-00295|1,vendor_item_code ZZZ-0002 (real NIM-1195)
-1,R01_MISSING_PRODUCT,purchasing_db,grn_line,GRN-2026-00298|1,vendor_item_code ZZZ-0001 (real IND-8525)
-1,R01_MISSING_PRODUCT,purchasing_db,grn_line,GRN-2025-00082|1,vendor_item_code ZZZ-0001 (real DUN-6892)
-1,R01_MISSING_PRODUCT,purchasing_db,grn_line,GRN-2024-00198|1,vendor_item_code ZZZ-0001 (real SAF-9542)
-1,R01_MISSING_PRODUCT,purchasing_db,grn_line,GRN-2025-00502|2,vendor_item_code ZZZ-0002 (real SAF-2883)
-1,R01_MISSING_PRODUCT,purchasing_db,grn_line,GRN-2024-00332|1,vendor_item_code ZZZ-0001 (real MAP-2239)
-1,R01_MISSING_PRODUCT,purchasing_db,grn_line,GRN-2025-00407|2,vendor_item_code ZZZ-0001 (real LUM-6946)
-1,R01_MISSING_PRODUCT,purchasing_db,grn_line,GRN-2025-00529|3,vendor_item_code ZZZ-0002 (real IND-6884)
-1,R01_MISSING_PRODUCT,purchasing_db,grn_line,GRN-2025-00559|1,vendor_item_code ZZZ-0002 (real HAR-1783)
-1,R01_MISSING_PRODUCT,purchasing_db,grn_line,GRN-2025-00097|1,vendor_item_code ZZZ-0001 (real FAL-1548)
-1,R01_MISSING_PRODUCT,purchasing_db,grn_line,GRN-2024-00387|3,vendor_item_code ZZZ-0001 (real ZEP-5542)
-1,R01_MISSING_PRODUCT,purchasing_db,grn_line,GRN-2025-00061|3,vendor_item_code ZZZ-0001 (real JUN-2178)
-1,R01_MISSING_PRODUCT,purchasing_db,grn_line,GRN-2025-00265|2,vendor_item_code ZZZ-0001 (real ZEP-5739)
-1,R01_MISSING_PRODUCT,purchasing_db,grn_line,GRN-2023-00018|1,vendor_item_code ZZZ-0001 (real SAF-4272)
-1,R01_MISSING_PRODUCT,purchasing_db,grn_line,GRN-2026-00378|2,vendor_item_code ZZZ-0002 (real DUN-7798)
-1,R01_MISSING_PRODUCT,purchasing_db,grn_line,GRN-2026-00222|2,vendor_item_code ZZZ-0002 (real JUN-2178)
-1,R01_MISSING_PRODUCT,purchasing_db,grn_line,GRN-2023-00001|6,vendor_item_code ZZZ-0002 (real ZEP-5739)
-1,R01_MISSING_PRODUCT,purchasing_db,grn_line,GRN-2025-00383|2,vendor_item_code ZZZ-0002 (real SAF-9542)
-1,R01_MISSING_PRODUCT,purchasing_db,grn_line,GRN-2025-00495|1,vendor_item_code ZZZ-0002 (real NIM-8614)
-1,R02_BAD_QTY,purchasing_db,grn_line,GRN-2025-00473|1,boxes_received -1.0
-1,R02_BAD_QTY,purchasing_db,grn_line,GRN-2024-00005|1,boxes_received -1.0
-1,R02_BAD_QTY,purchasing_db,grn_line,GRN-2025-00266|5,boxes_received 0.0
-1,R02_BAD_QTY,purchasing_db,grn_line,GRN-2025-00571|1,boxes_received 0.0
-1,R02_BAD_QTY,purchasing_db,grn_line,GRN-2025-00558|3,boxes_received -1.0
-1,R02_BAD_QTY,purchasing_db,grn_line,GRN-2024-00316|2,boxes_received -1.0
-1,R02_BAD_QTY,purchasing_db,grn_line,GRN-2024-00255|2,boxes_received 0.0
-1,R02_BAD_QTY,purchasing_db,grn_line,GRN-2025-00348|2,boxes_received 0.0
-1,R02_BAD_QTY,purchasing_db,grn_line,GRN-2026-00206|2,boxes_received 0.0
-1,R02_BAD_QTY,purchasing_db,grn_line,GRN-2025-00438|1,boxes_received -1.0
-1,R02_BAD_QTY,purchasing_db,grn_line,GRN-2024-00100|1,boxes_received 0.0
-1,R02_BAD_QTY,purchasing_db,grn_line,GRN-2024-00522|1,boxes_received 0.0
-1,R02_BAD_QTY,purchasing_db,grn_line,GRN-2024-00037|3,boxes_received 0.0
-1,R02_BAD_QTY,purchasing_db,grn_line,GRN-2025-00186|2,boxes_received 0.0
-1,R02_BAD_QTY,purchasing_db,grn_line,GRN-2026-00121|1,boxes_received 0.0
-1,R02_BAD_QTY,purchasing_db,grn_line,GRN-2024-00547|2,boxes_received -1.0
-1,R02_BAD_QTY,purchasing_db,grn_line,GRN-2025-00399|1,boxes_received -1.0
-1,R02_BAD_QTY,purchasing_db,grn_line,GRN-2025-00274|3,boxes_received -1.0
-1,R02_BAD_QTY,purchasing_db,grn_line,GRN-2025-00226|1,boxes_received -1.0
-1,R04_BAD_AMOUNT,purchasing_db,grn_line,GRN-2024-00173|1,cost_per_box 0.00
-1,R04_BAD_AMOUNT,purchasing_db,grn_line,GRN-2024-00079|2,cost_per_box 0.00
-1,R04_BAD_AMOUNT,purchasing_db,grn_line,GRN-2024-00009|4,cost_per_box 0.00
-1,R04_BAD_AMOUNT,purchasing_db,grn_line,GRN-2025-00273|4,cost_per_box 0.00
-1,R04_BAD_AMOUNT,purchasing_db,grn_line,GRN-2024-00277|1,cost_per_box 0.00
-1,R04_BAD_AMOUNT,purchasing_db,grn_line,GRN-2024-00076|1,cost_per_box 0.00
-1,R04_BAD_AMOUNT,purchasing_db,grn_line,GRN-2025-00514|3,cost_per_box 0.00
-1,R04_BAD_AMOUNT,purchasing_db,grn_line,GRN-2025-00265|1,cost_per_box 0.00
-1,R04_BAD_AMOUNT,purchasing_db,grn_line,GRN-2026-00155|1,cost_per_box 0.00
-1,R04_BAD_AMOUNT,purchasing_db,grn_line,GRN-2024-00131|1,cost_per_box 0.00
-1,R04_BAD_AMOUNT,purchasing_db,grn_line,GRN-2024-00281|3,cost_per_box 0.00
-1,R04_BAD_AMOUNT,purchasing_db,grn_line,GRN-2026-00159|1,cost_per_box 0.00
-1,R04_BAD_AMOUNT,purchasing_db,grn_line,GRN-2025-00590|3,cost_per_box 0.00
-1,R04_BAD_AMOUNT,purchasing_db,grn_line,GRN-2025-00561|3,cost_per_box 0.00
-1,D01_EXACT_DUPLICATE,purchasing_db,grn_line,GRN-2025-00163|3,exported twice
-1,D01_EXACT_DUPLICATE,purchasing_db,grn_line,GRN-2026-00424|1,exported twice
-1,D01_EXACT_DUPLICATE,purchasing_db,grn_line,GRN-2025-00165|1,exported twice
-1,D01_EXACT_DUPLICATE,purchasing_db,grn_line,GRN-2026-00157|4,exported twice
-1,D01_EXACT_DUPLICATE,purchasing_db,grn_line,GRN-2026-00320|1,exported twice
-1,D01_EXACT_DUPLICATE,purchasing_db,grn_line,GRN-2025-00361|2,exported twice
-1,D01_EXACT_DUPLICATE,purchasing_db,grn_line,GRN-2025-00160|2,exported twice
-1,D01_EXACT_DUPLICATE,purchasing_db,grn_line,GRN-2026-00224|1,exported twice
-1,D01_EXACT_DUPLICATE,purchasing_db,grn_line,GRN-2025-00054|2,exported twice
-1,D01_EXACT_DUPLICATE,purchasing_db,grn_line,GRN-2025-00067|1,exported twice
-1,D01_EXACT_DUPLICATE,purchasing_db,grn_line,GRN-2024-00185|1,exported twice
-1,D01_EXACT_DUPLICATE,purchasing_db,grn_line,GRN-2024-00372|4,exported twice
-1,D01_EXACT_DUPLICATE,purchasing_db,grn_line,GRN-2025-00470|2,exported twice
-1,D01_EXACT_DUPLICATE,purchasing_db,grn_line,GRN-2024-00115|4,exported twice
-1,D01_EXACT_DUPLICATE,purchasing_db,grn_line,GRN-2025-00616|3,exported twice
-1,D01_EXACT_DUPLICATE,purchasing_db,grn_line,GRN-2024-00415|1,exported twice
-1,D01_EXACT_DUPLICATE,purchasing_db,grn_line,GRN-2024-00465|1,exported twice
-1,D01_EXACT_DUPLICATE,purchasing_db,grn_line,GRN-2026-00275|3,exported twice
-1,D01_EXACT_DUPLICATE,purchasing_db,grn_line,GRN-2025-00218|1,exported twice
-1,D01_EXACT_DUPLICATE,purchasing_db,grn_line,GRN-2024-00439|2,exported twice
-1,D01_EXACT_DUPLICATE,purchasing_db,grn_line,GRN-2024-00139|2,exported twice
-1,D01_EXACT_DUPLICATE,purchasing_db,grn_line,GRN-2025-00344|1,exported twice
-1,D01_EXACT_DUPLICATE,purchasing_db,grn_line,GRN-2025-00125|1,exported twice
-1,D01_EXACT_DUPLICATE,purchasing_db,grn_line,GRN-2025-00136|1,exported twice
+1,R03_BAD_DATE,purchasing_db,grn_line,GRN-2025-00463|1,received_at keyed as 2035-10-06 13:07:41 (real 2025-10-06 13:07:41)
+1,R03_BAD_DATE,purchasing_db,grn_line,GRN-2026-00201|1,received_at keyed as 2036-04-18 18:39:13 (real 2026-04-18 18:39:13)
+1,R03_BAD_DATE,purchasing_db,grn_line,GRN-2026-00201|2,received_at keyed as 2036-04-18 18:39:13 (real 2026-04-18 18:39:13)
+1,R03_BAD_DATE,purchasing_db,grn_line,GRN-2026-00201|3,received_at keyed as 2036-04-18 18:39:13 (real 2026-04-18 18:39:13)
+1,R03_BAD_DATE,purchasing_db,grn_line,GRN-2025-00437|1,received_at keyed as 2035-09-22 13:50:08 (real 2025-09-22 13:50:08)
+1,R03_BAD_DATE,purchasing_db,grn_line,GRN-2025-00437|2,received_at keyed as 2035-09-22 13:50:08 (real 2025-09-22 13:50:08)
+1,R03_BAD_DATE,purchasing_db,grn_line,GRN-2026-00264|1,received_at keyed as 2036-05-19 13:47:59 (real 2026-05-19 13:47:59)
+1,R03_BAD_DATE,purchasing_db,grn_line,GRN-2026-00264|2,received_at keyed as 2036-05-19 13:47:59 (real 2026-05-19 13:47:59)
+1,R03_BAD_DATE,purchasing_db,grn_line,GRN-2026-00264|3,received_at keyed as 2036-05-19 13:47:59 (real 2026-05-19 13:47:59)
+1,R03_BAD_DATE,purchasing_db,grn_line,GRN-2025-00248|1,received_at keyed as 2035-06-02 14:22:35 (real 2025-06-02 14:22:35)
+1,R03_BAD_DATE,purchasing_db,grn_line,GRN-2025-00248|2,received_at keyed as 2035-06-02 14:22:35 (real 2025-06-02 14:22:35)
+1,R03_BAD_DATE,purchasing_db,grn_line,GRN-2025-00248|3,received_at keyed as 2035-06-02 14:22:35 (real 2025-06-02 14:22:35)
+1,R03_BAD_DATE,purchasing_db,grn_line,GRN-2025-00438|1,received_at keyed as 2035-09-22 14:10:29 (real 2025-09-22 14:10:29)
+1,R03_BAD_DATE,purchasing_db,grn_line,GRN-2026-00312|1,received_at keyed as 2036-06-13 13:04:44 (real 2026-06-13 13:04:44)
+1,R01_MISSING_PRODUCT,purchasing_db,grn_line,GRN-2026-00209|1,vendor_item_code ZZZ-0002 (real VIS-7575)
+1,R01_MISSING_PRODUCT,purchasing_db,grn_line,GRN-2026-00394|2,vendor_item_code ZZZ-0001 (real MAP-2497)
+1,R01_MISSING_PRODUCT,purchasing_db,grn_line,GRN-2026-00367|1,vendor_item_code ZZZ-0001 (real ALD-6639)
+1,R01_MISSING_PRODUCT,purchasing_db,grn_line,GRN-2026-00194|3,vendor_item_code ZZZ-0002 (real LUM-2978)
+1,R01_MISSING_PRODUCT,purchasing_db,grn_line,GRN-2024-00089|1,vendor_item_code ZZZ-0001 (real WIL-7346)
+1,R01_MISSING_PRODUCT,purchasing_db,grn_line,GRN-2023-00003|1,vendor_item_code ZZZ-0002 (real WIL-9396)
+1,R01_MISSING_PRODUCT,purchasing_db,grn_line,GRN-2024-00190|2,vendor_item_code ZZZ-0002 (real BAS-6461)
+1,R01_MISSING_PRODUCT,purchasing_db,grn_line,GRN-2026-00238|4,vendor_item_code ZZZ-0002 (real WIL-4046)
+1,R01_MISSING_PRODUCT,purchasing_db,grn_line,GRN-2026-00463|2,vendor_item_code ZZZ-0002 (real GAR-9134)
+1,R01_MISSING_PRODUCT,purchasing_db,grn_line,GRN-2025-00033|2,vendor_item_code ZZZ-0001 (real TEA-8173)
+1,R01_MISSING_PRODUCT,purchasing_db,grn_line,GRN-2024-00081|2,vendor_item_code ZZZ-0002 (real HAR-1932)
+1,R01_MISSING_PRODUCT,purchasing_db,grn_line,GRN-2024-00225|1,vendor_item_code ZZZ-0002 (real ZEP-8403)
+1,R01_MISSING_PRODUCT,purchasing_db,grn_line,GRN-2024-00152|1,vendor_item_code ZZZ-0001 (real SAF-4272)
+1,R01_MISSING_PRODUCT,purchasing_db,grn_line,GRN-2025-00200|2,vendor_item_code ZZZ-0002 (real FAL-1548)
+1,R01_MISSING_PRODUCT,purchasing_db,grn_line,GRN-2026-00316|3,vendor_item_code ZZZ-0002 (real HAR-2499)
+1,R01_MISSING_PRODUCT,purchasing_db,grn_line,GRN-2026-00014|1,vendor_item_code ZZZ-0001 (real SAF-4272)
+1,R01_MISSING_PRODUCT,purchasing_db,grn_line,GRN-2024-00410|2,vendor_item_code ZZZ-0001 (real IND-6884)
+1,R01_MISSING_PRODUCT,purchasing_db,grn_line,GRN-2026-00363|3,vendor_item_code ZZZ-0001 (real BAS-3052)
+1,R01_MISSING_PRODUCT,purchasing_db,grn_line,GRN-2025-00015|3,vendor_item_code ZZZ-0001 (real BAS-9653)
+1,R01_MISSING_PRODUCT,purchasing_db,grn_line,GRN-2024-00426|2,vendor_item_code ZZZ-0002 (real NIM-9858)
+1,R01_MISSING_PRODUCT,purchasing_db,grn_line,GRN-2025-00574|2,vendor_item_code ZZZ-0001 (real ZEP-1945)
+1,R01_MISSING_PRODUCT,purchasing_db,grn_line,GRN-2024-00200|1,vendor_item_code ZZZ-0001 (real ZEP-1945)
+1,R01_MISSING_PRODUCT,purchasing_db,grn_line,GRN-2026-00422|2,vendor_item_code ZZZ-0001 (real HAR-1920)
+1,R01_MISSING_PRODUCT,purchasing_db,grn_line,GRN-2024-00536|1,vendor_item_code ZZZ-0001 (real UMB-5844)
+1,R01_MISSING_PRODUCT,purchasing_db,grn_line,GRN-2024-00271|3,vendor_item_code ZZZ-0002 (real UMB-7969)
+1,R01_MISSING_PRODUCT,purchasing_db,grn_line,GRN-2024-00151|1,vendor_item_code ZZZ-0002 (real HAR-7173)
+1,R01_MISSING_PRODUCT,purchasing_db,grn_line,GRN-2026-00188|1,vendor_item_code ZZZ-0001 (real WIL-9881)
+1,R01_MISSING_PRODUCT,purchasing_db,grn_line,GRN-2026-00112|1,vendor_item_code ZZZ-0002 (real WIL-4046)
+1,R02_BAD_QTY,purchasing_db,grn_line,GRN-2025-00480|2,boxes_received 0.0
+1,R02_BAD_QTY,purchasing_db,grn_line,GRN-2025-00616|2,boxes_received -1.0
+1,R02_BAD_QTY,purchasing_db,grn_line,GRN-2024-00327|1,boxes_received 0.0
+1,R02_BAD_QTY,purchasing_db,grn_line,GRN-2024-00274|2,boxes_received -1.0
+1,R02_BAD_QTY,purchasing_db,grn_line,GRN-2025-00431|4,boxes_received -1.0
+1,R02_BAD_QTY,purchasing_db,grn_line,GRN-2025-00427|1,boxes_received 0.0
+1,R02_BAD_QTY,purchasing_db,grn_line,GRN-2025-00554|2,boxes_received -1.0
+1,R02_BAD_QTY,purchasing_db,grn_line,GRN-2025-00573|9,boxes_received -1.0
+1,R02_BAD_QTY,purchasing_db,grn_line,GRN-2024-00370|1,boxes_received -1.0
+1,R02_BAD_QTY,purchasing_db,grn_line,GRN-2024-00010|3,boxes_received -1.0
+1,R02_BAD_QTY,purchasing_db,grn_line,GRN-2023-00022|1,boxes_received -1.0
+1,R02_BAD_QTY,purchasing_db,grn_line,GRN-2026-00406|1,boxes_received -1.0
+1,R02_BAD_QTY,purchasing_db,grn_line,GRN-2025-00202|2,boxes_received -1.0
+1,R02_BAD_QTY,purchasing_db,grn_line,GRN-2026-00320|2,boxes_received 0.0
+1,R02_BAD_QTY,purchasing_db,grn_line,GRN-2025-00086|2,boxes_received 0.0
+1,R02_BAD_QTY,purchasing_db,grn_line,GRN-2025-00520|3,boxes_received -1.0
+1,R02_BAD_QTY,purchasing_db,grn_line,GRN-2024-00113|3,boxes_received 0.0
+1,R02_BAD_QTY,purchasing_db,grn_line,GRN-2025-00514|1,boxes_received -1.0
+1,R02_BAD_QTY,purchasing_db,grn_line,GRN-2024-00142|3,boxes_received -1.0
+1,R04_BAD_AMOUNT,purchasing_db,grn_line,GRN-2024-00075|2,cost_per_box 0.00
+1,R04_BAD_AMOUNT,purchasing_db,grn_line,GRN-2024-00419|1,cost_per_box 0.00
+1,R04_BAD_AMOUNT,purchasing_db,grn_line,GRN-2025-00116|3,cost_per_box 0.00
+1,R04_BAD_AMOUNT,purchasing_db,grn_line,GRN-2026-00087|3,cost_per_box 0.00
+1,R04_BAD_AMOUNT,purchasing_db,grn_line,GRN-2025-00414|2,cost_per_box 0.00
+1,R04_BAD_AMOUNT,purchasing_db,grn_line,GRN-2026-00266|6,cost_per_box 0.00
+1,R04_BAD_AMOUNT,purchasing_db,grn_line,GRN-2025-00364|2,cost_per_box 0.00
+1,R04_BAD_AMOUNT,purchasing_db,grn_line,GRN-2025-00495|2,cost_per_box 0.00
+1,R04_BAD_AMOUNT,purchasing_db,grn_line,GRN-2026-00198|2,cost_per_box 0.00
+1,R04_BAD_AMOUNT,purchasing_db,grn_line,GRN-2024-00241|2,cost_per_box 0.00
+1,R04_BAD_AMOUNT,purchasing_db,grn_line,GRN-2024-00203|2,cost_per_box 0.00
+1,R04_BAD_AMOUNT,purchasing_db,grn_line,GRN-2026-00416|1,cost_per_box 0.00
+1,R04_BAD_AMOUNT,purchasing_db,grn_line,GRN-2024-00213|1,cost_per_box 0.00
+1,R04_BAD_AMOUNT,purchasing_db,grn_line,GRN-2026-00144|2,cost_per_box 0.00
+1,D01_EXACT_DUPLICATE,purchasing_db,grn_line,GRN-2024-00261|1,exported twice
+1,D01_EXACT_DUPLICATE,purchasing_db,grn_line,GRN-2025-00606|3,exported twice
+1,D01_EXACT_DUPLICATE,purchasing_db,grn_line,GRN-2026-00350|3,exported twice
+1,D01_EXACT_DUPLICATE,purchasing_db,grn_line,GRN-2025-00060|4,exported twice
+1,D01_EXACT_DUPLICATE,purchasing_db,grn_line,GRN-2023-00078|3,exported twice
+1,D01_EXACT_DUPLICATE,purchasing_db,grn_line,GRN-2025-00465|4,exported twice
+1,D01_EXACT_DUPLICATE,purchasing_db,grn_line,GRN-2026-00296|2,exported twice
+1,D01_EXACT_DUPLICATE,purchasing_db,grn_line,GRN-2025-00321|3,exported twice
+1,D01_EXACT_DUPLICATE,purchasing_db,grn_line,GRN-2026-00221|2,exported twice
+1,D01_EXACT_DUPLICATE,purchasing_db,grn_line,GRN-2025-00487|4,exported twice
+1,D01_EXACT_DUPLICATE,purchasing_db,grn_line,GRN-2024-00488|1,exported twice
+1,D01_EXACT_DUPLICATE,purchasing_db,grn_line,GRN-2024-00106|4,exported twice
+1,D01_EXACT_DUPLICATE,purchasing_db,grn_line,GRN-2026-00411|1,exported twice
+1,D01_EXACT_DUPLICATE,purchasing_db,grn_line,GRN-2025-00252|2,exported twice
+1,D01_EXACT_DUPLICATE,purchasing_db,grn_line,GRN-2025-00184|3,exported twice
+1,D01_EXACT_DUPLICATE,purchasing_db,grn_line,GRN-2024-00394|3,exported twice
+1,D01_EXACT_DUPLICATE,purchasing_db,grn_line,GRN-2026-00331|2,exported twice
+1,D01_EXACT_DUPLICATE,purchasing_db,grn_line,GRN-2025-00591|3,exported twice
+1,D01_EXACT_DUPLICATE,purchasing_db,grn_line,GRN-2026-00184|3,exported twice
+1,D01_EXACT_DUPLICATE,purchasing_db,grn_line,GRN-2026-00402|3,exported twice
+1,D01_EXACT_DUPLICATE,purchasing_db,grn_line,GRN-2024-00087|2,exported twice
+1,D01_EXACT_DUPLICATE,purchasing_db,grn_line,GRN-2025-00294|1,exported twice
+1,D01_EXACT_DUPLICATE,purchasing_db,grn_line,GRN-2024-00332|2,exported twice
 1,R06_NO_FX_RATE,purchasing_db,grn_line,GRN-2023-90001|1,"USD GRN received 2023-10-27, first FX rate is 2023-11-01"
 1,R06_NO_FX_RATE,purchasing_db,grn_line,GRN-2023-90001|2,"USD GRN received 2023-10-27, first FX rate is 2023-11-01"
 1,R06_NO_FX_RATE,purchasing_db,grn_line,GRN-2023-90002|1,"USD GRN received 2023-10-30, first FX rate is 2023-11-01"

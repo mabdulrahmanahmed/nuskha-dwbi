@@ -5,11 +5,11 @@ inventory,item,added,yes,1
 inventory,item,changed,yes,1
 inventory,item_cost_history,added,yes,1
 inventory,stock_count,added,yes,1500
-purchasing_db,goods_receipt,added,yes,127
+purchasing_db,goods_receipt,added,yes,121
 purchasing_db,goods_receipt,changed,yes,3
-purchasing_db,grn_line,added,yes,342
-purchasing_db,grn_line,changed,yes,9
-purchasing_db,purchase_order,added,yes,125
+purchasing_db,grn_line,added,yes,319
+purchasing_db,grn_line,changed,yes,7
+purchasing_db,purchase_order,added,yes,120
 purchasing_db,vendor_item,added,yes,1
 sales_db,pos_item,added,yes,1
 sales_db,receipt,added,yes,1069

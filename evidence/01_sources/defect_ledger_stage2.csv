@@ -82,10 +82,10 @@ stage,code,source_system,source_table,source_key,detail
 2,LEGIT_REPEAT,sales_db,receipt_line,NNZ-2026-000475|6,"same item as line 3, new line number: keep"
 2,LEGIT_REPEAT,sales_db,receipt_line,ORG-2026-000249|4,"same item as line 2, new line number: keep"
 2,LEGIT_REPEAT,sales_db,receipt_line,GUL-2026-000458|3,"same item as line 1, new line number: keep"
-2,R03_BAD_DATE,purchasing_db,grn_line,GRN-2026-00542|1,received_at keyed as 2036-10-09 11:18:59 (real 2026-10-09 11:18:59)
-2,R01_MISSING_PRODUCT,purchasing_db,grn_line,GRN-2026-00497|2,vendor_item_code ZZZ-0001 (real LUM-6946)
-2,R01_MISSING_PRODUCT,purchasing_db,grn_line,GRN-2026-00465|1,vendor_item_code ZZZ-0002 (real ZEP-5739)
-2,R02_BAD_QTY,purchasing_db,grn_line,GRN-2026-00543|2,boxes_received -1.0
-2,R04_BAD_AMOUNT,purchasing_db,grn_line,GRN-2026-00526|1,cost_per_box 0.00
-2,D01_EXACT_DUPLICATE,purchasing_db,grn_line,GRN-2026-00524|2,exported twice
-2,D01_EXACT_DUPLICATE,purchasing_db,grn_line,GRN-2026-00550|2,exported twice
+2,R03_BAD_DATE,purchasing_db,grn_line,GRN-2026-00510|1,received_at keyed as 2036-09-22 15:06:55 (real 2026-09-22 15:06:55)
+2,R01_MISSING_PRODUCT,purchasing_db,grn_line,GRN-2026-00581|1,vendor_item_code ZZZ-0002 (real ZEP-8403)
+2,R01_MISSING_PRODUCT,purchasing_db,grn_line,GRN-2026-00481|2,vendor_item_code ZZZ-0002 (real NIM-7358)
+2,R02_BAD_QTY,purchasing_db,grn_line,GRN-2026-00576|2,boxes_received -1.0
+2,R04_BAD_AMOUNT,purchasing_db,grn_line,GRN-2026-00552|2,cost_per_box 0.00
+2,D01_EXACT_DUPLICATE,purchasing_db,grn_line,GRN-2026-00521|1,exported twice
+2,D01_EXACT_DUPLICATE,purchasing_db,grn_line,GRN-2026-00475|1,exported twice

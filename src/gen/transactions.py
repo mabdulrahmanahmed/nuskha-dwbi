@@ -285,7 +285,7 @@ def build_purchases(ref: dict, rng) -> tuple[pd.DataFrame, pd.DataFrame, pd.Data
                 pkr_box = cost(it.item_id, received.date()) * it.strips_per_box * (1 + rng.normal(0, 0.02))
                 cost_box = pkr_box / fx(ordered.date()) if imported else pkr_box
                 glines.append({"_pid": po["_pid"], "line_no": line_no, "vendor_item_code": it.vendor_item_code,
-                               "boxes_received": float(1 + rng.poisson(2.5)), "cost_per_box": round(cost_box, 2),
+                               "boxes_received": float(1 + rng.poisson(0.6)), "cost_per_box": round(cost_box, 2),
                                "_item_id": int(it.item_id), "_category": it.true_category,
                                "_currency": po["currency"]})
 
