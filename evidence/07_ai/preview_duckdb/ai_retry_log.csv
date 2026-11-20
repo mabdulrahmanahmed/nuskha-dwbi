@@ -1,0 +1,3 @@
+run,model_run,forecast_result,anomaly_result,unchanged_after_retry
+first,3,6,1152,True
+retry,3,6,1152,True

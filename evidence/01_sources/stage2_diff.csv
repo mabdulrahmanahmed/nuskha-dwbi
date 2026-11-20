@@ -2404,6 +2404,7 @@ sales_db,receipt,GLJ-2025-000218,changed,"status, updated_at",changed,receipt VO
 sales_db,receipt,GLJ-2025-000240,changed,"status, updated_at",changed,receipt VOIDED,yes
 sales_db,receipt,GLJ-2025-000316,changed,updated_at,changed,quantity corrected (receipt re-saved),yes
 sales_db,receipt,GLJ-2026-000091,changed,"status, updated_at",changed,receipt VOIDED,yes
+sales_db,receipt,GLJ-2026-000171,changed,updated_at,changed,quantity corrected (receipt re-saved),yes
 sales_db,receipt,GLJ-2026-000351,added,,added,late receipt,yes
 sales_db,receipt,GLJ-2026-000377,added,,added,new Sep-Oct receipt,yes
 sales_db,receipt,GLJ-2026-000378,added,,added,new Sep-Oct receipt,yes
@@ -2920,7 +2921,6 @@ sales_db,receipt,NNZ-2026-000486,added,,added,new Sep-Oct receipt,yes
 sales_db,receipt,NNZ-2026-000487,added,,added,new Sep-Oct receipt,yes
 sales_db,receipt,NZM-2024-000080,changed,updated_at,changed,quantity corrected (receipt re-saved),yes
 sales_db,receipt,NZM-2026-000072,changed,updated_at,changed,quantity corrected (receipt re-saved),yes
-sales_db,receipt,NZM-2026-000121,changed,updated_at,changed,quantity corrected (receipt re-saved),yes
 sales_db,receipt,NZM-2026-000260,added,,added,new Sep-Oct receipt,yes
 sales_db,receipt,NZM-2026-000261,added,,added,new Sep-Oct receipt,yes
 sales_db,receipt,NZM-2026-000262,added,,added,new Sep-Oct receipt,yes
@@ -3832,6 +3832,8 @@ sales_db,receipt_line,GLJ-2025-000316|2,changed,"qty, updated_at",changed,quanti
 sales_db,receipt_line,GLJ-2026-000091|1,changed,updated_at,changed,receipt VOIDED (re-saved),yes
 sales_db,receipt_line,GLJ-2026-000091|2,changed,updated_at,changed,receipt VOIDED (re-saved),yes
 sales_db,receipt_line,GLJ-2026-000091|3,changed,updated_at,changed,receipt VOIDED (re-saved),yes
+sales_db,receipt_line,GLJ-2026-000171|1,changed,"qty, updated_at",changed,quantity corrected,yes
+sales_db,receipt_line,GLJ-2026-000171|2,changed,updated_at,changed,receipt re-saved (updated_at),yes
 sales_db,receipt_line,GLJ-2026-000351|1,added,,added,new Sep-Oct or late line,yes
 sales_db,receipt_line,GLJ-2026-000351|2,added,,added,new Sep-Oct or late line,yes
 sales_db,receipt_line,GLJ-2026-000377|1,added,,added,new Sep-Oct or late line,yes
@@ -4955,8 +4957,6 @@ sales_db,receipt_line,NZM-2024-000080|1,changed,updated_at,changed,receipt re-sa
 sales_db,receipt_line,NZM-2024-000080|2,changed,updated_at,changed,receipt re-saved (updated_at),yes
 sales_db,receipt_line,NZM-2024-000080|3,changed,"qty, updated_at",changed,quantity corrected,yes
 sales_db,receipt_line,NZM-2026-000072|1,changed,"qty, updated_at",changed,quantity corrected,yes
-sales_db,receipt_line,NZM-2026-000121|1,changed,"qty, updated_at",changed,quantity corrected,yes
-sales_db,receipt_line,NZM-2026-000121|2,changed,updated_at,changed,receipt re-saved (updated_at),yes
 sales_db,receipt_line,NZM-2026-000260|1,added,,added,new Sep-Oct or late line,yes
 sales_db,receipt_line,NZM-2026-000260|2,added,,added,new Sep-Oct or late line,yes
 sales_db,receipt_line,NZM-2026-000261|1,added,,added,new Sep-Oct or late line,yes

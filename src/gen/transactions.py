@@ -222,15 +222,16 @@ def build_sales(ref: dict, rng) -> tuple[pd.DataFrame, pd.DataFrame, list[dict]]
     patterns.append({"pattern": "Late receipts", "month": "2026-07/08",
                      "detail": f"{N_LATE_RECEIPTS} receipts dated Jul-Aug 2026 first reach Sales in Sep-Oct 2026"})
 
-    # Keying error: one South Cardiovascular strip line in Apr 2026 gets quantity x 10.
+    # Keying error: on the dearest South Cardiovascular walk-in line of Apr 2026 the customer
+    # bought 8 strips and the cashier keyed 80 (quantity x 10).
     region, category, y, mth = KEYING_ERROR
     mask = ((lin._region == region) & (lin._category == category) & (lin.receipt_ts.dt.year == y)
             & (lin.receipt_ts.dt.month == mth) & (lin.customer_type == "WALKIN"))
-    target = lin[mask].sort_values(["receipt_no", "line_no"]).index[0]
-    lin.at[target, "qty"] = 60.0                                         # cashier keyed 60 instead of 6
+    target = lin[mask].sort_values(["unit_price_pkr", "receipt_no", "line_no"], ascending=[False, True, True]).index[0]
+    lin.at[target, "qty"] = 80.0                                         # cashier keyed 80 instead of 8
     lin.at[target, "discount_pkr"] = None
     patterns.append({"pattern": "Keying error (qty x 10)", "month": f"{y}-{mth:02d}",
-                     "detail": f"{lin.at[target, 'receipt_no']} line {lin.at[target, 'line_no']}: qty 60 instead of 6"})
+                     "detail": f"{lin.at[target, 'receipt_no']} line {lin.at[target, 'line_no']}: qty 80 instead of 8"})
 
     st, yy, mm, keep = STOCKOUT
     patterns.append({"pattern": "Branch stock-out", "month": f"{yy}-{mm:02d}",

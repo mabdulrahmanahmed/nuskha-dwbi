@@ -1,0 +1,4 @@
+method,holdout_mae_pkr,holdout_rmse_pkr,usable_training_rows
+ridge,70806.15,71562.79,21
+seasonal_naive,116207.4,128332.85,21
+last_month_naive,56347.42,57749.83,21
