@@ -1,0 +1,13 @@
+query,file,rows,result
+A01,A01_branch_quarter_comparison.sql,10,PASS
+A02,A02_category_margin_share.sql,32,PASS
+A03,A03_monthly_category_trend.sql,288,PASS
+A04,A04_asp_by_category.sql,288,PASS
+A05,A05_local_vs_import_purchases.sql,40,PASS
+A06,A06_ytd_running_sales.sql,36,PASS
+A07,A07_rolling_3_month.sql,36,PASS
+A08,A08_growth_mom_yoy.sql,36,PASS
+A09,A09_top10_rank_change.sql,10,PASS
+A10,A10_price_vs_purchase_cost.sql,3049,PASS
+A11,A11_volatility.sql,8,PASS
+A12,A12_diabetes_margin_bridge.sql,36,PASS

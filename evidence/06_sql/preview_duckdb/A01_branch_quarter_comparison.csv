@@ -1,0 +1,11 @@
+branch_name,region,net_this_q,net_prev_q,net_same_q_last_year,margin_this_q,margin_same_q_last_year,net_growth_vs_ly_pct,margin_vs_ly
+Gulberg,North,189280.7,129072.2,109863.3,45726.73,26922.92,72.3,margin grew
+PECHS,South,192441.75,152153.85,135350.15,46304.91,34949.36,42.2,margin grew
+Gulshan-e-Iqbal,East,235682.55,153925.55,180186.45,55832.01,46093.02,30.8,margin grew
+Nazimabad,North,120497.4,104099.75,102862.5,28881.09,25901.25,17.1,margin grew
+Clifton,South,219912.8,208911.55,193603.7,52405.9,49572.05,13.6,margin grew
+Gulistan-e-Jauhar,East,190449.1,149672.2,168161.65,44905.84,41843.79,13.3,margin grew
+Saddar,South,182851.3,153919.75,164424.05,43956.86,40824.72,11.2,margin grew
+Malir,East,143088.7,131779.85,143061.6,35336.42,36641.21,0.0,margin fell
+Orangi,North,114432.2,102635.35,133087.4,27220.79,32901.44,-14.0,margin fell
+North Nazimabad,North,151584.9,169228.5,200089.4,35529.72,50634.46,-24.2,margin fell
