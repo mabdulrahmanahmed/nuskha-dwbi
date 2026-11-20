@@ -1,0 +1,23 @@
+relationship e507f631-b16c-5663-8a0b-b4b42c541fb3
+	fromColumn: Sales.full_date
+	toColumn: 'Date'.full_date
+
+relationship d8b5f137-df0f-5e60-9c8a-ffdad9e396bc
+	fromColumn: Purchases.full_date
+	toColumn: 'Date'.full_date
+
+relationship c4825945-4549-5488-aa60-3d36888ac73b
+	fromColumn: Sales.product_code
+	toColumn: Product.product_code
+
+relationship 9ebdd4b6-cfe2-5c36-a602-d83395382e39
+	fromColumn: Purchases.product_code
+	toColumn: Product.product_code
+
+relationship b09aeddb-985c-54f9-8f8b-cb2a8d2b1b6e
+	fromColumn: Sales.branch_name
+	toColumn: Branch.branch_name
+
+relationship 8928daa1-c23f-5a86-8a64-0d782be715e7
+	fromColumn: Purchases.branch_name
+	toColumn: Branch.branch_name

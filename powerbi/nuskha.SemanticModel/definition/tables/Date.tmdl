@@ -1,0 +1,69 @@
+table 'Date'
+	lineageTag: 875fb2bf-b035-5032-8d7e-95ababa90eba
+	dataCategory: Time
+
+	column date_key
+		dataType: int64
+		summarizeBy: none
+		sourceColumn: date_key
+		lineageTag: 273f6e4b-dcd8-5850-8da9-28acf0338364
+
+	column full_date
+		dataType: dateTime
+		summarizeBy: none
+		sourceColumn: full_date
+		isKey
+		lineageTag: 47d21357-1003-599b-ac0b-b18afec10bcb
+
+	column month_start
+		dataType: dateTime
+		summarizeBy: none
+		sourceColumn: month_start
+		lineageTag: 1d3abac9-2c3c-5431-a1ce-c30fc3a58a67
+
+	column month_name
+		dataType: string
+		summarizeBy: none
+		sourceColumn: month_name
+		lineageTag: af203535-d660-5e46-b85b-3a4137b709ec
+
+	column quarter
+		dataType: int64
+		summarizeBy: none
+		sourceColumn: quarter
+		lineageTag: 92867206-533f-599e-9290-76bb47f737c9
+
+	column year
+		dataType: int64
+		summarizeBy: none
+		sourceColumn: year
+		lineageTag: 28031338-7e53-540d-ba70-641f58194413
+
+	column fiscal_quarter
+		dataType: int64
+		summarizeBy: none
+		sourceColumn: fiscal_quarter
+		lineageTag: 4e50ce1e-0da1-540c-885b-704c8b31b63f
+
+	column fiscal_year
+		dataType: string
+		summarizeBy: none
+		sourceColumn: fiscal_year
+		lineageTag: 6aaa48ad-2bf4-5229-a00c-95c5fb983656
+
+	column is_ramadan
+		dataType: boolean
+		summarizeBy: none
+		sourceColumn: is_ramadan
+		lineageTag: 439cbf7a-6ed1-5874-be97-6dc51e18f310
+
+	partition 'Date' = m
+		mode: import
+		source =
+				let
+				    Source = Csv.Document(File.Contents(DataFolder & "\dim_date.csv"), [Delimiter = ",", Encoding = 65001, QuoteStyle = QuoteStyle.Csv]),
+				    Promoted = Table.PromoteHeaders(Source, [PromoteAllScalars = true]),
+				    Typed = Table.TransformColumnTypes(Promoted, {{"date_key", Int64.Type}, {"full_date", type date}, {"month_start", type date}, {"month_name", type text}, {"quarter", Int64.Type}, {"year", Int64.Type}, {"fiscal_quarter", Int64.Type}, {"fiscal_year", type text}, {"is_ramadan", type logical}}, "en-US")
+				in
+				    Typed
+

@@ -1,0 +1,109 @@
+table 'Margin Bridge'
+	lineageTag: 5d1bff58-e6bb-5219-a173-894b9a722fac
+
+	column product_key
+		dataType: int64
+		summarizeBy: none
+		sourceColumn: product_key
+		lineageTag: 5bc583ad-6b36-5925-8c2f-95b668f36365
+
+	column product_code
+		dataType: string
+		summarizeBy: none
+		sourceColumn: product_code
+		lineageTag: 0c2c3a11-440e-517a-b367-5c3caf718832
+
+	column generic_name
+		dataType: string
+		summarizeBy: none
+		sourceColumn: generic_name
+		lineageTag: 60a6f6d5-3130-5b48-9341-cc2ed2166550
+
+	column category
+		dataType: string
+		summarizeBy: none
+		sourceColumn: category
+		lineageTag: 5fe9e771-7726-5013-80da-fdd22ce58fc8
+
+	column month_start
+		dataType: dateTime
+		summarizeBy: none
+		sourceColumn: month_start
+		lineageTag: 883411d5-efa5-5dd6-81ba-4e578efc6f28
+
+	column prev_month
+		dataType: dateTime
+		summarizeBy: none
+		sourceColumn: prev_month
+		lineageTag: 1a2304ae-e23f-5533-9540-3f84f1e49dca
+
+	column qty
+		dataType: double
+		summarizeBy: sum
+		sourceColumn: qty
+		lineageTag: 32ac1c35-b56a-58d5-bc19-c8922c79c184
+
+	column net_amount_pkr
+		dataType: double
+		summarizeBy: sum
+		sourceColumn: net_amount_pkr
+		lineageTag: 447b44b2-6256-5b56-b188-278f3eed5348
+
+	column cost_amount_pkr
+		dataType: double
+		summarizeBy: sum
+		sourceColumn: cost_amount_pkr
+		lineageTag: 3133d1f9-3cb3-59eb-a2ae-9c4d1730c482
+
+	column gross_margin_pkr
+		dataType: double
+		summarizeBy: sum
+		sourceColumn: gross_margin_pkr
+		lineageTag: ffcb45bf-0796-513f-a71d-d4e1538a5f7c
+
+	column asp_pkr
+		dataType: double
+		summarizeBy: sum
+		sourceColumn: asp_pkr
+		lineageTag: 72b91e0c-bd48-58a2-8b3f-edaf09858f9d
+
+	column unit_cost_pkr
+		dataType: double
+		summarizeBy: sum
+		sourceColumn: unit_cost_pkr
+		lineageTag: d699315c-0ad0-5389-a03f-b65858af3ff5
+
+	column margin_change_pkr
+		dataType: double
+		summarizeBy: sum
+		sourceColumn: margin_change_pkr
+		lineageTag: d8e35a85-68d9-5183-b1e3-c3a81e116d2e
+
+	column volume_effect_pkr
+		dataType: double
+		summarizeBy: sum
+		sourceColumn: volume_effect_pkr
+		lineageTag: 3eae72c0-3d8f-532d-8b5e-8fb81b1744a7
+
+	column price_effect_pkr
+		dataType: double
+		summarizeBy: sum
+		sourceColumn: price_effect_pkr
+		lineageTag: d1d6716f-8dd2-5f25-bd94-74b1a3b0c22a
+
+	column cost_effect_pkr
+		dataType: double
+		summarizeBy: sum
+		sourceColumn: cost_effect_pkr
+		lineageTag: 84f8bd23-4eb4-557c-994d-18bc8a4dda9a
+
+	partition 'Margin Bridge' = m
+		mode: import
+		source =
+				let
+				    Source = Csv.Document(File.Contents(DataFolder & "\vw_margin_bridge.csv"), [Delimiter = ",", Encoding = 65001, QuoteStyle = QuoteStyle.Csv]),
+				    Promoted = Table.PromoteHeaders(Source, [PromoteAllScalars = true]),
+				    Typed = Table.TransformColumnTypes(Promoted, {{"product_key", Int64.Type}, {"product_code", type text}, {"generic_name", type text}, {"category", type text}, {"month_start", type date}, {"prev_month", type date}, {"qty", type number}, {"net_amount_pkr", type number}, {"cost_amount_pkr", type number}, {"gross_margin_pkr", type number}, {"asp_pkr", type number}, {"unit_cost_pkr", type number}, {"margin_change_pkr", type number}, {"volume_effect_pkr", type number}, {"price_effect_pkr", type number}, {"cost_effect_pkr", type number}}, "en-US")
+				in
+				    Typed
+

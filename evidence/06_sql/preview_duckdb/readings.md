@@ -15,8 +15,8 @@ Synthetic data (seed 472). Task numbers in Practicals 9 and 10 are provisional u
 - Lab: P9 · Analysis: Contribution · Output grain: Category x fiscal year · SQL feature: SUM() OVER ()
 - SQL: `sql/04_queries/A02_category_margin_share.sql` · Result: `A02_category_margin_share.csv` (32 rows) · Chart: `A02_category_margin_share.png`
 
-> In FY2026 Vitamins and Supplements gave the largest share of gross margin (21.1%), and the top three categories together gave 53.4%.
-> Diabetes Care's share went from 17.7% (FY2025) to 17.4% (FY2026); FY2026 holds only four months after the March 2026 cost rise, which A12 examines month by month.
+> In FY2026 Vitamins and Supplements gave the largest share of gross margin (21.1%), and the top three categories together gave 53.3%.
+> Diabetes Care's share went from 17.7% (FY2025) to 17.3% (FY2026); FY2026 holds only four months after the March 2026 cost rise, which A12 examines month by month.
 
 ## A3  monthly category trend
 
@@ -47,7 +47,7 @@ Synthetic data (seed 472). Task numbers in Practicals 9 and 10 are provisional u
 - Lab: P9 · Analysis: Contribution · Output grain: Month · SQL feature: SUM() OVER (ORDER BY)
 - SQL: `sql/04_queries/A06_ytd_running_sales.sql` · Result: `A06_ytd_running_sales.csv` (36 rows) · Chart: `A06_ytd_running_sales.png`
 
-> FY2025 closed at PKR 4,957,885 and FY2026 at PKR 6,216,936 (+25.4%).
+> FY2025 closed at PKR 4,957,885 and FY2026 at PKR 6,230,295 (+25.7%).
 > FY2027 has reached PKR 2,381,915 after four months; the running total shows whether the year is ahead of the last one at the same point.
 
 ## A7  rolling 3 month
@@ -63,7 +63,7 @@ Synthetic data (seed 472). Task numbers in Practicals 9 and 10 are provisional u
 - Lab: P10 · Analysis: Growth · Output grain: Month · SQL feature: LAG(1), LAG(12)
 - SQL: `sql/04_queries/A08_growth_mom_yoy.sql` · Result: `A08_growth_mom_yoy.csv` (36 rows) · Chart: `A08_growth_mom_yoy.png`
 
-> Year-on-year growth averaged 23.2% across months, ranging from -7.1% (Aug 2026) to 47.0% (Aug 2025).
+> Year-on-year growth averaged 23.3% across months, ranging from -7.1% (Aug 2026) to 47.0% (Aug 2025).
 > Month-on-month growth mostly reflects seasons; year-on-year compares like with like and is the better measure of trend.
 
 ## A9  top10 rank change

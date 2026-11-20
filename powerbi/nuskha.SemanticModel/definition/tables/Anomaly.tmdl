@@ -1,0 +1,79 @@
+table Anomaly
+	lineageTag: 10e551aa-9055-5431-8f09-eb09b8038d83
+
+	column run_id
+		dataType: string
+		summarizeBy: none
+		sourceColumn: run_id
+		lineageTag: 70e76728-6583-5ea0-a19a-10d6a1599897
+
+	column date_key
+		dataType: int64
+		summarizeBy: none
+		sourceColumn: date_key
+		lineageTag: 87551adc-0764-5469-8b98-88210addc3bd
+
+	column region
+		dataType: string
+		summarizeBy: none
+		sourceColumn: region
+		lineageTag: b23461f8-2207-55a3-b41d-f9258c99fafb
+
+	column category
+		dataType: string
+		summarizeBy: none
+		sourceColumn: category
+		lineageTag: 6606f60b-a0d4-5116-9335-7414a51dda5c
+
+	column value
+		dataType: double
+		summarizeBy: sum
+		sourceColumn: value
+		lineageTag: 03579235-7847-574a-b729-9fd6876eef1b
+
+	column expected
+		dataType: double
+		summarizeBy: sum
+		sourceColumn: expected
+		lineageTag: 3bceaa07-3219-55b9-8364-1f54f02803aa
+
+	column score
+		dataType: double
+		summarizeBy: sum
+		sourceColumn: score
+		lineageTag: 2f6e3fd1-c79c-5c53-b846-6c4ddbbd50b0
+
+	column method
+		dataType: string
+		summarizeBy: none
+		sourceColumn: method
+		lineageTag: 70c4b1de-1aeb-5166-aad1-8b5307112f42
+
+	column is_flag
+		dataType: boolean
+		summarizeBy: none
+		sourceColumn: is_flag
+		lineageTag: c8e05c7c-c178-558a-ba87-21763bd6ff32
+
+	column is_injected_copy
+		dataType: boolean
+		summarizeBy: none
+		sourceColumn: is_injected_copy
+		lineageTag: c046a54f-c8ae-5b8c-acdd-492ec8f15fd2
+
+	column month_start
+		dataType: dateTime
+		summarizeBy: none
+		sourceColumn: month_start
+		lineageTag: f023f8e6-7501-5ff2-93db-4bdf9d5da190
+
+	partition Anomaly = m
+		mode: import
+		source =
+				let
+				    Source = Csv.Document(File.Contents(DataFolder & "\ai_anomaly_result.csv"), [Delimiter = ",", Encoding = 65001, QuoteStyle = QuoteStyle.Csv]),
+				    Promoted = Table.PromoteHeaders(Source, [PromoteAllScalars = true]),
+				    Typed = Table.TransformColumnTypes(Promoted, {{"run_id", type text}, {"date_key", Int64.Type}, {"region", type text}, {"category", type text}, {"value", type number}, {"expected", type number}, {"score", type number}, {"method", type text}, {"is_flag", type logical}, {"is_injected_copy", type logical}, {"month_start", type date}}, "en-US")
+				in
+				    Typed
+

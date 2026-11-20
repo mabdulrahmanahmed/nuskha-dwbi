@@ -1,0 +1,153 @@
+product_code,generic_name,strength,category,selling_unit
+P-0101,Paracetamol,500 mg,Analgesics,STRIP
+P-0104,Paracetamol,650 mg,Analgesics,STRIP
+P-0113,Paracetamol,120 mg/5 ml,Analgesics,BOTTLE
+P-0115,Paracetamol,250 mg/5 ml,Analgesics,BOTTLE
+P-0118,Ibuprofen,200 mg,Analgesics,STRIP
+P-0122,Ibuprofen,400 mg,Analgesics,STRIP
+P-0125,Ibuprofen,100 mg/5 ml,Analgesics,BOTTLE
+P-0129,Diclofenac Sodium,50 mg,Analgesics,STRIP
+P-0137,Diclofenac Sodium,75 mg,Analgesics,STRIP
+P-0149,Naproxen,250 mg,Analgesics,STRIP
+P-0154,Naproxen,500 mg,Analgesics,STRIP
+P-0155,Mefenamic Acid,250 mg,Analgesics,STRIP
+P-0162,Mefenamic Acid,500 mg,Analgesics,STRIP
+P-0163,Aspirin,75 mg,Analgesics,STRIP
+P-0164,Aspirin,300 mg,Analgesics,STRIP
+P-0165,Celecoxib,200 mg,Analgesics,STRIP
+P-0166,Etoricoxib,90 mg,Analgesics,STRIP
+P-0169,Ketorolac,10 mg,Analgesics,STRIP
+P-0170,Diclofenac Gel,1%,Analgesics,PIECE
+P-0171,Paracetamol Caffeine,500/65 mg,Analgesics,STRIP
+P-0172,Amoxicillin,250 mg,Antibiotics,STRIP
+P-0174,Amoxicillin,500 mg,Antibiotics,STRIP
+P-0175,Amoxicillin,125 mg/5 ml,Antibiotics,BOTTLE
+P-0177,Co-amoxiclav,375 mg,Antibiotics,STRIP
+P-0179,Co-amoxiclav,625 mg,Antibiotics,STRIP
+P-0180,Co-amoxiclav,156 mg/5 ml,Antibiotics,BOTTLE
+P-0184,Azithromycin,250 mg,Antibiotics,STRIP
+P-0194,Azithromycin,500 mg,Antibiotics,STRIP
+P-0196,Azithromycin,200 mg/5 ml,Antibiotics,BOTTLE
+P-0200,Ciprofloxacin,250 mg,Antibiotics,STRIP
+P-0201,Ciprofloxacin,500 mg,Antibiotics,STRIP
+P-0205,Levofloxacin,500 mg,Antibiotics,STRIP
+P-0208,Cefixime,200 mg,Antibiotics,STRIP
+P-0209,Cefixime,100 mg/5 ml,Antibiotics,BOTTLE
+P-0211,Cephalexin,500 mg,Antibiotics,STRIP
+P-0212,Clarithromycin,500 mg,Antibiotics,STRIP
+P-0216,Doxycycline,100 mg,Antibiotics,STRIP
+P-0217,Metronidazole,400 mg,Antibiotics,STRIP
+P-0218,Metronidazole,200 mg/5 ml,Antibiotics,BOTTLE
+P-0222,Fusidic Acid Cream,2%,Antibiotics,PIECE
+P-0229,Amlodipine,5 mg,Cardiovascular,STRIP
+P-0230,Amlodipine,10 mg,Cardiovascular,STRIP
+P-0233,Losartan,50 mg,Cardiovascular,STRIP
+P-0237,Losartan,100 mg,Cardiovascular,STRIP
+P-0239,Atenolol,50 mg,Cardiovascular,STRIP
+P-0240,Bisoprolol,2.5 mg,Cardiovascular,STRIP
+P-0243,Bisoprolol,5 mg,Cardiovascular,STRIP
+P-0244,Atorvastatin,10 mg,Cardiovascular,STRIP
+P-0247,Atorvastatin,20 mg,Cardiovascular,STRIP
+P-0249,Atorvastatin,40 mg,Cardiovascular,STRIP
+P-0251,Rosuvastatin,10 mg,Cardiovascular,STRIP
+P-0256,Rosuvastatin,20 mg,Cardiovascular,STRIP
+P-0257,Clopidogrel,75 mg,Cardiovascular,STRIP
+P-0258,Valsartan,80 mg,Cardiovascular,STRIP
+P-0260,Valsartan,160 mg,Cardiovascular,STRIP
+P-0262,Hydrochlorothiazide,25 mg,Cardiovascular,STRIP
+P-0263,Furosemide,40 mg,Cardiovascular,STRIP
+P-0265,Spironolactone,25 mg,Cardiovascular,STRIP
+P-0268,Lisinopril,10 mg,Cardiovascular,STRIP
+P-0272,Isosorbide Mononitrate,20 mg,Cardiovascular,STRIP
+P-0273,Metformin,500 mg,Diabetes Care,STRIP
+P-0274,Metformin,850 mg,Diabetes Care,STRIP
+P-0275,Metformin,1000 mg,Diabetes Care,STRIP
+P-0280,Gliclazide,80 mg,Diabetes Care,STRIP
+P-0281,Gliclazide MR,30 mg,Diabetes Care,STRIP
+P-0282,Glimepiride,1 mg,Diabetes Care,STRIP
+P-0286,Glimepiride,2 mg,Diabetes Care,STRIP
+P-0292,Glimepiride,4 mg,Diabetes Care,STRIP
+P-0294,Sitagliptin,50 mg,Diabetes Care,STRIP
+P-0297,Sitagliptin,100 mg,Diabetes Care,STRIP
+P-0298,Sitagliptin Metformin,50/500 mg,Diabetes Care,STRIP
+P-0299,Vildagliptin,50 mg,Diabetes Care,STRIP
+P-0303,Empagliflozin,10 mg,Diabetes Care,STRIP
+P-0309,Empagliflozin,25 mg,Diabetes Care,STRIP
+P-0312,Dapagliflozin,10 mg,Diabetes Care,STRIP
+P-0318,Pioglitazone,15 mg,Diabetes Care,STRIP
+P-0319,Glucose Test Strips,50 strips,Diabetes Care,PIECE
+P-0320,Lancets,100 pcs,Diabetes Care,PIECE
+P-0323,Omeprazole,20 mg,Gastro,STRIP
+P-0327,Omeprazole,40 mg,Gastro,STRIP
+P-0328,Esomeprazole,20 mg,Gastro,STRIP
+P-0330,Esomeprazole,40 mg,Gastro,STRIP
+P-0332,Pantoprazole,40 mg,Gastro,STRIP
+P-0334,Lansoprazole,30 mg,Gastro,STRIP
+P-0335,Famotidine,20 mg,Gastro,STRIP
+P-0337,Domperidone,10 mg,Gastro,STRIP
+P-0338,Domperidone,5 mg/5 ml,Gastro,BOTTLE
+P-0343,Ondansetron,4 mg,Gastro,STRIP
+P-0346,Ondansetron,8 mg,Gastro,STRIP
+P-0348,Loperamide,2 mg,Gastro,STRIP
+P-0351,Oral Rehydration Salts,1 sachet,Gastro,PIECE
+P-0354,Antacid Suspension,200/200 mg/5 ml,Gastro,BOTTLE
+P-0359,Lactulose,3.35 g/5 ml,Gastro,BOTTLE
+P-0361,Ispaghula Husk,3.5 g,Gastro,PIECE
+P-0363,Hyoscine Butylbromide,10 mg,Gastro,STRIP
+P-0366,Metoclopramide,10 mg,Gastro,STRIP
+P-0367,Simethicone Drops,40 mg/ml,Gastro,BOTTLE
+P-0368,Dextromethorphan Syrup,15 mg/5 ml,Cough and Cold,BOTTLE
+P-0369,Guaifenesin Syrup,100 mg/5 ml,Cough and Cold,BOTTLE
+P-0371,Ambroxol Syrup,15 mg/5 ml,Cough and Cold,BOTTLE
+P-0372,Ambroxol,30 mg,Cough and Cold,STRIP
+P-0376,Bromhexine Syrup,4 mg/5 ml,Cough and Cold,BOTTLE
+P-0383,Cetirizine,10 mg,Cough and Cold,STRIP
+P-0384,Levocetirizine,5 mg,Cough and Cold,STRIP
+P-0385,Loratadine,10 mg,Cough and Cold,STRIP
+P-0387,Fexofenadine,120 mg,Cough and Cold,STRIP
+P-0389,Fexofenadine,180 mg,Cough and Cold,STRIP
+P-0392,Chlorpheniramine,4 mg,Cough and Cold,STRIP
+P-0396,Pseudoephedrine Triprolidine,60/2.5 mg,Cough and Cold,STRIP
+P-0402,Montelukast,10 mg,Cough and Cold,STRIP
+P-0403,Montelukast,5 mg,Cough and Cold,STRIP
+P-0404,Salbutamol Syrup,2 mg/5 ml,Cough and Cold,BOTTLE
+P-0405,Salbutamol Inhaler,100 mcg,Cough and Cold,PIECE
+P-0406,Xylometazoline Nasal Drops,0.1%,Cough and Cold,BOTTLE
+P-0408,Throat Lozenges,24 pcs,Cough and Cold,PIECE
+P-0411,Vitamin C,500 mg,Vitamins and Supplements,STRIP
+P-0412,Vitamin D3,50000 IU,Vitamins and Supplements,STRIP
+P-0415,Calcium Vitamin D3,600 mg/400 IU,Vitamins and Supplements,STRIP
+P-0419,Multivitamin Tablets,30 tabs,Vitamins and Supplements,BOTTLE
+P-0420,Multivitamin Syrup,120 ml,Vitamins and Supplements,BOTTLE
+P-0427,Folic Acid,5 mg,Vitamins and Supplements,STRIP
+P-0428,Ferrous Sulphate,200 mg,Vitamins and Supplements,STRIP
+P-0430,Iron Folic Acid,150/0.5 mg,Vitamins and Supplements,STRIP
+P-0431,Zinc Sulphate,20 mg,Vitamins and Supplements,STRIP
+P-0433,Zinc Syrup,20 mg/5 ml,Vitamins and Supplements,BOTTLE
+P-0441,Vitamin B Complex,1 tab,Vitamins and Supplements,STRIP
+P-0442,Methylcobalamin,500 mcg,Vitamins and Supplements,STRIP
+P-0443,Omega-3,1000 mg,Vitamins and Supplements,BOTTLE
+P-0445,Vitamin E,400 IU,Vitamins and Supplements,STRIP
+P-0448,Magnesium,250 mg,Vitamins and Supplements,STRIP
+P-0450,Biotin,5 mg,Vitamins and Supplements,BOTTLE
+P-0452,Cod Liver Oil Capsules,60 caps,Vitamins and Supplements,BOTTLE
+P-0454,Vitamin A D Drops,15 ml,Vitamins and Supplements,BOTTLE
+P-0457,Calcium Syrup,120 ml,Vitamins and Supplements,BOTTLE
+P-0459,Antiseptic Liquid,500 ml,Personal Care,BOTTLE
+P-0465,Hand Sanitizer,250 ml,Personal Care,BOTTLE
+P-0467,Sunscreen,SPF 50,Personal Care,PIECE
+P-0468,Moisturising Cream,100 g,Personal Care,PIECE
+P-0471,Baby Diapers,Size 3,Personal Care,PIECE
+P-0472,Baby Wipes,80 pcs,Personal Care,PIECE
+P-0473,Toothpaste Sensitive,100 g,Personal Care,PIECE
+P-0476,Mouthwash,250 ml,Personal Care,BOTTLE
+P-0478,Medicated Shampoo,200 ml,Personal Care,BOTTLE
+P-0479,Cotton Bandage,10 cm,Personal Care,PIECE
+P-0480,Adhesive Plasters,20 pcs,Personal Care,PIECE
+P-0485,Digital Thermometer,1 pc,Personal Care,PIECE
+P-0495,Face Masks,50 pcs,Personal Care,PIECE
+P-0496,Petroleum Jelly,100 g,Personal Care,PIECE
+P-0498,Hair Oil,200 ml,Personal Care,BOTTLE
+P-0499,Surgical Gloves,100 pcs,Personal Care,PIECE
+P-0500,Paracetamol,1000 mg,Analgesics,STRIP
+UNKNOWN,Unknown,Not recorded,Unknown,Not recorded

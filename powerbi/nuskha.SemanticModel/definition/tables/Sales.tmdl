@@ -1,0 +1,243 @@
+table Sales
+	lineageTag: 171d3b1e-f2fc-55fd-8cda-0801ac55cd2b
+
+	measure 'Net Sales' = SUM(Sales[net_amount_pkr])
+		formatString: #,0
+		lineageTag: db711a2b-b873-57ca-be3b-6ab3460725b6
+
+	measure 'Gross Margin' = SUM(Sales[gross_margin_pkr])
+		formatString: #,0
+		lineageTag: bfe51693-1b65-52c3-b749-34b13aedc405
+
+	measure 'Margin %' = DIVIDE([Gross Margin], [Net Sales])
+		formatString: 0.0%
+		lineageTag: ca9e4dae-153b-5170-a2c2-18ca0a1b8c30
+
+	measure 'Units Sold' = SUM(Sales[quantity_units])
+		formatString: #,0
+		lineageTag: 2efe75a2-784b-5ff0-9e8a-a29aed1e6760
+
+	measure ASP = DIVIDE([Net Sales], [Units Sold])
+		formatString: #,0.00
+		lineageTag: 2263ea42-43ef-597c-aad4-fd969543fc82
+
+	measure 'Net Sales LY' = CALCULATE([Net Sales], SAMEPERIODLASTYEAR('Date'[full_date]))
+		formatString: #,0
+		lineageTag: e564992f-6ba9-51ae-b98a-e459506a047e
+
+	measure 'Net Sales 3M Avg' = DIVIDE(CALCULATE([Net Sales], DATESINPERIOD('Date'[full_date], MAX('Date'[full_date]), -3, MONTH)), 3)
+		formatString: #,0
+		lineageTag: 26ab2e13-9f0e-5801-b289-6ccebadfd21c
+
+	measure 'Last Batch' = MAX('Last Batch'[last_batch_id])
+		formatString: 0
+		lineageTag: 9f53009c-6b06-507b-98fe-6b86074191ca
+
+	column sales_line_id
+		dataType: int64
+		summarizeBy: none
+		sourceColumn: sales_line_id
+		lineageTag: 9e951754-f016-5cd6-92f0-add65a136f3f
+
+	column receipt_no
+		dataType: string
+		summarizeBy: none
+		sourceColumn: receipt_no
+		lineageTag: 67439acc-fc9f-5a3d-8cf0-388a10680f19
+
+	column line_no
+		dataType: int64
+		summarizeBy: none
+		sourceColumn: line_no
+		lineageTag: 05ffd438-9f7f-519c-9842-3da658080d39
+
+	column full_date
+		dataType: dateTime
+		summarizeBy: none
+		sourceColumn: full_date
+		lineageTag: 96ed57f9-7a27-515e-bb75-6b489db91de1
+
+	column month_start
+		dataType: dateTime
+		summarizeBy: none
+		sourceColumn: month_start
+		lineageTag: e1086ab7-38bc-51c4-8cb6-a6855bc83a4c
+
+	column month_name
+		dataType: string
+		summarizeBy: none
+		sourceColumn: month_name
+		lineageTag: fdb0a257-2bee-5bc2-bd4d-a2e955755663
+
+	column quarter
+		dataType: int64
+		summarizeBy: none
+		sourceColumn: quarter
+		lineageTag: 6d4cf38f-d1c4-5ae0-92ed-ce7d7c00f5f7
+
+	column year
+		dataType: int64
+		summarizeBy: none
+		sourceColumn: year
+		lineageTag: 43c97007-69d5-5589-831d-423da460c987
+
+	column fiscal_quarter
+		dataType: int64
+		summarizeBy: none
+		sourceColumn: fiscal_quarter
+		lineageTag: ee128edd-f960-5be5-8db0-965e9ec93434
+
+	column fiscal_year
+		dataType: string
+		summarizeBy: none
+		sourceColumn: fiscal_year
+		lineageTag: 977f33b7-5b6e-5e4e-9c70-ea1cbe774641
+
+	column is_ramadan
+		dataType: boolean
+		summarizeBy: none
+		sourceColumn: is_ramadan
+		lineageTag: 8abde897-4763-5ed0-ba1c-c32239593db5
+
+	column product_code
+		dataType: string
+		summarizeBy: none
+		sourceColumn: product_code
+		lineageTag: 98d961d3-9d36-5275-a10e-b856cca5c8b4
+
+	column generic_name
+		dataType: string
+		summarizeBy: none
+		sourceColumn: generic_name
+		lineageTag: fbd646bb-9691-5953-a7e3-ac017876edde
+
+	column strength
+		dataType: string
+		summarizeBy: none
+		sourceColumn: strength
+		lineageTag: 06e29a4f-3662-5988-9cbc-9c9e266fa68e
+
+	column category
+		dataType: string
+		summarizeBy: none
+		sourceColumn: category
+		lineageTag: ca7b1e89-1c9c-531c-ae29-59b3b2ca7b18
+
+	column selling_unit
+		dataType: string
+		summarizeBy: none
+		sourceColumn: selling_unit
+		lineageTag: 9d178c3a-7fcd-5412-b92e-9b08287e3490
+
+	column branch_code
+		dataType: string
+		summarizeBy: none
+		sourceColumn: branch_code
+		lineageTag: 786ac771-4fda-505d-bdd9-a29fb8514fc0
+
+	column branch_name
+		dataType: string
+		summarizeBy: none
+		sourceColumn: branch_name
+		lineageTag: cf442b90-ef58-5de4-ae6d-d131b288e428
+
+	column area
+		dataType: string
+		summarizeBy: none
+		sourceColumn: area
+		lineageTag: 979b67e3-2a32-5b6d-af0d-c6104e24621d
+
+	column region
+		dataType: string
+		summarizeBy: none
+		sourceColumn: region
+		lineageTag: ab08f6bd-138f-596d-902c-c0a3caf2b670
+
+	column customer_code
+		dataType: string
+		summarizeBy: none
+		sourceColumn: customer_code
+		lineageTag: d3b96cca-62d0-5181-9069-cd515c613f3b
+
+	column customer_type
+		dataType: string
+		summarizeBy: none
+		sourceColumn: customer_type
+		lineageTag: 6eac4dbc-1b36-519f-b6eb-364a6e9d1c7d
+
+	column customer_name
+		dataType: string
+		summarizeBy: none
+		sourceColumn: customer_name
+		lineageTag: 1ca35b17-cfed-5d51-8bbf-09b460e5c5de
+
+	column is_customer_unresolved
+		dataType: boolean
+		summarizeBy: none
+		sourceColumn: is_customer_unresolved
+		lineageTag: 0b3d6fd7-2d33-556d-98ba-1adbb1380a2e
+
+	column quantity_units
+		dataType: double
+		summarizeBy: sum
+		sourceColumn: quantity_units
+		lineageTag: 66879f08-3d41-52b6-a74d-2480d0d9f80d
+
+	column gross_amount_pkr
+		dataType: double
+		summarizeBy: sum
+		sourceColumn: gross_amount_pkr
+		lineageTag: 7cd9c0ab-08d0-5770-8f7a-bab647ca352f
+
+	column discount_pkr
+		dataType: double
+		summarizeBy: sum
+		sourceColumn: discount_pkr
+		lineageTag: a5543c1f-c6a3-5fb9-98dd-c38bbf6e0acc
+
+	column net_amount_pkr
+		dataType: double
+		summarizeBy: sum
+		sourceColumn: net_amount_pkr
+		lineageTag: da464b5e-8ab7-536a-9973-26e4317840ca
+
+	column cost_amount_pkr
+		dataType: double
+		summarizeBy: sum
+		sourceColumn: cost_amount_pkr
+		lineageTag: e965930f-46c3-52b6-b597-883662243615
+
+	column gross_margin_pkr
+		dataType: double
+		summarizeBy: sum
+		sourceColumn: gross_margin_pkr
+		lineageTag: 7dcfa678-71c9-54af-b634-cba0d971e38a
+
+	column source_system
+		dataType: string
+		summarizeBy: none
+		sourceColumn: source_system
+		lineageTag: 7a1bc0d3-3ef5-582b-9bef-dd5f3d2ecb53
+
+	column source_key
+		dataType: string
+		summarizeBy: none
+		sourceColumn: source_key
+		lineageTag: 91de19f5-650e-5eb8-9a4f-77b558a03744
+
+	column batch_id
+		dataType: int64
+		summarizeBy: none
+		sourceColumn: batch_id
+		lineageTag: 1b3b524e-fe4f-56e8-b744-32085f6d3187
+
+	partition Sales = m
+		mode: import
+		source =
+				let
+				    Source = Csv.Document(File.Contents(DataFolder & "\vw_sales_enriched.csv"), [Delimiter = ",", Encoding = 65001, QuoteStyle = QuoteStyle.Csv]),
+				    Promoted = Table.PromoteHeaders(Source, [PromoteAllScalars = true]),
+				    Typed = Table.TransformColumnTypes(Promoted, {{"sales_line_id", Int64.Type}, {"receipt_no", type text}, {"line_no", Int64.Type}, {"full_date", type date}, {"month_start", type date}, {"month_name", type text}, {"quarter", Int64.Type}, {"year", Int64.Type}, {"fiscal_quarter", Int64.Type}, {"fiscal_year", type text}, {"is_ramadan", type logical}, {"product_code", type text}, {"generic_name", type text}, {"strength", type text}, {"category", type text}, {"selling_unit", type text}, {"branch_code", type text}, {"branch_name", type text}, {"area", type text}, {"region", type text}, {"customer_code", type text}, {"customer_type", type text}, {"customer_name", type text}, {"is_customer_unresolved", type logical}, {"quantity_units", type number}, {"gross_amount_pkr", type number}, {"discount_pkr", type number}, {"net_amount_pkr", type number}, {"cost_amount_pkr", type number}, {"gross_margin_pkr", type number}, {"source_system", type text}, {"source_key", type text}, {"batch_id", Int64.Type}}, "en-US")
+				in
+				    Typed
+

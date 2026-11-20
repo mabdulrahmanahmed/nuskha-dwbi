@@ -1,0 +1,145 @@
+table Purchases
+	lineageTag: 09ff7eb4-18f4-56e4-ae58-4ca94cf7d04a
+
+	measure Purchases = SUM(Purchases[purchase_amount_pkr])
+		formatString: #,0
+		lineageTag: 71a84484-8783-5e39-8578-2ca857762c6b
+
+	measure 'Units Purchased' = SUM(Purchases[quantity_units])
+		formatString: #,0
+		lineageTag: be8985b2-2b19-525a-b238-834342fae1c7
+
+	measure 'Purchase Unit Cost' = DIVIDE([Purchases], [Units Purchased])
+		formatString: #,0.00
+		lineageTag: 00d8067c-38a7-5d5b-a38d-00169fa59097
+
+	column purchase_line_id
+		dataType: int64
+		summarizeBy: none
+		sourceColumn: purchase_line_id
+		lineageTag: d2311ca0-92bb-5a18-9cf4-852b25d14b7b
+
+	column grn_no
+		dataType: string
+		summarizeBy: none
+		sourceColumn: grn_no
+		lineageTag: 98b1aeaf-d987-54ae-a2b5-87af07881d8d
+
+	column line_no
+		dataType: int64
+		summarizeBy: none
+		sourceColumn: line_no
+		lineageTag: 0d53175c-ebb5-5e4c-9f5e-d683da380072
+
+	column full_date
+		dataType: dateTime
+		summarizeBy: none
+		sourceColumn: full_date
+		lineageTag: f4759d5e-2c24-541a-ab8f-8f3262155061
+
+	column month_start
+		dataType: dateTime
+		summarizeBy: none
+		sourceColumn: month_start
+		lineageTag: 7a945d50-acb3-5221-80ab-cc264d373f4f
+
+	column fiscal_year
+		dataType: string
+		summarizeBy: none
+		sourceColumn: fiscal_year
+		lineageTag: 090bb4b7-fd3a-5728-a5bd-bd2addb33340
+
+	column fiscal_quarter
+		dataType: int64
+		summarizeBy: none
+		sourceColumn: fiscal_quarter
+		lineageTag: 5ed0bfb0-9cb2-5474-b2ec-7428b712c42d
+
+	column product_code
+		dataType: string
+		summarizeBy: none
+		sourceColumn: product_code
+		lineageTag: 46526352-1cb7-53c7-a38b-d207134db477
+
+	column generic_name
+		dataType: string
+		summarizeBy: none
+		sourceColumn: generic_name
+		lineageTag: 4d598fd4-3f37-52d9-ba9d-634b83c857b1
+
+	column category
+		dataType: string
+		summarizeBy: none
+		sourceColumn: category
+		lineageTag: 27e57aff-4178-5ac7-88d3-e61c88eeb9a4
+
+	column branch_name
+		dataType: string
+		summarizeBy: none
+		sourceColumn: branch_name
+		lineageTag: bb3c914a-7864-5638-903d-9a11b25878cd
+
+	column region
+		dataType: string
+		summarizeBy: none
+		sourceColumn: region
+		lineageTag: 11c56ec0-90ff-5282-92a4-2488137d10dc
+
+	column supplier_name
+		dataType: string
+		summarizeBy: none
+		sourceColumn: supplier_name
+		lineageTag: 7588fc51-018b-51ea-a0f9-2eeab9c558b8
+
+	column origin
+		dataType: string
+		summarizeBy: none
+		sourceColumn: origin
+		lineageTag: 90ef5ad5-8428-5ec9-8a5e-4f614b5165dc
+
+	column quantity_units
+		dataType: double
+		summarizeBy: sum
+		sourceColumn: quantity_units
+		lineageTag: 0c36d590-bbd3-5d5f-b966-79130f52a2fb
+
+	column currency_code
+		dataType: string
+		summarizeBy: none
+		sourceColumn: currency_code
+		lineageTag: 327e0926-ea30-52b1-bd18-494aafdf49b1
+
+	column fx_rate_used
+		dataType: double
+		summarizeBy: sum
+		sourceColumn: fx_rate_used
+		lineageTag: 16d281b8-d527-504a-b152-fba696d1bb6d
+
+	column amount_original
+		dataType: double
+		summarizeBy: sum
+		sourceColumn: amount_original
+		lineageTag: 5a0c5a1f-1087-5aa9-bfd3-5193535dd5aa
+
+	column purchase_amount_pkr
+		dataType: double
+		summarizeBy: sum
+		sourceColumn: purchase_amount_pkr
+		lineageTag: 0e3e0957-1e23-5cf8-8db8-d452ea7da0c4
+
+	column batch_id
+		dataType: int64
+		summarizeBy: none
+		sourceColumn: batch_id
+		lineageTag: 3c6d8df3-3849-56bd-8766-3ea53979b632
+
+	partition Purchases = m
+		mode: import
+		source =
+				let
+				    Source = Csv.Document(File.Contents(DataFolder & "\vw_purchase_enriched.csv"), [Delimiter = ",", Encoding = 65001, QuoteStyle = QuoteStyle.Csv]),
+				    Promoted = Table.PromoteHeaders(Source, [PromoteAllScalars = true]),
+				    Typed = Table.TransformColumnTypes(Promoted, {{"purchase_line_id", Int64.Type}, {"grn_no", type text}, {"line_no", Int64.Type}, {"full_date", type date}, {"month_start", type date}, {"fiscal_year", type text}, {"fiscal_quarter", Int64.Type}, {"product_code", type text}, {"generic_name", type text}, {"category", type text}, {"branch_name", type text}, {"region", type text}, {"supplier_name", type text}, {"origin", type text}, {"quantity_units", type number}, {"currency_code", type text}, {"fx_rate_used", type number}, {"amount_original", type number}, {"purchase_amount_pkr", type number}, {"batch_id", Int64.Type}}, "en-US")
+				in
+				    Typed
+

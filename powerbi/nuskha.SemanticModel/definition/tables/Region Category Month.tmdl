@@ -1,0 +1,67 @@
+table 'Region Category Month'
+	lineageTag: 7899df59-4792-5753-96cf-97fe2986d004
+
+	column region
+		dataType: string
+		summarizeBy: none
+		sourceColumn: region
+		lineageTag: b2cf5920-7a70-5c18-ae64-7ea3a7c7be44
+
+	column category
+		dataType: string
+		summarizeBy: none
+		sourceColumn: category
+		lineageTag: d2655875-5f20-5356-91ed-48afba5b172c
+
+	column month_start
+		dataType: dateTime
+		summarizeBy: none
+		sourceColumn: month_start
+		lineageTag: 22745b2e-e602-5e93-951b-1543b605dd3b
+
+	column net_sales_pkr
+		dataType: double
+		summarizeBy: sum
+		sourceColumn: net_sales_pkr
+		lineageTag: 2a7bc8a7-0add-5dfc-bccc-21cec5566b4a
+
+	column sales_lines
+		dataType: int64
+		summarizeBy: sum
+		sourceColumn: sales_lines
+		lineageTag: 55bcf27d-34ab-5f8d-9e39-49507f4aabf0
+
+	column trailing_median_6
+		dataType: double
+		summarizeBy: sum
+		sourceColumn: trailing_median_6
+		lineageTag: d60b1ce9-a7e5-5fda-8589-792599ea7d62
+
+	column ratio_to_trailing
+		dataType: double
+		summarizeBy: sum
+		sourceColumn: ratio_to_trailing
+		lineageTag: 289ca73b-6b33-5b62-8b5d-e20a743a95be
+
+	column yoy_ratio
+		dataType: double
+		summarizeBy: sum
+		sourceColumn: yoy_ratio
+		lineageTag: bd909856-278a-57ab-837c-334ef842b84c
+
+	column ratio_to_category
+		dataType: double
+		summarizeBy: sum
+		sourceColumn: ratio_to_category
+		lineageTag: 2b2ffd1d-1e77-5547-bf6d-1bf3298ef77e
+
+	partition 'Region Category Month' = m
+		mode: import
+		source =
+				let
+				    Source = Csv.Document(File.Contents(DataFolder & "\vw_region_category_month.csv"), [Delimiter = ",", Encoding = 65001, QuoteStyle = QuoteStyle.Csv]),
+				    Promoted = Table.PromoteHeaders(Source, [PromoteAllScalars = true]),
+				    Typed = Table.TransformColumnTypes(Promoted, {{"region", type text}, {"category", type text}, {"month_start", type date}, {"net_sales_pkr", type number}, {"sales_lines", Int64.Type}, {"trailing_median_6", type number}, {"ratio_to_trailing", type number}, {"yoy_ratio", type number}, {"ratio_to_category", type number}}, "en-US")
+				in
+				    Typed
+

@@ -1,0 +1,6 @@
+check,expected,actual,result
+TMDL files indent with tabs only,0,0,PASS
+ratio measures use DIVIDE (no '/'),0,0,PASS
+relationship columns exist in the CSVs,0,0,PASS
+measure columns exist in the CSVs,0,0,PASS
+tables written,10,10,PASS

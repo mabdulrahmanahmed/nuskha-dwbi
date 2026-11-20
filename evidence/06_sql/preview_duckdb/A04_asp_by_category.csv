@@ -64,7 +64,7 @@ month_start,category,quantity_units,net_sales_pkr,asp_pkr
 2026-01-01,Antibiotics,175.0,59198.7,338.28
 2026-02-01,Antibiotics,219.0,83021.55,379.09
 2026-03-01,Antibiotics,267.0,96997.9,363.29
-2026-04-01,Antibiotics,217.0,68663.7,316.42
+2026-04-01,Antibiotics,218.0,69090.7,316.93
 2026-05-01,Antibiotics,204.0,77060.6,377.75
 2026-06-01,Antibiotics,190.0,66844.75,351.81
 2026-07-01,Antibiotics,201.0,77804.5,387.09
@@ -100,7 +100,7 @@ month_start,category,quantity_units,net_sales_pkr,asp_pkr
 2026-01-01,Cardiovascular,265.0,66910.65,252.49
 2026-02-01,Cardiovascular,234.0,64318.1,274.86
 2026-03-01,Cardiovascular,286.0,69770.5,243.95
-2026-04-01,Cardiovascular,266.0,66847.45,251.31
+2026-04-01,Cardiovascular,288.0,79779.45,277.01
 2026-05-01,Cardiovascular,246.0,61630.1,250.53
 2026-06-01,Cardiovascular,225.0,60129.5,267.24
 2026-07-01,Cardiovascular,303.0,90866.2,299.89

@@ -1,0 +1,12 @@
+branch_code,branch_name,area,region
+BR-CLF,Clifton,South,South
+BR-GBG,Gulberg,Central,North
+BR-GLJ,Gulistan-e-Jauhar,Gulshan,East
+BR-GUL,Gulshan-e-Iqbal,Gulshan,East
+BR-MLR,Malir,Malir,East
+BR-NNZ,North Nazimabad,Central,North
+BR-NZM,Nazimabad,Central,North
+BR-ORG,Orangi,West,North
+BR-PEC,PECHS,Jamshed,South
+BR-SDR,Saddar,South,South
+UNKNOWN,Unknown,Unknown,Unknown
