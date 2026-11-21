@@ -43,13 +43,14 @@ bash scripts/setup_env.sh                          # must print OK five times
    - If it does not open, or a visual errors: build the report from `powerbi/BUILD_GUIDE.md` (about 45 minutes) and save it to the same file names.
    - On visual 8 (top 10 products), add the Top N = 10 filter by hand (BUILD_GUIDE).
 2. **Google Colab run** (about 10 minutes; the setup cell apt-installs MySQL and PostgreSQL).
-   - Upload `dist/nuskha-dwbi-colab.zip` (a clean copy of the repo, without the venv or secrets) in the Colab file panel, then run these cells:
+   - In Colab: **File → Upload notebook** → `pipeline.ipynb`. Then, in the file panel (folder icon), upload `dist/nuskha-dwbi-colab.zip`, a clean copy of the repo without the venv or secrets.
+   - Insert a new cell at the very top of the notebook containing:
      ```
-     !unzip -q nuskha-dwbi-colab.zip -d /content/nuskha-dwbi
+     !unzip -oq /content/nuskha-dwbi-colab.zip -d /content/nuskha-dwbi
      %cd /content/nuskha-dwbi
      import os; os.environ['NUSKHA_MODE'] = 'FULL_REBUILD'
      ```
-   - Open `/content/nuskha-dwbi/pipeline.ipynb` from the file panel, or upload `pipeline.ipynb` into Colab, and choose **Runtime → Run all**.
+   - Choose **Runtime → Run all**.
    - Check that the last cell's totals equal the table in `README.md` (e.g. FY2026 net sales 6230294.70).
    - Save it with **File → Download → .ipynb** as `evidence/colab_run.ipynb`.
    - If a setup step fails in Colab, note the error. The local headless run (`evidence/05_validation/headless_run/`) already proves the notebook runs end to end.
