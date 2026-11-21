@@ -80,3 +80,10 @@
 - 3.04-3.07: `src/batch_tests.py rerun|batch2|scd1|failure`. batch2 snapshots dim_product (evidence) and fact_sales (data/snapshots/, git-ignored) before loading, reloads sources with `load_sources --stage 2`, extracts batch 2, runs all etl_db steps, loads, logs 3 deletions.
 - Stage-2 facts: 71 lines updated (20 qty + 31 void + 20 panel-receipt lines); 21 re-saved-only lines untouched; 7 CANCELLED GRN lines (not 9 as the old note said); P-0368 Dextromethorphan Syrup Gastro -> Cough and Cold (+/-112,316.85).
 - etl.batch now: 1 SUCCESS, 2 SUCCESS, 3 FAILED (controlled failure), 4 SUCCESS (rerun). Sources hold stage 2.
+
+## 3.08-3.11 (DONE)
+- 3.08 `python -m src.metadata --load`: meta tables filled (4 systems, 34 source objects, 19 rules, 70 column maps); lineage 100% on both facts.
+- 3.09 `python -m src.reverse_engineer`: sales 3 observed links, purchasing 6 observed, inventory 3 inferred.
+- 3.10 `python -m src.traces` + sql/05_traces/T1..T6.sql -> evidence/04_metadata_lineage/traces/T*.md (all end at a source row; T5 bridges MySQL lines to the FY2026 card exactly: 10,721 lines, PKR 6,230,294.70).
+- Views created early by `python -m src.views` (10/10 checks) — 4.01 can just rerun it.
+- 3.11 `python -m src.validation`: 26 PASS, check 11 NOT RUN until the AI units; rerun in 5.09.

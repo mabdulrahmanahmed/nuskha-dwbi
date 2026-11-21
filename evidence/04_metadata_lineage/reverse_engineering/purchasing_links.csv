@@ -1,0 +1,7 @@
+child_table,child_column,parent_table,parent_column,status,evidence
+goods_receipt,po_no,purchase_order,po_no,observed,declared foreign key in the catalog
+grn_line,grn_no,goods_receipt,grn_no,observed,declared foreign key in the catalog
+grn_line,vendor_item_code,vendor_item,vendor_item_code,observed,declared foreign key in the catalog
+purchase_order,supplier_id,supplier,supplier_id,observed,declared foreign key in the catalog
+purchase_order,branch_id,branch,branch_id,observed,declared foreign key in the catalog
+vendor_item,supplier_id,supplier,supplier_id,observed,declared foreign key in the catalog

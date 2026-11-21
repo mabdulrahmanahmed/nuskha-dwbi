@@ -1,0 +1,35 @@
+source_system,object_name,primary_key,batch_id,row_count
+sales_db,loyalty_member,card_no,1,1200
+sales_db,pos_item,item_code,1,153
+sales_db,receipt,receipt_no,1,12767
+sales_db,receipt_line,"receipt_no, line_no",1,28099
+purchasing_db,supplier,supplier_id,1,25
+purchasing_db,branch,branch_id,1,10
+purchasing_db,vendor_item,vendor_item_code,1,152
+purchasing_db,purchase_order,po_no,1,1726
+purchasing_db,goods_receipt,grn_no,1,1717
+purchasing_db,grn_line,"grn_no, line_no",1,4683
+inventory,item,item_id,1,150
+inventory,store,store_code,1,10
+inventory,stock_count,"store_code, item_id, count_date",1,16500
+inventory,item_cost_history,"item_id, effective_from",1,600
+finance_db,panel_account,account_no,1,15
+finance_db,fx_rate,rate_date,1,1035
+finance_db,panel_invoice,invoice_no,1,412
+sales_db,loyalty_member,card_no,2,1200
+sales_db,pos_item,item_code,2,154
+sales_db,receipt,receipt_no,2,1112
+sales_db,receipt_line,"receipt_no, line_no",2,2416
+purchasing_db,supplier,supplier_id,2,25
+purchasing_db,branch,branch_id,2,10
+purchasing_db,vendor_item,vendor_item_code,2,153
+purchasing_db,purchase_order,po_no,2,120
+purchasing_db,goods_receipt,grn_no,2,124
+purchasing_db,grn_line,"grn_no, line_no",2,326
+inventory,item,item_id,2,151
+inventory,store,store_code,2,10
+inventory,stock_count,"store_code, item_id, count_date",2,18000
+inventory,item_cost_history,"item_id, effective_from",2,601
+finance_db,panel_account,account_no,2,15
+finance_db,fx_rate,rate_date,2,1096
+finance_db,panel_invoice,invoice_no,2,436

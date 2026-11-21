@@ -302,37 +302,43 @@
       "minutes": 0.5
     },
     "3.08": {
-      "status": "PENDING",
+      "status": "DONE",
       "attempts": 0,
       "phase": "3",
       "title": "Metadata repository",
       "est": 15,
       "needs": [
         "3.05"
-      ]
+      ],
+      "start": 1795294784.1300218,
+      "minutes": 0.4
     },
     "3.09": {
-      "status": "PENDING",
+      "status": "DONE",
       "attempts": 0,
       "phase": "3",
       "title": "Reverse engineering",
       "est": 15,
       "needs": [
         "1.08"
-      ]
+      ],
+      "start": 1795294813.6614003,
+      "minutes": 0.3
     },
     "3.10": {
-      "status": "PENDING",
+      "status": "DONE",
       "attempts": 0,
       "phase": "3",
       "title": "Six traces",
       "est": 15,
       "needs": [
         "3.08"
-      ]
+      ],
+      "start": 1795294968.9258428,
+      "minutes": 0.5
     },
     "3.11": {
-      "status": "PENDING",
+      "status": "DONE",
       "attempts": 0,
       "phase": "3",
       "title": "Validation suite",
@@ -340,7 +346,9 @@
       "needs": [
         "3.07",
         "3.10"
-      ]
+      ],
+      "start": 1795295046.2758884,
+      "minutes": 0.2
     },
     "4.01": {
       "status": "PENDING",

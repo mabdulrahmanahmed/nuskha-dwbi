@@ -1,0 +1,4 @@
+child_table,child_column,parent_table,parent_column,status,evidence
+receipt,card_no,loyalty_member,card_no,observed,declared foreign key in the catalog
+receipt_line,receipt_no,receipt,receipt_no,observed,declared foreign key in the catalog
+receipt_line,item_code,pos_item,item_code,observed,declared foreign key in the catalog
