@@ -267,6 +267,8 @@ def number_check() -> bool:
                  or tok in blob_nocomma)
         if not found and not frac:   # integer in the text may be a rounded decimal (70,806 -> 70806.15)
             found = re.search(rf"(?<![\d.]){re.escape(whole)}(?:\.\d+)?(?!\d)", blob) is not None
+            # rounded up: 128,333 in the text, 128332.85 in the evidence
+            found = found or re.search(rf"(?<![\d.]){int(whole) - 1}\.[5-9]", blob) is not None
         if not found and frac:       # e.g. 0.80 vs 0.8, 25.7 vs 25.70
             found = re.search(rf"(?<![\d.]){re.escape(whole)}\.{re.escape(frac.rstrip('0') or '0')}", blob) is not None
         rows.append({"number": tok, "found_in_evidence": "PASS" if found else "FAIL"})
