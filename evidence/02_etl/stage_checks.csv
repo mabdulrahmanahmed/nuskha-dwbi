@@ -1,0 +1,5 @@
+check,expected,actual,result
+stg tables written,17,17,PASS
+no text date columns in stg,0,0,PASS
+no float (double/real) columns in stg: money is NUMERIC,0,0,PASS
+Inventory categories all canonical (8 names or 'Not recorded'),0,0,PASS

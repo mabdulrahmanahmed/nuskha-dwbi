@@ -1,0 +1,2 @@
+check,expected,actual,result
+profile_before covers every source table,17,17,PASS

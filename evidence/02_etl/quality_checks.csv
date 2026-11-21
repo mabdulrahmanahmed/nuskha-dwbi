@@ -1,0 +1,17 @@
+check,expected,actual,result
+receipt_line D01_EXACT_DUPLICATE: ETL result = planted ledger (key for key),139,139,PASS
+receipt_line LEGIT_REPEAT: ETL result = planted ledger (key for key),278,278,PASS
+receipt_line R01_MISSING_PRODUCT: ETL result = planted ledger (key for key),167,167,PASS
+receipt_line R02_BAD_QTY: ETL result = planted ledger (key for key),111,111,PASS
+receipt_line R03_BAD_DATE: ETL result = planted ledger (key for key),83,83,PASS
+receipt_line R04_BAD_AMOUNT: ETL result = planted ledger (key for key),83,83,PASS
+receipt_line R05_UNKNOWN_BRANCH: ETL result = planted ledger (key for key),56,56,PASS
+receipt_line R07_ORPHAN_LINE: ETL result = planted ledger (key for key),56,56,PASS
+receipt_line U01_UNRESOLVED_CUSTOMER: ETL result = planted ledger (key for key),20,20,PASS
+grn_line D01_EXACT_DUPLICATE: ETL result = planted ledger (key for key),23,23,PASS
+grn_line R01_MISSING_PRODUCT: ETL result = planted ledger (key for key),28,28,PASS
+grn_line R02_BAD_QTY: ETL result = planted ledger (key for key),19,19,PASS
+grn_line R03_BAD_DATE: ETL result = planted ledger (key for key),14,14,PASS
+grn_line R04_BAD_AMOUNT: ETL result = planted ledger (key for key),14,14,PASS
+grn_line R06_NO_FX_RATE: ETL result = planted ledger (key for key),4,4,PASS
+etl.rejects holds every reject of this batch once,635,635,PASS

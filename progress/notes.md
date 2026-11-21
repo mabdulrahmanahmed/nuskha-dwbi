@@ -66,3 +66,10 @@
 ## 1.08 Load and reproducibility (DONE)
 - `python -m src.load_sources --stage 1 --twice` loads stage-1 CSVs into sales_db, finance_db, purchasing_db and INVENTORY_PATH; `evidence/01_sources/reproducibility.csv`: 17/17 tables identical md5 across two builds.
 - Sources now hold stage 1. 3.05 must reload with `--stage 2` before the batch-2 extract.
+
+## Phase 2 (2.01-2.09, DONE 2026-11-22)
+- 2.01: `python -m src.create_warehouse 01` (schemas + etl control + crosswalk tables). Test batch truncated so batch 1 = batch_id 1.
+- 2.02: `python -m src.extract --to "2026-08-31 23:59:59" --double-export data/generated/stage1/double_export.csv` -> evidence/02_etl/raw/batch_1 (17/17 counts and amounts match). Fixed a NaN-vs-None bug in the amount check. The DB snapshot equals raw_from_generated(1) table for table.
+- 2.03-2.09: new `src/etl_db.py` with steps profile-before, stage, profile-after, crosswalk, prejoin, quality, reconcile (`--batch N`). Staging is rebuilt from the immutable raw snapshots (header tables cumulative over batches); `run(batch)` gives stg, xw, valid/rejects/duplicates. stg.* written with NUMERIC money; checks go to etl.validation_result (rerun replaces same check name).
+- Batch 1: 635 rejects in etl.rejects, all codes equal the ledger key for key; receipt_line 28,238 = 27,543 valid + 556 rejected + 139 dup; grn_line 4,706 = 4,604 + 79 + 23.
+- etl.batch row 1 is still RUNNING: 3.03 must finish_batch(1, 'SUCCESS', ...) after the fact load so batch 2 can use its watermark.

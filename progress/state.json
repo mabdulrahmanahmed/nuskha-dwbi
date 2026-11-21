@@ -108,17 +108,19 @@
       "minutes": 1.4
     },
     "2.01": {
-      "status": "PENDING",
+      "status": "DONE",
       "attempts": 0,
       "phase": "2",
       "title": "Warehouse control tables",
       "est": 10,
       "needs": [
         "1.02"
-      ]
+      ],
+      "start": 1795293855.2903087,
+      "minutes": 0.2
     },
     "2.02": {
-      "status": "PENDING",
+      "status": "DONE",
       "attempts": 0,
       "phase": "2",
       "title": "Extract",
@@ -126,77 +128,93 @@
       "needs": [
         "1.08",
         "2.01"
-      ]
+      ],
+      "start": 1795293879.3717854,
+      "minutes": 0.5
     },
     "2.03": {
-      "status": "PENDING",
+      "status": "DONE",
       "attempts": 0,
       "phase": "2",
       "title": "Profile before",
       "est": 10,
       "needs": [
         "2.02"
-      ]
+      ],
+      "start": 1795294028.8619492,
+      "minutes": 0.2
     },
     "2.04": {
-      "status": "PENDING",
+      "status": "DONE",
       "attempts": 0,
       "phase": "2",
       "title": "Normalize",
       "est": 15,
       "needs": [
         "2.03"
-      ]
+      ],
+      "start": 1795294038.9794865,
+      "minutes": 0.6
     },
     "2.05": {
-      "status": "PENDING",
+      "status": "DONE",
       "attempts": 0,
       "phase": "2",
       "title": "Profile after",
       "est": 10,
       "needs": [
         "2.04"
-      ]
+      ],
+      "start": 1795294076.7198186,
+      "minutes": 0.1
     },
     "2.06": {
-      "status": "PENDING",
+      "status": "DONE",
       "attempts": 0,
       "phase": "2",
       "title": "Crosswalks",
       "est": 15,
       "needs": [
         "2.04"
-      ]
+      ],
+      "start": 1795294085.278606,
+      "minutes": 0.2
     },
     "2.07": {
-      "status": "PENDING",
+      "status": "DONE",
       "attempts": 0,
       "phase": "2",
       "title": "Pre-join checks",
       "est": 10,
       "needs": [
         "2.06"
-      ]
+      ],
+      "start": 1795294097.0393002,
+      "minutes": 0.1
     },
     "2.08": {
-      "status": "PENDING",
+      "status": "DONE",
       "attempts": 0,
       "phase": "2",
       "title": "Rejects and duplicates",
       "est": 15,
       "needs": [
         "2.07"
-      ]
+      ],
+      "start": 1795294105.4737391,
+      "minutes": 0.1
     },
     "2.09": {
-      "status": "PENDING",
+      "status": "DONE",
       "attempts": 0,
       "phase": "2",
       "title": "Reconciliation batch 1",
       "est": 10,
       "needs": [
         "2.08"
-      ]
+      ],
+      "start": 1795294114.4290488,
+      "minutes": 0.3
     },
     "3.01": {
       "status": "PENDING",

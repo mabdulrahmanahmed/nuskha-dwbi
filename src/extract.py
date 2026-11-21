@@ -130,7 +130,8 @@ def run_extract(wm_to, double_export: Path | None, batch_id: int | None = None, 
     out = pd.DataFrame(log)
     out["rows_in_snapshot"] = [len(raw[(r.database, r.table)]) for r in out.itertuples()]
     out["counts_match"] = out.rows_extracted == out.source_count
-    out["amounts_match"] = [(a is None and b is None) or (a is not None and b is not None and abs(a - b) < 0.005)
+    # Tables without an amount have NaN on both sides (pandas turns None into NaN).
+    out["amounts_match"] = [(pd.isna(a) and pd.isna(b)) or (not pd.isna(a) and not pd.isna(b) and abs(a - b) < 0.005)
                             for a, b in zip(out.amount_extracted, out.source_amount)]
     for r in out.itertuples():
         log_stage("extract", f"{r.database}.{r.table}", rows_in=r.source_count, rows_out=r.rows_in_snapshot,

@@ -1,0 +1,26 @@
+supplier_id,supplier_name,country,is_import
+1,Alder Medical Distributors,Pakistan,false
+2,Basalt Pharma Supply,China,true
+3,Cobalt Health Traders,Pakistan,false
+4,Dunewood Drug House,Pakistan,false
+5,Emberly Medicare Agencies,Pakistan,false
+6,Falconridge Medical Distributors,Pakistan,false
+7,Garnet Pharma Supply,Pakistan,false
+8,Harbourline Health Traders,Pakistan,false
+9,Indigo Drug House,Pakistan,false
+10,Juniper Medicare Agencies,Germany,true
+11,Kitewing Medical Distributors,Pakistan,false
+12,Lumen Pharma Supply,Pakistan,false
+13,Maplegate Health Traders,Pakistan,false
+14,Nimbus Drug House,Pakistan,false
+15,Onyxfield Medicare Agencies,Pakistan,false
+16,Pebblestone Medical Distributors,Pakistan,false
+17,Quartzline Pharma Supply,Switzerland,true
+18,Ridgeway Health Traders,Pakistan,false
+19,Saffronia Drug House,Pakistan,false
+20,Tealbrook Medicare Agencies,Turkey,true
+21,Umberly Medical Distributors,Pakistan,false
+22,Vistara Pharma Supply,Pakistan,false
+23,Willowmere Health Traders,Pakistan,false
+24,Zephyra Drug House,Pakistan,false
+25,Amberlane Medicare Agencies,Malaysia,true
