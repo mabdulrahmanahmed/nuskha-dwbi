@@ -1,93 +1,55 @@
-# Start here (local terminal)
+# Start here
 
-Claude Code builds the whole project on your own computer, from a terminal: 5 phases, 49 work units, about 10.5 hours of processing. You are needed only for a setup at the start and a checklist at the end.
+Synthetic data (seed 472). This page is the way in for the group: what exists, where to look, and the few things only a person can do.
 
-Progress is saved after every unit (`progress/PROGRESS.md` plus a git commit), so if your laptop switches off, nothing finished is lost: switch it back on and run one command to resume.
+## Part 1. What has been built
 
-## The risk you are accepting
+The full CT-472 project, end to end and automated:
+- **Sources:** four departmental source systems on three engines.
+- **ETL and warehouse:** ETL with rejects and reconciliation feeding a PostgreSQL warehouse with two stars, two batches, a rerun test, a controlled failure and SCD Type 1.
+- **Metadata and validation:** a metadata repository with lineage, six traces and an 11-check validation suite.
+- **Analytics:** 12 analytic queries and 6 saved views.
+- **AI:** a forecast and anomaly detection, both evaluated against baselines.
+- **Power BI:** a 3-page Power BI project.
+- **Documents:** the technical report, recommendations, a demo run-sheet and four viva guides.
 
-To run without stopping for approvals, the runner starts Claude Code with permission prompts turned off. Claude Code can then run any command your user account can. Contain it:
+`pipeline.ipynb` ran headless twice from an empty warehouse, and the totals were identical (`evidence/05_validation/headless_run/totals_comparison.csv`).
 
-- **Windows:** run everything inside WSL (Ubuntu), with the project in your WSL home folder (`~/nuskha-dwbi`), not under `/mnt/c`. Keep nothing personal in that Ubuntu installation.
-- **macOS:** create a separate macOS user account for the build, or accept that it runs with your normal account's access.
+## Part 2. Where to look
 
-## 1. Setup (about 30 minutes, once)
+| You want | Open |
+| --- | --- |
+| The report (8–12 pages + appendices) | `report/report.pdf` (Word: `report/report.docx`, source: `report/report.md`) |
+| Which file proves each rubric item | `evidence/INDEX.md` |
+| Requirement-by-requirement audit | `docs/AUDIT.md` |
+| How to run everything, expected numbers | `README.md` |
+| The 12-minute demo | `docs/demo.md` |
+| Your viva preparation | `docs/viva/member1.md` … `member4.md` |
+| The three recommendations | `docs/recommendations.md` |
+| Why something differs from the blueprint | `docs/DECISIONS.md` |
 
-### Windows (recommended path: WSL)
-
-1. Open PowerShell **as Administrator** and run `wsl --install -d Ubuntu`. Restart when asked, open "Ubuntu" from the Start menu, and create a Linux username and password.
-2. In the Ubuntu terminal, allow the build to install and start databases without asking for your password (replace nothing; `$USER` fills itself in):
-
-```bash
-echo "$USER ALL=(ALL) NOPASSWD:ALL" | sudo tee /etc/sudoers.d/nuskha-build
-sudo apt-get update -qq && sudo apt-get install -y -qq git unzip tmux python3-pip python3-venv curl
-curl -fsSL https://deb.nodesource.com/setup_20.x | sudo -E bash - && sudo apt-get install -y -qq nodejs
-```
-
-3. Copy `nuskha-dwbi-kit.zip` into Ubuntu. In File Explorer open `\\wsl$\Ubuntu\home\<your-linux-username>\` and paste the zip there. Then in the Ubuntu terminal:
-
-```bash
-cd ~ && unzip -q nuskha-dwbi-kit.zip && cd nuskha-dwbi
-git init -q && git add -A && git commit -q -m "Project kit"
-```
-
-4. Install Claude Code and sign in:
+## Part 3. Rerun everything on this laptop
 
 ```bash
-sudo npm install -g @anthropic-ai/claude-code
-claude          # sign in once, then type /exit
+bash scripts/setup_env.sh                          # must print OK five times
+.venv/Scripts/python -m src.pipeline --mode FULL_REBUILD
+.venv/Scripts/python -m src.report_build --check   # rebuild report.docx / report.pdf
 ```
 
-### macOS
+## Part 4. Human checklist (only a person can do these)
 
-1. Install Homebrew (https://brew.sh) if you don't have it, then: `brew install git tmux python node`.
-2. Unzip `nuskha-dwbi-kit.zip` into your home folder, then:
-
-```bash
-cd ~/nuskha-dwbi && git init -q && git add -A && git commit -q -m "Project kit"
-npm install -g @anthropic-ai/claude-code
-claude          # sign in once, then type /exit
-```
-
-### Both: optional backup to GitHub
-
-Create an empty private repository `nuskha-dwbi` on GitHub, then run the two commands GitHub shows under "push an existing repository". From then on, every finished unit is also pushed there, so `progress/PROGRESS.md` can be read from your phone.
-
-### Both: keep the laptop awake
-
-- **Windows:** Settings → System → Power → Screen and sleep → "When plugged in, put my device to sleep after" → Never. Keep the charger in.
-- **macOS:** System Settings → Battery/Energy → prevent automatic sleeping when the display is off, or run the build with `caffeinate -i bash scripts/resume.sh` instead of the command below.
-
-## 2. Start the build
-
-From the project folder (`~/nuskha-dwbi`):
-
-```bash
-bash scripts/resume.sh
-```
-
-When you see `[Phase 1] starting unit 1.01`, you can leave. Keep the terminal window open; minimise it rather than closing it. After each unit it prints:
-
-`[Phase 2] 2.04 done in 13 min · 4/9 units · ~58 min of processing left in this phase`
-
-The time is Claude Code's processing time, rescaled by how fast the finished units went. A unit that fails three times is marked BLOCKED, the units that need it are SKIPPED, and the run carries on; you deal with them at the end. If your Claude plan's usage limit is reached, the run waits 30 minutes and retries by itself.
-
-## 3. If the laptop switched off, slept or the terminal closed
-
-Open the terminal (Ubuntu on Windows), then:
-
-```bash
-cd ~/nuskha-dwbi && bash scripts/resume.sh
-```
-
-Finished units are skipped. A unit that was cut off mid-way is picked up and completed, and the databases are restarted (and rebuilt from the seed if needed) before it continues. To see where things stand without resuming: open `progress/PROGRESS.md`, or run `python3 scripts/progress.py summary`.
-
-## 4. End-of-run checklist (about 30–60 minutes)
-
-Do these after the run prints "Automated build finished", in this order.
-
-1. **Blocked units, if any.** Read the summary and `docs/BLOCKERS.md`. Each entry says exactly what a person must do. Do it, mark the entry resolved, then run `python3 scripts/progress.py retry && bash scripts/resume.sh` (only the unfinished units run).
-2. **Google Colab (about 10 min).** The brief requires extraction through Colab. Upload `pipeline.ipynb` to Colab, keep `MODE = "FULL_REBUILD"` in the first cell, run Runtime → Run all, then File → Download → .ipynb. Save it in the project as `evidence/colab_run.ipynb`.
-3. **Power BI (about 10 min; about 45 with the fallback).** On Windows with Power BI Desktop: open `powerbi/nuskha.pbip` (in File Explorer under `\\wsl$\Ubuntu\home\<you>\nuskha-dwbi\powerbi\`), set the `DataFolder` parameter to the full path of the `powerbi\data` folder, click Refresh, check the three totals against `powerbi/reconciliation.csv`, save as `powerbi/nuskha.pbix`, and export File → Export → PDF to `powerbi/nuskha.pdf`. If the project will not open, build it from `powerbi/BUILD_GUIDE.md`.
-4. **Finish:** in the terminal, from the project folder, run `bash scripts/finalize.sh`. It checks the Colab run, adds the Power BI pages to the report, rebuilds the report and reruns the final audit, with no input.
-5. **People only:** fill in the contribution statement in `report/report.docx` truthfully; each member reads their guide in `docs/viva/` and runs their part of `docs/demo.md` once; check your course's policy on AI-assisted work before submitting.
+1. **Power BI.** Open `powerbi/nuskha.pbip` in Power BI Desktop.
+   - If it opens: check the three pages and the three totals in `powerbi/reconciliation.csv` (FY2026 net sales 6,230,294.70; Gulshan-e-Iqbal 2025 745,398.10; Oct 2026 purchases 599,167.14), then **File → Save as** `powerbi/nuskha.pbix` and **Export → PDF** to `powerbi/nuskha.pdf`.
+   - If it does not open, or a visual errors: build the report from `powerbi/BUILD_GUIDE.md` (about 45 minutes) and save it to the same file names.
+   - On visual 8 (top 10 products), add the Top N = 10 filter by hand (BUILD_GUIDE).
+2. **Google Colab run.**
+   - Upload the project folder (or clone the repo) into Colab and `%cd` into it.
+   - Open `pipeline.ipynb` and set `NUSKHA_MODE` to `FULL_REBUILD` (in the second cell, or as an environment variable).
+   - Run all cells, then save the executed notebook as `evidence/colab_run.ipynb`. Its last cell shows the warehouse totals; they should equal the table in `README.md`.
+3. **Contribution statement.** Fill in names, notebook sections and hours in the table in section 10 of `report/report.md`, then run `.venv/Scripts/python -m src.report_build --check` to rebuild the docx and PDF.
+4. **Open items with the instructor:**
+   - Rebuilding the lab artifacts inside the project.
+   - Practical 9/10 task numbers for A1–A12 (provisional in `evidence/06_sql/readings.md`).
+   - The evidence folder names required by the brief.
+5. **Viva rehearsal.** Each member presents another member's component once, using `docs/viva/`.
+6. **Closing step.** When 1–3 are done, run `bash scripts/finalize.sh`. It compares the Colab totals, adds the Power BI PDF to the report, reruns the audit and tags `v1.1`.

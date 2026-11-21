@@ -544,14 +544,16 @@
       "minutes": 0.0
     },
     "5.06": {
-      "status": "PENDING",
+      "status": "DONE",
       "attempts": 0,
       "phase": "5",
       "title": "README and evidence index",
       "est": 10,
       "needs": [
         "5.05"
-      ]
+      ],
+      "start": 1795296715.9445574,
+      "minutes": 1.1
     },
     "5.07": {
       "status": "PENDING",

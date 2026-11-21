@@ -107,3 +107,7 @@
 - report/report.md (sections 1-10 + appendices A DDL, B 12 queries, C validation, D rejects) -> `python -m src.report_build --check` writes report/report.docx (python-docx) and report/report.pdf (Microsoft Word COM via PowerShell; Windows only, skipped elsewhere).
 - 25 pages total, 9 before the appendices (evidence/09_report/report_pages.csv PASS); number check 74/74 numbers found in evidence (report_numbers_check.csv). derived_figures.csv holds the forecast 3-month sums; reject_summary.csv the Appendix D table.
 - Contribution statement (section 10) is a template: group fills names and hours (START_HERE part 4).
+
+## 5.06 README and evidence index (DONE)
+- README.md: setup, run order (16 rows over the 29 pipeline steps) with expected counts/totals, final totals table. START_HERE.md: parts 1-4 (part 4 = human checklist: Power BI open/save pbix+pdf, Colab run -> evidence/colab_run.ipynb, contribution statement, instructor items, finalize.sh).
+- evidence/INDEX.md maps every C1-C5 Score-2 item to files; `python -m src.audit` checks every backticked path exists (evidence/09_report/index_check.csv). All rubric paths exist; docs/viva/*.md arrive in 5.08.
