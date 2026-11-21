@@ -496,14 +496,15 @@
       "minutes": 0.1
     },
     "5.02": {
-      "status": "PENDING",
+      "status": "IN_PROGRESS",
       "attempts": 0,
       "phase": "5",
       "title": "Headless full run",
       "est": 15,
       "needs": [
         "5.01"
-      ]
+      ],
+      "start": 1795295604.9958506
     },
     "5.03": {
       "status": "PENDING",
