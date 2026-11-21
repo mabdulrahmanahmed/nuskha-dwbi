@@ -484,14 +484,16 @@
       "minutes": 0.3
     },
     "5.01": {
-      "status": "PENDING",
+      "status": "DONE",
       "attempts": 0,
       "phase": "5",
       "title": "Colab notebook",
       "est": 15,
       "needs": [
         "4.08"
-      ]
+      ],
+      "start": 1795295593.1740556,
+      "minutes": 0.1
     },
     "5.02": {
       "status": "PENDING",
