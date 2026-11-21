@@ -1,0 +1,152 @@
+item_id,generic_name,strength,category,tablets_per_strip,std_cost_per_strip,pos_code,vendor_code,last_updated
+101,Paracetamol,500 mg,Analgesics,14,97.2229,,BAS-3052,01/07/2026
+104,Paracetamol,650 mg,Analgesics,14,65.1171,PAR-650-STR,MAP-2497,01/07/2026
+113,Paracetamol,120 mg/5 ml,Analgesics,1,340.1978,PAR-120-BTL,,01/07/2026
+115,Paracetamol,250 mg/5 ml, analgesics ,1,180.6434,PAR-250-BTL,ONY-8490,01/07/2026
+118,Ibuprofen,200 mg, analgesics ,20,41.3053,IBU-200-STR,,01/07/2026
+122,Ibuprofen,400 mg,ANALGESICS,14,66.7688,,,01/07/2026
+125,Ibuprofen,100 mg/5 ml,Analgesics,1,185.0242,IBU-100-BTL,COB-7261,01/07/2026
+129,Diclofenac Sodium,50 mg, analgesics ,10,92.8838,DICS-50-STR,,01/07/2026
+137,Diclofenac Sodium,75 mg,Analgesics,20,73.9706,,,01/07/2026
+149,Naproxen,250 mg, analgesics ,20,111.1631,NAP-250-STR,,01/07/2026
+154,Naproxen,500 mg, analgesics ,10,36.7016,NAP-500-STR,,01/07/2026
+155,Mefenamic Acid,250 mg,Analgesics,10,58.3731,,COB-1770,01/07/2026
+162,Mefenamic Acid,500 mg,Analgesics,20,24.6617,mefa-500-str ,HAR-5143,01/07/2026
+163,Aspirin,75 mg,Analgesics,10,23.9393,ASP-75-STR,GAR-4320,01/07/2026
+164,Aspirin,300 mg,ANALGESICS,10,97.2787,ASP-300-STR,EMB-4158,01/07/2026
+165,Celecoxib,200 mg,Analgesics,10,46.145,CEL-200-STR,LUM-2978,01/07/2026
+166,Etoricoxib,90 mg,ANALGESICS,10,85.5587,eto-90-str ,EMB-7950,01/07/2026
+169,Ketorolac,10 mg, analgesics ,20,88.4875,KET-10-STR,,01/07/2026
+170,Diclofenac Gel,1%,Analgesics,1,159.9175,DICG-1-PCS,WIL-4636,01/07/2026
+171,Paracetamol Caffeine,500/65 mg,Analgesics,10,89.7953,PARC-500-STR,LUM-7542,01/07/2026
+172,Amoxicillin,250 mg, antibiotics ,10,420.3356,,DUN-2839,01/07/2026
+174,Amoxicillin,500 mg,Antibiotics,20,371.7814,,,01/07/2026
+175,Amoxicillin,125 mg/5 ml, antibiotics ,1,435.2362,AMO-125-BTL,ZEP-5739,01/07/2026
+177,Co-amoxiclav,375 mg,Antibiotics,20,363.3337,COA-375-STR,SAF-2323,01/07/2026
+179,Co-amoxiclav,625 mg,Antibiotics,10,280.65,COA-625-STR,LUM-1930,01/07/2026
+180,Co-amoxiclav,156 mg/5 ml,Antibiotics,1,231.1516,coa-156-btl ,,01/07/2026
+184,Azithromycin,250 mg,ANTIBIOTICS,10,437.0716,AZI-250-STR,UMB-1223,01/07/2026
+194,Azithromycin,500 mg,Antibiotics,10,192.9078,AZI-500-STR,UMB-5844,01/07/2026
+196,Azithromycin,200 mg/5 ml, antibiotics ,1,268.7393,,ONY-1874,01/07/2026
+200,Ciprofloxacin,250 mg,Antibiotics,10,457.2186,CIP-250-STR,,01/07/2026
+201,Ciprofloxacin,500 mg,Antibiotics,10,434.9113,CIP-500-STR,,01/07/2026
+205,Levofloxacin,500 mg,ANTIBIOTICS,10,175.9772,LEV-500-STR,RID-3368,01/07/2026
+208,Cefixime,200 mg,Antibiotics,10,176.1268,CEF-200-STR,MAP-4520,01/07/2026
+209,Cefixime,100 mg/5 ml, antibiotics ,1,342.8182,CEF-100-BTL,PEB-4104,01/07/2026
+211,Cephalexin,500 mg,ANTIBIOTICS,20,112.5856,CEP-500-STR,AMB-1931,01/07/2026
+212,Clarithromycin,500 mg, antibiotics ,20,441.7996,CLA-500-STR,,01/07/2026
+216,Doxycycline,100 mg, antibiotics ,20,319.0374,,HAR-2520,01/07/2026
+217,Metronidazole,400 mg,ANTIBIOTICS,14,391.2711,MET-400-STR,VIS-2609,01/07/2026
+218,Metronidazole,200 mg/5 ml, antibiotics ,1,249.1469,MET-200-BTL,,01/07/2026
+222,Fusidic Acid Cream,2%, antibiotics ,1,114.8601,FUSAC-2-PCS,WIL-1441,01/07/2026
+229,Amlodipine,5 mg,CARDIOVASCULAR,14,232.7747,AML-5-STR,DUN-4684,01/07/2026
+230,Amlodipine,10 mg,Cardiovascular,20,260.0622,aml-10-str ,,01/07/2026
+233,Losartan,50 mg,Cardiovascular,10,222.4764,LOS-50-STR,GAR-9134,01/07/2026
+237,Losartan,100 mg,Cardiovascular,10,199.4213,LOS-100-STR,TEA-8235,01/07/2026
+239,Atenolol,50 mg,CARDIOVASCULAR,14,339.4626,ATE-50-STR,ZEP-2118,01/07/2026
+240,Bisoprolol,2.5 mg,CARDIOVASCULAR,10,203.5245,BIS-25-STR,SAF-8770,01/07/2026
+243,Bisoprolol,5 mg,Cardiovascular,10,380.1174,BIS-5-STR,JUN-5112,01/07/2026
+244,Atorvastatin,10 mg,Cardiovascular,10,290.9786,ATO-10-STR,MAP-2817,01/07/2026
+247,Atorvastatin,20 mg,Cardiovascular,10,204.5534,,HAR-7888,01/07/2026
+249,Atorvastatin,40 mg,Cardiovascular,10,148.7227,ATO-40-STR,NIM-5182,01/07/2026
+251,Rosuvastatin,10 mg,Cardiovascular,14,330.5352,ROS-10-STR,,01/07/2026
+256,Rosuvastatin,20 mg,Cardiovascular,10,326.5231,ROS-20-STR,,01/07/2026
+257,Clopidogrel,75 mg,CARDIOVASCULAR,10,78.8559,CLO-75-STR,,01/07/2026
+258,Valsartan,80 mg,CARDIOVASCULAR,10,327.3672,VAL-80-STR,NIM-2247,01/07/2026
+260,Valsartan,160 mg,Cardiovascular,10,293.2329,VAL-160-STR,,01/07/2026
+262,Hydrochlorothiazide,25 mg,CARDIOVASCULAR,20,370.8824,HYD-25-STR,,01/07/2026
+263,Furosemide,40 mg,Cardiovascular,10,122.6145,fur-40-str ,WIL-7346,01/07/2026
+265,Spironolactone,25 mg,Cardiovascular,10,347.1156,SPI-25-STR,DUN-7698,01/07/2026
+268,Lisinopril,10 mg,Cardiovascular,14,150.283,LIS-10-STR,,01/07/2026
+272,Isosorbide Mononitrate,20 mg, cardiovascular ,10,100.9294,ISOM-20-STR,EMB-6541,01/07/2026
+273,Metformin,500 mg,Diabetes Care,10,204.1599,,EMB-9127,01/03/2026
+274,Metformin,850 mg,Diabetes Care,10,350.1176,MET-850-STR,HAR-4109,01/03/2026
+275,Metformin,1000 mg, diabetes care ,10,565.796,,QUA-2990,01/03/2026
+280,Gliclazide,80 mg,Diabetes Care,10,181.9091,GLI-80-STR,IND-8525,01/03/2026
+281,Gliclazide MR,30 mg,Diabetes Care,10,460.0027,GLIM-30-STR,ALD-6639,01/03/2026
+282,Glimepiride,1 mg, diabetes care ,10,582.0721,GLI-1-STR,HAR-6728,01/03/2026
+286,Glimepiride,2 mg,Diabetes Care,10,101.5932,GLI-2-STR,FAL-5756,01/03/2026
+292,Glimepiride,4 mg,Diabetes Care,14,558.7185,GLI-4-STR,KIT-3683,01/03/2026
+294,Sitagliptin,50 mg,Diabetes Care,10,497.3362,,,01/03/2026
+297,Sitagliptin,100 mg,DIABETES CARE,14,393.0408,SIT-100-STR,WIL-9396,01/03/2026
+298,Sitagliptin Metformin,50/500 mg,Diabetes Care,14,366.4285,SITM-50-STR,,01/03/2026
+299,Vildagliptin,50 mg,DIABETES CARE,14,195.392,VIL-50-STR,UMB-7969,01/03/2026
+303,Empagliflozin,10 mg,Diabetes Care,10,183.9647,EMP-10-STR,,01/03/2026
+309,Empagliflozin,25 mg,Diabetes Care,10,565.6616,emp-25-str ,WIL-7878,01/03/2026
+312,Dapagliflozin,10 mg,Diabetes Care,10,182.8012,DAP-10-STR,,01/03/2026
+318,Pioglitazone,15 mg, diabetes care ,10,635.0216,PIO-15-STR,BAS-6461,01/03/2026
+319,Glucose Test Strips,50 strips,Diabetes Care,1,1366.016,GLUTS-50-PCS,,01/03/2026
+320,Lancets,100 pcs,DIABETES CARE,1,1960.6969,LAN-100-PCS,DUN-3012,01/03/2026
+323,Omeprazole,20 mg,Gastro,10,82.9553,OME-20-STR,WIL-4046,01/07/2026
+327,Omeprazole,40 mg,Gastro,10,291.262,OME-40-STR,FAL-1548,01/07/2026
+328,Esomeprazole,20 mg,Gastro,10,99.4211,ESO-20-STR,GAR-6744,01/07/2026
+330,Esomeprazole,40 mg,Gastro,14,129.8342,ESO-40-STR,NIM-7358,01/07/2026
+332,Pantoprazole,40 mg, gastro ,14,104.7913,,ALD-3973,01/07/2026
+334,Lansoprazole,30 mg,GASTRO,10,183.8888,LAN-30-STR,HAR-2499,01/07/2026
+335,Famotidine,20 mg,Gastro,10,89.2878,,,01/07/2026
+337,Domperidone,10 mg,Gastro,14,138.3061,DOM-10-STR,ONY-7278,01/07/2026
+338,Domperidone,5 mg/5 ml,Gastro,1,167.0661,dom-5-btl ,JUN-1538,01/07/2026
+343,Ondansetron,4 mg, gastro ,10,221.326,OND-4-STR,IND-5785,01/07/2026
+346,Ondansetron,8 mg, gastro ,20,64.2645,OND-8-STR,TEA-9627,01/07/2026
+348,Loperamide,2 mg, gastro ,10,121.3515,LOP-2-STR,EMB-3596,01/07/2026
+351,Oral Rehydration Salts,1 sachet,Gastro,1,152.5558,ORARS-1-PCS,BAS-1717,01/07/2026
+354,Antacid Suspension,200/200 mg/5 ml, gastro ,1,175.2062,ANTS-200-BTL,,01/07/2026
+359,Lactulose,3.35 g/5 ml,Gastro,1,302.6025,LAC-335-BTL,ONY-1052,01/07/2026
+361,Ispaghula Husk,3.5 g,GASTRO,1,149.0559,ISPH-35-PCS,,01/07/2026
+363,Hyoscine Butylbromide,10 mg, gastro ,20,242.4835,HYOB-10-STR,GAR-2363,01/07/2026
+366,Metoclopramide,10 mg,GASTRO,10,149.0731,MET-10-STR,HAR-2150,01/07/2026
+367,Simethicone Drops,40 mg/ml,GASTRO,1,410.5853,simd-40-btl ,ZEP-1945,01/07/2026
+368,Dextromethorphan Syrup,15 mg/5 ml,Cough and Cold,1,380.4061,DEXS-15-BTL,SAF-2126,15/09/2026
+369,Guaifenesin Syrup,100 mg/5 ml,Cough and Cold,1,393.4454,GUAS-100-BTL,TEA-8173,01/07/2026
+371,Ambroxol Syrup,15 mg/5 ml,Cough and Cold,1,164.0357,,KIT-3020,01/07/2026
+372,Ambroxol,30 mg, cough and cold ,10,139.8356,AMB-30-STR,ALD-5763,01/07/2026
+376,Bromhexine Syrup,4 mg/5 ml, cough and cold ,1,230.3873,BROS-4-BTL,COB-1748,01/07/2026
+383,Cetirizine,10 mg,Cough and Cold,20,105.2043,CET-10-STR,VIS-7575,01/07/2026
+384,Levocetirizine,5 mg,Cough and Cold,10,94.5763,LEV-5-STR,DUN-6892,01/07/2026
+385,Loratadine,10 mg,Cough and Cold,10,86.8573,LOR-10-STR,AMB-8459,01/07/2026
+387,Fexofenadine,120 mg,Cough and Cold,20,231.0406,fex-120-str ,RID-3126,01/07/2026
+389,Fexofenadine,180 mg,Cough and Cold,10,123.8146,FEX-180-STR,JUN-4619,01/07/2026
+392,Chlorpheniramine,4 mg,COUGH AND COLD,10,185.3392,CHL-4-STR,SAF-3414,01/07/2026
+396,Pseudoephedrine Triprolidine,60/2.5 mg,Cough and Cold,20,106.0866,pset-60-str ,,01/07/2026
+402,Montelukast,10 mg, cough and cold ,10,180.8508,,VIS-9526,01/07/2026
+403,Montelukast,5 mg,COUGH AND COLD,10,114.7405,,BAS-9653,01/07/2026
+404,Salbutamol Syrup,2 mg/5 ml,COUGH AND COLD,1,157.3471,SALS-2-BTL,EMB-8331,01/07/2026
+405,Salbutamol Inhaler,100 mcg,COUGH AND COLD,1,100.9923,SALI-100-PCS,SAF-9542,01/07/2026
+406,Xylometazoline Nasal Drops,0.1%,COUGH AND COLD,1,248.844,XYLND-01-BTL,MAP-4898,01/07/2026
+408,Throat Lozenges,24 pcs,COUGH AND COLD,1,469.0133,THRL-24-PCS,DUN-1264,01/07/2026
+411,Vitamin C,500 mg,VITAMINS AND SUPPLEMENTS,14,260.4961,vitc-500-str ,FAL-2153,01/07/2026
+412,Vitamin D3,50000 IU,Vitamins and Supplements,10,145.5348,vitd-50000-str ,RID-8747,01/07/2026
+415,Calcium Vitamin D3,600 mg/400 IU,VITAMINS AND SUPPLEMENTS,14,397.5406,CALVD-600-STR,QUA-5026,01/07/2026
+419,Multivitamin Tablets,30 tabs,Vitamins and Supplements,1,652.1293,MULT-30-BTL,GAR-9322,01/07/2026
+420,Multivitamin Syrup,120 ml,VITAMINS AND SUPPLEMENTS,1,1357.2946,MULS-120-BTL,HAR-1920,01/07/2026
+427,Folic Acid,5 mg,Vitamins and Supplements,10,415.2182,,,01/07/2026
+428,Ferrous Sulphate,200 mg,Vitamins and Supplements,10,436.0618,,SAF-2883,01/07/2026
+430,Iron Folic Acid,150/0.5 mg,Vitamins and Supplements,20,398.8682,IROFA-150-STR,,01/07/2026
+431,Zinc Sulphate,20 mg,Vitamins and Supplements,10,206.2955,ZINS-20-STR,TEA-6130,01/07/2026
+433,Zinc Syrup,20 mg/5 ml,Vitamins and Supplements,1,424.4772,ZINS-20-BTL,,01/07/2026
+441,Vitamin B Complex,1 tab,Vitamins and Supplements,10,349.2954,VITBC-1-STR,ZEP-4375,01/07/2026
+442,Methylcobalamin,500 mcg,Vitamins and Supplements,14,96.2405,MET2-500-STR,FAL-2086,01/07/2026
+443,Omega-3,1000 mg,Vitamins and Supplements,1,920.9965,OME3-1000-BTL,QUA-9922,01/07/2026
+445,Vitamin E,400 IU,Vitamins and Supplements,14,294.8549,VITE-400-STR,EMB-4391,01/07/2026
+448,Magnesium,250 mg,Vitamins and Supplements,10,460.5237,MAG-250-STR,GAR-6597,01/07/2026
+450,Biotin,5 mg,Vitamins and Supplements,1,1283.5462,BIO-5-BTL,,01/07/2026
+452,Cod Liver Oil Capsules,60 caps,Vitamins and Supplements,1,362.0696,codloc-60-btl ,,01/07/2026
+454,Vitamin A D Drops,15 ml, vitamins and supplements ,1,1231.75,VITADD-15-BTL,ZEP-1236,01/07/2026
+457,Calcium Syrup,120 ml,Vitamins and Supplements,1,1137.562,CALS-120-BTL,,01/07/2026
+459,Antiseptic Liquid,500 ml, personal care ,1,320.476,,FAL-6995,01/07/2026
+465,Hand Sanitizer,250 ml, personal care ,1,736.5804,hans-250-btl ,,01/07/2026
+467,Sunscreen,SPF 50,Personal Care,1,457.2558,SUN-50-PCS,,01/07/2026
+468,Moisturising Cream,100 g,PERSONAL CARE,1,451.8543,MOIC-100-PCS,,01/07/2026
+471,Baby Diapers,Size 3,Personal Care,1,955.8248,BABD-3-PCS,,01/07/2026
+472,Baby Wipes,80 pcs,Personal Care,1,448.4155,BABW-80-PCS,,01/07/2026
+473,Toothpaste Sensitive,100 g,PERSONAL CARE,1,465.2955,TOOS-100-PCS,,01/07/2026
+476,Mouthwash,250 ml,Personal Care,1,423.1925,MOU-250-BTL,,01/07/2026
+478,Medicated Shampoo,200 ml, personal care ,1,358.0357,,LUM-2345,01/07/2026
+479,Cotton Bandage,10 cm,Personal Care,1,383.6642,COTB-10-PCS,,01/07/2026
+480,Adhesive Plasters,20 pcs,Personal Care,1,127.1465,ADHP-20-PCS,ZEP-2423,01/07/2026
+485,Digital Thermometer,1 pc,PERSONAL CARE,1,1162.9892,DIGT-1-PCS,WIL-2545,01/07/2026
+495,Face Masks,50 pcs,Personal Care,1,450.2494,FACM-50-PCS,JUN-2178,01/07/2026
+496,Petroleum Jelly,100 g,Personal Care,1,418.1911,PETJ-100-PCS,COB-6961,01/07/2026
+498,Hair Oil,200 ml,Personal Care,1,732.419,,IND-5290,01/07/2026
+499,Surgical Gloves,100 pcs,Personal Care,1,668.0988,SURG-100-PCS,,01/07/2026
+500,Paracetamol,1000 mg,Analgesics,10,101.3482,PAR-1000-STR,BAS-5000,01/09/2026

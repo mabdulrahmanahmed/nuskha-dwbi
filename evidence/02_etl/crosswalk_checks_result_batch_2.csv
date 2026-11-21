@@ -1,0 +1,27 @@
+check,expected,actual,result
+crosswalk: xw_product: source keys mapping to more than one canonical code,0,0,PASS
+crosswalk: xw_product: keys with neither a code nor the 'unmatched' flag,0,0,PASS
+crosswalk: xw_product: inventory keys matched by 'exact',info,151,PASS
+crosswalk: xw_product: purchasing_db keys matched by 'exact',info,106,PASS
+crosswalk: xw_product: purchasing_db keys matched by 'rule (description)',info,45,PASS
+crosswalk: xw_product: purchasing_db keys matched by 'unmatched',info,2,PASS
+crosswalk: xw_product: sales_db keys matched by 'exact',info,115,PASS
+crosswalk: xw_product: sales_db keys matched by 'rule',info,14,PASS
+crosswalk: xw_product: sales_db keys matched by 'rule (description)',info,22,PASS
+crosswalk: xw_product: sales_db keys matched by 'unmatched',info,3,PASS
+crosswalk: xw_branch: source keys mapping to more than one canonical code,0,0,PASS
+crosswalk: xw_branch: keys with neither a code nor the 'unmatched' flag,0,0,PASS
+crosswalk: xw_branch: inventory keys matched by 'exact',info,10,PASS
+crosswalk: xw_branch: purchasing_db keys matched by 'rule',info,9,PASS
+crosswalk: xw_branch: purchasing_db keys matched by 'rule (alias list)',info,1,PASS
+crosswalk: xw_branch: sales_db keys matched by 'exact',info,10,PASS
+crosswalk: xw_branch: sales_db keys matched by 'rule',info,9,PASS
+crosswalk: xw_branch: sales_db keys matched by 'rule (alias list)',info,9,PASS
+crosswalk: xw_branch: sales_db keys matched by 'unmatched',info,6,PASS
+crosswalk: xw_customer: source keys mapping to more than one canonical code,0,0,PASS
+crosswalk: xw_customer: keys with neither a code nor the 'unmatched' flag,0,0,PASS
+crosswalk: xw_customer: finance_db keys matched by 'exact',info,15,PASS
+crosswalk: xw_customer: sales_db keys matched by 'exact',info,1215,PASS
+crosswalk: xw_customer: sales_db keys matched by 'rule',info,15,PASS
+crosswalk: xw_customer: sales_db keys matched by 'rule (alias list)',info,9,PASS
+crosswalk: xw_customer: sales_db keys matched by 'unmatched',info,1,PASS

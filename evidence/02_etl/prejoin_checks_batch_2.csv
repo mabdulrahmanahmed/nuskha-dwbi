@@ -1,0 +1,27 @@
+check,expected,actual,result
+pre-join: key receipt_no unique in stg.receipt,0,0,PASS
+pre-join: key grn_no unique in stg.goods_receipt,0,0,PASS
+pre-join: key po_no unique in stg.purchase_order,0,0,PASS
+pre-join: key item_id unique in stg.item,0,0,PASS
+pre-join: key item_code unique in stg.pos_item,0,0,PASS
+pre-join: key vendor_item_code unique in stg.vendor_item,0,0,PASS
+pre-join: key store_code unique in stg.store,0,0,PASS
+pre-join: key supplier_id unique in stg.supplier,0,0,PASS
+pre-join: key branch_id unique in stg.branch,0,0,PASS
+pre-join: key card_no unique in stg.loyalty_member,0,0,PASS
+pre-join: key account_no unique in stg.panel_account,0,0,PASS
+pre-join: key rate_date unique in stg.fx_rate,0,0,PASS
+pre-join: xw_product is many-to-one (each source key once),0,0,PASS
+pre-join: xw_branch is many-to-one (each source key once),0,0,PASS
+pre-join: xw_customer is many-to-one (each source key once),0,0,PASS
+join 'receipt_line -> receipt' keeps the row count,2416,2416,PASS
+join 'receipt_line -> xw_product' keeps the row count,2416,2416,PASS
+join 'receipt -> xw_branch' keeps the row count,2416,2416,PASS
+join 'receipt -> xw_customer (card)' keeps the row count,2416,2416,PASS
+join 'receipt -> xw_customer (panel text)' keeps the row count,2416,2416,PASS
+join 'grn_line -> goods_receipt' keeps the row count,326,326,PASS
+join 'goods_receipt -> purchase_order' keeps the row count,326,326,PASS
+join 'grn_line -> vendor_item' keeps the row count,326,326,PASS
+join 'grn_line -> xw_product' keeps the row count,326,326,PASS
+join 'purchase_order -> xw_branch' keeps the row count,326,326,PASS
+join 'purchase_order -> supplier' keeps the row count,326,326,PASS

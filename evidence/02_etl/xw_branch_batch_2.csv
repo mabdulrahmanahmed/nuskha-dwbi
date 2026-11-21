@@ -1,0 +1,55 @@
+source_system,source_object,source_key,canonical_code,match_method
+inventory,store,BR-CLF,BR-CLF,exact
+inventory,store,BR-GBG,BR-GBG,exact
+inventory,store,BR-GLJ,BR-GLJ,exact
+inventory,store,BR-GUL,BR-GUL,exact
+inventory,store,BR-MLR,BR-MLR,exact
+inventory,store,BR-NNZ,BR-NNZ,exact
+inventory,store,BR-NZM,BR-NZM,exact
+inventory,store,BR-ORG,BR-ORG,exact
+inventory,store,BR-PEC,BR-PEC,exact
+inventory,store,BR-SDR,BR-SDR,exact
+sales_db,receipt.branch_name,-,,unmatched
+sales_db,receipt.branch_name,Br 11,,unmatched
+sales_db,receipt.branch_name,CLIFTON,BR-CLF,rule
+sales_db,receipt.branch_name,Clifton,BR-CLF,exact
+sales_db,receipt.branch_name,Clifton Blk 5,BR-CLF,rule (alias list)
+sales_db,receipt.branch_name,GULBERG,BR-GBG,rule
+sales_db,receipt.branch_name,GULISTAN E JOHAR,BR-GLJ,rule (alias list)
+sales_db,receipt.branch_name,GULSHAN-E-IQBAL,BR-GUL,rule
+sales_db,receipt.branch_name,Gulberg,BR-GBG,exact
+sales_db,receipt.branch_name,Gulberg Town,BR-GBG,rule (alias list)
+sales_db,receipt.branch_name,Gulistan-e-Jauhar,BR-GLJ,exact
+sales_db,receipt.branch_name,Gulshan,BR-GUL,rule (alias list)
+sales_db,receipt.branch_name,Gulshan-e-Iqbal,BR-GUL,exact
+sales_db,receipt.branch_name,Head Office,,unmatched
+sales_db,receipt.branch_name,Jauhar,BR-GLJ,rule (alias list)
+sales_db,receipt.branch_name,Karachi,,unmatched
+sales_db,receipt.branch_name,MALIR CANTT,BR-MLR,rule (alias list)
+sales_db,receipt.branch_name,Malir,BR-MLR,exact
+sales_db,receipt.branch_name,N. Nazimabad,BR-NNZ,rule (alias list)
+sales_db,receipt.branch_name,NORTH NAZIMABAD,BR-NNZ,rule
+sales_db,receipt.branch_name,Nazimabad,BR-NZM,exact
+sales_db,receipt.branch_name,North Nazimabad,BR-NNZ,exact
+sales_db,receipt.branch_name,ORANGI,BR-ORG,rule
+sales_db,receipt.branch_name,Orangi,BR-ORG,exact
+sales_db,receipt.branch_name,Orangi Town,BR-ORG,rule (alias list)
+sales_db,receipt.branch_name,P.E.C.H.S,BR-PEC,rule
+sales_db,receipt.branch_name,PECHS,BR-PEC,exact
+sales_db,receipt.branch_name,Pechs,BR-PEC,rule
+sales_db,receipt.branch_name,SADDAR,BR-SDR,rule
+sales_db,receipt.branch_name,Sadar,BR-SDR,rule (alias list)
+sales_db,receipt.branch_name,Saddar,BR-SDR,exact
+sales_db,receipt.branch_name,TEST BRANCH,,unmatched
+sales_db,receipt.branch_name,Warehouse,,unmatched
+sales_db,receipt.branch_name,nazimabad,BR-NZM,rule
+purchasing_db,branch,1,BR-NZM,rule
+purchasing_db,branch,2,BR-CLF,rule
+purchasing_db,branch,3,BR-NNZ,rule
+purchasing_db,branch,4,BR-GUL,rule
+purchasing_db,branch,5,BR-SDR,rule
+purchasing_db,branch,6,BR-GLJ,rule
+purchasing_db,branch,7,BR-GBG,rule
+purchasing_db,branch,8,BR-PEC,rule
+purchasing_db,branch,9,BR-ORG,rule (alias list)
+purchasing_db,branch,10,BR-MLR,rule

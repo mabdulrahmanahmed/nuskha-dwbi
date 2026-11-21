@@ -1,0 +1,15 @@
+source_system,source_table,source_key,batch_id
+sales_db,receipt_line,CLF-2026-000435|2,2
+sales_db,receipt_line,GBG-2026-000345|2,2
+sales_db,receipt_line,GBG-2026-000382|5,2
+sales_db,receipt_line,GLJ-2026-000409|1,2
+sales_db,receipt_line,MLR-2026-000303|4,2
+sales_db,receipt_line,NNZ-2026-000400|2,2
+sales_db,receipt_line,NNZ-2026-000441|4,2
+sales_db,receipt_line,PEC-2026-000348|1,2
+sales_db,receipt_line,PEC-2026-000354|1,2
+sales_db,receipt_line,PEC-2026-000402|1,2
+sales_db,receipt_line,SDR-2026-000424|1,2
+sales_db,receipt_line,SDR-2026-000428|2,2
+purchasing_db,grn_line,GRN-2026-00475|1,2
+purchasing_db,grn_line,GRN-2026-00521|1,2

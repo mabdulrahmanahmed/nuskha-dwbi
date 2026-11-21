@@ -73,3 +73,10 @@
 - 2.03-2.09: new `src/etl_db.py` with steps profile-before, stage, profile-after, crosswalk, prejoin, quality, reconcile (`--batch N`). Staging is rebuilt from the immutable raw snapshots (header tables cumulative over batches); `run(batch)` gives stg, xw, valid/rejects/duplicates. stg.* written with NUMERIC money; checks go to etl.validation_result (rerun replaces same check name).
 - Batch 1: 635 rejects in etl.rejects, all codes equal the ledger key for key; receipt_line 28,238 = 27,543 valid + 556 rejected + 139 dup; grn_line 4,706 = 4,604 + 79 + 23.
 - etl.batch row 1 is still RUNNING: 3.03 must finish_batch(1, 'SUCCESS', ...) after the fact load so batch 2 can use its watermark.
+
+## 3.01-3.07 (DONE 2026-11-22)
+- 3.01: full DDL via `python -m src.create_warehouse`; empty-database test (scratch DB nuskha_ddl_test, run twice) in evidence/03_warehouse/ddl_empty_database_test.csv.
+- 3.02/3.03: `src/load_db.py` (`--batch N`; temp table + INSERT..ON CONFLICT DO UPDATE WHERE IS DISTINCT FROM; batch_id/updated_batch_id excluded from the comparison; meta.lineage written with the facts; FAIL_AT env; `--new-batch note`). Checks in `src/dw_checks.py dims|facts`. Batch 1: 27,543 sales / 4,604 purchase rows; Diabetes Care margin 25.56% -> 16.46%.
+- 3.04-3.07: `src/batch_tests.py rerun|batch2|scd1|failure`. batch2 snapshots dim_product (evidence) and fact_sales (data/snapshots/, git-ignored) before loading, reloads sources with `load_sources --stage 2`, extracts batch 2, runs all etl_db steps, loads, logs 3 deletions.
+- Stage-2 facts: 71 lines updated (20 qty + 31 void + 20 panel-receipt lines); 21 re-saved-only lines untouched; 7 CANCELLED GRN lines (not 9 as the old note said); P-0368 Dextromethorphan Syrup Gastro -> Cough and Cold (+/-112,316.85).
+- etl.batch now: 1 SUCCESS, 2 SUCCESS, 3 FAILED (controlled failure), 4 SUCCESS (rerun). Sources hold stage 2.

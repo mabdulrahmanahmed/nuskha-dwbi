@@ -177,7 +177,7 @@ def log_stage(stage: str, table_name: str, rows_in=None, rows_out=None, amount_i
     path = evidence_dir(area) / "stage_log.csv"
     new_file = not path.exists()
     with path.open("a", newline="", encoding="utf-8") as fh:
-        writer = csv.DictWriter(fh, fieldnames=STAGE_LOG_FIELDS)
+        writer = csv.DictWriter(fh, fieldnames=STAGE_LOG_FIELDS, lineterminator="\n")
         if new_file:
             writer.writeheader()
         writer.writerow(row)

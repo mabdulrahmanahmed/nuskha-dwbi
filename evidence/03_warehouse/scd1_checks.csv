@@ -1,0 +1,5 @@
+check,expected,actual,result
+"SCD1: exactly two category totals move (Gastro, Cough and Cold)","['Cough and Cold', 'Gastro']","['Cough and Cold', 'Gastro']",PASS
+SCD1: company total unchanged,0.0,0.0,PASS
+"SCD1: one product changed category (overwritten, no history row)",1,1,PASS
+SCD1: stored margins of untouched batch-1 rows unchanged,0,0,PASS
