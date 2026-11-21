@@ -11,6 +11,9 @@ logic of its own. Modes:
   python -m src.pipeline --mode FULL_REBUILD     # everything, from an empty warehouse
   python -m src.pipeline --mode CONTINUE
   python -m src.pipeline --list                  # show the steps
+  python -m src.pipeline --from extract_batch_1 --to etl_reconcile_1   # a range of steps (demo):
+        runs exactly those steps, never skips and never resets; starting --from the first step with
+        --mode FULL_REBUILD resets first
 """
 from __future__ import annotations
 
@@ -139,10 +142,18 @@ def totals() -> pd.DataFrame:
     return pd.DataFrame(rows)
 
 
-def run_all(mode: str) -> pd.DataFrame:
+def run_all(mode: str, start: str | None = None, stop: str | None = None) -> pd.DataFrame:
+    names = [name for name, *_ in STEPS]
+    if start or stop:
+        # a range of steps: run exactly these (demo); skip conditions are ignored
+        i = names.index(start) if start else 0
+        j = names.index(stop) if stop else len(names) - 1
+        if mode == "FULL_REBUILD" and i == 0:
+            reset()
+        return pd.DataFrame([run_step(n, "FULL_REBUILD") for n in names[i:j + 1]])
     if mode == "FULL_REBUILD":
         reset()
-    log = [run_step(name, mode) for name, *_ in STEPS]
+    log = [run_step(name, mode) for name in names]
     return pd.DataFrame(log)
 
 
@@ -150,10 +161,13 @@ if __name__ == "__main__":
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     ap.add_argument("--mode", choices=["FULL_REBUILD", "CONTINUE"], default="CONTINUE")
     ap.add_argument("--list", action="store_true")
+    ap.add_argument("--from", dest="start", help="first step of a range")
+    ap.add_argument("--to", dest="stop", help="last step of a range")
     a = ap.parse_args()
     if a.list:
         for name, what, args, _ in STEPS:
             print(f"{name:24s} python -m {' '.join(args)}")
     else:
-        print(run_all(a.mode).to_string(index=False))
-        print(totals().to_string(index=False))
+        print(run_all(a.mode, a.start, a.stop).to_string(index=False))
+        if a.stop in (None, STEPS[-1][0]):   # totals need the views, which exist only after a full run
+            print(totals().to_string(index=False))

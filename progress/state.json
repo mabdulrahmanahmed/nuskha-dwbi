@@ -496,7 +496,7 @@
       "minutes": 0.1
     },
     "5.02": {
-      "status": "IN_PROGRESS",
+      "status": "DONE",
       "attempts": 0,
       "phase": "5",
       "title": "Headless full run",
@@ -504,17 +504,20 @@
       "needs": [
         "5.01"
       ],
-      "start": 1795295604.9958506
+      "start": 1795295604.9958506,
+      "minutes": 17.0
     },
     "5.03": {
-      "status": "PENDING",
+      "status": "DONE",
       "attempts": 0,
       "phase": "5",
       "title": "Recommendations",
       "est": 10,
       "needs": [
         "4.07"
-      ]
+      ],
+      "start": 1795296623.4544427,
+      "minutes": 0.0
     },
     "5.04": {
       "status": "PENDING",

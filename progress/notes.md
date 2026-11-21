@@ -93,3 +93,12 @@
 - 4.04-4.07 `python -m src.ai_run --retry` -> evidence/07_ai; ridge MAE 70,806 vs last-month 56,347 vs seasonal 116,207; IF precision 0.909 recall 0.80, robust z 0.60/0.24; 3 planted cases traced; retry unchanged (3/6/1152 rows).
 - 4.08 `python -m src.powerbi_export` (3 totals PASS: 6,230,294.70 / 745,398.10 / 599,167.14). 4.09 `python -m src.powerbi_model`. 4.10 `python -m src.powerbi_report --validate` (32/32 schema PASS). 4.11 guide coverage 27/27.
 - START_HERE.md does not exist in the repo yet; create it in phase 5 (part 4 = human checklist: open pbip, Colab run, contribution statement).
+
+## 5.02 Headless full run (DONE 2026-11-22)
+- `python -m src.headless_run`: nbconvert executes pipeline.ipynb twice with NUSKHA_MODE=FULL_REBUILD (empty warehouse, regenerated sources). Run 1 158.7 s, run 2 166.8 s, 0 cell errors.
+- evidence/05_validation/headless_run/totals_comparison.csv: 11/11 identical (fact_sales 29,820 rows / 16,400,628.65 net / 4,101,635.58 margin; fact_purchase 4,918 / 16,567,538.48; rejects 687; deletions 3; lineage 34,738; FY2026 6,230,294.70; forecast 6, anomaly 1,152 rows).
+- Warehouse now holds the run-2 state (batches 1 SUCCESS, 2 SUCCESS, 3 FAILED, 4 SUCCESS); validation check 11 now runs (PASS).
+- pipeline.py has `--from/--to` ranges (used by docs/demo.md).
+
+## 5.03 Recommendations (DONE)
+- docs/recommendations.md: R1 forecast-range budget (Cough and Cold weighting), R2 Diabetes Care supplier (A12 bridge), R3 East Analgesics spike + East Jun drop; each with evidence files, trace, limitation.

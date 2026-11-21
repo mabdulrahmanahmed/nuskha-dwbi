@@ -25,4 +25,4 @@ no,check,expected,actual,result
 9,rerun safety: 3.04 rerun of batch 1 (rows and totals changed),all PASS,2/2 PASS,PASS
 9,rerun safety: 3.07 rerun after failure (rows and totals changed),all PASS,5/5 PASS,PASS
 10,SCD1: Gastro and Cough and Cold move; company total unchanged,"2 categories move, 0.00","2 categories move, 0.00",PASS
-11,AI outputs: duplicate rows after a retried run,0,AI tables empty until phase 4,NOT RUN
+11,AI outputs: duplicate rows after a retried run (forecast + anomaly),0,0,PASS

@@ -1,0 +1,12 @@
+measure,value
+fact_sales rows,29820
+fact_sales net PKR,16400628.65
+fact_sales gross margin PKR,4101635.58
+fact_purchase rows,4918
+fact_purchase PKR,16567538.48
+etl.rejects rows,687
+etl.deletion_log rows,3
+meta.lineage rows,34738
+FY2026 net sales PKR (view),6230294.70
+ai.forecast_result rows,6
+ai.anomaly_result rows,1152
