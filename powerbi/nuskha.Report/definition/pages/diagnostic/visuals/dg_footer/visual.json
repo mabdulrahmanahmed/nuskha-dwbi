@@ -1,0 +1,35 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.4.0/schema.json",
+  "name": "dg_footer",
+  "position": {
+    "x": 20,
+    "y": 680,
+    "z": 0,
+    "width": 1240,
+    "height": 34,
+    "tabOrder": 4
+  },
+  "visual": {
+    "visualType": "textbox",
+    "objects": {
+      "general": [
+        {
+          "properties": {
+            "paragraphs": [
+              {
+                "textRuns": [
+                  {
+                    "value": "Synthetic data (seed 472) · Amounts in PKR · Period Nov 2023 – Oct 2026 · Net Sales = sum of net line amounts (cancelled lines excluded) · Margin % = Gross Margin / Net Sales · ASP = Net Sales / units · Purchases = GRN amounts converted to PKR at the rate on the receipt date",
+                    "textStyle": {
+                      "fontSize": "8pt"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    }
+  }
+}

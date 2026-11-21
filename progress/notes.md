@@ -87,3 +87,9 @@
 - 3.10 `python -m src.traces` + sql/05_traces/T1..T6.sql -> evidence/04_metadata_lineage/traces/T*.md (all end at a source row; T5 bridges MySQL lines to the FY2026 card exactly: 10,721 lines, PKR 6,230,294.70).
 - Views created early by `python -m src.views` (10/10 checks) — 4.01 can just rerun it.
 - 3.11 `python -m src.validation`: 26 PASS, check 11 NOT RUN until the AI units; rerun in 5.09.
+
+## Phase 4 (DONE 2026-11-22)
+- 4.01 `python -m src.views` (10/10). 4.02/4.03 `python -m src.queries` -> evidence/06_sql (12/12; A12: cost effect -8,294 vs price -70).
+- 4.04-4.07 `python -m src.ai_run --retry` -> evidence/07_ai; ridge MAE 70,806 vs last-month 56,347 vs seasonal 116,207; IF precision 0.909 recall 0.80, robust z 0.60/0.24; 3 planted cases traced; retry unchanged (3/6/1152 rows).
+- 4.08 `python -m src.powerbi_export` (3 totals PASS: 6,230,294.70 / 745,398.10 / 599,167.14). 4.09 `python -m src.powerbi_model`. 4.10 `python -m src.powerbi_report --validate` (32/32 schema PASS). 4.11 guide coverage 27/27.
+- START_HERE.md does not exist in the repo yet; create it in phase 5 (part 4 = human checklist: open pbip, Colab run, contribution statement).

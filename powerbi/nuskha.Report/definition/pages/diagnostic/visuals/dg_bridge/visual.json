@@ -1,0 +1,178 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.4.0/schema.json",
+  "name": "dg_bridge",
+  "position": {
+    "x": 20,
+    "y": 385,
+    "z": 0,
+    "width": 620,
+    "height": 285,
+    "tabOrder": 7
+  },
+  "visual": {
+    "visualType": "clusteredColumnChart",
+    "drillFilterOtherVisuals": true,
+    "query": {
+      "queryState": {
+        "Category": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Margin Bridge"
+                    }
+                  },
+                  "Property": "month_start"
+                }
+              },
+              "queryRef": "Margin Bridge.month_start",
+              "nativeQueryRef": "month_start"
+            }
+          ]
+        },
+        "Y": {
+          "projections": [
+            {
+              "field": {
+                "Aggregation": {
+                  "Expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Margin Bridge"
+                        }
+                      },
+                      "Property": "volume_effect_pkr"
+                    }
+                  },
+                  "Function": 0
+                }
+              },
+              "queryRef": "Sum(Margin Bridge.volume_effect_pkr)",
+              "nativeQueryRef": "Sum of volume_effect_pkr"
+            },
+            {
+              "field": {
+                "Aggregation": {
+                  "Expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Margin Bridge"
+                        }
+                      },
+                      "Property": "price_effect_pkr"
+                    }
+                  },
+                  "Function": 0
+                }
+              },
+              "queryRef": "Sum(Margin Bridge.price_effect_pkr)",
+              "nativeQueryRef": "Sum of price_effect_pkr"
+            },
+            {
+              "field": {
+                "Aggregation": {
+                  "Expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Margin Bridge"
+                        }
+                      },
+                      "Property": "cost_effect_pkr"
+                    }
+                  },
+                  "Function": 0
+                }
+              },
+              "queryRef": "Sum(Margin Bridge.cost_effect_pkr)",
+              "nativeQueryRef": "Sum of cost_effect_pkr"
+            }
+          ]
+        }
+      }
+    },
+    "visualContainerObjects": {
+      "title": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Diabetes Care margin bridge: volume, price and cost effects (PKR)'"
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  },
+  "filterConfig": {
+    "filters": [
+      {
+        "name": "dg_bridge_dc",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Margin Bridge"
+              }
+            },
+            "Property": "category"
+          }
+        },
+        "type": "Categorical",
+        "filter": {
+          "Version": 2,
+          "From": [
+            {
+              "Name": "t",
+              "Entity": "Margin Bridge",
+              "Type": 0
+            }
+          ],
+          "Where": [
+            {
+              "Condition": {
+                "In": {
+                  "Expressions": [
+                    {
+                      "Column": {
+                        "Expression": {
+                          "SourceRef": {
+                            "Source": "t"
+                          }
+                        },
+                        "Property": "category"
+                      }
+                    }
+                  ],
+                  "Values": [
+                    [
+                      {
+                        "Literal": {
+                          "Value": "'Diabetes Care'"
+                        }
+                      }
+                    ]
+                  ]
+                }
+              }
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

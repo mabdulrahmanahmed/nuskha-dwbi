@@ -436,44 +436,52 @@
       "minutes": 0.0
     },
     "4.08": {
-      "status": "PENDING",
+      "status": "DONE",
       "attempts": 0,
       "phase": "4",
       "title": "Power BI data",
       "est": 10,
       "needs": [
         "4.07"
-      ]
+      ],
+      "start": 1795295249.9620283,
+      "minutes": 0.3
     },
     "4.09": {
-      "status": "PENDING",
+      "status": "DONE",
       "attempts": 0,
       "phase": "4",
       "title": "Power BI model",
       "est": 15,
       "needs": [
         "4.08"
-      ]
+      ],
+      "start": 1795295270.0211112,
+      "minutes": 0.2
     },
     "4.10": {
-      "status": "PENDING",
+      "status": "DONE",
       "attempts": 0,
       "phase": "4",
       "title": "Power BI report",
       "est": 15,
       "needs": [
         "4.09"
-      ]
+      ],
+      "start": 1795295410.44349,
+      "minutes": 0.4
     },
     "4.11": {
-      "status": "PENDING",
+      "status": "DONE",
       "attempts": 0,
       "phase": "4",
       "title": "Power BI fallback guide",
       "est": 10,
       "needs": [
         "4.08"
-      ]
+      ],
+      "start": 1795295473.6738088,
+      "minutes": 0.3
     },
     "5.01": {
       "status": "PENDING",

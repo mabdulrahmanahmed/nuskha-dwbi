@@ -111,5 +111,7 @@ if __name__ == "__main__":
         from src.common import get_engine
 
         eng = get_engine("dw")
-        res = export(lambda sql: pd.read_sql(text(sql), eng), "PostgreSQL warehouse")
+        from src.queries import pg_types
+
+        res = export(lambda sql: pg_types(pd.read_sql(text(sql), eng)), "PostgreSQL warehouse")
     print(res.to_string(index=False))

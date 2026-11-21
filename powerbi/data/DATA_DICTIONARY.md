@@ -1,6 +1,6 @@
 # Power BI data dictionary
 
-Synthetic data (seed 472). Exported from the pre-database DuckDB preview (rerun from PostgreSQL in 4.08). Money in PKR, 2 decimals; ratios are recomputed from sums in the measures.
+Synthetic data (seed 472). Exported from the PostgreSQL warehouse. Money in PKR, 2 decimals; ratios are recomputed from sums in the measures.
 
 ## vw_sales_enriched.csv (29789 rows)
 
@@ -11,12 +11,12 @@ One row per receipt line with all dimension attributes; cancelled lines excluded
 | sales_line_id | int64 |
 | receipt_no | object |
 | line_no | int64 |
-| full_date | datetime64[us] |
-| month_start | datetime64[us] |
+| full_date | datetime64[ns] |
+| month_start | datetime64[ns] |
 | month_name | object |
-| quarter | int32 |
-| year | int32 |
-| fiscal_quarter | int32 |
+| quarter | int64 |
+| year | int64 |
+| fiscal_quarter | int64 |
 | fiscal_year | object |
 | is_ramadan | bool |
 | product_code | object |
@@ -52,7 +52,7 @@ Sales summed to product x month.
 | product_code | object |
 | generic_name | object |
 | category | object |
-| month_start | datetime64[us] |
+| month_start | datetime64[ns] |
 | sales_lines | int64 |
 | quantity_units | float64 |
 | gross_amount_pkr | float64 |
@@ -74,7 +74,7 @@ Purchases summed to product x month (PKR, units, original currency).
 | product_code | object |
 | generic_name | object |
 | category | object |
-| month_start | datetime64[us] |
+| month_start | datetime64[ns] |
 | purchase_lines | int64 |
 | quantity_units | float64 |
 | purchase_amount_pkr | float64 |
@@ -92,8 +92,8 @@ Month-on-month margin change per product split into volume, price and cost effec
 | product_code | object |
 | generic_name | object |
 | category | object |
-| month_start | datetime64[us] |
-| prev_month | datetime64[us] |
+| month_start | datetime64[ns] |
+| prev_month | datetime64[ns] |
 | qty | float64 |
 | net_amount_pkr | float64 |
 | cost_amount_pkr | float64 |
@@ -111,13 +111,13 @@ Company x month net sales with lag and rolling features.
 
 | Column | Type |
 | --- | --- |
-| month_start | datetime64[us] |
+| month_start | datetime64[ns] |
 | net_sales_pkr | float64 |
 | lag_1 | float64 |
 | lag_12 | float64 |
 | rolling_3_prior | float64 |
-| month_of_year | int64 |
-| ramadan_days | float64 |
+| month_of_year | float64 |
+| ramadan_days | int64 |
 
 ## vw_region_category_month.csv (864 rows)
 
@@ -127,7 +127,7 @@ Region x category x month net sales with trailing statistics.
 | --- | --- |
 | region | object |
 | category | object |
-| month_start | datetime64[us] |
+| month_start | datetime64[ns] |
 | net_sales_pkr | float64 |
 | sales_lines | int64 |
 | trailing_median_6 | float64 |
@@ -144,10 +144,10 @@ One row per goods-receipt line with dimension attributes; cancelled GRNs exclude
 | purchase_line_id | int64 |
 | grn_no | object |
 | line_no | int64 |
-| full_date | datetime64[us] |
-| month_start | datetime64[us] |
+| full_date | datetime64[ns] |
+| month_start | datetime64[ns] |
 | fiscal_year | object |
-| fiscal_quarter | int32 |
+| fiscal_quarter | int64 |
 | product_code | object |
 | generic_name | object |
 | category | object |
@@ -169,13 +169,13 @@ Holdout predictions and the Nov 2026 - Jan 2027 forecast.
 | Column | Type |
 | --- | --- |
 | run_id | object |
-| date_key | int32 |
+| date_key | int64 |
 | prediction | float64 |
 | lower | float64 |
 | upper | float64 |
 | actual | float64 |
 | is_holdout | bool |
-| month_start | datetime64[us] |
+| month_start | datetime64[ns] |
 | method | object |
 
 ## ai_anomaly_result.csv (576 rows)
@@ -185,7 +185,7 @@ Anomaly scores and flags on the real review months.
 | Column | Type |
 | --- | --- |
 | run_id | object |
-| date_key | int32 |
+| date_key | int64 |
 | region | object |
 | category | object |
 | value | float64 |
@@ -194,7 +194,7 @@ Anomaly scores and flags on the real review months.
 | method | object |
 | is_flag | bool |
 | is_injected_copy | bool |
-| month_start | datetime64[us] |
+| month_start | datetime64[ns] |
 
 ## dim_date.csv (1188 rows)
 
@@ -203,12 +203,12 @@ Conformed date dimension (fiscal year Jul-Jun).
 | Column | Type |
 | --- | --- |
 | date_key | int64 |
-| full_date | datetime64[us] |
-| month_start | datetime64[us] |
+| full_date | datetime64[ns] |
+| month_start | datetime64[ns] |
 | month_name | object |
-| quarter | int32 |
-| year | int32 |
-| fiscal_quarter | int32 |
+| quarter | int64 |
+| year | int64 |
+| fiscal_quarter | int64 |
 | fiscal_year | object |
 | is_ramadan | bool |
 

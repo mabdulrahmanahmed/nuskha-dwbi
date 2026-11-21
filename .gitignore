@@ -12,3 +12,4 @@ progress/last_call.log
 data/offline_dw.duckdb*
 data/offline_dw_ai.duckdb*
 data/snapshots/
+data/pbir_schemas/

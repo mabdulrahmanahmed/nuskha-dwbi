@@ -1,6 +1,6 @@
 # Power BI build guide (fallback, about 45 minutes)
 
-Use this if `powerbi/nuskha.pbip` will not open. It builds the same report by hand from the CSV
+Use this if `powerbi/nuskha.pbip` will not open (or a visual in it shows an error). It builds the same report by hand from the CSV
 files in `powerbi/data/`. **All data is synthetic (seed 472).** Every number on the report must
 match `powerbi/reconciliation.csv`.
 
@@ -88,8 +88,8 @@ Slicers: **Region** (Region Category Month[region]) and **Category** (Region Cat
 | # | Visual | Fields |
 | --- | --- | --- |
 | 9 | Line chart: forecast vs holdout actuals + next 3 months | X: Forecast[month_start]; Y: actual, prediction, lower, upper (Sum); title says "Forecast, not actual" for Nov 2026 - Jan 2027 |
-| 10 | Scatter: anomaly score by region-category-month | X: Anomaly[month_start]; Y: Anomaly[score]; Legend: Anomaly[is_flag]; Details: region, category; visual filter method = robust_z |
-| 11 | Table: flagged cases with source links | Anomaly[region], [category], [date_key], [value], [expected], [score], [method]; filter is_flag = True; add a text box pointing to `evidence/07_ai/anomaly_case_traces.csv` for the receipt lines |
+| 10 | Scatter: net sales vs expected by region-category-month | X: Anomaly[expected] (Sum); Y: Anomaly[value] (Sum); Legend: Anomaly[is_flag]; Details: region, category, month_start; visual filter is_injected_copy = False (real data only) |
+| 11 | Table: flagged cases with source links | Anomaly[region], [category], [month_start], [method], [value], [expected], [score]; filters is_flag = True and is_injected_copy = False; title points to `evidence/07_ai/anomaly_case_traces.csv` for the receipt lines |
 
 ## 7. Footer on every page (2 min)
 
@@ -103,5 +103,9 @@ it, add a card showing **Last Batch**. Bar axes start at zero (the Power BI defa
    - FY2026 net sales: set the Date slicer to Jul 2025 – Jun 2026 and read the Net Sales card.
    - Gulshan-e-Iqbal, calendar 2025: Date Jan–Dec 2025, select the branch in visual 3.
    - October 2026 purchases: Date = Oct 2026 and read the Purchases card.
+   Expected values (from the warehouse SQL):
+   - FY2026 net sales (PKR): **6,230,294.70**
+   - Gulshan-e-Iqbal net sales, calendar 2025 (PKR): **745,398.10**
+   - October 2026 purchases (PKR): **599,167.14**
 2. Type the three Power BI values into the `power_bi_total` column of `reconciliation.csv`.
 3. **File → Save as** `powerbi/nuskha.pbix`, then **File → Export → PDF** to `powerbi/nuskha.pdf`.
