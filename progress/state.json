@@ -556,14 +556,16 @@
       "minutes": 1.1
     },
     "5.07": {
-      "status": "PENDING",
+      "status": "DONE",
       "attempts": 0,
       "phase": "5",
       "title": "Demo script",
       "est": 10,
       "needs": [
         "5.02"
-      ]
+      ],
+      "start": 1795296790.4505746,
+      "minutes": 3.1
     },
     "5.08": {
       "status": "PENDING",

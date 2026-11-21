@@ -1,94 +1,94 @@
 table_name,column_name,data_type
-item,tablets_per_strip,bigint
-purchase_order,ordered_at,timestamp without time zone
-purchase_order,updated_at,timestamp without time zone
-goods_receipt,received_at,timestamp without time zone
-goods_receipt,updated_at,timestamp without time zone
-goods_receipt,received_date,timestamp without time zone
-grn_line,line_no,bigint
-grn_line,boxes_received,numeric
-grn_line,cost_per_box,numeric
-grn_line,amount_original,numeric
-grn_line,updated_at,timestamp without time zone
-receipt,receipt_ts,timestamp without time zone
-receipt,updated_at,timestamp without time zone
-receipt,receipt_date,timestamp without time zone
-receipt_line,line_no,bigint
-receipt_line,qty,numeric
-receipt_line,unit_price_pkr,numeric
-receipt_line,discount_pkr,numeric
-receipt_line,discount_was_missing,boolean
-receipt_line,gross_amount_pkr,numeric
-receipt_line,net_amount_pkr,numeric
-receipt_line,updated_at,timestamp without time zone
-loyalty_member,joined_on,timestamp without time zone
-fx_rate,rate_date,timestamp without time zone
-fx_rate,usd_pkr,numeric
-panel_account,account_no,bigint
-panel_account,credit_limit_pkr,numeric
-panel_account,terms_days,bigint
-panel_account,updated_at,timestamp without time zone
-panel_invoice,account_no,bigint
-panel_invoice,month_start,timestamp without time zone
-panel_invoice,amount_pkr,numeric
-item,item_id,bigint
-branch,branch_id,bigint
-item,std_cost_per_unit,numeric
 item,last_updated,timestamp without time zone
 item_cost_history,item_id,bigint
 item_cost_history,effective_from,timestamp without time zone
 item_cost_history,std_cost_per_unit,numeric
+receipt_line,unit_price_pkr,numeric
+loyalty_member,joined_on,timestamp without time zone
+fx_rate,rate_date,timestamp without time zone
+fx_rate,usd_pkr,numeric
+panel_account,account_no,bigint
 stock_count,item_id,bigint
 stock_count,count_date,timestamp without time zone
 stock_count,tablets_on_hand,bigint
 stock_count,units_on_hand,numeric
 supplier,supplier_id,bigint
+receipt_line,discount_pkr,numeric
+panel_account,credit_limit_pkr,numeric
 supplier,is_import,boolean
+branch,branch_id,bigint
+panel_account,terms_days,bigint
+panel_account,updated_at,timestamp without time zone
+receipt_line,discount_was_missing,boolean
 vendor_item,supplier_id,bigint
+panel_invoice,account_no,bigint
 vendor_item,strips_per_box,bigint
+panel_invoice,month_start,timestamp without time zone
 purchase_order,supplier_id,bigint
 purchase_order,branch_id,bigint
-branch,branch_label,text
-branch,branch_norm,text
-vendor_item,vendor_item_code,text
-item,category_raw,text
-vendor_item,description,text
-item,category,text
-purchase_order,po_no,text
-receipt_line,raw_json,text
-pos_item,item_code,text
-pos_item,item_desc,text
-purchase_order,currency,text
-pos_item,sell_unit,text
-goods_receipt,grn_no,text
-goods_receipt,po_no,text
-loyalty_member,card_no,text
-goods_receipt,status,text
-loyalty_member,member_name,text
-store,store_name,text
-grn_line,grn_no,text
-store,area,text
-grn_line,vendor_item_code,text
-item,pos_code,text
-item,vendor_code,text
-panel_account,company_name,text
-item,pos_code_raw,text
-grn_line,raw_json,text
-receipt,receipt_no,text
+purchase_order,ordered_at,timestamp without time zone
+panel_invoice,amount_pkr,numeric
+purchase_order,updated_at,timestamp without time zone
+item,item_id,bigint
+receipt_line,gross_amount_pkr,numeric
+goods_receipt,received_at,timestamp without time zone
+receipt_line,net_amount_pkr,numeric
+goods_receipt,updated_at,timestamp without time zone
+goods_receipt,received_date,timestamp without time zone
+receipt_line,updated_at,timestamp without time zone
+grn_line,line_no,bigint
+receipt,receipt_date,timestamp without time zone
+grn_line,boxes_received,numeric
+grn_line,cost_per_box,numeric
+grn_line,amount_original,numeric
+grn_line,updated_at,timestamp without time zone
+item,tablets_per_strip,bigint
+item,std_cost_per_unit,numeric
+receipt,receipt_ts,timestamp without time zone
+receipt_line,line_no,bigint
+receipt,updated_at,timestamp without time zone
+receipt_line,qty,numeric
+stock_count,store_code,text
 receipt,branch_text,text
 receipt,branch_norm,text
-item,vendor_code_raw,text
 receipt,customer_type,text
 receipt,card_no,text
 receipt,panel_text,text
 receipt,status,text
-store,region,text
-panel_invoice,invoice_no,text
 receipt_line,receipt_no,text
-stock_count,store_code,text
 receipt_line,item_code,text
-supplier,country,text
-supplier,supplier_name,text
-store,store_code,text
+receipt_line,raw_json,text
+pos_item,item_code,text
+pos_item,item_desc,text
+pos_item,sell_unit,text
+loyalty_member,card_no,text
+loyalty_member,member_name,text
+panel_account,company_name,text
+panel_invoice,invoice_no,text
 item,generic_name,text
 item,strength,text
+item,category_raw,text
+item,category,text
+item,pos_code,text
+item,vendor_code,text
+item,pos_code_raw,text
+item,vendor_code_raw,text
+store,store_code,text
+store,store_name,text
+store,area,text
+store,region,text
+receipt,receipt_no,text
+supplier,supplier_name,text
+supplier,country,text
+branch,branch_label,text
+branch,branch_norm,text
+vendor_item,vendor_item_code,text
+vendor_item,description,text
+purchase_order,po_no,text
+purchase_order,currency,text
+goods_receipt,grn_no,text
+goods_receipt,po_no,text
+goods_receipt,status,text
+grn_line,grn_no,text
+grn_line,vendor_item_code,text
+grn_line,raw_json,text

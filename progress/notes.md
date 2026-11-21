@@ -111,3 +111,7 @@
 ## 5.06 README and evidence index (DONE)
 - README.md: setup, run order (16 rows over the 29 pipeline steps) with expected counts/totals, final totals table. START_HERE.md: parts 1-4 (part 4 = human checklist: Power BI open/save pbix+pdf, Colab run -> evidence/colab_run.ipynb, contribution statement, instructor items, finalize.sh).
 - evidence/INDEX.md maps every C1-C5 Score-2 item to files; `python -m src.audit` checks every backticked path exists (evidence/09_report/index_check.csv). All rubric paths exist; docs/viva/*.md arrive in 5.08.
+
+## 5.07 Demo script (DONE)
+- docs/demo.md: 7-step, 12-minute run-sheet; steps 1-6 are `python -m src.pipeline` ranges (FULL_REBUILD --to load_sources_stage_1; extract_batch_1..etl_reconcile_1; load_batch_1..rerun_test; batch_2..controlled_failure; metadata..traces; queries..powerbi_report).
+- Ran all six in sequence after 5.02: exit 0 each, 160 s total (evidence/05_validation/headless_run/demo_commands_log.csv); totals identical to the headless run 11/11 (demo_totals_comparison.csv). The three psql queries in the sheet were run too (FY2026 = 6,230,294.70; batches 1 S, 2 S, 3 FAILED, 4 S).

@@ -1,0 +1,7 @@
+step,command,exit_code,seconds
+1,"python -m src.pipeline --mode FULL_REBUILD --to load_sources_stage_1",0,36
+2,"python -m src.pipeline --from extract_batch_1 --to etl_reconcile_1",0,30
+3,"python -m src.pipeline --from load_batch_1 --to rerun_test",0,29
+4,"python -m src.pipeline --from batch_2 --to controlled_failure",0,33
+5,"python -m src.pipeline --from metadata --to traces",0,9
+6,"python -m src.pipeline --from queries --to powerbi_report",0,23
