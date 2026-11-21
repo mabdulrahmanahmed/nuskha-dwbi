@@ -5,10 +5,10 @@ config/transform_rules.csv,PASS
 docs/DECISIONS.md,PASS
 docs/demo.md,PASS
 docs/recommendations.md,PASS
-docs/viva/member1.md,FAIL
-docs/viva/member2.md,FAIL
-docs/viva/member3.md,FAIL
-docs/viva/member4.md,FAIL
+docs/viva/member1.md,PASS
+docs/viva/member2.md,PASS
+docs/viva/member3.md,PASS
+docs/viva/member4.md,PASS
 evidence/01_sources/erd/finance_erd.png,PASS
 evidence/01_sources/erd/inventory_erd.png,PASS
 evidence/01_sources/erd/purchasing_erd.png,PASS

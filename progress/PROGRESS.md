@@ -1,8 +1,8 @@
 # Build progress
 
-Last updated: 2026-11-22 02:36 Pakistan Standard Time. This file is rewritten and pushed after every work unit.
+Last updated: 2026-11-22 02:38 Pakistan Standard Time. This file is rewritten and pushed after every work unit.
 
-**Overall: ~15 min of Claude Code processing left.** Status values: DONE, IN_PROGRESS (running, or interrupted and will be resumed), PENDING, BLOCKED, SKIPPED.
+**Overall: ~0 min of Claude Code processing left.** Status values: DONE, IN_PROGRESS (running, or interrupted and will be resumed), PENDING, BLOCKED, SKIPPED.
 
 ## Phase 1: 9/9 units done, ~0 min of processing left
 
@@ -64,7 +64,7 @@ Last updated: 2026-11-22 02:36 Pakistan Standard Time. This file is rewritten an
 | 4.10 | Power BI report | DONE | 0.4 |
 | 4.11 | Power BI fallback guide | DONE | 0.3 |
 
-## Phase 5: 7/9 units done, ~15 min of processing left
+## Phase 5: 9/9 units done, ~0 min of processing left
 
 | Unit | Title | Status | Minutes |
 | --- | --- | --- | --- |
@@ -75,6 +75,6 @@ Last updated: 2026-11-22 02:36 Pakistan Standard Time. This file is rewritten an
 | 5.05 | Report part 2 | DONE | 0.0 |
 | 5.06 | README and evidence index | DONE | 1.1 |
 | 5.07 | Demo script | DONE | 3.1 |
-| 5.08 | Viva guides | PENDING |  |
-| 5.09 | Final audit | PENDING |  |
+| 5.08 | Viva guides | DONE | -0.0 |
+| 5.09 | Final audit | DONE | 0.7 |
 

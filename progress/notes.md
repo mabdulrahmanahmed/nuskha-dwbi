@@ -115,3 +115,11 @@
 ## 5.07 Demo script (DONE)
 - docs/demo.md: 7-step, 12-minute run-sheet; steps 1-6 are `python -m src.pipeline` ranges (FULL_REBUILD --to load_sources_stage_1; extract_batch_1..etl_reconcile_1; load_batch_1..rerun_test; batch_2..controlled_failure; metadata..traces; queries..powerbi_report).
 - Ran all six in sequence after 5.02: exit 0 each, 160 s total (evidence/05_validation/headless_run/demo_commands_log.csv); totals identical to the headless run 11/11 (demo_totals_comparison.csv). The three psql queries in the sheet were run too (FY2026 = 6,230,294.70; batches 1 S, 2 S, 3 FAILED, 4 S).
+
+## 5.08 Viva guides (DONE)
+- docs/viva/member1.md (C1 sources/ETL), member2.md (C2 warehouse + forecast), member3.md (C3 lineage/validation + anomaly), member4.md (C4 SQL/BI + AI tables, recommendations): ~118 lines each, 15 Q&A, numbers cited to evidence files.
+
+## 5.09 Final audit (DONE, tagged v1.0)
+- docs/AUDIT.md: Q1-Q14, rubric C1-C5 Score-2 items and deliverables all MET; 4 items "MET - human step" (open pbip/save pbix, Colab run, contribution names/hours, plus finalize.sh). `python -m src.audit`: INDEX 103/103, AUDIT 77/77 paths exist.
+- Validation 27/27 rows PASS (11 checks). Report rebuilt after the demo-sequence run: 9 pages before appendices, 74/74 numbers in evidence.
+- Next: only START_HERE.md part 4 (human), then `bash scripts/finalize.sh` (closing step, tag v1.1).
