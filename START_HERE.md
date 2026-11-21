@@ -42,11 +42,18 @@ bash scripts/setup_env.sh                          # must print OK five times
    - If it opens: check the three pages and the three totals in `powerbi/reconciliation.csv` (FY2026 net sales 6,230,294.70; Gulshan-e-Iqbal 2025 745,398.10; Oct 2026 purchases 599,167.14), then **File → Save as** `powerbi/nuskha.pbix` and **Export → PDF** to `powerbi/nuskha.pdf`.
    - If it does not open, or a visual errors: build the report from `powerbi/BUILD_GUIDE.md` (about 45 minutes) and save it to the same file names.
    - On visual 8 (top 10 products), add the Top N = 10 filter by hand (BUILD_GUIDE).
-2. **Google Colab run.**
-   - Upload the project folder (or clone the repo) into Colab and `%cd` into it.
-   - Open `pipeline.ipynb` and set `NUSKHA_MODE` to `FULL_REBUILD` (in the second cell, or as an environment variable).
-   - Run all cells, then save the executed notebook as `evidence/colab_run.ipynb`. Its last cell shows the warehouse totals; they should equal the table in `README.md`.
-3. **Contribution statement.** Fill in names, notebook sections and hours in the table in section 10 of `report/report.md`, then run `.venv/Scripts/python -m src.report_build --check` to rebuild the docx and PDF.
+2. **Google Colab run** (about 10 minutes; the setup cell apt-installs MySQL and PostgreSQL).
+   - Upload `dist/nuskha-dwbi-colab.zip` (a clean copy of the repo, without the venv or secrets) in the Colab file panel, then run these cells:
+     ```
+     !unzip -q nuskha-dwbi-colab.zip -d /content/nuskha-dwbi
+     %cd /content/nuskha-dwbi
+     import os; os.environ['NUSKHA_MODE'] = 'FULL_REBUILD'
+     ```
+   - Open `/content/nuskha-dwbi/pipeline.ipynb` from the file panel, or upload `pipeline.ipynb` into Colab, and choose **Runtime → Run all**.
+   - Check that the last cell's totals equal the table in `README.md` (e.g. FY2026 net sales 6230294.70).
+   - Save it with **File → Download → .ipynb** as `evidence/colab_run.ipynb`.
+   - If a setup step fails in Colab, note the error. The local headless run (`evidence/05_validation/headless_run/`) already proves the notebook runs end to end.
+3. **Contribution statement.** Names (from the title slide) are filled in as a *draft* assignment in section 10 of `report/report.md` and at the top of each `docs/viva/member*.md`. Confirm or swap who owns which criterion, fill in the hours, then run `.venv/Scripts/python -m src.report_build --check` to rebuild the docx and PDF.
 4. **Open items with the instructor:**
    - Rebuilding the lab artifacts inside the project.
    - Practical 9/10 task numbers for A1–A12 (provisional in `evidence/06_sql/readings.md`).

@@ -13,3 +13,5 @@ data/offline_dw.duckdb*
 data/offline_dw_ai.duckdb*
 data/snapshots/
 data/pbir_schemas/
+# Colab upload package (rebuilt with git archive)
+dist/

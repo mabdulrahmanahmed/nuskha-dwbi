@@ -1,6 +1,7 @@
 > All data in this project is synthetic (fictional "Nuskha Pharmacies", one generator, seed 472). No real patients, brands or companies.
 
 # Viva guide: Member 3, Lineage and validation (criterion C3) and anomaly detection
+Draft owner: **Umer Haroon Mallick (DT-039)** (the group confirms the assignment; see report section 10).
 
 You own the metadata repository, reverse engineering, the six lineage traces, the validation suite and the architecture analysis. Your AI share is anomaly detection.
 

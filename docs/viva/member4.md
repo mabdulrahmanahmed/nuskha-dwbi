@@ -1,6 +1,7 @@
 > All data in this project is synthetic (fictional "Nuskha Pharmacies", one generator, seed 472). No real patients, brands or companies.
 
 # Viva guide: Member 4, SQL and BI (criterion C4), AI output tables and recommendations
+Draft owner: **Sufyan (DT-038)** (the group confirms the assignment; see report section 10).
 
 You own the six saved views, the 12 analytic queries, the Power BI report, the reconciliation of dashboard totals with SQL, the AI output tables as the report uses them, and the three recommendations.
 

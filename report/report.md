@@ -2,6 +2,10 @@
 
 CT-472 Data Warehousing and Business Intelligence · Semester project · November 2026
 
+Muhammad Abdulrahman Ahmed (DT-022) · Syed Basil Hussain (DT-045) · Umer Haroon Mallick (DT-039) · Sufyan (DT-038)
+
+Course instructor: Dr. Muhammad Umer Farooq · NED University of Engineering & Technology · BSCS (DT), Batch 2023
+
 All data in this project is synthetic, produced by one seeded generator (seed 472). It contains no patient data and no real brands or companies.
 
 ## 1. Problem, scenario and business questions
@@ -198,14 +202,14 @@ Each recommendation gives its evidence, trace and limitation in `docs/recommenda
 
 ## 10. Member contribution statement
 
-To be completed by the group. Each member owns one rubric criterion end to end and must be able to explain how it connects to the others (viva guides in `docs/viva/`).
+Each member owns one rubric criterion end to end and must be able to explain how it connects to the others (viva guides in `docs/viva/`). The assignment below is a draft, in the order on the title slide; the group confirms or swaps rows and fills in the hours.
 
 | Member | Components owned | Criterion | Notebook sections / files | Hours |
 | --- | --- | --- | --- | --- |
-| [Member 1] | Generator, four sources, extraction, profiling, cleaning, crosswalks, rejects, reconciliation | C1 Sources and ETL | generate, load_sources, extract, etl_* steps | [ ] |
-| [Member 2] | Warehouse DDL, loading, surrogate keys, batch 2, SCD Type 1, failure recovery; forecast | C2 Warehouse | create_warehouse, load_batch_1, rerun_test, batch_2, scd1, controlled_failure; ai (forecast) | [ ] |
-| [Member 3] | Metadata, reverse engineering, lineage traces, validation suite, architecture analysis; anomaly detection | C3 Lineage and validation | metadata, reverse_engineer, traces, validation; ai (anomaly) | [ ] |
-| [Member 4] | 12 queries, saved views, Power BI, reconciliation of totals; AI output tables, recommendations | C4 SQL and BI | views, queries, powerbi_* | [ ] |
+| Muhammad Abdulrahman Ahmed (DT-022) | Generator, four sources, extraction, profiling, cleaning, crosswalks, rejects, reconciliation | C1 Sources and ETL | generate, load_sources, extract, etl_* steps | [ ] |
+| Syed Basil Hussain (DT-045) | Warehouse DDL, loading, surrogate keys, batch 2, SCD Type 1, failure recovery; forecast | C2 Warehouse | create_warehouse, load_batch_1, rerun_test, batch_2, scd1, controlled_failure; ai (forecast) | [ ] |
+| Umer Haroon Mallick (DT-039) | Metadata, reverse engineering, lineage traces, validation suite, architecture analysis; anomaly detection | C3 Lineage and validation | metadata, reverse_engineer, traces, validation; ai (anomaly) | [ ] |
+| Sufyan (DT-038) | 12 queries, saved views, Power BI, reconciliation of totals; AI output tables, recommendations | C4 SQL and BI | views, queries, powerbi_* | [ ] |
 
 <!-- appendix -->
 
