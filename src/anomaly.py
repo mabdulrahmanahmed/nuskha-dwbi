@@ -98,7 +98,8 @@ def evaluate(scored: pd.DataFrame, labels: pd.DataFrame) -> pd.DataFrame:
     lab = labels[key].assign(is_injected=True)
     rows = []
     for method, s in scored.groupby("method"):
-        m = s.merge(lab, on=key, how="left").fillna({"is_injected": False})
+        m = s.merge(lab, on=key, how="left")
+        m["is_injected"] = m.is_injected.astype("boolean").fillna(False).astype(bool)   # unlabelled = normal
         tp = int((m.is_flag & m.is_injected).sum())
         fp = int((m.is_flag & ~m.is_injected).sum())
         fn = int((~m.is_flag & m.is_injected).sum())

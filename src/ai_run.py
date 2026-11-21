@@ -109,8 +109,10 @@ def main() -> None:
 
         from src.common import get_engine
 
+        from src.queries import pg_types
+
         eng = get_engine("dw")
-        run_sql = lambda sql: pd.read_sql(text(sql), eng)                 # noqa: E731
+        run_sql = lambda sql: pg_types(pd.read_sql(text(sql), eng))       # noqa: E731  DATE/NUMERIC -> pandas
 
         def execute(sql, rows):
             with eng.begin() as c:

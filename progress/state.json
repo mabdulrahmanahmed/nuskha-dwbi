@@ -351,67 +351,79 @@
       "minutes": 0.2
     },
     "4.01": {
-      "status": "PENDING",
+      "status": "DONE",
       "attempts": 0,
       "phase": "4",
       "title": "Saved views",
       "est": 10,
       "needs": [
         "3.11"
-      ]
+      ],
+      "start": 1795295083.764947,
+      "minutes": 0.1
     },
     "4.02": {
-      "status": "PENDING",
+      "status": "DONE",
       "attempts": 0,
       "phase": "4",
       "title": "Queries A1\u2013A6",
       "est": 15,
       "needs": [
         "4.01"
-      ]
+      ],
+      "start": 1795295094.53153,
+      "minutes": 0.7
     },
     "4.03": {
-      "status": "PENDING",
+      "status": "DONE",
       "attempts": 0,
       "phase": "4",
       "title": "Queries A7\u2013A12",
       "est": 15,
       "needs": [
         "4.01"
-      ]
+      ],
+      "start": 1795295139.0251276,
+      "minutes": 0.0
     },
     "4.04": {
-      "status": "PENDING",
+      "status": "DONE",
       "attempts": 0,
       "phase": "4",
       "title": "Forecast features and baselines",
       "est": 10,
       "needs": [
         "4.01"
-      ]
+      ],
+      "start": 1795295234.5108562,
+      "minutes": 0.0
     },
     "4.05": {
-      "status": "PENDING",
+      "status": "DONE",
       "attempts": 0,
       "phase": "4",
       "title": "Forecast model",
       "est": 15,
       "needs": [
         "4.04"
-      ]
+      ],
+      "start": 1795295235.1006916,
+      "minutes": 0.0
     },
     "4.06": {
-      "status": "PENDING",
+      "status": "DONE",
       "attempts": 0,
       "phase": "4",
       "title": "Anomaly detection",
       "est": 15,
       "needs": [
         "4.01"
-      ]
+      ],
+      "start": 1795295235.7381978,
+      "minutes": 0.0
     },
     "4.07": {
-      "status": "PENDING",
+      "status": "DONE",
       "attempts": 0,
       "phase": "4",
       "title": "Anomaly evaluation and retry",
@@ -419,7 +431,9 @@
       "needs": [
         "4.05",
         "4.06"
-      ]
+      ],
+      "start": 1795295236.3727994,
+      "minutes": 0.0
     },
     "4.08": {
       "status": "PENDING",

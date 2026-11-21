@@ -1,0 +1,8 @@
+method,region,category,month_start,net_sales_pkr,expected,ratio_to_trailing,yoy_ratio,score
+isolation_forest,East,Analgesics,2026-09-01,37583.85,8767.08,4.2869,3.0686,0.7915
+isolation_forest,South,Cardiovascular,2026-04-01,43391.7,19365.6,2.2407,2.2408,0.705
+robust_z,East,Analgesics,2026-09-01,37583.85,8767.08,4.2869,3.0686,10.5073
+robust_z,East,Gastro,2026-09-01,31439.9,13511.93,2.3268,1.5065,4.1112
+robust_z,East,Antibiotics,2026-10-01,42992.25,18971.98,2.2661,1.3632,3.9132
+robust_z,North,Cough and Cold,2026-01-01,27984.55,12382.38,2.26,1.0965,3.8933
+robust_z,South,Cardiovascular,2026-04-01,43391.7,19365.6,2.2407,2.2408,3.8303

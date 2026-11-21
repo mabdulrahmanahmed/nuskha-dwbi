@@ -341,7 +341,21 @@ def postgres_runner():
     from src.common import get_engine
 
     eng = get_engine("dw")
-    return lambda sql: pd.read_sql(text(sql), eng)
+    return lambda sql: pg_types(pd.read_sql(text(sql), eng))
+
+
+def pg_types(df: pd.DataFrame) -> pd.DataFrame:
+    """PostgreSQL returns DATE as datetime.date and NUMERIC as Decimal; use pandas types like DuckDB does."""
+    from datetime import date
+    from decimal import Decimal
+
+    for c in df.columns:
+        first = df[c].dropna().iloc[0] if df[c].notna().any() else None
+        if isinstance(first, Decimal):
+            df[c] = pd.to_numeric(df[c].astype(object).where(df[c].notna(), None), errors="coerce").astype(float)
+        elif isinstance(first, date):
+            df[c] = pd.to_datetime(df[c])
+    return df
 
 
 if __name__ == "__main__":
