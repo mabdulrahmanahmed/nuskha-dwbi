@@ -59,3 +59,10 @@
 - 3.08 content: config/column_map.csv (70 mappings; all 67 DW columns covered) and config/transform_rules.csv (19 rules); `python -m src.metadata` checks coverage.
 - Power BI (4.08/4.09/4.11 drafts from the DuckDB preview): `src/powerbi_export.py` writes powerbi/data/*.csv, DATA_DICTIONARY.md and reconciliation.csv (3 totals PASS); `src/powerbi_model.py` writes the PBIP semantic model in TMDL (10 tables, 6 relationships, 11 measures, DataFolder parameter; text checks PASS); powerbi/BUILD_GUIDE.md. The report pages (nuskha.Report, 4.10) are NOT written yet, so nuskha.pbip refers to a missing report folder until 4.10.
 - When PostgreSQL exists, rerun every one of these without `--duckdb` so that the official evidence comes from the warehouse.
+
+## 1.01 Environment (DONE, 2026-11-22)
+- DB access fixed with `scripts/reset_db_access.ps1` (run by the person as Administrator): nuskha/nuskha on MySQL and PostgreSQL; admin logins now root/root and postgres/postgres (local only). `check_env.py` prints OK x5.
+
+## 1.08 Load and reproducibility (DONE)
+- `python -m src.load_sources --stage 1 --twice` loads stage-1 CSVs into sales_db, finance_db, purchasing_db and INVENTORY_PATH; `evidence/01_sources/reproducibility.csv`: 17/17 tables identical md5 across two builds.
+- Sources now hold stage 1. 3.05 must reload with `--stage 2` before the batch-2 extract.

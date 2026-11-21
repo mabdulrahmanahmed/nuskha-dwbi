@@ -1,7 +1,7 @@
 {
   "units": {
     "1.01": {
-      "status": "BLOCKED",
+      "status": "DONE",
       "attempts": 0,
       "phase": "1",
       "title": "Environment (after databases are installed)",
@@ -9,8 +9,8 @@
       "needs": [
         "1.07"
       ],
-      "start": 1795194592.2831964,
-      "reason": "nuskha DB user missing on MySQL and PostgreSQL; config/.env missing (see docs/BLOCKERS.md)"
+      "start": 1795293678.8159647,
+      "minutes": 0.0
     },
     "1.02": {
       "status": "DONE",
@@ -83,7 +83,7 @@
       "minutes": 5.8
     },
     "1.08": {
-      "status": "SKIPPED",
+      "status": "DONE",
       "attempts": 0,
       "phase": "1",
       "title": "Load and reproducibility",
@@ -92,7 +92,8 @@
         "1.01",
         "1.07"
       ],
-      "reason": "needs a blocked unit"
+      "start": 1795293686.0788746,
+      "minutes": 0.4
     },
     "1.09": {
       "status": "DONE",
