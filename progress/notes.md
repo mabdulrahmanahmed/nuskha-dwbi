@@ -134,3 +134,8 @@
 - Report: Management Overview page in section 7, all three pages in new Appendix E; section 10 = equal shares, criterion leads assigned at random after balancing difficulty and time (viva guides updated to match).
 - Rebuilt: 29 pages, 11 before the appendices (PASS), 74/74 numbers in evidence. Audit: INDEX 109/109, AUDIT 81/81 paths exist; no "MET – human step" left.
 - Left for people: instructor open items (START_HERE part 4, item 4) and viva rehearsal.
+
+## Report formatting (2026-11-23)
+- src/report_build.py now applies a house style (see its docstring and docs/DECISIONS.md, closing) and runs a Word pass that moves a main section onto a new page when it would fit on one page but straddles two, then refreshes the contents and exports the PDF.
+- report.md conventions: lines before the first "## " = cover; "Table: <caption>" before a table; images take an optional "w=<cm>" title.
+- Result: 28 pages, 11 before the appendices (limit 12, cover included); 75/75 numbers in evidence.

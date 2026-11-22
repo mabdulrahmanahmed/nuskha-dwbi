@@ -16,6 +16,7 @@ The chain's records sit in four departmental systems on three database engines, 
 
 Six business questions drove the design:
 
+Table: The six business questions behind the design
 | # | Type | Question | User | Grain | Decision |
 | --- | --- | --- | --- | --- | --- |
 | BQ1 | Comparison | Which branches grew net sales and margin vs the same quarter last year? | Operations Director | Branch × fiscal quarter | Move stock and pharmacists |
@@ -29,6 +30,7 @@ Six business questions drove the design:
 
 Four of Nuskha's ten departments are implemented as source systems. The other six (Pharmacy Operations, Marketing and Loyalty, Home Delivery, Customer Care, HR, IT) are planned, and the bus matrix in section 4 shows where they would join without a redesign.
 
+Table: Source systems and what each one feeds
 | Department | Engine and database | Main tables | Feeds |
 | --- | --- | --- | --- |
 | Sales (till) | MySQL 9.3, `sales_db` | receipt, receipt_line, loyalty_member, pos_item | fact_sales, dim_customer, dim_branch |
@@ -58,6 +60,7 @@ Crosswalks resolved 150 Inventory items, 152 vendor codes and 153 till codes. 10
 
 **Reconciliation.** For every table and batch, source rows = loaded + rejected + duplicates removed, and amounts are compared month by month to the paisa:
 
+Table: Row reconciliation per batch: source rows = loaded + rejected + duplicates
 | Batch | Table | Source rows | Loaded | Rejected | Duplicates | Balanced |
 | --- | --- | --- | --- | --- | --- | --- |
 | 1 | sales_db.receipt_line | 28,238 | 27,543 | 556 | 139 | yes |
@@ -71,7 +74,7 @@ Source: `evidence/02_etl/reconciliation_batch_1.csv`, `reconciliation_batch_2.cs
 
 Selling and buying the same products are two related processes, modelled as two stars that share the Date, Product and Branch dimensions.
 
-![Star schemas: fact_sales and fact_purchase with conformed dimensions](../evidence/03_warehouse/star_schema.png)
+![Star schemas: fact_sales and fact_purchase with conformed dimensions](../evidence/09_report/star_schema_report.png "w=15.9")
 
 **Grains.** `dw.fact_sales` has one row per till receipt line, with natural key (source_system, receipt_no, line_no). `dw.fact_purchase` has one row per goods-receipt line, with natural key (source_system, grn_no, line_no). Sales measures are quantity_units, gross_amount_pkr, discount_pkr, net_amount_pkr, cost_amount_pkr (quantity × Inventory standard cost on the receipt date) and gross_margin_pkr, all additive. Purchase measures are quantity_units, amount_original (additive within one currency only) and purchase_amount_pkr. Ratios (ASP, unit cost, margin %) are non-additive and are always recomputed from sums in the views.
 
@@ -79,6 +82,7 @@ Selling and buying the same products are two related processes, modelled as two 
 
 **Bus matrix and source coverage.**
 
+Table: Bus matrix: dimensions used by each business process
 | Process | Date | Product | Branch | Customer | Supplier | Status |
 | --- | --- | --- | --- | --- | --- | --- |
 | Sales | ✓ | ✓ | ✓ | ✓ |  | Built |
@@ -87,6 +91,7 @@ Selling and buying the same products are two related processes, modelled as two 
 | Returns | ✓ | ✓ | ✓ | ✓ |  | Planned |
 | Home delivery | ✓ |  | ✓ | ✓ |  | Planned |
 
+Table: Source coverage: which department feeds which table
 | Department | fact_sales | fact_purchase | dim_product | dim_branch | dim_customer | dim_supplier |
 | --- | --- | --- | --- | --- | --- | --- |
 | Sales | rows, measures |  | till codes | branch text | loyalty, panel text |  |
@@ -116,6 +121,7 @@ Four departments feed the two stars (the requirement is three). The full warehou
 
 **Six traces to source.** Each trace runs from a warehouse figure back to one source row, with the SQL for every step (`sql/05_traces/T1..T6.sql`, results in `evidence/04_metadata_lineage/traces/`):
 
+Table: The six traces from a warehouse figure to a source row
 | Trace | From | Ends at |
 | --- | --- | --- |
 | T1 | Till receipt line CLF-2026-000417 line 1 | MySQL `receipt_line` row, via staging and the raw CSV |
@@ -138,7 +144,7 @@ Twelve queries (`sql/04_queries/A01..A12.sql`) cover every required type of anal
 
 **Diagnostic finding (BQ4).** Diabetes Care margin fell from 26.8% in February 2026 to 17.2% in March 2026. The margin bridge (A12, `vw_margin_bridge`) splits the change into a cost effect of PKR −8,294, a price effect of PKR −70 and a volume effect of PKR +3,782. Purchase cost rose from 73.8% of the selling price (Sep 2025 – Feb 2026) to 83.2% (Mar – Oct 2026) (A10). The fall is a cost problem, not a pricing or mix problem.
 
-![Diabetes Care margin bridge: price, cost and volume effects (A12)](../evidence/06_sql/A12_diabetes_margin_bridge.png)
+![Diabetes Care margin bridge: price, cost and volume effects (A12)](../evidence/06_sql/A12_diabetes_margin_bridge.png "w=11")
 
 **Power BI.** `powerbi/nuskha.pbip` contains a semantic model of 10 tables, 6 relationships and 11 DAX measures, and three report pages with 11 visuals:
 
@@ -146,9 +152,7 @@ Twelve queries (`sql/04_queries/A01..A12.sql`) cover every required type of anal
 - **Diagnostic Analysis:** margin % by category, Diabetes Care ASP vs unit cost, the margin bridge, and top-10 rank change.
 - **AI Insights:** forecast vs holdout and the next 3 months, an anomaly scatter, and a flagged-case table.
 
-Each page has date, region and category slicers and shows units, the period and the last batch id. Power BI reads CSV exports of the views (`powerbi/data/`), and three totals reconcile exactly with warehouse SQL under the same filters (`powerbi/reconciliation.csv`): FY2026 net sales PKR 6,230,294.70, Gulshan-e-Iqbal net sales in calendar 2025 PKR 745,398.10, and October 2026 purchases PKR 599,167.14. The report files pass Microsoft's published PBIR schemas (32/32, `evidence/08_powerbi/report_schema_validation.csv`). The saved report is `powerbi/nuskha.pbix`; its PDF export (`powerbi/nuskha.pdf`) is reproduced in full in Appendix E. Its KPI card shows net sales with the voided lines left out, as every view does, and the last batch id counts only the two real loads.
-
-![Power BI, Management Overview page (from powerbi/nuskha.pdf)](../evidence/08_powerbi/powerbi_page_1.png)
+Each page has date, region and category slicers and shows units, the period and the last batch id. Power BI reads CSV exports of the views (`powerbi/data/`), and three totals reconcile exactly with warehouse SQL under the same filters (`powerbi/reconciliation.csv`): FY2026 net sales PKR 6,230,294.70, Gulshan-e-Iqbal net sales in calendar 2025 PKR 745,398.10, and October 2026 purchases PKR 599,167.14. The report files pass Microsoft's published PBIR schemas (32/32, `evidence/08_powerbi/report_schema_validation.csv`). The saved report is `powerbi/nuskha.pbix`; its three pages, exported to `powerbi/nuskha.pdf`, are shown in Appendix E. Its KPI card shows net sales with the voided lines left out, as every view does, and the last batch id counts only the two real loads.
 
 ## 8. Forecast and anomaly detection
 
@@ -156,6 +160,7 @@ Both AI tasks read only from SQL views, are evaluated in time order against simp
 
 **Monthly forecast (BQ5).** The features (lag_1, lag_12, a prior-only rolling 3-month mean, month of year and Ramadan days) are built in SQL in `vw_forecast_features`, and a leakage test confirms that no feature uses the month being predicted (`evidence/07_ai/forecast_leakage_test.csv`). The model is a ridge regression, trained on Nov 2023 – Jul 2026, with alpha tuned by rolling-origin validation inside the training months. It was scored on an untouched holdout (Aug – Oct 2026), forecasting three months ahead from the origin:
 
+Table: Forecast accuracy on the untouched holdout months
 | Method | Holdout MAE (PKR) | Holdout RMSE (PKR) |
 | --- | --- | --- |
 | Ridge regression | 70,806 | 71,563 |
@@ -164,10 +169,11 @@ Both AI tasks read only from SQL views, are evaluated in time order against simp
 
 The model beats seasonal naive but **loses to last-month naive**. Only 21 training rows are usable once lag-12 is taken, so this result is reported as it is. Refitted on all 36 months, the model forecasts PKR 616,975 for Nov 2026, 611,441 for Dec 2026 and 630,303 for Jan 2027, each with a range of ±1.28 × the validation RMSE (`evidence/07_ai/forecast_results.csv`).
 
-![Forecast vs holdout actuals and the next three months](../evidence/07_ai/forecast.png)
+![Forecast vs holdout actuals and the next three months](../evidence/07_ai/forecast.png "w=11")
 
 **Anomaly detection (BQ6).** The series are 24 region × category monthly sales series from `vw_region_category_month`. Both methods are calibrated on Nov 2023 – Oct 2025 and review Nov 2025 – Oct 2026. The transparent method is a robust z-score of the ratio to the trailing 6-month median (flag above 3.5). The model is an Isolation Forest on that ratio, the year-on-year ratio and the ratio to the category average. On a copy of the review period with 25 injected spikes and drops:
 
+Table: Anomaly detection on the review copy with injected cases
 | Method | Flags | True positives | False alerts | Missed | Precision | Recall |
 | --- | --- | --- | --- | --- | --- | --- |
 | Isolation Forest | 22 | 20 | 2 | 5 | 0.909 | 0.80 |
@@ -206,6 +212,7 @@ Each recommendation gives its evidence, trace and limitation in `docs/recommenda
 
 All four members worked on every component together and share the work equally: each one designed, built, tested and can explain the whole pipeline. For the presentation and the viva, each member leads one rubric criterion (viva guides in `docs/viva/`). These leads were assigned at random, with the components first grouped so that each criterion carries a similar share of difficulty and time.
 
+Table: Criterion leads (all members share the work equally)
 | Member | Components led | Criterion | Notebook sections / files | Share of work |
 | --- | --- | --- | --- | --- |
 | Muhammad Abdulrahman Ahmed (DT-022) | Generator, four sources, extraction, profiling, cleaning, crosswalks, rejects, reconciliation | C1 Sources and ETL | generate, load_sources, extract, etl_* steps | Equal share |
@@ -237,8 +244,8 @@ All four members worked on every component together and share the work equally: 
 
 The three pages of `powerbi/nuskha.pdf`, exported from `powerbi/nuskha.pbix`.
 
-![Management Overview](../evidence/08_powerbi/powerbi_page_1.png)
+![Management Overview](../evidence/08_powerbi/powerbi_page_1.png "w=15.9")
 
-![Diagnostic Analysis](../evidence/08_powerbi/powerbi_page_2.png)
+![Diagnostic Analysis](../evidence/08_powerbi/powerbi_page_2.png "w=15.9")
 
-![AI Insights](../evidence/08_powerbi/powerbi_page_3.png)
+![AI Insights](../evidence/08_powerbi/powerbi_page_3.png "w=15.9")

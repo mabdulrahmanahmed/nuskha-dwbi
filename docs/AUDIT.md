@@ -67,7 +67,7 @@ Status values: **MET** (done and evidenced by the automated build); **MET – hu
 | README with run order, expected counts and totals | MET | `README.md` |
 | Evidence folders | MET | `evidence/INDEX.md`, `evidence/09_report/index_check.csv` |
 | Power BI file | MET | `powerbi/nuskha.pbix`, `powerbi/nuskha.pdf` (pages in report section 7 and Appendix E) |
-| Technical report, 8–12 pages excluding appendices | MET | `report/report.pdf`, `evidence/09_report/report_pages.csv` (11 pages), `evidence/09_report/report_numbers_check.csv` |
+| Technical report, 8–12 pages excluding appendices | MET | `report/report.pdf`, `evidence/09_report/report_pages.csv` (11 pages before the appendices, cover included), `evidence/09_report/report_numbers_check.csv` |
 | Member contribution statement | MET | `report/report.md` section 10: equal shares, criterion leads assigned at random after balancing difficulty and time |
 | Live demo run-sheet | MET | `docs/demo.md`, `evidence/05_validation/headless_run/demo_commands_log.csv` |
 | Individual viva preparation | MET | `docs/viva/member1.md`, `docs/viva/member2.md`, `docs/viva/member3.md`, `docs/viva/member4.md` |
@@ -87,6 +87,7 @@ Status values: **MET** (done and evidenced by the automated build); **MET – hu
 - The KPI card's net sales (PKR 16,382,871) is lower than the `fact_sales` total by the 31 voided lines, which every view leaves out; the last batch id card shows 2 because batches 3 and 4 were the failure-and-rerun test on the same snapshot.
 - Contribution statement filled in (equal shares). No units were blocked, so no retry was needed.
 - Report rebuilt and audit rerun; tagged `v1.1`.
+- Report reformatted to a house style (docs/DECISIONS.md, closing): 28 pages, 11 before the appendices.
 
 ## Remaining human steps
 
