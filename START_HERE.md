@@ -42,7 +42,7 @@ bash scripts/setup_env.sh                          # must print OK five times
    - Every table loads from `powerbi/data/` via the `DataFolder` parameter, set to this folder's path by `python -m src.powerbi_model`. If you moved the project, rerun that command (or **Transform data → Edit parameters**), then **Refresh**.
    - If it opens: check the three pages and the three totals in `powerbi/reconciliation.csv` (FY2026 net sales 6,230,294.70; Gulshan-e-Iqbal 2025 745,398.10; Oct 2026 purchases 599,167.14), then **File → Save as** `powerbi/nuskha.pbix` and **Export → PDF** to `powerbi/nuskha.pdf`.
    - If it does not open, or a visual errors: build the report from `powerbi/BUILD_GUIDE.md` (about 45 minutes) and save it to the same file names.
-   - On visual 8 (top 10 products), add the Top N = 10 filter by hand (BUILD_GUIDE).
+   - Visual 8 (top products) already carries the Top N = 10 filter by Net Sales (10 product names, shown with each strength).
 2. **Google Colab run** (about 10 minutes; the setup cell apt-installs MySQL and PostgreSQL).
    - In Colab: **File → Upload notebook** → `pipeline.ipynb`. Then, in the file panel (folder icon), upload `dist/nuskha-dwbi-colab.zip`, a clean copy of the repo without the venv or secrets.
    - Insert a new cell at the very top of the notebook containing:

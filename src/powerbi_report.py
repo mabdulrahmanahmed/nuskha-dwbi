@@ -76,6 +76,27 @@ def category_filter(name: str, table: str, col: str, values: list[str]) -> dict:
                        "Values": [[{"Literal": {"Value": v}}] for v in values]}}}]}}]}
 
 
+def topn_filter(name: str, table: str, col: str, m_table: str, measure_name: str, n: int) -> dict:
+    """Visual-level Top N filter: keep the n values of table[col] with the highest [measure_name].
+    Same JSON that Power BI Desktop writes when the filter is set by hand in the Filters pane."""
+    col_ref = lambda src: {"Column": {"Expression": {"SourceRef": {"Source": src}}, "Property": col}}
+    sub = {"Version": 2,
+           "From": [{"Name": "p", "Entity": table, "Type": 0}, {"Name": "s", "Entity": m_table, "Type": 0}],
+           "Select": [{**col_ref("p"), "Name": "field"}],
+           "OrderBy": [{"Direction": 2, "Expression": {"Measure": {
+               "Expression": {"SourceRef": {"Source": "s"}}, "Property": measure_name}}}],
+           "Top": n}
+    return {"filters": [{
+        "name": name,
+        "field": {"Column": {"Expression": {"SourceRef": {"Entity": table}}, "Property": col}},
+        "type": "TopN",
+        "filter": {"Version": 2,
+                   "From": [{"Name": "subquery", "Expression": {"Subquery": {"Query": sub}}, "Type": 2},
+                            {"Name": "p", "Entity": table, "Type": 0}],
+                   "Where": [{"Condition": {"In": {"Expressions": [col_ref("p")],
+                                                   "Table": {"SourceRef": {"Source": "subquery"}}}}}]}}]}
+
+
 def visual(name: str, vtype: str, x, y, w, h, roles: dict | None = None, heading: str | None = None,
            filters: dict | None = None, objects: dict | None = None, sort: dict | None = None) -> dict:
     v = {"visualType": vtype, "drillFilterOtherVisuals": True}
@@ -160,6 +181,7 @@ def pages() -> dict:
                {"Values": [column("Product", "generic_name"), column("Product", "strength"),
                            measure("Sales", "Net Sales"), measure("Sales", "Net Sales LY")]},
                "Top products: net sales this period vs last year (sorted by net sales)",
+               filters=topn_filter("dg_top_n", "Product", "generic_name", "Sales", "Net Sales", 10),
                sort={"sort": [{"field": measure("Sales", "Net Sales")["field"], "direction": "Descending"}],
                      "isDefaultSort": True}),
     ]

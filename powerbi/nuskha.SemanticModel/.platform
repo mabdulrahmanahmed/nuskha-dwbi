@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "SemanticModel",
+    "displayName": "nuskha"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "5892ea39-2050-41d8-b9fa-4740e8a858fe"
+  }
+}
