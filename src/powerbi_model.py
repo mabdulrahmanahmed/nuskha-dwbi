@@ -125,8 +125,11 @@ def write_model() -> list:
              "\tsourceQueryCulture: en-US", "\tdataAccessOptions", "\t\tlegacyRedirects", "\t\treturnErrorValuesAsNull",
              "", *[f"ref table {q(t)}" for t in TABLES], ""]
     (defn / "model.tmdl").write_text("\n".join(model), encoding="utf-8", newline="\n")
+    # DataFolder defaults to this checkout's powerbi/data (absolute Windows path), so the .pbip opens
+    # with data on the machine that generated it; elsewhere, edit the parameter in Power BI.
+    data_folder = str((PBI / "data").resolve()).replace("/", "\\").replace('"', '""')
     (defn / "expressions.tmdl").write_text(
-        'expression DataFolder = "C:\\nuskha-dwbi\\powerbi\\data" meta [IsParameterQuery = true, Type = "Text", '
+        f'expression DataFolder = "{data_folder}" meta [IsParameterQuery = true, Type = "Text", '
         'IsParameterQueryRequired = true]\n\tlineageTag: ' + str(uuid.uuid5(uuid.NAMESPACE_URL, "nuskha/DataFolder"))
         + "\n\n\tannotation PBI_ResultType = Text\n", encoding="utf-8", newline="\n")
     rels = []
