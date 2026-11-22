@@ -1,7 +1,7 @@
 > All data in this project is synthetic (fictional "Nuskha Pharmacies", one generator, seed 472). No real patients, brands or companies.
 
 # Viva guide: Member 2, Warehouse (criterion C2) and the forecast
-Draft owner: **Syed Basil Hussain (DT-045)** (the group confirms the assignment; see report section 10).
+Lead for this criterion: **Syed Basil Hussain (DT-045)** (assigned at random after balancing difficulty and time; all four members built every component together and share the work equally, see report section 10).
 
 You own the warehouse DDL, loading the two star schemas, surrogate keys, batch 2, SCD Type 1 and failure recovery. Your AI share is the monthly sales forecast.
 

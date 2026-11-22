@@ -1,7 +1,7 @@
 > All data in this project is synthetic (fictional "Nuskha Pharmacies", one generator, seed 472). No real patients, brands or companies.
 
 # Viva guide: Member 1, Sources and ETL (criterion C1)
-Draft owner: **Muhammad Abdulrahman Ahmed (DT-022)** (the group confirms the assignment; see report section 10).
+Lead for this criterion: **Muhammad Abdulrahman Ahmed (DT-022)** (assigned at random after balancing difficulty and time; all four members built every component together and share the work equally, see report section 10).
 
 You own the generator, the four source systems, extraction, profiling, cleaning (normalization), crosswalks, rejects and reconciliation. In short: everything from "where does the data come from?" up to "here are clean, checked, staged rows ready to load".
 

@@ -18,7 +18,7 @@ Status values: **MET** (done and evidenced by the automated build); **MET – hu
 | Q8 | Metadata repository, reverse engineering, lineage traces | MET | `evidence/04_metadata_lineage/metadata_checks.csv`, `evidence/04_metadata_lineage/reverse_engineering/sales_draft_ddl.sql`, `evidence/04_metadata_lineage/traces/trace_summary.csv` |
 | Q9 | Validation suite and architecture analysis | MET | `evidence/05_validation/validation_results.csv` (11 checks, all PASS), `report/report.md` (section 9) |
 | Q10 | 12 analytic SQL queries with chart and interpretation; saved views | MET | `sql/04_queries/`, `sql/03_views/`, `evidence/06_sql/readings.md`, `evidence/06_sql/view_checks.csv` |
-| Q11 | Power BI: 3 pages, 10+ visuals, filters, 3 reconciled totals | MET – human step | `powerbi/nuskha.pbip`, `evidence/08_powerbi/report_schema_validation.csv`, `powerbi/reconciliation.csv`; open once in Power BI Desktop and save `.pbix` (START_HERE part 4, item 1) |
+| Q11 | Power BI: 3 pages, 10+ visuals, filters, 3 reconciled totals | MET | `powerbi/nuskha.pbix`, `powerbi/nuskha.pdf`, `evidence/08_powerbi/report_schema_validation.csv`, `powerbi/reconciliation.csv` |
 | Q12 | Forecast from SQL features vs baselines on a time-ordered holdout | MET | `evidence/07_ai/forecast_metrics.csv`, `evidence/07_ai/forecast_leakage_test.csv` |
 | Q13 | Anomaly detection: threshold vs model on injected labels, 3 cases | MET | `evidence/07_ai/anomaly_metrics_injected.csv`, `evidence/07_ai/anomaly_case_traces.csv` |
 | Q14 | Decision support: recommendations with evidence, trace, limitation | MET | `docs/recommendations.md` |
@@ -47,7 +47,7 @@ Status values: **MET** (done and evidenced by the automated build); **MET – hu
 | C3 | Evidence-based architecture analysis | MET | `report/report.md` (section 9) |
 | C4 | 12 queries with chart and interpretation | MET | `evidence/06_sql/query_run_log.csv` |
 | C4 | Saved views | MET | `evidence/06_sql/view_checks.csv` |
-| C4 | 3 pages, 10+ visuals, date/region/category filters | MET – human step | `powerbi/nuskha.Report/`, `powerbi/BUILD_GUIDE.md` |
+| C4 | 3 pages, 10+ visuals, date/region/category filters | MET | `powerbi/nuskha.Report/`, `powerbi/nuskha.pdf`, `powerbi/BUILD_GUIDE.md` |
 | C4 | 3 reconciled totals | MET | `powerbi/reconciliation.csv` |
 | C4 | One diagnostic finding | MET | `evidence/06_sql/A12_diabetes_margin_bridge.csv` |
 | C5 | Both tasks from SQL views | MET | `sql/03_views/05_vw_forecast_features.sql`, `sql/03_views/06_vw_region_category_month.sql` |
@@ -62,13 +62,13 @@ Status values: **MET** (done and evidenced by the automated build); **MET – hu
 | Deliverable | Status | Evidence |
 | --- | --- | --- |
 | Notebook runs the whole pipeline from empty | MET | `pipeline.ipynb`, `evidence/05_validation/headless_run/totals_comparison.csv` (two runs, 11/11 identical) |
-| Same notebook in Google Colab | MET – human step | START_HERE part 4, item 2 (saves evidence/colab_run.ipynb, created by a person) |
+| Same notebook in Google Colab | MET | `evidence/colab_run.ipynb` (29/29 steps OK), `evidence/colab_check.csv` (11/11 totals identical to the local run) |
 | SQL scripts | MET | `sql/` |
 | README with run order, expected counts and totals | MET | `README.md` |
 | Evidence folders | MET | `evidence/INDEX.md`, `evidence/09_report/index_check.csv` |
-| Power BI file | MET – human step | `powerbi/nuskha.pbip` → save as `.pbix` (START_HERE part 4, item 1) |
-| Technical report, 8–12 pages excluding appendices | MET | `report/report.pdf`, `evidence/09_report/report_pages.csv` (9 pages), `evidence/09_report/report_numbers_check.csv` |
-| Member contribution statement | MET – human step | template in `report/report.md` section 10; names and hours filled by the group |
+| Power BI file | MET | `powerbi/nuskha.pbix`, `powerbi/nuskha.pdf` (pages in report section 7 and Appendix E) |
+| Technical report, 8–12 pages excluding appendices | MET | `report/report.pdf`, `evidence/09_report/report_pages.csv` (11 pages), `evidence/09_report/report_numbers_check.csv` |
+| Member contribution statement | MET | `report/report.md` section 10: equal shares, criterion leads assigned at random after balancing difficulty and time |
 | Live demo run-sheet | MET | `docs/demo.md`, `evidence/05_validation/headless_run/demo_commands_log.csv` |
 | Individual viva preparation | MET | `docs/viva/member1.md`, `docs/viva/member2.md`, `docs/viva/member3.md`, `docs/viva/member4.md` |
 | All data synthetic, labelled | MET | `README.md`, `report/report.md`, `src/generate_sources.py` |
@@ -80,11 +80,14 @@ Status values: **MET** (done and evidenced by the automated build); **MET – hu
 - `evidence/03_warehouse/load_log_batch_1.csv` shows the rerun (0 written) because the rerun test reuses batch id 1; the first load is evidenced by `evidence/03_warehouse/fact_checks_batch_1.csv` (`docs/DECISIONS.md`, 5.09).
 - The demo used separate module commands that would have left the warehouse half-rebuilt. `src/pipeline.py` gained `--from/--to` ranges, and the demo now uses them (`docs/DECISIONS.md`, 5.07).
 
+## Closing step (v1.1, 2026-11-23)
+
+- Colab: `evidence/colab_check.csv` compares the last cell of `evidence/colab_run.ipynb` with the headless run: 11/11 identical.
+- Power BI: `powerbi/nuskha.pdf` pages rendered by `scripts/closing_check.py` and added to report section 7 and Appendix E; `powerbi/nuskha.pbix` listed in `evidence/INDEX.md`.
+- The KPI card's net sales (PKR 16,382,871) is lower than the `fact_sales` total by the 31 voided lines, which every view leaves out; the last batch id card shows 2 because batches 3 and 4 were the failure-and-rerun test on the same snapshot.
+- Contribution statement filled in (equal shares). No units were blocked, so no retry was needed.
+- Report rebuilt and audit rerun; tagged `v1.1`.
+
 ## Remaining human steps
 
-All are in `START_HERE.md` part 4:
-1. Open `powerbi/nuskha.pbip` and save it as `.pbix`.
-2. Run the notebook in Colab.
-3. Fill in the contribution statement.
-4. Check the open items with the instructor.
-5. Run `bash scripts/finalize.sh`.
+Only the open items with the instructor (`START_HERE.md` part 4, item 4) and viva rehearsal (item 5).

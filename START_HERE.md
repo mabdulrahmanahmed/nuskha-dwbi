@@ -55,10 +55,10 @@ bash scripts/setup_env.sh                          # must print OK five times
    - Check that the last cell's totals equal the table in `README.md` (e.g. FY2026 net sales 6230294.70).
    - Save it with **File → Download → .ipynb** as `evidence/colab_run.ipynb`.
    - If a setup step fails in Colab, note the error. The local headless run (`evidence/05_validation/headless_run/`) already proves the notebook runs end to end.
-3. **Contribution statement.** Names (from the title slide) are filled in as a *draft* assignment in section 10 of `report/report.md` and at the top of each `docs/viva/member*.md`. Confirm or swap who owns which criterion, fill in the hours, then run `.venv/Scripts/python -m src.report_build --check` to rebuild the docx and PDF.
+3. **Contribution statement (DONE 2026-11-23: equal shares).** Names (from the title slide) are filled in as a *draft* assignment in section 10 of `report/report.md` and at the top of each `docs/viva/member*.md`. Confirm or swap who owns which criterion, fill in the hours, then run `.venv/Scripts/python -m src.report_build --check` to rebuild the docx and PDF.
 4. **Open items with the instructor:**
    - Rebuilding the lab artifacts inside the project.
    - Practical 9/10 task numbers for A1–A12 (provisional in `evidence/06_sql/readings.md`).
    - The evidence folder names required by the brief.
 5. **Viva rehearsal.** Each member presents another member's component once, using `docs/viva/`.
-6. **Closing step.** When 1–3 are done, run `bash scripts/finalize.sh`. It compares the Colab totals, adds the Power BI PDF to the report, reruns the audit and tags `v1.1`.
+6. **Closing step (DONE 2026-11-23, tagged v1.1).** When 1–3 are done, run `bash scripts/finalize.sh`. It compares the Colab totals, adds the Power BI PDF to the report, reruns the audit and tags `v1.1`.

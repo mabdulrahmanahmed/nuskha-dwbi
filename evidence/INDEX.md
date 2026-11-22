@@ -67,5 +67,6 @@ Synthetic data (seed 472). Every path is relative to the project root and is che
 | --- | --- |
 | Notebook, SQL, README | `pipeline.ipynb`, `sql/`, `README.md` |
 | Technical report | `report/report.docx`, `report/report.pdf`, `evidence/09_report/report_pages.csv`, `evidence/09_report/report_numbers_check.csv` |
-| Power BI | `powerbi/nuskha.pbip` (`.pbix` is saved by hand: `START_HERE.md` part 4) |
+| Power BI | `powerbi/nuskha.pbip`, `powerbi/nuskha.pbix`, `powerbi/nuskha.pdf` (pages rendered to `evidence/08_powerbi/powerbi_page_1.png`, `evidence/08_powerbi/powerbi_page_2.png`, `evidence/08_powerbi/powerbi_page_3.png`; report Appendix E) |
+| Same notebook in Google Colab | `evidence/colab_run.ipynb`, `evidence/colab_check.csv` (11/11 totals identical to the local run) |
 | Demo and viva | `docs/demo.md`, `docs/viva/member1.md`, `docs/viva/member2.md`, `docs/viva/member3.md`, `docs/viva/member4.md` |

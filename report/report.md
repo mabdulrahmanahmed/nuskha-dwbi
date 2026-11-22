@@ -146,7 +146,9 @@ Twelve queries (`sql/04_queries/A01..A12.sql`) cover every required type of anal
 - **Diagnostic Analysis:** margin % by category, Diabetes Care ASP vs unit cost, the margin bridge, and top-10 rank change.
 - **AI Insights:** forecast vs holdout and the next 3 months, an anomaly scatter, and a flagged-case table.
 
-Each page has date, region and category slicers and shows units, the period and the last batch id. Power BI reads CSV exports of the views (`powerbi/data/`), and three totals reconcile exactly with warehouse SQL under the same filters (`powerbi/reconciliation.csv`): FY2026 net sales PKR 6,230,294.70, Gulshan-e-Iqbal net sales in calendar 2025 PKR 745,398.10, and October 2026 purchases PKR 599,167.14. The report files pass Microsoft's published PBIR schemas (32/32, `evidence/08_powerbi/report_schema_validation.csv`).
+Each page has date, region and category slicers and shows units, the period and the last batch id. Power BI reads CSV exports of the views (`powerbi/data/`), and three totals reconcile exactly with warehouse SQL under the same filters (`powerbi/reconciliation.csv`): FY2026 net sales PKR 6,230,294.70, Gulshan-e-Iqbal net sales in calendar 2025 PKR 745,398.10, and October 2026 purchases PKR 599,167.14. The report files pass Microsoft's published PBIR schemas (32/32, `evidence/08_powerbi/report_schema_validation.csv`). The saved report is `powerbi/nuskha.pbix`; its PDF export (`powerbi/nuskha.pdf`) is reproduced in full in Appendix E. Its KPI card shows net sales with the voided lines left out, as every view does, and the last batch id counts only the two real loads.
+
+![Power BI, Management Overview page (from powerbi/nuskha.pdf)](../evidence/08_powerbi/powerbi_page_1.png)
 
 ## 8. Forecast and anomaly detection
 
@@ -202,14 +204,14 @@ Each recommendation gives its evidence, trace and limitation in `docs/recommenda
 
 ## 10. Member contribution statement
 
-Each member owns one rubric criterion end to end and must be able to explain how it connects to the others (viva guides in `docs/viva/`). The assignment below is a draft, in the order on the title slide; the group confirms or swaps rows and fills in the hours.
+All four members worked on every component together and share the work equally: each one designed, built, tested and can explain the whole pipeline. For the presentation and the viva, each member leads one rubric criterion (viva guides in `docs/viva/`). These leads were assigned at random, with the components first grouped so that each criterion carries a similar share of difficulty and time.
 
-| Member | Components owned | Criterion | Notebook sections / files | Hours |
+| Member | Components led | Criterion | Notebook sections / files | Share of work |
 | --- | --- | --- | --- | --- |
-| Muhammad Abdulrahman Ahmed (DT-022) | Generator, four sources, extraction, profiling, cleaning, crosswalks, rejects, reconciliation | C1 Sources and ETL | generate, load_sources, extract, etl_* steps | [ ] |
-| Syed Basil Hussain (DT-045) | Warehouse DDL, loading, surrogate keys, batch 2, SCD Type 1, failure recovery; forecast | C2 Warehouse | create_warehouse, load_batch_1, rerun_test, batch_2, scd1, controlled_failure; ai (forecast) | [ ] |
-| Umer Haroon Mallick (DT-039) | Metadata, reverse engineering, lineage traces, validation suite, architecture analysis; anomaly detection | C3 Lineage and validation | metadata, reverse_engineer, traces, validation; ai (anomaly) | [ ] |
-| Sufyan (DT-038) | 12 queries, saved views, Power BI, reconciliation of totals; AI output tables, recommendations | C4 SQL and BI | views, queries, powerbi_* | [ ] |
+| Muhammad Abdulrahman Ahmed (DT-022) | Generator, four sources, extraction, profiling, cleaning, crosswalks, rejects, reconciliation | C1 Sources and ETL | generate, load_sources, extract, etl_* steps | Equal share |
+| Syed Basil Hussain (DT-045) | Warehouse DDL, loading, surrogate keys, batch 2, SCD Type 1, failure recovery; forecast | C2 Warehouse | create_warehouse, load_batch_1, rerun_test, batch_2, scd1, controlled_failure; ai (forecast) | Equal share |
+| Umer Haroon Mallick (DT-039) | Metadata, reverse engineering, lineage traces, validation suite, architecture analysis; anomaly detection | C3 Lineage and validation | metadata, reverse_engineer, traces, validation; ai (anomaly) | Equal share |
+| Sufyan (DT-038) | 12 queries, saved views, Power BI, reconciliation of totals; AI output tables, recommendations | C4 SQL and BI | views, queries, powerbi_* | Equal share |
 
 <!-- appendix -->
 
@@ -230,3 +232,13 @@ Each member owns one rubric criterion end to end and must be able to explain how
 ## Appendix D. Reject summary
 
 <!-- rejects -->
+
+## Appendix E. Power BI report pages
+
+The three pages of `powerbi/nuskha.pdf`, exported from `powerbi/nuskha.pbix`.
+
+![Management Overview](../evidence/08_powerbi/powerbi_page_1.png)
+
+![Diagnostic Analysis](../evidence/08_powerbi/powerbi_page_2.png)
+
+![AI Insights](../evidence/08_powerbi/powerbi_page_3.png)
