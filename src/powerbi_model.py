@@ -49,8 +49,12 @@ MEASURES = {  # table: [(name, DAX, format)]
         ("Units Sold", "SUM(Sales[quantity_units])", "#,0"),
         ("ASP", "DIVIDE([Net Sales], [Units Sold])", "#,0.00"),
         ("Net Sales LY", "CALCULATE([Net Sales], SAMEPERIODLASTYEAR('Date'[full_date]))", "#,0"),
-        ("Net Sales 3M Avg", "DIVIDE(CALCULATE([Net Sales], DATESINPERIOD('Date'[full_date], MAX('Date'[full_date]), "
-                             "-3, MONTH)), 3)", "#,0"),
+        # 3-month average over the months that have sales: the first months average over 1-2 months
+        # instead of dividing by 3, and months with no sales (after Oct 2026) stay blank.
+        ("Net Sales 3M Avg", "VAR w = DATESINPERIOD('Date'[full_date], MAX('Date'[full_date]), -3, MONTH) "
+                             "VAR months = CALCULATE(COUNTROWS(FILTER(VALUES('Date'[month_start]), "
+                             "NOT ISBLANK([Net Sales]))), w) "
+                             "RETURN IF(NOT ISBLANK([Net Sales]), DIVIDE(CALCULATE([Net Sales], w), months))", "#,0"),
         ("Last Batch", "MAX('Last Batch'[last_batch_id])", "0"),
     ],
     "Purchases": [
