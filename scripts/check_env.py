@@ -35,7 +35,9 @@ def create_database(url_text: str) -> str:
     url = make_url(url_text)
     name = url.database
     if url.get_backend_name() == "mysql":
-        server = create_engine(url.set(database=None))
+        # Connect to information_schema (always present): url.set(database=None) would keep the
+        # old name, because SQLAlchemy treats None as "unchanged".
+        server = create_engine(url.set(database="information_schema"))
         with server.begin() as con:
             con.execute(text(f"CREATE DATABASE IF NOT EXISTS `{name}` CHARACTER SET utf8mb4"))
         return f"{name}: present"
