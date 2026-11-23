@@ -1,0 +1,753 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Nuskha Viva Crash Course</title>
+<style>
+:root{
+  --bg:#f7f6f2; --fg:#1d2327; --muted:#5d666c; --card:#ffffff; --card2:#eef1ef; --line:#d6dbd8;
+  --accent:#0d8a7a; --accent-soft:#d5efe9; --good:#2f8f4e; --good-soft:#dcf1e2;
+  --bad:#c2410c; --bad-soft:#fbe3d6; --warn:#a16207; --warn-soft:#fbf0d2; --blue:#2b6cb0; --blue-soft:#dde9f7;
+  --code:#eceae4;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#14181a; --fg:#e6e9e7; --muted:#9aa4a8; --card:#1c2225; --card2:#242c30; --line:#333d42;
+    --accent:#35c2ad; --accent-soft:#16352f; --good:#5cc27c; --good-soft:#18301f;
+    --bad:#f0814f; --bad-soft:#3a2117; --warn:#e0b44a; --warn-soft:#352b12; --blue:#6aa6e8; --blue-soft:#172a3f;
+    --code:#262d30;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#14181a; --fg:#e6e9e7; --muted:#9aa4a8; --card:#1c2225; --card2:#242c30; --line:#333d42;
+  --accent:#35c2ad; --accent-soft:#16352f; --good:#5cc27c; --good-soft:#18301f;
+  --bad:#f0814f; --bad-soft:#3a2117; --warn:#e0b44a; --warn-soft:#352b12; --blue:#6aa6e8; --blue-soft:#172a3f;
+  --code:#262d30;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.6 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+a{color:var(--accent)}
+code{background:var(--code);padding:1px 5px;border-radius:4px;font-size:.88em;font-family:ui-monospace,Consolas,monospace;word-break:break-word}
+.wrap{max-width:1180px;margin:0 auto;padding:0 16px;display:grid;grid-template-columns:230px 1fr;gap:36px}
+nav.toc{position:sticky;top:0;align-self:start;max-height:100vh;overflow:auto;padding:28px 0;font-size:.9rem}
+nav.toc b{display:block;margin-bottom:8px;color:var(--muted);font-size:.75rem;letter-spacing:.08em;text-transform:uppercase}
+nav.toc a{display:block;padding:3px 8px;border-left:2px solid var(--line);color:var(--fg);text-decoration:none}
+nav.toc a:hover{border-color:var(--accent);color:var(--accent)}
+main{padding:28px 0 80px;min-width:0}
+header.hero{padding:8px 0 20px;border-bottom:1px solid var(--line);margin-bottom:8px}
+header.hero h1{font-size:2.1rem;line-height:1.15;margin:0 0 8px}
+header.hero p{margin:4px 0;color:var(--muted)}
+.tag{display:inline-block;font-size:.75rem;padding:2px 8px;border-radius:99px;background:var(--accent-soft);color:var(--accent);font-weight:600;margin-right:6px}
+section{padding:26px 0 8px;border-bottom:1px solid var(--line)}
+section h2{font-size:1.45rem;margin:0 0 4px}
+section h2 .n{color:var(--accent);margin-right:8px}
+.lead{color:var(--muted);margin:0 0 14px}
+h3{font-size:1.05rem;margin:20px 0 6px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:14px 16px;margin:12px 0}
+.grid{display:grid;gap:12px}
+.g2{grid-template-columns:repeat(auto-fit,minmax(240px,1fr))}
+.g3{grid-template-columns:repeat(auto-fit,minmax(200px,1fr))}
+.g4{grid-template-columns:repeat(auto-fit,minmax(160px,1fr))}
+.stat{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:12px 14px}
+.stat .v{font-size:1.5rem;font-weight:700;font-variant-numeric:tabular-nums}
+.stat .l{color:var(--muted);font-size:.85rem}
+.stat.good{border-color:var(--good);background:var(--good-soft)}
+.stat.bad{border-color:var(--bad);background:var(--bad-soft)}
+.stat.warn{border-color:var(--warn);background:var(--warn-soft)}
+.stat.acc{border-color:var(--accent);background:var(--accent-soft)}
+.say{border-left:4px solid var(--accent);background:var(--accent-soft);padding:10px 14px;border-radius:0 8px 8px 0;margin:12px 0}
+.say::before{content:"Say it like this";display:block;font-size:.72rem;text-transform:uppercase;letter-spacing:.08em;color:var(--accent);font-weight:700;margin-bottom:2px}
+.trap{border-left:4px solid var(--warn);background:var(--warn-soft);padding:10px 14px;border-radius:0 8px 8px 0;margin:12px 0}
+.trap::before{content:"Watch out";display:block;font-size:.72rem;text-transform:uppercase;letter-spacing:.08em;color:var(--warn);font-weight:700;margin-bottom:2px}
+.ev{font-size:.85rem;color:var(--muted)}
+.ev::before{content:"Evidence: "}
+table{border-collapse:collapse;width:100%;font-size:.92rem;font-variant-numeric:tabular-nums}
+th,td{text-align:left;padding:7px 9px;border-bottom:1px solid var(--line);vertical-align:top}
+th{background:var(--card2);font-weight:600}
+td.num,th.num{text-align:right}
+.tbl{overflow-x:auto;background:var(--card);border:1px solid var(--line);border-radius:10px}
+.eq{display:flex;flex-wrap:wrap;align-items:center;gap:8px;font-variant-numeric:tabular-nums;font-weight:600}
+.eq .box{padding:8px 12px;border-radius:8px;border:1px solid var(--line);background:var(--card);text-align:center}
+.eq .box small{display:block;font-weight:400;color:var(--muted);font-size:.75rem}
+.eq .op{font-size:1.3rem;color:var(--muted)}
+.bar{display:flex;height:30px;border-radius:6px;overflow:hidden;border:1px solid var(--line)}
+.bar>div{display:flex;align-items:center;justify-content:center;font-size:.75rem;font-weight:600;color:#fff;white-space:nowrap;overflow:hidden}
+.hbar{display:grid;grid-template-columns:150px 1fr 80px;gap:8px;align-items:center;margin:5px 0;font-size:.88rem}
+.hbar .t{height:18px;background:var(--card2);border-radius:4px;overflow:hidden}
+.hbar .t>div{height:100%;border-radius:4px}
+.hbar .v{text-align:right;font-variant-numeric:tabular-nums}
+.chip{display:inline-block;padding:3px 10px;border-radius:99px;font-size:.8rem;font-weight:600}
+.chip.ok{background:var(--good-soft);color:var(--good)}
+.chip.no{background:var(--bad-soft);color:var(--bad)}
+svg{max-width:100%;height:auto;display:block}
+.svgbox{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:10px;margin:12px 0;overflow-x:auto}
+svg text{font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;fill:var(--fg)}
+svg .muted{fill:var(--muted)}
+svg .b{fill:var(--card2);stroke:var(--line)}
+svg .ba{fill:var(--accent-soft);stroke:var(--accent)}
+svg .bb{fill:var(--blue-soft);stroke:var(--blue)}
+svg .bw{fill:var(--warn-soft);stroke:var(--warn)}
+svg .bg{fill:var(--good-soft);stroke:var(--good)}
+svg .br{fill:var(--bad-soft);stroke:var(--bad)}
+svg .ln{stroke:var(--muted);fill:none;stroke-width:1.5}
+svg .lna{stroke:var(--accent);fill:none;stroke-width:2}
+svg .lnr{stroke:var(--bad);fill:none;stroke-width:2}
+.dots{display:flex;flex-wrap:wrap;gap:5px;margin:6px 0}
+.dot{width:18px;height:18px;border-radius:50%}
+.dot.hit{background:var(--good)}
+.dot.miss{border:2px solid var(--muted)}
+.dot.fa{background:var(--bad);border-radius:3px;transform:rotate(45deg) scale(.8)}
+.legend{display:flex;flex-wrap:wrap;gap:14px;font-size:.82rem;color:var(--muted);margin:6px 0}
+.legend span::before{content:"";display:inline-block;width:11px;height:11px;border-radius:3px;margin-right:5px;vertical-align:-1px;background:var(--c)}
+details{background:var(--card);border:1px solid var(--line);border-radius:8px;margin:8px 0;padding:0 14px}
+details summary{cursor:pointer;padding:10px 0;font-weight:600;list-style-position:outside}
+details[open] summary{border-bottom:1px solid var(--line);margin-bottom:8px}
+details p{margin:6px 0 12px}
+.gloss{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:10px}
+.gloss div{background:var(--card);border:1px solid var(--line);border-radius:8px;padding:10px 12px;font-size:.92rem}
+.gloss b{display:block;color:var(--accent)}
+.toolbar{float:right;font-size:.8rem}
+.toolbar button{background:var(--card);color:var(--fg);border:1px solid var(--line);border-radius:6px;padding:4px 10px;cursor:pointer}
+@media (max-width:860px){
+  .wrap{grid-template-columns:1fr;gap:0}
+  nav.toc{position:static;max-height:none;padding:16px 0 0;columns:2;font-size:.85rem}
+  nav.toc b{column-span:all}
+  header.hero h1{font-size:1.6rem}
+  .hbar{grid-template-columns:96px 1fr 64px}
+}
+@media print{nav.toc,.toolbar{display:none}.wrap{grid-template-columns:1fr}details{break-inside:avoid}details:not([open]) > *:not(summary){display:block}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<nav class="toc">
+  <b>Lessons</b>
+  <a href="#l0">0 · The 60-second story</a>
+  <a href="#l1">1 · Words you must know</a>
+  <a href="#l2">2 · The business &amp; sources</a>
+  <a href="#l3">3 · The pipeline</a>
+  <a href="#l4">4 · Batch 1: cleaning maths</a>
+  <a href="#l5">5 · Rerun (idempotency)</a>
+  <a href="#l6">6 · Batch 2 &amp; watermark</a>
+  <a href="#l7">7 · Controlled failure</a>
+  <a href="#l8">8 · Star schemas &amp; grain</a>
+  <a href="#l9">9 · SCD Type 1</a>
+  <a href="#l10">10 · Metadata &amp; lineage</a>
+  <a href="#l11">11 · Power BI reconciliation</a>
+  <a href="#l12">12 · Forecast</a>
+  <a href="#l13">13 · Anomaly detection</a>
+  <a href="#l14">14 · The management decision</a>
+  <a href="#l15">15 · AI use &amp; declarations</a>
+  <a href="#l16">16 · Rapid-fire viva Q&amp;A</a>
+  <a href="#l17">17 · Link map</a>
+  <a href="#l18">18 · Form answers cheat sheet</a>
+</nav>
+
+<main>
+<header class="hero">
+  <div class="toolbar"><button id="openAll" type="button">Open all answers</button></div>
+  <span class="tag">CT-472 DWBI</span><span class="tag">Viva prep</span>
+  <h1>Nuskha Pharmacies: viva crash course</h1>
+  <p>Every number on the submission form, what it means and how to defend it, in plain English.</p>
+  <p>All data is <b>synthetic</b> (seed 472). Numbers come from <code>report/report.md</code> and the <code>evidence/</code> files.</p>
+</header>
+
+<!-- ================= 0 ================= -->
+<section id="l0">
+  <h2><span class="n">0</span>The 60-second story</h2>
+  <p class="lead">If you remember only one paragraph, remember this one.</p>
+  <div class="card">
+    <p><b>Nuskha</b> is a made-up chain of <b>10 pharmacies in Karachi</b> (3 regions: North, East, South). Its data sits in <b>4 systems on 3 database engines</b> (MySQL, PostgreSQL, SQLite), and those systems disagree on how a branch, product or customer is named. Some purchases are priced in US dollars.</p>
+    <p>We built a pipeline that <b>extracts</b> the data, <b>cleans</b> it, <b>matches</b> every code to one true product, branch and customer, and <b>loads</b> it into a PostgreSQL warehouse with <b>two star schemas</b> (Sales and Purchases). The warehouse covers <b>36 months</b> (Nov 2023 to Oct 2026).</p>
+    <p>We proved the pipeline is trustworthy: every row is <b>counted</b>, rerunning changes <b>nothing</b>, a <b>second batch</b> loads only what changed, and a <b>deliberate crash</b> leaves no damage. On top of the warehouse sit a <b>Power BI report</b> and <b>two AI models</b> (a sales forecast and an anomaly detector). Their results feed a real decision: <b>the purchase budget for Nov 2026 to Jan 2027</b>.</p>
+  </div>
+  <div class="grid g4">
+    <div class="stat acc"><div class="v">4</div><div class="l">source systems (Sales, Purchasing, Inventory, Finance)</div></div>
+    <div class="stat acc"><div class="v">2</div><div class="l">star schemas: fact_sales, fact_purchase</div></div>
+    <div class="stat acc"><div class="v">36</div><div class="l">months of history</div></div>
+    <div class="stat acc"><div class="v">6</div><div class="l">business questions (BQ1 to BQ6)</div></div>
+  </div>
+</section>
+
+<!-- ================= 1 ================= -->
+<section id="l1">
+  <h2><span class="n">1</span>Words you must know</h2>
+  <p class="lead">Examiners love asking "what does X mean?" Each answer below is one or two sentences.</p>
+  <div class="gloss">
+    <div><b>ETL</b>Extract (copy data out of the sources), Transform (clean and standardise it), Load (put it into the warehouse).</div>
+    <div><b>Grain</b>What exactly one row in a fact table stands for. Ours: one product line on one receipt.</div>
+    <div><b>Fact table</b>Holds the numbers you add up (quantity, amount, margin), plus keys pointing to dimensions.</div>
+    <div><b>Dimension</b>Holds the descriptions you filter and group by (date, product, branch, customer, supplier).</div>
+    <div><b>Conformed dimension</b>One dimension shared by several fact tables, with the same keys and meaning, so you can compare sales with purchases.</div>
+    <div><b>Natural key</b>The ID the source system uses, e.g. (receipt_no, line_no).</div>
+    <div><b>Surrogate key</b>A number the warehouse invents for each dimension row. It never changes, even if the source code does.</div>
+    <div><b>Upsert</b>Insert if the row is new, update if it exists and changed, do nothing if it is the same.</div>
+    <div><b>Idempotent</b>Running the same load twice gives the same result as running it once. Our rerun wrote 0 rows.</div>
+    <div><b>Watermark</b>A bookmark: "I have read everything up to this timestamp." The next batch reads only rows changed after it.</div>
+    <div><b>Crosswalk</b>A mapping table that turns every source code (till code, vendor code, branch spelling) into one canonical member.</div>
+    <div><b>SCD Type 1</b>Slowly Changing Dimension, Type 1: overwrite the old value and keep no history. Used to fix mistakes.</div>
+    <div><b>Lineage</b>A record of where each warehouse row came from: which system, which source key and which batch.</div>
+    <div><b>Reconciliation</b>Proving that counts and money totals match between source and warehouse.</div>
+    <div><b>MAE</b>Mean Absolute Error: on average, how many rupees the forecast is off by.</div>
+    <div><b>RMSE</b>Root Mean Squared Error: like MAE, but punishes big misses more.</div>
+    <div><b>Precision</b>Of the alarms raised, the share that were real. High precision means few false alarms.</div>
+    <div><b>Recall</b>Of the real problems, the share we caught. High recall means few misses.</div>
+  </div>
+</section>
+
+<!-- ================= 2 ================= -->
+<section id="l2">
+  <h2><span class="n">2</span>The business and the four sources</h2>
+  <p class="lead">Why the warehouse exists: the answers are spread across systems that don't agree.</p>
+  <div class="tbl"><table>
+    <tr><th>Department</th><th>Engine</th><th>Main tables</th><th>Feeds</th></tr>
+    <tr><td>Sales (till)</td><td>MySQL <code>sales_db</code></td><td>receipt, receipt_line, loyalty_member, pos_item</td><td>fact_sales, dim_customer, dim_branch</td></tr>
+    <tr><td>Purchasing</td><td>PostgreSQL <code>purchasing_db</code></td><td>supplier, purchase_order, goods_receipt, grn_line, vendor_item</td><td>fact_purchase, dim_supplier</td></tr>
+    <tr><td>Inventory</td><td>SQLite <code>inventory.db</code></td><td>item, store, item_cost_history, stock_count</td><td>dim_product, dim_branch, standard cost</td></tr>
+    <tr><td>Finance</td><td>MySQL <code>finance_db</code></td><td>panel_account, fx_rate, panel_invoice</td><td>dim_customer, USD → PKR rate</td></tr>
+  </table></div>
+  <h3>The six business questions</h3>
+  <div class="tbl"><table>
+    <tr><th>#</th><th>Type</th><th>Question</th><th>Who decides</th></tr>
+    <tr><td>BQ1</td><td>Comparison</td><td>Which branches grew sales and margin vs the same quarter last year?</td><td>Operations Director</td></tr>
+    <tr><td>BQ2</td><td>Trend</td><td>How do sales move through flu, dengue and Ramadan seasons?</td><td>CEO</td></tr>
+    <tr><td>BQ3</td><td>Contribution</td><td>Which products make up 80% of gross margin?</td><td>Category Manager</td></tr>
+    <tr><td>BQ4</td><td>Diagnosis</td><td>Why did Diabetes Care margin fall in 2026: price, cost or mix?</td><td>Finance Controller</td></tr>
+    <tr><td>BQ5</td><td>Forecast</td><td>What will net sales be in each of the next 3 months?</td><td>Procurement Head, Finance</td></tr>
+    <tr><td>BQ6</td><td>Anomaly</td><td>Which region-category months moved abnormally?</td><td>Internal Audit, Pharmacy Ops</td></tr>
+  </table></div>
+  <div class="say">The data is synthetic, but realistic on purpose. The generator <b>plants</b> patterns (a 12% Diabetes Care cost rise from March 2026, an East Analgesics spike in Sep 2026, a stock-out, a keying error of 80 instead of 8) and <b>plants defects with known keys</b>. That lets us check the ETL key by key against a defect ledger instead of by eye.</div>
+  <p class="ev"><code>evidence/01_sources/defect_ledger.csv</code></p>
+</section>
+
+<!-- ================= 3 ================= -->
+<section id="l3">
+  <h2><span class="n">3</span>The pipeline, layer by layer</h2>
+  <p class="lead">Data flows one way, left to right. One notebook (<code>pipeline.ipynb</code>) runs it all in order.</p>
+  <div class="svgbox">
+  <svg viewBox="0 0 980 300" role="img" aria-label="Pipeline: four sources to raw snapshots, staging, crosswalks, warehouse, views, then Power BI and AI">
+    <defs><marker id="ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" style="fill:var(--muted)"/></marker></defs>
+    <!-- sources -->
+    <text x="70" y="22" text-anchor="middle" class="muted" font-size="12">1 · SOURCES</text>
+    <rect x="10" y="34" width="120" height="44" rx="7" class="bb"/><text x="70" y="53" text-anchor="middle" font-size="13" font-weight="600">Sales</text><text x="70" y="69" text-anchor="middle" font-size="11" class="muted">MySQL</text>
+    <rect x="10" y="88" width="120" height="44" rx="7" class="bb"/><text x="70" y="107" text-anchor="middle" font-size="13" font-weight="600">Purchasing</text><text x="70" y="123" text-anchor="middle" font-size="11" class="muted">PostgreSQL</text>
+    <rect x="10" y="142" width="120" height="44" rx="7" class="bb"/><text x="70" y="161" text-anchor="middle" font-size="13" font-weight="600">Inventory</text><text x="70" y="177" text-anchor="middle" font-size="11" class="muted">SQLite</text>
+    <rect x="10" y="196" width="120" height="44" rx="7" class="bb"/><text x="70" y="215" text-anchor="middle" font-size="13" font-weight="600">Finance</text><text x="70" y="231" text-anchor="middle" font-size="11" class="muted">MySQL</text>
+    <path d="M130 56 L165 137 M130 110 L165 137 M130 164 L165 137 M130 218 L165 137" class="ln"/>
+    <path d="M165 137 L180 137" class="ln" marker-end="url(#ar)"/>
+    <!-- raw -->
+    <text x="232" y="22" text-anchor="middle" class="muted" font-size="12">2 · RAW</text>
+    <rect x="184" y="105" width="96" height="64" rx="7" class="b"/><text x="232" y="130" text-anchor="middle" font-size="13" font-weight="600">Raw CSV</text><text x="232" y="146" text-anchor="middle" font-size="11" class="muted">never edited</text><text x="232" y="160" text-anchor="middle" font-size="11" class="muted">per batch</text>
+    <path d="M280 137 L300 137" class="ln" marker-end="url(#ar)"/>
+    <!-- stg -->
+    <text x="352" y="22" text-anchor="middle" class="muted" font-size="12">3 · STAGING</text>
+    <rect x="304" y="105" width="96" height="64" rx="7" class="b"/><text x="352" y="130" text-anchor="middle" font-size="13" font-weight="600">stg</text><text x="352" y="146" text-anchor="middle" font-size="11" class="muted">typed, cleaned</text><text x="352" y="160" text-anchor="middle" font-size="11" class="muted">USD → PKR</text>
+    <path d="M352 169 L352 205" class="lnr" marker-end="url(#ar)"/>
+    <rect x="300" y="208" width="104" height="40" rx="7" class="br"/><text x="352" y="226" text-anchor="middle" font-size="12" font-weight="600">etl.rejects</text><text x="352" y="241" text-anchor="middle" font-size="10" class="muted">bad rows + reason</text>
+    <path d="M400 137 L420 137" class="ln" marker-end="url(#ar)"/>
+    <!-- xw -->
+    <text x="472" y="22" text-anchor="middle" class="muted" font-size="12">4 · INTEGRATE</text>
+    <rect x="424" y="105" width="96" height="64" rx="7" class="b"/><text x="472" y="130" text-anchor="middle" font-size="13" font-weight="600">Crosswalks</text><text x="472" y="146" text-anchor="middle" font-size="11" class="muted">xw_product</text><text x="472" y="160" text-anchor="middle" font-size="11" class="muted">xw_branch · xw_customer</text>
+    <path d="M520 137 L540 137" class="ln" marker-end="url(#ar)"/>
+    <!-- dw -->
+    <text x="604" y="22" text-anchor="middle" class="muted" font-size="12">5 · WAREHOUSE</text>
+    <rect x="544" y="78" width="120" height="118" rx="7" class="ba"/><text x="604" y="100" text-anchor="middle" font-size="13" font-weight="700">PostgreSQL</text>
+    <text x="604" y="120" text-anchor="middle" font-size="11">dw · 2 stars</text><text x="604" y="137" text-anchor="middle" font-size="11">etl · batches, logs</text><text x="604" y="154" text-anchor="middle" font-size="11">meta · lineage</text><text x="604" y="171" text-anchor="middle" font-size="11">ai · model output</text>
+    <path d="M664 137 L684 137" class="ln" marker-end="url(#ar)"/>
+    <!-- views -->
+    <text x="736" y="22" text-anchor="middle" class="muted" font-size="12">6 · VIEWS</text>
+    <rect x="688" y="105" width="96" height="64" rx="7" class="b"/><text x="736" y="130" text-anchor="middle" font-size="13" font-weight="600">6 SQL views</text><text x="736" y="146" text-anchor="middle" font-size="11" class="muted">one definition</text><text x="736" y="160" text-anchor="middle" font-size="11" class="muted">of every measure</text>
+    <path d="M784 137 L815 95 M784 137 L815 180" class="ln"/>
+    <!-- consumers -->
+    <text x="890" y="22" text-anchor="middle" class="muted" font-size="12">7 · CONSUMERS</text>
+    <rect x="818" y="70" width="150" height="50" rx="7" class="bw"/><text x="893" y="92" text-anchor="middle" font-size="13" font-weight="600">Power BI</text><text x="893" y="108" text-anchor="middle" font-size="11" class="muted">3 pages</text>
+    <rect x="818" y="155" width="150" height="50" rx="7" class="bg"/><text x="893" y="177" text-anchor="middle" font-size="13" font-weight="600">AI models</text><text x="893" y="193" text-anchor="middle" font-size="11" class="muted">forecast · anomaly</text>
+    <path d="M893 205 C893 270 604 270 604 200" class="lna" stroke-dasharray="5 4" marker-end="url(#ar)"/>
+    <text x="750" y="282" text-anchor="middle" font-size="11" class="muted">AI results are written back to the separate ai schema</text>
+  </svg>
+  </div>
+  <div class="grid g2">
+    <div class="card"><b>Why keep raw snapshots?</b><br>If anyone doubts a number, we can replay from the exact text that was extracted. They are never edited.</div>
+    <div class="card"><b>Why crosswalks?</b><br>Sales spells a branch 2 or 3 ways, Purchasing uses vendor codes and Sales uses till codes. Crosswalks map them all to one member and record <i>how</i> each match was made (exact, rule, alias or description).</div>
+  </div>
+</section>
+
+<!-- ================= 4 ================= -->
+<section id="l4">
+  <h2><span class="n">4</span>Batch 1: the cleaning maths</h2>
+  <p class="lead">The golden rule: <b>source rows = kept + rejected + duplicates removed</b>. Nothing is lost silently.</p>
+
+  <div class="eq">
+    <div class="box">32,944<small>source rows extracted</small></div><span class="op">=</span>
+    <div class="box" style="border-color:var(--good)">32,147<small>retained</small></div><span class="op">+</span>
+    <div class="box" style="border-color:var(--bad)">635<small>rejected</small></div><span class="op">+</span>
+    <div class="box" style="border-color:var(--warn)">162<small>duplicates removed</small></div>
+    <span class="chip ok">difference 0</span>
+  </div>
+
+  <div class="tbl" style="margin-top:14px"><table>
+    <tr><th>Table</th><th class="num">Source</th><th class="num">Kept</th><th class="num">Rejected</th><th class="num">Duplicates</th></tr>
+    <tr><td>sales_db.receipt_line</td><td class="num">28,238</td><td class="num">27,543</td><td class="num">556</td><td class="num">139</td></tr>
+    <tr><td>purchasing_db.grn_line</td><td class="num">4,706</td><td class="num">4,604</td><td class="num">79</td><td class="num">23</td></tr>
+    <tr><th>Total</th><th class="num">32,944</th><th class="num">32,147</th><th class="num">635</th><th class="num">162</th></tr>
+  </table></div>
+
+  <h3>Why 635 rows were rejected (by reason code)</h3>
+  <div id="rejectBars"></div>
+  <p class="ev">Each reject goes to <code>etl.rejects</code> with exactly one reason. All counts match the planted defect ledger key for key: <code>evidence/02_etl/rejects_vs_ledger.csv</code></p>
+
+  <div class="trap"><b>Duplicates vs legitimate repeats.</b> 162 <i>exact</i> duplicates (the same line exported twice) were removed. But <b>278 legitimate repeats</b> (a customer genuinely buying the same item twice) were <b>kept</b>. Removing those would understate sales.</div>
+  <div class="trap"><b>U01 (unresolved panel customer) is not a reject.</b> Those rows are loaded against the "Unknown" customer and flagged, because the sale really happened.</div>
+
+  <h3>Money reconciliation</h3>
+  <div class="eq">
+    <div class="box">15,281,835.85<small>raw source amount</small></div><span class="op">=</span>
+    <div class="box" style="border-color:var(--good)">15,070,308.45<small>valid → warehouse</small></div><span class="op">+</span>
+    <div class="box" style="border-color:var(--bad)">132,163.70<small>rejected</small></div><span class="op">+</span>
+    <div class="box" style="border-color:var(--warn)">79,363.70<small>duplicates</small></div>
+  </div>
+  <div class="say">Net sales for batch 1 (Nov 2023 to Aug 2026): the valid source rows total PKR 15,070,308.45 and the warehouse fact_sales totals PKR 15,070,308.45. We checked this <b>month by month, to the paisa</b>, and every month differs by 0.00.</div>
+  <p class="ev"><code>evidence/02_etl/reconciliation_batch_1.csv</code>, <code>reconciliation_amounts_by_month_batch_1.csv</code>, <code>evidence/03_warehouse/fact_checks_batch_1.csv</code></p>
+</section>
+
+<!-- ================= 5 ================= -->
+<section id="l5">
+  <h2><span class="n">5</span>The unchanged rerun (idempotency)</h2>
+  <p class="lead">Test: load batch 1 a second time with nothing changed. A good pipeline must change nothing.</p>
+  <div class="tbl"><table>
+    <tr><th>Measure</th><th class="num">Before rerun</th><th class="num">After rerun</th><th>Changed?</th></tr>
+    <tr><td>fact_sales rows</td><td class="num">27,543</td><td class="num">27,543</td><td><span class="chip ok">no</span></td></tr>
+    <tr><td>fact_sales net PKR</td><td class="num">15,070,308.45</td><td class="num">15,070,308.45</td><td><span class="chip ok">no</span></td></tr>
+    <tr><td>fact_purchase rows</td><td class="num">4,604</td><td class="num">4,604</td><td><span class="chip ok">no</span></td></tr>
+    <tr><td>fact_purchase PKR</td><td class="num">15,342,311.75</td><td class="num">15,342,311.75</td><td><span class="chip ok">no</span></td></tr>
+    <tr><td>lineage rows</td><td class="num">32,147</td><td class="num">32,147</td><td><span class="chip ok">no</span></td></tr>
+    <tr><td>MD5 fingerprint of each table</td><td class="num">same</td><td class="num">same</td><td><span class="chip ok">no</span></td></tr>
+    <tr><th>Rows written by the rerun</th><th class="num" colspan="2">0</th><th></th></tr>
+  </table></div>
+  <div class="say">It works because every load is an <b>upsert on the natural key</b>: <code>INSERT … ON CONFLICT DO UPDATE … WHERE … IS DISTINCT FROM</code>. If a row already exists and nothing differs, the database skips it, so a rerun writes 0 rows.</div>
+  <div class="trap">fact_purchase PKR (15,342,311.75) is not the same number as the grn_line source amount (12,822,550.51). The source amount mixes currencies; the warehouse converts USD lines to PKR at the Finance rate.</div>
+  <p class="ev"><code>evidence/03_warehouse/rerun_log.csv</code>, <code>rerun_checks.csv</code></p>
+</section>
+
+<!-- ================= 6 ================= -->
+<section id="l6">
+  <h2><span class="n">6</span>Batch 2 and the watermark</h2>
+  <p class="lead">Batch 2 reads only what changed since batch 1, then inserts what is new and updates what changed.</p>
+  <div class="svgbox">
+  <svg viewBox="0 0 900 170" role="img" aria-label="Timeline: batch 1 covers Nov 2023 to 31 Aug 2026; the watermark sits there; batch 2 reads rows updated after it, up to 31 Oct 2026">
+    <defs><marker id="ar2" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" style="fill:var(--accent)"/></marker></defs>
+    <rect x="30" y="60" width="610" height="34" rx="6" class="bb"/>
+    <text x="335" y="82" text-anchor="middle" font-size="13" font-weight="600">Batch 1: everything up to the cut-off</text>
+    <rect x="640" y="60" width="230" height="34" rx="6" class="ba"/>
+    <text x="755" y="82" text-anchor="middle" font-size="13" font-weight="600">Batch 2: updated_at &gt; watermark</text>
+    <line x1="640" y1="34" x2="640" y2="118" style="stroke:var(--bad);stroke-width:3"/>
+    <text x="640" y="26" text-anchor="middle" font-size="12" font-weight="700" style="fill:var(--bad)">WATERMARK 2026-08-31 23:59:59</text>
+    <text x="30" y="114" font-size="11" class="muted">Nov 2023</text>
+    <text x="870" y="114" text-anchor="end" font-size="11" class="muted">31 Oct 2026</text>
+    <path d="M700 98 C680 150 600 150 585 100" class="lna" marker-end="url(#ar2)"/>
+    <text x="560" y="158" text-anchor="middle" font-size="11" style="fill:var(--accent)">40 late receipts → loaded into their real month (Jul to Aug 2026)</text>
+  </svg>
+  </div>
+
+  <h3>What happened to the 2,369 valid sales lines</h3>
+  <div class="bar" aria-label="2277 new, 71 changed, 21 untouched">
+    <div style="flex:2277;background:var(--accent)">2,277 new (inserted)</div>
+    <div style="flex:160;background:var(--warn)">71</div>
+    <div style="flex:60;background:var(--muted)">21</div>
+  </div>
+  <div class="legend"><span style="--c:var(--accent)">2,277 new</span><span style="--c:var(--warn)">71 changed (updated in place)</span><span style="--c:var(--muted)">21 re-saved but identical (left alone)</span></div>
+  <p style="font-size:.85rem;color:var(--muted)">The small slices are widened so they can be read; they are not to scale.</p>
+
+  <div class="grid g3">
+    <div class="stat"><div class="v">2,428</div><div class="l">sales lines extracted = 2,369 kept + 47 rejected + 12 duplicates</div></div>
+    <div class="stat"><div class="v">314 + 7</div><div class="l">purchase lines: 314 new, 7 changed (cancelled GRN lines)</div></div>
+    <div class="stat"><div class="v">31</div><div class="l">voided sales lines flagged <code>is_cancelled</code>: kept, not deleted, excluded from views</div></div>
+    <div class="stat"><div class="v">3</div><div class="l">deleted receipts found by comparing keys, logged in <code>etl.deletion_log</code>, kept in facts</div></div>
+    <div class="stat"><div class="v">P-0500</div><div class="l">new product: dimension upserted <i>before</i> facts (late-arriving dimension)</div></div>
+    <div class="stat"><div class="v">40</div><div class="l">late receipts placed in their real month, not the load month</div></div>
+  </div>
+  <div class="say">Batch 2 brought 2,277 new and 71 changed sales lines, plus 314 new and 7 changed purchase lines. The watermark is <code>updated_at</code>: batch 2 read everything updated after 2026-08-31 23:59:59, the batch-1 cut-off stored in <code>etl.batch</code>.</div>
+  <div class="trap"><b>Why keep voids and deletions instead of deleting them?</b> For audit. The warehouse is a history. We flag them and exclude them from every view, so totals are right and the trail is still there.</div>
+  <p class="ev"><code>evidence/03_warehouse/batch2_checks.csv</code>, <code>load_log_batch_2.csv</code>, <code>evidence/02_etl/reconciliation_batch_2.csv</code></p>
+</section>
+
+<!-- ================= 7 ================= -->
+<section id="l7">
+  <h2><span class="n">7</span>The controlled failure</h2>
+  <p class="lead">We broke the load on purpose to prove a crash can't leave half-loaded data.</p>
+  <div class="svgbox">
+  <svg viewBox="0 0 900 150" role="img" aria-label="Fact load failed at 1,184 of 2,369 rows, rolled back to zero, then rerun succeeded">
+    <text x="20" y="28" font-size="13" font-weight="600">Fact load with FAIL_AT=0.5</text>
+    <rect x="20" y="40" width="600" height="28" rx="5" class="b"/>
+    <rect x="20" y="40" width="300" height="28" rx="5" class="br"/>
+    <text x="170" y="59" text-anchor="middle" font-size="12" font-weight="600">1,184 rows written…</text>
+    <text x="470" y="59" text-anchor="middle" font-size="12" class="muted">…of 2,369 when the error fires</text>
+    <text x="330" y="88" font-size="22" style="fill:var(--bad)">✕</text>
+    <path d="M320 96 C320 130 40 130 40 74" class="lnr" stroke-dasharray="5 4"/>
+    <text x="180" y="142" text-anchor="middle" font-size="12" style="fill:var(--bad)">ROLLBACK: all 1,184 rows undone (one transaction)</text>
+    <rect x="660" y="40" width="220" height="28" rx="5" class="bg"/>
+    <text x="770" y="59" text-anchor="middle" font-size="12" font-weight="600">Rerun → matches clean run</text>
+    <text x="770" y="88" text-anchor="middle" font-size="11" class="muted">wrote 0 rows, totals unchanged</text>
+  </svg>
+  </div>
+  <h3>What <code>etl.batch</code> shows afterwards</h3>
+  <p><span class="chip ok">1 · SUCCESS</span> <span class="chip ok">2 · SUCCESS</span> <span class="chip no">3 · FAILED (controlled)</span> <span class="chip ok">4 · SUCCESS (rerun)</span></p>
+  <div class="say">With <code>FAIL_AT=0.5</code>, the fact_sales load raised an error after 1,184 of 2,369 rows. The whole load ran inside one transaction, so it rolled back: totals and fingerprints were unchanged and the batch was recorded as FAILED. The rerun (batch 4) matched the clean run and wrote 0 rows.</div>
+  <p class="ev"><code>evidence/03_warehouse/failure_checks.csv</code>, <code>failure_log.csv</code></p>
+</section>
+
+<!-- ================= 8 ================= -->
+<section id="l8">
+  <h2><span class="n">8</span>Star schemas, grain and conformed dimensions</h2>
+  <p class="lead">Two business processes (selling and buying), two stars, sharing three dimensions.</p>
+  <div class="svgbox">
+  <svg viewBox="0 0 900 330" role="img" aria-label="Star schemas: fact_sales and fact_purchase share dim_date, dim_product and dim_branch; dim_customer belongs only to sales; dim_supplier only to purchases">
+    <path d="M250 165 L450 60 M250 165 L450 165 M250 165 L450 270 M650 165 L450 60 M650 165 L450 165 M650 165 L450 270 M250 165 L90 165 M650 165 L810 165" class="ln"/>
+    <rect x="170" y="125" width="160" height="80" rx="8" class="ba"/>
+    <text x="250" y="152" text-anchor="middle" font-size="15" font-weight="700">fact_sales</text>
+    <text x="250" y="172" text-anchor="middle" font-size="11">1 row = 1 receipt line</text>
+    <text x="250" y="190" text-anchor="middle" font-size="10" class="muted">27,543 rows after batch 1</text>
+    <rect x="570" y="125" width="160" height="80" rx="8" class="ba"/>
+    <text x="650" y="152" text-anchor="middle" font-size="15" font-weight="700">fact_purchase</text>
+    <text x="650" y="172" text-anchor="middle" font-size="11">1 row = 1 GRN line</text>
+    <text x="650" y="190" text-anchor="middle" font-size="10" class="muted">4,604 rows after batch 1</text>
+    <rect x="380" y="38" width="140" height="44" rx="8" class="bw"/><text x="450" y="58" text-anchor="middle" font-size="13" font-weight="600">dim_date</text><text x="450" y="74" text-anchor="middle" font-size="10" class="muted">calendar + fiscal, Ramadan</text>
+    <rect x="380" y="143" width="140" height="44" rx="8" class="bw"/><text x="450" y="163" text-anchor="middle" font-size="13" font-weight="600">dim_product</text><text x="450" y="179" text-anchor="middle" font-size="10" class="muted">SKU → generic → category</text>
+    <rect x="380" y="248" width="140" height="44" rx="8" class="bw"/><text x="450" y="268" text-anchor="middle" font-size="13" font-weight="600">dim_branch</text><text x="450" y="284" text-anchor="middle" font-size="10" class="muted">branch → area → region</text>
+    <rect x="10" y="143" width="140" height="44" rx="8" class="b"/><text x="80" y="163" text-anchor="middle" font-size="13" font-weight="600">dim_customer</text><text x="80" y="179" text-anchor="middle" font-size="10" class="muted">walk-in, loyalty, panel</text>
+    <rect x="750" y="143" width="140" height="44" rx="8" class="b"/><text x="820" y="163" text-anchor="middle" font-size="13" font-weight="600">dim_supplier</text><text x="820" y="179" text-anchor="middle" font-size="10" class="muted">local or import</text>
+    <text x="450" y="322" text-anchor="middle" font-size="11" style="fill:var(--warn)">Shaded yellow = conformed (shared by both stars)</text>
+  </svg>
+  </div>
+  <div class="grid g2">
+    <div class="card"><b>fact_sales</b><br>Grain: one product line on one till receipt.<br>Natural key: <code>(source_system, receipt_no, line_no)</code><br>Measures: quantity_units, gross_amount_pkr, discount_pkr, net_amount_pkr, cost_amount_pkr, gross_margin_pkr (all additive).</div>
+    <div class="card"><b>fact_purchase</b><br>Grain: one product line on one goods receipt note (GRN).<br>Natural key: <code>(source_system, grn_no, line_no)</code><br>Measures: quantity_units, amount_original (additive within one currency only), purchase_amount_pkr.</div>
+  </div>
+  <div class="grid g2">
+    <div class="card"><b>Unknown and Walk-in members</b><br>Every dimension has an Unknown member (key −1), and dim_customer also has Walk-in (key 0), so fact foreign keys are never null.</div>
+    <div class="card"><b>Ratios are never stored</b><br>ASP, unit cost and margin % are non-additive. You can't add percentages, so the views always recompute them from sums.</div>
+  </div>
+  <div class="trap"><b>Never join the two fact tables directly.</b> That multiplies rows (fan-out). Sales and purchases are each summed to product × month first, then compared. Join safety check: the fact_sales total is the same before and after joining every dimension.</div>
+</section>
+
+<!-- ================= 9 ================= -->
+<section id="l9">
+  <h2><span class="n">9</span>SCD Type 1: fixing a wrong category</h2>
+  <p class="lead">A product was filed under the wrong category. Type 1 overwrites it and keeps no history, because it was a mistake, not a real change.</p>
+  <div class="eq">
+    <div class="box">P-0368<small>Dextromethorphan Syrup</small></div><span class="op">category:</span>
+    <div class="box" style="border-color:var(--bad);text-decoration:line-through">Gastro</div><span class="op">→</span>
+    <div class="box" style="border-color:var(--good)">Cough and Cold</div>
+  </div>
+  <h3>Effect on category net sales (PKR)</h3>
+  <div id="scdBars"></div>
+  <div class="say">In batch 2 we overwrote P-0368's category in dim_product from Gastro to Cough and Cold, with no history row. Exactly two category totals moved, by ±112,316.85, and the company total stayed at 16,382,871.40.</div>
+  <div class="trap"><b>Type 1 vs Type 2.</b> Type 2 adds a new row with dates to keep history (e.g. a product genuinely moving to a new category). Ours was a <i>correction</i>, so history would be misleading. Type 1 is the right choice.</div>
+  <p class="ev"><code>evidence/03_warehouse/scd1_evidence.csv</code>, <code>scd1_checks.csv</code></p>
+</section>
+
+<!-- ================= 10 ================= -->
+<section id="l10">
+  <h2><span class="n">10</span>Metadata, lineage and validation</h2>
+  <p class="lead">How we can prove where any number came from.</p>
+  <div class="grid g4">
+    <div class="stat"><div class="v">4 / 34</div><div class="l">source systems / source objects in <code>meta</code></div></div>
+    <div class="stat"><div class="v">19</div><div class="l">transform rules (e.g. R-UNIT-01 boxes → strips)</div></div>
+    <div class="stat"><div class="v">70</div><div class="l">column mappings covering all 67 warehouse columns</div></div>
+    <div class="stat good"><div class="v">100%</div><div class="l">fact rows with a lineage row (system, key, batch)</div></div>
+  </div>
+  <h3>Six traces from a warehouse number back to one source row</h3>
+  <div class="tbl"><table>
+    <tr><th>Trace</th><th>Starts at</th><th>Ends at</th></tr>
+    <tr><td>T1</td><td>Receipt line CLF-2026-000417, line 1</td><td>MySQL receipt_line row, via staging and raw CSV</td></tr>
+    <tr><td>T2</td><td>USD purchase GRN-2026-00469, line 1</td><td>PostgreSQL grn_line + the Finance fx_rate used</td></tr>
+    <tr><td>T3</td><td>Late receipt CLF-2026-000308 (batch 2)</td><td>MySQL row, loaded into its real month</td></tr>
+    <tr><td>T4</td><td>gross_margin of CLF-2026-000109, line 2</td><td>net amount − qty × Inventory standard cost</td></tr>
+    <tr><td>T5</td><td>FY2026 net sales card (6,230,294.70)</td><td>10,721 fact rows → batches → MySQL lines</td></tr>
+    <tr><td>T6</td><td>Forecast input, March 2026</td><td>vw_forecast_features → that month's fact rows</td></tr>
+  </table></div>
+  <p>The validation suite has <b>11 checks</b>, all PASS, including grain uniqueness (0 duplicate keys), foreign keys (0 orphans), completeness (36/36 months), join safety, lineage, rerun and SCD1.</p>
+  <p class="ev"><code>sql/05_traces/</code>, <code>evidence/04_metadata_lineage/traces/</code>, <code>evidence/05_validation/validation_results.csv</code></p>
+</section>
+
+<!-- ================= 11 ================= -->
+<section id="l11">
+  <h2><span class="n">11</span>Power BI reconciliation</h2>
+  <p class="lead">Proof that the dashboard and the warehouse SQL show the same numbers under the same filter.</p>
+  <div class="grid g3">
+    <div class="stat good"><div class="l">Net sales · FY2026 (Jul 2025 to Jun 2026) · all regions</div><div class="v">6,230,294.70</div><div class="l">Power BI = SQL ✓</div></div>
+    <div class="stat good"><div class="l">Net sales · calendar 2025 · Gulshan-e-Iqbal</div><div class="v">745,398.10</div><div class="l">Power BI = SQL ✓</div></div>
+    <div class="stat good"><div class="l">Purchases · October 2026 · all regions</div><div class="v">599,167.14</div><div class="l">Power BI = SQL ✓</div></div>
+  </div>
+  <div class="grid g2">
+    <div class="card"><b>Report pages</b><br>1. Management Overview · 2. Diagnostic Analysis · 3. AI Insights. Each has date, region and category slicers, and shows the units, the period and the last batch id.</div>
+    <div class="card"><b>Last batch ID shown: 2</b><br>Batches 3 (controlled failure) and 4 (rerun) were tests, not new data, so the card counts only the two real loads. The headline KPI card shows total net sales of 16,382,871 (voids excluded).</div>
+  </div>
+  <div class="trap">The <code>power_bi_total</code> column in <code>powerbi/reconciliation.csv</code> is empty: the numbers were matched SQL vs the CSV that Power BI reads. Before the viva, open <code>powerbi/nuskha.pbix</code>, set each filter and see the card show the same value with your own eyes.</div>
+  <p class="ev"><code>powerbi/reconciliation.csv</code>, <code>powerbi/nuskha.pdf</code>, <code>evidence/08_powerbi/</code></p>
+</section>
+
+<!-- ================= 12 ================= -->
+<section id="l12">
+  <h2><span class="n">12</span>The forecast (BQ5)</h2>
+  <p class="lead">Predict company-wide monthly net sales for the next 3 months.</p>
+  <div class="svgbox">
+  <svg viewBox="0 0 900 70" role="img" aria-label="Train Nov 2023 to Jul 2026, holdout Aug to Oct 2026, forecast Nov 2026 to Jan 2027">
+    <rect x="10" y="20" width="620" height="30" rx="5" class="bb"/><text x="320" y="40" text-anchor="middle" font-size="12" font-weight="600">Train: Nov 2023 to Jul 2026 (alpha tuned by rolling-origin validation)</text>
+    <rect x="632" y="20" width="130" height="30" rx="5" class="bw"/><text x="697" y="40" text-anchor="middle" font-size="12" font-weight="600">Holdout: Aug to Oct 2026</text>
+    <rect x="764" y="20" width="126" height="30" rx="5" class="bg"/><text x="827" y="40" text-anchor="middle" font-size="12" font-weight="600">Forecast: Nov to Jan</text>
+  </svg>
+  </div>
+  <div class="grid g2">
+    <div class="card"><b>Model:</b> Ridge regression<br><b>Features</b> (built in SQL, <code>vw_forecast_features</code>): lag_1, lag_12, prior-only 3-month rolling mean, month of year, Ramadan days.<br><b>Leakage test:</b> no feature uses the month being predicted.</div>
+    <div class="card"><b>Next 3 months (refit on all 36 months)</b><br>Nov 2026: PKR 616,975<br>Dec 2026: PKR 611,441<br>Jan 2027: PKR 630,303<br>Each with a range of ±1.28 × the validation RMSE.</div>
+  </div>
+  <h3>Holdout error: lower is better</h3>
+  <div id="fcBars"></div>
+  <div class="tbl" style="margin-top:8px"><table>
+    <tr><th>Method</th><th class="num">MAE (PKR)</th><th class="num">RMSE (PKR)</th></tr>
+    <tr><td>Last-month naive (baseline)</td><td class="num">56,347.42</td><td class="num">57,749.83</td></tr>
+    <tr><td><b>Ridge regression (model)</b></td><td class="num">70,806.15</td><td class="num">71,562.79</td></tr>
+    <tr><td>Seasonal naive (same month last year)</td><td class="num">116,207.40</td><td class="num">128,332.85</td></tr>
+  </table></div>
+  <div class="say">Our model beats seasonal naive but <b>loses to last-month naive</b>. Once lag-12 is taken there are only 21 usable training rows, which is too few for the model to learn more than "next month is like this month". We report it honestly, and that is why the decision uses the <b>range</b>, not the point forecast, and is revised every month.</div>
+  <p class="ev"><code>evidence/07_ai/forecast_metrics.csv</code>, <code>forecast_results.csv</code>, <code>forecast_leakage_test.csv</code>, <code>forecast.png</code></p>
+</section>
+
+<!-- ================= 13 ================= -->
+<section id="l13">
+  <h2><span class="n">13</span>Anomaly detection (BQ6)</h2>
+  <p class="lead">Find region × category months that moved abnormally (24 series, review period Nov 2025 to Oct 2026).</p>
+  <div class="grid g2">
+    <div class="card"><b>Threshold method: robust z-score</b><br>Ratio of each month to its trailing 6-month median; flag if the robust z-score is above 3.5. Simple and transparent.</div>
+    <div class="card"><b>Model: Isolation Forest</b><br>Uses that ratio, the year-on-year ratio and the ratio to the category average. It isolates points that are easy to separate from the rest.</div>
+  </div>
+  <p>To score them fairly we <b>injected 25 known spikes and drops</b> into a copy of the review period, so we know the right answers.</p>
+  <div class="legend"><span style="--c:var(--good)">caught (true positive)</span><span style="--c:var(--muted)">missed (hollow)</span><span style="--c:var(--bad)">false alert</span></div>
+  <div class="grid g2">
+    <div class="card"><b>Isolation Forest</b><div class="dots" id="dotsIF"></div>
+      <table><tr><td>Precision</td><td class="num"><b>0.91</b> (20 of 22 flags real)</td></tr><tr><td>Recall</td><td class="num"><b>0.80</b> (20 of 25 caught)</td></tr><tr><td>False alerts</td><td class="num"><b>2</b></td></tr></table></div>
+    <div class="card"><b>Robust z-score (threshold)</b><div class="dots" id="dotsZ"></div>
+      <table><tr><td>Precision</td><td class="num"><b>0.60</b> (6 of 10 flags real)</td></tr><tr><td>Recall</td><td class="num"><b>0.24</b> (6 of 25 caught)</td></tr><tr><td>False alerts</td><td class="num"><b>4</b></td></tr></table></div>
+  </div>
+  <h3>Three real cases traced to receipt lines</h3>
+  <div class="tbl"><table>
+    <tr><th>Case</th><th>What we found</th></tr>
+    <tr><td>East · Analgesics · Sep 2026</td><td>PKR 37,584 against an expected 8,767 (z = 10.5). Flagged by both. Likely a dengue-season spike.</td></tr>
+    <tr><td>South · Cardiovascular · Apr 2026</td><td>One Clifton line of 80 strips (PKR 30,480): the planted keying error (80 instead of 8).</td></tr>
+    <tr><td>East · Jun 2026</td><td>5 of 8 categories fell together: Gulshan-e-Iqbal sold PKR 5,229 vs a 6-month average of 67,065, a stock-out.</td></tr>
+  </table></div>
+  <p class="ev"><code>evidence/07_ai/anomaly_metrics_injected.csv</code>, <code>anomaly_case_traces.csv</code></p>
+</section>
+
+<!-- ================= 14 ================= -->
+<section id="l14">
+  <h2><span class="n">14</span>The management decision</h2>
+  <p class="lead">The examiners want to see a real decision, not just charts.</p>
+  <div class="svgbox">
+  <svg viewBox="0 0 900 110" role="img" aria-label="Warehouse feeds dashboard and forecast, which feed the purchase budget decision">
+    <defs><marker id="ar3" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" style="fill:var(--muted)"/></marker></defs>
+    <rect x="10" y="30" width="190" height="50" rx="8" class="ba"/><text x="105" y="52" text-anchor="middle" font-size="13" font-weight="600">Warehouse</text><text x="105" y="68" text-anchor="middle" font-size="10" class="muted">one reconciled sales history</text>
+    <path d="M200 55 L240 55" class="ln" marker-end="url(#ar3)"/>
+    <rect x="244" y="30" width="190" height="50" rx="8" class="bw"/><text x="339" y="52" text-anchor="middle" font-size="13" font-weight="600">Dashboard</text><text x="339" y="68" text-anchor="middle" font-size="10" class="muted">trend, Dec to Feb flu peak</text>
+    <path d="M434 55 L474 55" class="ln" marker-end="url(#ar3)"/>
+    <rect x="478" y="30" width="190" height="50" rx="8" class="bg"/><text x="573" y="52" text-anchor="middle" font-size="13" font-weight="600">Forecast range</text><text x="573" y="68" text-anchor="middle" font-size="10" class="muted">~617k · 611k · 630k</text>
+    <path d="M668 55 L708 55" class="ln" marker-end="url(#ar3)"/>
+    <rect x="712" y="22" width="178" height="66" rx="8" class="b" style="stroke:var(--accent);stroke-width:2"/><text x="801" y="48" text-anchor="middle" font-size="13" font-weight="700">Purchase budget</text><text x="801" y="64" text-anchor="middle" font-size="10" class="muted">Nov 2026 to Jan 2027</text><text x="801" y="78" text-anchor="middle" font-size="10" class="muted">+ Cough &amp; Cold stock</text>
+  </svg>
+  </div>
+  <div class="say">Decision: setting the Nov 2026 to Jan 2027 purchase budget and stock mix. The warehouse gives one reconciled monthly sales history across all branches. The dashboard shows the trend and the December to February Cough and Cold peak. The forecast gives a range for each month (about PKR 617k, 611k and 630k). Because the model did not beat last-month naive, the budget is set from the range and revised monthly.</div>
+  <h3>The other two recommendations</h3>
+  <div class="grid g2">
+    <div class="card"><b>Diabetes Care supplier.</b> Margin fell from 25.56% to 16.46%. The margin bridge blames <b>cost</b> (a 12% rise from March 2026 with shelf prices frozen), not price or volume, so renegotiate or switch the supplier.</div>
+    <div class="card"><b>East Analgesics spike.</b> Investigate with Pharmacy Ops before the next dengue season, together with the June 2026 East drop (the stock-out).</div>
+  </div>
+  <p class="ev"><code>docs/recommendations.md</code></p>
+</section>
+
+<!-- ================= 15 ================= -->
+<section id="l15">
+  <h2><span class="n">15</span>AI use, bonus work and declarations</h2>
+  <p class="lead">Be ready to talk about these honestly.</p>
+  <div class="trap"><b>AI tool disclosure.</b> Claude Code was used extensively to write the code, SQL, generator, Power BI definition and report draft, and for debugging. Expect the question <i>"What did <b>you</b> do?"</i> Your answer should be: set requirements, review, run, check results against evidence, open and verify Power BI, and be able to explain every file. Read your <code>docs/viva/memberN.md</code> notes and be able to walk through your own criterion's code.</div>
+  <div class="grid g2">
+    <div class="card"><b>Bonus work worth mentioning</b><br>
+      • Reverse engineering of all 3 engines (Inventory links <i>inferred</i>, since it has no foreign keys)<br>
+      • Deletion detection plus a deletion log<br>
+      • Late-arriving product P-0500<br>
+      • Defect ledger with key-by-key reject matching<br>
+      • Power BI files validated against Microsoft's PBIR schemas (32/32)<br>
+      • One-click Colab check (11/11) and an offline DuckDB dry run</div>
+    <div class="card"><b>Declarations, in plain words</b><br>
+      • Links open without asking for access (repo now public) ✓<br>
+      • Runs in README order; no real secrets in git (only <code>.env.example</code> with local demo logins) ✓<br>
+      • Synthetic data labelled everywhere ✓<br>
+      • AI outputs in the separate <code>ai</code> schema, not in <code>dw</code> facts ✓<br>
+      • "Our own work + AI disclosed": true only if the disclosure is complete</div>
+  </div>
+</section>
+
+<!-- ================= 16 ================= -->
+<section id="l16">
+  <h2><span class="n">16</span>Rapid-fire viva Q&amp;A</h2>
+  <p class="lead">Try to answer each one out loud before opening it.</p>
+
+  <details><summary>Why two fact tables instead of one?</summary><p>Selling and buying are different business processes with different grains (receipt line vs GRN line) and different dimensions (customer vs supplier). One table would mix grains. They share Date, Product and Branch, so they can still be compared after summing each to product × month.</p></details>
+  <details><summary>What is the grain of fact_sales, and why that grain?</summary><p>One product line on one till receipt. It is the lowest level the source has, so any total (by day, branch, category, customer) can be built by adding up. You can always roll up, but you can never drill below your grain.</p></details>
+  <details><summary>How do you know no row was lost?</summary><p>Row reconciliation per table per batch: 32,944 = 32,147 + 635 + 162. Amounts too, month by month, to the paisa, with 0 difference. Every reject matches the defect ledger key for key.</p></details>
+  <details><summary>What is the difference between a duplicate and a legitimate repeat?</summary><p>A duplicate is the same line exported twice (all columns identical, the D01 defect): 162 removed. A legitimate repeat is a real second purchase that looks similar: 278 kept. Deleting repeats would understate sales.</p></details>
+  <details><summary>Why does the rerun write 0 rows?</summary><p>Loads are upserts on natural keys with <code>IS DISTINCT FROM</code>, so unchanged rows are skipped. Row counts, totals and MD5 fingerprints were identical before and after.</p></details>
+  <details><summary>What is your watermark and where is it stored?</summary><p><code>updated_at</code> on transaction tables, stored in <code>etl.batch</code> (watermark_from and watermark_to). Batch 2 read rows updated after 2026-08-31 23:59:59. Master tables are small, so they are extracted in full each batch.</p></details>
+  <details><summary>A late receipt arrives in batch 2. Which month does it go into?</summary><p>Its real transaction month (July or August 2026), not the load month. The date key comes from the receipt date. 40 such receipts, trace T3.</p></details>
+  <details><summary>How do you handle deletes in the source?</summary><p>A key comparison between batches found the 3 deleted receipts. They are logged in <code>etl.deletion_log</code> and kept in the fact table for audit, not deleted.</p></details>
+  <details><summary>What if a new product appears in the facts before the dimension?</summary><p>Late-arriving dimension: the dimension upsert runs before the fact load in each batch, so P-0500 got its surrogate key first. Anything still unresolved maps to the Unknown member (−1), so foreign keys are never null.</p></details>
+  <details><summary>What happens if the load crashes halfway?</summary><p>The fact load is one transaction. With FAIL_AT=0.5 it failed after 1,184 of 2,369 rows, rolled back, and the batch was marked FAILED. Totals and fingerprints were unchanged. The rerun matched the clean run.</p></details>
+  <details><summary>Why SCD Type 1 and not Type 2 for P-0368?</summary><p>It was a data-entry mistake (Gastro instead of Cough and Cold), not a real change over time. History of a mistake is misleading. Exactly two category totals moved by ±112,316.85 and the company total did not change.</p></details>
+  <details><summary>How are USD purchases converted?</summary><p>At the Finance <code>fx_rate</code> on or before the receipt date. Lines with no rate available are rejected with code R06 (4 in batch 1). Trace T2 shows one.</p></details>
+  <details><summary>Why can't you add up margin %?</summary><p>Percentages are non-additive: the average of two branch margins is not the company margin. We store margin in PKR (additive) and recompute % = sum(margin) / sum(net sales) in the views.</p></details>
+  <details><summary>How do you prove Power BI is correct?</summary><p>Three totals under the same filters match warehouse SQL exactly: FY2026 net sales 6,230,294.70, Gulshan-e-Iqbal 2025 745,398.10, October 2026 purchases 599,167.14.</p></details>
+  <details><summary>Your forecast lost to a naive baseline. Isn't that a failure?</summary><p>It is an honest result. Only 21 usable training rows after lag-12, and sales are smooth month to month, so "same as last month" is hard to beat. We report it, avoid leakage (tested), and use the forecast <i>range</i> for the decision with a monthly revision.</p></details>
+  <details><summary>How did you avoid data leakage in the forecast?</summary><p>Features use only prior months (lag_1, lag_12, a prior-only rolling mean), alpha was tuned inside the training months by rolling-origin validation, and the holdout (Aug to Oct 2026) was never touched during training. A leakage test file proves it.</p></details>
+  <details><summary>Explain precision and recall with your numbers.</summary><p>Isolation Forest raised 22 flags; 20 were real, so precision = 20/22 = 0.91. Of the 25 injected cases it caught 20, so recall = 20/25 = 0.80. The z-score caught only 6 (recall 0.24) with 4 false alerts (precision 0.60).</p></details>
+  <details><summary>Why inject anomalies instead of using real ones?</summary><p>To measure precision and recall you need to know the right answers. Injected cases give a labelled test set. We also traced 3 real flags to their receipt lines.</p></details>
+  <details><summary>Where are the AI results stored, and what if the AI job runs twice?</summary><p>In the separate <code>ai</code> schema (model_run, forecast_result, anomaly_result), never in the dw facts. The run id is a hash of the configuration and the data batch, so a retry upserts the same rows: 0 duplicates.</p></details>
+  <details><summary>How would you add a new department, e.g. Home Delivery?</summary><p>The bus matrix shows it: a new fact table reusing the conformed Date, Branch and Customer dimensions, with no redesign of the existing stars.</p></details>
+  <details><summary>What is the biggest limitation?</summary><p>The data is synthetic, so the methods are shown to find what was planted, not tested on real-world mess. The forecast has very few training rows, and the anomaly evaluation uses only 25 injected cases.</p></details>
+</section>
+
+<!-- ================= 17 ================= -->
+<section id="l17">
+  <h2><span class="n">17</span>Link map: where each proof lives</h2>
+  <p class="lead">All links go to the public repo, so you can open them live during the viva.</p>
+  <div class="tbl"><table id="links">
+    <tr><th>Topic</th><th>File</th></tr>
+  </table></div>
+</section>
+
+<!-- ================= 18 ================= -->
+<section id="l18" style="border-bottom:0">
+  <h2><span class="n">18</span>Form answers cheat sheet</h2>
+  <p class="lead">Everything submitted on the form, on one screen.</p>
+  <div class="tbl"><table>
+    <tr><th>Form field</th><th>Answer</th></tr>
+    <tr><td>Source rows extracted (batch 1)</td><td>32,944 (sales 28,238 + purchase 4,706)</td></tr>
+    <tr><td>Rows retained</td><td>32,147 (27,543 + 4,604)</td></tr>
+    <tr><td>Rows rejected</td><td>635 (556 + 79)</td></tr>
+    <tr><td>Duplicates removed</td><td>162 (139 + 23); 278 legitimate repeats kept</td></tr>
+    <tr><td>Amount reconciliation</td><td>Net sales, batch 1: source 15,070,308.45, warehouse 15,070,308.45; 0.00 difference in every month</td></tr>
+    <tr><td>Unchanged rerun</td><td>Fact sales rows 27,543 → 27,543; net 15,070,308.45 → 15,070,308.45; 0 rows written</td></tr>
+    <tr><td>Second batch</td><td>Sales 2,277 new, 71 changed; purchases 314 new, 7 changed; watermark updated_at &gt; 2026-08-31 23:59:59</td></tr>
+    <tr><td>Controlled failure</td><td>FAIL_AT=0.5 broke fact_sales after 1,184/2,369 rows; rolled back; batch 3 FAILED; rerun batch 4 SUCCESS, 0 rows</td></tr>
+    <tr><td>Fact table 1</td><td>dw.fact_sales: one product line on one till receipt</td></tr>
+    <tr><td>Fact table 2</td><td>dw.fact_purchase: one product line on one GRN</td></tr>
+    <tr><td>Conformed dimensions</td><td>dim_date, dim_product, dim_branch</td></tr>
+    <tr><td>SCD Type 1</td><td>dim_product.category for P-0368: Gastro → Cough and Cold</td></tr>
+    <tr><td>Dashboard total 1</td><td>Net sales, FY2026: 6,230,294.70 = SQL</td></tr>
+    <tr><td>Dashboard total 2</td><td>Net sales, 2025, Gulshan-e-Iqbal: 745,398.10 = SQL</td></tr>
+    <tr><td>Dashboard total 3</td><td>Purchases, Oct 2026: 599,167.14 = SQL</td></tr>
+    <tr><td>Last batch ID</td><td>2</td></tr>
+    <tr><td>Forecast target / holdout</td><td>Company monthly net sales; holdout Aug to Oct 2026</td></tr>
+    <tr><td>Baseline MAE / RMSE</td><td>56,347.42 / 57,749.83 (last-month naive)</td></tr>
+    <tr><td>Model / MAE / RMSE</td><td>Ridge regression with lag features / 70,806.15 / 71,562.79</td></tr>
+    <tr><td>Anomaly grain</td><td>Region-category-month net sales</td></tr>
+    <tr><td>Threshold P / R / false alerts</td><td>0.60 / 0.24 / 4</td></tr>
+    <tr><td>Model / P / R / false alerts</td><td>Isolation Forest / 0.91 / 0.80 / 2</td></tr>
+    <tr><td>Decision</td><td>Nov 2026 to Jan 2027 purchase budget from the forecast range</td></tr>
+  </table></div>
+  <p class="ev" style="margin-top:14px">Repo: <a href="https://github.com/mabdulrahmanahmed/nuskha-dwbi">github.com/mabdulrahmanahmed/nuskha-dwbi</a></p>
+</section>
+</main>
+</div>
+
+<script>
+(function(){
+  // Horizontal bar helper: rows = [label, value, colourVar, display]
+  function bars(id, rows, max){
+    var el = document.getElementById(id); if(!el) return;
+    rows.forEach(function(r){
+      var w = Math.max(1, r[1] / max * 100);
+      el.insertAdjacentHTML('beforeend',
+        '<div class="hbar"><span>' + r[0] + '</span><div class="t"><div style="width:' + w + '%;background:var(' + r[2] + ')"></div></div><span class="v">' + r[3] + '</span></div>');
+    });
+  }
+  bars('rejectBars', [
+    ['R01 unknown product', 195, '--bad', '195'],
+    ['R02 bad quantity', 130, '--bad', '130'],
+    ['R03 bad date', 97, '--bad', '97'],
+    ['R04 bad amount', 97, '--bad', '97'],
+    ['R05 unknown branch', 56, '--bad', '56'],
+    ['R07 orphan line', 56, '--bad', '56'],
+    ['R06 no FX rate', 4, '--bad', '4']
+  ], 195);
+  bars('scdBars', [
+    ['Cough & Cold before', 1392672.60, '--muted', '1,392,672.60'],
+    ['Cough & Cold after', 1504989.45, '--good', '1,504,989.45'],
+    ['Gastro before', 1618727.70, '--muted', '1,618,727.70'],
+    ['Gastro after', 1506410.85, '--bad', '1,506,410.85']
+  ], 1700000);
+  bars('fcBars', [
+    ['Last-month naive', 56347, '--good', '56,347'],
+    ['Ridge (our model)', 70806, '--accent', '70,806'],
+    ['Seasonal naive', 116207, '--muted', '116,207']
+  ], 120000);
+
+  // Dot grids for anomaly results: hits, misses, false alerts
+  function dots(id, hit, miss, fa){
+    var el = document.getElementById(id); if(!el) return; var h = '';
+    for(var i=0;i<hit;i++) h += '<span class="dot hit" title="caught"></span>';
+    for(var j=0;j<miss;j++) h += '<span class="dot miss" title="missed"></span>';
+    for(var k=0;k<fa;k++) h += '<span class="dot fa" title="false alert"></span>';
+    el.innerHTML = h;
+  }
+  dots('dotsIF', 20, 5, 2);
+  dots('dotsZ', 6, 19, 4);
+
+  // Link map
+  var base = 'https://github.com/mabdulrahmanahmed/nuskha-dwbi/';
+  var links = [
+    ['Whole project / run order', 'README.md'],
+    ['Final report (PDF)', 'report/report.pdf'],
+    ['Pipeline notebook', 'pipeline.ipynb'],
+    ['Evidence index', 'evidence/INDEX.md'],
+    ['Planted defects', 'evidence/01_sources/defect_ledger.csv'],
+    ['Batch 1 row reconciliation', 'evidence/02_etl/reconciliation_batch_1.csv'],
+    ['Batch 1 amounts by month', 'evidence/02_etl/reconciliation_amounts_by_month_batch_1.csv'],
+    ['Rejects vs ledger', 'evidence/02_etl/rejects_vs_ledger.csv'],
+    ['Rerun before/after', 'evidence/03_warehouse/rerun_log.csv'],
+    ['Batch 2 checks', 'evidence/03_warehouse/batch2_checks.csv'],
+    ['Batch 2 insert/update counts', 'evidence/03_warehouse/load_log_batch_2.csv'],
+    ['Batch 2 row reconciliation', 'evidence/02_etl/reconciliation_batch_2.csv'],
+    ['Controlled failure', 'evidence/03_warehouse/failure_checks.csv'],
+    ['SCD Type 1', 'evidence/03_warehouse/scd1_evidence.csv'],
+    ['Star schema diagram', 'evidence/03_warehouse/star_schema.png'],
+    ['Six traces', 'evidence/04_metadata_lineage/traces', true],
+    ['Validation suite (11 checks)', 'evidence/05_validation/validation_results.csv'],
+    ['12 analysis queries', 'sql/04_queries', true],
+    ['Power BI reconciliation', 'powerbi/reconciliation.csv'],
+    ['Power BI report (.pbix)', 'powerbi/nuskha.pbix'],
+    ['Power BI pages (PDF)', 'powerbi/nuskha.pdf'],
+    ['Forecast metrics', 'evidence/07_ai/forecast_metrics.csv'],
+    ['Forecast next 3 months', 'evidence/07_ai/forecast_results.csv'],
+    ['Anomaly metrics', 'evidence/07_ai/anomaly_metrics_injected.csv'],
+    ['Recommendations', 'docs/recommendations.md'],
+    ['Colab check 11/11', 'evidence/colab_check.csv']
+  ];
+  var t = document.getElementById('links');
+  links.forEach(function(l){
+    var url = base + (l[2] ? 'tree' : 'blob') + '/main/' + l[1];
+    t.insertAdjacentHTML('beforeend', '<tr><td>' + l[0] + '</td><td><a href="' + url + '" target="_blank" rel="noopener"><code>' + l[1] + '</code></a></td></tr>');
+  });
+
+  // Open/close all Q&A
+  var btn = document.getElementById('openAll'), open = false;
+  btn.addEventListener('click', function(){
+    open = !open;
+    document.querySelectorAll('details').forEach(function(d){ d.open = open; });
+    btn.textContent = open ? 'Close all answers' : 'Open all answers';
+  });
+})();
+</script>
+</body>
+</html>
