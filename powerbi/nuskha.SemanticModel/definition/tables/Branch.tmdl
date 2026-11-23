@@ -1,0 +1,37 @@
+table Branch
+	lineageTag: f6876bf2-4fee-541e-8274-e10b0c4a1460
+
+	column branch_code
+		dataType: string
+		summarizeBy: none
+		sourceColumn: branch_code
+		lineageTag: 05d6cef7-aa4a-514d-9268-518ebcf6908a
+
+	column branch_name
+		dataType: string
+		summarizeBy: none
+		sourceColumn: branch_name
+		lineageTag: 1cffa21e-a3de-5392-9e4f-206f493913e8
+
+	column area
+		dataType: string
+		summarizeBy: none
+		sourceColumn: area
+		lineageTag: f5eb005b-e367-561c-bfe4-af75c14797d9
+
+	column region
+		dataType: string
+		summarizeBy: none
+		sourceColumn: region
+		lineageTag: 12623098-0ddc-59de-aa6a-643acaf128a8
+
+	partition Branch = m
+		mode: import
+		source =
+				let
+				    Source = Csv.Document(File.Contents(DataFolder & "\dim_branch.csv"), [Delimiter = ",", Encoding = 65001, QuoteStyle = QuoteStyle.Csv]),
+				    Promoted = Table.PromoteHeaders(Source, [PromoteAllScalars = true]),
+				    Typed = Table.TransformColumnTypes(Promoted, {{"branch_code", type text}, {"branch_name", type text}, {"area", type text}, {"region", type text}}, "en-US")
+				in
+				    Typed
+

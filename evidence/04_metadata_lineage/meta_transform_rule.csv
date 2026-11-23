@@ -1,0 +1,20 @@
+rule_id,description,code_reference
+R-DATE-01,Source timestamps and DD/MM/YYYY text become real dates; TIMESTAMPTZ is read as Karachi local time; unparseable dates are rejected as R03,"src/normalize.py: to_ts, to_date_dmy"
+R-TEXT-01,Trim spaces; branch text compared in upper case without dots and hyphens,"src/normalize.py: text, branch_norm"
+R-CAT-01,"Inventory category: trim + case-insensitive match to the 8 canonical names, else Not recorded",src/normalize.py: canonical_category
+R-UNIT-01,Boxes to selling units: boxes_received x strips_per_box,src/normalize.py: convert_purchase_lines
+R-UNIT-02,Tablets to selling units: tablets_on_hand / tablets_per_strip,src/normalize.py: normalize (stock_count)
+R-MONEY-01,"REAL cost to 2 decimals; every amount rounded to 2 decimals (NUMERIC(14,2))",src/normalize.py: to_num
+R-MONEY-02,Missing discount becomes 0,src/normalize.py: normalize (receipt_line)
+R-FX-01,USD amount x Finance USD/PKR rate on or before the GRN date; PKR rate = 1; no rate means reject R06,"src/normalize.py: convert_purchase_lines, fx_on_or_before"
+R-XW-PROD,"Till code / vendor code / item_id to canonical product code P-0<item_id> (exact, rule, description, manual)",src/crosswalk.py: build_xw_product
+R-XW-BRANCH,"Typed branch text / branch_id / store_code to canonical store_code (exact, rule, alias list)",src/crosswalk.py: build_xw_branch
+R-XW-CUST,Card number / typed panel name / account to L-<number> or PANEL-<account>; walk-in to WALKIN; unresolved to Unknown (-1) with a flag,src/crosswalk.py: build_xw_customer; src/quality.py
+R-DQ-01,"One reason code per invalid line, checked in order R07, R03, R05, R01, R02, R04, R06; invalid lines go to etl.rejects","src/quality.py: prepare_sales, prepare_purchases"
+R-DUP-01,"Exact duplicate = same source key twice; first kept, others counted. Same customer/item/day on a new line key is kept",src/quality.py: _dedupe
+R-MEAS-01,gross = qty x price; net = gross - discount; margin = net - cost,src/normalize.py; src/load.py: build_fact_sales
+R-COST-01,cost_amount_pkr = qty x Inventory standard cost effective on the receipt date (cost history),src/load.py: cost_on_date
+R-CANCEL-01,VOIDED receipts and CANCELLED GRNs stay in the facts with is_cancelled = true; views exclude them,src/quality.py; sql/03_views
+R-KEY-01,"Surrogate keys: product_key = item_id, supplier_key = supplier_id; branch and customer keys given once and never renumbered; -1 Unknown, 0 Walk-in",src/load.py
+R-DATE-02,dim_date generated 2023-11-01..2027-01-31; fiscal year Jul-Jun; Ramadan flag from config/ramadan_dates.csv,src/load.py: build_dim_date
+R-LINEAGE-01,"Every fact row keeps source_system, source_key and batch_id",src/load.py

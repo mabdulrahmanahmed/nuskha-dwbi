@@ -1,0 +1,15 @@
+table,code,planted,found,same_keys,explanation
+receipt_line,D01_EXACT_DUPLICATE,12,12,True,identical key sets
+receipt_line,LEGIT_REPEAT,23,23,True,identical key sets
+receipt_line,R01_MISSING_PRODUCT,14,14,True,identical key sets
+receipt_line,R02_BAD_QTY,9,9,True,identical key sets
+receipt_line,R03_BAD_DATE,7,7,True,identical key sets
+receipt_line,R04_BAD_AMOUNT,7,7,True,identical key sets
+receipt_line,R05_UNKNOWN_BRANCH,5,5,True,identical key sets
+receipt_line,R07_ORPHAN_LINE,5,5,True,identical key sets
+receipt_line,U01_UNRESOLVED_CUSTOMER,1,1,True,identical key sets
+grn_line,D01_EXACT_DUPLICATE,2,2,True,identical key sets
+grn_line,R01_MISSING_PRODUCT,2,2,True,identical key sets
+grn_line,R02_BAD_QTY,1,1,True,identical key sets
+grn_line,R03_BAD_DATE,1,1,True,identical key sets
+grn_line,R04_BAD_AMOUNT,1,1,True,identical key sets

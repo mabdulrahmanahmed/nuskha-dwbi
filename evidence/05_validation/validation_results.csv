@@ -1,0 +1,28 @@
+no,check,expected,actual,result
+1,grain: duplicate natural keys in dw.fact_sales,0,0,PASS
+1,grain: duplicate natural keys in dw.fact_purchase,0,0,PASS
+2,"foreign keys: orphan keys in dw.fact_sales (date, product, branch, customer)",0,0,PASS
+2,"foreign keys: orphan keys in dw.fact_purchase (date, product, branch, supplier)",0,0,PASS
+3,"unknown members: dw.fact_sales.product_key = -1 (count, share %)",< 1%,"0 rows, 0.0%",PASS
+3,"unknown members: dw.fact_sales.branch_key = -1 (count, share %)",< 1%,"0 rows, 0.0%",PASS
+3,"unknown members: dw.fact_sales.customer_key = -1 (count, share %)",< 1%,"1 rows, 0.003%",PASS
+3,"unknown members: dw.fact_purchase.product_key = -1 (count, share %)",< 1%,"0 rows, 0.0%",PASS
+3,"unknown members: dw.fact_purchase.branch_key = -1 (count, share %)",< 1%,"0 rows, 0.0%",PASS
+3,"unknown members: dw.fact_purchase.supplier_key = -1 (count, share %)",< 1%,"0 rows, 0.0%",PASS
+4,completeness: months present in dw.fact_sales (Nov 2023 - Oct 2026),36,36,PASS
+4,completeness: months present in dw.fact_purchase (Nov 2023 - Oct 2026),36,36,PASS
+4,completeness: every branch has sales every month (10 branches x 36 months),0,0,PASS
+5,row reconciliation batch 1 sales_db.receipt_line: source = loaded + rejected + duplicates,28238,28238,PASS
+5,row reconciliation batch 1 purchasing_db.grn_line: source = loaded + rejected + duplicates,4706,4706,PASS
+5,row reconciliation batch 2 sales_db.receipt_line: source = loaded + rejected + duplicates,2428,2428,PASS
+5,row reconciliation batch 2 purchasing_db.grn_line: source = loaded + rejected + duplicates,328,328,PASS
+6,"amounts: MySQL valid lines (+ deleted receipts kept) = fact_sales, per month",0 of 36 months differ,0 months differ,PASS
+6,"amounts: PostgreSQL valid GRN lines = fact_purchase (original currency), per month",0 of 36 months differ,0 months differ,PASS
+7,join safety: dw.fact_sales total before = after joining every dimension,16400628.65,16400628.65,PASS
+7,join safety: dw.fact_purchase total before = after joining every dimension,16567538.48,16567538.48,PASS
+8,"lineage: % of dw.fact_sales rows with source system, key and batch",100,100.0,PASS
+8,"lineage: % of dw.fact_purchase rows with source system, key and batch",100,100.0,PASS
+9,rerun safety: 3.04 rerun of batch 1 (rows and totals changed),all PASS,2/2 PASS,PASS
+9,rerun safety: 3.07 rerun after failure (rows and totals changed),all PASS,5/5 PASS,PASS
+10,SCD1: Gastro and Cough and Cold move; company total unchanged,"2 categories move, 0.00","2 categories move, 0.00",PASS
+11,AI outputs: duplicate rows after a retried run (forecast + anomaly),0,0,PASS

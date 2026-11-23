@@ -1,0 +1,67 @@
+table Forecast
+	lineageTag: b65815ec-a560-5ce8-8bfd-8544efefd7ef
+
+	column run_id
+		dataType: string
+		summarizeBy: none
+		sourceColumn: run_id
+		lineageTag: 49a8da64-03a8-53dc-8a3a-dde71829b276
+
+	column date_key
+		dataType: int64
+		summarizeBy: none
+		sourceColumn: date_key
+		lineageTag: 2953415a-d17b-5509-b325-32e1f1363c61
+
+	column prediction
+		dataType: double
+		summarizeBy: sum
+		sourceColumn: prediction
+		lineageTag: 94f14459-9f41-59ae-a7ae-678694c49e3f
+
+	column lower
+		dataType: double
+		summarizeBy: sum
+		sourceColumn: lower
+		lineageTag: 02feb3a6-015b-5b2b-8fcf-2e2f2c3e0afe
+
+	column upper
+		dataType: double
+		summarizeBy: sum
+		sourceColumn: upper
+		lineageTag: 85200205-b721-5115-9f35-31a2247e3821
+
+	column actual
+		dataType: double
+		summarizeBy: sum
+		sourceColumn: actual
+		lineageTag: 510bc025-c624-52ae-bc73-739e12ecc949
+
+	column is_holdout
+		dataType: boolean
+		summarizeBy: none
+		sourceColumn: is_holdout
+		lineageTag: 2dcda21c-7b5f-521d-a172-ec8ff426e40d
+
+	column month_start
+		dataType: dateTime
+		summarizeBy: none
+		sourceColumn: month_start
+		lineageTag: 285c6c6a-2e51-5cab-8351-2db206666c1a
+
+	column method
+		dataType: string
+		summarizeBy: none
+		sourceColumn: method
+		lineageTag: 4c057e75-b096-58cd-896b-9dcd15de1e53
+
+	partition Forecast = m
+		mode: import
+		source =
+				let
+				    Source = Csv.Document(File.Contents(DataFolder & "\ai_forecast_result.csv"), [Delimiter = ",", Encoding = 65001, QuoteStyle = QuoteStyle.Csv]),
+				    Promoted = Table.PromoteHeaders(Source, [PromoteAllScalars = true]),
+				    Typed = Table.TransformColumnTypes(Promoted, {{"run_id", type text}, {"date_key", Int64.Type}, {"prediction", type number}, {"lower", type number}, {"upper", type number}, {"actual", type number}, {"is_holdout", type logical}, {"month_start", type date}, {"method", type text}}, "en-US")
+				in
+				    Typed
+

@@ -1,0 +1,12 @@
+measure,value_run1,value_run2,identical
+fact_sales rows,29820,29820,PASS
+fact_sales net PKR,16400628.65,16400628.65,PASS
+fact_sales gross margin PKR,4101635.58,4101635.58,PASS
+fact_purchase rows,4918,4918,PASS
+fact_purchase PKR,16567538.48,16567538.48,PASS
+etl.rejects rows,687,687,PASS
+etl.deletion_log rows,3,3,PASS
+meta.lineage rows,34738,34738,PASS
+FY2026 net sales PKR (view),6230294.70,6230294.70,PASS
+ai.forecast_result rows,6,6,PASS
+ai.anomaly_result rows,1152,1152,PASS

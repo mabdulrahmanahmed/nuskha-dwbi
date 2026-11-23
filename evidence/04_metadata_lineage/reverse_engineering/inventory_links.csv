@@ -1,0 +1,4 @@
+child_table,child_column,parent_table,parent_column,status,evidence
+item_cost_history,item_id,item,item_id,inferred,column name equals the primary key of item; no FK declared
+stock_count,store_code,store,store_code,inferred,column name equals the primary key of store; no FK declared
+stock_count,item_id,item,item_id,inferred,column name equals the primary key of item; no FK declared

@@ -1,0 +1,636 @@
+source_system,source_table,source_key,reason_code,reason_text,batch_id
+sales_db,receipt_line,CLF-2023-000021|1,R04_BAD_AMOUNT,price or cost <= 0 or missing,1
+sales_db,receipt_line,CLF-2024-000009|1,R01_MISSING_PRODUCT,item code unknown to every crosswalk,1
+sales_db,receipt_line,CLF-2024-000018|3,R02_BAD_QTY,quantity <= 0 or missing on a POSTED line,1
+sales_db,receipt_line,CLF-2024-000020|2,R01_MISSING_PRODUCT,item code unknown to every crosswalk,1
+sales_db,receipt_line,CLF-2024-000037|1,R01_MISSING_PRODUCT,item code unknown to every crosswalk,1
+sales_db,receipt_line,CLF-2024-000041|4,R02_BAD_QTY,quantity <= 0 or missing on a POSTED line,1
+sales_db,receipt_line,CLF-2024-000066|2,R02_BAD_QTY,quantity <= 0 or missing on a POSTED line,1
+sales_db,receipt_line,CLF-2024-000072|3,R04_BAD_AMOUNT,price or cost <= 0 or missing,1
+sales_db,receipt_line,CLF-2024-000185|1,R04_BAD_AMOUNT,price or cost <= 0 or missing,1
+sales_db,receipt_line,CLF-2024-000238|2,R04_BAD_AMOUNT,price or cost <= 0 or missing,1
+sales_db,receipt_line,CLF-2024-000242|1,R01_MISSING_PRODUCT,item code unknown to every crosswalk,1
+sales_db,receipt_line,CLF-2024-000248|2,R04_BAD_AMOUNT,price or cost <= 0 or missing,1
+sales_db,receipt_line,CLF-2024-000254|3,R02_BAD_QTY,quantity <= 0 or missing on a POSTED line,1
+sales_db,receipt_line,CLF-2024-000267|1,R07_ORPHAN_LINE,header record is missing,1
+sales_db,receipt_line,CLF-2024-000292|1,R03_BAD_DATE,"date missing, unparseable or after the batch cut-off",1
+sales_db,receipt_line,CLF-2024-000292|2,R03_BAD_DATE,"date missing, unparseable or after the batch cut-off",1
+sales_db,receipt_line,CLF-2024-000292|3,R03_BAD_DATE,"date missing, unparseable or after the batch cut-off",1
+sales_db,receipt_line,CLF-2024-000292|4,R03_BAD_DATE,"date missing, unparseable or after the batch cut-off",1
+sales_db,receipt_line,CLF-2024-000292|5,R03_BAD_DATE,"date missing, unparseable or after the batch cut-off",1
+sales_db,receipt_line,CLF-2024-000312|3,R02_BAD_QTY,quantity <= 0 or missing on a POSTED line,1
+sales_db,receipt_line,CLF-2024-000320|1,R02_BAD_QTY,quantity <= 0 or missing on a POSTED line,1
+sales_db,receipt_line,CLF-2024-000344|1,R01_MISSING_PRODUCT,item code unknown to every crosswalk,1
+sales_db,receipt_line,CLF-2024-000363|1,R02_BAD_QTY,quantity <= 0 or missing on a POSTED line,1
+sales_db,receipt_line,CLF-2024-000367|1,R01_MISSING_PRODUCT,item code unknown to every crosswalk,1
+sales_db,receipt_line,CLF-2024-000419|1,R03_BAD_DATE,"date missing, unparseable or after the batch cut-off",1
+sales_db,receipt_line,CLF-2024-000429|3,R02_BAD_QTY,quantity <= 0 or missing on a POSTED line,1
+sales_db,receipt_line,CLF-2024-000446|1,R03_BAD_DATE,"date missing, unparseable or after the batch cut-off",1
+sales_db,receipt_line,CLF-2024-000446|2,R03_BAD_DATE,"date missing, unparseable or after the batch cut-off",1
+sales_db,receipt_line,CLF-2024-000446|3,R03_BAD_DATE,"date missing, unparseable or after the batch cut-off",1
+sales_db,receipt_line,CLF-2024-000446|4,R03_BAD_DATE,"date missing, unparseable or after the batch cut-off",1
+sales_db,receipt_line,CLF-2024-000460|1,R02_BAD_QTY,quantity <= 0 or missing on a POSTED line,1
+sales_db,receipt_line,CLF-2025-000041|2,R01_MISSING_PRODUCT,item code unknown to every crosswalk,1
+sales_db,receipt_line,CLF-2025-000095|1,R01_MISSING_PRODUCT,item code unknown to every crosswalk,1
+sales_db,receipt_line,CLF-2025-000106|1,R03_BAD_DATE,"date missing, unparseable or after the batch cut-off",1
+sales_db,receipt_line,CLF-2025-000191|1,R01_MISSING_PRODUCT,item code unknown to every crosswalk,1
+sales_db,receipt_line,CLF-2025-000194|2,R02_BAD_QTY,quantity <= 0 or missing on a POSTED line,1
+sales_db,receipt_line,CLF-2025-000240|2,R02_BAD_QTY,quantity <= 0 or missing on a POSTED line,1
+sales_db,receipt_line,CLF-2025-000248|1,R01_MISSING_PRODUCT,item code unknown to every crosswalk,1
+sales_db,receipt_line,CLF-2025-000288|1,R01_MISSING_PRODUCT,item code unknown to every crosswalk,1
+sales_db,receipt_line,CLF-2025-000291|2,R04_BAD_AMOUNT,price or cost <= 0 or missing,1
+sales_db,receipt_line,CLF-2025-000301|3,R01_MISSING_PRODUCT,item code unknown to every crosswalk,1
+sales_db,receipt_line,CLF-2025-000312|1,R03_BAD_DATE,"date missing, unparseable or after the batch cut-off",1
+sales_db,receipt_line,CLF-2025-000312|2,R03_BAD_DATE,"date missing, unparseable or after the batch cut-off",1
+sales_db,receipt_line,CLF-2025-000337|1,R01_MISSING_PRODUCT,item code unknown to every crosswalk,1
+sales_db,receipt_line,CLF-2025-000359|1,R01_MISSING_PRODUCT,item code unknown to every crosswalk,1
+sales_db,receipt_line,CLF-2025-000411|1,R04_BAD_AMOUNT,price or cost <= 0 or missing,1
+sales_db,receipt_line,CLF-2025-000438|2,R04_BAD_AMOUNT,price or cost <= 0 or missing,1
+sales_db,receipt_line,CLF-2025-000442|3,R04_BAD_AMOUNT,price or cost <= 0 or missing,1
+sales_db,receipt_line,CLF-2025-000512|3,R02_BAD_QTY,quantity <= 0 or missing on a POSTED line,1
+sales_db,receipt_line,CLF-2025-000529|1,R07_ORPHAN_LINE,header record is missing,1
+sales_db,receipt_line,CLF-2025-000529|2,R07_ORPHAN_LINE,header record is missing,1
+sales_db,receipt_line,CLF-2025-000529|3,R07_ORPHAN_LINE,header record is missing,1
+sales_db,receipt_line,CLF-2025-000529|4,R07_ORPHAN_LINE,header record is missing,1
+sales_db,receipt_line,CLF-2025-000567|1,R05_UNKNOWN_BRANCH,branch matches no crosswalk rule,1
+sales_db,receipt_line,CLF-2025-000567|2,R05_UNKNOWN_BRANCH,branch matches no crosswalk rule,1
+sales_db,receipt_line,CLF-2025-000567|3,R05_UNKNOWN_BRANCH,branch matches no crosswalk rule,1
+sales_db,receipt_line,CLF-2025-000578|1,R03_BAD_DATE,"date missing, unparseable or after the batch cut-off",1
+sales_db,receipt_line,CLF-2026-000069|1,R04_BAD_AMOUNT,price or cost <= 0 or missing,1
+sales_db,receipt_line,CLF-2026-000080|1,R01_MISSING_PRODUCT,item code unknown to every crosswalk,1
+sales_db,receipt_line,CLF-2026-000091|2,R02_BAD_QTY,quantity <= 0 or missing on a POSTED line,1
+sales_db,receipt_line,CLF-2026-000095|3,R04_BAD_AMOUNT,price or cost <= 0 or missing,1
+sales_db,receipt_line,CLF-2026-000098|2,R01_MISSING_PRODUCT,item code unknown to every crosswalk,1
+sales_db,receipt_line,CLF-2026-000098|3,R01_MISSING_PRODUCT,item code unknown to every crosswalk,1
+sales_db,receipt_line,CLF-2026-000121|1,R01_MISSING_PRODUCT,item code unknown to every crosswalk,1
+sales_db,receipt_line,CLF-2026-000149|1,R01_MISSING_PRODUCT,item code unknown to every crosswalk,1
+sales_db,receipt_line,CLF-2026-000149|2,R01_MISSING_PRODUCT,item code unknown to every crosswalk,1
+sales_db,receipt_line,CLF-2026-000166|1,R04_BAD_AMOUNT,price or cost <= 0 or missing,1
+sales_db,receipt_line,CLF-2026-000168|2,R01_MISSING_PRODUCT,item code unknown to every crosswalk,1
+sales_db,receipt_line,CLF-2026-000208|1,R03_BAD_DATE,"date missing, unparseable or after the batch cut-off",1
+sales_db,receipt_line,CLF-2026-000213|3,R02_BAD_QTY,quantity <= 0 or missing on a POSTED line,1
+sales_db,receipt_line,CLF-2026-000264|2,R02_BAD_QTY,quantity <= 0 or missing on a POSTED line,1
+sales_db,receipt_line,CLF-2026-000271|3,R02_BAD_QTY,quantity <= 0 or missing on a POSTED line,1
+sales_db,receipt_line,CLF-2026-000374|1,R03_BAD_DATE,"date missing, unparseable or after the batch cut-off",1
+sales_db,receipt_line,CLF-2026-000405|4,R02_BAD_QTY,quantity <= 0 or missing on a POSTED line,1
+sales_db,receipt_line,GBG-2023-000008|2,R04_BAD_AMOUNT,price or cost <= 0 or missing,1
+sales_db,receipt_line,GBG-2024-000020|2,R04_BAD_AMOUNT,price or cost <= 0 or missing,1
+sales_db,receipt_line,GBG-2024-000027|2,R04_BAD_AMOUNT,price or cost <= 0 or missing,1
+sales_db,receipt_line,GBG-2024-000048|2,R04_BAD_AMOUNT,price or cost <= 0 or missing,1
+sales_db,receipt_line,GBG-2024-000077|2,R02_BAD_QTY,quantity <= 0 or missing on a POSTED line,1
+sales_db,receipt_line,GBG-2024-000096|4,R04_BAD_AMOUNT,price or cost <= 0 or missing,1
+sales_db,receipt_line,GBG-2024-000131|3,R02_BAD_QTY,quantity <= 0 or missing on a POSTED line,1
+sales_db,receipt_line,GBG-2024-000133|1,R03_BAD_DATE,"date missing, unparseable or after the batch cut-off",1
+sales_db,receipt_line,GBG-2024-000165|5,R01_MISSING_PRODUCT,item code unknown to every crosswalk,1
+sales_db,receipt_line,GBG-2024-000194|1,R03_BAD_DATE,"date missing, unparseable or after the batch cut-off",1
+sales_db,receipt_line,GBG-2024-000194|2,R03_BAD_DATE,"date missing, unparseable or after the batch cut-off",1
+sales_db,receipt_line,GBG-2024-000212|2,R01_MISSING_PRODUCT,item code unknown to every crosswalk,1
+sales_db,receipt_line,GBG-2024-000225|3,R01_MISSING_PRODUCT,item code unknown to every crosswalk,1
+sales_db,receipt_line,GBG-2024-000270|1,R01_MISSING_PRODUCT,item code unknown to every crosswalk,1
+sales_db,receipt_line,GBG-2024-000334|2,R02_BAD_QTY,quantity <= 0 or missing on a POSTED line,1
+sales_db,receipt_line,GBG-2025-000049|2,R02_BAD_QTY,quantity <= 0 or missing on a POSTED line,1
+sales_db,receipt_line,GBG-2025-000067|3,R01_MISSING_PRODUCT,item code unknown to every crosswalk,1
+sales_db,receipt_line,GBG-2025-000113|2,R01_MISSING_PRODUCT,item code unknown to every crosswalk,1
+sales_db,receipt_line,GBG-2025-000115|2,R04_BAD_AMOUNT,price or cost <= 0 or missing,1
+sales_db,receipt_line,GBG-2025-000142|1,R04_BAD_AMOUNT,price or cost <= 0 or missing,1
+sales_db,receipt_line,GBG-2025-000193|3,R02_BAD_QTY,quantity <= 0 or missing on a POSTED line,1
+sales_db,receipt_line,GBG-2025-000252|1,R01_MISSING_PRODUCT,item code unknown to every crosswalk,1
+sales_db,receipt_line,GBG-2025-000329|1,R01_MISSING_PRODUCT,item code unknown to every crosswalk,1
+sales_db,receipt_line,GBG-2025-000393|2,R04_BAD_AMOUNT,price or cost <= 0 or missing,1
+sales_db,receipt_line,GBG-2026-000011|3,R02_BAD_QTY,quantity <= 0 or missing on a POSTED line,1
+sales_db,receipt_line,GBG-2026-000023|2,R01_MISSING_PRODUCT,item code unknown to every crosswalk,1
+sales_db,receipt_line,GBG-2026-000042|2,R01_MISSING_PRODUCT,item code unknown to every crosswalk,1
+sales_db,receipt_line,GBG-2026-000049|2,R02_BAD_QTY,quantity <= 0 or missing on a POSTED line,1
+sales_db,receipt_line,GBG-2026-000070|1,R01_MISSING_PRODUCT,item code unknown to every crosswalk,1
+sales_db,receipt_line,GBG-2026-000193|2,R02_BAD_QTY,quantity <= 0 or missing on a POSTED line,1
+sales_db,receipt_line,GBG-2026-000197|3,R02_BAD_QTY,quantity <= 0 or missing on a POSTED line,1
+sales_db,receipt_line,GBG-2026-000206|1,R01_MISSING_PRODUCT,item code unknown to every crosswalk,1
+sales_db,receipt_line,GBG-2026-000214|2,R01_MISSING_PRODUCT,item code unknown to every crosswalk,1
+sales_db,receipt_line,GBG-2026-000255|1,R05_UNKNOWN_BRANCH,branch matches no crosswalk rule,1
+sales_db,receipt_line,GBG-2026-000255|2,R05_UNKNOWN_BRANCH,branch matches no crosswalk rule,1
+sales_db,receipt_line,GBG-2026-000273|1,R03_BAD_DATE,"date missing, unparseable or after the batch cut-off",1
+sales_db,receipt_line,GBG-2026-000273|2,R03_BAD_DATE,"date missing, unparseable or after the batch cut-off",1
+sales_db,receipt_line,GBG-2026-000273|3,R03_BAD_DATE,"date missing, unparseable or after the batch cut-off",1
+sales_db,receipt_line,GBG-2026-000281|2,R02_BAD_QTY,quantity <= 0 or missing on a POSTED line,1
+sales_db,receipt_line,GLJ-2024-000028|2,R04_BAD_AMOUNT,price or cost <= 0 or missing,1
+sales_db,receipt_line,GLJ-2024-000029|1,R02_BAD_QTY,quantity <= 0 or missing on a POSTED line,1
+sales_db,receipt_line,GLJ-2024-000097|1,R07_ORPHAN_LINE,header record is missing,1
+sales_db,receipt_line,GLJ-2024-000097|2,R07_ORPHAN_LINE,header record is missing,1
+sales_db,receipt_line,GLJ-2024-000097|3,R07_ORPHAN_LINE,header record is missing,1
+sales_db,receipt_line,GLJ-2024-000182|3,R02_BAD_QTY,quantity <= 0 or missing on a POSTED line,1
+sales_db,receipt_line,GLJ-2024-000206|2,R01_MISSING_PRODUCT,item code unknown to every crosswalk,1
+sales_db,receipt_line,GLJ-2024-000232|3,R02_BAD_QTY,quantity <= 0 or missing on a POSTED line,1
+sales_db,receipt_line,GLJ-2024-000293|1,R02_BAD_QTY,quantity <= 0 or missing on a POSTED line,1
+sales_db,receipt_line,GLJ-2024-000304|1,R01_MISSING_PRODUCT,item code unknown to every crosswalk,1
+sales_db,receipt_line,GLJ-2024-000309|2,R04_BAD_AMOUNT,price or cost <= 0 or missing,1
+sales_db,receipt_line,GLJ-2024-000341|1,R01_MISSING_PRODUCT,item code unknown to every crosswalk,1
+sales_db,receipt_line,GLJ-2024-000343|1,R04_BAD_AMOUNT,price or cost <= 0 or missing,1
+sales_db,receipt_line,GLJ-2025-000004|1,R04_BAD_AMOUNT,price or cost <= 0 or missing,1
+sales_db,receipt_line,GLJ-2025-000068|1,R01_MISSING_PRODUCT,item code unknown to every crosswalk,1
+sales_db,receipt_line,GLJ-2025-000074|1,R01_MISSING_PRODUCT,item code unknown to every crosswalk,1
+sales_db,receipt_line,GLJ-2025-000104|1,R01_MISSING_PRODUCT,item code unknown to every crosswalk,1
+sales_db,receipt_line,GLJ-2025-000119|1,R04_BAD_AMOUNT,price or cost <= 0 or missing,1
+sales_db,receipt_line,GLJ-2025-000125|1,R05_UNKNOWN_BRANCH,branch matches no crosswalk rule,1
+sales_db,receipt_line,GLJ-2025-000125|2,R05_UNKNOWN_BRANCH,branch matches no crosswalk rule,1
+sales_db,receipt_line,GLJ-2025-000125|3,R05_UNKNOWN_BRANCH,branch matches no crosswalk rule,1
+sales_db,receipt_line,GLJ-2025-000125|4,R05_UNKNOWN_BRANCH,branch matches no crosswalk rule,1
+sales_db,receipt_line,GLJ-2025-000128|3,R01_MISSING_PRODUCT,item code unknown to every crosswalk,1
+sales_db,receipt_line,GLJ-2025-000136|2,R02_BAD_QTY,quantity <= 0 or missing on a POSTED line,1
+sales_db,receipt_line,GLJ-2025-000176|1,R02_BAD_QTY,quantity <= 0 or missing on a POSTED line,1
+sales_db,receipt_line,GLJ-2025-000180|2,R01_MISSING_PRODUCT,item code unknown to every crosswalk,1
+sales_db,receipt_line,GLJ-2025-000189|4,R01_MISSING_PRODUCT,item code unknown to every crosswalk,1
+sales_db,receipt_line,GLJ-2025-000210|1,R03_BAD_DATE,"date missing, unparseable or after the batch cut-off",1
+sales_db,receipt_line,GLJ-2025-000219|1,R03_BAD_DATE,"date missing, unparseable or after the batch cut-off",1
+sales_db,receipt_line,GLJ-2025-000219|2,R03_BAD_DATE,"date missing, unparseable or after the batch cut-off",1
+sales_db,receipt_line,GLJ-2025-000229|1,R02_BAD_QTY,quantity <= 0 or missing on a POSTED line,1
+sales_db,receipt_line,GLJ-2025-000235|2,R04_BAD_AMOUNT,price or cost <= 0 or missing,1
+sales_db,receipt_line,GLJ-2025-000277|1,R01_MISSING_PRODUCT,item code unknown to every crosswalk,1
+sales_db,receipt_line,GLJ-2025-000381|1,R03_BAD_DATE,"date missing, unparseable or after the batch cut-off",1
+sales_db,receipt_line,GLJ-2025-000381|2,R03_BAD_DATE,"date missing, unparseable or after the batch cut-off",1
+sales_db,receipt_line,GLJ-2025-000388|2,R01_MISSING_PRODUCT,item code unknown to every crosswalk,1
+sales_db,receipt_line,GLJ-2025-000437|1,R03_BAD_DATE,"date missing, unparseable or after the batch cut-off",1
+sales_db,receipt_line,GLJ-2025-000437|2,R03_BAD_DATE,"date missing, unparseable or after the batch cut-off",1
+sales_db,receipt_line,GLJ-2025-000469|1,R02_BAD_QTY,quantity <= 0 or missing on a POSTED line,1
+sales_db,receipt_line,GLJ-2026-000035|1,R07_ORPHAN_LINE,header record is missing,1
+sales_db,receipt_line,GLJ-2026-000035|2,R07_ORPHAN_LINE,header record is missing,1
+sales_db,receipt_line,GLJ-2026-000035|3,R07_ORPHAN_LINE,header record is missing,1
+sales_db,receipt_line,GLJ-2026-000035|4,R07_ORPHAN_LINE,header record is missing,1
+sales_db,receipt_line,GLJ-2026-000098|2,R01_MISSING_PRODUCT,item code unknown to every crosswalk,1
+sales_db,receipt_line,GLJ-2026-000211|1,R05_UNKNOWN_BRANCH,branch matches no crosswalk rule,1
+sales_db,receipt_line,GLJ-2026-000254|1,R03_BAD_DATE,"date missing, unparseable or after the batch cut-off",1
+sales_db,receipt_line,GLJ-2026-000254|2,R03_BAD_DATE,"date missing, unparseable or after the batch cut-off",1
+sales_db,receipt_line,GLJ-2026-000254|3,R03_BAD_DATE,"date missing, unparseable or after the batch cut-off",1
+sales_db,receipt_line,GLJ-2026-000313|1,R02_BAD_QTY,quantity <= 0 or missing on a POSTED line,1
+sales_db,receipt_line,GLJ-2026-000374|1,R07_ORPHAN_LINE,header record is missing,1
+sales_db,receipt_line,GUL-2023-000012|1,R03_BAD_DATE,"date missing, unparseable or after the batch cut-off",1
+sales_db,receipt_line,GUL-2023-000031|1,R02_BAD_QTY,quantity <= 0 or missing on a POSTED line,1
+sales_db,receipt_line,GUL-2023-000032|2,R02_BAD_QTY,quantity <= 0 or missing on a POSTED line,1
+sales_db,receipt_line,GUL-2023-000063|1,R01_MISSING_PRODUCT,item code unknown to every crosswalk,1
+sales_db,receipt_line,GUL-2024-000049|1,R07_ORPHAN_LINE,header record is missing,1
+sales_db,receipt_line,GUL-2024-000049|2,R07_ORPHAN_LINE,header record is missing,1
+sales_db,receipt_line,GUL-2024-000054|1,R01_MISSING_PRODUCT,item code unknown to every crosswalk,1
+sales_db,receipt_line,GUL-2024-000059|1,R03_BAD_DATE,"date missing, unparseable or after the batch cut-off",1
+sales_db,receipt_line,GUL-2024-000059|2,R03_BAD_DATE,"date missing, unparseable or after the batch cut-off",1
+sales_db,receipt_line,GUL-2024-000083|4,R01_MISSING_PRODUCT,item code unknown to every crosswalk,1
+sales_db,receipt_line,GUL-2024-000095|1,R03_BAD_DATE,"date missing, unparseable or after the batch cut-off",1
+sales_db,receipt_line,GUL-2024-000095|2,R03_BAD_DATE,"date missing, unparseable or after the batch cut-off",1
+sales_db,receipt_line,GUL-2024-000095|3,R03_BAD_DATE,"date missing, unparseable or after the batch cut-off",1
+sales_db,receipt_line,GUL-2024-000103|1,R05_UNKNOWN_BRANCH,branch matches no crosswalk rule,1
+sales_db,receipt_line,GUL-2024-000103|2,R05_UNKNOWN_BRANCH,branch matches no crosswalk rule,1
+sales_db,receipt_line,GUL-2024-000103|3,R05_UNKNOWN_BRANCH,branch matches no crosswalk rule,1
+sales_db,receipt_line,GUL-2024-000120|2,R01_MISSING_PRODUCT,item code unknown to every crosswalk,1
+sales_db,receipt_line,GUL-2024-000124|1,R01_MISSING_PRODUCT,item code unknown to every crosswalk,1
+sales_db,receipt_line,GUL-2024-000161|1,R05_UNKNOWN_BRANCH,branch matches no crosswalk rule,1
+sales_db,receipt_line,GUL-2024-000161|2,R05_UNKNOWN_BRANCH,branch matches no crosswalk rule,1
+sales_db,receipt_line,GUL-2024-000163|1,R02_BAD_QTY,quantity <= 0 or missing on a POSTED line,1
+sales_db,receipt_line,GUL-2024-000303|2,R01_MISSING_PRODUCT,item code unknown to every crosswalk,1
+sales_db,receipt_line,GUL-2024-000396|1,R07_ORPHAN_LINE,header record is missing,1
+sales_db,receipt_line,GUL-2024-000402|3,R02_BAD_QTY,quantity <= 0 or missing on a POSTED line,1
+sales_db,receipt_line,GUL-2024-000406|3,R02_BAD_QTY,quantity <= 0 or missing on a POSTED line,1
+sales_db,receipt_line,GUL-2024-000425|1,R07_ORPHAN_LINE,header record is missing,1
+sales_db,receipt_line,GUL-2024-000425|2,R07_ORPHAN_LINE,header record is missing,1
+sales_db,receipt_line,GUL-2024-000425|3,R07_ORPHAN_LINE,header record is missing,1
+sales_db,receipt_line,GUL-2024-000457|2,R01_MISSING_PRODUCT,item code unknown to every crosswalk,1
+sales_db,receipt_line,GUL-2024-000458|2,R01_MISSING_PRODUCT,item code unknown to every crosswalk,1
+sales_db,receipt_line,GUL-2024-000460|1,R01_MISSING_PRODUCT,item code unknown to every crosswalk,1
+sales_db,receipt_line,GUL-2024-000476|1,R01_MISSING_PRODUCT,item code unknown to every crosswalk,1
+sales_db,receipt_line,GUL-2024-000482|2,R02_BAD_QTY,quantity <= 0 or missing on a POSTED line,1
+sales_db,receipt_line,GUL-2024-000490|6,R01_MISSING_PRODUCT,item code unknown to every crosswalk,1
+sales_db,receipt_line,GUL-2024-000527|1,R05_UNKNOWN_BRANCH,branch matches no crosswalk rule,1
+sales_db,receipt_line,GUL-2024-000527|2,R05_UNKNOWN_BRANCH,branch matches no crosswalk rule,1
+sales_db,receipt_line,GUL-2024-000527|3,R05_UNKNOWN_BRANCH,branch matches no crosswalk rule,1
+sales_db,receipt_line,GUL-2024-000528|1,R03_BAD_DATE,"date missing, unparseable or after the batch cut-off",1
+sales_db,receipt_line,GUL-2024-000528|2,R03_BAD_DATE,"date missing, unparseable or after the batch cut-off",1
+sales_db,receipt_line,GUL-2024-000535|2,R01_MISSING_PRODUCT,item code unknown to every crosswalk,1
+sales_db,receipt_line,GUL-2024-000537|3,R04_BAD_AMOUNT,price or cost <= 0 or missing,1
+sales_db,receipt_line,GUL-2024-000548|2,R01_MISSING_PRODUCT,item code unknown to every crosswalk,1
+sales_db,receipt_line,GUL-2025-000010|3,R02_BAD_QTY,quantity <= 0 or missing on a POSTED line,1
+sales_db,receipt_line,GUL-2025-000011|1,R01_MISSING_PRODUCT,item code unknown to every crosswalk,1
+sales_db,receipt_line,GUL-2025-000052|2,R02_BAD_QTY,quantity <= 0 or missing on a POSTED line,1
+sales_db,receipt_line,GUL-2025-000200|3,R01_MISSING_PRODUCT,item code unknown to every crosswalk,1
+sales_db,receipt_line,GUL-2025-000216|1,R01_MISSING_PRODUCT,item code unknown to every crosswalk,1
+sales_db,receipt_line,GUL-2025-000241|1,R01_MISSING_PRODUCT,item code unknown to every crosswalk,1
+sales_db,receipt_line,GUL-2025-000275|1,R02_BAD_QTY,quantity <= 0 or missing on a POSTED line,1
+sales_db,receipt_line,GUL-2025-000287|1,R03_BAD_DATE,"date missing, unparseable or after the batch cut-off",1
+sales_db,receipt_line,GUL-2025-000297|1,R02_BAD_QTY,quantity <= 0 or missing on a POSTED line,1
+sales_db,receipt_line,GUL-2025-000298|2,R02_BAD_QTY,quantity <= 0 or missing on a POSTED line,1
+sales_db,receipt_line,GUL-2025-000348|1,R04_BAD_AMOUNT,price or cost <= 0 or missing,1
+sales_db,receipt_line,GUL-2025-000362|1,R01_MISSING_PRODUCT,item code unknown to every crosswalk,1
+sales_db,receipt_line,GUL-2025-000444|2,R01_MISSING_PRODUCT,item code unknown to every crosswalk,1
+sales_db,receipt_line,GUL-2025-000457|4,R04_BAD_AMOUNT,price or cost <= 0 or missing,1
+sales_db,receipt_line,GUL-2025-000512|1,R01_MISSING_PRODUCT,item code unknown to every crosswalk,1
+sales_db,receipt_line,GUL-2025-000583|1,R01_MISSING_PRODUCT,item code unknown to every crosswalk,1
+sales_db,receipt_line,GUL-2025-000613|1,R01_MISSING_PRODUCT,item code unknown to every crosswalk,1
+sales_db,receipt_line,GUL-2025-000614|1,R03_BAD_DATE,"date missing, unparseable or after the batch cut-off",1
+sales_db,receipt_line,GUL-2025-000614|2,R03_BAD_DATE,"date missing, unparseable or after the batch cut-off",1
+sales_db,receipt_line,GUL-2025-000624|1,R02_BAD_QTY,quantity <= 0 or missing on a POSTED line,1
+sales_db,receipt_line,GUL-2026-000006|3,R02_BAD_QTY,quantity <= 0 or missing on a POSTED line,1
+sales_db,receipt_line,GUL-2026-000017|1,R02_BAD_QTY,quantity <= 0 or missing on a POSTED line,1
+sales_db,receipt_line,GUL-2026-000022|2,R01_MISSING_PRODUCT,item code unknown to every crosswalk,1
+sales_db,receipt_line,GUL-2026-000026|1,R03_BAD_DATE,"date missing, unparseable or after the batch cut-off",1
+sales_db,receipt_line,GUL-2026-000026|2,R03_BAD_DATE,"date missing, unparseable or after the batch cut-off",1
+sales_db,receipt_line,GUL-2026-000056|1,R02_BAD_QTY,quantity <= 0 or missing on a POSTED line,1
+sales_db,receipt_line,GUL-2026-000057|1,R02_BAD_QTY,quantity <= 0 or missing on a POSTED line,1
+sales_db,receipt_line,GUL-2026-000062|2,R01_MISSING_PRODUCT,item code unknown to every crosswalk,1
+sales_db,receipt_line,GUL-2026-000104|2,R02_BAD_QTY,quantity <= 0 or missing on a POSTED line,1
+sales_db,receipt_line,GUL-2026-000140|3,R01_MISSING_PRODUCT,item code unknown to every crosswalk,1
+sales_db,receipt_line,GUL-2026-000206|2,R02_BAD_QTY,quantity <= 0 or missing on a POSTED line,1
+sales_db,receipt_line,GUL-2026-000208|3,R01_MISSING_PRODUCT,item code unknown to every crosswalk,1
+sales_db,receipt_line,GUL-2026-000225|1,R01_MISSING_PRODUCT,item code unknown to every crosswalk,1
+sales_db,receipt_line,GUL-2026-000288|2,R04_BAD_AMOUNT,price or cost <= 0 or missing,1
+sales_db,receipt_line,GUL-2026-000292|2,R02_BAD_QTY,quantity <= 0 or missing on a POSTED line,1
+sales_db,receipt_line,GUL-2026-000366|2,R01_MISSING_PRODUCT,item code unknown to every crosswalk,1
+sales_db,receipt_line,MLR-2023-000043|1,R02_BAD_QTY,quantity <= 0 or missing on a POSTED line,1
+sales_db,receipt_line,MLR-2023-000045|1,R07_ORPHAN_LINE,header record is missing,1
+sales_db,receipt_line,MLR-2024-000009|1,R02_BAD_QTY,quantity <= 0 or missing on a POSTED line,1
+sales_db,receipt_line,MLR-2024-000040|2,R04_BAD_AMOUNT,price or cost <= 0 or missing,1
+sales_db,receipt_line,MLR-2024-000045|3,R01_MISSING_PRODUCT,item code unknown to every crosswalk,1
+sales_db,receipt_line,MLR-2024-000103|2,R02_BAD_QTY,quantity <= 0 or missing on a POSTED line,1
+sales_db,receipt_line,MLR-2024-000107|1,R02_BAD_QTY,quantity <= 0 or missing on a POSTED line,1
+sales_db,receipt_line,MLR-2024-000135|1,R01_MISSING_PRODUCT,item code unknown to every crosswalk,1
+sales_db,receipt_line,MLR-2024-000140|1,R04_BAD_AMOUNT,price or cost <= 0 or missing,1
+sales_db,receipt_line,MLR-2024-000144|1,R04_BAD_AMOUNT,price or cost <= 0 or missing,1
+sales_db,receipt_line,MLR-2024-000210|3,R02_BAD_QTY,quantity <= 0 or missing on a POSTED line,1
+sales_db,receipt_line,MLR-2024-000238|1,R02_BAD_QTY,quantity <= 0 or missing on a POSTED line,1
+sales_db,receipt_line,MLR-2024-000255|1,R03_BAD_DATE,"date missing, unparseable or after the batch cut-off",1
+sales_db,receipt_line,MLR-2024-000255|2,R03_BAD_DATE,"date missing, unparseable or after the batch cut-off",1
+sales_db,receipt_line,MLR-2024-000299|2,R04_BAD_AMOUNT,price or cost <= 0 or missing,1
+sales_db,receipt_line,MLR-2025-000012|2,R01_MISSING_PRODUCT,item code unknown to every crosswalk,1
+sales_db,receipt_line,MLR-2025-000036|1,R01_MISSING_PRODUCT,item code unknown to every crosswalk,1
+sales_db,receipt_line,MLR-2025-000054|1,R01_MISSING_PRODUCT,item code unknown to every crosswalk,1
+sales_db,receipt_line,MLR-2025-000067|1,R07_ORPHAN_LINE,header record is missing,1
+sales_db,receipt_line,MLR-2025-000067|2,R07_ORPHAN_LINE,header record is missing,1
+sales_db,receipt_line,MLR-2025-000067|3,R07_ORPHAN_LINE,header record is missing,1
+sales_db,receipt_line,MLR-2025-000067|4,R07_ORPHAN_LINE,header record is missing,1
+sales_db,receipt_line,MLR-2025-000093|1,R04_BAD_AMOUNT,price or cost <= 0 or missing,1
+sales_db,receipt_line,MLR-2025-000098|2,R02_BAD_QTY,quantity <= 0 or missing on a POSTED line,1
+sales_db,receipt_line,MLR-2025-000120|1,R03_BAD_DATE,"date missing, unparseable or after the batch cut-off",1
+sales_db,receipt_line,MLR-2025-000179|1,R04_BAD_AMOUNT,price or cost <= 0 or missing,1
+sales_db,receipt_line,MLR-2025-000191|1,R01_MISSING_PRODUCT,item code unknown to every crosswalk,1
+sales_db,receipt_line,MLR-2025-000227|2,R04_BAD_AMOUNT,price or cost <= 0 or missing,1
+sales_db,receipt_line,MLR-2025-000228|2,R01_MISSING_PRODUCT,item code unknown to every crosswalk,1
+sales_db,receipt_line,MLR-2025-000244|2,R02_BAD_QTY,quantity <= 0 or missing on a POSTED line,1
+sales_db,receipt_line,MLR-2025-000346|3,R02_BAD_QTY,quantity <= 0 or missing on a POSTED line,1
+sales_db,receipt_line,MLR-2026-000008|1,R05_UNKNOWN_BRANCH,branch matches no crosswalk rule,1
+sales_db,receipt_line,MLR-2026-000008|2,R05_UNKNOWN_BRANCH,branch matches no crosswalk rule,1
+sales_db,receipt_line,MLR-2026-000009|2,R01_MISSING_PRODUCT,item code unknown to every crosswalk,1
+sales_db,receipt_line,MLR-2026-000011|1,R04_BAD_AMOUNT,price or cost <= 0 or missing,1
+sales_db,receipt_line,MLR-2026-000017|1,R01_MISSING_PRODUCT,item code unknown to every crosswalk,1
+sales_db,receipt_line,MLR-2026-000033|2,R01_MISSING_PRODUCT,item code unknown to every crosswalk,1
+sales_db,receipt_line,MLR-2026-000065|4,R01_MISSING_PRODUCT,item code unknown to every crosswalk,1
+sales_db,receipt_line,MLR-2026-000075|2,R04_BAD_AMOUNT,price or cost <= 0 or missing,1
+sales_db,receipt_line,MLR-2026-000120|3,R01_MISSING_PRODUCT,item code unknown to every crosswalk,1
+sales_db,receipt_line,MLR-2026-000122|1,R07_ORPHAN_LINE,header record is missing,1
+sales_db,receipt_line,MLR-2026-000227|1,R01_MISSING_PRODUCT,item code unknown to every crosswalk,1
+sales_db,receipt_line,MLR-2026-000258|1,R01_MISSING_PRODUCT,item code unknown to every crosswalk,1
+sales_db,receipt_line,MLR-2026-000264|1,R05_UNKNOWN_BRANCH,branch matches no crosswalk rule,1
+sales_db,receipt_line,MLR-2026-000264|2,R05_UNKNOWN_BRANCH,branch matches no crosswalk rule,1
+sales_db,receipt_line,NNZ-2023-000053|1,R01_MISSING_PRODUCT,item code unknown to every crosswalk,1
+sales_db,receipt_line,NNZ-2024-000056|3,R01_MISSING_PRODUCT,item code unknown to every crosswalk,1
+sales_db,receipt_line,NNZ-2024-000059|1,R05_UNKNOWN_BRANCH,branch matches no crosswalk rule,1
+sales_db,receipt_line,NNZ-2024-000069|4,R01_MISSING_PRODUCT,item code unknown to every crosswalk,1
+sales_db,receipt_line,NNZ-2024-000079|2,R02_BAD_QTY,quantity <= 0 or missing on a POSTED line,1
+sales_db,receipt_line,NNZ-2024-000104|1,R02_BAD_QTY,quantity <= 0 or missing on a POSTED line,1
+sales_db,receipt_line,NNZ-2024-000182|1,R03_BAD_DATE,"date missing, unparseable or after the batch cut-off",1
+sales_db,receipt_line,NNZ-2024-000187|1,R03_BAD_DATE,"date missing, unparseable or after the batch cut-off",1
+sales_db,receipt_line,NNZ-2024-000187|2,R03_BAD_DATE,"date missing, unparseable or after the batch cut-off",1
+sales_db,receipt_line,NNZ-2024-000192|1,R05_UNKNOWN_BRANCH,branch matches no crosswalk rule,1
+sales_db,receipt_line,NNZ-2024-000192|2,R05_UNKNOWN_BRANCH,branch matches no crosswalk rule,1
+sales_db,receipt_line,NNZ-2024-000208|3,R02_BAD_QTY,quantity <= 0 or missing on a POSTED line,1
+sales_db,receipt_line,NNZ-2024-000225|2,R04_BAD_AMOUNT,price or cost <= 0 or missing,1
+sales_db,receipt_line,NNZ-2024-000227|4,R02_BAD_QTY,quantity <= 0 or missing on a POSTED line,1
+sales_db,receipt_line,NNZ-2024-000276|2,R02_BAD_QTY,quantity <= 0 or missing on a POSTED line,1
+sales_db,receipt_line,NNZ-2024-000297|1,R05_UNKNOWN_BRANCH,branch matches no crosswalk rule,1
+sales_db,receipt_line,NNZ-2024-000297|2,R05_UNKNOWN_BRANCH,branch matches no crosswalk rule,1
+sales_db,receipt_line,NNZ-2024-000297|3,R05_UNKNOWN_BRANCH,branch matches no crosswalk rule,1
+sales_db,receipt_line,NNZ-2024-000297|4,R05_UNKNOWN_BRANCH,branch matches no crosswalk rule,1
+sales_db,receipt_line,NNZ-2024-000297|5,R05_UNKNOWN_BRANCH,branch matches no crosswalk rule,1
+sales_db,receipt_line,NNZ-2024-000297|6,R05_UNKNOWN_BRANCH,branch matches no crosswalk rule,1
+sales_db,receipt_line,NNZ-2024-000309|2,R01_MISSING_PRODUCT,item code unknown to every crosswalk,1
+sales_db,receipt_line,NNZ-2024-000338|1,R03_BAD_DATE,"date missing, unparseable or after the batch cut-off",1
+sales_db,receipt_line,NNZ-2024-000338|2,R03_BAD_DATE,"date missing, unparseable or after the batch cut-off",1
+sales_db,receipt_line,NNZ-2024-000442|1,R04_BAD_AMOUNT,price or cost <= 0 or missing,1
+sales_db,receipt_line,NNZ-2024-000480|1,R03_BAD_DATE,"date missing, unparseable or after the batch cut-off",1
+sales_db,receipt_line,NNZ-2024-000480|2,R03_BAD_DATE,"date missing, unparseable or after the batch cut-off",1
+sales_db,receipt_line,NNZ-2024-000480|3,R03_BAD_DATE,"date missing, unparseable or after the batch cut-off",1
+sales_db,receipt_line,NNZ-2024-000488|4,R04_BAD_AMOUNT,price or cost <= 0 or missing,1
+sales_db,receipt_line,NNZ-2025-000039|1,R02_BAD_QTY,quantity <= 0 or missing on a POSTED line,1
+sales_db,receipt_line,NNZ-2025-000065|1,R02_BAD_QTY,quantity <= 0 or missing on a POSTED line,1
+sales_db,receipt_line,NNZ-2025-000117|2,R02_BAD_QTY,quantity <= 0 or missing on a POSTED line,1
+sales_db,receipt_line,NNZ-2025-000169|3,R01_MISSING_PRODUCT,item code unknown to every crosswalk,1
+sales_db,receipt_line,NNZ-2025-000210|3,R01_MISSING_PRODUCT,item code unknown to every crosswalk,1
+sales_db,receipt_line,NNZ-2025-000240|5,R01_MISSING_PRODUCT,item code unknown to every crosswalk,1
+sales_db,receipt_line,NNZ-2025-000250|2,R01_MISSING_PRODUCT,item code unknown to every crosswalk,1
+sales_db,receipt_line,NNZ-2025-000286|1,R05_UNKNOWN_BRANCH,branch matches no crosswalk rule,1
+sales_db,receipt_line,NNZ-2025-000286|2,R05_UNKNOWN_BRANCH,branch matches no crosswalk rule,1
+sales_db,receipt_line,NNZ-2025-000286|3,R05_UNKNOWN_BRANCH,branch matches no crosswalk rule,1
+sales_db,receipt_line,NNZ-2025-000286|4,R05_UNKNOWN_BRANCH,branch matches no crosswalk rule,1
+sales_db,receipt_line,NNZ-2025-000425|1,R03_BAD_DATE,"date missing, unparseable or after the batch cut-off",1
+sales_db,receipt_line,NNZ-2025-000484|1,R01_MISSING_PRODUCT,item code unknown to every crosswalk,1
+sales_db,receipt_line,NNZ-2025-000500|2,R04_BAD_AMOUNT,price or cost <= 0 or missing,1
+sales_db,receipt_line,NNZ-2025-000502|3,R04_BAD_AMOUNT,price or cost <= 0 or missing,1
+sales_db,receipt_line,NNZ-2026-000020|3,R02_BAD_QTY,quantity <= 0 or missing on a POSTED line,1
+sales_db,receipt_line,NNZ-2026-000026|4,R02_BAD_QTY,quantity <= 0 or missing on a POSTED line,1
+sales_db,receipt_line,NNZ-2026-000032|1,R04_BAD_AMOUNT,price or cost <= 0 or missing,1
+sales_db,receipt_line,NNZ-2026-000049|1,R04_BAD_AMOUNT,price or cost <= 0 or missing,1
+sales_db,receipt_line,NNZ-2026-000096|3,R02_BAD_QTY,quantity <= 0 or missing on a POSTED line,1
+sales_db,receipt_line,NNZ-2026-000111|1,R02_BAD_QTY,quantity <= 0 or missing on a POSTED line,1
+sales_db,receipt_line,NNZ-2026-000114|2,R01_MISSING_PRODUCT,item code unknown to every crosswalk,1
+sales_db,receipt_line,NNZ-2026-000115|1,R02_BAD_QTY,quantity <= 0 or missing on a POSTED line,1
+sales_db,receipt_line,NNZ-2026-000116|1,R04_BAD_AMOUNT,price or cost <= 0 or missing,1
+sales_db,receipt_line,NNZ-2026-000123|5,R02_BAD_QTY,quantity <= 0 or missing on a POSTED line,1
+sales_db,receipt_line,NNZ-2026-000135|1,R01_MISSING_PRODUCT,item code unknown to every crosswalk,1
+sales_db,receipt_line,NNZ-2026-000168|2,R01_MISSING_PRODUCT,item code unknown to every crosswalk,1
+sales_db,receipt_line,NNZ-2026-000187|2,R02_BAD_QTY,quantity <= 0 or missing on a POSTED line,1
+sales_db,receipt_line,NNZ-2026-000188|1,R02_BAD_QTY,quantity <= 0 or missing on a POSTED line,1
+sales_db,receipt_line,NNZ-2026-000239|1,R01_MISSING_PRODUCT,item code unknown to every crosswalk,1
+sales_db,receipt_line,NNZ-2026-000244|1,R07_ORPHAN_LINE,header record is missing,1
+sales_db,receipt_line,NNZ-2026-000244|2,R07_ORPHAN_LINE,header record is missing,1
+sales_db,receipt_line,NNZ-2026-000244|3,R07_ORPHAN_LINE,header record is missing,1
+sales_db,receipt_line,NNZ-2026-000248|1,R01_MISSING_PRODUCT,item code unknown to every crosswalk,1
+sales_db,receipt_line,NNZ-2026-000276|1,R04_BAD_AMOUNT,price or cost <= 0 or missing,1
+sales_db,receipt_line,NNZ-2026-000302|1,R05_UNKNOWN_BRANCH,branch matches no crosswalk rule,1
+sales_db,receipt_line,NNZ-2026-000332|4,R02_BAD_QTY,quantity <= 0 or missing on a POSTED line,1
+sales_db,receipt_line,NNZ-2026-000361|1,R02_BAD_QTY,quantity <= 0 or missing on a POSTED line,1
+sales_db,receipt_line,NNZ-2026-000389|1,R07_ORPHAN_LINE,header record is missing,1
+sales_db,receipt_line,NNZ-2026-000389|2,R07_ORPHAN_LINE,header record is missing,1
+sales_db,receipt_line,NNZ-2026-000389|3,R07_ORPHAN_LINE,header record is missing,1
+sales_db,receipt_line,NNZ-2026-000389|4,R07_ORPHAN_LINE,header record is missing,1
+sales_db,receipt_line,NNZ-2026-000389|5,R07_ORPHAN_LINE,header record is missing,1
+sales_db,receipt_line,NZM-2023-000015|1,R05_UNKNOWN_BRANCH,branch matches no crosswalk rule,1
+sales_db,receipt_line,NZM-2023-000039|1,R01_MISSING_PRODUCT,item code unknown to every crosswalk,1
+sales_db,receipt_line,NZM-2024-000060|1,R01_MISSING_PRODUCT,item code unknown to every crosswalk,1
+sales_db,receipt_line,NZM-2024-000069|3,R01_MISSING_PRODUCT,item code unknown to every crosswalk,1
+sales_db,receipt_line,NZM-2024-000086|3,R04_BAD_AMOUNT,price or cost <= 0 or missing,1
+sales_db,receipt_line,NZM-2024-000141|1,R01_MISSING_PRODUCT,item code unknown to every crosswalk,1
+sales_db,receipt_line,NZM-2024-000177|1,R07_ORPHAN_LINE,header record is missing,1
+sales_db,receipt_line,NZM-2024-000218|1,R02_BAD_QTY,quantity <= 0 or missing on a POSTED line,1
+sales_db,receipt_line,NZM-2024-000224|2,R04_BAD_AMOUNT,price or cost <= 0 or missing,1
+sales_db,receipt_line,NZM-2024-000225|4,R01_MISSING_PRODUCT,item code unknown to every crosswalk,1
+sales_db,receipt_line,NZM-2024-000244|1,R01_MISSING_PRODUCT,item code unknown to every crosswalk,1
+sales_db,receipt_line,NZM-2024-000269|1,R01_MISSING_PRODUCT,item code unknown to every crosswalk,1
+sales_db,receipt_line,NZM-2024-000275|2,R02_BAD_QTY,quantity <= 0 or missing on a POSTED line,1
+sales_db,receipt_line,NZM-2024-000351|3,R01_MISSING_PRODUCT,item code unknown to every crosswalk,1
+sales_db,receipt_line,NZM-2024-000359|3,R01_MISSING_PRODUCT,item code unknown to every crosswalk,1
+sales_db,receipt_line,NZM-2024-000362|1,R01_MISSING_PRODUCT,item code unknown to every crosswalk,1
+sales_db,receipt_line,NZM-2024-000367|1,R02_BAD_QTY,quantity <= 0 or missing on a POSTED line,1
+sales_db,receipt_line,NZM-2024-000367|2,R04_BAD_AMOUNT,price or cost <= 0 or missing,1
+sales_db,receipt_line,NZM-2025-000002|1,R01_MISSING_PRODUCT,item code unknown to every crosswalk,1
+sales_db,receipt_line,NZM-2025-000013|3,R02_BAD_QTY,quantity <= 0 or missing on a POSTED line,1
+sales_db,receipt_line,NZM-2025-000029|1,R07_ORPHAN_LINE,header record is missing,1
+sales_db,receipt_line,NZM-2025-000070|1,R02_BAD_QTY,quantity <= 0 or missing on a POSTED line,1
+sales_db,receipt_line,NZM-2025-000083|1,R02_BAD_QTY,quantity <= 0 or missing on a POSTED line,1
+sales_db,receipt_line,NZM-2025-000106|1,R01_MISSING_PRODUCT,item code unknown to every crosswalk,1
+sales_db,receipt_line,NZM-2025-000173|1,R04_BAD_AMOUNT,price or cost <= 0 or missing,1
+sales_db,receipt_line,NZM-2025-000199|1,R02_BAD_QTY,quantity <= 0 or missing on a POSTED line,1
+sales_db,receipt_line,NZM-2025-000216|2,R02_BAD_QTY,quantity <= 0 or missing on a POSTED line,1
+sales_db,receipt_line,NZM-2025-000231|1,R07_ORPHAN_LINE,header record is missing,1
+sales_db,receipt_line,NZM-2025-000231|2,R07_ORPHAN_LINE,header record is missing,1
+sales_db,receipt_line,NZM-2025-000231|3,R07_ORPHAN_LINE,header record is missing,1
+sales_db,receipt_line,NZM-2025-000245|2,R04_BAD_AMOUNT,price or cost <= 0 or missing,1
+sales_db,receipt_line,NZM-2025-000263|1,R01_MISSING_PRODUCT,item code unknown to every crosswalk,1
+sales_db,receipt_line,NZM-2025-000276|1,R04_BAD_AMOUNT,price or cost <= 0 or missing,1
+sales_db,receipt_line,NZM-2025-000299|3,R02_BAD_QTY,quantity <= 0 or missing on a POSTED line,1
+sales_db,receipt_line,NZM-2025-000321|1,R01_MISSING_PRODUCT,item code unknown to every crosswalk,1
+sales_db,receipt_line,NZM-2025-000345|1,R04_BAD_AMOUNT,price or cost <= 0 or missing,1
+sales_db,receipt_line,NZM-2025-000354|2,R02_BAD_QTY,quantity <= 0 or missing on a POSTED line,1
+sales_db,receipt_line,NZM-2026-000032|1,R03_BAD_DATE,"date missing, unparseable or after the batch cut-off",1
+sales_db,receipt_line,NZM-2026-000038|3,R04_BAD_AMOUNT,price or cost <= 0 or missing,1
+sales_db,receipt_line,NZM-2026-000059|1,R01_MISSING_PRODUCT,item code unknown to every crosswalk,1
+sales_db,receipt_line,NZM-2026-000065|1,R03_BAD_DATE,"date missing, unparseable or after the batch cut-off",1
+sales_db,receipt_line,NZM-2026-000065|2,R03_BAD_DATE,"date missing, unparseable or after the batch cut-off",1
+sales_db,receipt_line,NZM-2026-000083|1,R03_BAD_DATE,"date missing, unparseable or after the batch cut-off",1
+sales_db,receipt_line,NZM-2026-000083|2,R03_BAD_DATE,"date missing, unparseable or after the batch cut-off",1
+sales_db,receipt_line,NZM-2026-000083|3,R03_BAD_DATE,"date missing, unparseable or after the batch cut-off",1
+sales_db,receipt_line,NZM-2026-000119|2,R04_BAD_AMOUNT,price or cost <= 0 or missing,1
+sales_db,receipt_line,NZM-2026-000162|1,R01_MISSING_PRODUCT,item code unknown to every crosswalk,1
+sales_db,receipt_line,NZM-2026-000219|1,R04_BAD_AMOUNT,price or cost <= 0 or missing,1
+sales_db,receipt_line,NZM-2026-000226|1,R03_BAD_DATE,"date missing, unparseable or after the batch cut-off",1
+sales_db,receipt_line,NZM-2026-000226|2,R03_BAD_DATE,"date missing, unparseable or after the batch cut-off",1
+sales_db,receipt_line,NZM-2026-000245|3,R02_BAD_QTY,quantity <= 0 or missing on a POSTED line,1
+sales_db,receipt_line,ORG-2024-000054|2,R01_MISSING_PRODUCT,item code unknown to every crosswalk,1
+sales_db,receipt_line,ORG-2024-000091|2,R01_MISSING_PRODUCT,item code unknown to every crosswalk,1
+sales_db,receipt_line,ORG-2024-000103|1,R04_BAD_AMOUNT,price or cost <= 0 or missing,1
+sales_db,receipt_line,ORG-2024-000164|1,R05_UNKNOWN_BRANCH,branch matches no crosswalk rule,1
+sales_db,receipt_line,ORG-2024-000164|2,R05_UNKNOWN_BRANCH,branch matches no crosswalk rule,1
+sales_db,receipt_line,ORG-2024-000213|3,R01_MISSING_PRODUCT,item code unknown to every crosswalk,1
+sales_db,receipt_line,ORG-2024-000231|2,R04_BAD_AMOUNT,price or cost <= 0 or missing,1
+sales_db,receipt_line,ORG-2025-000015|2,R04_BAD_AMOUNT,price or cost <= 0 or missing,1
+sales_db,receipt_line,ORG-2025-000025|1,R04_BAD_AMOUNT,price or cost <= 0 or missing,1
+sales_db,receipt_line,ORG-2025-000033|5,R02_BAD_QTY,quantity <= 0 or missing on a POSTED line,1
+sales_db,receipt_line,ORG-2025-000058|2,R01_MISSING_PRODUCT,item code unknown to every crosswalk,1
+sales_db,receipt_line,ORG-2025-000060|1,R07_ORPHAN_LINE,header record is missing,1
+sales_db,receipt_line,ORG-2025-000060|2,R07_ORPHAN_LINE,header record is missing,1
+sales_db,receipt_line,ORG-2025-000068|2,R01_MISSING_PRODUCT,item code unknown to every crosswalk,1
+sales_db,receipt_line,ORG-2025-000104|1,R03_BAD_DATE,"date missing, unparseable or after the batch cut-off",1
+sales_db,receipt_line,ORG-2025-000104|2,R03_BAD_DATE,"date missing, unparseable or after the batch cut-off",1
+sales_db,receipt_line,ORG-2025-000186|1,R07_ORPHAN_LINE,header record is missing,1
+sales_db,receipt_line,ORG-2025-000186|2,R07_ORPHAN_LINE,header record is missing,1
+sales_db,receipt_line,ORG-2025-000203|2,R02_BAD_QTY,quantity <= 0 or missing on a POSTED line,1
+sales_db,receipt_line,ORG-2025-000206|1,R04_BAD_AMOUNT,price or cost <= 0 or missing,1
+sales_db,receipt_line,ORG-2025-000247|1,R05_UNKNOWN_BRANCH,branch matches no crosswalk rule,1
+sales_db,receipt_line,ORG-2025-000247|2,R05_UNKNOWN_BRANCH,branch matches no crosswalk rule,1
+sales_db,receipt_line,ORG-2025-000287|2,R01_MISSING_PRODUCT,item code unknown to every crosswalk,1
+sales_db,receipt_line,ORG-2026-000010|2,R04_BAD_AMOUNT,price or cost <= 0 or missing,1
+sales_db,receipt_line,ORG-2026-000075|2,R01_MISSING_PRODUCT,item code unknown to every crosswalk,1
+sales_db,receipt_line,ORG-2026-000102|1,R03_BAD_DATE,"date missing, unparseable or after the batch cut-off",1
+sales_db,receipt_line,ORG-2026-000109|2,R04_BAD_AMOUNT,price or cost <= 0 or missing,1
+sales_db,receipt_line,ORG-2026-000113|1,R01_MISSING_PRODUCT,item code unknown to every crosswalk,1
+sales_db,receipt_line,ORG-2026-000126|3,R04_BAD_AMOUNT,price or cost <= 0 or missing,1
+sales_db,receipt_line,PEC-2023-000012|1,R01_MISSING_PRODUCT,item code unknown to every crosswalk,1
+sales_db,receipt_line,PEC-2023-000012|2,R04_BAD_AMOUNT,price or cost <= 0 or missing,1
+sales_db,receipt_line,PEC-2023-000013|1,R05_UNKNOWN_BRANCH,branch matches no crosswalk rule,1
+sales_db,receipt_line,PEC-2023-000013|2,R05_UNKNOWN_BRANCH,branch matches no crosswalk rule,1
+sales_db,receipt_line,PEC-2023-000042|2,R02_BAD_QTY,quantity <= 0 or missing on a POSTED line,1
+sales_db,receipt_line,PEC-2024-000064|2,R01_MISSING_PRODUCT,item code unknown to every crosswalk,1
+sales_db,receipt_line,PEC-2024-000078|1,R05_UNKNOWN_BRANCH,branch matches no crosswalk rule,1
+sales_db,receipt_line,PEC-2024-000078|2,R05_UNKNOWN_BRANCH,branch matches no crosswalk rule,1
+sales_db,receipt_line,PEC-2024-000118|1,R05_UNKNOWN_BRANCH,branch matches no crosswalk rule,1
+sales_db,receipt_line,PEC-2024-000118|2,R05_UNKNOWN_BRANCH,branch matches no crosswalk rule,1
+sales_db,receipt_line,PEC-2024-000127|2,R01_MISSING_PRODUCT,item code unknown to every crosswalk,1
+sales_db,receipt_line,PEC-2024-000139|2,R04_BAD_AMOUNT,price or cost <= 0 or missing,1
+sales_db,receipt_line,PEC-2024-000265|1,R05_UNKNOWN_BRANCH,branch matches no crosswalk rule,1
+sales_db,receipt_line,PEC-2024-000265|2,R05_UNKNOWN_BRANCH,branch matches no crosswalk rule,1
+sales_db,receipt_line,PEC-2024-000324|1,R01_MISSING_PRODUCT,item code unknown to every crosswalk,1
+sales_db,receipt_line,PEC-2024-000333|2,R01_MISSING_PRODUCT,item code unknown to every crosswalk,1
+sales_db,receipt_line,PEC-2024-000341|2,R01_MISSING_PRODUCT,item code unknown to every crosswalk,1
+sales_db,receipt_line,PEC-2024-000347|3,R01_MISSING_PRODUCT,item code unknown to every crosswalk,1
+sales_db,receipt_line,PEC-2024-000354|1,R03_BAD_DATE,"date missing, unparseable or after the batch cut-off",1
+sales_db,receipt_line,PEC-2024-000355|3,R01_MISSING_PRODUCT,item code unknown to every crosswalk,1
+sales_db,receipt_line,PEC-2024-000382|1,R04_BAD_AMOUNT,price or cost <= 0 or missing,1
+sales_db,receipt_line,PEC-2025-000054|3,R01_MISSING_PRODUCT,item code unknown to every crosswalk,1
+sales_db,receipt_line,PEC-2025-000084|2,R01_MISSING_PRODUCT,item code unknown to every crosswalk,1
+sales_db,receipt_line,PEC-2025-000095|1,R01_MISSING_PRODUCT,item code unknown to every crosswalk,1
+sales_db,receipt_line,PEC-2025-000113|1,R02_BAD_QTY,quantity <= 0 or missing on a POSTED line,1
+sales_db,receipt_line,PEC-2025-000116|1,R01_MISSING_PRODUCT,item code unknown to every crosswalk,1
+sales_db,receipt_line,PEC-2025-000188|3,R01_MISSING_PRODUCT,item code unknown to every crosswalk,1
+sales_db,receipt_line,PEC-2025-000297|3,R02_BAD_QTY,quantity <= 0 or missing on a POSTED line,1
+sales_db,receipt_line,PEC-2025-000301|4,R04_BAD_AMOUNT,price or cost <= 0 or missing,1
+sales_db,receipt_line,PEC-2025-000315|1,R04_BAD_AMOUNT,price or cost <= 0 or missing,1
+sales_db,receipt_line,PEC-2025-000320|2,R01_MISSING_PRODUCT,item code unknown to every crosswalk,1
+sales_db,receipt_line,PEC-2025-000330|1,R03_BAD_DATE,"date missing, unparseable or after the batch cut-off",1
+sales_db,receipt_line,PEC-2025-000330|2,R03_BAD_DATE,"date missing, unparseable or after the batch cut-off",1
+sales_db,receipt_line,PEC-2025-000330|3,R03_BAD_DATE,"date missing, unparseable or after the batch cut-off",1
+sales_db,receipt_line,PEC-2025-000347|2,R02_BAD_QTY,quantity <= 0 or missing on a POSTED line,1
+sales_db,receipt_line,PEC-2025-000405|3,R02_BAD_QTY,quantity <= 0 or missing on a POSTED line,1
+sales_db,receipt_line,PEC-2025-000420|1,R01_MISSING_PRODUCT,item code unknown to every crosswalk,1
+sales_db,receipt_line,PEC-2025-000448|1,R05_UNKNOWN_BRANCH,branch matches no crosswalk rule,1
+sales_db,receipt_line,PEC-2025-000448|2,R05_UNKNOWN_BRANCH,branch matches no crosswalk rule,1
+sales_db,receipt_line,PEC-2025-000448|3,R05_UNKNOWN_BRANCH,branch matches no crosswalk rule,1
+sales_db,receipt_line,PEC-2025-000448|4,R05_UNKNOWN_BRANCH,branch matches no crosswalk rule,1
+sales_db,receipt_line,PEC-2025-000479|2,R02_BAD_QTY,quantity <= 0 or missing on a POSTED line,1
+sales_db,receipt_line,PEC-2026-000007|1,R04_BAD_AMOUNT,price or cost <= 0 or missing,1
+sales_db,receipt_line,PEC-2026-000013|3,R01_MISSING_PRODUCT,item code unknown to every crosswalk,1
+sales_db,receipt_line,PEC-2026-000038|1,R04_BAD_AMOUNT,price or cost <= 0 or missing,1
+sales_db,receipt_line,PEC-2026-000043|3,R01_MISSING_PRODUCT,item code unknown to every crosswalk,1
+sales_db,receipt_line,PEC-2026-000059|1,R02_BAD_QTY,quantity <= 0 or missing on a POSTED line,1
+sales_db,receipt_line,PEC-2026-000080|2,R04_BAD_AMOUNT,price or cost <= 0 or missing,1
+sales_db,receipt_line,PEC-2026-000159|1,R04_BAD_AMOUNT,price or cost <= 0 or missing,1
+sales_db,receipt_line,PEC-2026-000217|1,R02_BAD_QTY,quantity <= 0 or missing on a POSTED line,1
+sales_db,receipt_line,PEC-2026-000243|1,R01_MISSING_PRODUCT,item code unknown to every crosswalk,1
+sales_db,receipt_line,PEC-2026-000265|3,R01_MISSING_PRODUCT,item code unknown to every crosswalk,1
+sales_db,receipt_line,PEC-2026-000270|1,R03_BAD_DATE,"date missing, unparseable or after the batch cut-off",1
+sales_db,receipt_line,PEC-2026-000303|1,R07_ORPHAN_LINE,header record is missing,1
+sales_db,receipt_line,PEC-2026-000303|2,R07_ORPHAN_LINE,header record is missing,1
+sales_db,receipt_line,PEC-2026-000303|3,R07_ORPHAN_LINE,header record is missing,1
+sales_db,receipt_line,PEC-2026-000320|1,R07_ORPHAN_LINE,header record is missing,1
+sales_db,receipt_line,PEC-2026-000320|2,R07_ORPHAN_LINE,header record is missing,1
+sales_db,receipt_line,PEC-2026-000320|3,R07_ORPHAN_LINE,header record is missing,1
+sales_db,receipt_line,PEC-2026-000320|4,R07_ORPHAN_LINE,header record is missing,1
+sales_db,receipt_line,PEC-2026-000320|5,R07_ORPHAN_LINE,header record is missing,1
+sales_db,receipt_line,PEC-2026-000320|6,R07_ORPHAN_LINE,header record is missing,1
+sales_db,receipt_line,SDR-2023-000002|1,R07_ORPHAN_LINE,header record is missing,1
+sales_db,receipt_line,SDR-2023-000002|2,R07_ORPHAN_LINE,header record is missing,1
+sales_db,receipt_line,SDR-2023-000002|3,R07_ORPHAN_LINE,header record is missing,1
+sales_db,receipt_line,SDR-2023-000003|1,R04_BAD_AMOUNT,price or cost <= 0 or missing,1
+sales_db,receipt_line,SDR-2023-000003|3,R01_MISSING_PRODUCT,item code unknown to every crosswalk,1
+sales_db,receipt_line,SDR-2023-000026|2,R04_BAD_AMOUNT,price or cost <= 0 or missing,1
+sales_db,receipt_line,SDR-2024-000011|1,R01_MISSING_PRODUCT,item code unknown to every crosswalk,1
+sales_db,receipt_line,SDR-2024-000027|1,R02_BAD_QTY,quantity <= 0 or missing on a POSTED line,1
+sales_db,receipt_line,SDR-2024-000059|1,R03_BAD_DATE,"date missing, unparseable or after the batch cut-off",1
+sales_db,receipt_line,SDR-2024-000059|2,R03_BAD_DATE,"date missing, unparseable or after the batch cut-off",1
+sales_db,receipt_line,SDR-2024-000059|3,R03_BAD_DATE,"date missing, unparseable or after the batch cut-off",1
+sales_db,receipt_line,SDR-2024-000059|4,R03_BAD_DATE,"date missing, unparseable or after the batch cut-off",1
+sales_db,receipt_line,SDR-2024-000077|1,R01_MISSING_PRODUCT,item code unknown to every crosswalk,1
+sales_db,receipt_line,SDR-2024-000085|3,R01_MISSING_PRODUCT,item code unknown to every crosswalk,1
+sales_db,receipt_line,SDR-2024-000153|1,R03_BAD_DATE,"date missing, unparseable or after the batch cut-off",1
+sales_db,receipt_line,SDR-2024-000153|2,R03_BAD_DATE,"date missing, unparseable or after the batch cut-off",1
+sales_db,receipt_line,SDR-2024-000153|3,R03_BAD_DATE,"date missing, unparseable or after the batch cut-off",1
+sales_db,receipt_line,SDR-2024-000191|1,R05_UNKNOWN_BRANCH,branch matches no crosswalk rule,1
+sales_db,receipt_line,SDR-2024-000191|2,R05_UNKNOWN_BRANCH,branch matches no crosswalk rule,1
+sales_db,receipt_line,SDR-2024-000191|3,R05_UNKNOWN_BRANCH,branch matches no crosswalk rule,1
+sales_db,receipt_line,SDR-2024-000211|2,R01_MISSING_PRODUCT,item code unknown to every crosswalk,1
+sales_db,receipt_line,SDR-2024-000226|1,R02_BAD_QTY,quantity <= 0 or missing on a POSTED line,1
+sales_db,receipt_line,SDR-2024-000250|2,R02_BAD_QTY,quantity <= 0 or missing on a POSTED line,1
+sales_db,receipt_line,SDR-2024-000264|2,R01_MISSING_PRODUCT,item code unknown to every crosswalk,1
+sales_db,receipt_line,SDR-2024-000299|1,R04_BAD_AMOUNT,price or cost <= 0 or missing,1
+sales_db,receipt_line,SDR-2024-000322|3,R01_MISSING_PRODUCT,item code unknown to every crosswalk,1
+sales_db,receipt_line,SDR-2024-000373|1,R03_BAD_DATE,"date missing, unparseable or after the batch cut-off",1
+sales_db,receipt_line,SDR-2024-000373|2,R03_BAD_DATE,"date missing, unparseable or after the batch cut-off",1
+sales_db,receipt_line,SDR-2024-000397|1,R01_MISSING_PRODUCT,item code unknown to every crosswalk,1
+sales_db,receipt_line,SDR-2025-000016|2,R01_MISSING_PRODUCT,item code unknown to every crosswalk,1
+sales_db,receipt_line,SDR-2025-000035|1,R01_MISSING_PRODUCT,item code unknown to every crosswalk,1
+sales_db,receipt_line,SDR-2025-000036|2,R01_MISSING_PRODUCT,item code unknown to every crosswalk,1
+sales_db,receipt_line,SDR-2025-000103|1,R01_MISSING_PRODUCT,item code unknown to every crosswalk,1
+sales_db,receipt_line,SDR-2025-000119|2,R02_BAD_QTY,quantity <= 0 or missing on a POSTED line,1
+sales_db,receipt_line,SDR-2025-000120|1,R04_BAD_AMOUNT,price or cost <= 0 or missing,1
+sales_db,receipt_line,SDR-2025-000145|2,R02_BAD_QTY,quantity <= 0 or missing on a POSTED line,1
+sales_db,receipt_line,SDR-2025-000329|1,R03_BAD_DATE,"date missing, unparseable or after the batch cut-off",1
+sales_db,receipt_line,SDR-2025-000361|3,R01_MISSING_PRODUCT,item code unknown to every crosswalk,1
+sales_db,receipt_line,SDR-2025-000368|3,R01_MISSING_PRODUCT,item code unknown to every crosswalk,1
+sales_db,receipt_line,SDR-2025-000407|1,R01_MISSING_PRODUCT,item code unknown to every crosswalk,1
+sales_db,receipt_line,SDR-2025-000419|1,R01_MISSING_PRODUCT,item code unknown to every crosswalk,1
+sales_db,receipt_line,SDR-2025-000424|3,R04_BAD_AMOUNT,price or cost <= 0 or missing,1
+sales_db,receipt_line,SDR-2025-000453|4,R01_MISSING_PRODUCT,item code unknown to every crosswalk,1
+sales_db,receipt_line,SDR-2025-000485|2,R02_BAD_QTY,quantity <= 0 or missing on a POSTED line,1
+sales_db,receipt_line,SDR-2026-000012|1,R04_BAD_AMOUNT,price or cost <= 0 or missing,1
+sales_db,receipt_line,SDR-2026-000019|1,R02_BAD_QTY,quantity <= 0 or missing on a POSTED line,1
+sales_db,receipt_line,SDR-2026-000116|2,R02_BAD_QTY,quantity <= 0 or missing on a POSTED line,1
+sales_db,receipt_line,SDR-2026-000162|1,R07_ORPHAN_LINE,header record is missing,1
+sales_db,receipt_line,SDR-2026-000162|2,R07_ORPHAN_LINE,header record is missing,1
+sales_db,receipt_line,SDR-2026-000169|1,R04_BAD_AMOUNT,price or cost <= 0 or missing,1
+sales_db,receipt_line,SDR-2026-000170|1,R01_MISSING_PRODUCT,item code unknown to every crosswalk,1
+sales_db,receipt_line,SDR-2026-000195|2,R04_BAD_AMOUNT,price or cost <= 0 or missing,1
+sales_db,receipt_line,SDR-2026-000215|2,R01_MISSING_PRODUCT,item code unknown to every crosswalk,1
+sales_db,receipt_line,SDR-2026-000224|1,R01_MISSING_PRODUCT,item code unknown to every crosswalk,1
+sales_db,receipt_line,SDR-2026-000261|1,R01_MISSING_PRODUCT,item code unknown to every crosswalk,1
+sales_db,receipt_line,SDR-2026-000274|3,R01_MISSING_PRODUCT,item code unknown to every crosswalk,1
+purchasing_db,grn_line,GRN-2023-00003|1,R01_MISSING_PRODUCT,item code unknown to every crosswalk,1
+purchasing_db,grn_line,GRN-2023-00022|1,R02_BAD_QTY,quantity <= 0 or missing on a POSTED line,1
+purchasing_db,grn_line,GRN-2023-90001|1,R06_NO_FX_RATE,USD line with no FX rate on or before its date,1
+purchasing_db,grn_line,GRN-2023-90001|2,R06_NO_FX_RATE,USD line with no FX rate on or before its date,1
+purchasing_db,grn_line,GRN-2023-90002|1,R06_NO_FX_RATE,USD line with no FX rate on or before its date,1
+purchasing_db,grn_line,GRN-2023-90002|2,R06_NO_FX_RATE,USD line with no FX rate on or before its date,1
+purchasing_db,grn_line,GRN-2024-00010|3,R02_BAD_QTY,quantity <= 0 or missing on a POSTED line,1
+purchasing_db,grn_line,GRN-2024-00075|2,R04_BAD_AMOUNT,price or cost <= 0 or missing,1
+purchasing_db,grn_line,GRN-2024-00081|2,R01_MISSING_PRODUCT,item code unknown to every crosswalk,1
+purchasing_db,grn_line,GRN-2024-00089|1,R01_MISSING_PRODUCT,item code unknown to every crosswalk,1
+purchasing_db,grn_line,GRN-2024-00113|3,R02_BAD_QTY,quantity <= 0 or missing on a POSTED line,1
+purchasing_db,grn_line,GRN-2024-00142|3,R02_BAD_QTY,quantity <= 0 or missing on a POSTED line,1
+purchasing_db,grn_line,GRN-2024-00151|1,R01_MISSING_PRODUCT,item code unknown to every crosswalk,1
+purchasing_db,grn_line,GRN-2024-00152|1,R01_MISSING_PRODUCT,item code unknown to every crosswalk,1
+purchasing_db,grn_line,GRN-2024-00190|2,R01_MISSING_PRODUCT,item code unknown to every crosswalk,1
+purchasing_db,grn_line,GRN-2024-00200|1,R01_MISSING_PRODUCT,item code unknown to every crosswalk,1
+purchasing_db,grn_line,GRN-2024-00203|2,R04_BAD_AMOUNT,price or cost <= 0 or missing,1
+purchasing_db,grn_line,GRN-2024-00213|1,R04_BAD_AMOUNT,price or cost <= 0 or missing,1
+purchasing_db,grn_line,GRN-2024-00225|1,R01_MISSING_PRODUCT,item code unknown to every crosswalk,1
+purchasing_db,grn_line,GRN-2024-00241|2,R04_BAD_AMOUNT,price or cost <= 0 or missing,1
+purchasing_db,grn_line,GRN-2024-00271|3,R01_MISSING_PRODUCT,item code unknown to every crosswalk,1
+purchasing_db,grn_line,GRN-2024-00274|2,R02_BAD_QTY,quantity <= 0 or missing on a POSTED line,1
+purchasing_db,grn_line,GRN-2024-00327|1,R02_BAD_QTY,quantity <= 0 or missing on a POSTED line,1
+purchasing_db,grn_line,GRN-2024-00370|1,R02_BAD_QTY,quantity <= 0 or missing on a POSTED line,1
+purchasing_db,grn_line,GRN-2024-00410|2,R01_MISSING_PRODUCT,item code unknown to every crosswalk,1
+purchasing_db,grn_line,GRN-2024-00419|1,R04_BAD_AMOUNT,price or cost <= 0 or missing,1
+purchasing_db,grn_line,GRN-2024-00426|2,R01_MISSING_PRODUCT,item code unknown to every crosswalk,1
+purchasing_db,grn_line,GRN-2024-00536|1,R01_MISSING_PRODUCT,item code unknown to every crosswalk,1
+purchasing_db,grn_line,GRN-2025-00015|3,R01_MISSING_PRODUCT,item code unknown to every crosswalk,1
+purchasing_db,grn_line,GRN-2025-00033|2,R01_MISSING_PRODUCT,item code unknown to every crosswalk,1
+purchasing_db,grn_line,GRN-2025-00086|2,R02_BAD_QTY,quantity <= 0 or missing on a POSTED line,1
+purchasing_db,grn_line,GRN-2025-00116|3,R04_BAD_AMOUNT,price or cost <= 0 or missing,1
+purchasing_db,grn_line,GRN-2025-00200|2,R01_MISSING_PRODUCT,item code unknown to every crosswalk,1
+purchasing_db,grn_line,GRN-2025-00202|2,R02_BAD_QTY,quantity <= 0 or missing on a POSTED line,1
+purchasing_db,grn_line,GRN-2025-00248|1,R03_BAD_DATE,"date missing, unparseable or after the batch cut-off",1
+purchasing_db,grn_line,GRN-2025-00248|2,R03_BAD_DATE,"date missing, unparseable or after the batch cut-off",1
+purchasing_db,grn_line,GRN-2025-00248|3,R03_BAD_DATE,"date missing, unparseable or after the batch cut-off",1
+purchasing_db,grn_line,GRN-2025-00364|2,R04_BAD_AMOUNT,price or cost <= 0 or missing,1
+purchasing_db,grn_line,GRN-2025-00414|2,R04_BAD_AMOUNT,price or cost <= 0 or missing,1
+purchasing_db,grn_line,GRN-2025-00427|1,R02_BAD_QTY,quantity <= 0 or missing on a POSTED line,1
+purchasing_db,grn_line,GRN-2025-00431|4,R02_BAD_QTY,quantity <= 0 or missing on a POSTED line,1
+purchasing_db,grn_line,GRN-2025-00437|1,R03_BAD_DATE,"date missing, unparseable or after the batch cut-off",1
+purchasing_db,grn_line,GRN-2025-00437|2,R03_BAD_DATE,"date missing, unparseable or after the batch cut-off",1
+purchasing_db,grn_line,GRN-2025-00438|1,R03_BAD_DATE,"date missing, unparseable or after the batch cut-off",1
+purchasing_db,grn_line,GRN-2025-00463|1,R03_BAD_DATE,"date missing, unparseable or after the batch cut-off",1
+purchasing_db,grn_line,GRN-2025-00480|2,R02_BAD_QTY,quantity <= 0 or missing on a POSTED line,1
+purchasing_db,grn_line,GRN-2025-00495|2,R04_BAD_AMOUNT,price or cost <= 0 or missing,1
+purchasing_db,grn_line,GRN-2025-00514|1,R02_BAD_QTY,quantity <= 0 or missing on a POSTED line,1
+purchasing_db,grn_line,GRN-2025-00520|3,R02_BAD_QTY,quantity <= 0 or missing on a POSTED line,1
+purchasing_db,grn_line,GRN-2025-00554|2,R02_BAD_QTY,quantity <= 0 or missing on a POSTED line,1
+purchasing_db,grn_line,GRN-2025-00573|9,R02_BAD_QTY,quantity <= 0 or missing on a POSTED line,1
+purchasing_db,grn_line,GRN-2025-00574|2,R01_MISSING_PRODUCT,item code unknown to every crosswalk,1
+purchasing_db,grn_line,GRN-2025-00616|2,R02_BAD_QTY,quantity <= 0 or missing on a POSTED line,1
+purchasing_db,grn_line,GRN-2026-00014|1,R01_MISSING_PRODUCT,item code unknown to every crosswalk,1
+purchasing_db,grn_line,GRN-2026-00087|3,R04_BAD_AMOUNT,price or cost <= 0 or missing,1
+purchasing_db,grn_line,GRN-2026-00112|1,R01_MISSING_PRODUCT,item code unknown to every crosswalk,1
+purchasing_db,grn_line,GRN-2026-00144|2,R04_BAD_AMOUNT,price or cost <= 0 or missing,1
+purchasing_db,grn_line,GRN-2026-00188|1,R01_MISSING_PRODUCT,item code unknown to every crosswalk,1
+purchasing_db,grn_line,GRN-2026-00194|3,R01_MISSING_PRODUCT,item code unknown to every crosswalk,1
+purchasing_db,grn_line,GRN-2026-00198|2,R04_BAD_AMOUNT,price or cost <= 0 or missing,1
+purchasing_db,grn_line,GRN-2026-00201|1,R03_BAD_DATE,"date missing, unparseable or after the batch cut-off",1
+purchasing_db,grn_line,GRN-2026-00201|2,R03_BAD_DATE,"date missing, unparseable or after the batch cut-off",1
+purchasing_db,grn_line,GRN-2026-00201|3,R03_BAD_DATE,"date missing, unparseable or after the batch cut-off",1
+purchasing_db,grn_line,GRN-2026-00209|1,R01_MISSING_PRODUCT,item code unknown to every crosswalk,1
+purchasing_db,grn_line,GRN-2026-00238|4,R01_MISSING_PRODUCT,item code unknown to every crosswalk,1
+purchasing_db,grn_line,GRN-2026-00264|1,R03_BAD_DATE,"date missing, unparseable or after the batch cut-off",1
+purchasing_db,grn_line,GRN-2026-00264|2,R03_BAD_DATE,"date missing, unparseable or after the batch cut-off",1
+purchasing_db,grn_line,GRN-2026-00264|3,R03_BAD_DATE,"date missing, unparseable or after the batch cut-off",1
+purchasing_db,grn_line,GRN-2026-00266|6,R04_BAD_AMOUNT,price or cost <= 0 or missing,1
+purchasing_db,grn_line,GRN-2026-00312|1,R03_BAD_DATE,"date missing, unparseable or after the batch cut-off",1
+purchasing_db,grn_line,GRN-2026-00316|3,R01_MISSING_PRODUCT,item code unknown to every crosswalk,1
+purchasing_db,grn_line,GRN-2026-00320|2,R02_BAD_QTY,quantity <= 0 or missing on a POSTED line,1
+purchasing_db,grn_line,GRN-2026-00363|3,R01_MISSING_PRODUCT,item code unknown to every crosswalk,1
+purchasing_db,grn_line,GRN-2026-00367|1,R01_MISSING_PRODUCT,item code unknown to every crosswalk,1
+purchasing_db,grn_line,GRN-2026-00394|2,R01_MISSING_PRODUCT,item code unknown to every crosswalk,1
+purchasing_db,grn_line,GRN-2026-00406|1,R02_BAD_QTY,quantity <= 0 or missing on a POSTED line,1
+purchasing_db,grn_line,GRN-2026-00416|1,R04_BAD_AMOUNT,price or cost <= 0 or missing,1
+purchasing_db,grn_line,GRN-2026-00422|2,R01_MISSING_PRODUCT,item code unknown to every crosswalk,1
+purchasing_db,grn_line,GRN-2026-00463|2,R01_MISSING_PRODUCT,item code unknown to every crosswalk,1

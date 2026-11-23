@@ -1,0 +1,43 @@
+table Product
+	lineageTag: 7355fe90-7141-5fdd-af27-f5f532095a54
+
+	column product_code
+		dataType: string
+		summarizeBy: none
+		sourceColumn: product_code
+		lineageTag: 313df5dd-ea19-5c56-b9f3-a8d699538f54
+
+	column generic_name
+		dataType: string
+		summarizeBy: none
+		sourceColumn: generic_name
+		lineageTag: 4b3dc9c8-9546-548f-bc1d-1b073360d3f4
+
+	column strength
+		dataType: string
+		summarizeBy: none
+		sourceColumn: strength
+		lineageTag: 14f06cf2-a56b-5a6c-9a1e-1d71756eac94
+
+	column category
+		dataType: string
+		summarizeBy: none
+		sourceColumn: category
+		lineageTag: 9dd45401-7655-51f3-93ab-d8192b1e7558
+
+	column selling_unit
+		dataType: string
+		summarizeBy: none
+		sourceColumn: selling_unit
+		lineageTag: 425ccaec-c7c4-5e96-b34e-df455a53a537
+
+	partition Product = m
+		mode: import
+		source =
+				let
+				    Source = Csv.Document(File.Contents(DataFolder & "\dim_product.csv"), [Delimiter = ",", Encoding = 65001, QuoteStyle = QuoteStyle.Csv]),
+				    Promoted = Table.PromoteHeaders(Source, [PromoteAllScalars = true]),
+				    Typed = Table.TransformColumnTypes(Promoted, {{"product_code", type text}, {"generic_name", type text}, {"strength", type text}, {"category", type text}, {"selling_unit", type text}}, "en-US")
+				in
+				    Typed
+

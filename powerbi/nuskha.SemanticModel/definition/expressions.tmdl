@@ -1,0 +1,4 @@
+expression DataFolder = "C:\Users\mabdu\Desktop\Education\NED\Courses (7th semester)\DWBI\Project\nuskha-dwbi\powerbi\data" meta [IsParameterQuery = true, Type = "Text", IsParameterQueryRequired = true]
+	lineageTag: 5b748c20-4f42-53da-a870-238e9c2703bd
+
+	annotation PBI_ResultType = Text

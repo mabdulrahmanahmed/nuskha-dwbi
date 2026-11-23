@@ -1,0 +1,12 @@
+check,expected,actual,result
+warehouse columns with at least one mapping,67,67.0,PASS
+mappings to columns that do not exist in the DDL,0,0.0,PASS
+mappings naming an unknown transform rule,0,0.0,PASS
+meta.source_system rows,> 0,4.0,PASS
+meta.source_object rows,> 0,34.0,PASS
+meta.transform_rule rows,> 0,19.0,PASS
+meta.column_map rows,> 0,70.0,PASS
+meta.lineage rows,> 0,34738.0,PASS
+dw.fact_sales: % of rows with lineage,100,100.0,PASS
+dw.fact_purchase: % of rows with lineage,100,100.0,PASS
+meta.column_map rules all exist in meta.transform_rule,0,0.0,PASS

@@ -1,0 +1,28 @@
+item,covered,result
+measure Purchases,True,PASS
+measure Units Purchased,True,PASS
+measure Purchase Unit Cost,True,PASS
+measure Net Sales,True,PASS
+measure Gross Margin,True,PASS
+measure Margin %,True,PASS
+measure Units Sold,True,PASS
+measure ASP,True,PASS
+measure Net Sales LY,True,PASS
+measure Net Sales 3M Avg,True,PASS
+measure Last Batch,True,PASS
+page Management Overview,True,PASS
+page Diagnostic Analysis,True,PASS
+page AI Insights,True,PASS
+visual 1,True,PASS
+visual 2,True,PASS
+visual 3,True,PASS
+visual 4,True,PASS
+visual 5,True,PASS
+visual 6,True,PASS
+visual 7,True,PASS
+visual 8,True,PASS
+visual 9,True,PASS
+visual 10,True,PASS
+visual 11,True,PASS
+reconciliation (3 totals with expected values),True,PASS
+footer and last batch card,True,PASS

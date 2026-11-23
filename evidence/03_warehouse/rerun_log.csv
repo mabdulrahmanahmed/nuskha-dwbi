@@ -1,0 +1,22 @@
+measure,before_rerun,after_rerun,changed
+fact_sales_rows,27543,27543,False
+fact_sales_net_pkr,15070308.45,15070308.45,False
+fact_sales_margin_pkr,3782436.43,3782436.43,False
+fact_purchase_rows,4604,4604,False
+fact_purchase_pkr,15342311.75,15342311.75,False
+lineage_rows,32147,32147,False
+md5 of fact_sales,83d3adcf053843ed95d32fb5533e0a3d,83d3adcf053843ed95d32fb5533e0a3d,False
+md5 of fact_purchase,5fa87dc90ae14d96cb16d2166a802787,5fa87dc90ae14d96cb16d2166a802787,False
+md5 of dim_product,0b60d7a41f4fea3235dccb837977aee9,0b60d7a41f4fea3235dccb837977aee9,False
+md5 of dim_customer,074a740d601e0b091ddd2f1f3c745847,074a740d601e0b091ddd2f1f3c745847,False
+md5 of dim_branch,97defdd8c14c849dc7ec146d3164a01f,97defdd8c14c849dc7ec146d3164a01f,False
+md5 of dim_supplier,18242820147dea017c5d41fa274f1c98,18242820147dea017c5d41fa274f1c98,False
+md5 of meta.lineage,528c35e1d40e17e1ad2cec4d6d0cbb09,528c35e1d40e17e1ad2cec4d6d0cbb09,False
+etl.rejects rows,635,635,False
+dw.dim_date: rows inserted + updated by the rerun,0,0,False
+dw.dim_product: rows inserted + updated by the rerun,0,0,False
+dw.dim_branch: rows inserted + updated by the rerun,0,0,False
+dw.dim_customer: rows inserted + updated by the rerun,0,0,False
+dw.dim_supplier: rows inserted + updated by the rerun,0,0,False
+dw.fact_sales: rows inserted + updated by the rerun,0,0,False
+dw.fact_purchase: rows inserted + updated by the rerun,0,0,False

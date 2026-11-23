@@ -1,0 +1,16 @@
+measure,clean_run,after_failure,after_rerun,unchanged
+fact_sales_rows,29820,29820,29820,True
+fact_sales_net_pkr,16400628.65,16400628.65,16400628.65,True
+fact_sales_margin_pkr,4101635.58,4101635.58,4101635.58,True
+fact_purchase_rows,4918,4918,4918,True
+fact_purchase_pkr,16567538.48,16567538.48,16567538.48,True
+lineage_rows,34738,34738,34738,True
+md5 of fact_sales,b46ba5a3ed1b333388e935ef8a0adbeb,b46ba5a3ed1b333388e935ef8a0adbeb,b46ba5a3ed1b333388e935ef8a0adbeb,True
+md5 of fact_purchase,29e4453a3a5dd0d3e9cd9c02ab0d120b,29e4453a3a5dd0d3e9cd9c02ab0d120b,29e4453a3a5dd0d3e9cd9c02ab0d120b,True
+md5 of dim_product,284e80d3673684a8661c00e787e6cd2d,284e80d3673684a8661c00e787e6cd2d,284e80d3673684a8661c00e787e6cd2d,True
+md5 of dim_customer,074a740d601e0b091ddd2f1f3c745847,074a740d601e0b091ddd2f1f3c745847,074a740d601e0b091ddd2f1f3c745847,True
+md5 of dim_branch,97defdd8c14c849dc7ec146d3164a01f,97defdd8c14c849dc7ec146d3164a01f,97defdd8c14c849dc7ec146d3164a01f,True
+md5 of dim_supplier,18242820147dea017c5d41fa274f1c98,18242820147dea017c5d41fa274f1c98,18242820147dea017c5d41fa274f1c98,True
+md5 of meta.lineage,8b578ecbe599e57884bf4288c23c0399,8b578ecbe599e57884bf4288c23c0399,8b578ecbe599e57884bf4288c23c0399,True
+error raised,,FAIL_AT=0.5: controlled failure after 1184 of 2369 rows of fact_sales,,True
+failed batch status,,batch 3: FAILED,batch 4: SUCCESS,True

@@ -1,0 +1,22 @@
+crosswalk,source_system,source_object,match_method,keys
+xw_branch,inventory,store,exact,10
+xw_branch,purchasing_db,branch,rule,9
+xw_branch,purchasing_db,branch,rule (alias list),1
+xw_branch,sales_db,receipt.branch_name,exact,10
+xw_branch,sales_db,receipt.branch_name,rule,9
+xw_branch,sales_db,receipt.branch_name,rule (alias list),9
+xw_branch,sales_db,receipt.branch_name,unmatched,6
+xw_customer,finance_db,panel_account,exact,15
+xw_customer,sales_db,receipt.card_no,exact,1200
+xw_customer,sales_db,receipt.panel_company_text,exact,15
+xw_customer,sales_db,receipt.panel_company_text,rule,15
+xw_customer,sales_db,receipt.panel_company_text,rule (alias list),9
+xw_customer,sales_db,receipt.panel_company_text,unmatched,4
+xw_product,inventory,item,exact,150
+xw_product,purchasing_db,vendor_item,exact,105
+xw_product,purchasing_db,vendor_item,rule (description),45
+xw_product,purchasing_db,vendor_item,unmatched,2
+xw_product,sales_db,pos_item,exact,114
+xw_product,sales_db,pos_item,rule,14
+xw_product,sales_db,pos_item,rule (description),22
+xw_product,sales_db,pos_item,unmatched,3

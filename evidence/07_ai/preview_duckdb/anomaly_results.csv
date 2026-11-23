@@ -1,0 +1,1153 @@
+run_id,date_key,month_start,region,category,value,expected,score,method,is_flag,is_injected_copy
+an-8e652f307f47878b,20251101,2025-11-01,East,Analgesics,8791.5,9299.0,-0.3985,robust_z,False,False
+an-8e652f307f47878b,20251201,2025-12-01,East,Analgesics,7356.25,9299.0,-0.9015,robust_z,False,False
+an-8e652f307f47878b,20260101,2026-01-01,East,Analgesics,6670.9,9299.0,-1.1432,robust_z,False,False
+an-8e652f307f47878b,20260201,2026-02-01,East,Analgesics,8568.9,8975.65,-0.3658,robust_z,False,False
+an-8e652f307f47878b,20260301,2026-03-01,East,Analgesics,9260.05,8680.2,0.0,robust_z,False,False
+an-8e652f307f47878b,20260401,2026-04-01,East,Analgesics,9026.8,8680.2,-0.0882,robust_z,False,False
+an-8e652f307f47878b,20260501,2026-05-01,East,Analgesics,8507.35,8680.2,-0.2842,robust_z,False,False
+an-8e652f307f47878b,20260601,2026-06-01,East,Analgesics,4229.45,8538.12,-1.8683,robust_z,False,False
+an-8e652f307f47878b,20260701,2026-07-01,East,Analgesics,8081.15,8538.12,-0.3952,robust_z,False,False
+an-8e652f307f47878b,20260801,2026-08-01,East,Analgesics,14601.85,8538.12,2.1002,robust_z,False,False
+an-8e652f307f47878b,20260901,2026-09-01,East,Analgesics,37583.85,8767.07,10.5175,robust_z,True,False
+an-8e652f307f47878b,20261001,2026-10-01,East,Analgesics,9411.2,8767.07,0.0196,robust_z,False,False
+an-8e652f307f47878b,20251101,2025-11-01,East,Antibiotics,19731.7,18486.85,0.0,robust_z,False,False
+an-8e652f307f47878b,20251201,2025-12-01,East,Antibiotics,20275.5,18486.85,0.098,robust_z,False,False
+an-8e652f307f47878b,20260101,2026-01-01,East,Antibiotics,27576.3,19331.45,1.1726,robust_z,False,False
+an-8e652f307f47878b,20260201,2026-02-01,East,Antibiotics,21378.0,20003.6,0.0065,robust_z,False,False
+an-8e652f307f47878b,20260301,2026-03-01,East,Antibiotics,27994.0,20826.75,0.9048,robust_z,False,False
+an-8e652f307f47878b,20260401,2026-04-01,East,Antibiotics,17601.55,24477.15,-1.1367,robust_z,False,False
+an-8e652f307f47878b,20260501,2026-05-01,East,Antibiotics,25699.65,20826.75,0.5455,robust_z,False,False
+an-8e652f307f47878b,20260601,2026-06-01,East,Antibiotics,10851.75,23538.82,-1.9794,robust_z,False,False
+an-8e652f307f47878b,20260701,2026-07-01,East,Antibiotics,20342.4,23538.82,-0.6631,robust_z,False,False
+an-8e652f307f47878b,20260801,2026-08-01,East,Antibiotics,16305.05,20860.2,-0.9309,robust_z,False,False
+an-8e652f307f47878b,20260901,2026-09-01,East,Antibiotics,31769.6,18971.97,1.9859,robust_z,False,False
+an-8e652f307f47878b,20261001,2026-10-01,East,Antibiotics,42992.25,18971.97,3.9163,robust_z,True,False
+an-8e652f307f47878b,20251101,2025-11-01,East,Cardiovascular,15013.95,19777.35,-1.006,robust_z,False,False
+an-8e652f307f47878b,20251201,2025-12-01,East,Cardiovascular,15757.9,19777.35,-0.8819,robust_z,False,False
+an-8e652f307f47878b,20260101,2026-01-01,East,Cardiovascular,14802.45,18744.07,-0.9048,robust_z,False,False
+an-8e652f307f47878b,20260201,2026-02-01,East,Cardiovascular,25054.05,15500.9,1.7932,robust_z,False,False
+an-8e652f307f47878b,20260301,2026-03-01,East,Cardiovascular,19639.55,15500.9,0.6533,robust_z,False,False
+an-8e652f307f47878b,20260401,2026-04-01,East,Cardiovascular,17833.15,17698.72,-0.1927,robust_z,False,False
+an-8e652f307f47878b,20260501,2026-05-01,East,Cardiovascular,17534.6,16795.52,-0.0751,robust_z,False,False
+an-8e652f307f47878b,20260601,2026-06-01,East,Cardiovascular,14721.95,17683.87,-0.7643,robust_z,False,False
+an-8e652f307f47878b,20260701,2026-07-01,East,Cardiovascular,27330.05,17683.87,1.5613,robust_z,False,False
+an-8e652f307f47878b,20260801,2026-08-01,East,Cardiovascular,28187.15,18736.35,1.4274,robust_z,False,False
+an-8e652f307f47878b,20260901,2026-09-01,East,Cardiovascular,25617.9,18736.35,0.9799,robust_z,False,False
+an-8e652f307f47878b,20261001,2026-10-01,East,Cardiovascular,23329.75,21725.52,0.0229,robust_z,False,False
+an-8e652f307f47878b,20251101,2025-11-01,East,Cough and Cold,16040.45,11688.25,0.9962,robust_z,False,False
+an-8e652f307f47878b,20251201,2025-12-01,East,Cough and Cold,24681.45,12707.55,2.858,robust_z,False,False
+an-8e652f307f47878b,20260101,2026-01-01,East,Cough and Cold,29795.25,13936.0,3.4982,robust_z,False,False
+an-8e652f307f47878b,20260201,2026-02-01,East,Cough and Cold,20432.15,14737.5,1.0419,robust_z,False,False
+an-8e652f307f47878b,20260301,2026-03-01,East,Cough and Cold,13242.85,18236.3,-1.1138,robust_z,False,False
+an-8e652f307f47878b,20260401,2026-04-01,East,Cough and Cold,13820.75,18236.3,-1.0093,robust_z,False,False
+an-8e652f307f47878b,20260501,2026-05-01,East,Cough and Cold,17621.35,18236.3,-0.3299,robust_z,False,False
+an-8e652f307f47878b,20260601,2026-06-01,East,Cough and Cold,9383.15,19026.75,-1.8749,robust_z,False,False
+an-8e652f307f47878b,20260701,2026-07-01,East,Cough and Cold,12624.25,15721.05,-0.8623,robust_z,False,False
+an-8e652f307f47878b,20260801,2026-08-01,East,Cough and Cold,9757.15,13531.8,-1.1301,robust_z,False,False
+an-8e652f307f47878b,20260901,2026-09-01,East,Cough and Cold,16658.2,12933.55,0.7219,robust_z,False,False
+an-8e652f307f47878b,20261001,2026-10-01,East,Cough and Cold,13598.45,13222.5,-0.1274,robust_z,False,False
+an-8e652f307f47878b,20251101,2025-11-01,East,Diabetes Care,39974.65,21771.72,2.5118,robust_z,False,False
+an-8e652f307f47878b,20251201,2025-12-01,East,Diabetes Care,41114.15,31078.35,0.8362,robust_z,False,False
+an-8e652f307f47878b,20260101,2026-01-01,East,Diabetes Care,38732.45,40544.4,-0.3658,robust_z,False,False
+an-8e652f307f47878b,20260201,2026-02-01,East,Diabetes Care,33607.2,39353.55,-0.6957,robust_z,False,False
+an-8e652f307f47878b,20260301,2026-03-01,East,Diabetes Care,27870.45,36169.82,-0.9668,robust_z,False,False
+an-8e652f307f47878b,20260401,2026-04-01,East,Diabetes Care,39801.5,36169.82,0.1078,robust_z,False,False
+an-8e652f307f47878b,20260501,2026-05-01,East,Diabetes Care,42512.1,39266.97,0.0523,robust_z,False,False
+an-8e652f307f47878b,20260601,2026-06-01,East,Diabetes Care,17308.95,39266.97,-2.0447,robust_z,False,False
+an-8e652f307f47878b,20260701,2026-07-01,East,Diabetes Care,32926.95,36169.82,-0.5128,robust_z,False,False
+an-8e652f307f47878b,20260801,2026-08-01,East,Diabetes Care,21281.9,33267.07,-1.3947,robust_z,False,False
+an-8e652f307f47878b,20260901,2026-09-01,East,Diabetes Care,28137.4,30398.7,-0.4605,robust_z,False,False
+an-8e652f307f47878b,20261001,2026-10-01,East,Diabetes Care,23545.45,30532.17,-0.9668,robust_z,False,False
+an-8e652f307f47878b,20251101,2025-11-01,East,Gastro,9731.8,17194.07,-1.6364,robust_z,False,False
+an-8e652f307f47878b,20251201,2025-12-01,East,Gastro,10292.9,17194.07,-1.5286,robust_z,False,False
+an-8e652f307f47878b,20260101,2026-01-01,East,Gastro,12580.4,17194.07,-1.0942,robust_z,False,False
+an-8e652f307f47878b,20260201,2026-02-01,East,Gastro,13556.0,13981.2,-0.3168,robust_z,False,False
+an-8e652f307f47878b,20260301,2026-03-01,East,Gastro,10642.5,13068.2,-0.8264,robust_z,False,False
+an-8e652f307f47878b,20260401,2026-04-01,East,Gastro,11929.8,11611.45,-0.1307,robust_z,False,False
+an-8e652f307f47878b,20260501,2026-05-01,East,Gastro,15094.05,11286.15,0.8819,robust_z,False,False
+an-8e652f307f47878b,20260601,2026-06-01,East,Gastro,8671.55,12255.1,-1.1726,robust_z,False,False
+an-8e652f307f47878b,20260701,2026-07-01,East,Gastro,21221.95,12255.1,2.1721,robust_z,False,False
+an-8e652f307f47878b,20260801,2026-08-01,East,Gastro,19847.5,12742.9,1.6038,robust_z,False,False
+an-8e652f307f47878b,20260901,2026-09-01,East,Gastro,31439.9,13511.92,4.1155,robust_z,True,False
+an-8e652f307f47878b,20261001,2026-10-01,East,Gastro,22847.15,17470.77,0.7872,robust_z,False,False
+an-8e652f307f47878b,20251101,2025-11-01,East,Personal Care,18511.65,15468.57,0.4246,robust_z,False,False
+an-8e652f307f47878b,20251201,2025-12-01,East,Personal Care,22415.1,15775.72,1.1563,robust_z,False,False
+an-8e652f307f47878b,20260101,2026-01-01,East,Personal Care,17421.3,17253.27,-0.1862,robust_z,False,False
+an-8e652f307f47878b,20260201,2026-02-01,East,Personal Care,13464.0,16708.1,-0.8525,robust_z,False,False
+an-8e652f307f47878b,20260301,2026-03-01,East,Personal Care,11746.0,16243.4,-1.1236,robust_z,False,False
+an-8e652f307f47878b,20260401,2026-04-01,East,Personal Care,14801.95,16243.4,-0.5095,robust_z,False,False
+an-8e652f307f47878b,20260501,2026-05-01,East,Personal Care,13374.45,16111.62,-0.7741,robust_z,False,False
+an-8e652f307f47878b,20260601,2026-06-01,East,Personal Care,16412.6,14132.97,0.307,robust_z,False,False
+an-8e652f307f47878b,20260701,2026-07-01,East,Personal Care,23358.9,14132.97,1.9141,robust_z,False,False
+an-8e652f307f47878b,20260801,2026-08-01,East,Personal Care,24226.5,14132.97,2.1133,robust_z,False,False
+an-8e652f307f47878b,20260901,2026-09-01,East,Personal Care,18231.75,15607.27,0.3299,robust_z,False,False
+an-8e652f307f47878b,20261001,2026-10-01,East,Personal Care,14325.0,17322.17,-0.7839,robust_z,False,False
+an-8e652f307f47878b,20251101,2025-11-01,East,Vitamins and Supplements,22083.3,27969.15,-0.9048,robust_z,False,False
+an-8e652f307f47878b,20251201,2025-12-01,East,Vitamins and Supplements,20258.45,27969.15,-1.1203,robust_z,False,False
+an-8e652f307f47878b,20260101,2026-01-01,East,Vitamins and Supplements,43128.8,27122.17,1.7083,robust_z,False,False
+an-8e652f307f47878b,20260201,2026-02-01,East,Vitamins and Supplements,44201.05,32253.5,0.9897,robust_z,False,False
+an-8e652f307f47878b,20260301,2026-03-01,East,Vitamins and Supplements,38349.35,34085.1,0.1894,robust_z,False,False
+an-8e652f307f47878b,20260401,2026-04-01,East,Vitamins and Supplements,37884.35,37086.8,-0.147,robust_z,False,False
+an-8e652f307f47878b,20260501,2026-05-01,East,Vitamins and Supplements,31634.6,38116.85,-0.7741,robust_z,False,False
+an-8e652f307f47878b,20260601,2026-06-01,East,Vitamins and Supplements,19547.2,38116.85,-1.8095,robust_z,False,False
+an-8e652f307f47878b,20260701,2026-07-01,East,Vitamins and Supplements,40078.45,38116.85,-0.0523,robust_z,False,False
+an-8e652f307f47878b,20260801,2026-08-01,East,Vitamins and Supplements,27461.15,38116.85,-1.1334,robust_z,False,False
+an-8e652f307f47878b,20260901,2026-09-01,East,Vitamins and Supplements,32149.4,34759.47,-0.4638,robust_z,False,False
+an-8e652f307f47878b,20261001,2026-10-01,East,Vitamins and Supplements,55388.65,31892.0,2.1884,robust_z,False,False
+an-8e652f307f47878b,20251101,2025-11-01,North,Analgesics,10918.6,9969.75,0.0915,robust_z,False,False
+an-8e652f307f47878b,20251201,2025-12-01,North,Analgesics,10234.3,10836.82,-0.4018,robust_z,False,False
+an-8e652f307f47878b,20260101,2026-01-01,North,Analgesics,10648.3,10836.82,-0.2744,robust_z,False,False
+an-8e652f307f47878b,20260201,2026-02-01,North,Analgesics,13132.6,10783.45,0.4932,robust_z,False,False
+an-8e652f307f47878b,20260301,2026-03-01,North,Analgesics,10462.65,11029.95,-0.3854,robust_z,False,False
+an-8e652f307f47878b,20260401,2026-04-01,North,Analgesics,9054.65,10783.45,-0.7414,robust_z,False,False
+an-8e652f307f47878b,20260501,2026-05-01,North,Analgesics,8160.65,10555.47,-0.9603,robust_z,False,False
+an-8e652f307f47878b,20260601,2026-06-01,North,Analgesics,6844.2,10348.47,-1.3261,robust_z,False,False
+an-8e652f307f47878b,20260701,2026-07-01,North,Analgesics,9679.5,9758.65,-0.245,robust_z,False,False
+an-8e652f307f47878b,20260801,2026-08-01,North,Analgesics,12630.05,9367.07,0.9178,robust_z,False,False
+an-8e652f307f47878b,20260901,2026-09-01,North,Analgesics,17428.75,9367.07,2.5934,robust_z,False,False
+an-8e652f307f47878b,20261001,2026-10-01,North,Analgesics,16489.85,9367.07,2.2635,robust_z,False,False
+an-8e652f307f47878b,20251101,2025-11-01,North,Antibiotics,29142.0,26471.87,0.1111,robust_z,False,False
+an-8e652f307f47878b,20251201,2025-12-01,North,Antibiotics,17666.75,29663.12,-1.5384,robust_z,False,False
+an-8e652f307f47878b,20260101,2026-01-01,North,Antibiotics,12342.05,25950.75,-1.9304,robust_z,False,False
+an-8e652f307f47878b,20260201,2026-02-01,North,Antibiotics,32009.4,25950.75,0.5422,robust_z,False,False
+an-8e652f307f47878b,20260301,2026-03-01,North,Antibiotics,39283.3,25950.75,1.46,robust_z,False,False
+an-8e652f307f47878b,20260401,2026-04-01,North,Antibiotics,25475.15,25950.75,-0.2776,robust_z,False,False
+an-8e652f307f47878b,20260501,2026-05-01,North,Antibiotics,23951.5,27308.57,-0.6206,robust_z,False,False
+an-8e652f307f47878b,20260601,2026-06-01,North,Antibiotics,32312.6,24713.32,0.7839,robust_z,False,False
+an-8e652f307f47878b,20260701,2026-07-01,North,Antibiotics,33275.15,28742.27,0.2972,robust_z,False,False
+an-8e652f307f47878b,20260801,2026-08-01,North,Antibiotics,30500.35,32161.0,-0.3887,robust_z,False,False
+an-8e652f307f47878b,20260901,2026-09-01,North,Antibiotics,30666.6,31406.47,-0.2972,robust_z,False,False
+an-8e652f307f47878b,20261001,2026-10-01,North,Antibiotics,37680.25,30583.47,0.5389,robust_z,False,False
+an-8e652f307f47878b,20251101,2025-11-01,North,Cardiovascular,20730.15,21256.47,-0.3005,robust_z,False,False
+an-8e652f307f47878b,20251201,2025-12-01,North,Cardiovascular,24761.8,21668.95,0.2482,robust_z,False,False
+an-8e652f307f47878b,20260101,2026-01-01,North,Cardiovascular,27480.05,22749.92,0.4605,robust_z,False,False
+an-8e652f307f47878b,20260201,2026-02-01,North,Cardiovascular,20627.25,23826.95,-0.6565,robust_z,False,False
+an-8e652f307f47878b,20260301,2026-03-01,North,Cardiovascular,25714.95,21811.12,0.3658,robust_z,False,False
+an-8e652f307f47878b,20260401,2026-04-01,North,Cardiovascular,18554.6,22745.97,-0.8198,robust_z,False,False
+an-8e652f307f47878b,20260501,2026-05-01,North,Cardiovascular,26948.5,22745.97,0.3854,robust_z,False,False
+an-8e652f307f47878b,20260601,2026-06-01,North,Cardiovascular,18581.05,25238.37,-1.0811,robust_z,False,False
+an-8e652f307f47878b,20260701,2026-07-01,North,Cardiovascular,29380.0,23171.1,0.6565,robust_z,False,False
+an-8e652f307f47878b,20260801,2026-08-01,North,Cardiovascular,30952.85,23171.1,0.8786,robust_z,False,False
+an-8e652f307f47878b,20260901,2026-09-01,North,Cardiovascular,22127.3,26331.72,-0.7414,robust_z,False,False
+an-8e652f307f47878b,20261001,2026-10-01,North,Cardiovascular,33740.05,24537.9,1.006,robust_z,False,False
+an-8e652f307f47878b,20251101,2025-11-01,North,Cough and Cold,12416.6,11543.65,0.0294,robust_z,False,False
+an-8e652f307f47878b,20251201,2025-12-01,North,Cough and Cold,19172.5,11957.47,1.7507,robust_z,False,False
+an-8e652f307f47878b,20260101,2026-01-01,North,Cough and Cold,27984.55,12382.37,3.8967,robust_z,True,False
+an-8e652f307f47878b,20260201,2026-02-01,North,Cough and Cold,18423.65,12890.75,1.1824,robust_z,False,False
+an-8e652f307f47878b,20260301,2026-03-01,North,Cough and Cold,10434.1,15894.27,-1.3424,robust_z,False,False
+an-8e652f307f47878b,20260401,2026-04-01,North,Cough and Cold,17548.2,15894.27,0.1209,robust_z,False,False
+an-8e652f307f47878b,20260501,2026-05-01,North,Cough and Cold,13331.1,17985.92,-1.0648,robust_z,False,False
+an-8e652f307f47878b,20260601,2026-06-01,North,Cough and Cold,17275.0,17985.92,-0.3495,robust_z,False,False
+an-8e652f307f47878b,20260701,2026-07-01,North,Cough and Cold,16954.05,17411.6,-0.3038,robust_z,False,False
+an-8e652f307f47878b,20260801,2026-08-01,North,Cough and Cold,24743.25,17114.52,1.2379,robust_z,False,False
+an-8e652f307f47878b,20260901,2026-09-01,North,Cough and Cold,21045.0,17114.52,0.5324,robust_z,False,False
+an-8e652f307f47878b,20261001,2026-10-01,North,Cough and Cold,18190.25,17411.6,-0.0719,robust_z,False,False
+an-8e652f307f47878b,20251101,2025-11-01,North,Diabetes Care,51883.55,24356.85,3.4721,robust_z,False,False
+an-8e652f307f47878b,20251201,2025-12-01,North,Diabetes Care,21929.8,24759.65,-0.5912,robust_z,False,False
+an-8e652f307f47878b,20260101,2026-01-01,North,Diabetes Care,30602.85,23981.85,0.6827,robust_z,False,False
+an-8e652f307f47878b,20260201,2026-02-01,North,Diabetes Care,32218.7,28318.37,0.2319,robust_z,False,False
+an-8e652f307f47878b,20260301,2026-03-01,North,Diabetes Care,34989.6,28318.37,0.552,robust_z,False,False
+an-8e652f307f47878b,20260401,2026-04-01,North,Diabetes Care,36215.2,31410.77,0.2809,robust_z,False,False
+an-8e652f307f47878b,20260501,2026-05-01,North,Diabetes Care,24316.45,33604.15,-1.1203,robust_z,False,False
+an-8e652f307f47878b,20260601,2026-06-01,North,Diabetes Care,37870.3,31410.77,0.454,robust_z,False,False
+an-8e652f307f47878b,20260701,2026-07-01,North,Diabetes Care,37262.85,33604.15,0.1372,robust_z,False,False
+an-8e652f307f47878b,20260801,2026-08-01,North,Diabetes Care,18751.8,35602.4,-1.7638,robust_z,False,False
+an-8e652f307f47878b,20260901,2026-09-01,North,Diabetes Care,28402.3,35602.4,-0.8786,robust_z,False,False
+an-8e652f307f47878b,20261001,2026-10-01,North,Diabetes Care,41480.75,32308.75,0.7088,robust_z,False,False
+an-8e652f307f47878b,20251101,2025-11-01,North,Gastro,15160.95,20214.07,-1.0354,robust_z,False,False
+an-8e652f307f47878b,20251201,2025-12-01,North,Gastro,15753.75,20214.07,-0.9407,robust_z,False,False
+an-8e652f307f47878b,20260101,2026-01-01,North,Gastro,18176.1,20214.07,-0.5487,robust_z,False,False
+an-8e652f307f47878b,20260201,2026-02-01,North,Gastro,15271.45,18385.55,-0.7708,robust_z,False,False
+an-8e652f307f47878b,20260301,2026-03-01,North,Gastro,12563.3,16964.92,-1.0648,robust_z,False,False
+an-8e652f307f47878b,20260401,2026-04-01,North,Gastro,13863.8,15512.6,-0.5651,robust_z,False,False
+an-8e652f307f47878b,20260501,2026-05-01,North,Gastro,14412.25,15216.2,-0.392,robust_z,False,False
+an-8e652f307f47878b,20260601,2026-06-01,North,Gastro,11998.2,14841.85,-0.846,robust_z,False,False
+an-8e652f307f47878b,20260701,2026-07-01,North,Gastro,18639.1,14138.02,0.8198,robust_z,False,False
+an-8e652f307f47878b,20260801,2026-08-01,North,Gastro,20470.05,14138.02,1.2445,robust_z,False,False
+an-8e652f307f47878b,20260901,2026-09-01,North,Gastro,20015.85,14138.02,1.1399,robust_z,False,False
+an-8e652f307f47878b,20261001,2026-10-01,North,Gastro,25330.1,16525.67,1.5221,robust_z,False,False
+an-8e652f307f47878b,20251101,2025-11-01,North,Personal Care,22740.3,15721.72,1.2379,robust_z,False,False
+an-8e652f307f47878b,20251201,2025-12-01,North,Personal Care,21125.8,15721.72,0.9048,robust_z,False,False
+an-8e652f307f47878b,20260101,2026-01-01,North,Personal Care,19776.2,18927.17,-0.0719,robust_z,False,False
+an-8e652f307f47878b,20260201,2026-02-01,North,Personal Care,23338.95,20451.0,0.2417,robust_z,False,False
+an-8e652f307f47878b,20260301,2026-03-01,North,Personal Care,31084.15,21502.97,1.2379,robust_z,False,False
+an-8e652f307f47878b,20260401,2026-04-01,North,Personal Care,12419.65,21933.05,-1.6364,robust_z,False,False
+an-8e652f307f47878b,20260501,2026-05-01,North,Personal Care,17389.95,21933.05,-0.895,robust_z,False,False
+an-8e652f307f47878b,20260601,2026-06-01,North,Personal Care,21235.25,20451.0,-0.0947,robust_z,False,False
+an-8e652f307f47878b,20260701,2026-07-01,North,Personal Care,18839.65,20505.72,-0.4834,robust_z,False,False
+an-8e652f307f47878b,20260801,2026-08-01,North,Personal Care,19145.4,20037.45,-0.3658,robust_z,False,False
+an-8e652f307f47878b,20260901,2026-09-01,North,Personal Care,18587.4,18992.52,-0.2874,robust_z,False,False
+an-8e652f307f47878b,20261001,2026-10-01,North,Personal Care,27699.05,18713.52,1.349,robust_z,False,False
+an-8e652f307f47878b,20251101,2025-11-01,North,Vitamins and Supplements,33986.15,31593.72,0.0294,robust_z,False,False
+an-8e652f307f47878b,20251201,2025-12-01,North,Vitamins and Supplements,31654.2,36559.9,-0.6565,robust_z,False,False
+an-8e652f307f47878b,20260101,2026-01-01,North,Vitamins and Supplements,53347.0,32820.17,1.8226,robust_z,False,False
+an-8e652f307f47878b,20260201,2026-02-01,North,Vitamins and Supplements,48783.2,32820.17,1.3686,robust_z,False,False
+an-8e652f307f47878b,20260301,2026-03-01,North,Vitamins and Supplements,46095.75,32820.17,1.1007,robust_z,False,False
+an-8e652f307f47878b,20260401,2026-04-01,North,Vitamins and Supplements,24831.15,40040.95,-1.46,robust_z,False,False
+an-8e652f307f47878b,20260501,2026-05-01,North,Vitamins and Supplements,40237.1,40040.95,-0.2025,robust_z,False,False
+an-8e652f307f47878b,20260601,2026-06-01,North,Vitamins and Supplements,32442.3,43166.42,-1.0289,robust_z,False,False
+an-8e652f307f47878b,20260701,2026-07-01,North,Vitamins and Supplements,33606.9,43166.42,-0.9407,robust_z,False,False
+an-8e652f307f47878b,20260801,2026-08-01,North,Vitamins and Supplements,25203.25,36922.0,-1.2543,robust_z,False,False
+an-8e652f307f47878b,20260901,2026-09-01,North,Vitamins and Supplements,37487.8,33024.6,0.2221,robust_z,False,False
+an-8e652f307f47878b,20261001,2026-10-01,North,Vitamins and Supplements,57447.25,33024.6,2.1982,robust_z,False,False
+an-8e652f307f47878b,20251101,2025-11-01,South,Analgesics,8678.2,9030.45,-0.3462,robust_z,False,False
+an-8e652f307f47878b,20251201,2025-12-01,South,Analgesics,6847.35,9030.45,-1.0093,robust_z,False,False
+an-8e652f307f47878b,20260101,2026-01-01,South,Analgesics,9637.7,9030.45,0.0,robust_z,False,False
+an-8e652f307f47878b,20260201,2026-02-01,South,Analgesics,7115.15,9030.45,-0.9113,robust_z,False,False
+an-8e652f307f47878b,20260301,2026-03-01,South,Analgesics,11000.1,8757.22,0.6173,robust_z,False,False
+an-8e652f307f47878b,20260401,2026-04-01,South,Analgesics,7631.0,9157.95,-0.7643,robust_z,False,False
+an-8e652f307f47878b,20260501,2026-05-01,South,Analgesics,9727.65,8154.6,0.4116,robust_z,False,False
+an-8e652f307f47878b,20260601,2026-06-01,South,Analgesics,9162.3,8634.35,-0.0196,robust_z,False,False
+an-8e652f307f47878b,20260701,2026-07-01,South,Analgesics,10490.1,9400.0,0.16,robust_z,False,False
+an-8e652f307f47878b,20260801,2026-08-01,South,Analgesics,13947.5,9444.97,1.3392,robust_z,False,False
+an-8e652f307f47878b,20260901,2026-09-01,South,Analgesics,15683.4,10108.87,1.5809,robust_z,False,False
+an-8e652f307f47878b,20261001,2026-10-01,South,Analgesics,8799.4,10108.87,-0.6435,robust_z,False,False
+an-8e652f307f47878b,20251101,2025-11-01,South,Antibiotics,36551.25,20177.47,2.4301,robust_z,False,False
+an-8e652f307f47878b,20251201,2025-12-01,South,Antibiotics,20143.05,23260.0,-0.6565,robust_z,False,False
+an-8e652f307f47878b,20260101,2026-01-01,South,Antibiotics,19280.35,23260.0,-0.7774,robust_z,False,False
+an-8e652f307f47878b,20260201,2026-02-01,South,Antibiotics,29634.15,23260.0,0.6761,robust_z,False,False
+an-8e652f307f47878b,20260301,2026-03-01,South,Antibiotics,29720.6,26817.35,0.1339,robust_z,False,False
+an-8e652f307f47878b,20260401,2026-04-01,South,Antibiotics,26014.0,29677.37,-0.6206,robust_z,False,False
+an-8e652f307f47878b,20260501,2026-05-01,South,Antibiotics,27409.45,27824.07,-0.2678,robust_z,False,False
+an-8e652f307f47878b,20260601,2026-06-01,South,Antibiotics,23680.4,26711.72,-0.5879,robust_z,False,False
+an-8e652f307f47878b,20260701,2026-07-01,South,Antibiotics,24186.95,26711.72,-0.5291,robust_z,False,False
+an-8e652f307f47878b,20260801,2026-08-01,South,Antibiotics,27493.2,26711.72,-0.1241,robust_z,False,False
+an-8e652f307f47878b,20260901,2026-09-01,South,Antibiotics,22443.0,26711.72,-0.7414,robust_z,False,False
+an-8e652f307f47878b,20261001,2026-10-01,South,Antibiotics,26254.35,25100.47,-0.0686,robust_z,False,False
+an-8e652f307f47878b,20251101,2025-11-01,South,Cardiovascular,13633.6,19882.02,-1.2445,robust_z,False,False
+an-8e652f307f47878b,20251201,2025-12-01,South,Cardiovascular,16699.65,18987.85,-0.6141,robust_z,False,False
+an-8e652f307f47878b,20260101,2026-01-01,South,Cardiovascular,24628.15,18987.85,0.7512,robust_z,False,False
+an-8e652f307f47878b,20260201,2026-02-01,South,Cardiovascular,18636.8,18987.85,-0.2776,robust_z,False,False
+an-8e652f307f47878b,20260301,2026-03-01,South,Cardiovascular,24416.0,19365.6,0.6337,robust_z,False,False
+an-8e652f307f47878b,20260401,2026-04-01,South,Cardiovascular,43391.7,19365.6,3.8346,robust_z,True,False
+an-8e652f307f47878b,20260501,2026-05-01,South,Cardiovascular,17147.0,21526.4,-0.8819,robust_z,False,False
+an-8e652f307f47878b,20260601,2026-06-01,South,Cardiovascular,26826.5,21526.4,0.5847,robust_z,False,False
+an-8e652f307f47878b,20260701,2026-07-01,South,Cardiovascular,34156.15,24522.07,1.0648,robust_z,False,False
+an-8e652f307f47878b,20260801,2026-08-01,South,Cardiovascular,26432.15,25621.25,-0.1143,robust_z,False,False
+an-8e652f307f47878b,20260901,2026-09-01,South,Cardiovascular,30407.75,26629.32,0.245,robust_z,False,False
+an-8e652f307f47878b,20261001,2026-10-01,South,Cardiovascular,19902.2,28617.12,-1.2151,robust_z,False,False
+an-8e652f307f47878b,20251101,2025-11-01,South,Cough and Cold,15867.3,12279.87,0.7349,robust_z,False,False
+an-8e652f307f47878b,20251201,2025-12-01,South,Cough and Cold,28752.7,14731.42,2.8907,robust_z,False,False
+an-8e652f307f47878b,20260101,2026-01-01,South,Cough and Cold,20519.7,14731.42,1.0648,robust_z,False,False
+an-8e652f307f47878b,20260201,2026-02-01,South,Cough and Cold,18760.55,15000.17,0.601,robust_z,False,False
+an-8e652f307f47878b,20260301,2026-03-01,South,Cough and Cold,15147.3,17313.92,-0.6271,robust_z,False,False
+an-8e652f307f47878b,20260401,2026-04-01,South,Cough and Cold,16066.05,17313.92,-0.454,robust_z,False,False
+an-8e652f307f47878b,20260501,2026-05-01,South,Cough and Cold,12395.85,17413.3,-1.1595,robust_z,False,False
+an-8e652f307f47878b,20260601,2026-06-01,South,Cough and Cold,13381.65,17413.3,-0.9766,robust_z,False,False
+an-8e652f307f47878b,20260701,2026-07-01,South,Cough and Cold,12986.3,15606.67,-0.7676,robust_z,False,False
+an-8e652f307f47878b,20260801,2026-08-01,South,Cough and Cold,16142.85,14264.47,0.2123,robust_z,False,False
+an-8e652f307f47878b,20260901,2026-09-01,South,Cough and Cold,10247.1,14264.47,-1.1399,robust_z,False,False
+an-8e652f307f47878b,20261001,2026-10-01,South,Cough and Cold,16223.7,13183.97,0.5357,robust_z,False,False
+an-8e652f307f47878b,20251101,2025-11-01,South,Diabetes Care,31492.35,31307.77,-0.1992,robust_z,False,False
+an-8e652f307f47878b,20251201,2025-12-01,South,Diabetes Care,45850.85,31555.87,1.2608,robust_z,False,False
+an-8e652f307f47878b,20260101,2026-01-01,South,Diabetes Care,38446.7,32011.95,0.4377,robust_z,False,False
+an-8e652f307f47878b,20260201,2026-02-01,South,Diabetes Care,17745.8,32011.95,-1.6756,robust_z,False,False
+an-8e652f307f47878b,20260301,2026-03-01,South,Diabetes Care,30774.65,31555.87,-0.3005,robust_z,False,False
+an-8e652f307f47878b,20260401,2026-04-01,South,Diabetes Care,32205.75,31244.25,-0.1176,robust_z,False,False
+an-8e652f307f47878b,20260501,2026-05-01,South,Diabetes Care,37432.65,31849.05,0.3528,robust_z,False,False
+an-8e652f307f47878b,20260601,2026-06-01,South,Diabetes Care,36652.55,34819.2,-0.0457,robust_z,False,False
+an-8e652f307f47878b,20260701,2026-07-01,South,Diabetes Care,36149.85,34429.15,-0.0555,robust_z,False,False
+an-8e652f307f47878b,20260801,2026-08-01,South,Diabetes Care,21786.9,34177.8,-1.4045,robust_z,False,False
+an-8e652f307f47878b,20260901,2026-09-01,South,Diabetes Care,46434.05,34177.8,0.9538,robust_z,False,False
+an-8e652f307f47878b,20261001,2026-10-01,South,Diabetes Care,26369.25,36401.2,-1.1203,robust_z,False,False
+an-8e652f307f47878b,20251101,2025-11-01,South,Gastro,12416.2,16729.62,-1.0615,robust_z,False,False
+an-8e652f307f47878b,20251201,2025-12-01,South,Gastro,13932.75,16229.35,-0.6827,robust_z,False,False
+an-8e652f307f47878b,20260101,2026-01-01,South,Gastro,13153.8,15515.45,-0.7153,robust_z,False,False
+an-8e652f307f47878b,20260201,2026-02-01,South,Gastro,8699.15,13543.27,-1.3882,robust_z,False,False
+an-8e652f307f47878b,20260301,2026-03-01,South,Gastro,14872.8,12785.0,0.3136,robust_z,False,False
+an-8e652f307f47878b,20260401,2026-04-01,South,Gastro,13302.1,13543.27,-0.2776,robust_z,False,False
+an-8e652f307f47878b,20260501,2026-05-01,South,Gastro,15446.1,13227.95,0.3299,robust_z,False,False
+an-8e652f307f47878b,20260601,2026-06-01,South,Gastro,14009.15,13617.42,-0.1241,robust_z,False,False
+an-8e652f307f47878b,20260701,2026-07-01,South,Gastro,19345.5,13655.62,1.1432,robust_z,False,False
+an-8e652f307f47878b,20260801,2026-08-01,South,Gastro,20609.4,14440.97,1.1759,robust_z,False,False
+an-8e652f307f47878b,20260901,2026-09-01,South,Gastro,21747.55,15159.45,1.202,robust_z,False,False
+an-8e652f307f47878b,20261001,2026-10-01,South,Gastro,14375.1,17395.8,-0.7872,robust_z,False,False
+an-8e652f307f47878b,20251101,2025-11-01,South,Personal Care,18655.3,20030.82,-0.4442,robust_z,False,False
+an-8e652f307f47878b,20251201,2025-12-01,South,Personal Care,21302.0,20224.05,-0.0457,robust_z,False,False
+an-8e652f307f47878b,20260101,2026-01-01,South,Personal Care,14692.8,19978.65,-1.0844,robust_z,False,False
+an-8e652f307f47878b,20260201,2026-02-01,South,Personal Care,17330.15,19978.65,-0.6533,robust_z,False,False
+an-8e652f307f47878b,20260301,2026-03-01,South,Personal Care,25962.45,19978.65,0.761,robust_z,False,False
+an-8e652f307f47878b,20260401,2026-04-01,South,Personal Care,15595.4,19978.65,-0.9342,robust_z,False,False
+an-8e652f307f47878b,20260501,2026-05-01,South,Personal Care,18364.9,17992.72,-0.1502,robust_z,False,False
+an-8e652f307f47878b,20260601,2026-06-01,South,Personal Care,17067.2,17847.52,-0.3626,robust_z,False,False
+an-8e652f307f47878b,20260701,2026-07-01,South,Personal Care,27319.8,17198.67,1.7017,robust_z,False,False
+an-8e652f307f47878b,20260801,2026-08-01,South,Personal Care,15217.7,17847.52,-0.699,robust_z,False,False
+an-8e652f307f47878b,20260901,2026-09-01,South,Personal Care,20900.25,17716.05,0.3691,robust_z,False,False
+an-8e652f307f47878b,20261001,2026-10-01,South,Personal Care,23797.35,17716.05,0.9015,robust_z,False,False
+an-8e652f307f47878b,20251101,2025-11-01,South,Vitamins and Supplements,49823.05,26559.27,2.6424,robust_z,False,False
+an-8e652f307f47878b,20251201,2025-12-01,South,Vitamins and Supplements,36638.6,27793.6,0.8198,robust_z,False,False
+an-8e652f307f47878b,20260101,2026-01-01,South,Vitamins and Supplements,59137.9,32513.12,2.4563,robust_z,False,False
+an-8e652f307f47878b,20260201,2026-02-01,South,Vitamins and Supplements,50294.1,38771.07,0.7512,robust_z,False,False
+an-8e652f307f47878b,20260301,2026-03-01,South,Vitamins and Supplements,34275.3,43230.82,-0.895,robust_z,False,False
+an-8e652f307f47878b,20260401,2026-04-01,South,Vitamins and Supplements,30888.5,43230.82,-1.1497,robust_z,False,False
+an-8e652f307f47878b,20260501,2026-05-01,South,Vitamins and Supplements,31256.55,43230.82,-1.1236,robust_z,False,False
+an-8e652f307f47878b,20260601,2026-06-01,South,Vitamins and Supplements,32629.75,35456.95,-0.4801,robust_z,False,False
+an-8e652f307f47878b,20260701,2026-07-01,South,Vitamins and Supplements,41804.25,33452.52,0.5977,robust_z,False,False
+an-8e652f307f47878b,20260801,2026-08-01,South,Vitamins and Supplements,30701.1,33452.52,-0.4867,robust_z,False,False
+an-8e652f307f47878b,20260901,2026-09-01,South,Vitamins and Supplements,48573.05,31943.15,1.4829,robust_z,False,False
+an-8e652f307f47878b,20261001,2026-10-01,South,Vitamins and Supplements,42476.55,31943.15,0.859,robust_z,False,False
+an-8e652f307f47878b,20251101,2025-11-01,East,Analgesics,8791.5,9299.0,0.5676,isolation_forest,False,False
+an-8e652f307f47878b,20251201,2025-12-01,East,Analgesics,7356.25,9299.0,0.4364,isolation_forest,False,False
+an-8e652f307f47878b,20260101,2026-01-01,East,Analgesics,6670.9,9299.0,0.4526,isolation_forest,False,False
+an-8e652f307f47878b,20260201,2026-02-01,East,Analgesics,8568.9,8975.65,0.3908,isolation_forest,False,False
+an-8e652f307f47878b,20260301,2026-03-01,East,Analgesics,9260.05,8680.2,0.4007,isolation_forest,False,False
+an-8e652f307f47878b,20260401,2026-04-01,East,Analgesics,9026.8,8680.2,0.4072,isolation_forest,False,False
+an-8e652f307f47878b,20260501,2026-05-01,East,Analgesics,8507.35,8680.2,0.3845,isolation_forest,False,False
+an-8e652f307f47878b,20260601,2026-06-01,East,Analgesics,4229.45,8538.12,0.545,isolation_forest,False,False
+an-8e652f307f47878b,20260701,2026-07-01,East,Analgesics,8081.15,8538.12,0.4114,isolation_forest,False,False
+an-8e652f307f47878b,20260801,2026-08-01,East,Analgesics,14601.85,8538.12,0.4505,isolation_forest,False,False
+an-8e652f307f47878b,20260901,2026-09-01,East,Analgesics,37583.85,8767.07,0.7892,isolation_forest,True,False
+an-8e652f307f47878b,20261001,2026-10-01,East,Analgesics,9411.2,8767.07,0.4086,isolation_forest,False,False
+an-8e652f307f47878b,20251101,2025-11-01,East,Antibiotics,19731.7,18486.85,0.476,isolation_forest,False,False
+an-8e652f307f47878b,20251201,2025-12-01,East,Antibiotics,20275.5,18486.85,0.372,isolation_forest,False,False
+an-8e652f307f47878b,20260101,2026-01-01,East,Antibiotics,27576.3,19331.45,0.5542,isolation_forest,False,False
+an-8e652f307f47878b,20260201,2026-02-01,East,Antibiotics,21378.0,20003.6,0.4478,isolation_forest,False,False
+an-8e652f307f47878b,20260301,2026-03-01,East,Antibiotics,27994.0,20826.75,0.4493,isolation_forest,False,False
+an-8e652f307f47878b,20260401,2026-04-01,East,Antibiotics,17601.55,24477.15,0.4422,isolation_forest,False,False
+an-8e652f307f47878b,20260501,2026-05-01,East,Antibiotics,25699.65,20826.75,0.3801,isolation_forest,False,False
+an-8e652f307f47878b,20260601,2026-06-01,East,Antibiotics,10851.75,23538.82,0.6123,isolation_forest,False,False
+an-8e652f307f47878b,20260701,2026-07-01,East,Antibiotics,20342.4,23538.82,0.408,isolation_forest,False,False
+an-8e652f307f47878b,20260801,2026-08-01,East,Antibiotics,16305.05,20860.2,0.4668,isolation_forest,False,False
+an-8e652f307f47878b,20260901,2026-09-01,East,Antibiotics,31769.6,18971.97,0.445,isolation_forest,False,False
+an-8e652f307f47878b,20261001,2026-10-01,East,Antibiotics,42992.25,18971.97,0.5564,isolation_forest,False,False
+an-8e652f307f47878b,20251101,2025-11-01,East,Cardiovascular,15013.95,19777.35,0.4188,isolation_forest,False,False
+an-8e652f307f47878b,20251201,2025-12-01,East,Cardiovascular,15757.9,19777.35,0.4158,isolation_forest,False,False
+an-8e652f307f47878b,20260101,2026-01-01,East,Cardiovascular,14802.45,18744.07,0.4623,isolation_forest,False,False
+an-8e652f307f47878b,20260201,2026-02-01,East,Cardiovascular,25054.05,15500.9,0.44,isolation_forest,False,False
+an-8e652f307f47878b,20260301,2026-03-01,East,Cardiovascular,19639.55,15500.9,0.4209,isolation_forest,False,False
+an-8e652f307f47878b,20260401,2026-04-01,East,Cardiovascular,17833.15,17698.72,0.4876,isolation_forest,False,False
+an-8e652f307f47878b,20260501,2026-05-01,East,Cardiovascular,17534.6,16795.52,0.391,isolation_forest,False,False
+an-8e652f307f47878b,20260601,2026-06-01,East,Cardiovascular,14721.95,17683.87,0.4436,isolation_forest,False,False
+an-8e652f307f47878b,20260701,2026-07-01,East,Cardiovascular,27330.05,17683.87,0.4652,isolation_forest,False,False
+an-8e652f307f47878b,20260801,2026-08-01,East,Cardiovascular,28187.15,18736.35,0.4425,isolation_forest,False,False
+an-8e652f307f47878b,20260901,2026-09-01,East,Cardiovascular,25617.9,18736.35,0.4226,isolation_forest,False,False
+an-8e652f307f47878b,20261001,2026-10-01,East,Cardiovascular,23329.75,21725.52,0.3836,isolation_forest,False,False
+an-8e652f307f47878b,20251101,2025-11-01,East,Cough and Cold,16040.45,11688.25,0.3956,isolation_forest,False,False
+an-8e652f307f47878b,20251201,2025-12-01,East,Cough and Cold,24681.45,12707.55,0.5167,isolation_forest,False,False
+an-8e652f307f47878b,20260101,2026-01-01,East,Cough and Cold,29795.25,13936.0,0.5403,isolation_forest,False,False
+an-8e652f307f47878b,20260201,2026-02-01,East,Cough and Cold,20432.15,14737.5,0.4128,isolation_forest,False,False
+an-8e652f307f47878b,20260301,2026-03-01,East,Cough and Cold,13242.85,18236.3,0.4147,isolation_forest,False,False
+an-8e652f307f47878b,20260401,2026-04-01,East,Cough and Cold,13820.75,18236.3,0.4337,isolation_forest,False,False
+an-8e652f307f47878b,20260501,2026-05-01,East,Cough and Cold,17621.35,18236.3,0.4671,isolation_forest,False,False
+an-8e652f307f47878b,20260601,2026-06-01,East,Cough and Cold,9383.15,19026.75,0.5142,isolation_forest,False,False
+an-8e652f307f47878b,20260701,2026-07-01,East,Cough and Cold,12624.25,15721.05,0.4086,isolation_forest,False,False
+an-8e652f307f47878b,20260801,2026-08-01,East,Cough and Cold,9757.15,13531.8,0.5056,isolation_forest,False,False
+an-8e652f307f47878b,20260901,2026-09-01,East,Cough and Cold,16658.2,12933.55,0.4164,isolation_forest,False,False
+an-8e652f307f47878b,20261001,2026-10-01,East,Cough and Cold,13598.45,13222.5,0.396,isolation_forest,False,False
+an-8e652f307f47878b,20251101,2025-11-01,East,Diabetes Care,39974.65,21771.72,0.4982,isolation_forest,False,False
+an-8e652f307f47878b,20251201,2025-12-01,East,Diabetes Care,41114.15,31078.35,0.4185,isolation_forest,False,False
+an-8e652f307f47878b,20260101,2026-01-01,East,Diabetes Care,38732.45,40544.4,0.3782,isolation_forest,False,False
+an-8e652f307f47878b,20260201,2026-02-01,East,Diabetes Care,33607.2,39353.55,0.4774,isolation_forest,False,False
+an-8e652f307f47878b,20260301,2026-03-01,East,Diabetes Care,27870.45,36169.82,0.4035,isolation_forest,False,False
+an-8e652f307f47878b,20260401,2026-04-01,East,Diabetes Care,39801.5,36169.82,0.3811,isolation_forest,False,False
+an-8e652f307f47878b,20260501,2026-05-01,East,Diabetes Care,42512.1,39266.97,0.4524,isolation_forest,False,False
+an-8e652f307f47878b,20260601,2026-06-01,East,Diabetes Care,17308.95,39266.97,0.5852,isolation_forest,False,False
+an-8e652f307f47878b,20260701,2026-07-01,East,Diabetes Care,32926.95,36169.82,0.4214,isolation_forest,False,False
+an-8e652f307f47878b,20260801,2026-08-01,East,Diabetes Care,21281.9,33267.07,0.5298,isolation_forest,False,False
+an-8e652f307f47878b,20260901,2026-09-01,East,Diabetes Care,28137.4,30398.7,0.4088,isolation_forest,False,False
+an-8e652f307f47878b,20261001,2026-10-01,East,Diabetes Care,23545.45,30532.17,0.411,isolation_forest,False,False
+an-8e652f307f47878b,20251101,2025-11-01,East,Gastro,9731.8,17194.07,0.4836,isolation_forest,False,False
+an-8e652f307f47878b,20251201,2025-12-01,East,Gastro,10292.9,17194.07,0.4727,isolation_forest,False,False
+an-8e652f307f47878b,20260101,2026-01-01,East,Gastro,12580.4,17194.07,0.4211,isolation_forest,False,False
+an-8e652f307f47878b,20260201,2026-02-01,East,Gastro,13556.0,13981.2,0.4026,isolation_forest,False,False
+an-8e652f307f47878b,20260301,2026-03-01,East,Gastro,10642.5,13068.2,0.3994,isolation_forest,False,False
+an-8e652f307f47878b,20260401,2026-04-01,East,Gastro,11929.8,11611.45,0.3882,isolation_forest,False,False
+an-8e652f307f47878b,20260501,2026-05-01,East,Gastro,15094.05,11286.15,0.3942,isolation_forest,False,False
+an-8e652f307f47878b,20260601,2026-06-01,East,Gastro,8671.55,12255.1,0.4335,isolation_forest,False,False
+an-8e652f307f47878b,20260701,2026-07-01,East,Gastro,21221.95,12255.1,0.4666,isolation_forest,False,False
+an-8e652f307f47878b,20260801,2026-08-01,East,Gastro,19847.5,12742.9,0.4438,isolation_forest,False,False
+an-8e652f307f47878b,20260901,2026-09-01,East,Gastro,31439.9,13511.92,0.5783,isolation_forest,False,False
+an-8e652f307f47878b,20261001,2026-10-01,East,Gastro,22847.15,17470.77,0.3964,isolation_forest,False,False
+an-8e652f307f47878b,20251101,2025-11-01,East,Personal Care,18511.65,15468.57,0.4121,isolation_forest,False,False
+an-8e652f307f47878b,20251201,2025-12-01,East,Personal Care,22415.1,15775.72,0.4395,isolation_forest,False,False
+an-8e652f307f47878b,20260101,2026-01-01,East,Personal Care,17421.3,17253.27,0.4208,isolation_forest,False,False
+an-8e652f307f47878b,20260201,2026-02-01,East,Personal Care,13464.0,16708.1,0.4511,isolation_forest,False,False
+an-8e652f307f47878b,20260301,2026-03-01,East,Personal Care,11746.0,16243.4,0.5579,isolation_forest,False,False
+an-8e652f307f47878b,20260401,2026-04-01,East,Personal Care,14801.95,16243.4,0.3854,isolation_forest,False,False
+an-8e652f307f47878b,20260501,2026-05-01,East,Personal Care,13374.45,16111.62,0.4157,isolation_forest,False,False
+an-8e652f307f47878b,20260601,2026-06-01,East,Personal Care,16412.6,14132.97,0.3943,isolation_forest,False,False
+an-8e652f307f47878b,20260701,2026-07-01,East,Personal Care,23358.9,14132.97,0.4749,isolation_forest,False,False
+an-8e652f307f47878b,20260801,2026-08-01,East,Personal Care,24226.5,14132.97,0.4609,isolation_forest,False,False
+an-8e652f307f47878b,20260901,2026-09-01,East,Personal Care,18231.75,15607.27,0.3841,isolation_forest,False,False
+an-8e652f307f47878b,20261001,2026-10-01,East,Personal Care,14325.0,17322.17,0.473,isolation_forest,False,False
+an-8e652f307f47878b,20251101,2025-11-01,East,Vitamins and Supplements,22083.3,27969.15,0.5261,isolation_forest,False,False
+an-8e652f307f47878b,20251201,2025-12-01,East,Vitamins and Supplements,20258.45,27969.15,0.4586,isolation_forest,False,False
+an-8e652f307f47878b,20260101,2026-01-01,East,Vitamins and Supplements,43128.8,27122.17,0.6182,isolation_forest,False,False
+an-8e652f307f47878b,20260201,2026-02-01,East,Vitamins and Supplements,44201.05,32253.5,0.4862,isolation_forest,False,False
+an-8e652f307f47878b,20260301,2026-03-01,East,Vitamins and Supplements,38349.35,34085.1,0.3945,isolation_forest,False,False
+an-8e652f307f47878b,20260401,2026-04-01,East,Vitamins and Supplements,37884.35,37086.8,0.4284,isolation_forest,False,False
+an-8e652f307f47878b,20260501,2026-05-01,East,Vitamins and Supplements,31634.6,38116.85,0.4034,isolation_forest,False,False
+an-8e652f307f47878b,20260601,2026-06-01,East,Vitamins and Supplements,19547.2,38116.85,0.5142,isolation_forest,False,False
+an-8e652f307f47878b,20260701,2026-07-01,East,Vitamins and Supplements,40078.45,38116.85,0.4307,isolation_forest,False,False
+an-8e652f307f47878b,20260801,2026-08-01,East,Vitamins and Supplements,27461.15,38116.85,0.4246,isolation_forest,False,False
+an-8e652f307f47878b,20260901,2026-09-01,East,Vitamins and Supplements,32149.4,34759.47,0.4005,isolation_forest,False,False
+an-8e652f307f47878b,20261001,2026-10-01,East,Vitamins and Supplements,55388.65,31892.0,0.4536,isolation_forest,False,False
+an-8e652f307f47878b,20251101,2025-11-01,North,Analgesics,10918.6,9969.75,0.3889,isolation_forest,False,False
+an-8e652f307f47878b,20251201,2025-12-01,North,Analgesics,10234.3,10836.82,0.4469,isolation_forest,False,False
+an-8e652f307f47878b,20260101,2026-01-01,North,Analgesics,10648.3,10836.82,0.4229,isolation_forest,False,False
+an-8e652f307f47878b,20260201,2026-02-01,North,Analgesics,13132.6,10783.45,0.4847,isolation_forest,False,False
+an-8e652f307f47878b,20260301,2026-03-01,North,Analgesics,10462.65,11029.95,0.3769,isolation_forest,False,False
+an-8e652f307f47878b,20260401,2026-04-01,North,Analgesics,9054.65,10783.45,0.39,isolation_forest,False,False
+an-8e652f307f47878b,20260501,2026-05-01,North,Analgesics,8160.65,10555.47,0.4008,isolation_forest,False,False
+an-8e652f307f47878b,20260601,2026-06-01,North,Analgesics,6844.2,10348.47,0.4657,isolation_forest,False,False
+an-8e652f307f47878b,20260701,2026-07-01,North,Analgesics,9679.5,9758.65,0.3982,isolation_forest,False,False
+an-8e652f307f47878b,20260801,2026-08-01,North,Analgesics,12630.05,9367.07,0.4199,isolation_forest,False,False
+an-8e652f307f47878b,20260901,2026-09-01,North,Analgesics,17428.75,9367.07,0.5735,isolation_forest,False,False
+an-8e652f307f47878b,20261001,2026-10-01,North,Analgesics,16489.85,9367.07,0.5657,isolation_forest,False,False
+an-8e652f307f47878b,20251101,2025-11-01,North,Antibiotics,29142.0,26471.87,0.3917,isolation_forest,False,False
+an-8e652f307f47878b,20251201,2025-12-01,North,Antibiotics,17666.75,29663.12,0.4947,isolation_forest,False,False
+an-8e652f307f47878b,20260101,2026-01-01,North,Antibiotics,12342.05,25950.75,0.5405,isolation_forest,False,False
+an-8e652f307f47878b,20260201,2026-02-01,North,Antibiotics,32009.4,25950.75,0.4068,isolation_forest,False,False
+an-8e652f307f47878b,20260301,2026-03-01,North,Antibiotics,39283.3,25950.75,0.4461,isolation_forest,False,False
+an-8e652f307f47878b,20260401,2026-04-01,North,Antibiotics,25475.15,25950.75,0.3858,isolation_forest,False,False
+an-8e652f307f47878b,20260501,2026-05-01,North,Antibiotics,23951.5,27308.57,0.3795,isolation_forest,False,False
+an-8e652f307f47878b,20260601,2026-06-01,North,Antibiotics,32312.6,24713.32,0.551,isolation_forest,False,False
+an-8e652f307f47878b,20260701,2026-07-01,North,Antibiotics,33275.15,28742.27,0.4448,isolation_forest,False,False
+an-8e652f307f47878b,20260801,2026-08-01,North,Antibiotics,30500.35,32161.0,0.4798,isolation_forest,False,False
+an-8e652f307f47878b,20260901,2026-09-01,North,Antibiotics,30666.6,31406.47,0.3954,isolation_forest,False,False
+an-8e652f307f47878b,20261001,2026-10-01,North,Antibiotics,37680.25,30583.47,0.3982,isolation_forest,False,False
+an-8e652f307f47878b,20251101,2025-11-01,North,Cardiovascular,20730.15,21256.47,0.4516,isolation_forest,False,False
+an-8e652f307f47878b,20251201,2025-12-01,North,Cardiovascular,24761.8,21668.95,0.4539,isolation_forest,False,False
+an-8e652f307f47878b,20260101,2026-01-01,North,Cardiovascular,27480.05,22749.92,0.4175,isolation_forest,False,False
+an-8e652f307f47878b,20260201,2026-02-01,North,Cardiovascular,20627.25,23826.95,0.3913,isolation_forest,False,False
+an-8e652f307f47878b,20260301,2026-03-01,North,Cardiovascular,25714.95,21811.12,0.3814,isolation_forest,False,False
+an-8e652f307f47878b,20260401,2026-04-01,North,Cardiovascular,18554.6,22745.97,0.4578,isolation_forest,False,False
+an-8e652f307f47878b,20260501,2026-05-01,North,Cardiovascular,26948.5,22745.97,0.4546,isolation_forest,False,False
+an-8e652f307f47878b,20260601,2026-06-01,North,Cardiovascular,18581.05,25238.37,0.4027,isolation_forest,False,False
+an-8e652f307f47878b,20260701,2026-07-01,North,Cardiovascular,29380.0,23171.1,0.3915,isolation_forest,False,False
+an-8e652f307f47878b,20260801,2026-08-01,North,Cardiovascular,30952.85,23171.1,0.3963,isolation_forest,False,False
+an-8e652f307f47878b,20260901,2026-09-01,North,Cardiovascular,22127.3,26331.72,0.3979,isolation_forest,False,False
+an-8e652f307f47878b,20261001,2026-10-01,North,Cardiovascular,33740.05,24537.9,0.4747,isolation_forest,False,False
+an-8e652f307f47878b,20251101,2025-11-01,North,Cough and Cold,12416.6,11543.65,0.4043,isolation_forest,False,False
+an-8e652f307f47878b,20251201,2025-12-01,North,Cough and Cold,19172.5,11957.47,0.5374,isolation_forest,False,False
+an-8e652f307f47878b,20260101,2026-01-01,North,Cough and Cold,27984.55,12382.37,0.5685,isolation_forest,False,False
+an-8e652f307f47878b,20260201,2026-02-01,North,Cough and Cold,18423.65,12890.75,0.4277,isolation_forest,False,False
+an-8e652f307f47878b,20260301,2026-03-01,North,Cough and Cold,10434.1,15894.27,0.4607,isolation_forest,False,False
+an-8e652f307f47878b,20260401,2026-04-01,North,Cough and Cold,17548.2,15894.27,0.3805,isolation_forest,False,False
+an-8e652f307f47878b,20260501,2026-05-01,North,Cough and Cold,13331.1,17985.92,0.4193,isolation_forest,False,False
+an-8e652f307f47878b,20260601,2026-06-01,North,Cough and Cold,17275.0,17985.92,0.5014,isolation_forest,False,False
+an-8e652f307f47878b,20260701,2026-07-01,North,Cough and Cold,16954.05,17411.6,0.4157,isolation_forest,False,False
+an-8e652f307f47878b,20260801,2026-08-01,North,Cough and Cold,24743.25,17114.52,0.5689,isolation_forest,False,False
+an-8e652f307f47878b,20260901,2026-09-01,North,Cough and Cold,21045.0,17114.52,0.469,isolation_forest,False,False
+an-8e652f307f47878b,20261001,2026-10-01,North,Cough and Cold,18190.25,17411.6,0.3872,isolation_forest,False,False
+an-8e652f307f47878b,20251101,2025-11-01,North,Diabetes Care,51883.55,24356.85,0.5443,isolation_forest,False,False
+an-8e652f307f47878b,20251201,2025-12-01,North,Diabetes Care,21929.8,24759.65,0.5301,isolation_forest,False,False
+an-8e652f307f47878b,20260101,2026-01-01,North,Diabetes Care,30602.85,23981.85,0.423,isolation_forest,False,False
+an-8e652f307f47878b,20260201,2026-02-01,North,Diabetes Care,32218.7,28318.37,0.3903,isolation_forest,False,False
+an-8e652f307f47878b,20260301,2026-03-01,North,Diabetes Care,34989.6,28318.37,0.4628,isolation_forest,False,False
+an-8e652f307f47878b,20260401,2026-04-01,North,Diabetes Care,36215.2,31410.77,0.3748,isolation_forest,False,False
+an-8e652f307f47878b,20260501,2026-05-01,North,Diabetes Care,24316.45,33604.15,0.4473,isolation_forest,False,False
+an-8e652f307f47878b,20260601,2026-06-01,North,Diabetes Care,37870.3,31410.77,0.4292,isolation_forest,False,False
+an-8e652f307f47878b,20260701,2026-07-01,North,Diabetes Care,37262.85,33604.15,0.427,isolation_forest,False,False
+an-8e652f307f47878b,20260801,2026-08-01,North,Diabetes Care,18751.8,35602.4,0.5654,isolation_forest,False,False
+an-8e652f307f47878b,20260901,2026-09-01,North,Diabetes Care,28402.3,35602.4,0.4026,isolation_forest,False,False
+an-8e652f307f47878b,20261001,2026-10-01,North,Diabetes Care,41480.75,32308.75,0.5097,isolation_forest,False,False
+an-8e652f307f47878b,20251101,2025-11-01,North,Gastro,15160.95,20214.07,0.4815,isolation_forest,False,False
+an-8e652f307f47878b,20251201,2025-12-01,North,Gastro,15753.75,20214.07,0.4453,isolation_forest,False,False
+an-8e652f307f47878b,20260101,2026-01-01,North,Gastro,18176.1,20214.07,0.4466,isolation_forest,False,False
+an-8e652f307f47878b,20260201,2026-02-01,North,Gastro,15271.45,18385.55,0.4682,isolation_forest,False,False
+an-8e652f307f47878b,20260301,2026-03-01,North,Gastro,12563.3,16964.92,0.4018,isolation_forest,False,False
+an-8e652f307f47878b,20260401,2026-04-01,North,Gastro,13863.8,15512.6,0.3861,isolation_forest,False,False
+an-8e652f307f47878b,20260501,2026-05-01,North,Gastro,14412.25,15216.2,0.4313,isolation_forest,False,False
+an-8e652f307f47878b,20260601,2026-06-01,North,Gastro,11998.2,14841.85,0.4556,isolation_forest,False,False
+an-8e652f307f47878b,20260701,2026-07-01,North,Gastro,18639.1,14138.02,0.4452,isolation_forest,False,False
+an-8e652f307f47878b,20260801,2026-08-01,North,Gastro,20470.05,14138.02,0.4508,isolation_forest,False,False
+an-8e652f307f47878b,20260901,2026-09-01,North,Gastro,20015.85,14138.02,0.5091,isolation_forest,False,False
+an-8e652f307f47878b,20261001,2026-10-01,North,Gastro,25330.1,16525.67,0.4377,isolation_forest,False,False
+an-8e652f307f47878b,20251101,2025-11-01,North,Personal Care,22740.3,15721.72,0.4815,isolation_forest,False,False
+an-8e652f307f47878b,20251201,2025-12-01,North,Personal Care,21125.8,15721.72,0.4583,isolation_forest,False,False
+an-8e652f307f47878b,20260101,2026-01-01,North,Personal Care,19776.2,18927.17,0.3887,isolation_forest,False,False
+an-8e652f307f47878b,20260201,2026-02-01,North,Personal Care,23338.95,20451.0,0.4522,isolation_forest,False,False
+an-8e652f307f47878b,20260301,2026-03-01,North,Personal Care,31084.15,21502.97,0.495,isolation_forest,False,False
+an-8e652f307f47878b,20260401,2026-04-01,North,Personal Care,12419.65,21933.05,0.4913,isolation_forest,False,False
+an-8e652f307f47878b,20260501,2026-05-01,North,Personal Care,17389.95,21933.05,0.4039,isolation_forest,False,False
+an-8e652f307f47878b,20260601,2026-06-01,North,Personal Care,21235.25,20451.0,0.3992,isolation_forest,False,False
+an-8e652f307f47878b,20260701,2026-07-01,North,Personal Care,18839.65,20505.72,0.4366,isolation_forest,False,False
+an-8e652f307f47878b,20260801,2026-08-01,North,Personal Care,19145.4,20037.45,0.3725,isolation_forest,False,False
+an-8e652f307f47878b,20260901,2026-09-01,North,Personal Care,18587.4,18992.52,0.4063,isolation_forest,False,False
+an-8e652f307f47878b,20261001,2026-10-01,North,Personal Care,27699.05,18713.52,0.4982,isolation_forest,False,False
+an-8e652f307f47878b,20251101,2025-11-01,North,Vitamins and Supplements,33986.15,31593.72,0.3796,isolation_forest,False,False
+an-8e652f307f47878b,20251201,2025-12-01,North,Vitamins and Supplements,31654.2,36559.9,0.3877,isolation_forest,False,False
+an-8e652f307f47878b,20260101,2026-01-01,North,Vitamins and Supplements,53347.0,32820.17,0.4462,isolation_forest,False,False
+an-8e652f307f47878b,20260201,2026-02-01,North,Vitamins and Supplements,48783.2,32820.17,0.4766,isolation_forest,False,False
+an-8e652f307f47878b,20260301,2026-03-01,North,Vitamins and Supplements,46095.75,32820.17,0.4324,isolation_forest,False,False
+an-8e652f307f47878b,20260401,2026-04-01,North,Vitamins and Supplements,24831.15,40040.95,0.4549,isolation_forest,False,False
+an-8e652f307f47878b,20260501,2026-05-01,North,Vitamins and Supplements,40237.1,40040.95,0.4242,isolation_forest,False,False
+an-8e652f307f47878b,20260601,2026-06-01,North,Vitamins and Supplements,32442.3,43166.42,0.4781,isolation_forest,False,False
+an-8e652f307f47878b,20260701,2026-07-01,North,Vitamins and Supplements,33606.9,43166.42,0.4166,isolation_forest,False,False
+an-8e652f307f47878b,20260801,2026-08-01,North,Vitamins and Supplements,25203.25,36922.0,0.4623,isolation_forest,False,False
+an-8e652f307f47878b,20260901,2026-09-01,North,Vitamins and Supplements,37487.8,33024.6,0.4156,isolation_forest,False,False
+an-8e652f307f47878b,20261001,2026-10-01,North,Vitamins and Supplements,57447.25,33024.6,0.5897,isolation_forest,False,False
+an-8e652f307f47878b,20251101,2025-11-01,South,Analgesics,8678.2,9030.45,0.3953,isolation_forest,False,False
+an-8e652f307f47878b,20251201,2025-12-01,South,Analgesics,6847.35,9030.45,0.4059,isolation_forest,False,False
+an-8e652f307f47878b,20260101,2026-01-01,South,Analgesics,9637.7,9030.45,0.3844,isolation_forest,False,False
+an-8e652f307f47878b,20260201,2026-02-01,South,Analgesics,7115.15,9030.45,0.4398,isolation_forest,False,False
+an-8e652f307f47878b,20260301,2026-03-01,South,Analgesics,11000.1,8757.22,0.3866,isolation_forest,False,False
+an-8e652f307f47878b,20260401,2026-04-01,South,Analgesics,7631.0,9157.95,0.3904,isolation_forest,False,False
+an-8e652f307f47878b,20260501,2026-05-01,South,Analgesics,9727.65,8154.6,0.3831,isolation_forest,False,False
+an-8e652f307f47878b,20260601,2026-06-01,South,Analgesics,9162.3,8634.35,0.4859,isolation_forest,False,False
+an-8e652f307f47878b,20260701,2026-07-01,South,Analgesics,10490.1,9400.0,0.401,isolation_forest,False,False
+an-8e652f307f47878b,20260801,2026-08-01,South,Analgesics,13947.5,9444.97,0.4295,isolation_forest,False,False
+an-8e652f307f47878b,20260901,2026-09-01,South,Analgesics,15683.4,10108.87,0.5667,isolation_forest,False,False
+an-8e652f307f47878b,20261001,2026-10-01,South,Analgesics,8799.4,10108.87,0.4625,isolation_forest,False,False
+an-8e652f307f47878b,20251101,2025-11-01,South,Antibiotics,36551.25,20177.47,0.5596,isolation_forest,False,False
+an-8e652f307f47878b,20251201,2025-12-01,South,Antibiotics,20143.05,23260.0,0.3804,isolation_forest,False,False
+an-8e652f307f47878b,20260101,2026-01-01,South,Antibiotics,19280.35,23260.0,0.4078,isolation_forest,False,False
+an-8e652f307f47878b,20260201,2026-02-01,South,Antibiotics,29634.15,23260.0,0.4133,isolation_forest,False,False
+an-8e652f307f47878b,20260301,2026-03-01,South,Antibiotics,29720.6,26817.35,0.3896,isolation_forest,False,False
+an-8e652f307f47878b,20260401,2026-04-01,South,Antibiotics,26014.0,29677.37,0.4099,isolation_forest,False,False
+an-8e652f307f47878b,20260501,2026-05-01,South,Antibiotics,27409.45,27824.07,0.3985,isolation_forest,False,False
+an-8e652f307f47878b,20260601,2026-06-01,South,Antibiotics,23680.4,26711.72,0.4531,isolation_forest,False,False
+an-8e652f307f47878b,20260701,2026-07-01,South,Antibiotics,24186.95,26711.72,0.4042,isolation_forest,False,False
+an-8e652f307f47878b,20260801,2026-08-01,South,Antibiotics,27493.2,26711.72,0.3834,isolation_forest,False,False
+an-8e652f307f47878b,20260901,2026-09-01,South,Antibiotics,22443.0,26711.72,0.4096,isolation_forest,False,False
+an-8e652f307f47878b,20261001,2026-10-01,South,Antibiotics,26254.35,25100.47,0.469,isolation_forest,False,False
+an-8e652f307f47878b,20251101,2025-11-01,South,Cardiovascular,13633.6,19882.02,0.4413,isolation_forest,False,False
+an-8e652f307f47878b,20251201,2025-12-01,South,Cardiovascular,16699.65,18987.85,0.3944,isolation_forest,False,False
+an-8e652f307f47878b,20260101,2026-01-01,South,Cardiovascular,24628.15,18987.85,0.5368,isolation_forest,False,False
+an-8e652f307f47878b,20260201,2026-02-01,South,Cardiovascular,18636.8,18987.85,0.4166,isolation_forest,False,False
+an-8e652f307f47878b,20260301,2026-03-01,South,Cardiovascular,24416.0,19365.6,0.4061,isolation_forest,False,False
+an-8e652f307f47878b,20260401,2026-04-01,South,Cardiovascular,43391.7,19365.6,0.7024,isolation_forest,True,False
+an-8e652f307f47878b,20260501,2026-05-01,South,Cardiovascular,17147.0,21526.4,0.4112,isolation_forest,False,False
+an-8e652f307f47878b,20260601,2026-06-01,South,Cardiovascular,26826.5,21526.4,0.4746,isolation_forest,False,False
+an-8e652f307f47878b,20260701,2026-07-01,South,Cardiovascular,34156.15,24522.07,0.4173,isolation_forest,False,False
+an-8e652f307f47878b,20260801,2026-08-01,South,Cardiovascular,26432.15,25621.25,0.4021,isolation_forest,False,False
+an-8e652f307f47878b,20260901,2026-09-01,South,Cardiovascular,30407.75,26629.32,0.3914,isolation_forest,False,False
+an-8e652f307f47878b,20261001,2026-10-01,South,Cardiovascular,19902.2,28617.12,0.4289,isolation_forest,False,False
+an-8e652f307f47878b,20251101,2025-11-01,South,Cough and Cold,15867.3,12279.87,0.3893,isolation_forest,False,False
+an-8e652f307f47878b,20251201,2025-12-01,South,Cough and Cold,28752.7,14731.42,0.5051,isolation_forest,False,False
+an-8e652f307f47878b,20260101,2026-01-01,South,Cough and Cold,20519.7,14731.42,0.4679,isolation_forest,False,False
+an-8e652f307f47878b,20260201,2026-02-01,South,Cough and Cold,18760.55,15000.17,0.396,isolation_forest,False,False
+an-8e652f307f47878b,20260301,2026-03-01,South,Cough and Cold,15147.3,17313.92,0.4273,isolation_forest,False,False
+an-8e652f307f47878b,20260401,2026-04-01,South,Cough and Cold,16066.05,17313.92,0.3694,isolation_forest,False,False
+an-8e652f307f47878b,20260501,2026-05-01,South,Cough and Cold,12395.85,17413.3,0.4438,isolation_forest,False,False
+an-8e652f307f47878b,20260601,2026-06-01,South,Cough and Cold,13381.65,17413.3,0.4346,isolation_forest,False,False
+an-8e652f307f47878b,20260701,2026-07-01,South,Cough and Cold,12986.3,15606.67,0.4115,isolation_forest,False,False
+an-8e652f307f47878b,20260801,2026-08-01,South,Cough and Cold,16142.85,14264.47,0.4272,isolation_forest,False,False
+an-8e652f307f47878b,20260901,2026-09-01,South,Cough and Cold,10247.1,14264.47,0.4765,isolation_forest,False,False
+an-8e652f307f47878b,20261001,2026-10-01,South,Cough and Cold,16223.7,13183.97,0.3789,isolation_forest,False,False
+an-8e652f307f47878b,20251101,2025-11-01,South,Diabetes Care,31492.35,31307.77,0.5094,isolation_forest,False,False
+an-8e652f307f47878b,20251201,2025-12-01,South,Diabetes Care,45850.85,31555.87,0.4638,isolation_forest,False,False
+an-8e652f307f47878b,20260101,2026-01-01,South,Diabetes Care,38446.7,32011.95,0.3779,isolation_forest,False,False
+an-8e652f307f47878b,20260201,2026-02-01,South,Diabetes Care,17745.8,32011.95,0.546,isolation_forest,False,False
+an-8e652f307f47878b,20260301,2026-03-01,South,Diabetes Care,30774.65,31555.87,0.3784,isolation_forest,False,False
+an-8e652f307f47878b,20260401,2026-04-01,South,Diabetes Care,32205.75,31244.25,0.3941,isolation_forest,False,False
+an-8e652f307f47878b,20260501,2026-05-01,South,Diabetes Care,37432.65,31849.05,0.3881,isolation_forest,False,False
+an-8e652f307f47878b,20260601,2026-06-01,South,Diabetes Care,36652.55,34819.2,0.4583,isolation_forest,False,False
+an-8e652f307f47878b,20260701,2026-07-01,South,Diabetes Care,36149.85,34429.15,0.3759,isolation_forest,False,False
+an-8e652f307f47878b,20260801,2026-08-01,South,Diabetes Care,21786.9,34177.8,0.4968,isolation_forest,False,False
+an-8e652f307f47878b,20260901,2026-09-01,South,Diabetes Care,46434.05,34177.8,0.4749,isolation_forest,False,False
+an-8e652f307f47878b,20261001,2026-10-01,South,Diabetes Care,26369.25,36401.2,0.4223,isolation_forest,False,False
+an-8e652f307f47878b,20251101,2025-11-01,South,Gastro,12416.2,16729.62,0.4216,isolation_forest,False,False
+an-8e652f307f47878b,20251201,2025-12-01,South,Gastro,13932.75,16229.35,0.4584,isolation_forest,False,False
+an-8e652f307f47878b,20260101,2026-01-01,South,Gastro,13153.8,15515.45,0.4005,isolation_forest,False,False
+an-8e652f307f47878b,20260201,2026-02-01,South,Gastro,8699.15,13543.27,0.4878,isolation_forest,False,False
+an-8e652f307f47878b,20260301,2026-03-01,South,Gastro,14872.8,12785.0,0.3935,isolation_forest,False,False
+an-8e652f307f47878b,20260401,2026-04-01,South,Gastro,13302.1,13543.27,0.3847,isolation_forest,False,False
+an-8e652f307f47878b,20260501,2026-05-01,South,Gastro,15446.1,13227.95,0.3945,isolation_forest,False,False
+an-8e652f307f47878b,20260601,2026-06-01,South,Gastro,14009.15,13617.42,0.4537,isolation_forest,False,False
+an-8e652f307f47878b,20260701,2026-07-01,South,Gastro,19345.5,13655.62,0.4329,isolation_forest,False,False
+an-8e652f307f47878b,20260801,2026-08-01,South,Gastro,20609.4,14440.97,0.4503,isolation_forest,False,False
+an-8e652f307f47878b,20260901,2026-09-01,South,Gastro,21747.55,15159.45,0.5013,isolation_forest,False,False
+an-8e652f307f47878b,20261001,2026-10-01,South,Gastro,14375.1,17395.8,0.4609,isolation_forest,False,False
+an-8e652f307f47878b,20251101,2025-11-01,South,Personal Care,18655.3,20030.82,0.3941,isolation_forest,False,False
+an-8e652f307f47878b,20251201,2025-12-01,South,Personal Care,21302.0,20224.05,0.3732,isolation_forest,False,False
+an-8e652f307f47878b,20260101,2026-01-01,South,Personal Care,14692.8,19978.65,0.4114,isolation_forest,False,False
+an-8e652f307f47878b,20260201,2026-02-01,South,Personal Care,17330.15,19978.65,0.3948,isolation_forest,False,False
+an-8e652f307f47878b,20260301,2026-03-01,South,Personal Care,25962.45,19978.65,0.4299,isolation_forest,False,False
+an-8e652f307f47878b,20260401,2026-04-01,South,Personal Care,15595.4,19978.65,0.4304,isolation_forest,False,False
+an-8e652f307f47878b,20260501,2026-05-01,South,Personal Care,18364.9,17992.72,0.4004,isolation_forest,False,False
+an-8e652f307f47878b,20260601,2026-06-01,South,Personal Care,17067.2,17847.52,0.4388,isolation_forest,False,False
+an-8e652f307f47878b,20260701,2026-07-01,South,Personal Care,27319.8,17198.67,0.4492,isolation_forest,False,False
+an-8e652f307f47878b,20260801,2026-08-01,South,Personal Care,15217.7,17847.52,0.4227,isolation_forest,False,False
+an-8e652f307f47878b,20260901,2026-09-01,South,Personal Care,20900.25,17716.05,0.4334,isolation_forest,False,False
+an-8e652f307f47878b,20261001,2026-10-01,South,Personal Care,23797.35,17716.05,0.4059,isolation_forest,False,False
+an-8e652f307f47878b,20251101,2025-11-01,South,Vitamins and Supplements,49823.05,26559.27,0.5974,isolation_forest,False,False
+an-8e652f307f47878b,20251201,2025-12-01,South,Vitamins and Supplements,36638.6,27793.6,0.4262,isolation_forest,False,False
+an-8e652f307f47878b,20260101,2026-01-01,South,Vitamins and Supplements,59137.9,32513.12,0.4789,isolation_forest,False,False
+an-8e652f307f47878b,20260201,2026-02-01,South,Vitamins and Supplements,50294.1,38771.07,0.4072,isolation_forest,False,False
+an-8e652f307f47878b,20260301,2026-03-01,South,Vitamins and Supplements,34275.3,43230.82,0.3976,isolation_forest,False,False
+an-8e652f307f47878b,20260401,2026-04-01,South,Vitamins and Supplements,30888.5,43230.82,0.4194,isolation_forest,False,False
+an-8e652f307f47878b,20260501,2026-05-01,South,Vitamins and Supplements,31256.55,43230.82,0.43,isolation_forest,False,False
+an-8e652f307f47878b,20260601,2026-06-01,South,Vitamins and Supplements,32629.75,35456.95,0.5155,isolation_forest,False,False
+an-8e652f307f47878b,20260701,2026-07-01,South,Vitamins and Supplements,41804.25,33452.52,0.3894,isolation_forest,False,False
+an-8e652f307f47878b,20260801,2026-08-01,South,Vitamins and Supplements,30701.1,33452.52,0.4475,isolation_forest,False,False
+an-8e652f307f47878b,20260901,2026-09-01,South,Vitamins and Supplements,48573.05,31943.15,0.4578,isolation_forest,False,False
+an-8e652f307f47878b,20261001,2026-10-01,South,Vitamins and Supplements,42476.55,31943.15,0.4602,isolation_forest,False,False
+an-8e652f307f47878b-injected,20251101,2025-11-01,East,Analgesics,8791.5,9299.0,-0.3971,robust_z,False,True
+an-8e652f307f47878b-injected,20251201,2025-12-01,East,Analgesics,7356.25,9299.0,-0.9012,robust_z,False,True
+an-8e652f307f47878b-injected,20260101,2026-01-01,East,Analgesics,6670.9,9299.0,-1.142,robust_z,False,True
+an-8e652f307f47878b-injected,20260201,2026-02-01,East,Analgesics,8568.9,8975.65,-0.3669,robust_z,False,True
+an-8e652f307f47878b-injected,20260301,2026-03-01,East,Analgesics,9260.05,8680.2,-0.0006,robust_z,False,True
+an-8e652f307f47878b-injected,20260401,2026-04-01,East,Analgesics,9026.8,8680.2,-0.0884,robust_z,False,True
+an-8e652f307f47878b-injected,20260501,2026-05-01,East,Analgesics,8507.35,8680.2,-0.2839,robust_z,False,True
+an-8e652f307f47878b-injected,20260601,2026-06-01,East,Analgesics,4229.45,8538.125,-1.8671,robust_z,False,True
+an-8e652f307f47878b-injected,20260701,2026-07-01,East,Analgesics,8081.15,8538.125,-0.3937,robust_z,False,True
+an-8e652f307f47878b-injected,20260801,2026-08-01,East,Analgesics,14601.85,8538.125,2.1009,robust_z,False,True
+an-8e652f307f47878b-injected,20260901,2026-09-01,East,Analgesics,37583.85,8767.075,10.5173,robust_z,True,True
+an-8e652f307f47878b-injected,20261001,2026-10-01,East,Analgesics,9411.2,8767.075,0.0211,robust_z,False,True
+an-8e652f307f47878b-injected,20251101,2025-11-01,East,Antibiotics,19731.7,18486.85,0.0011,robust_z,False,True
+an-8e652f307f47878b-injected,20251201,2025-12-01,East,Antibiotics,20275.5,18486.85,0.0972,robust_z,False,True
+an-8e652f307f47878b-injected,20260101,2026-01-01,East,Antibiotics,27576.3,19331.45,1.1742,robust_z,False,True
+an-8e652f307f47878b-injected,20260201,2026-02-01,East,Antibiotics,21378.0,20003.6,0.0056,robust_z,False,True
+an-8e652f307f47878b-injected,20260301,2026-03-01,East,Antibiotics,27994.0,20826.75,0.9052,robust_z,False,True
+an-8e652f307f47878b-injected,20260401,2026-04-01,East,Antibiotics,6013.51,24477.15,-2.6827,robust_z,False,True
+an-8e652f307f47878b-injected,20260501,2026-05-01,East,Antibiotics,25699.65,20826.75,0.5454,robust_z,False,True
+an-8e652f307f47878b-injected,20260601,2026-06-01,East,Antibiotics,10851.75,23538.825,-1.9793,robust_z,False,True
+an-8e652f307f47878b-injected,20260701,2026-07-01,East,Antibiotics,20342.4,23538.825,-0.6624,robust_z,False,True
+an-8e652f307f47878b-injected,20260801,2026-08-01,East,Antibiotics,3870.39,20860.2,-2.8791,robust_z,False,True
+an-8e652f307f47878b-injected,20260901,2026-09-01,East,Antibiotics,31769.6,15597.075,3.168,robust_z,False,True
+an-8e652f307f47878b-injected,20261001,2026-10-01,East,Antibiotics,42992.25,15597.075,5.5182,robust_z,True,True
+an-8e652f307f47878b-injected,20251101,2025-11-01,East,Cardiovascular,15013.95,19777.35,-1.0055,robust_z,False,True
+an-8e652f307f47878b-injected,20251201,2025-12-01,East,Cardiovascular,15757.9,19777.35,-0.8827,robust_z,False,True
+an-8e652f307f47878b-injected,20260101,2026-01-01,East,Cardiovascular,14802.45,18744.075,-0.9057,robust_z,False,True
+an-8e652f307f47878b-injected,20260201,2026-02-01,East,Cardiovascular,25054.05,15500.9,1.7942,robust_z,False,True
+an-8e652f307f47878b-injected,20260301,2026-03-01,East,Cardiovascular,19639.55,15500.9,0.6532,robust_z,False,True
+an-8e652f307f47878b-injected,20260401,2026-04-01,East,Cardiovascular,17833.15,17698.725,-0.194,robust_z,False,True
+an-8e652f307f47878b-injected,20260501,2026-05-01,East,Cardiovascular,17534.6,16795.525,-0.0751,robust_z,False,True
+an-8e652f307f47878b-injected,20260601,2026-06-01,East,Cardiovascular,14721.95,17683.875,-0.7659,robust_z,False,True
+an-8e652f307f47878b-injected,20260701,2026-07-01,East,Cardiovascular,27330.05,17683.875,1.5629,robust_z,False,True
+an-8e652f307f47878b-injected,20260801,2026-08-01,East,Cardiovascular,28187.15,18736.35,1.4287,robust_z,False,True
+an-8e652f307f47878b-injected,20260901,2026-09-01,East,Cardiovascular,25617.9,18736.35,0.9808,robust_z,False,True
+an-8e652f307f47878b-injected,20261001,2026-10-01,East,Cardiovascular,23329.75,21725.525,0.0223,robust_z,False,True
+an-8e652f307f47878b-injected,20251101,2025-11-01,East,Cough and Cold,16040.45,11688.25,0.9974,robust_z,False,True
+an-8e652f307f47878b-injected,20251201,2025-12-01,East,Cough and Cold,24681.45,12707.55,2.8589,robust_z,False,True
+an-8e652f307f47878b-injected,20260101,2026-01-01,East,Cough and Cold,29795.25,13936.0,3.4982,robust_z,False,True
+an-8e652f307f47878b-injected,20260201,2026-02-01,East,Cough and Cold,20432.15,14737.5,1.0433,robust_z,False,True
+an-8e652f307f47878b-injected,20260301,2026-03-01,East,Cough and Cold,13242.85,18236.300000000003,-1.1132,robust_z,False,True
+an-8e652f307f47878b-injected,20260401,2026-04-01,East,Cough and Cold,13820.75,18236.300000000003,-1.0097,robust_z,False,True
+an-8e652f307f47878b-injected,20260501,2026-05-01,East,Cough and Cold,17621.35,18236.300000000003,-0.329,robust_z,False,True
+an-8e652f307f47878b-injected,20260601,2026-06-01,East,Cough and Cold,9383.15,19026.75,-1.8743,robust_z,False,True
+an-8e652f307f47878b-injected,20260701,2026-07-01,East,Cough and Cold,12624.25,15721.05,-0.8623,robust_z,False,True
+an-8e652f307f47878b-injected,20260801,2026-08-01,East,Cough and Cold,9757.15,13531.8,-1.13,robust_z,False,True
+an-8e652f307f47878b-injected,20260901,2026-09-01,East,Cough and Cold,16658.2,12933.55,0.7218,robust_z,False,True
+an-8e652f307f47878b-injected,20261001,2026-10-01,East,Cough and Cold,13598.45,13222.5,-0.126,robust_z,False,True
+an-8e652f307f47878b-injected,20251101,2025-11-01,East,Diabetes Care,39974.65,21771.725,2.512,robust_z,False,True
+an-8e652f307f47878b-injected,20251201,2025-12-01,East,Diabetes Care,41114.15,31078.35,0.8359,robust_z,False,True
+an-8e652f307f47878b-injected,20260101,2026-01-01,East,Diabetes Care,38732.45,40544.4,-0.3648,robust_z,False,True
+an-8e652f307f47878b-injected,20260201,2026-02-01,East,Diabetes Care,33607.2,39353.55,-0.6958,robust_z,False,True
+an-8e652f307f47878b-injected,20260301,2026-03-01,East,Diabetes Care,27870.45,36169.825,-0.9683,robust_z,False,True
+an-8e652f307f47878b-injected,20260401,2026-04-01,East,Diabetes Care,39801.5,36169.825,0.1091,robust_z,False,True
+an-8e652f307f47878b-injected,20260501,2026-05-01,East,Diabetes Care,42512.1,39266.975,0.0511,robust_z,False,True
+an-8e652f307f47878b-injected,20260601,2026-06-01,East,Diabetes Care,17308.95,39266.975,-2.0454,robust_z,False,True
+an-8e652f307f47878b-injected,20260701,2026-07-01,East,Diabetes Care,32926.95,36169.825,-0.5117,robust_z,False,True
+an-8e652f307f47878b-injected,20260801,2026-08-01,East,Diabetes Care,21281.9,33267.075,-1.3956,robust_z,False,True
+an-8e652f307f47878b-injected,20260901,2026-09-01,East,Diabetes Care,28137.4,30398.699999999997,-0.4618,robust_z,False,True
+an-8e652f307f47878b-injected,20261001,2026-10-01,East,Diabetes Care,23545.45,30532.175,-0.9663,robust_z,False,True
+an-8e652f307f47878b-injected,20251101,2025-11-01,East,Gastro,9731.8,17194.075,-1.6364,robust_z,False,True
+an-8e652f307f47878b-injected,20251201,2025-12-01,East,Gastro,24114.06,17194.075,1.0957,robust_z,False,True
+an-8e652f307f47878b-injected,20260101,2026-01-01,East,Gastro,12580.4,19230.625,-1.3484,robust_z,False,True
+an-8e652f307f47878b-injected,20260201,2026-02-01,East,Gastro,13556.0,17418.55,-0.9431,robust_z,False,True
+an-8e652f307f47878b-injected,20260301,2026-03-01,East,Gastro,10642.5,16505.55,-1.3791,robust_z,False,True
+an-8e652f307f47878b-injected,20260401,2026-04-01,East,Gastro,2671.82,13068.2,-2.8173,robust_z,False,True
+an-8e652f307f47878b-injected,20260501,2026-05-01,East,Gastro,15094.05,11611.45,0.7608,robust_z,False,True
+an-8e652f307f47878b-injected,20260601,2026-06-01,East,Gastro,8671.55,13068.2,-1.3178,robust_z,False,True
+an-8e652f307f47878b-injected,20260701,2026-07-01,East,Gastro,21221.95,11611.45,2.4846,robust_z,False,True
+an-8e652f307f47878b-injected,20260801,2026-08-01,East,Gastro,19847.5,12099.25,1.8729,robust_z,False,True
+an-8e652f307f47878b-injected,20260901,2026-09-01,East,Gastro,31439.9,12868.275,4.4951,robust_z,True,True
+an-8e652f307f47878b-injected,20261001,2026-10-01,East,Gastro,22847.15,17470.775,0.7863,robust_z,False,True
+an-8e652f307f47878b-injected,20251101,2025-11-01,East,Personal Care,6518.62,15468.575,-2.1087,robust_z,False,True
+an-8e652f307f47878b-injected,20251201,2025-12-01,East,Personal Care,22415.1,15311.025,1.2967,robust_z,False,True
+an-8e652f307f47878b-injected,20260101,2026-01-01,East,Personal Care,17421.3,15530.2,0.1789,robust_z,False,True
+an-8e652f307f47878b-injected,20260201,2026-02-01,East,Personal Care,13464.0,15530.2,-0.6534,robust_z,False,True
+an-8e652f307f47878b-injected,20260301,2026-03-01,East,Personal Care,27463.28,14839.45,2.5598,robust_z,False,True
+an-8e652f307f47878b-injected,20260401,2026-04-01,East,Personal Care,14801.95,16243.4,-0.5087,robust_z,False,True
+an-8e652f307f47878b-injected,20260501,2026-05-01,East,Personal Care,13374.45,16111.625,-0.7737,robust_z,False,True
+an-8e652f307f47878b-injected,20260601,2026-06-01,East,Personal Care,16412.6,16111.625,-0.1578,robust_z,False,True
+an-8e652f307f47878b-injected,20260701,2026-07-01,East,Personal Care,23358.9,15607.275,1.4034,robust_z,False,True
+an-8e652f307f47878b-injected,20260801,2026-08-01,East,Personal Care,24226.5,15607.275,1.585,robust_z,False,True
+an-8e652f307f47878b-injected,20260901,2026-09-01,East,Personal Care,36195.12,19885.75,2.46,robust_z,False,True
+an-8e652f307f47878b-injected,20261001,2026-10-01,East,Personal Care,14325.0,19885.75,-1.1322,robust_z,False,True
+an-8e652f307f47878b-injected,20251101,2025-11-01,East,Vitamins and Supplements,22083.3,27969.15,-0.9062,robust_z,False,True
+an-8e652f307f47878b-injected,20251201,2025-12-01,East,Vitamins and Supplements,20258.45,27969.15,-1.1193,robust_z,False,True
+an-8e652f307f47878b-injected,20260101,2026-01-01,East,Vitamins and Supplements,43128.8,27122.175,1.7088,robust_z,False,True
+an-8e652f307f47878b-injected,20260201,2026-02-01,East,Vitamins and Supplements,44201.05,32253.5,0.9911,robust_z,False,True
+an-8e652f307f47878b-injected,20260301,2026-03-01,East,Vitamins and Supplements,38349.35,34085.1,0.1898,robust_z,False,True
+an-8e652f307f47878b-injected,20260401,2026-04-01,East,Vitamins and Supplements,37884.35,37086.8,-0.1486,robust_z,False,True
+an-8e652f307f47878b-injected,20260501,2026-05-01,East,Vitamins and Supplements,31634.6,38116.85,-0.7743,robust_z,False,True
+an-8e652f307f47878b-injected,20260601,2026-06-01,East,Vitamins and Supplements,19547.2,38116.85,-1.8101,robust_z,False,True
+an-8e652f307f47878b-injected,20260701,2026-07-01,East,Vitamins and Supplements,40078.45,38116.85,-0.0507,robust_z,False,True
+an-8e652f307f47878b-injected,20260801,2026-08-01,East,Vitamins and Supplements,27461.15,38116.85,-1.1319,robust_z,False,True
+an-8e652f307f47878b-injected,20260901,2026-09-01,East,Vitamins and Supplements,32149.4,34759.475,-0.4641,robust_z,False,True
+an-8e652f307f47878b-injected,20261001,2026-10-01,East,Vitamins and Supplements,55388.65,31892.0,2.1876,robust_z,False,True
+an-8e652f307f47878b-injected,20251101,2025-11-01,North,Analgesics,10918.6,9969.75,0.092,robust_z,False,True
+an-8e652f307f47878b-injected,20251201,2025-12-01,North,Analgesics,18627.25,10836.825,2.1292,robust_z,False,True
+an-8e652f307f47878b-injected,20260101,2026-01-01,North,Analgesics,10648.3,11029.95,-0.3319,robust_z,False,True
+an-8e652f307f47878b-injected,20260201,2026-02-01,North,Analgesics,13132.6,11029.95,0.4038,robust_z,False,True
+an-8e652f307f47878b-injected,20260301,2026-03-01,North,Analgesics,10462.65,12136.95,-0.6694,robust_z,False,True
+an-8e652f307f47878b-injected,20260401,2026-04-01,North,Analgesics,9054.65,11029.95,-0.8038,robust_z,False,True
+an-8e652f307f47878b-injected,20260501,2026-05-01,North,Analgesics,8160.65,10783.45,-1.0133,robust_z,False,True
+an-8e652f307f47878b-injected,20260601,2026-06-01,North,Analgesics,3044.25,10555.474999999999,-2.5431,robust_z,False,True
+an-8e652f307f47878b-injected,20260701,2026-07-01,North,Analgesics,9679.5,9758.65,-0.2453,robust_z,False,True
+an-8e652f307f47878b-injected,20260801,2026-08-01,North,Analgesics,12630.05,9367.075,0.919,robust_z,False,True
+an-8e652f307f47878b-injected,20260901,2026-09-01,North,Analgesics,17428.75,9367.075,2.5923,robust_z,False,True
+an-8e652f307f47878b-injected,20261001,2026-10-01,North,Analgesics,16489.85,9367.075,2.2649,robust_z,False,True
+an-8e652f307f47878b-injected,20251101,2025-11-01,North,Antibiotics,29142.0,26471.875,0.1106,robust_z,False,True
+an-8e652f307f47878b-injected,20251201,2025-12-01,North,Antibiotics,17666.75,29663.125,-1.5398,robust_z,False,True
+an-8e652f307f47878b-injected,20260101,2026-01-01,North,Antibiotics,12342.05,25950.75,-1.9317,robust_z,False,True
+an-8e652f307f47878b-injected,20260201,2026-02-01,North,Antibiotics,32009.4,25950.75,0.5437,robust_z,False,True
+an-8e652f307f47878b-injected,20260301,2026-03-01,North,Antibiotics,39283.3,25950.75,1.4593,robust_z,False,True
+an-8e652f307f47878b-injected,20260401,2026-04-01,North,Antibiotics,25475.15,25950.75,-0.2787,robust_z,False,True
+an-8e652f307f47878b-injected,20260501,2026-05-01,North,Antibiotics,23951.5,27308.575,-0.6204,robust_z,False,True
+an-8e652f307f47878b-injected,20260601,2026-06-01,North,Antibiotics,32312.6,24713.325,0.7855,robust_z,False,True
+an-8e652f307f47878b-injected,20260701,2026-07-01,North,Antibiotics,33275.15,28742.275,0.2963,robust_z,False,True
+an-8e652f307f47878b-injected,20260801,2026-08-01,North,Antibiotics,30500.35,32161.0,-0.3875,robust_z,False,True
+an-8e652f307f47878b-injected,20260901,2026-09-01,North,Antibiotics,30666.6,31406.475,-0.2958,robust_z,False,True
+an-8e652f307f47878b-injected,20261001,2026-10-01,North,Antibiotics,37680.25,30583.475,0.5391,robust_z,False,True
+an-8e652f307f47878b-injected,20251101,2025-11-01,North,Cardiovascular,44944.97,21256.475,3.4212,robust_z,False,True
+an-8e652f307f47878b-injected,20251201,2025-12-01,North,Cardiovascular,24761.8,22749.925,0.07,robust_z,False,True
+an-8e652f307f47878b-injected,20260101,2026-01-01,North,Cardiovascular,27480.05,23826.949999999997,0.2819,robust_z,False,True
+an-8e652f307f47878b-injected,20260201,2026-02-01,North,Cardiovascular,20627.25,25829.9,-0.8767,robust_z,False,True
+an-8e652f307f47878b-injected,20260301,2026-03-01,North,Cardiovascular,25714.95,23826.949999999997,0.04,robust_z,False,True
+an-8e652f307f47878b-injected,20260401,2026-04-01,North,Cardiovascular,18554.6,25238.375,-1.0838,robust_z,False,True
+an-8e652f307f47878b-injected,20260501,2026-05-01,North,Cardiovascular,26948.5,25238.375,0.0025,robust_z,False,True
+an-8e652f307f47878b-injected,20260601,2026-06-01,North,Cardiovascular,18581.05,25238.375,-1.0804,robust_z,False,True
+an-8e652f307f47878b-injected,20260701,2026-07-01,North,Cardiovascular,29380.0,23171.1,0.6564,robust_z,False,True
+an-8e652f307f47878b-injected,20260801,2026-08-01,North,Cardiovascular,30952.85,23171.1,0.8781,robust_z,False,True
+an-8e652f307f47878b-injected,20260901,2026-09-01,North,Cardiovascular,22127.3,26331.725,-0.7404,robust_z,False,True
+an-8e652f307f47878b-injected,20261001,2026-10-01,North,Cardiovascular,33740.05,24537.9,1.0061,robust_z,False,True
+an-8e652f307f47878b-injected,20251101,2025-11-01,North,Cough and Cold,12416.6,11543.65,0.0282,robust_z,False,True
+an-8e652f307f47878b-injected,20251201,2025-12-01,North,Cough and Cold,40047.65,11957.474999999999,7.4543,robust_z,True,True
+an-8e652f307f47878b-injected,20260101,2026-01-01,North,Cough and Cold,27984.55,12382.375,3.8968,robust_z,True,True
+an-8e652f307f47878b-injected,20260201,2026-02-01,North,Cough and Cold,18423.65,12890.75,1.1831,robust_z,False,True
+an-8e652f307f47878b-injected,20260301,2026-03-01,North,Cough and Cold,10434.1,15894.275000000001,-1.3409,robust_z,False,True
+an-8e652f307f47878b-injected,20260401,2026-04-01,North,Cough and Cold,17548.2,15894.275000000001,0.121,robust_z,False,True
+an-8e652f307f47878b-injected,20260501,2026-05-01,North,Cough and Cold,13331.1,17985.925000000003,-1.0642,robust_z,False,True
+an-8e652f307f47878b-injected,20260601,2026-06-01,North,Cough and Cold,17275.0,17985.925000000003,-0.3479,robust_z,False,True
+an-8e652f307f47878b-injected,20260701,2026-07-01,North,Cough and Cold,16954.05,17411.6,-0.3047,robust_z,False,True
+an-8e652f307f47878b-injected,20260801,2026-08-01,North,Cough and Cold,24743.25,17114.525,1.2371,robust_z,False,True
+an-8e652f307f47878b-injected,20260901,2026-09-01,North,Cough and Cold,6299.31,17114.525,-2.2829,robust_z,False,True
+an-8e652f307f47878b-injected,20261001,2026-10-01,North,Cough and Cold,18190.25,17114.525,-0.0135,robust_z,False,True
+an-8e652f307f47878b-injected,20251101,2025-11-01,North,Diabetes Care,51883.55,24356.85,3.4725,robust_z,False,True
+an-8e652f307f47878b-injected,20251201,2025-12-01,North,Diabetes Care,21929.8,24759.65,-0.5922,robust_z,False,True
+an-8e652f307f47878b-injected,20260101,2026-01-01,North,Diabetes Care,30602.85,23981.85,0.6829,robust_z,False,True
+an-8e652f307f47878b-injected,20260201,2026-02-01,North,Diabetes Care,32218.7,28318.375,0.231,robust_z,False,True
+an-8e652f307f47878b-injected,20260301,2026-03-01,North,Diabetes Care,34989.6,28318.375,0.5506,robust_z,False,True
+an-8e652f307f47878b-injected,20260401,2026-04-01,North,Diabetes Care,36215.2,31410.775,0.2808,robust_z,False,True
+an-8e652f307f47878b-injected,20260501,2026-05-01,North,Diabetes Care,24316.45,33604.15,-1.1216,robust_z,False,True
+an-8e652f307f47878b-injected,20260601,2026-06-01,North,Diabetes Care,37870.3,31410.775,0.4529,robust_z,False,True
+an-8e652f307f47878b-injected,20260701,2026-07-01,North,Diabetes Care,37262.85,33604.15,0.1368,robust_z,False,True
+an-8e652f307f47878b-injected,20260801,2026-08-01,North,Diabetes Care,18751.8,35602.399999999994,-1.7648,robust_z,False,True
+an-8e652f307f47878b-injected,20260901,2026-09-01,North,Diabetes Care,28402.3,35602.399999999994,-0.8794,robust_z,False,True
+an-8e652f307f47878b-injected,20261001,2026-10-01,North,Diabetes Care,41480.75,32308.75,0.7084,robust_z,False,True
+an-8e652f307f47878b-injected,20251101,2025-11-01,North,Gastro,15160.95,20214.075,-1.0354,robust_z,False,True
+an-8e652f307f47878b-injected,20251201,2025-12-01,North,Gastro,15753.75,20214.075,-0.9396,robust_z,False,True
+an-8e652f307f47878b-injected,20260101,2026-01-01,North,Gastro,18176.1,20214.075,-0.5481,robust_z,False,True
+an-8e652f307f47878b-injected,20260201,2026-02-01,North,Gastro,15271.45,18385.55,-0.7721,robust_z,False,True
+an-8e652f307f47878b-injected,20260301,2026-03-01,North,Gastro,12563.3,16964.925,-1.0663,robust_z,False,True
+an-8e652f307f47878b-injected,20260401,2026-04-01,North,Gastro,13863.8,15512.6,-0.566,robust_z,False,True
+an-8e652f307f47878b-injected,20260501,2026-05-01,North,Gastro,14412.25,15216.2,-0.3914,robust_z,False,True
+an-8e652f307f47878b-injected,20260601,2026-06-01,North,Gastro,11998.2,14841.85,-0.8447,robust_z,False,True
+an-8e652f307f47878b-injected,20260701,2026-07-01,North,Gastro,18639.1,14138.025,0.821,robust_z,False,True
+an-8e652f307f47878b-injected,20260801,2026-08-01,North,Gastro,20470.05,14138.025,1.244,robust_z,False,True
+an-8e652f307f47878b-injected,20260901,2026-09-01,North,Gastro,20015.85,14138.025,1.1391,robust_z,False,True
+an-8e652f307f47878b-injected,20261001,2026-10-01,North,Gastro,25330.1,16525.675,1.5214,robust_z,False,True
+an-8e652f307f47878b-injected,20251101,2025-11-01,North,Personal Care,22740.3,15721.724999999999,1.2393,robust_z,False,True
+an-8e652f307f47878b-injected,20251201,2025-12-01,North,Personal Care,21125.8,15721.724999999999,0.9039,robust_z,False,True
+an-8e652f307f47878b-injected,20260101,2026-01-01,North,Personal Care,19776.2,18927.175,-0.0723,robust_z,False,True
+an-8e652f307f47878b-injected,20260201,2026-02-01,North,Personal Care,23338.95,20451.0,0.2424,robust_z,False,True
+an-8e652f307f47878b-injected,20260301,2026-03-01,North,Personal Care,31084.15,21502.975,1.2365,robust_z,False,True
+an-8e652f307f47878b-injected,20260401,2026-04-01,North,Personal Care,12419.65,21933.05,-1.6356,robust_z,False,True
+an-8e652f307f47878b-injected,20260501,2026-05-01,North,Personal Care,17389.95,21933.05,-0.8954,robust_z,False,True
+an-8e652f307f47878b-injected,20260601,2026-06-01,North,Personal Care,21235.25,20451.0,-0.0936,robust_z,False,True
+an-8e652f307f47878b-injected,20260701,2026-07-01,North,Personal Care,18839.65,20505.725,-0.4842,robust_z,False,True
+an-8e652f307f47878b-injected,20260801,2026-08-01,North,Personal Care,19145.4,20037.45,-0.3643,robust_z,False,True
+an-8e652f307f47878b-injected,20260901,2026-09-01,North,Personal Care,18587.4,18992.525,-0.2885,robust_z,False,True
+an-8e652f307f47878b-injected,20261001,2026-10-01,North,Personal Care,27699.05,18713.525,1.3495,robust_z,False,True
+an-8e652f307f47878b-injected,20251101,2025-11-01,North,Vitamins and Supplements,66480.47,31593.725,3.3879,robust_z,False,True
+an-8e652f307f47878b-injected,20251201,2025-12-01,North,Vitamins and Supplements,31654.2,40640.5,-0.9411,robust_z,False,True
+an-8e652f307f47878b-injected,20260101,2026-01-01,North,Vitamins and Supplements,53347.0,35393.925,1.4379,robust_z,False,True
+an-8e652f307f47878b-injected,20260201,2026-02-01,North,Vitamins and Supplements,48783.2,35393.925,1.0168,robust_z,False,True
+an-8e652f307f47878b-injected,20260301,2026-03-01,North,Vitamins and Supplements,46095.75,40218.7,0.2585,robust_z,False,True
+an-8e652f307f47878b-injected,20260401,2026-04-01,North,Vitamins and Supplements,24831.15,47439.475,-1.7755,robust_z,False,True
+an-8e652f307f47878b-injected,20260501,2026-05-01,North,Vitamins and Supplements,40237.1,47439.475,-0.7147,robust_z,False,True
+an-8e652f307f47878b-injected,20260601,2026-06-01,North,Vitamins and Supplements,32442.3,43166.425,-1.0303,robust_z,False,True
+an-8e652f307f47878b-injected,20260701,2026-07-01,North,Vitamins and Supplements,7170.97,43166.425,-2.9425,robust_z,False,True
+an-8e652f307f47878b-injected,20260801,2026-08-01,North,Vitamins and Supplements,25203.25,36339.7,-1.2198,robust_z,False,True
+an-8e652f307f47878b-injected,20260901,2026-09-01,North,Vitamins and Supplements,37487.8,28822.775,0.7631,robust_z,False,True
+an-8e652f307f47878b-injected,20261001,2026-10-01,North,Vitamins and Supplements,57447.25,28822.775,3.025,robust_z,False,True
+an-8e652f307f47878b-injected,20251101,2025-11-01,South,Analgesics,8678.2,9030.45,-0.3463,robust_z,False,True
+an-8e652f307f47878b-injected,20251201,2025-12-01,South,Analgesics,6847.35,9030.45,-1.0085,robust_z,False,True
+an-8e652f307f47878b-injected,20260101,2026-01-01,South,Analgesics,9637.7,9030.45,0.0008,robust_z,False,True
+an-8e652f307f47878b-injected,20260201,2026-02-01,South,Analgesics,7115.15,9030.45,-0.9116,robust_z,False,True
+an-8e652f307f47878b-injected,20260301,2026-03-01,South,Analgesics,11000.1,8757.225,0.6177,robust_z,False,True
+an-8e652f307f47878b-injected,20260401,2026-04-01,South,Analgesics,7631.0,9157.95,-0.7634,robust_z,False,True
+an-8e652f307f47878b-injected,20260501,2026-05-01,South,Analgesics,2994.77,8154.6,-2.2856,robust_z,False,True
+an-8e652f307f47878b-injected,20260601,2026-06-01,South,Analgesics,9162.3,7373.075,0.5738,robust_z,False,True
+an-8e652f307f47878b-injected,20260701,2026-07-01,South,Analgesics,10490.1,8396.65,0.5955,robust_z,False,True
+an-8e652f307f47878b-injected,20260801,2026-08-01,South,Analgesics,13947.5,8396.65,1.9404,robust_z,False,True
+an-8e652f307f47878b-injected,20260901,2026-09-01,South,Analgesics,15683.4,9826.2,1.7281,robust_z,False,True
+an-8e652f307f47878b-injected,20261001,2026-10-01,South,Analgesics,8799.4,9826.2,-0.5602,robust_z,False,True
+an-8e652f307f47878b-injected,20251101,2025-11-01,South,Antibiotics,36551.25,20177.475,2.4317,robust_z,False,True
+an-8e652f307f47878b-injected,20251201,2025-12-01,South,Antibiotics,20143.05,23260.0,-0.6565,robust_z,False,True
+an-8e652f307f47878b-injected,20260101,2026-01-01,South,Antibiotics,19280.35,23260.0,-0.7777,robust_z,False,True
+an-8e652f307f47878b-injected,20260201,2026-02-01,South,Antibiotics,29634.15,23260.0,0.6763,robust_z,False,True
+an-8e652f307f47878b-injected,20260301,2026-03-01,South,Antibiotics,29720.6,26817.35,0.1348,robust_z,False,True
+an-8e652f307f47878b-injected,20260401,2026-04-01,South,Antibiotics,26014.0,29677.375,-0.622,robust_z,False,True
+an-8e652f307f47878b-injected,20260501,2026-05-01,South,Antibiotics,27409.45,27824.075,-0.2675,robust_z,False,True
+an-8e652f307f47878b-injected,20260601,2026-06-01,South,Antibiotics,23680.4,26711.725,-0.5895,robust_z,False,True
+an-8e652f307f47878b-injected,20260701,2026-07-01,South,Antibiotics,60134.41,26711.725,3.8681,robust_z,True,True
+an-8e652f307f47878b-injected,20260801,2026-08-01,South,Antibiotics,27493.2,28521.800000000003,-0.3366,robust_z,False,True
+an-8e652f307f47878b-injected,20260901,2026-09-01,South,Antibiotics,22443.0,27451.325,-0.8148,robust_z,False,True
+an-8e652f307f47878b-injected,20261001,2026-10-01,South,Antibiotics,26254.35,26711.725,-0.2748,robust_z,False,True
+an-8e652f307f47878b-injected,20251101,2025-11-01,South,Cardiovascular,13633.6,19882.025,-1.2454,robust_z,False,True
+an-8e652f307f47878b-injected,20251201,2025-12-01,South,Cardiovascular,38901.55,18987.85,3.2067,robust_z,False,True
+an-8e652f307f47878b-injected,20260101,2026-01-01,South,Cardiovascular,58757.71,20188.325,6.0214,robust_z,True,True
+an-8e652f307f47878b-injected,20260201,2026-02-01,South,Cardiovascular,18636.8,22159.225,-0.7381,robust_z,False,True
+an-8e652f307f47878b-injected,20260301,2026-03-01,South,Cardiovascular,24416.0,22159.225,0.1138,robust_z,False,True
+an-8e652f307f47878b-injected,20260401,2026-04-01,South,Cardiovascular,43391.7,22255.2,2.8833,robust_z,False,True
+an-8e652f307f47878b-injected,20260501,2026-05-01,South,Cardiovascular,17147.0,31658.775,-1.7161,robust_z,False,True
+an-8e652f307f47878b-injected,20260601,2026-06-01,South,Cardiovascular,26826.5,31658.775,-0.7174,robust_z,False,True
+an-8e652f307f47878b-injected,20260701,2026-07-01,South,Cardiovascular,34156.15,25621.25,0.8692,robust_z,False,True
+an-8e652f307f47878b-injected,20260801,2026-08-01,South,Cardiovascular,26432.15,25621.25,-0.1155,robust_z,False,True
+an-8e652f307f47878b-injected,20260901,2026-09-01,South,Cardiovascular,30407.75,26629.325,0.2446,robust_z,False,True
+an-8e652f307f47878b-injected,20261001,2026-10-01,South,Cardiovascular,19902.2,28617.125,-1.2135,robust_z,False,True
+an-8e652f307f47878b-injected,20251101,2025-11-01,South,Cough and Cold,15867.3,12279.875,0.7354,robust_z,False,True
+an-8e652f307f47878b-injected,20251201,2025-12-01,South,Cough and Cold,28752.7,14731.425,2.89,robust_z,False,True
+an-8e652f307f47878b-injected,20260101,2026-01-01,South,Cough and Cold,20519.7,14731.425,1.0646,robust_z,False,True
+an-8e652f307f47878b-injected,20260201,2026-02-01,South,Cough and Cold,18760.55,15000.175,0.6,robust_z,False,True
+an-8e652f307f47878b-injected,20260301,2026-03-01,South,Cough and Cold,4475.59,17313.925,-2.6408,robust_z,False,True
+an-8e652f307f47878b-injected,20260401,2026-04-01,South,Cough and Cold,16066.05,17313.925,-0.4543,robust_z,False,True
+an-8e652f307f47878b-injected,20260501,2026-05-01,South,Cough and Cold,12395.85,17413.3,-1.16,robust_z,False,True
+an-8e652f307f47878b-injected,20260601,2026-06-01,South,Cough and Cold,13381.65,17413.3,-0.9751,robust_z,False,True
+an-8e652f307f47878b-injected,20260701,2026-07-01,South,Cough and Cold,12986.3,14723.849999999999,-0.6043,robust_z,False,True
+an-8e652f307f47878b-injected,20260801,2026-08-01,South,Cough and Cold,16142.85,13183.974999999999,0.5142,robust_z,False,True
+an-8e652f307f47878b-injected,20260901,2026-09-01,South,Cough and Cold,10247.1,13183.974999999999,-0.9464,robust_z,False,True
+an-8e652f307f47878b-injected,20261001,2026-10-01,South,Cough and Cold,16223.7,13183.974999999999,0.5342,robust_z,False,True
+an-8e652f307f47878b-injected,20251101,2025-11-01,South,Diabetes Care,31492.35,31307.775,-0.1996,robust_z,False,True
+an-8e652f307f47878b-injected,20251201,2025-12-01,South,Diabetes Care,9750.52,31555.875,-2.4759,robust_z,False,True
+an-8e652f307f47878b-injected,20260101,2026-01-01,South,Diabetes Care,38446.7,31555.875,0.4944,robust_z,False,True
+an-8e652f307f47878b-injected,20260201,2026-02-01,South,Diabetes Care,17745.8,31555.875,-1.6483,robust_z,False,True
+an-8e652f307f47878b-injected,20260301,2026-03-01,South,Diabetes Care,30774.65,31244.25,-0.2679,robust_z,False,True
+an-8e652f307f47878b-injected,20260401,2026-04-01,South,Diabetes Care,32205.75,30885.4,-0.0792,robust_z,False,True
+an-8e652f307f47878b-injected,20260501,2026-05-01,South,Diabetes Care,37432.65,31133.5,0.442,robust_z,False,True
+an-8e652f307f47878b-injected,20260601,2026-06-01,South,Diabetes Care,36652.55,31490.2,0.3166,robust_z,False,True
+an-8e652f307f47878b-injected,20260701,2026-07-01,South,Diabetes Care,36149.85,34429.15,-0.0556,robust_z,False,True
+an-8e652f307f47878b-injected,20260801,2026-08-01,South,Diabetes Care,21786.9,34177.8,-1.403,robust_z,False,True
+an-8e652f307f47878b-injected,20260901,2026-09-01,South,Diabetes Care,46434.05,34177.8,0.9525,robust_z,False,True
+an-8e652f307f47878b-injected,20261001,2026-10-01,South,Diabetes Care,26369.25,36401.2,-1.119,robust_z,False,True
+an-8e652f307f47878b-injected,20251101,2025-11-01,South,Gastro,12416.2,16729.625,-1.061,robust_z,False,True
+an-8e652f307f47878b-injected,20251201,2025-12-01,South,Gastro,13932.75,16229.35,-0.6811,robust_z,False,True
+an-8e652f307f47878b-injected,20260101,2026-01-01,South,Gastro,13153.8,15515.45,-0.716,robust_z,False,True
+an-8e652f307f47878b-injected,20260201,2026-02-01,South,Gastro,8699.15,13543.275,-1.3871,robust_z,False,True
+an-8e652f307f47878b-injected,20260301,2026-03-01,South,Gastro,14872.8,12785.0,0.3145,robust_z,False,True
+an-8e652f307f47878b-injected,20260401,2026-04-01,South,Gastro,13302.1,13543.275,-0.277,robust_z,False,True
+an-8e652f307f47878b-injected,20260501,2026-05-01,South,Gastro,15446.1,13227.95,0.3289,robust_z,False,True
+an-8e652f307f47878b-injected,20260601,2026-06-01,South,Gastro,14009.15,13617.425,-0.1249,robust_z,False,True
+an-8e652f307f47878b-injected,20260701,2026-07-01,South,Gastro,19345.5,13655.625,1.1421,robust_z,False,True
+an-8e652f307f47878b-injected,20260801,2026-08-01,South,Gastro,20609.4,14440.974999999999,1.1763,robust_z,False,True
+an-8e652f307f47878b-injected,20260901,2026-09-01,South,Gastro,21747.55,15159.45,1.2006,robust_z,False,True
+an-8e652f307f47878b-injected,20261001,2026-10-01,South,Gastro,14375.1,17395.8,-0.786,robust_z,False,True
+an-8e652f307f47878b-injected,20251101,2025-11-01,South,Personal Care,18655.3,20030.824999999997,-0.4431,robust_z,False,True
+an-8e652f307f47878b-injected,20251201,2025-12-01,South,Personal Care,3475.19,20224.05,-2.9239,robust_z,False,True
+an-8e652f307f47878b-injected,20260101,2026-01-01,South,Personal Care,14692.8,18462.074999999997,-0.8857,robust_z,False,True
+an-8e652f307f47878b-injected,20260201,2026-02-01,South,Personal Care,17330.15,18462.074999999997,-0.4191,robust_z,False,True
+an-8e652f307f47878b-injected,20260301,2026-03-01,South,Personal Care,25962.45,17992.725,1.2279,robust_z,False,True
+an-8e652f307f47878b-injected,20260401,2026-04-01,South,Personal Care,15595.4,17992.725,-0.654,robust_z,False,True
+an-8e652f307f47878b-injected,20260501,2026-05-01,South,Personal Care,4274.49,16462.775,-2.6371,robust_z,False,True
+an-8e652f307f47878b-injected,20260601,2026-06-01,South,Personal Care,17067.2,15144.099999999999,0.1959,robust_z,False,True
+an-8e652f307f47878b-injected,20260701,2026-07-01,South,Personal Care,27319.8,16331.3,1.9789,robust_z,False,True
+an-8e652f307f47878b-injected,20260801,2026-08-01,South,Personal Care,15217.7,17198.675000000003,-0.5951,robust_z,False,True
+an-8e652f307f47878b-injected,20260901,2026-09-01,South,Personal Care,20900.25,16331.3,0.695,robust_z,False,True
+an-8e652f307f47878b-injected,20261001,2026-10-01,South,Personal Care,55363.78,16331.3,7.5877,robust_z,True,True
+an-8e652f307f47878b-injected,20251101,2025-11-01,South,Vitamins and Supplements,98048.43,26559.275,8.573,robust_z,True,True
+an-8e652f307f47878b-injected,20251201,2025-12-01,South,Vitamins and Supplements,36638.6,27793.6,0.8206,robust_z,False,True
+an-8e652f307f47878b-injected,20260101,2026-01-01,South,Vitamins and Supplements,59137.9,32513.125,2.4559,robust_z,False,True
+an-8e652f307f47878b-injected,20260201,2026-02-01,South,Vitamins and Supplements,113241.45,38771.075,6.055,robust_z,True,True
+an-8e652f307f47878b-injected,20260301,2026-03-01,South,Vitamins and Supplements,34275.3,47888.25,-1.1473,robust_z,False,True
+an-8e652f307f47878b-injected,20260401,2026-04-01,South,Vitamins and Supplements,30888.5,47888.25,-1.3783,robust_z,False,True
+an-8e652f307f47878b-injected,20260501,2026-05-01,South,Vitamins and Supplements,31256.55,47888.25,-1.3532,robust_z,False,True
+an-8e652f307f47878b-injected,20260601,2026-06-01,South,Vitamins and Supplements,32629.75,35456.95,-0.4793,robust_z,False,True
+an-8e652f307f47878b-injected,20260701,2026-07-01,South,Vitamins and Supplements,41804.25,33452.525,0.5966,robust_z,False,True
+an-8e652f307f47878b-injected,20260801,2026-08-01,South,Vitamins and Supplements,30701.1,33452.525,-0.4875,robust_z,False,True
+an-8e652f307f47878b-injected,20260901,2026-09-01,South,Vitamins and Supplements,48573.05,31943.15,1.4816,robust_z,False,True
+an-8e652f307f47878b-injected,20261001,2026-10-01,South,Vitamins and Supplements,42476.55,31943.15,0.8582,robust_z,False,True
+an-8e652f307f47878b-injected,20251101,2025-11-01,East,Analgesics,8791.5,9299.0,0.5676,isolation_forest,False,True
+an-8e652f307f47878b-injected,20251201,2025-12-01,East,Analgesics,7356.25,9299.0,0.5142,isolation_forest,False,True
+an-8e652f307f47878b-injected,20260101,2026-01-01,East,Analgesics,6670.9,9299.0,0.4523,isolation_forest,False,True
+an-8e652f307f47878b-injected,20260201,2026-02-01,East,Analgesics,8568.9,8975.65,0.3908,isolation_forest,False,True
+an-8e652f307f47878b-injected,20260301,2026-03-01,East,Analgesics,9260.05,8680.2,0.4007,isolation_forest,False,True
+an-8e652f307f47878b-injected,20260401,2026-04-01,East,Analgesics,9026.8,8680.2,0.4074,isolation_forest,False,True
+an-8e652f307f47878b-injected,20260501,2026-05-01,East,Analgesics,8507.35,8680.2,0.4636,isolation_forest,False,True
+an-8e652f307f47878b-injected,20260601,2026-06-01,East,Analgesics,4229.45,8538.125,0.5247,isolation_forest,False,True
+an-8e652f307f47878b-injected,20260701,2026-07-01,East,Analgesics,8081.15,8538.125,0.4114,isolation_forest,False,True
+an-8e652f307f47878b-injected,20260801,2026-08-01,East,Analgesics,14601.85,8538.125,0.4502,isolation_forest,False,True
+an-8e652f307f47878b-injected,20260901,2026-09-01,East,Analgesics,37583.85,8767.075,0.7892,isolation_forest,True,True
+an-8e652f307f47878b-injected,20261001,2026-10-01,East,Analgesics,9411.2,8767.075,0.4083,isolation_forest,False,True
+an-8e652f307f47878b-injected,20251101,2025-11-01,East,Antibiotics,19731.7,18486.85,0.4757,isolation_forest,False,True
+an-8e652f307f47878b-injected,20251201,2025-12-01,East,Antibiotics,20275.5,18486.85,0.3719,isolation_forest,False,True
+an-8e652f307f47878b-injected,20260101,2026-01-01,East,Antibiotics,27576.3,19331.45,0.5542,isolation_forest,False,True
+an-8e652f307f47878b-injected,20260201,2026-02-01,East,Antibiotics,21378.0,20003.6,0.4478,isolation_forest,False,True
+an-8e652f307f47878b-injected,20260301,2026-03-01,East,Antibiotics,27994.0,20826.75,0.449,isolation_forest,False,True
+an-8e652f307f47878b-injected,20260401,2026-04-01,East,Antibiotics,6013.51,24477.15,0.6968,isolation_forest,True,True
+an-8e652f307f47878b-injected,20260501,2026-05-01,East,Antibiotics,25699.65,20826.75,0.3801,isolation_forest,False,True
+an-8e652f307f47878b-injected,20260601,2026-06-01,East,Antibiotics,10851.75,23538.825,0.6121,isolation_forest,False,True
+an-8e652f307f47878b-injected,20260701,2026-07-01,East,Antibiotics,20342.4,23538.825,0.5436,isolation_forest,False,True
+an-8e652f307f47878b-injected,20260801,2026-08-01,East,Antibiotics,3870.39,20860.2,0.6968,isolation_forest,True,True
+an-8e652f307f47878b-injected,20260901,2026-09-01,East,Antibiotics,31769.6,15597.075,0.5246,isolation_forest,False,True
+an-8e652f307f47878b-injected,20261001,2026-10-01,East,Antibiotics,42992.25,15597.075,0.6054,isolation_forest,False,True
+an-8e652f307f47878b-injected,20251101,2025-11-01,East,Cardiovascular,15013.95,19777.35,0.4847,isolation_forest,False,True
+an-8e652f307f47878b-injected,20251201,2025-12-01,East,Cardiovascular,15757.9,19777.35,0.5189,isolation_forest,False,True
+an-8e652f307f47878b-injected,20260101,2026-01-01,East,Cardiovascular,14802.45,18744.075,0.5557,isolation_forest,False,True
+an-8e652f307f47878b-injected,20260201,2026-02-01,East,Cardiovascular,25054.05,15500.9,0.44,isolation_forest,False,True
+an-8e652f307f47878b-injected,20260301,2026-03-01,East,Cardiovascular,19639.55,15500.9,0.4209,isolation_forest,False,True
+an-8e652f307f47878b-injected,20260401,2026-04-01,East,Cardiovascular,17833.15,17698.725,0.4866,isolation_forest,False,True
+an-8e652f307f47878b-injected,20260501,2026-05-01,East,Cardiovascular,17534.6,16795.525,0.391,isolation_forest,False,True
+an-8e652f307f47878b-injected,20260601,2026-06-01,East,Cardiovascular,14721.95,17683.875,0.4436,isolation_forest,False,True
+an-8e652f307f47878b-injected,20260701,2026-07-01,East,Cardiovascular,27330.05,17683.875,0.4651,isolation_forest,False,True
+an-8e652f307f47878b-injected,20260801,2026-08-01,East,Cardiovascular,28187.15,18736.35,0.4423,isolation_forest,False,True
+an-8e652f307f47878b-injected,20260901,2026-09-01,East,Cardiovascular,25617.9,18736.35,0.4224,isolation_forest,False,True
+an-8e652f307f47878b-injected,20261001,2026-10-01,East,Cardiovascular,23329.75,21725.525,0.3836,isolation_forest,False,True
+an-8e652f307f47878b-injected,20251101,2025-11-01,East,Cough and Cold,16040.45,11688.25,0.3956,isolation_forest,False,True
+an-8e652f307f47878b-injected,20251201,2025-12-01,East,Cough and Cold,24681.45,12707.55,0.5699,isolation_forest,False,True
+an-8e652f307f47878b-injected,20260101,2026-01-01,East,Cough and Cold,29795.25,13936.0,0.5402,isolation_forest,False,True
+an-8e652f307f47878b-injected,20260201,2026-02-01,East,Cough and Cold,20432.15,14737.5,0.4121,isolation_forest,False,True
+an-8e652f307f47878b-injected,20260301,2026-03-01,East,Cough and Cold,13242.85,18236.300000000003,0.5541,isolation_forest,False,True
+an-8e652f307f47878b-injected,20260401,2026-04-01,East,Cough and Cold,13820.75,18236.300000000003,0.4338,isolation_forest,False,True
+an-8e652f307f47878b-injected,20260501,2026-05-01,East,Cough and Cold,17621.35,18236.300000000003,0.4658,isolation_forest,False,True
+an-8e652f307f47878b-injected,20260601,2026-06-01,East,Cough and Cold,9383.15,19026.75,0.5142,isolation_forest,False,True
+an-8e652f307f47878b-injected,20260701,2026-07-01,East,Cough and Cold,12624.25,15721.05,0.4086,isolation_forest,False,True
+an-8e652f307f47878b-injected,20260801,2026-08-01,East,Cough and Cold,9757.15,13531.8,0.5056,isolation_forest,False,True
+an-8e652f307f47878b-injected,20260901,2026-09-01,East,Cough and Cold,16658.2,12933.55,0.5689,isolation_forest,False,True
+an-8e652f307f47878b-injected,20261001,2026-10-01,East,Cough and Cold,13598.45,13222.5,0.3957,isolation_forest,False,True
+an-8e652f307f47878b-injected,20251101,2025-11-01,East,Diabetes Care,39974.65,21771.725,0.4982,isolation_forest,False,True
+an-8e652f307f47878b-injected,20251201,2025-12-01,East,Diabetes Care,41114.15,31078.35,0.6151,isolation_forest,False,True
+an-8e652f307f47878b-injected,20260101,2026-01-01,East,Diabetes Care,38732.45,40544.4,0.3782,isolation_forest,False,True
+an-8e652f307f47878b-injected,20260201,2026-02-01,East,Diabetes Care,33607.2,39353.55,0.478,isolation_forest,False,True
+an-8e652f307f47878b-injected,20260301,2026-03-01,East,Diabetes Care,27870.45,36169.825,0.4035,isolation_forest,False,True
+an-8e652f307f47878b-injected,20260401,2026-04-01,East,Diabetes Care,39801.5,36169.825,0.3812,isolation_forest,False,True
+an-8e652f307f47878b-injected,20260501,2026-05-01,East,Diabetes Care,42512.1,39266.975,0.4532,isolation_forest,False,True
+an-8e652f307f47878b-injected,20260601,2026-06-01,East,Diabetes Care,17308.95,39266.975,0.5852,isolation_forest,False,True
+an-8e652f307f47878b-injected,20260701,2026-07-01,East,Diabetes Care,32926.95,36169.825,0.4214,isolation_forest,False,True
+an-8e652f307f47878b-injected,20260801,2026-08-01,East,Diabetes Care,21281.9,33267.075,0.5297,isolation_forest,False,True
+an-8e652f307f47878b-injected,20260901,2026-09-01,East,Diabetes Care,28137.4,30398.699999999997,0.4089,isolation_forest,False,True
+an-8e652f307f47878b-injected,20261001,2026-10-01,East,Diabetes Care,23545.45,30532.175,0.411,isolation_forest,False,True
+an-8e652f307f47878b-injected,20251101,2025-11-01,East,Gastro,9731.8,17194.075,0.4834,isolation_forest,False,True
+an-8e652f307f47878b-injected,20251201,2025-12-01,East,Gastro,24114.06,17194.075,0.4744,isolation_forest,False,True
+an-8e652f307f47878b-injected,20260101,2026-01-01,East,Gastro,12580.4,19230.625,0.4472,isolation_forest,False,True
+an-8e652f307f47878b-injected,20260201,2026-02-01,East,Gastro,13556.0,17418.55,0.4285,isolation_forest,False,True
+an-8e652f307f47878b-injected,20260301,2026-03-01,East,Gastro,10642.5,16505.55,0.4378,isolation_forest,False,True
+an-8e652f307f47878b-injected,20260401,2026-04-01,East,Gastro,2671.82,13068.2,0.6968,isolation_forest,True,True
+an-8e652f307f47878b-injected,20260501,2026-05-01,East,Gastro,15094.05,11611.45,0.3897,isolation_forest,False,True
+an-8e652f307f47878b-injected,20260601,2026-06-01,East,Gastro,8671.55,13068.2,0.4464,isolation_forest,False,True
+an-8e652f307f47878b-injected,20260701,2026-07-01,East,Gastro,21221.95,11611.45,0.4848,isolation_forest,False,True
+an-8e652f307f47878b-injected,20260801,2026-08-01,East,Gastro,19847.5,12099.25,0.4532,isolation_forest,False,True
+an-8e652f307f47878b-injected,20260901,2026-09-01,East,Gastro,31439.9,12868.275,0.5842,isolation_forest,False,True
+an-8e652f307f47878b-injected,20261001,2026-10-01,East,Gastro,22847.15,17470.775,0.3963,isolation_forest,False,True
+an-8e652f307f47878b-injected,20251101,2025-11-01,East,Personal Care,6518.62,15468.575,0.644,isolation_forest,True,True
+an-8e652f307f47878b-injected,20251201,2025-12-01,East,Personal Care,22415.1,15311.025,0.5495,isolation_forest,False,True
+an-8e652f307f47878b-injected,20260101,2026-01-01,East,Personal Care,17421.3,15530.2,0.4124,isolation_forest,False,True
+an-8e652f307f47878b-injected,20260201,2026-02-01,East,Personal Care,13464.0,15530.2,0.4513,isolation_forest,False,True
+an-8e652f307f47878b-injected,20260301,2026-03-01,East,Personal Care,27463.28,14839.45,0.5906,isolation_forest,False,True
+an-8e652f307f47878b-injected,20260401,2026-04-01,East,Personal Care,14801.95,16243.4,0.3853,isolation_forest,False,True
+an-8e652f307f47878b-injected,20260501,2026-05-01,East,Personal Care,13374.45,16111.625,0.4511,isolation_forest,False,True
+an-8e652f307f47878b-injected,20260601,2026-06-01,East,Personal Care,16412.6,16111.625,0.3861,isolation_forest,False,True
+an-8e652f307f47878b-injected,20260701,2026-07-01,East,Personal Care,23358.9,15607.275,0.4521,isolation_forest,False,True
+an-8e652f307f47878b-injected,20260801,2026-08-01,East,Personal Care,24226.5,15607.275,0.4459,isolation_forest,False,True
+an-8e652f307f47878b-injected,20260901,2026-09-01,East,Personal Care,36195.12,19885.75,0.6297,isolation_forest,False,True
+an-8e652f307f47878b-injected,20261001,2026-10-01,East,Personal Care,14325.0,19885.75,0.5565,isolation_forest,False,True
+an-8e652f307f47878b-injected,20251101,2025-11-01,East,Vitamins and Supplements,22083.3,27969.15,0.5783,isolation_forest,False,True
+an-8e652f307f47878b-injected,20251201,2025-12-01,East,Vitamins and Supplements,20258.45,27969.15,0.4587,isolation_forest,False,True
+an-8e652f307f47878b-injected,20260101,2026-01-01,East,Vitamins and Supplements,43128.8,27122.175,0.6168,isolation_forest,False,True
+an-8e652f307f47878b-injected,20260201,2026-02-01,East,Vitamins and Supplements,44201.05,32253.5,0.5567,isolation_forest,False,True
+an-8e652f307f47878b-injected,20260301,2026-03-01,East,Vitamins and Supplements,38349.35,34085.1,0.3947,isolation_forest,False,True
+an-8e652f307f47878b-injected,20260401,2026-04-01,East,Vitamins and Supplements,37884.35,37086.8,0.4284,isolation_forest,False,True
+an-8e652f307f47878b-injected,20260501,2026-05-01,East,Vitamins and Supplements,31634.6,38116.85,0.4034,isolation_forest,False,True
+an-8e652f307f47878b-injected,20260601,2026-06-01,East,Vitamins and Supplements,19547.2,38116.85,0.5142,isolation_forest,False,True
+an-8e652f307f47878b-injected,20260701,2026-07-01,East,Vitamins and Supplements,40078.45,38116.85,0.5079,isolation_forest,False,True
+an-8e652f307f47878b-injected,20260801,2026-08-01,East,Vitamins and Supplements,27461.15,38116.85,0.4246,isolation_forest,False,True
+an-8e652f307f47878b-injected,20260901,2026-09-01,East,Vitamins and Supplements,32149.4,34759.475,0.4005,isolation_forest,False,True
+an-8e652f307f47878b-injected,20261001,2026-10-01,East,Vitamins and Supplements,55388.65,31892.0,0.4536,isolation_forest,False,True
+an-8e652f307f47878b-injected,20251101,2025-11-01,North,Analgesics,10918.6,9969.75,0.3889,isolation_forest,False,True
+an-8e652f307f47878b-injected,20251201,2025-12-01,North,Analgesics,18627.25,10836.825,0.6497,isolation_forest,True,True
+an-8e652f307f47878b-injected,20260101,2026-01-01,North,Analgesics,10648.3,11029.95,0.4256,isolation_forest,False,True
+an-8e652f307f47878b-injected,20260201,2026-02-01,North,Analgesics,13132.6,11029.95,0.4851,isolation_forest,False,True
+an-8e652f307f47878b-injected,20260301,2026-03-01,North,Analgesics,10462.65,12136.95,0.3878,isolation_forest,False,True
+an-8e652f307f47878b-injected,20260401,2026-04-01,North,Analgesics,9054.65,11029.95,0.3941,isolation_forest,False,True
+an-8e652f307f47878b-injected,20260501,2026-05-01,North,Analgesics,8160.65,10783.45,0.4891,isolation_forest,False,True
+an-8e652f307f47878b-injected,20260601,2026-06-01,North,Analgesics,3044.25,10555.474999999999,0.6674,isolation_forest,True,True
+an-8e652f307f47878b-injected,20260701,2026-07-01,North,Analgesics,9679.5,9758.65,0.3982,isolation_forest,False,True
+an-8e652f307f47878b-injected,20260801,2026-08-01,North,Analgesics,12630.05,9367.075,0.4199,isolation_forest,False,True
+an-8e652f307f47878b-injected,20260901,2026-09-01,North,Analgesics,17428.75,9367.075,0.5732,isolation_forest,False,True
+an-8e652f307f47878b-injected,20261001,2026-10-01,North,Analgesics,16489.85,9367.075,0.5656,isolation_forest,False,True
+an-8e652f307f47878b-injected,20251101,2025-11-01,North,Antibiotics,29142.0,26471.875,0.3917,isolation_forest,False,True
+an-8e652f307f47878b-injected,20251201,2025-12-01,North,Antibiotics,17666.75,29663.125,0.4946,isolation_forest,False,True
+an-8e652f307f47878b-injected,20260101,2026-01-01,North,Antibiotics,12342.05,25950.75,0.5402,isolation_forest,False,True
+an-8e652f307f47878b-injected,20260201,2026-02-01,North,Antibiotics,32009.4,25950.75,0.4073,isolation_forest,False,True
+an-8e652f307f47878b-injected,20260301,2026-03-01,North,Antibiotics,39283.3,25950.75,0.4461,isolation_forest,False,True
+an-8e652f307f47878b-injected,20260401,2026-04-01,North,Antibiotics,25475.15,25950.75,0.4729,isolation_forest,False,True
+an-8e652f307f47878b-injected,20260501,2026-05-01,North,Antibiotics,23951.5,27308.575,0.3799,isolation_forest,False,True
+an-8e652f307f47878b-injected,20260601,2026-06-01,North,Antibiotics,32312.6,24713.325,0.5512,isolation_forest,False,True
+an-8e652f307f47878b-injected,20260701,2026-07-01,North,Antibiotics,33275.15,28742.275,0.4085,isolation_forest,False,True
+an-8e652f307f47878b-injected,20260801,2026-08-01,North,Antibiotics,30500.35,32161.0,0.5844,isolation_forest,False,True
+an-8e652f307f47878b-injected,20260901,2026-09-01,North,Antibiotics,30666.6,31406.475,0.3953,isolation_forest,False,True
+an-8e652f307f47878b-injected,20261001,2026-10-01,North,Antibiotics,37680.25,30583.475,0.398,isolation_forest,False,True
+an-8e652f307f47878b-injected,20251101,2025-11-01,North,Cardiovascular,44944.97,21256.475,0.7547,isolation_forest,True,True
+an-8e652f307f47878b-injected,20251201,2025-12-01,North,Cardiovascular,24761.8,22749.925,0.3794,isolation_forest,False,True
+an-8e652f307f47878b-injected,20260101,2026-01-01,North,Cardiovascular,27480.05,23826.949999999997,0.4302,isolation_forest,False,True
+an-8e652f307f47878b-injected,20260201,2026-02-01,North,Cardiovascular,20627.25,25829.9,0.4036,isolation_forest,False,True
+an-8e652f307f47878b-injected,20260301,2026-03-01,North,Cardiovascular,25714.95,23826.949999999997,0.3804,isolation_forest,False,True
+an-8e652f307f47878b-injected,20260401,2026-04-01,North,Cardiovascular,18554.6,25238.375,0.4552,isolation_forest,False,True
+an-8e652f307f47878b-injected,20260501,2026-05-01,North,Cardiovascular,26948.5,25238.375,0.4554,isolation_forest,False,True
+an-8e652f307f47878b-injected,20260601,2026-06-01,North,Cardiovascular,18581.05,25238.375,0.4027,isolation_forest,False,True
+an-8e652f307f47878b-injected,20260701,2026-07-01,North,Cardiovascular,29380.0,23171.1,0.3915,isolation_forest,False,True
+an-8e652f307f47878b-injected,20260801,2026-08-01,North,Cardiovascular,30952.85,23171.1,0.3967,isolation_forest,False,True
+an-8e652f307f47878b-injected,20260901,2026-09-01,North,Cardiovascular,22127.3,26331.725,0.3989,isolation_forest,False,True
+an-8e652f307f47878b-injected,20261001,2026-10-01,North,Cardiovascular,33740.05,24537.9,0.4741,isolation_forest,False,True
+an-8e652f307f47878b-injected,20251101,2025-11-01,North,Cough and Cold,12416.6,11543.65,0.4035,isolation_forest,False,True
+an-8e652f307f47878b-injected,20251201,2025-12-01,North,Cough and Cold,40047.65,11957.474999999999,0.6784,isolation_forest,True,True
+an-8e652f307f47878b-injected,20260101,2026-01-01,North,Cough and Cold,27984.55,12382.375,0.5685,isolation_forest,False,True
+an-8e652f307f47878b-injected,20260201,2026-02-01,North,Cough and Cold,18423.65,12890.75,0.4277,isolation_forest,False,True
+an-8e652f307f47878b-injected,20260301,2026-03-01,North,Cough and Cold,10434.1,15894.275000000001,0.51,isolation_forest,False,True
+an-8e652f307f47878b-injected,20260401,2026-04-01,North,Cough and Cold,17548.2,15894.275000000001,0.3801,isolation_forest,False,True
+an-8e652f307f47878b-injected,20260501,2026-05-01,North,Cough and Cold,13331.1,17985.925000000003,0.4195,isolation_forest,False,True
+an-8e652f307f47878b-injected,20260601,2026-06-01,North,Cough and Cold,17275.0,17985.925000000003,0.5015,isolation_forest,False,True
+an-8e652f307f47878b-injected,20260701,2026-07-01,North,Cough and Cold,16954.05,17411.6,0.4159,isolation_forest,False,True
+an-8e652f307f47878b-injected,20260801,2026-08-01,North,Cough and Cold,24743.25,17114.525,0.5689,isolation_forest,False,True
+an-8e652f307f47878b-injected,20260901,2026-09-01,North,Cough and Cold,6299.31,17114.525,0.6143,isolation_forest,False,True
+an-8e652f307f47878b-injected,20261001,2026-10-01,North,Cough and Cold,18190.25,17114.525,0.3855,isolation_forest,False,True
+an-8e652f307f47878b-injected,20251101,2025-11-01,North,Diabetes Care,51883.55,24356.85,0.5442,isolation_forest,False,True
+an-8e652f307f47878b-injected,20251201,2025-12-01,North,Diabetes Care,21929.8,24759.65,0.4571,isolation_forest,False,True
+an-8e652f307f47878b-injected,20260101,2026-01-01,North,Diabetes Care,30602.85,23981.85,0.423,isolation_forest,False,True
+an-8e652f307f47878b-injected,20260201,2026-02-01,North,Diabetes Care,32218.7,28318.375,0.3903,isolation_forest,False,True
+an-8e652f307f47878b-injected,20260301,2026-03-01,North,Diabetes Care,34989.6,28318.375,0.4624,isolation_forest,False,True
+an-8e652f307f47878b-injected,20260401,2026-04-01,North,Diabetes Care,36215.2,31410.775,0.3748,isolation_forest,False,True
+an-8e652f307f47878b-injected,20260501,2026-05-01,North,Diabetes Care,24316.45,33604.15,0.4476,isolation_forest,False,True
+an-8e652f307f47878b-injected,20260601,2026-06-01,North,Diabetes Care,37870.3,31410.775,0.4285,isolation_forest,False,True
+an-8e652f307f47878b-injected,20260701,2026-07-01,North,Diabetes Care,37262.85,33604.15,0.427,isolation_forest,False,True
+an-8e652f307f47878b-injected,20260801,2026-08-01,North,Diabetes Care,18751.8,35602.399999999994,0.5654,isolation_forest,False,True
+an-8e652f307f47878b-injected,20260901,2026-09-01,North,Diabetes Care,28402.3,35602.399999999994,0.4031,isolation_forest,False,True
+an-8e652f307f47878b-injected,20261001,2026-10-01,North,Diabetes Care,41480.75,32308.75,0.5097,isolation_forest,False,True
+an-8e652f307f47878b-injected,20251101,2025-11-01,North,Gastro,15160.95,20214.075,0.4816,isolation_forest,False,True
+an-8e652f307f47878b-injected,20251201,2025-12-01,North,Gastro,15753.75,20214.075,0.4124,isolation_forest,False,True
+an-8e652f307f47878b-injected,20260101,2026-01-01,North,Gastro,18176.1,20214.075,0.4466,isolation_forest,False,True
+an-8e652f307f47878b-injected,20260201,2026-02-01,North,Gastro,15271.45,18385.55,0.4692,isolation_forest,False,True
+an-8e652f307f47878b-injected,20260301,2026-03-01,North,Gastro,12563.3,16964.925,0.4018,isolation_forest,False,True
+an-8e652f307f47878b-injected,20260401,2026-04-01,North,Gastro,13863.8,15512.6,0.5162,isolation_forest,False,True
+an-8e652f307f47878b-injected,20260501,2026-05-01,North,Gastro,14412.25,15216.2,0.4316,isolation_forest,False,True
+an-8e652f307f47878b-injected,20260601,2026-06-01,North,Gastro,11998.2,14841.85,0.4556,isolation_forest,False,True
+an-8e652f307f47878b-injected,20260701,2026-07-01,North,Gastro,18639.1,14138.025,0.4452,isolation_forest,False,True
+an-8e652f307f47878b-injected,20260801,2026-08-01,North,Gastro,20470.05,14138.025,0.4512,isolation_forest,False,True
+an-8e652f307f47878b-injected,20260901,2026-09-01,North,Gastro,20015.85,14138.025,0.5084,isolation_forest,False,True
+an-8e652f307f47878b-injected,20261001,2026-10-01,North,Gastro,25330.1,16525.675,0.4377,isolation_forest,False,True
+an-8e652f307f47878b-injected,20251101,2025-11-01,North,Personal Care,22740.3,15721.724999999999,0.5574,isolation_forest,False,True
+an-8e652f307f47878b-injected,20251201,2025-12-01,North,Personal Care,21125.8,15721.724999999999,0.525,isolation_forest,False,True
+an-8e652f307f47878b-injected,20260101,2026-01-01,North,Personal Care,19776.2,18927.175,0.3896,isolation_forest,False,True
+an-8e652f307f47878b-injected,20260201,2026-02-01,North,Personal Care,23338.95,20451.0,0.4522,isolation_forest,False,True
+an-8e652f307f47878b-injected,20260301,2026-03-01,North,Personal Care,31084.15,21502.975,0.4353,isolation_forest,False,True
+an-8e652f307f47878b-injected,20260401,2026-04-01,North,Personal Care,12419.65,21933.05,0.4909,isolation_forest,False,True
+an-8e652f307f47878b-injected,20260501,2026-05-01,North,Personal Care,17389.95,21933.05,0.575,isolation_forest,False,True
+an-8e652f307f47878b-injected,20260601,2026-06-01,North,Personal Care,21235.25,20451.0,0.3992,isolation_forest,False,True
+an-8e652f307f47878b-injected,20260701,2026-07-01,North,Personal Care,18839.65,20505.725,0.4366,isolation_forest,False,True
+an-8e652f307f47878b-injected,20260801,2026-08-01,North,Personal Care,19145.4,20037.45,0.372,isolation_forest,False,True
+an-8e652f307f47878b-injected,20260901,2026-09-01,North,Personal Care,18587.4,18992.525,0.4483,isolation_forest,False,True
+an-8e652f307f47878b-injected,20261001,2026-10-01,North,Personal Care,27699.05,18713.525,0.5454,isolation_forest,False,True
+an-8e652f307f47878b-injected,20251101,2025-11-01,North,Vitamins and Supplements,66480.47,31593.725,0.5591,isolation_forest,False,True
+an-8e652f307f47878b-injected,20251201,2025-12-01,North,Vitamins and Supplements,31654.2,40640.5,0.4083,isolation_forest,False,True
+an-8e652f307f47878b-injected,20260101,2026-01-01,North,Vitamins and Supplements,53347.0,35393.925,0.4294,isolation_forest,False,True
+an-8e652f307f47878b-injected,20260201,2026-02-01,North,Vitamins and Supplements,48783.2,35393.925,0.5248,isolation_forest,False,True
+an-8e652f307f47878b-injected,20260301,2026-03-01,North,Vitamins and Supplements,46095.75,40218.7,0.4011,isolation_forest,False,True
+an-8e652f307f47878b-injected,20260401,2026-04-01,North,Vitamins and Supplements,24831.15,47439.475,0.4938,isolation_forest,False,True
+an-8e652f307f47878b-injected,20260501,2026-05-01,North,Vitamins and Supplements,40237.1,47439.475,0.452,isolation_forest,False,True
+an-8e652f307f47878b-injected,20260601,2026-06-01,North,Vitamins and Supplements,32442.3,43166.425,0.4785,isolation_forest,False,True
+an-8e652f307f47878b-injected,20260701,2026-07-01,North,Vitamins and Supplements,7170.97,43166.425,0.6968,isolation_forest,True,True
+an-8e652f307f47878b-injected,20260801,2026-08-01,North,Vitamins and Supplements,25203.25,36339.7,0.4583,isolation_forest,False,True
+an-8e652f307f47878b-injected,20260901,2026-09-01,North,Vitamins and Supplements,37487.8,28822.775,0.4249,isolation_forest,False,True
+an-8e652f307f47878b-injected,20261001,2026-10-01,North,Vitamins and Supplements,57447.25,28822.775,0.6276,isolation_forest,False,True
+an-8e652f307f47878b-injected,20251101,2025-11-01,South,Analgesics,8678.2,9030.45,0.3953,isolation_forest,False,True
+an-8e652f307f47878b-injected,20251201,2025-12-01,South,Analgesics,6847.35,9030.45,0.4822,isolation_forest,False,True
+an-8e652f307f47878b-injected,20260101,2026-01-01,South,Analgesics,9637.7,9030.45,0.3834,isolation_forest,False,True
+an-8e652f307f47878b-injected,20260201,2026-02-01,South,Analgesics,7115.15,9030.45,0.4402,isolation_forest,False,True
+an-8e652f307f47878b-injected,20260301,2026-03-01,South,Analgesics,11000.1,8757.225,0.3866,isolation_forest,False,True
+an-8e652f307f47878b-injected,20260401,2026-04-01,South,Analgesics,7631.0,9157.95,0.3901,isolation_forest,False,True
+an-8e652f307f47878b-injected,20260501,2026-05-01,South,Analgesics,2994.77,8154.6,0.681,isolation_forest,True,True
+an-8e652f307f47878b-injected,20260601,2026-06-01,South,Analgesics,9162.3,7373.075,0.6059,isolation_forest,False,True
+an-8e652f307f47878b-injected,20260701,2026-07-01,South,Analgesics,10490.1,8396.65,0.4106,isolation_forest,False,True
+an-8e652f307f47878b-injected,20260801,2026-08-01,South,Analgesics,13947.5,8396.65,0.4548,isolation_forest,False,True
+an-8e652f307f47878b-injected,20260901,2026-09-01,South,Analgesics,15683.4,9826.2,0.5692,isolation_forest,False,True
+an-8e652f307f47878b-injected,20261001,2026-10-01,South,Analgesics,8799.4,9826.2,0.4637,isolation_forest,False,True
+an-8e652f307f47878b-injected,20251101,2025-11-01,South,Antibiotics,36551.25,20177.475,0.5596,isolation_forest,False,True
+an-8e652f307f47878b-injected,20251201,2025-12-01,South,Antibiotics,20143.05,23260.0,0.3804,isolation_forest,False,True
+an-8e652f307f47878b-injected,20260101,2026-01-01,South,Antibiotics,19280.35,23260.0,0.4078,isolation_forest,False,True
+an-8e652f307f47878b-injected,20260201,2026-02-01,South,Antibiotics,29634.15,23260.0,0.4135,isolation_forest,False,True
+an-8e652f307f47878b-injected,20260301,2026-03-01,South,Antibiotics,29720.6,26817.35,0.3889,isolation_forest,False,True
+an-8e652f307f47878b-injected,20260401,2026-04-01,South,Antibiotics,26014.0,29677.375,0.5052,isolation_forest,False,True
+an-8e652f307f47878b-injected,20260501,2026-05-01,South,Antibiotics,27409.45,27824.075,0.3986,isolation_forest,False,True
+an-8e652f307f47878b-injected,20260601,2026-06-01,South,Antibiotics,23680.4,26711.725,0.453,isolation_forest,False,True
+an-8e652f307f47878b-injected,20260701,2026-07-01,South,Antibiotics,60134.41,26711.725,0.7663,isolation_forest,True,True
+an-8e652f307f47878b-injected,20260801,2026-08-01,South,Antibiotics,27493.2,28521.800000000003,0.4769,isolation_forest,False,True
+an-8e652f307f47878b-injected,20260901,2026-09-01,South,Antibiotics,22443.0,27451.325,0.4115,isolation_forest,False,True
+an-8e652f307f47878b-injected,20261001,2026-10-01,South,Antibiotics,26254.35,26711.725,0.4591,isolation_forest,False,True
+an-8e652f307f47878b-injected,20251101,2025-11-01,South,Cardiovascular,13633.6,19882.025,0.5266,isolation_forest,False,True
+an-8e652f307f47878b-injected,20251201,2025-12-01,South,Cardiovascular,38901.55,18987.85,0.6486,isolation_forest,True,True
+an-8e652f307f47878b-injected,20260101,2026-01-01,South,Cardiovascular,58757.71,20188.325,0.7893,isolation_forest,True,True
+an-8e652f307f47878b-injected,20260201,2026-02-01,South,Cardiovascular,18636.8,22159.225,0.4249,isolation_forest,False,True
+an-8e652f307f47878b-injected,20260301,2026-03-01,South,Cardiovascular,24416.0,22159.225,0.3897,isolation_forest,False,True
+an-8e652f307f47878b-injected,20260401,2026-04-01,South,Cardiovascular,43391.7,22255.2,0.676,isolation_forest,True,True
+an-8e652f307f47878b-injected,20260501,2026-05-01,South,Cardiovascular,17147.0,31658.775,0.4857,isolation_forest,False,True
+an-8e652f307f47878b-injected,20260601,2026-06-01,South,Cardiovascular,26826.5,31658.775,0.5253,isolation_forest,False,True
+an-8e652f307f47878b-injected,20260701,2026-07-01,South,Cardiovascular,34156.15,25621.25,0.4126,isolation_forest,False,True
+an-8e652f307f47878b-injected,20260801,2026-08-01,South,Cardiovascular,26432.15,25621.25,0.4019,isolation_forest,False,True
+an-8e652f307f47878b-injected,20260901,2026-09-01,South,Cardiovascular,30407.75,26629.325,0.3914,isolation_forest,False,True
+an-8e652f307f47878b-injected,20261001,2026-10-01,South,Cardiovascular,19902.2,28617.125,0.4289,isolation_forest,False,True
+an-8e652f307f47878b-injected,20251101,2025-11-01,South,Cough and Cold,15867.3,12279.875,0.3893,isolation_forest,False,True
+an-8e652f307f47878b-injected,20251201,2025-12-01,South,Cough and Cold,28752.7,14731.425,0.5291,isolation_forest,False,True
+an-8e652f307f47878b-injected,20260101,2026-01-01,South,Cough and Cold,20519.7,14731.425,0.4679,isolation_forest,False,True
+an-8e652f307f47878b-injected,20260201,2026-02-01,South,Cough and Cold,18760.55,15000.175,0.396,isolation_forest,False,True
+an-8e652f307f47878b-injected,20260301,2026-03-01,South,Cough and Cold,4475.59,17313.925,0.6931,isolation_forest,True,True
+an-8e652f307f47878b-injected,20260401,2026-04-01,South,Cough and Cold,16066.05,17313.925,0.3694,isolation_forest,False,True
+an-8e652f307f47878b-injected,20260501,2026-05-01,South,Cough and Cold,12395.85,17413.3,0.4438,isolation_forest,False,True
+an-8e652f307f47878b-injected,20260601,2026-06-01,South,Cough and Cold,13381.65,17413.3,0.4347,isolation_forest,False,True
+an-8e652f307f47878b-injected,20260701,2026-07-01,South,Cough and Cold,12986.3,14723.849999999999,0.4068,isolation_forest,False,True
+an-8e652f307f47878b-injected,20260801,2026-08-01,South,Cough and Cold,16142.85,13183.974999999999,0.4268,isolation_forest,False,True
+an-8e652f307f47878b-injected,20260901,2026-09-01,South,Cough and Cold,10247.1,13183.974999999999,0.3962,isolation_forest,False,True
+an-8e652f307f47878b-injected,20261001,2026-10-01,South,Cough and Cold,16223.7,13183.974999999999,0.3793,isolation_forest,False,True
+an-8e652f307f47878b-injected,20251101,2025-11-01,South,Diabetes Care,31492.35,31307.775,0.5095,isolation_forest,False,True
+an-8e652f307f47878b-injected,20251201,2025-12-01,South,Diabetes Care,9750.52,31555.875,0.6736,isolation_forest,True,True
+an-8e652f307f47878b-injected,20260101,2026-01-01,South,Diabetes Care,38446.7,31555.875,0.38,isolation_forest,False,True
+an-8e652f307f47878b-injected,20260201,2026-02-01,South,Diabetes Care,17745.8,31555.875,0.5438,isolation_forest,False,True
+an-8e652f307f47878b-injected,20260301,2026-03-01,South,Diabetes Care,30774.65,31244.25,0.3778,isolation_forest,False,True
+an-8e652f307f47878b-injected,20260401,2026-04-01,South,Diabetes Care,32205.75,30885.4,0.3943,isolation_forest,False,True
+an-8e652f307f47878b-injected,20260501,2026-05-01,South,Diabetes Care,37432.65,31133.5,0.3886,isolation_forest,False,True
+an-8e652f307f47878b-injected,20260601,2026-06-01,South,Diabetes Care,36652.55,31490.2,0.4478,isolation_forest,False,True
+an-8e652f307f47878b-injected,20260701,2026-07-01,South,Diabetes Care,36149.85,34429.15,0.3759,isolation_forest,False,True
+an-8e652f307f47878b-injected,20260801,2026-08-01,South,Diabetes Care,21786.9,34177.8,0.4964,isolation_forest,False,True
+an-8e652f307f47878b-injected,20260901,2026-09-01,South,Diabetes Care,46434.05,34177.8,0.4749,isolation_forest,False,True
+an-8e652f307f47878b-injected,20261001,2026-10-01,South,Diabetes Care,26369.25,36401.2,0.422,isolation_forest,False,True
+an-8e652f307f47878b-injected,20251101,2025-11-01,South,Gastro,12416.2,16729.625,0.4217,isolation_forest,False,True
+an-8e652f307f47878b-injected,20251201,2025-12-01,South,Gastro,13932.75,16229.35,0.5069,isolation_forest,False,True
+an-8e652f307f47878b-injected,20260101,2026-01-01,South,Gastro,13153.8,15515.45,0.4005,isolation_forest,False,True
+an-8e652f307f47878b-injected,20260201,2026-02-01,South,Gastro,8699.15,13543.275,0.4878,isolation_forest,False,True
+an-8e652f307f47878b-injected,20260301,2026-03-01,South,Gastro,14872.8,12785.0,0.3935,isolation_forest,False,True
+an-8e652f307f47878b-injected,20260401,2026-04-01,South,Gastro,13302.1,13543.275,0.478,isolation_forest,False,True
+an-8e652f307f47878b-injected,20260501,2026-05-01,South,Gastro,15446.1,13227.95,0.3945,isolation_forest,False,True
+an-8e652f307f47878b-injected,20260601,2026-06-01,South,Gastro,14009.15,13617.425,0.4537,isolation_forest,False,True
+an-8e652f307f47878b-injected,20260701,2026-07-01,South,Gastro,19345.5,13655.625,0.4333,isolation_forest,False,True
+an-8e652f307f47878b-injected,20260801,2026-08-01,South,Gastro,20609.4,14440.974999999999,0.4509,isolation_forest,False,True
+an-8e652f307f47878b-injected,20260901,2026-09-01,South,Gastro,21747.55,15159.45,0.5013,isolation_forest,False,True
+an-8e652f307f47878b-injected,20261001,2026-10-01,South,Gastro,14375.1,17395.8,0.4612,isolation_forest,False,True
+an-8e652f307f47878b-injected,20251101,2025-11-01,South,Personal Care,18655.3,20030.824999999997,0.4111,isolation_forest,False,True
+an-8e652f307f47878b-injected,20251201,2025-12-01,South,Personal Care,3475.19,20224.05,0.6968,isolation_forest,True,True
+an-8e652f307f47878b-injected,20260101,2026-01-01,South,Personal Care,14692.8,18462.074999999997,0.3996,isolation_forest,False,True
+an-8e652f307f47878b-injected,20260201,2026-02-01,South,Personal Care,17330.15,18462.074999999997,0.3864,isolation_forest,False,True
+an-8e652f307f47878b-injected,20260301,2026-03-01,South,Personal Care,25962.45,17992.725,0.4783,isolation_forest,False,True
+an-8e652f307f47878b-injected,20260401,2026-04-01,South,Personal Care,15595.4,17992.725,0.4133,isolation_forest,False,True
+an-8e652f307f47878b-injected,20260501,2026-05-01,South,Personal Care,4274.49,16462.775,0.6968,isolation_forest,True,True
+an-8e652f307f47878b-injected,20260601,2026-06-01,South,Personal Care,17067.2,15144.099999999999,0.4471,isolation_forest,False,True
+an-8e652f307f47878b-injected,20260701,2026-07-01,South,Personal Care,27319.8,16331.3,0.4604,isolation_forest,False,True
+an-8e652f307f47878b-injected,20260801,2026-08-01,South,Personal Care,15217.7,17198.675000000003,0.4212,isolation_forest,False,True
+an-8e652f307f47878b-injected,20260901,2026-09-01,South,Personal Care,20900.25,16331.3,0.4725,isolation_forest,False,True
+an-8e652f307f47878b-injected,20261001,2026-10-01,South,Personal Care,55363.78,16331.3,0.7669,isolation_forest,True,True
+an-8e652f307f47878b-injected,20251101,2025-11-01,South,Vitamins and Supplements,98048.43,26559.275,0.7992,isolation_forest,True,True
+an-8e652f307f47878b-injected,20251201,2025-12-01,South,Vitamins and Supplements,36638.6,27793.6,0.4262,isolation_forest,False,True
+an-8e652f307f47878b-injected,20260101,2026-01-01,South,Vitamins and Supplements,59137.9,32513.125,0.4787,isolation_forest,False,True
+an-8e652f307f47878b-injected,20260201,2026-02-01,South,Vitamins and Supplements,113241.45,38771.075,0.7897,isolation_forest,True,True
+an-8e652f307f47878b-injected,20260301,2026-03-01,South,Vitamins and Supplements,34275.3,47888.25,0.417,isolation_forest,False,True
+an-8e652f307f47878b-injected,20260401,2026-04-01,South,Vitamins and Supplements,30888.5,47888.25,0.4434,isolation_forest,False,True
+an-8e652f307f47878b-injected,20260501,2026-05-01,South,Vitamins and Supplements,31256.55,47888.25,0.4506,isolation_forest,False,True
+an-8e652f307f47878b-injected,20260601,2026-06-01,South,Vitamins and Supplements,32629.75,35456.95,0.5155,isolation_forest,False,True
+an-8e652f307f47878b-injected,20260701,2026-07-01,South,Vitamins and Supplements,41804.25,33452.525,0.5117,isolation_forest,False,True
+an-8e652f307f47878b-injected,20260801,2026-08-01,South,Vitamins and Supplements,30701.1,33452.525,0.4475,isolation_forest,False,True
+an-8e652f307f47878b-injected,20260901,2026-09-01,South,Vitamins and Supplements,48573.05,31943.15,0.4578,isolation_forest,False,True
+an-8e652f307f47878b-injected,20261001,2026-10-01,South,Vitamins and Supplements,42476.55,31943.15,0.461,isolation_forest,False,True

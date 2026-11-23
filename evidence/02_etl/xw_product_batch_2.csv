@@ -1,0 +1,459 @@
+source_system,source_object,source_key,canonical_code,match_method
+inventory,item,101,P-0101,exact
+inventory,item,104,P-0104,exact
+inventory,item,113,P-0113,exact
+inventory,item,115,P-0115,exact
+inventory,item,118,P-0118,exact
+inventory,item,122,P-0122,exact
+inventory,item,125,P-0125,exact
+inventory,item,129,P-0129,exact
+inventory,item,137,P-0137,exact
+inventory,item,149,P-0149,exact
+inventory,item,154,P-0154,exact
+inventory,item,155,P-0155,exact
+inventory,item,162,P-0162,exact
+inventory,item,163,P-0163,exact
+inventory,item,164,P-0164,exact
+inventory,item,165,P-0165,exact
+inventory,item,166,P-0166,exact
+inventory,item,169,P-0169,exact
+inventory,item,170,P-0170,exact
+inventory,item,171,P-0171,exact
+inventory,item,172,P-0172,exact
+inventory,item,174,P-0174,exact
+inventory,item,175,P-0175,exact
+inventory,item,177,P-0177,exact
+inventory,item,179,P-0179,exact
+inventory,item,180,P-0180,exact
+inventory,item,184,P-0184,exact
+inventory,item,194,P-0194,exact
+inventory,item,196,P-0196,exact
+inventory,item,200,P-0200,exact
+inventory,item,201,P-0201,exact
+inventory,item,205,P-0205,exact
+inventory,item,208,P-0208,exact
+inventory,item,209,P-0209,exact
+inventory,item,211,P-0211,exact
+inventory,item,212,P-0212,exact
+inventory,item,216,P-0216,exact
+inventory,item,217,P-0217,exact
+inventory,item,218,P-0218,exact
+inventory,item,222,P-0222,exact
+inventory,item,229,P-0229,exact
+inventory,item,230,P-0230,exact
+inventory,item,233,P-0233,exact
+inventory,item,237,P-0237,exact
+inventory,item,239,P-0239,exact
+inventory,item,240,P-0240,exact
+inventory,item,243,P-0243,exact
+inventory,item,244,P-0244,exact
+inventory,item,247,P-0247,exact
+inventory,item,249,P-0249,exact
+inventory,item,251,P-0251,exact
+inventory,item,256,P-0256,exact
+inventory,item,257,P-0257,exact
+inventory,item,258,P-0258,exact
+inventory,item,260,P-0260,exact
+inventory,item,262,P-0262,exact
+inventory,item,263,P-0263,exact
+inventory,item,265,P-0265,exact
+inventory,item,268,P-0268,exact
+inventory,item,272,P-0272,exact
+inventory,item,273,P-0273,exact
+inventory,item,274,P-0274,exact
+inventory,item,275,P-0275,exact
+inventory,item,280,P-0280,exact
+inventory,item,281,P-0281,exact
+inventory,item,282,P-0282,exact
+inventory,item,286,P-0286,exact
+inventory,item,292,P-0292,exact
+inventory,item,294,P-0294,exact
+inventory,item,297,P-0297,exact
+inventory,item,298,P-0298,exact
+inventory,item,299,P-0299,exact
+inventory,item,303,P-0303,exact
+inventory,item,309,P-0309,exact
+inventory,item,312,P-0312,exact
+inventory,item,318,P-0318,exact
+inventory,item,319,P-0319,exact
+inventory,item,320,P-0320,exact
+inventory,item,323,P-0323,exact
+inventory,item,327,P-0327,exact
+inventory,item,328,P-0328,exact
+inventory,item,330,P-0330,exact
+inventory,item,332,P-0332,exact
+inventory,item,334,P-0334,exact
+inventory,item,335,P-0335,exact
+inventory,item,337,P-0337,exact
+inventory,item,338,P-0338,exact
+inventory,item,343,P-0343,exact
+inventory,item,346,P-0346,exact
+inventory,item,348,P-0348,exact
+inventory,item,351,P-0351,exact
+inventory,item,354,P-0354,exact
+inventory,item,359,P-0359,exact
+inventory,item,361,P-0361,exact
+inventory,item,363,P-0363,exact
+inventory,item,366,P-0366,exact
+inventory,item,367,P-0367,exact
+inventory,item,368,P-0368,exact
+inventory,item,369,P-0369,exact
+inventory,item,371,P-0371,exact
+inventory,item,372,P-0372,exact
+inventory,item,376,P-0376,exact
+inventory,item,383,P-0383,exact
+inventory,item,384,P-0384,exact
+inventory,item,385,P-0385,exact
+inventory,item,387,P-0387,exact
+inventory,item,389,P-0389,exact
+inventory,item,392,P-0392,exact
+inventory,item,396,P-0396,exact
+inventory,item,402,P-0402,exact
+inventory,item,403,P-0403,exact
+inventory,item,404,P-0404,exact
+inventory,item,405,P-0405,exact
+inventory,item,406,P-0406,exact
+inventory,item,408,P-0408,exact
+inventory,item,411,P-0411,exact
+inventory,item,412,P-0412,exact
+inventory,item,415,P-0415,exact
+inventory,item,419,P-0419,exact
+inventory,item,420,P-0420,exact
+inventory,item,427,P-0427,exact
+inventory,item,428,P-0428,exact
+inventory,item,430,P-0430,exact
+inventory,item,431,P-0431,exact
+inventory,item,433,P-0433,exact
+inventory,item,441,P-0441,exact
+inventory,item,442,P-0442,exact
+inventory,item,443,P-0443,exact
+inventory,item,445,P-0445,exact
+inventory,item,448,P-0448,exact
+inventory,item,450,P-0450,exact
+inventory,item,452,P-0452,exact
+inventory,item,454,P-0454,exact
+inventory,item,457,P-0457,exact
+inventory,item,459,P-0459,exact
+inventory,item,465,P-0465,exact
+inventory,item,467,P-0467,exact
+inventory,item,468,P-0468,exact
+inventory,item,471,P-0471,exact
+inventory,item,472,P-0472,exact
+inventory,item,473,P-0473,exact
+inventory,item,476,P-0476,exact
+inventory,item,478,P-0478,exact
+inventory,item,479,P-0479,exact
+inventory,item,480,P-0480,exact
+inventory,item,485,P-0485,exact
+inventory,item,495,P-0495,exact
+inventory,item,496,P-0496,exact
+inventory,item,498,P-0498,exact
+inventory,item,499,P-0499,exact
+inventory,item,500,P-0500,exact
+sales_db,pos_item,ADHP-20-PCS,P-0480,exact
+sales_db,pos_item,AMB-30-STR,P-0372,exact
+sales_db,pos_item,AMBS-15-BTL,P-0371,rule (description)
+sales_db,pos_item,AML-10-STR,P-0230,rule
+sales_db,pos_item,AML-5-STR,P-0229,exact
+sales_db,pos_item,AMO-125-BTL,P-0175,exact
+sales_db,pos_item,AMO-250-STR,P-0172,rule (description)
+sales_db,pos_item,AMO-500-STR,P-0174,rule (description)
+sales_db,pos_item,ANTL-500-BTL,P-0459,rule (description)
+sales_db,pos_item,ANTS-200-BTL,P-0354,exact
+sales_db,pos_item,ASP-300-STR,P-0164,exact
+sales_db,pos_item,ASP-75-STR,P-0163,exact
+sales_db,pos_item,ATE-50-STR,P-0239,exact
+sales_db,pos_item,ATO-10-STR,P-0244,exact
+sales_db,pos_item,ATO-20-STR,P-0247,rule (description)
+sales_db,pos_item,ATO-40-STR,P-0249,exact
+sales_db,pos_item,AZI-200-BTL,P-0196,rule (description)
+sales_db,pos_item,AZI-250-STR,P-0184,exact
+sales_db,pos_item,AZI-500-STR,P-0194,exact
+sales_db,pos_item,BABD-3-PCS,P-0471,exact
+sales_db,pos_item,BABW-80-PCS,P-0472,exact
+sales_db,pos_item,BIO-5-BTL,P-0450,exact
+sales_db,pos_item,BIS-25-STR,P-0240,exact
+sales_db,pos_item,BIS-5-STR,P-0243,exact
+sales_db,pos_item,BROS-4-BTL,P-0376,exact
+sales_db,pos_item,CALS-120-BTL,P-0457,exact
+sales_db,pos_item,CALVD-600-STR,P-0415,exact
+sales_db,pos_item,CEF-100-BTL,P-0209,exact
+sales_db,pos_item,CEF-200-STR,P-0208,exact
+sales_db,pos_item,CEL-200-STR,P-0165,exact
+sales_db,pos_item,CEP-500-STR,P-0211,exact
+sales_db,pos_item,CET-10-STR,P-0383,exact
+sales_db,pos_item,CHL-4-STR,P-0392,exact
+sales_db,pos_item,CIP-250-STR,P-0200,exact
+sales_db,pos_item,CIP-500-STR,P-0201,exact
+sales_db,pos_item,CLA-500-STR,P-0212,exact
+sales_db,pos_item,CLO-75-STR,P-0257,exact
+sales_db,pos_item,COA-156-BTL,P-0180,rule
+sales_db,pos_item,COA-375-STR,P-0177,exact
+sales_db,pos_item,COA-625-STR,P-0179,exact
+sales_db,pos_item,CODLOC-60-BTL,P-0452,rule
+sales_db,pos_item,COTB-10-PCS,P-0479,exact
+sales_db,pos_item,DAP-10-STR,P-0312,exact
+sales_db,pos_item,DEXS-15-BTL,P-0368,exact
+sales_db,pos_item,DICG-1-PCS,P-0170,exact
+sales_db,pos_item,DICS-50-STR,P-0129,exact
+sales_db,pos_item,DICS-75-STR,P-0137,rule (description)
+sales_db,pos_item,DIGT-1-PCS,P-0485,exact
+sales_db,pos_item,DISC-0412-STR,,unmatched
+sales_db,pos_item,DOM-10-STR,P-0337,exact
+sales_db,pos_item,DOM-5-BTL,P-0338,rule
+sales_db,pos_item,DOX-100-STR,P-0216,rule (description)
+sales_db,pos_item,EMP-10-STR,P-0303,exact
+sales_db,pos_item,EMP-25-STR,P-0309,rule
+sales_db,pos_item,ESO-20-STR,P-0328,exact
+sales_db,pos_item,ESO-40-STR,P-0330,exact
+sales_db,pos_item,ETO-90-STR,P-0166,rule
+sales_db,pos_item,FACM-50-PCS,P-0495,exact
+sales_db,pos_item,FAM-20-STR,P-0335,rule (description)
+sales_db,pos_item,FERS-200-STR,P-0428,rule (description)
+sales_db,pos_item,FEX-120-STR,P-0387,rule
+sales_db,pos_item,FEX-180-STR,P-0389,exact
+sales_db,pos_item,FOLA-5-STR,P-0427,rule (description)
+sales_db,pos_item,FUR-40-STR,P-0263,rule
+sales_db,pos_item,FUSAC-2-PCS,P-0222,exact
+sales_db,pos_item,GLI-1-STR,P-0282,exact
+sales_db,pos_item,GLI-2-STR,P-0286,exact
+sales_db,pos_item,GLI-4-STR,P-0292,exact
+sales_db,pos_item,GLI-80-STR,P-0280,exact
+sales_db,pos_item,GLIM-30-STR,P-0281,exact
+sales_db,pos_item,GLUTS-50-PCS,P-0319,exact
+sales_db,pos_item,GUAS-100-BTL,P-0369,exact
+sales_db,pos_item,HAIO-200-BTL,P-0498,rule (description)
+sales_db,pos_item,HANS-250-BTL,P-0465,rule
+sales_db,pos_item,HYD-25-STR,P-0262,exact
+sales_db,pos_item,HYOB-10-STR,P-0363,exact
+sales_db,pos_item,IBU-100-BTL,P-0125,exact
+sales_db,pos_item,IBU-200-STR,P-0118,exact
+sales_db,pos_item,IBU-400-STR,P-0122,rule (description)
+sales_db,pos_item,IROFA-150-STR,P-0430,exact
+sales_db,pos_item,ISOM-20-STR,P-0272,exact
+sales_db,pos_item,ISPH-35-PCS,P-0361,exact
+sales_db,pos_item,KET-10-STR,P-0169,exact
+sales_db,pos_item,LAC-335-BTL,P-0359,exact
+sales_db,pos_item,LAN-100-PCS,P-0320,exact
+sales_db,pos_item,LAN-30-STR,P-0334,exact
+sales_db,pos_item,LEV-5-STR,P-0384,exact
+sales_db,pos_item,LEV-500-STR,P-0205,exact
+sales_db,pos_item,LIS-10-STR,P-0268,exact
+sales_db,pos_item,LOP-2-STR,P-0348,exact
+sales_db,pos_item,LOR-10-STR,P-0385,exact
+sales_db,pos_item,LOS-100-STR,P-0237,exact
+sales_db,pos_item,LOS-50-STR,P-0233,exact
+sales_db,pos_item,MAG-250-STR,P-0448,exact
+sales_db,pos_item,MEDS-200-BTL,P-0478,rule (description)
+sales_db,pos_item,MEFA-250-STR,P-0155,rule (description)
+sales_db,pos_item,MEFA-500-STR,P-0162,rule
+sales_db,pos_item,MET-10-STR,P-0366,exact
+sales_db,pos_item,MET-1000-STR,P-0275,rule (description)
+sales_db,pos_item,MET-200-BTL,P-0218,exact
+sales_db,pos_item,MET-400-STR,P-0217,exact
+sales_db,pos_item,MET-500-STR,P-0273,rule (description)
+sales_db,pos_item,MET-850-STR,P-0274,exact
+sales_db,pos_item,MET2-500-STR,P-0442,exact
+sales_db,pos_item,MISC-OPEN,,unmatched
+sales_db,pos_item,MOIC-100-PCS,P-0468,exact
+sales_db,pos_item,MON-10-STR,P-0402,rule (description)
+sales_db,pos_item,MON-5-STR,P-0403,rule (description)
+sales_db,pos_item,MOU-250-BTL,P-0476,exact
+sales_db,pos_item,MULS-120-BTL,P-0420,exact
+sales_db,pos_item,MULT-30-BTL,P-0419,exact
+sales_db,pos_item,NAP-250-STR,P-0149,exact
+sales_db,pos_item,NAP-500-STR,P-0154,exact
+sales_db,pos_item,OME-20-STR,P-0323,exact
+sales_db,pos_item,OME-40-STR,P-0327,exact
+sales_db,pos_item,OME3-1000-BTL,P-0443,exact
+sales_db,pos_item,OND-4-STR,P-0343,exact
+sales_db,pos_item,OND-8-STR,P-0346,exact
+sales_db,pos_item,ORARS-1-PCS,P-0351,exact
+sales_db,pos_item,PAN-40-STR,P-0332,rule (description)
+sales_db,pos_item,PAR-1000-STR,P-0500,exact
+sales_db,pos_item,PAR-120-BTL,P-0113,exact
+sales_db,pos_item,PAR-250-BTL,P-0115,exact
+sales_db,pos_item,PAR-500-STR,P-0101,rule (description)
+sales_db,pos_item,PAR-650-STR,P-0104,exact
+sales_db,pos_item,PARC-500-STR,P-0171,exact
+sales_db,pos_item,PETJ-100-PCS,P-0496,exact
+sales_db,pos_item,PIO-15-STR,P-0318,exact
+sales_db,pos_item,PSET-60-STR,P-0396,rule
+sales_db,pos_item,ROS-10-STR,P-0251,exact
+sales_db,pos_item,ROS-20-STR,P-0256,exact
+sales_db,pos_item,SALI-100-PCS,P-0405,exact
+sales_db,pos_item,SALS-2-BTL,P-0404,exact
+sales_db,pos_item,SAMPLE-PCS,,unmatched
+sales_db,pos_item,SIMD-40-BTL,P-0367,rule
+sales_db,pos_item,SIT-100-STR,P-0297,exact
+sales_db,pos_item,SIT-50-STR,P-0294,rule (description)
+sales_db,pos_item,SITM-50-STR,P-0298,exact
+sales_db,pos_item,SPI-25-STR,P-0265,exact
+sales_db,pos_item,SUN-50-PCS,P-0467,exact
+sales_db,pos_item,SURG-100-PCS,P-0499,exact
+sales_db,pos_item,THRL-24-PCS,P-0408,exact
+sales_db,pos_item,TOOS-100-PCS,P-0473,exact
+sales_db,pos_item,VAL-160-STR,P-0260,exact
+sales_db,pos_item,VAL-80-STR,P-0258,exact
+sales_db,pos_item,VIL-50-STR,P-0299,exact
+sales_db,pos_item,VITADD-15-BTL,P-0454,exact
+sales_db,pos_item,VITBC-1-STR,P-0441,exact
+sales_db,pos_item,VITC-500-STR,P-0411,rule
+sales_db,pos_item,VITD-50000-STR,P-0412,rule
+sales_db,pos_item,VITE-400-STR,P-0445,exact
+sales_db,pos_item,XYLND-01-BTL,P-0406,exact
+sales_db,pos_item,ZINS-20-BTL,P-0433,exact
+sales_db,pos_item,ZINS-20-STR,P-0431,exact
+purchasing_db,vendor_item,ALD-1944,P-0476,rule (description)
+purchasing_db,vendor_item,ALD-3973,P-0332,exact
+purchasing_db,vendor_item,ALD-5763,P-0372,exact
+purchasing_db,vendor_item,ALD-6639,P-0281,exact
+purchasing_db,vendor_item,ALD-7191,P-0472,rule (description)
+purchasing_db,vendor_item,AMB-1931,P-0211,exact
+purchasing_db,vendor_item,AMB-5996,P-0149,rule (description)
+purchasing_db,vendor_item,AMB-7549,P-0499,rule (description)
+purchasing_db,vendor_item,AMB-8459,P-0385,exact
+purchasing_db,vendor_item,BAS-1717,P-0351,exact
+purchasing_db,vendor_item,BAS-3052,P-0101,exact
+purchasing_db,vendor_item,BAS-5000,P-0500,exact
+purchasing_db,vendor_item,BAS-6461,P-0318,exact
+purchasing_db,vendor_item,BAS-9653,P-0403,exact
+purchasing_db,vendor_item,COB-1748,P-0376,exact
+purchasing_db,vendor_item,COB-1770,P-0155,exact
+purchasing_db,vendor_item,COB-2446,P-0129,rule (description)
+purchasing_db,vendor_item,COB-2654,P-0427,rule (description)
+purchasing_db,vendor_item,COB-6961,P-0496,exact
+purchasing_db,vendor_item,COB-7261,P-0125,exact
+purchasing_db,vendor_item,COB-8072,P-0180,rule (description)
+purchasing_db,vendor_item,DUN-1264,P-0408,exact
+purchasing_db,vendor_item,DUN-1434,P-0260,rule (description)
+purchasing_db,vendor_item,DUN-2839,P-0172,exact
+purchasing_db,vendor_item,DUN-3012,P-0320,exact
+purchasing_db,vendor_item,DUN-4684,P-0229,exact
+purchasing_db,vendor_item,DUN-6892,P-0384,exact
+purchasing_db,vendor_item,DUN-7698,P-0265,exact
+purchasing_db,vendor_item,DUN-7798,P-0113,rule (description)
+purchasing_db,vendor_item,DUN-8649,P-0174,rule (description)
+purchasing_db,vendor_item,EMB-2216,P-0268,rule (description)
+purchasing_db,vendor_item,EMB-3097,P-0118,rule (description)
+purchasing_db,vendor_item,EMB-3596,P-0348,exact
+purchasing_db,vendor_item,EMB-4158,P-0164,exact
+purchasing_db,vendor_item,EMB-4391,P-0445,exact
+purchasing_db,vendor_item,EMB-6141,P-0256,rule (description)
+purchasing_db,vendor_item,EMB-6541,P-0272,exact
+purchasing_db,vendor_item,EMB-7950,P-0166,exact
+purchasing_db,vendor_item,EMB-8331,P-0404,exact
+purchasing_db,vendor_item,EMB-9127,P-0273,exact
+purchasing_db,vendor_item,FAL-1105,P-0298,rule (description)
+purchasing_db,vendor_item,FAL-1548,P-0327,exact
+purchasing_db,vendor_item,FAL-2086,P-0442,exact
+purchasing_db,vendor_item,FAL-2153,P-0411,exact
+purchasing_db,vendor_item,FAL-5756,P-0286,exact
+purchasing_db,vendor_item,FAL-6995,P-0459,exact
+purchasing_db,vendor_item,GAR-2363,P-0363,exact
+purchasing_db,vendor_item,GAR-4320,P-0163,exact
+purchasing_db,vendor_item,GAR-6597,P-0448,exact
+purchasing_db,vendor_item,GAR-6744,P-0328,exact
+purchasing_db,vendor_item,GAR-8798,P-0212,rule (description)
+purchasing_db,vendor_item,GAR-9134,P-0233,exact
+purchasing_db,vendor_item,GAR-9322,P-0419,exact
+purchasing_db,vendor_item,GAR-9938,P-0251,rule (description)
+purchasing_db,vendor_item,HAR-1783,P-0262,rule (description)
+purchasing_db,vendor_item,HAR-1920,P-0420,exact
+purchasing_db,vendor_item,HAR-1932,P-0169,rule (description)
+purchasing_db,vendor_item,HAR-2150,P-0366,exact
+purchasing_db,vendor_item,HAR-2499,P-0334,exact
+purchasing_db,vendor_item,HAR-2520,P-0216,exact
+purchasing_db,vendor_item,HAR-2671,P-0319,rule (description)
+purchasing_db,vendor_item,HAR-4109,P-0274,exact
+purchasing_db,vendor_item,HAR-5143,P-0162,exact
+purchasing_db,vendor_item,HAR-6728,P-0282,exact
+purchasing_db,vendor_item,HAR-7173,P-0433,rule (description)
+purchasing_db,vendor_item,HAR-7888,P-0247,exact
+purchasing_db,vendor_item,IND-1113,P-0303,rule (description)
+purchasing_db,vendor_item,IND-2921,P-0218,rule (description)
+purchasing_db,vendor_item,IND-3638,P-0450,rule (description)
+purchasing_db,vendor_item,IND-4793,P-0361,rule (description)
+purchasing_db,vendor_item,IND-5290,P-0498,exact
+purchasing_db,vendor_item,IND-5785,P-0343,exact
+purchasing_db,vendor_item,IND-6884,P-0335,rule (description)
+purchasing_db,vendor_item,IND-8525,P-0280,exact
+purchasing_db,vendor_item,JUN-1538,P-0338,exact
+purchasing_db,vendor_item,JUN-2178,P-0495,exact
+purchasing_db,vendor_item,JUN-4619,P-0389,exact
+purchasing_db,vendor_item,JUN-5112,P-0243,exact
+purchasing_db,vendor_item,KIT-3020,P-0371,exact
+purchasing_db,vendor_item,KIT-3683,P-0292,exact
+purchasing_db,vendor_item,KIT-8679,P-0467,rule (description)
+purchasing_db,vendor_item,LUM-1930,P-0179,exact
+purchasing_db,vendor_item,LUM-2345,P-0478,exact
+purchasing_db,vendor_item,LUM-2479,P-0473,rule (description)
+purchasing_db,vendor_item,LUM-2978,P-0165,exact
+purchasing_db,vendor_item,LUM-3338,P-0122,rule (description)
+purchasing_db,vendor_item,LUM-6946,P-0430,rule (description)
+purchasing_db,vendor_item,LUM-7542,P-0171,exact
+purchasing_db,vendor_item,MAP-2239,P-0354,rule (description)
+purchasing_db,vendor_item,MAP-2497,P-0104,exact
+purchasing_db,vendor_item,MAP-2817,P-0244,exact
+purchasing_db,vendor_item,MAP-3251,P-0294,rule (description)
+purchasing_db,vendor_item,MAP-4520,P-0208,exact
+purchasing_db,vendor_item,MAP-4898,P-0406,exact
+purchasing_db,vendor_item,NIM-1195,P-0457,rule (description)
+purchasing_db,vendor_item,NIM-2247,P-0258,exact
+purchasing_db,vendor_item,NIM-5182,P-0249,exact
+purchasing_db,vendor_item,NIM-5249,P-0200,rule (description)
+purchasing_db,vendor_item,NIM-7358,P-0330,exact
+purchasing_db,vendor_item,NIM-8614,P-0471,rule (description)
+purchasing_db,vendor_item,NIM-9858,P-0479,rule (description)
+purchasing_db,vendor_item,ONY-1052,P-0359,exact
+purchasing_db,vendor_item,ONY-1874,P-0196,exact
+purchasing_db,vendor_item,ONY-7278,P-0337,exact
+purchasing_db,vendor_item,ONY-8490,P-0115,exact
+purchasing_db,vendor_item,PEB-4104,P-0209,exact
+purchasing_db,vendor_item,QUA-1638,P-0468,rule (description)
+purchasing_db,vendor_item,QUA-2990,P-0275,exact
+purchasing_db,vendor_item,QUA-5026,P-0415,exact
+purchasing_db,vendor_item,QUA-9922,P-0443,exact
+purchasing_db,vendor_item,RID-3126,P-0387,exact
+purchasing_db,vendor_item,RID-3368,P-0205,exact
+purchasing_db,vendor_item,RID-4387,P-0257,rule (description)
+purchasing_db,vendor_item,RID-8747,P-0412,exact
+purchasing_db,vendor_item,SAF-2126,P-0368,exact
+purchasing_db,vendor_item,SAF-2323,P-0177,exact
+purchasing_db,vendor_item,SAF-2883,P-0428,exact
+purchasing_db,vendor_item,SAF-3414,P-0392,exact
+purchasing_db,vendor_item,SAF-4272,P-0201,rule (description)
+purchasing_db,vendor_item,SAF-8770,P-0240,exact
+purchasing_db,vendor_item,SAF-9542,P-0405,exact
+purchasing_db,vendor_item,TEA-6130,P-0431,exact
+purchasing_db,vendor_item,TEA-8173,P-0369,exact
+purchasing_db,vendor_item,TEA-8235,P-0237,exact
+purchasing_db,vendor_item,TEA-9627,P-0346,exact
+purchasing_db,vendor_item,UMB-1223,P-0184,exact
+purchasing_db,vendor_item,UMB-5716,P-0465,rule (description)
+purchasing_db,vendor_item,UMB-5844,P-0194,exact
+purchasing_db,vendor_item,UMB-7969,P-0299,exact
+purchasing_db,vendor_item,VIS-2609,P-0217,exact
+purchasing_db,vendor_item,VIS-3495,P-0452,rule (description)
+purchasing_db,vendor_item,VIS-7575,P-0383,exact
+purchasing_db,vendor_item,VIS-9526,P-0402,exact
+purchasing_db,vendor_item,WIL-1441,P-0222,exact
+purchasing_db,vendor_item,WIL-2545,P-0485,exact
+purchasing_db,vendor_item,WIL-4046,P-0323,exact
+purchasing_db,vendor_item,WIL-4636,P-0170,exact
+purchasing_db,vendor_item,WIL-7346,P-0263,exact
+purchasing_db,vendor_item,WIL-7878,P-0309,exact
+purchasing_db,vendor_item,WIL-9396,P-0297,exact
+purchasing_db,vendor_item,WIL-9881,P-0396,rule (description)
+purchasing_db,vendor_item,ZEP-1236,P-0454,exact
+purchasing_db,vendor_item,ZEP-1945,P-0367,exact
+purchasing_db,vendor_item,ZEP-2118,P-0239,exact
+purchasing_db,vendor_item,ZEP-2423,P-0480,exact
+purchasing_db,vendor_item,ZEP-4375,P-0441,exact
+purchasing_db,vendor_item,ZEP-5542,P-0137,rule (description)
+purchasing_db,vendor_item,ZEP-5739,P-0175,exact
+purchasing_db,vendor_item,ZEP-6914,P-0230,rule (description)
+purchasing_db,vendor_item,ZEP-8098,P-0154,rule (description)
+purchasing_db,vendor_item,ZEP-8403,P-0312,rule (description)
+purchasing_db,vendor_item,ZZZ-0001,,unmatched
+purchasing_db,vendor_item,ZZZ-0002,,unmatched

@@ -1,0 +1,91 @@
+stage,code,source_system,source_table,source_key,detail
+2,R05_UNKNOWN_BRANCH,sales_db,receipt_line,GLJ-2026-000440|1,branch typed as 'Karachi'
+2,R05_UNKNOWN_BRANCH,sales_db,receipt_line,GLJ-2026-000440|2,branch typed as 'Karachi'
+2,R05_UNKNOWN_BRANCH,sales_db,receipt_line,GLJ-2026-000440|3,branch typed as 'Karachi'
+2,R05_UNKNOWN_BRANCH,sales_db,receipt_line,GLJ-2026-000440|4,branch typed as 'Karachi'
+2,R05_UNKNOWN_BRANCH,sales_db,receipt_line,GUL-2026-000487|1,branch typed as 'Head Office'
+2,R03_BAD_DATE,sales_db,receipt_line,NNZ-2026-000446|1,receipt_ts keyed as 2036-10-04 19:47:00 (real 2026-10-04 19:47:00)
+2,R03_BAD_DATE,sales_db,receipt_line,NNZ-2026-000446|2,receipt_ts keyed as 2036-10-04 19:47:00 (real 2026-10-04 19:47:00)
+2,R03_BAD_DATE,sales_db,receipt_line,NNZ-2026-000446|3,receipt_ts keyed as 2036-10-04 19:47:00 (real 2026-10-04 19:47:00)
+2,R03_BAD_DATE,sales_db,receipt_line,NNZ-2026-000446|4,receipt_ts keyed as 2036-10-04 19:47:00 (real 2026-10-04 19:47:00)
+2,R03_BAD_DATE,sales_db,receipt_line,PEC-2026-000410|1,receipt_ts keyed as 2036-10-05 19:28:28 (real 2026-10-05 19:28:28)
+2,R03_BAD_DATE,sales_db,receipt_line,GLJ-2026-000514|1,receipt_ts keyed as 2036-10-30 20:13:11 (real 2026-10-30 20:13:11)
+2,R03_BAD_DATE,sales_db,receipt_line,GLJ-2026-000514|2,receipt_ts keyed as 2036-10-30 20:13:11 (real 2026-10-30 20:13:11)
+2,R07_ORPHAN_LINE,sales_db,receipt_line,ORG-2026-000231|1,header receipt missing
+2,R07_ORPHAN_LINE,sales_db,receipt_line,ORG-2026-000231|2,header receipt missing
+2,R07_ORPHAN_LINE,sales_db,receipt_line,ORG-2026-000231|3,header receipt missing
+2,R07_ORPHAN_LINE,sales_db,receipt_line,PEC-2026-000393|1,header receipt missing
+2,R07_ORPHAN_LINE,sales_db,receipt_line,ORG-2026-000246|1,header receipt missing
+2,U01_UNRESOLVED_CUSTOMER,sales_db,receipt_line,GBG-2026-000420|1,panel text 'corp acct' (true account 40019)
+2,R01_MISSING_PRODUCT,sales_db,receipt_line,NZM-2026-000303|2,item_code MISC-OPEN (real COTB-10-PCS)
+2,R01_MISSING_PRODUCT,sales_db,receipt_line,NZM-2026-000314|1,item_code DISC-0412-STR (real ASP-75-STR)
+2,R01_MISSING_PRODUCT,sales_db,receipt_line,CLF-2026-000510|1,item_code SAMPLE-PCS (real ZINS-20-STR)
+2,R01_MISSING_PRODUCT,sales_db,receipt_line,NZM-2026-000269|2,item_code MISC-OPEN (real ASP-300-STR)
+2,R01_MISSING_PRODUCT,sales_db,receipt_line,MLR-2026-000362|1,item_code SAMPLE-PCS (real LOS-50-STR)
+2,R01_MISSING_PRODUCT,sales_db,receipt_line,SDR-2026-000416|2,item_code SAMPLE-PCS (real OME-20-STR)
+2,R01_MISSING_PRODUCT,sales_db,receipt_line,PEC-2026-000356|3,item_code MISC-OPEN (real SUN-50-PCS)
+2,R01_MISSING_PRODUCT,sales_db,receipt_line,MLR-2026-000364|2,item_code MISC-OPEN (real ASP-75-STR)
+2,R01_MISSING_PRODUCT,sales_db,receipt_line,GUL-2026-000491|5,item_code SAMPLE-PCS (real AZI-500-STR)
+2,R01_MISSING_PRODUCT,sales_db,receipt_line,ORG-2026-000268|2,item_code SAMPLE-PCS (real DOM-10-STR)
+2,R01_MISSING_PRODUCT,sales_db,receipt_line,CLF-2026-000489|2,item_code MISC-OPEN (real CEL-200-STR)
+2,R01_MISSING_PRODUCT,sales_db,receipt_line,ORG-2026-000275|2,item_code MISC-OPEN (real SUN-50-PCS)
+2,R01_MISSING_PRODUCT,sales_db,receipt_line,NNZ-2026-000418|2,item_code MISC-OPEN (real MET-10-STR)
+2,R01_MISSING_PRODUCT,sales_db,receipt_line,NZM-2026-000336|2,item_code DISC-0412-STR (real MULT-30-BTL)
+2,R02_BAD_QTY,sales_db,receipt_line,NZM-2026-000295|3,qty -2.0
+2,R02_BAD_QTY,sales_db,receipt_line,MLR-2026-000384|1,qty 0.0
+2,R02_BAD_QTY,sales_db,receipt_line,SDR-2026-000404|1,qty -1.0
+2,R02_BAD_QTY,sales_db,receipt_line,SDR-2026-000429|1,qty -1.0
+2,R02_BAD_QTY,sales_db,receipt_line,GLJ-2026-000414|3,qty -2.0
+2,R02_BAD_QTY,sales_db,receipt_line,SDR-2026-000369|1,qty 0.0
+2,R02_BAD_QTY,sales_db,receipt_line,GBG-2026-000402|2,qty -1.0
+2,R02_BAD_QTY,sales_db,receipt_line,NZM-2026-000298|2,qty -1.0
+2,R02_BAD_QTY,sales_db,receipt_line,SDR-2026-000367|2,qty -2.0
+2,R04_BAD_AMOUNT,sales_db,receipt_line,GUL-2026-000523|5,unit_price_pkr -211.0
+2,R04_BAD_AMOUNT,sales_db,receipt_line,CLF-2026-000456|2,unit_price_pkr -82.0
+2,R04_BAD_AMOUNT,sales_db,receipt_line,GLJ-2026-000421|1,unit_price_pkr 0.0
+2,R04_BAD_AMOUNT,sales_db,receipt_line,SDR-2026-000455|2,unit_price_pkr 0.0
+2,R04_BAD_AMOUNT,sales_db,receipt_line,MLR-2026-000335|1,unit_price_pkr 0.0
+2,R04_BAD_AMOUNT,sales_db,receipt_line,NNZ-2026-000407|1,unit_price_pkr -475.0
+2,R04_BAD_AMOUNT,sales_db,receipt_line,MLR-2026-000345|4,unit_price_pkr -240.0
+2,D01_EXACT_DUPLICATE,sales_db,receipt_line,GBG-2026-000345|2,exported twice by the till export job
+2,D01_EXACT_DUPLICATE,sales_db,receipt_line,GLJ-2026-000409|1,exported twice by the till export job
+2,D01_EXACT_DUPLICATE,sales_db,receipt_line,NNZ-2026-000441|4,exported twice by the till export job
+2,D01_EXACT_DUPLICATE,sales_db,receipt_line,PEC-2026-000402|1,exported twice by the till export job
+2,D01_EXACT_DUPLICATE,sales_db,receipt_line,GBG-2026-000382|5,exported twice by the till export job
+2,D01_EXACT_DUPLICATE,sales_db,receipt_line,NNZ-2026-000400|2,exported twice by the till export job
+2,D01_EXACT_DUPLICATE,sales_db,receipt_line,PEC-2026-000354|1,exported twice by the till export job
+2,D01_EXACT_DUPLICATE,sales_db,receipt_line,MLR-2026-000303|4,exported twice by the till export job
+2,D01_EXACT_DUPLICATE,sales_db,receipt_line,PEC-2026-000348|1,exported twice by the till export job
+2,D01_EXACT_DUPLICATE,sales_db,receipt_line,SDR-2026-000428|2,exported twice by the till export job
+2,D01_EXACT_DUPLICATE,sales_db,receipt_line,SDR-2026-000424|1,exported twice by the till export job
+2,D01_EXACT_DUPLICATE,sales_db,receipt_line,CLF-2026-000435|2,exported twice by the till export job
+2,LEGIT_REPEAT,sales_db,receipt_line,PEC-2026-000408|3,"same item as line 1, new line number: keep"
+2,LEGIT_REPEAT,sales_db,receipt_line,CLF-2026-000467|2,"same item as line 1, new line number: keep"
+2,LEGIT_REPEAT,sales_db,receipt_line,MLR-2026-000386|2,"same item as line 1, new line number: keep"
+2,LEGIT_REPEAT,sales_db,receipt_line,PEC-2026-000384|4,"same item as line 2, new line number: keep"
+2,LEGIT_REPEAT,sales_db,receipt_line,NZM-2026-000307|4,"same item as line 2, new line number: keep"
+2,LEGIT_REPEAT,sales_db,receipt_line,ORG-2026-000256|2,"same item as line 1, new line number: keep"
+2,LEGIT_REPEAT,sales_db,receipt_line,NNZ-2026-000456|4,"same item as line 1, new line number: keep"
+2,LEGIT_REPEAT,sales_db,receipt_line,GLJ-2026-000417|5,"same item as line 4, new line number: keep"
+2,LEGIT_REPEAT,sales_db,receipt_line,NZM-2026-000336|5,"same item as line 4, new line number: keep"
+2,LEGIT_REPEAT,sales_db,receipt_line,CLF-2026-000419|4,"same item as line 3, new line number: keep"
+2,LEGIT_REPEAT,sales_db,receipt_line,MLR-2026-000311|2,"same item as line 1, new line number: keep"
+2,LEGIT_REPEAT,sales_db,receipt_line,CLF-2026-000420|4,"same item as line 1, new line number: keep"
+2,LEGIT_REPEAT,sales_db,receipt_line,MLR-2026-000330|4,"same item as line 3, new line number: keep"
+2,LEGIT_REPEAT,sales_db,receipt_line,MLR-2026-000298|5,"same item as line 4, new line number: keep"
+2,LEGIT_REPEAT,sales_db,receipt_line,GLJ-2026-000382|3,"same item as line 1, new line number: keep"
+2,LEGIT_REPEAT,sales_db,receipt_line,GBG-2026-000421|3,"same item as line 2, new line number: keep"
+2,LEGIT_REPEAT,sales_db,receipt_line,CLF-2026-000497|6,"same item as line 3, new line number: keep"
+2,LEGIT_REPEAT,sales_db,receipt_line,MLR-2026-000337|4,"same item as line 3, new line number: keep"
+2,LEGIT_REPEAT,sales_db,receipt_line,ORG-2026-000235|4,"same item as line 1, new line number: keep"
+2,LEGIT_REPEAT,sales_db,receipt_line,GLJ-2026-000470|2,"same item as line 1, new line number: keep"
+2,LEGIT_REPEAT,sales_db,receipt_line,NNZ-2026-000475|6,"same item as line 3, new line number: keep"
+2,LEGIT_REPEAT,sales_db,receipt_line,ORG-2026-000249|4,"same item as line 2, new line number: keep"
+2,LEGIT_REPEAT,sales_db,receipt_line,GUL-2026-000458|3,"same item as line 1, new line number: keep"
+2,R03_BAD_DATE,purchasing_db,grn_line,GRN-2026-00510|1,received_at keyed as 2036-09-22 15:06:55 (real 2026-09-22 15:06:55)
+2,R01_MISSING_PRODUCT,purchasing_db,grn_line,GRN-2026-00581|1,vendor_item_code ZZZ-0002 (real ZEP-8403)
+2,R01_MISSING_PRODUCT,purchasing_db,grn_line,GRN-2026-00481|2,vendor_item_code ZZZ-0002 (real NIM-7358)
+2,R02_BAD_QTY,purchasing_db,grn_line,GRN-2026-00576|2,boxes_received -1.0
+2,R04_BAD_AMOUNT,purchasing_db,grn_line,GRN-2026-00552|2,cost_per_box 0.00
+2,D01_EXACT_DUPLICATE,purchasing_db,grn_line,GRN-2026-00521|1,exported twice
+2,D01_EXACT_DUPLICATE,purchasing_db,grn_line,GRN-2026-00475|1,exported twice

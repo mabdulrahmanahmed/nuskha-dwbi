@@ -1,0 +1,7 @@
+trace,title,steps,ends_at_source_row,result
+T1,A normal till receipt line (CLF-2026-000417|1),6,True,PASS
+T2,A USD purchase line (GRN-2026-00469|1),7,True,PASS
+T3,A late receipt loaded in batch 2 (CLF-2026-000308),6,True,PASS
+T4,Derived measure gross_margin_pkr (CLF-2026-000109|2),5,True,PASS
+T5,Dashboard total: FY2026 net sales card,5,True,PASS
+T6,"AI input series: vw_forecast_features, March 2026",4,True,PASS

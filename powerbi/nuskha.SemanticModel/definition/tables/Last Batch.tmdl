@@ -1,0 +1,19 @@
+table 'Last Batch'
+	lineageTag: 4d5038b8-f89d-587f-ab83-d6fb561945c9
+
+	column last_batch_id
+		dataType: int64
+		summarizeBy: none
+		sourceColumn: last_batch_id
+		lineageTag: ec444774-e879-5d12-bf3b-b9b727983f0d
+
+	partition 'Last Batch' = m
+		mode: import
+		source =
+				let
+				    Source = Csv.Document(File.Contents(DataFolder & "\etl_last_batch.csv"), [Delimiter = ",", Encoding = 65001, QuoteStyle = QuoteStyle.Csv]),
+				    Promoted = Table.PromoteHeaders(Source, [PromoteAllScalars = true]),
+				    Typed = Table.TransformColumnTypes(Promoted, {{"last_batch_id", Int64.Type}}, "en-US")
+				in
+				    Typed
+

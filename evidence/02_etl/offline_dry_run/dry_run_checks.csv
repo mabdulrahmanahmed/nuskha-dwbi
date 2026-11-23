@@ -1,0 +1,72 @@
+check,expected,actual,result
+profile_before covers every source table,17,17,PASS
+profile_before_after has a before/after pair per table,34,34,PASS
+text dates left in staging (object columns named *_ts/_date/_at),0,0,PASS
+float money with more than 2 decimals in staging,0,0,PASS
+Inventory categories outside the 8 canonical names,0,0,PASS
+crosswalks: every key maps to one canonical code or is flagged unmatched,0,0,PASS
+unmatched branch texts are exactly the planted bad texts,6,6,PASS
+pre-join: no join changed a row count (batch 1),0,0,PASS
+pre-join: source key unique in receipt,0,0,PASS
+pre-join: source key unique in goods_receipt,0,0,PASS
+pre-join: source key unique in purchase_order,0,0,PASS
+pre-join: source key unique in item,0,0,PASS
+pre-join: source key unique in pos_item,0,0,PASS
+pre-join: source key unique in vendor_item,0,0,PASS
+batch 1 receipt_line D01_EXACT_DUPLICATE: ETL result = planted ledger (key for key),139,139,PASS
+batch 1 receipt_line LEGIT_REPEAT: ETL result = planted ledger (key for key),278,278,PASS
+batch 1 receipt_line R01_MISSING_PRODUCT: ETL result = planted ledger (key for key),167,167,PASS
+batch 1 receipt_line R02_BAD_QTY: ETL result = planted ledger (key for key),111,111,PASS
+batch 1 receipt_line R03_BAD_DATE: ETL result = planted ledger (key for key),83,83,PASS
+batch 1 receipt_line R04_BAD_AMOUNT: ETL result = planted ledger (key for key),83,83,PASS
+batch 1 receipt_line R05_UNKNOWN_BRANCH: ETL result = planted ledger (key for key),56,56,PASS
+batch 1 receipt_line R07_ORPHAN_LINE: ETL result = planted ledger (key for key),56,56,PASS
+batch 1 receipt_line U01_UNRESOLVED_CUSTOMER: ETL result = planted ledger (key for key),20,20,PASS
+batch 1 grn_line D01_EXACT_DUPLICATE: ETL result = planted ledger (key for key),23,23,PASS
+batch 1 grn_line R01_MISSING_PRODUCT: ETL result = planted ledger (key for key),28,28,PASS
+batch 1 grn_line R02_BAD_QTY: ETL result = planted ledger (key for key),19,19,PASS
+batch 1 grn_line R03_BAD_DATE: ETL result = planted ledger (key for key),14,14,PASS
+batch 1 grn_line R04_BAD_AMOUNT: ETL result = planted ledger (key for key),14,14,PASS
+batch 1 grn_line R06_NO_FX_RATE: ETL result = planted ledger (key for key),4,4,PASS
+batch 1 receipt_line: source rows = valid + rejected + duplicates,28238,28238,PASS
+batch 1 grn_line: source rows = valid + rejected + duplicates,4706,4706,PASS
+batch 1 sales net amount per month: source valid rows = fact rows (to the paisa),0,0,PASS
+"dim_product: special members present, keys and business keys unique",[-1],151,PASS
+"dim_branch: special members present, keys and business keys unique",[-1],11,PASS
+"dim_customer: special members present, keys and business keys unique","[-1, 0]",1217,PASS
+"dim_supplier: special members present, keys and business keys unique",[-1],26,PASS
+dim_date covers 2023-11-01 to 2027-01-31 with Ramadan days flagged,1188,1188,PASS
+fact_sales.date_key: no missing keys,0,0,PASS
+fact_sales.product_key: no missing keys,0,0,PASS
+fact_sales.branch_key: no missing keys,0,0,PASS
+fact_sales.customer_key: no missing keys,0,0,PASS
+fact_sales: every key exists in its dimension,0,0,PASS
+fact_purchase: every key exists in its dimension,0,0,PASS
+"fact_sales natural key (receipt_no, line_no) unique",0,0,PASS
+Diabetes Care margin % Mar-Aug 2026 below Sep 2025-Feb 2026 by > 5 points,25.56 -> lower,16.46,PASS
+Unknown customer share of fact rows below 1%,< 1,0.073,PASS
+batch 2 receipt_line D01_EXACT_DUPLICATE: ETL result = planted ledger (key for key),12,12,PASS
+batch 2 receipt_line LEGIT_REPEAT: ETL result = planted ledger (key for key),23,23,PASS
+batch 2 receipt_line R01_MISSING_PRODUCT: ETL result = planted ledger (key for key),14,14,PASS
+batch 2 receipt_line R02_BAD_QTY: ETL result = planted ledger (key for key),9,9,PASS
+batch 2 receipt_line R03_BAD_DATE: ETL result = planted ledger (key for key),7,7,PASS
+batch 2 receipt_line R04_BAD_AMOUNT: ETL result = planted ledger (key for key),7,7,PASS
+batch 2 receipt_line R05_UNKNOWN_BRANCH: ETL result = planted ledger (key for key),5,5,PASS
+batch 2 receipt_line R07_ORPHAN_LINE: ETL result = planted ledger (key for key),5,5,PASS
+batch 2 receipt_line U01_UNRESOLVED_CUSTOMER: ETL result = planted ledger (key for key),1,1,PASS
+batch 2 grn_line D01_EXACT_DUPLICATE: ETL result = planted ledger (key for key),2,2,PASS
+batch 2 grn_line R01_MISSING_PRODUCT: ETL result = planted ledger (key for key),2,2,PASS
+batch 2 grn_line R02_BAD_QTY: ETL result = planted ledger (key for key),1,1,PASS
+batch 2 grn_line R03_BAD_DATE: ETL result = planted ledger (key for key),1,1,PASS
+batch 2 grn_line R04_BAD_AMOUNT: ETL result = planted ledger (key for key),1,1,PASS
+batch 2 receipt_line: source rows = valid + rejected + duplicates,2428,2428,PASS
+batch 2 grn_line: source rows = valid + rejected + duplicates,328,328,PASS
+batch 2 sales net amount per month: source valid rows = fact rows (to the paisa),0,0,PASS
+pre-join: no join changed a row count (batch 2),0,0,PASS
+"batch 2: stage-1 lines updated in place (qty fixes, panel fixes, voids)",92,92,PASS
+batch 2: late receipts load into their real (Jul-Aug 2026) dates,40,40,PASS
+"batch 2: lines of VOIDED receipts flagged is_cancelled (kept, not deleted)",31,31,PASS
+batch 2: deleted receipts found by key comparison,"['NNZ-2025-000045', 'ORG-2026-000194', 'PEC-2026-000130']","['NNZ-2025-000045', 'ORG-2026-000194', 'PEC-2026-000130']",PASS
+batch 2: new product P-0500 added to dim_product before its facts load,P-0500,P-0500,PASS
+SCD1: exactly Gastro and Cough and Cold totals move; company total unchanged,"['Cough and Cold', 'Gastro']","['Cough and Cold', 'Gastro']",PASS
+rerun of batch 1 on unchanged input gives identical fact rows,True,True,PASS

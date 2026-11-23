@@ -1,0 +1,155 @@
+item_code,item_desc,sell_unit
+ADHP-20-PCS,Adhesive Plasters 20 pcs,PIECE
+AMB-30-STR,Ambroxol 30 mg,STRIP
+AMBS-15-BTL,Ambroxol Syrup 15 mg/5 ml,BOTTLE
+AML-10-STR,Amlodipine 10 mg,STRIP
+AML-5-STR,Amlodipine 5 mg,STRIP
+AMO-125-BTL,Amoxicillin 125 mg/5 ml,BOTTLE
+AMO-250-STR,Amoxicillin 250 mg,STRIP
+AMO-500-STR,Amoxicillin 500 mg,STRIP
+ANTL-500-BTL,Antiseptic Liquid 500 ml,BOTTLE
+ANTS-200-BTL,Antacid Suspension 200/200 mg/5 ml,BOTTLE
+ASP-300-STR,Aspirin 300 mg,STRIP
+ASP-75-STR,Aspirin 75 mg,STRIP
+ATE-50-STR,Atenolol 50 mg,STRIP
+ATO-10-STR,Atorvastatin 10 mg,STRIP
+ATO-20-STR,Atorvastatin 20 mg,STRIP
+ATO-40-STR,Atorvastatin 40 mg,STRIP
+AZI-200-BTL,Azithromycin 200 mg/5 ml,BOTTLE
+AZI-250-STR,Azithromycin 250 mg,STRIP
+AZI-500-STR,Azithromycin 500 mg,STRIP
+BABD-3-PCS,Baby Diapers Size 3,PIECE
+BABW-80-PCS,Baby Wipes 80 pcs,PIECE
+BIO-5-BTL,Biotin 5 mg,BOTTLE
+BIS-25-STR,Bisoprolol 2.5 mg,STRIP
+BIS-5-STR,Bisoprolol 5 mg,STRIP
+BROS-4-BTL,Bromhexine Syrup 4 mg/5 ml,BOTTLE
+CALS-120-BTL,Calcium Syrup 120 ml,BOTTLE
+CALVD-600-STR,Calcium Vitamin D3 600 mg/400 IU,STRIP
+CEF-100-BTL,Cefixime 100 mg/5 ml,BOTTLE
+CEF-200-STR,Cefixime 200 mg,STRIP
+CEL-200-STR,Celecoxib 200 mg,STRIP
+CEP-500-STR,Cephalexin 500 mg,STRIP
+CET-10-STR,Cetirizine 10 mg,STRIP
+CHL-4-STR,Chlorpheniramine 4 mg,STRIP
+CIP-250-STR,Ciprofloxacin 250 mg,STRIP
+CIP-500-STR,Ciprofloxacin 500 mg,STRIP
+CLA-500-STR,Clarithromycin 500 mg,STRIP
+CLO-75-STR,Clopidogrel 75 mg,STRIP
+COA-156-BTL,Co-amoxiclav 156 mg/5 ml,BOTTLE
+COA-375-STR,Co-amoxiclav 375 mg,STRIP
+COA-625-STR,Co-amoxiclav 625 mg,STRIP
+CODLOC-60-BTL,Cod Liver Oil Capsules 60 caps,BOTTLE
+COTB-10-PCS,Cotton Bandage 10 cm,PIECE
+DAP-10-STR,Dapagliflozin 10 mg,STRIP
+DEXS-15-BTL,Dextromethorphan Syrup 15 mg/5 ml,BOTTLE
+DICG-1-PCS,Diclofenac Gel 1%,PIECE
+DICS-50-STR,Diclofenac Sodium 50 mg,STRIP
+DICS-75-STR,Diclofenac Sodium 75 mg,STRIP
+DIGT-1-PCS,Digital Thermometer 1 pc,PIECE
+DISC-0412-STR,Discontinued item 412,STRIP
+DOM-10-STR,Domperidone 10 mg,STRIP
+DOM-5-BTL,Domperidone 5 mg/5 ml,BOTTLE
+DOX-100-STR,Doxycycline 100 mg,STRIP
+EMP-10-STR,Empagliflozin 10 mg,STRIP
+EMP-25-STR,Empagliflozin 25 mg,STRIP
+ESO-20-STR,Esomeprazole 20 mg,STRIP
+ESO-40-STR,Esomeprazole 40 mg,STRIP
+ETO-90-STR,Etoricoxib 90 mg,STRIP
+FACM-50-PCS,Face Masks 50 pcs,PIECE
+FAM-20-STR,Famotidine 20 mg,STRIP
+FERS-200-STR,Ferrous Sulphate 200 mg,STRIP
+FEX-120-STR,Fexofenadine 120 mg,STRIP
+FEX-180-STR,Fexofenadine 180 mg,STRIP
+FOLA-5-STR,Folic Acid 5 mg,STRIP
+FUR-40-STR,Furosemide 40 mg,STRIP
+FUSAC-2-PCS,Fusidic Acid Cream 2%,PIECE
+GLI-1-STR,Glimepiride 1 mg,STRIP
+GLI-2-STR,Glimepiride 2 mg,STRIP
+GLI-4-STR,Glimepiride 4 mg,STRIP
+GLI-80-STR,Gliclazide 80 mg,STRIP
+GLIM-30-STR,Gliclazide MR 30 mg,STRIP
+GLUTS-50-PCS,Glucose Test Strips 50 strips,PIECE
+GUAS-100-BTL,Guaifenesin Syrup 100 mg/5 ml,BOTTLE
+HAIO-200-BTL,Hair Oil 200 ml,BOTTLE
+HANS-250-BTL,Hand Sanitizer 250 ml,BOTTLE
+HYD-25-STR,Hydrochlorothiazide 25 mg,STRIP
+HYOB-10-STR,Hyoscine Butylbromide 10 mg,STRIP
+IBU-100-BTL,Ibuprofen 100 mg/5 ml,BOTTLE
+IBU-200-STR,Ibuprofen 200 mg,STRIP
+IBU-400-STR,Ibuprofen 400 mg,STRIP
+IROFA-150-STR,Iron Folic Acid 150/0.5 mg,STRIP
+ISOM-20-STR,Isosorbide Mononitrate 20 mg,STRIP
+ISPH-35-PCS,Ispaghula Husk 3.5 g,PIECE
+KET-10-STR,Ketorolac 10 mg,STRIP
+LAC-335-BTL,Lactulose 3.35 g/5 ml,BOTTLE
+LAN-100-PCS,Lancets 100 pcs,PIECE
+LAN-30-STR,Lansoprazole 30 mg,STRIP
+LEV-5-STR,Levocetirizine 5 mg,STRIP
+LEV-500-STR,Levofloxacin 500 mg,STRIP
+LIS-10-STR,Lisinopril 10 mg,STRIP
+LOP-2-STR,Loperamide 2 mg,STRIP
+LOR-10-STR,Loratadine 10 mg,STRIP
+LOS-100-STR,Losartan 100 mg,STRIP
+LOS-50-STR,Losartan 50 mg,STRIP
+MAG-250-STR,Magnesium 250 mg,STRIP
+MEDS-200-BTL,Medicated Shampoo 200 ml,BOTTLE
+MEFA-250-STR,Mefenamic Acid 250 mg,STRIP
+MEFA-500-STR,Mefenamic Acid 500 mg,STRIP
+MET-10-STR,Metoclopramide 10 mg,STRIP
+MET-1000-STR,Metformin 1000 mg,STRIP
+MET-200-BTL,Metronidazole 200 mg/5 ml,BOTTLE
+MET-400-STR,Metronidazole 400 mg,STRIP
+MET-500-STR,Metformin 500 mg,STRIP
+MET-850-STR,Metformin 850 mg,STRIP
+MET2-500-STR,Methylcobalamin 500 mcg,STRIP
+MISC-OPEN,Open item - price keyed at till,PIECE
+MOIC-100-PCS,Moisturising Cream 100 g,PIECE
+MON-10-STR,Montelukast 10 mg,STRIP
+MON-5-STR,Montelukast 5 mg,STRIP
+MOU-250-BTL,Mouthwash 250 ml,BOTTLE
+MULS-120-BTL,Multivitamin Syrup 120 ml,BOTTLE
+MULT-30-BTL,Multivitamin Tablets 30 tabs,BOTTLE
+NAP-250-STR,Naproxen 250 mg,STRIP
+NAP-500-STR,Naproxen 500 mg,STRIP
+OME-20-STR,Omeprazole 20 mg,STRIP
+OME-40-STR,Omeprazole 40 mg,STRIP
+OME3-1000-BTL,Omega-3 1000 mg,BOTTLE
+OND-4-STR,Ondansetron 4 mg,STRIP
+OND-8-STR,Ondansetron 8 mg,STRIP
+ORARS-1-PCS,Oral Rehydration Salts 1 sachet,PIECE
+PAN-40-STR,Pantoprazole 40 mg,STRIP
+PAR-1000-STR,Paracetamol 1000 mg,STRIP
+PAR-120-BTL,Paracetamol 120 mg/5 ml,BOTTLE
+PAR-250-BTL,Paracetamol 250 mg/5 ml,BOTTLE
+PAR-500-STR,Paracetamol 500 mg,STRIP
+PAR-650-STR,Paracetamol 650 mg,STRIP
+PARC-500-STR,Paracetamol Caffeine 500/65 mg,STRIP
+PETJ-100-PCS,Petroleum Jelly 100 g,PIECE
+PIO-15-STR,Pioglitazone 15 mg,STRIP
+PSET-60-STR,Pseudoephedrine Triprolidine 60/2.5 mg,STRIP
+ROS-10-STR,Rosuvastatin 10 mg,STRIP
+ROS-20-STR,Rosuvastatin 20 mg,STRIP
+SALI-100-PCS,Salbutamol Inhaler 100 mcg,PIECE
+SALS-2-BTL,Salbutamol Syrup 2 mg/5 ml,BOTTLE
+SAMPLE-PCS,Free sample,PIECE
+SIMD-40-BTL,Simethicone Drops 40 mg/ml,BOTTLE
+SIT-100-STR,Sitagliptin 100 mg,STRIP
+SIT-50-STR,Sitagliptin 50 mg,STRIP
+SITM-50-STR,Sitagliptin Metformin 50/500 mg,STRIP
+SPI-25-STR,Spironolactone 25 mg,STRIP
+SUN-50-PCS,Sunscreen SPF 50,PIECE
+SURG-100-PCS,Surgical Gloves 100 pcs,PIECE
+THRL-24-PCS,Throat Lozenges 24 pcs,PIECE
+TOOS-100-PCS,Toothpaste Sensitive 100 g,PIECE
+VAL-160-STR,Valsartan 160 mg,STRIP
+VAL-80-STR,Valsartan 80 mg,STRIP
+VIL-50-STR,Vildagliptin 50 mg,STRIP
+VITADD-15-BTL,Vitamin A D Drops 15 ml,BOTTLE
+VITBC-1-STR,Vitamin B Complex 1 tab,STRIP
+VITC-500-STR,Vitamin C 500 mg,STRIP
+VITD-50000-STR,Vitamin D3 50000 IU,STRIP
+VITE-400-STR,Vitamin E 400 IU,STRIP
+XYLND-01-BTL,Xylometazoline Nasal Drops 0.1%,BOTTLE
+ZINS-20-BTL,Zinc Syrup 20 mg/5 ml,BOTTLE
+ZINS-20-STR,Zinc Sulphate 20 mg,STRIP

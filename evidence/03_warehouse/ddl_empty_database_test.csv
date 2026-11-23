@@ -1,0 +1,6 @@
+file,statements,result
+01_schemas_and_control.sql,15,PASS
+02_dw_stars.sql,14,PASS
+03_meta_and_ai.sql,12,PASS
+second run (all files),-,PASS
+tables created: 23,ai.anomaly_result; ai.forecast_result; ai.model_run; dw.dim_branch; dw.dim_customer; dw.dim_date; dw.dim_product; dw.dim_supplier; dw.fact_purchase; dw.fact_sales; etl.batch; etl.batch_stage_log; etl.deletion_log; etl.rejects; etl.validation_result; meta.column_map; meta.lineage; meta.source_object; meta.source_system; meta.transform_rule; stg.xw_branch; stg.xw_customer; stg.xw_product,PASS

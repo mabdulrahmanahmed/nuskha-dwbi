@@ -1,0 +1,31 @@
+check,expected,actual,result
+receipt_line R05_UNKNOWN_BRANCH: count vs 0.2% of 27821 lines (+-10%),55.6,56,PASS
+receipt_line R03_BAD_DATE: count vs 0.3% of 27821 lines (+-10%),83.5,83,PASS
+receipt_line R07_ORPHAN_LINE: count vs 0.2% of 27821 lines (+-10%),55.6,56,PASS
+receipt_line R01_MISSING_PRODUCT: count vs 0.6% of 27821 lines (+-10%),166.9,167,PASS
+receipt_line R02_BAD_QTY: count vs 0.4% of 27821 lines (+-10%),111.3,111,PASS
+receipt_line R04_BAD_AMOUNT: count vs 0.3% of 27821 lines (+-10%),83.5,83,PASS
+receipt_line D01_EXACT_DUPLICATE: count vs 0.5% of 27821 lines (+-10%),139.1,139,PASS
+receipt_line LEGIT_REPEAT: count vs 1.0% of 27821 lines (+-10%),278.2,278,PASS
+grn_line R03_BAD_DATE: count vs 0.3% of 4679 lines (+-10%),14.0,14,PASS
+grn_line R01_MISSING_PRODUCT: count vs 0.6% of 4679 lines (+-10%),28.1,28,PASS
+grn_line R02_BAD_QTY: count vs 0.4% of 4679 lines (+-10%),18.7,19,PASS
+grn_line R04_BAD_AMOUNT: count vs 0.3% of 4679 lines (+-10%),14.0,14,PASS
+grn_line D01_EXACT_DUPLICATE: count vs 0.5% of 4679 lines (+-10%),23.4,23,PASS
+receipt_line U01_UNRESOLVED_CUSTOMER: count vs 1% of 1988 panel lines (+-10%),19.9,20,PASS
+grn_line R06_NO_FX_RATE: a few lines (1-10),1-10,4,PASS
+grn_line D01_EXACT_DUPLICATE: ledger rows = defective rows found in the stage-1 data,23,23,PASS
+grn_line R01_MISSING_PRODUCT: ledger rows = defective rows found in the stage-1 data,28,28,PASS
+grn_line R02_BAD_QTY: ledger rows = defective rows found in the stage-1 data,19,19,PASS
+grn_line R03_BAD_DATE: ledger rows = defective rows found in the stage-1 data,14,14,PASS
+grn_line R04_BAD_AMOUNT: ledger rows = defective rows found in the stage-1 data,14,14,PASS
+grn_line R06_NO_FX_RATE: ledger rows = defective rows found in the stage-1 data,4,4,PASS
+receipt_line D01_EXACT_DUPLICATE: ledger rows = defective rows found in the stage-1 data,139,139,PASS
+receipt_line LEGIT_REPEAT: ledger rows = defective rows found in the stage-1 data,278,278,PASS
+receipt_line R01_MISSING_PRODUCT: ledger rows = defective rows found in the stage-1 data,167,167,PASS
+receipt_line R02_BAD_QTY: ledger rows = defective rows found in the stage-1 data,111,111,PASS
+receipt_line R03_BAD_DATE: ledger rows = defective rows found in the stage-1 data,83,83,PASS
+receipt_line R04_BAD_AMOUNT: ledger rows = defective rows found in the stage-1 data,83,83,PASS
+receipt_line R05_UNKNOWN_BRANCH: ledger rows = defective rows found in the stage-1 data,56,56,PASS
+receipt_line R07_ORPHAN_LINE: ledger rows = defective rows found in the stage-1 data,56,56,PASS
+receipt_line U01_UNRESOLVED_CUSTOMER: ledger rows = defective rows found in the stage-1 data,20,20,PASS

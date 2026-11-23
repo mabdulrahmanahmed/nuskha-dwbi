@@ -1,0 +1,25 @@
+check,expected,actual,result
+rows in the stage-1 -> stage-2 diff that were not intended,0,0,PASS
+fx_rate: added rows (all intended),61,61,PASS
+goods_receipt: added rows (all intended),121,121,PASS
+goods_receipt: changed rows (all intended),3,3,PASS
+grn_line: added rows (all intended),319,319,PASS
+grn_line: changed rows (all intended),7,7,PASS
+item: added rows (all intended),1,1,PASS
+item: changed rows (all intended),1,1,PASS
+item_cost_history: added rows (all intended),1,1,PASS
+panel_invoice: added rows (all intended),24,24,PASS
+pos_item: added rows (all intended),1,1,PASS
+purchase_order: added rows (all intended),120,120,PASS
+receipt: added rows (all intended),1069,1069,PASS
+receipt: changed rows (all intended),43,43,PASS
+receipt: deleted rows (all intended),3,3,PASS
+receipt_line: added rows (all intended),2324,2324,PASS
+receipt_line: changed rows (all intended),92,92,PASS
+receipt_line: deleted rows (all intended),6,6,PASS
+stock_count: added rows (all intended),1500,1500,PASS
+vendor_item: added rows (all intended),1,1,PASS
+receipts VOIDED in stage 2,15,15,PASS
+receipts hard-deleted,3,3,PASS
+"late receipts: receipt date before 1 Sep 2026, first seen in stage 2",40,40,PASS
+cough syrup category in stage 2,Cough and Cold,Cough and Cold,PASS

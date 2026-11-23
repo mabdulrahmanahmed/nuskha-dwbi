@@ -1,0 +1,17 @@
+check,expected,actual,result
+dim_product: special members [-1] present,1,1,PASS
+dim_product: business key product_code unique,0,0,PASS
+dim_product: no NULL business keys,0,0,PASS
+dim_branch: special members [-1] present,1,1,PASS
+dim_branch: business key branch_code unique,0,0,PASS
+dim_branch: no NULL business keys,0,0,PASS
+"dim_customer: special members [-1, 0] present",2,2,PASS
+dim_customer: business key customer_code unique,0,0,PASS
+dim_customer: no NULL business keys,0,0,PASS
+dim_supplier: special members [-1] present,1,1,PASS
+dim_supplier: business key supplier_code unique,0,0,PASS
+dim_supplier: no NULL business keys,0,0,PASS
+"dim_date: 2023-11-01 to 2027-01-31, one row per day","1188 rows, 2023-11-01 to 2027-01-31","1188 rows, 2023-11-01 to 2027-01-31",PASS
+dim_date: Ramadan days flagged (3 Ramadans),89,89,PASS
+dim_date: fiscal year Jul-Jun (2025-07-01 is FY2026 Q1),FY2026 Q1,FY2026 Q1,PASS
+dim_customer: key 0 is the Walk-in member,Walk-in customer,Walk-in customer,PASS

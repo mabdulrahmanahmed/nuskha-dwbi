@@ -1,0 +1,13 @@
+check,expected,actual,result
+deleted receipts found by key comparison = the 3 planted deletions,"['NNZ-2025-000045', 'ORG-2026-000194', 'PEC-2026-000130']","['NNZ-2025-000045', 'ORG-2026-000194', 'PEC-2026-000130']",PASS
+deletions logged in etl.deletion_log,3,3,PASS
+deleted receipts' rows kept in fact_sales (none removed),> 0,6,PASS
+batch 2 extracted by watermark (from = batch 1 cut-off),2026-08-31 23:59:59,2026-08-31 23:59:59,PASS
+late receipts loaded into their real month (Jul-Aug 2026),40 receipts,"40 receipts in 202607, 202608",PASS
+"stage-1 lines with a value change updated in place (qty fixes, panel fixes, voids)",71,71,PASS
+re-saved lines with no value change left untouched (still batch 1),21,21,PASS
+"VOIDED receipt lines flagged is_cancelled (kept, not deleted)",31,31,PASS
+cancelled lines excluded from the sales/purchase views (WHERE NOT f.is_cancelled; counted in 4.01),3,3,PASS
+CANCELLED GRN lines flagged in fact_purchase,7,7,PASS
+new product P-0500 in dim_product and in facts (late-arriving dimension),P-0500 with rows,P-0500 with 40 rows,PASS
+etl.batch: batches 1 and 2 SUCCESS,"1:SUCCESS, 2:SUCCESS","1:SUCCESS, 2:SUCCESS",PASS

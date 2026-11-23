@@ -1,0 +1,14 @@
+check,expected,actual,result
+item rows,150,150,PASS
+item categories,8,8,PASS
+"item share with pos_code (%, target 85)",85,85,PASS
+"item share with vendor_code (%, target 70)",70,70,PASS
+branches,10,10,PASS
+branches with 2-3 spelling variants,10,10,PASS
+suppliers,25,25,PASS
+import suppliers,5,5,PASS
+loyalty members,1200,1200,PASS
+panel accounts,15,15,PASS
+panel accounts typed 2-3 ways,15,15,PASS
+fx_rate days (Nov 2023 - Oct 2026),1096,1096,PASS
+items with a cost step-up on 2026-03-01 (Diabetes Care),18,18,PASS

@@ -1,0 +1,6 @@
+check,expected,actual,result
+FAIL_AT=0.5 raised an error halfway through a fact load,error,FAIL_AT=0.5: controlled failure after 1184 of 2369 rows of f,PASS
+failed batch recorded as FAILED in etl.batch,FAILED,FAILED,PASS
+rollback: totals and fingerprints unchanged after the failure,0,0,PASS
+rerun after the failure matches the clean run,0,0,PASS
+rerun wrote 0 rows (input unchanged),0,0,PASS

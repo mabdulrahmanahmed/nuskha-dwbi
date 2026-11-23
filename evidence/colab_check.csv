@@ -1,0 +1,12 @@
+measure,headless_local,colab,result
+fact_sales rows,29820.0,29820.0,PASS
+fact_sales net PKR,16400628.65,16400628.65,PASS
+fact_sales gross margin PKR,4101635.58,4101635.58,PASS
+fact_purchase rows,4918.0,4918.0,PASS
+fact_purchase PKR,16567538.48,16567538.48,PASS
+etl.rejects rows,687.0,687.0,PASS
+etl.deletion_log rows,3.0,3.0,PASS
+meta.lineage rows,34738.0,34738.0,PASS
+FY2026 net sales PKR (view),6230294.7,6230294.7,PASS
+ai.forecast_result rows,6.0,6.0,PASS
+ai.anomaly_result rows,1152.0,1152.0,PASS

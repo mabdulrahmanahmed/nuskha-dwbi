@@ -1,0 +1,26 @@
+region,category,month_start,injected_factor,kind
+South,Cough and Cold,2026-03-01,0.295,drop
+North,Cardiovascular,2025-11-01,2.168,spike
+South,Personal Care,2026-05-01,0.233,drop
+South,Cardiovascular,2025-12-01,2.329,spike
+East,Gastro,2025-12-01,2.343,spike
+South,Personal Care,2026-10-01,2.326,spike
+South,Analgesics,2026-05-01,0.308,drop
+East,Antibiotics,2026-04-01,0.342,drop
+South,Vitamins and Supplements,2025-11-01,1.968,spike
+East,Personal Care,2025-11-01,0.352,drop
+North,Analgesics,2025-12-01,1.82,spike
+South,Vitamins and Supplements,2026-02-01,2.252,spike
+South,Cardiovascular,2026-01-01,2.386,spike
+North,Cough and Cold,2025-12-01,2.089,spike
+South,Antibiotics,2026-07-01,2.486,spike
+North,Vitamins and Supplements,2025-11-01,1.956,spike
+North,Analgesics,2026-06-01,0.445,drop
+East,Antibiotics,2026-08-01,0.237,drop
+South,Diabetes Care,2025-12-01,0.213,drop
+East,Personal Care,2026-09-01,1.985,spike
+East,Personal Care,2026-03-01,2.338,spike
+East,Gastro,2026-04-01,0.224,drop
+North,Cough and Cold,2026-09-01,0.299,drop
+North,Vitamins and Supplements,2026-07-01,0.213,drop
+South,Personal Care,2025-12-01,0.163,drop

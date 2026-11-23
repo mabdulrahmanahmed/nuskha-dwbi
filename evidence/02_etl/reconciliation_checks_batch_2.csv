@@ -1,0 +1,7 @@
+check,expected,actual,result
+receipt_line: source rows = staged valid + rejected + duplicates,2428.0,2428.0,PASS
+receipt_line: amount per month source = valid + rejected + duplicates,0.0,0.0,PASS
+receipt_line: staged amount total = raw snapshot amount,1405701.15,1405701.15,PASS
+grn_line: source rows = staged valid + rejected + duplicates,328.0,328.0,PASS
+grn_line: amount per month source = valid + rejected + duplicates,0.0,0.0,PASS
+grn_line: staged amount total = raw snapshot amount,1143627.88,1143627.88,PASS

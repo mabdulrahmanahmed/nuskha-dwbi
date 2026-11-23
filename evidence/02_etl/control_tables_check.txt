@@ -1,0 +1,4 @@
+Unit 2.01 (synthetic data). python -m src.create_warehouse 01 --check created schemas dw, stg, etl, meta, ai and
+tables etl.batch, etl.batch_stage_log, etl.deletion_log, etl.rejects, etl.validation_result, stg.xw_product,
+stg.xw_branch, stg.xw_customer. log_stage() inserted 1 test row into etl.batch_stage_log (then the test batch was
+truncated with RESTART IDENTITY so the first real batch is batch_id 1).

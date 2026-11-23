@@ -1,0 +1,8 @@
+batch_id,table,rows_sent,inserted,updated
+2,dw.dim_date,1188,0,0
+2,dw.dim_product,152,1,1
+2,dw.dim_branch,11,0,0
+2,dw.dim_customer,1217,0,0
+2,dw.dim_supplier,26,0,0
+2,dw.fact_sales,2369,2277,71
+2,dw.fact_purchase,321,314,7

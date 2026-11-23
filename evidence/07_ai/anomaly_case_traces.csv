@@ -1,0 +1,14 @@
+case,receipt_no,line_no,full_date,branch_name,generic_name,strength,quantity_units,net_amount_pkr,source_system,source_key,batch_id,net_flag_month,receipts_flag_month,avg_net_6_months_before
+"East / Analgesics / Sep 2026 (robust z +10.5, flagged by both methods)",GUL-2026-000427,2.0,2026-09-10,Gulshan-e-Iqbal,Naproxen,250 mg,6.0,882.0,sales_db,GUL-2026-000427|2,2.0,,,
+"East / Analgesics / Sep 2026 (robust z +10.5, flagged by both methods)",GUL-2026-000424,1.0,2026-09-09,Gulshan-e-Iqbal,Naproxen,250 mg,5.0,735.0,sales_db,GUL-2026-000424|1,2.0,,,
+"East / Analgesics / Sep 2026 (robust z +10.5, flagged by both methods)",MLR-2026-000320,1.0,2026-09-19,Malir,Paracetamol,500 mg,5.0,705.0,sales_db,MLR-2026-000320|1,2.0,,,
+"East / Analgesics / Sep 2026 (robust z +10.5, flagged by both methods)",GUL-2026-000474,1.0,2026-09-23,Gulshan-e-Iqbal,Paracetamol,1000 mg,5.0,700.0,sales_db,GUL-2026-000474|1,2.0,,,
+"East / Analgesics / Sep 2026 (robust z +10.5, flagged by both methods)",GLJ-2026-000446,1.0,2026-09-26,Gulistan-e-Jauhar,Aspirin,300 mg,5.0,645.0,sales_db,GLJ-2026-000446|1,2.0,,,
+"South / Cardiovascular / Apr 2026 (robust z +3.8, flagged by both methods)",CLF-2026-000185,3.0,2026-04-19,Clifton,Atorvastatin,10 mg,80.0,30480.0,sales_db,CLF-2026-000185|3,1.0,,,
+"South / Cardiovascular / Apr 2026 (robust z +3.8, flagged by both methods)",PEC-2026-000157,3.0,2026-04-15,PECHS,Losartan,50 mg,6.0,1602.0,sales_db,PEC-2026-000157|3,1.0,,,
+"South / Cardiovascular / Apr 2026 (robust z +3.8, flagged by both methods)",PEC-2026-000162,2.0,2026-04-23,PECHS,Rosuvastatin,20 mg,3.0,1143.0,sales_db,PEC-2026-000162|2,1.0,,,
+"South / Cardiovascular / Apr 2026 (robust z +3.8, flagged by both methods)",PEC-2026-000162,1.0,2026-04-23,PECHS,Amlodipine,10 mg,3.0,936.0,sales_db,PEC-2026-000162|1,1.0,,,
+"South / Cardiovascular / Apr 2026 (robust z +3.8, flagged by both methods)",PEC-2026-000172,1.0,2026-04-28,PECHS,Atenolol,50 mg,2.0,816.0,sales_db,PEC-2026-000172|1,1.0,,,
+East / all categories / Jun 2026 (5 of 8 categories down together),,,,Gulistan-e-Jauhar,,,,,,,,50032.0,48.0,61910.625
+East / all categories / Jun 2026 (5 of 8 categories down together),,,,Gulshan-e-Iqbal,,,,,,,,5229.0,5.0,67064.5
+East / all categories / Jun 2026 (5 of 8 categories down together),,,,Malir,,,,,,,,45865.6,38.0,42115.48333333333

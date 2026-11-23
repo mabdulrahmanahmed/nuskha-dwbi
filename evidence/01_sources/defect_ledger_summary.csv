@@ -1,0 +1,16 @@
+source_table,code,rows
+grn_line,D01_EXACT_DUPLICATE,23
+grn_line,R01_MISSING_PRODUCT,28
+grn_line,R02_BAD_QTY,19
+grn_line,R03_BAD_DATE,14
+grn_line,R04_BAD_AMOUNT,14
+grn_line,R06_NO_FX_RATE,4
+receipt_line,D01_EXACT_DUPLICATE,139
+receipt_line,LEGIT_REPEAT,278
+receipt_line,R01_MISSING_PRODUCT,167
+receipt_line,R02_BAD_QTY,111
+receipt_line,R03_BAD_DATE,83
+receipt_line,R04_BAD_AMOUNT,83
+receipt_line,R05_UNKNOWN_BRANCH,56
+receipt_line,R07_ORPHAN_LINE,56
+receipt_line,U01_UNRESOLVED_CUSTOMER,20

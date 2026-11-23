@@ -1,0 +1,3 @@
+check,expected,actual,result
+rerun of batch 1: 0 rows written by the load,0,0,PASS
+rerun of batch 1: totals and table fingerprints unchanged,0,0,PASS

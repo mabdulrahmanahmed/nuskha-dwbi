@@ -1,0 +1,12 @@
+step,rows_before,rows_after,ok,fact
+receipt_line -> receipt,2416,2416,True,sales
+receipt_line -> xw_product,2416,2416,True,sales
+receipt -> xw_branch,2416,2416,True,sales
+receipt -> xw_customer (card),2416,2416,True,sales
+receipt -> xw_customer (panel text),2416,2416,True,sales
+grn_line -> goods_receipt,326,326,True,purchases
+goods_receipt -> purchase_order,326,326,True,purchases
+grn_line -> vendor_item,326,326,True,purchases
+grn_line -> xw_product,326,326,True,purchases
+purchase_order -> xw_branch,326,326,True,purchases
+purchase_order -> supplier,326,326,True,purchases

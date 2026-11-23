@@ -1,0 +1,2 @@
+check,expected,actual,result
+profile_before_after has a before/after pair per table,34,34,PASS

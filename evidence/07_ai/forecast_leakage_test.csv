@@ -1,0 +1,4 @@
+check,result
+no leakage: lag_1 = previous month,PASS
+no leakage: lag_12 = same month last year,PASS
+no leakage: rolling_3_prior = mean of the 3 previous months,PASS

@@ -1,0 +1,1096 @@
+stage,code,source_system,source_table,source_key,detail
+1,R05_UNKNOWN_BRANCH,sales_db,receipt_line,PEC-2023-000013|1,branch typed as 'Br 11'
+1,R05_UNKNOWN_BRANCH,sales_db,receipt_line,PEC-2023-000013|2,branch typed as 'Br 11'
+1,R05_UNKNOWN_BRANCH,sales_db,receipt_line,GUL-2024-000527|1,branch typed as 'TEST BRANCH'
+1,R05_UNKNOWN_BRANCH,sales_db,receipt_line,GUL-2024-000527|2,branch typed as 'TEST BRANCH'
+1,R05_UNKNOWN_BRANCH,sales_db,receipt_line,GUL-2024-000527|3,branch typed as 'TEST BRANCH'
+1,R05_UNKNOWN_BRANCH,sales_db,receipt_line,PEC-2025-000448|1,branch typed as 'Br 11'
+1,R05_UNKNOWN_BRANCH,sales_db,receipt_line,PEC-2025-000448|2,branch typed as 'Br 11'
+1,R05_UNKNOWN_BRANCH,sales_db,receipt_line,PEC-2025-000448|3,branch typed as 'Br 11'
+1,R05_UNKNOWN_BRANCH,sales_db,receipt_line,PEC-2025-000448|4,branch typed as 'Br 11'
+1,R05_UNKNOWN_BRANCH,sales_db,receipt_line,MLR-2026-000008|1,branch typed as 'Karachi'
+1,R05_UNKNOWN_BRANCH,sales_db,receipt_line,MLR-2026-000008|2,branch typed as 'Karachi'
+1,R05_UNKNOWN_BRANCH,sales_db,receipt_line,GUL-2024-000103|1,branch typed as 'Warehouse'
+1,R05_UNKNOWN_BRANCH,sales_db,receipt_line,GUL-2024-000103|2,branch typed as 'Warehouse'
+1,R05_UNKNOWN_BRANCH,sales_db,receipt_line,GUL-2024-000103|3,branch typed as 'Warehouse'
+1,R05_UNKNOWN_BRANCH,sales_db,receipt_line,PEC-2024-000118|1,branch typed as 'TEST BRANCH'
+1,R05_UNKNOWN_BRANCH,sales_db,receipt_line,PEC-2024-000118|2,branch typed as 'TEST BRANCH'
+1,R05_UNKNOWN_BRANCH,sales_db,receipt_line,NNZ-2025-000286|1,branch typed as 'Head Office'
+1,R05_UNKNOWN_BRANCH,sales_db,receipt_line,NNZ-2025-000286|2,branch typed as 'Head Office'
+1,R05_UNKNOWN_BRANCH,sales_db,receipt_line,NNZ-2025-000286|3,branch typed as 'Head Office'
+1,R05_UNKNOWN_BRANCH,sales_db,receipt_line,NNZ-2025-000286|4,branch typed as 'Head Office'
+1,R05_UNKNOWN_BRANCH,sales_db,receipt_line,GBG-2026-000255|1,branch typed as '-'
+1,R05_UNKNOWN_BRANCH,sales_db,receipt_line,GBG-2026-000255|2,branch typed as '-'
+1,R05_UNKNOWN_BRANCH,sales_db,receipt_line,NNZ-2026-000302|1,branch typed as 'Karachi'
+1,R05_UNKNOWN_BRANCH,sales_db,receipt_line,MLR-2026-000264|1,branch typed as 'Karachi'
+1,R05_UNKNOWN_BRANCH,sales_db,receipt_line,MLR-2026-000264|2,branch typed as 'Karachi'
+1,R05_UNKNOWN_BRANCH,sales_db,receipt_line,CLF-2025-000567|1,branch typed as 'Warehouse'
+1,R05_UNKNOWN_BRANCH,sales_db,receipt_line,CLF-2025-000567|2,branch typed as 'Warehouse'
+1,R05_UNKNOWN_BRANCH,sales_db,receipt_line,CLF-2025-000567|3,branch typed as 'Warehouse'
+1,R05_UNKNOWN_BRANCH,sales_db,receipt_line,NNZ-2024-000297|1,branch typed as 'Head Office'
+1,R05_UNKNOWN_BRANCH,sales_db,receipt_line,NNZ-2024-000297|2,branch typed as 'Head Office'
+1,R05_UNKNOWN_BRANCH,sales_db,receipt_line,NNZ-2024-000297|3,branch typed as 'Head Office'
+1,R05_UNKNOWN_BRANCH,sales_db,receipt_line,NNZ-2024-000297|4,branch typed as 'Head Office'
+1,R05_UNKNOWN_BRANCH,sales_db,receipt_line,NNZ-2024-000297|5,branch typed as 'Head Office'
+1,R05_UNKNOWN_BRANCH,sales_db,receipt_line,NNZ-2024-000297|6,branch typed as 'Head Office'
+1,R05_UNKNOWN_BRANCH,sales_db,receipt_line,PEC-2024-000078|1,branch typed as '-'
+1,R05_UNKNOWN_BRANCH,sales_db,receipt_line,PEC-2024-000078|2,branch typed as '-'
+1,R05_UNKNOWN_BRANCH,sales_db,receipt_line,GLJ-2025-000125|1,branch typed as 'Head Office'
+1,R05_UNKNOWN_BRANCH,sales_db,receipt_line,GLJ-2025-000125|2,branch typed as 'Head Office'
+1,R05_UNKNOWN_BRANCH,sales_db,receipt_line,GLJ-2025-000125|3,branch typed as 'Head Office'
+1,R05_UNKNOWN_BRANCH,sales_db,receipt_line,GLJ-2025-000125|4,branch typed as 'Head Office'
+1,R05_UNKNOWN_BRANCH,sales_db,receipt_line,NZM-2023-000015|1,branch typed as 'TEST BRANCH'
+1,R05_UNKNOWN_BRANCH,sales_db,receipt_line,NNZ-2024-000192|1,branch typed as 'TEST BRANCH'
+1,R05_UNKNOWN_BRANCH,sales_db,receipt_line,NNZ-2024-000192|2,branch typed as 'TEST BRANCH'
+1,R05_UNKNOWN_BRANCH,sales_db,receipt_line,NNZ-2024-000059|1,branch typed as 'Br 11'
+1,R05_UNKNOWN_BRANCH,sales_db,receipt_line,ORG-2025-000247|1,branch typed as 'Head Office'
+1,R05_UNKNOWN_BRANCH,sales_db,receipt_line,ORG-2025-000247|2,branch typed as 'Head Office'
+1,R05_UNKNOWN_BRANCH,sales_db,receipt_line,ORG-2024-000164|1,branch typed as 'Br 11'
+1,R05_UNKNOWN_BRANCH,sales_db,receipt_line,ORG-2024-000164|2,branch typed as 'Br 11'
+1,R05_UNKNOWN_BRANCH,sales_db,receipt_line,SDR-2024-000191|1,branch typed as 'TEST BRANCH'
+1,R05_UNKNOWN_BRANCH,sales_db,receipt_line,SDR-2024-000191|2,branch typed as 'TEST BRANCH'
+1,R05_UNKNOWN_BRANCH,sales_db,receipt_line,SDR-2024-000191|3,branch typed as 'TEST BRANCH'
+1,R05_UNKNOWN_BRANCH,sales_db,receipt_line,PEC-2024-000265|1,branch typed as 'Br 11'
+1,R05_UNKNOWN_BRANCH,sales_db,receipt_line,PEC-2024-000265|2,branch typed as 'Br 11'
+1,R05_UNKNOWN_BRANCH,sales_db,receipt_line,GUL-2024-000161|1,branch typed as '-'
+1,R05_UNKNOWN_BRANCH,sales_db,receipt_line,GUL-2024-000161|2,branch typed as '-'
+1,R05_UNKNOWN_BRANCH,sales_db,receipt_line,GLJ-2026-000211|1,branch typed as 'Karachi'
+1,R03_BAD_DATE,sales_db,receipt_line,NZM-2026-000065|1,receipt_ts keyed as 2036-02-23 14:42:37 (real 2026-02-23 14:42:37)
+1,R03_BAD_DATE,sales_db,receipt_line,NZM-2026-000065|2,receipt_ts keyed as 2036-02-23 14:42:37 (real 2026-02-23 14:42:37)
+1,R03_BAD_DATE,sales_db,receipt_line,NNZ-2025-000425|1,receipt_ts keyed as 2035-10-12 11:10:49 (real 2025-10-12 11:10:49)
+1,R03_BAD_DATE,sales_db,receipt_line,GBG-2024-000194|1,receipt_ts keyed as 2034-07-14 14:06:16 (real 2024-07-14 14:06:16)
+1,R03_BAD_DATE,sales_db,receipt_line,GBG-2024-000194|2,receipt_ts keyed as 2034-07-14 14:06:16 (real 2024-07-14 14:06:16)
+1,R03_BAD_DATE,sales_db,receipt_line,NZM-2026-000083|1,receipt_ts keyed as 2036-03-09 16:46:33 (real 2026-03-09 16:46:33)
+1,R03_BAD_DATE,sales_db,receipt_line,NZM-2026-000083|2,receipt_ts keyed as 2036-03-09 16:46:33 (real 2026-03-09 16:46:33)
+1,R03_BAD_DATE,sales_db,receipt_line,NZM-2026-000083|3,receipt_ts keyed as 2036-03-09 16:46:33 (real 2026-03-09 16:46:33)
+1,R03_BAD_DATE,sales_db,receipt_line,GLJ-2025-000381|1,receipt_ts keyed as 2035-10-20 18:59:31 (real 2025-10-20 18:59:31)
+1,R03_BAD_DATE,sales_db,receipt_line,GLJ-2025-000381|2,receipt_ts keyed as 2035-10-20 18:59:31 (real 2025-10-20 18:59:31)
+1,R03_BAD_DATE,sales_db,receipt_line,MLR-2025-000120|1,receipt_ts keyed as 2035-05-04 20:16:48 (real 2025-05-04 20:16:48)
+1,R03_BAD_DATE,sales_db,receipt_line,NNZ-2024-000187|1,receipt_ts keyed as 2034-05-27 19:07:43 (real 2024-05-27 19:07:43)
+1,R03_BAD_DATE,sales_db,receipt_line,NNZ-2024-000187|2,receipt_ts keyed as 2034-05-27 19:07:43 (real 2024-05-27 19:07:43)
+1,R03_BAD_DATE,sales_db,receipt_line,GBG-2026-000273|1,receipt_ts keyed as 2036-08-01 12:54:34 (real 2026-08-01 12:54:34)
+1,R03_BAD_DATE,sales_db,receipt_line,GBG-2026-000273|2,receipt_ts keyed as 2036-08-01 12:54:34 (real 2026-08-01 12:54:34)
+1,R03_BAD_DATE,sales_db,receipt_line,GBG-2026-000273|3,receipt_ts keyed as 2036-08-01 12:54:34 (real 2026-08-01 12:54:34)
+1,R03_BAD_DATE,sales_db,receipt_line,SDR-2024-000153|1,receipt_ts keyed as 2034-05-27 16:36:30 (real 2024-05-27 16:36:30)
+1,R03_BAD_DATE,sales_db,receipt_line,SDR-2024-000153|2,receipt_ts keyed as 2034-05-27 16:36:30 (real 2024-05-27 16:36:30)
+1,R03_BAD_DATE,sales_db,receipt_line,SDR-2024-000153|3,receipt_ts keyed as 2034-05-27 16:36:30 (real 2024-05-27 16:36:30)
+1,R03_BAD_DATE,sales_db,receipt_line,GUL-2026-000026|1,receipt_ts keyed as 2036-01-17 11:30:28 (real 2026-01-17 11:30:28)
+1,R03_BAD_DATE,sales_db,receipt_line,GUL-2026-000026|2,receipt_ts keyed as 2036-01-17 11:30:28 (real 2026-01-17 11:30:28)
+1,R03_BAD_DATE,sales_db,receipt_line,CLF-2025-000312|1,receipt_ts keyed as 2035-08-09 13:06:12 (real 2025-08-09 13:06:12)
+1,R03_BAD_DATE,sales_db,receipt_line,CLF-2025-000312|2,receipt_ts keyed as 2035-08-09 13:06:12 (real 2025-08-09 13:06:12)
+1,R03_BAD_DATE,sales_db,receipt_line,GLJ-2025-000437|1,receipt_ts keyed as 2035-12-04 10:52:13 (real 2025-12-04 10:52:13)
+1,R03_BAD_DATE,sales_db,receipt_line,GLJ-2025-000437|2,receipt_ts keyed as 2035-12-04 10:52:13 (real 2025-12-04 10:52:13)
+1,R03_BAD_DATE,sales_db,receipt_line,NZM-2026-000032|1,receipt_ts keyed as 2036-01-29 09:03:26 (real 2026-01-29 09:03:26)
+1,R03_BAD_DATE,sales_db,receipt_line,CLF-2024-000292|1,receipt_ts keyed as 2034-07-30 21:00:19 (real 2024-07-30 21:00:19)
+1,R03_BAD_DATE,sales_db,receipt_line,CLF-2024-000292|2,receipt_ts keyed as 2034-07-30 21:00:19 (real 2024-07-30 21:00:19)
+1,R03_BAD_DATE,sales_db,receipt_line,CLF-2024-000292|3,receipt_ts keyed as 2034-07-30 21:00:19 (real 2024-07-30 21:00:19)
+1,R03_BAD_DATE,sales_db,receipt_line,CLF-2024-000292|4,receipt_ts keyed as 2034-07-30 21:00:19 (real 2024-07-30 21:00:19)
+1,R03_BAD_DATE,sales_db,receipt_line,CLF-2024-000292|5,receipt_ts keyed as 2034-07-30 21:00:19 (real 2024-07-30 21:00:19)
+1,R03_BAD_DATE,sales_db,receipt_line,CLF-2024-000419|1,receipt_ts keyed as 2034-10-18 17:02:35 (real 2024-10-18 17:02:35)
+1,R03_BAD_DATE,sales_db,receipt_line,NNZ-2024-000480|1,receipt_ts keyed as 2034-12-27 17:07:54 (real 2024-12-27 17:07:54)
+1,R03_BAD_DATE,sales_db,receipt_line,NNZ-2024-000480|2,receipt_ts keyed as 2034-12-27 17:07:54 (real 2024-12-27 17:07:54)
+1,R03_BAD_DATE,sales_db,receipt_line,NNZ-2024-000480|3,receipt_ts keyed as 2034-12-27 17:07:54 (real 2024-12-27 17:07:54)
+1,R03_BAD_DATE,sales_db,receipt_line,GUL-2025-000614|1,receipt_ts keyed as 2035-12-16 18:33:53 (real 2025-12-16 18:33:53)
+1,R03_BAD_DATE,sales_db,receipt_line,GUL-2025-000614|2,receipt_ts keyed as 2035-12-16 18:33:53 (real 2025-12-16 18:33:53)
+1,R03_BAD_DATE,sales_db,receipt_line,CLF-2026-000208|1,receipt_ts keyed as 2036-05-01 11:55:11 (real 2026-05-01 11:55:11)
+1,R03_BAD_DATE,sales_db,receipt_line,CLF-2024-000446|1,receipt_ts keyed as 2034-11-05 12:45:10 (real 2024-11-05 12:45:10)
+1,R03_BAD_DATE,sales_db,receipt_line,CLF-2024-000446|2,receipt_ts keyed as 2034-11-05 12:45:10 (real 2024-11-05 12:45:10)
+1,R03_BAD_DATE,sales_db,receipt_line,CLF-2024-000446|3,receipt_ts keyed as 2034-11-05 12:45:10 (real 2024-11-05 12:45:10)
+1,R03_BAD_DATE,sales_db,receipt_line,CLF-2024-000446|4,receipt_ts keyed as 2034-11-05 12:45:10 (real 2024-11-05 12:45:10)
+1,R03_BAD_DATE,sales_db,receipt_line,GUL-2024-000095|1,receipt_ts keyed as 2034-02-26 18:16:02 (real 2024-02-26 18:16:02)
+1,R03_BAD_DATE,sales_db,receipt_line,GUL-2024-000095|2,receipt_ts keyed as 2034-02-26 18:16:02 (real 2024-02-26 18:16:02)
+1,R03_BAD_DATE,sales_db,receipt_line,GUL-2024-000095|3,receipt_ts keyed as 2034-02-26 18:16:02 (real 2024-02-26 18:16:02)
+1,R03_BAD_DATE,sales_db,receipt_line,GBG-2024-000133|1,receipt_ts keyed as 2034-05-10 19:14:42 (real 2024-05-10 19:14:42)
+1,R03_BAD_DATE,sales_db,receipt_line,NNZ-2024-000182|1,receipt_ts keyed as 2034-05-24 21:57:01 (real 2024-05-24 21:57:01)
+1,R03_BAD_DATE,sales_db,receipt_line,PEC-2026-000270|1,receipt_ts keyed as 2036-07-14 16:32:17 (real 2026-07-14 16:32:17)
+1,R03_BAD_DATE,sales_db,receipt_line,ORG-2026-000102|1,receipt_ts keyed as 2036-04-28 15:40:35 (real 2026-04-28 15:40:35)
+1,R03_BAD_DATE,sales_db,receipt_line,GUL-2023-000012|1,receipt_ts keyed as 2033-11-08 17:22:42 (real 2023-11-08 17:22:42)
+1,R03_BAD_DATE,sales_db,receipt_line,NNZ-2024-000338|1,receipt_ts keyed as 2034-09-11 10:03:43 (real 2024-09-11 10:03:43)
+1,R03_BAD_DATE,sales_db,receipt_line,NNZ-2024-000338|2,receipt_ts keyed as 2034-09-11 10:03:43 (real 2024-09-11 10:03:43)
+1,R03_BAD_DATE,sales_db,receipt_line,ORG-2025-000104|1,receipt_ts keyed as 2035-04-25 13:49:45 (real 2025-04-25 13:49:45)
+1,R03_BAD_DATE,sales_db,receipt_line,ORG-2025-000104|2,receipt_ts keyed as 2035-04-25 13:49:45 (real 2025-04-25 13:49:45)
+1,R03_BAD_DATE,sales_db,receipt_line,GUL-2024-000528|1,receipt_ts keyed as 2034-12-13 14:19:03 (real 2024-12-13 14:19:03)
+1,R03_BAD_DATE,sales_db,receipt_line,GUL-2024-000528|2,receipt_ts keyed as 2034-12-13 14:19:03 (real 2024-12-13 14:19:03)
+1,R03_BAD_DATE,sales_db,receipt_line,GLJ-2026-000254|1,receipt_ts keyed as 2036-06-11 13:48:29 (real 2026-06-11 13:48:29)
+1,R03_BAD_DATE,sales_db,receipt_line,GLJ-2026-000254|2,receipt_ts keyed as 2036-06-11 13:48:29 (real 2026-06-11 13:48:29)
+1,R03_BAD_DATE,sales_db,receipt_line,GLJ-2026-000254|3,receipt_ts keyed as 2036-06-11 13:48:29 (real 2026-06-11 13:48:29)
+1,R03_BAD_DATE,sales_db,receipt_line,PEC-2024-000354|1,receipt_ts keyed as 2034-10-25 18:15:26 (real 2024-10-25 18:15:26)
+1,R03_BAD_DATE,sales_db,receipt_line,MLR-2024-000255|1,receipt_ts keyed as 2034-10-15 18:48:51 (real 2024-10-15 18:48:51)
+1,R03_BAD_DATE,sales_db,receipt_line,MLR-2024-000255|2,receipt_ts keyed as 2034-10-15 18:48:51 (real 2024-10-15 18:48:51)
+1,R03_BAD_DATE,sales_db,receipt_line,SDR-2024-000059|1,receipt_ts keyed as 2034-02-28 15:22:45 (real 2024-02-29 15:22:45)
+1,R03_BAD_DATE,sales_db,receipt_line,SDR-2024-000059|2,receipt_ts keyed as 2034-02-28 15:22:45 (real 2024-02-29 15:22:45)
+1,R03_BAD_DATE,sales_db,receipt_line,SDR-2024-000059|3,receipt_ts keyed as 2034-02-28 15:22:45 (real 2024-02-29 15:22:45)
+1,R03_BAD_DATE,sales_db,receipt_line,SDR-2024-000059|4,receipt_ts keyed as 2034-02-28 15:22:45 (real 2024-02-29 15:22:45)
+1,R03_BAD_DATE,sales_db,receipt_line,GLJ-2025-000219|1,receipt_ts keyed as 2035-06-14 19:11:29 (real 2025-06-14 19:11:29)
+1,R03_BAD_DATE,sales_db,receipt_line,GLJ-2025-000219|2,receipt_ts keyed as 2035-06-14 19:11:29 (real 2025-06-14 19:11:29)
+1,R03_BAD_DATE,sales_db,receipt_line,CLF-2026-000374|1,receipt_ts keyed as 2036-08-13 14:20:29 (real 2026-08-13 14:20:29)
+1,R03_BAD_DATE,sales_db,receipt_line,CLF-2025-000578|1,receipt_ts keyed as 2035-12-24 17:46:43 (real 2025-12-24 17:46:43)
+1,R03_BAD_DATE,sales_db,receipt_line,NZM-2026-000226|1,receipt_ts keyed as 2036-08-05 17:12:50 (real 2026-08-05 17:12:50)
+1,R03_BAD_DATE,sales_db,receipt_line,NZM-2026-000226|2,receipt_ts keyed as 2036-08-05 17:12:50 (real 2026-08-05 17:12:50)
+1,R03_BAD_DATE,sales_db,receipt_line,CLF-2025-000106|1,receipt_ts keyed as 2035-03-04 14:47:55 (real 2025-03-04 14:47:55)
+1,R03_BAD_DATE,sales_db,receipt_line,SDR-2025-000329|1,receipt_ts keyed as 2035-09-16 13:14:52 (real 2025-09-16 13:14:52)
+1,R03_BAD_DATE,sales_db,receipt_line,GLJ-2025-000210|1,receipt_ts keyed as 2035-06-08 21:02:50 (real 2025-06-08 21:02:50)
+1,R03_BAD_DATE,sales_db,receipt_line,GUL-2024-000059|1,receipt_ts keyed as 2034-02-01 16:47:00 (real 2024-02-01 16:47:00)
+1,R03_BAD_DATE,sales_db,receipt_line,GUL-2024-000059|2,receipt_ts keyed as 2034-02-01 16:47:00 (real 2024-02-01 16:47:00)
+1,R03_BAD_DATE,sales_db,receipt_line,SDR-2024-000373|1,receipt_ts keyed as 2034-11-26 13:54:32 (real 2024-11-26 13:54:32)
+1,R03_BAD_DATE,sales_db,receipt_line,SDR-2024-000373|2,receipt_ts keyed as 2034-11-26 13:54:32 (real 2024-11-26 13:54:32)
+1,R03_BAD_DATE,sales_db,receipt_line,PEC-2025-000330|1,receipt_ts keyed as 2035-09-16 09:03:17 (real 2025-09-16 09:03:17)
+1,R03_BAD_DATE,sales_db,receipt_line,PEC-2025-000330|2,receipt_ts keyed as 2035-09-16 09:03:17 (real 2025-09-16 09:03:17)
+1,R03_BAD_DATE,sales_db,receipt_line,PEC-2025-000330|3,receipt_ts keyed as 2035-09-16 09:03:17 (real 2025-09-16 09:03:17)
+1,R03_BAD_DATE,sales_db,receipt_line,GUL-2025-000287|1,receipt_ts keyed as 2035-06-22 15:37:47 (real 2025-06-22 15:37:47)
+1,R07_ORPHAN_LINE,sales_db,receipt_line,GUL-2024-000049|1,header receipt missing
+1,R07_ORPHAN_LINE,sales_db,receipt_line,GUL-2024-000049|2,header receipt missing
+1,R07_ORPHAN_LINE,sales_db,receipt_line,NZM-2025-000231|1,header receipt missing
+1,R07_ORPHAN_LINE,sales_db,receipt_line,NZM-2025-000231|2,header receipt missing
+1,R07_ORPHAN_LINE,sales_db,receipt_line,NZM-2025-000231|3,header receipt missing
+1,R07_ORPHAN_LINE,sales_db,receipt_line,GUL-2024-000425|1,header receipt missing
+1,R07_ORPHAN_LINE,sales_db,receipt_line,GUL-2024-000425|2,header receipt missing
+1,R07_ORPHAN_LINE,sales_db,receipt_line,GUL-2024-000425|3,header receipt missing
+1,R07_ORPHAN_LINE,sales_db,receipt_line,PEC-2026-000320|1,header receipt missing
+1,R07_ORPHAN_LINE,sales_db,receipt_line,PEC-2026-000320|2,header receipt missing
+1,R07_ORPHAN_LINE,sales_db,receipt_line,PEC-2026-000320|3,header receipt missing
+1,R07_ORPHAN_LINE,sales_db,receipt_line,PEC-2026-000320|4,header receipt missing
+1,R07_ORPHAN_LINE,sales_db,receipt_line,PEC-2026-000320|5,header receipt missing
+1,R07_ORPHAN_LINE,sales_db,receipt_line,PEC-2026-000320|6,header receipt missing
+1,R07_ORPHAN_LINE,sales_db,receipt_line,NZM-2024-000177|1,header receipt missing
+1,R07_ORPHAN_LINE,sales_db,receipt_line,GUL-2024-000396|1,header receipt missing
+1,R07_ORPHAN_LINE,sales_db,receipt_line,SDR-2026-000162|1,header receipt missing
+1,R07_ORPHAN_LINE,sales_db,receipt_line,SDR-2026-000162|2,header receipt missing
+1,R07_ORPHAN_LINE,sales_db,receipt_line,NNZ-2026-000389|1,header receipt missing
+1,R07_ORPHAN_LINE,sales_db,receipt_line,NNZ-2026-000389|2,header receipt missing
+1,R07_ORPHAN_LINE,sales_db,receipt_line,NNZ-2026-000389|3,header receipt missing
+1,R07_ORPHAN_LINE,sales_db,receipt_line,NNZ-2026-000389|4,header receipt missing
+1,R07_ORPHAN_LINE,sales_db,receipt_line,NNZ-2026-000389|5,header receipt missing
+1,R07_ORPHAN_LINE,sales_db,receipt_line,CLF-2025-000529|1,header receipt missing
+1,R07_ORPHAN_LINE,sales_db,receipt_line,CLF-2025-000529|2,header receipt missing
+1,R07_ORPHAN_LINE,sales_db,receipt_line,CLF-2025-000529|3,header receipt missing
+1,R07_ORPHAN_LINE,sales_db,receipt_line,CLF-2025-000529|4,header receipt missing
+1,R07_ORPHAN_LINE,sales_db,receipt_line,GLJ-2024-000097|1,header receipt missing
+1,R07_ORPHAN_LINE,sales_db,receipt_line,GLJ-2024-000097|2,header receipt missing
+1,R07_ORPHAN_LINE,sales_db,receipt_line,GLJ-2024-000097|3,header receipt missing
+1,R07_ORPHAN_LINE,sales_db,receipt_line,ORG-2025-000060|1,header receipt missing
+1,R07_ORPHAN_LINE,sales_db,receipt_line,ORG-2025-000060|2,header receipt missing
+1,R07_ORPHAN_LINE,sales_db,receipt_line,GLJ-2026-000035|1,header receipt missing
+1,R07_ORPHAN_LINE,sales_db,receipt_line,GLJ-2026-000035|2,header receipt missing
+1,R07_ORPHAN_LINE,sales_db,receipt_line,GLJ-2026-000035|3,header receipt missing
+1,R07_ORPHAN_LINE,sales_db,receipt_line,GLJ-2026-000035|4,header receipt missing
+1,R07_ORPHAN_LINE,sales_db,receipt_line,PEC-2026-000303|1,header receipt missing
+1,R07_ORPHAN_LINE,sales_db,receipt_line,PEC-2026-000303|2,header receipt missing
+1,R07_ORPHAN_LINE,sales_db,receipt_line,PEC-2026-000303|3,header receipt missing
+1,R07_ORPHAN_LINE,sales_db,receipt_line,ORG-2025-000186|1,header receipt missing
+1,R07_ORPHAN_LINE,sales_db,receipt_line,ORG-2025-000186|2,header receipt missing
+1,R07_ORPHAN_LINE,sales_db,receipt_line,MLR-2026-000122|1,header receipt missing
+1,R07_ORPHAN_LINE,sales_db,receipt_line,NNZ-2026-000244|1,header receipt missing
+1,R07_ORPHAN_LINE,sales_db,receipt_line,NNZ-2026-000244|2,header receipt missing
+1,R07_ORPHAN_LINE,sales_db,receipt_line,NNZ-2026-000244|3,header receipt missing
+1,R07_ORPHAN_LINE,sales_db,receipt_line,MLR-2025-000067|1,header receipt missing
+1,R07_ORPHAN_LINE,sales_db,receipt_line,MLR-2025-000067|2,header receipt missing
+1,R07_ORPHAN_LINE,sales_db,receipt_line,MLR-2025-000067|3,header receipt missing
+1,R07_ORPHAN_LINE,sales_db,receipt_line,MLR-2025-000067|4,header receipt missing
+1,R07_ORPHAN_LINE,sales_db,receipt_line,GLJ-2026-000374|1,header receipt missing
+1,R07_ORPHAN_LINE,sales_db,receipt_line,CLF-2024-000267|1,header receipt missing
+1,R07_ORPHAN_LINE,sales_db,receipt_line,SDR-2023-000002|1,header receipt missing
+1,R07_ORPHAN_LINE,sales_db,receipt_line,SDR-2023-000002|2,header receipt missing
+1,R07_ORPHAN_LINE,sales_db,receipt_line,SDR-2023-000002|3,header receipt missing
+1,R07_ORPHAN_LINE,sales_db,receipt_line,NZM-2025-000029|1,header receipt missing
+1,R07_ORPHAN_LINE,sales_db,receipt_line,MLR-2023-000045|1,header receipt missing
+1,U01_UNRESOLVED_CUSTOMER,sales_db,receipt_line,CLF-2025-000568|1,panel text 'company' (true account 40019)
+1,U01_UNRESOLVED_CUSTOMER,sales_db,receipt_line,CLF-2025-000568|2,panel text 'company' (true account 40019)
+1,U01_UNRESOLVED_CUSTOMER,sales_db,receipt_line,CLF-2025-000568|3,panel text 'company' (true account 40019)
+1,U01_UNRESOLVED_CUSTOMER,sales_db,receipt_line,NNZ-2024-000106|1,panel text 'co.' (true account 40018)
+1,U01_UNRESOLVED_CUSTOMER,sales_db,receipt_line,CLF-2025-000516|1,panel text 'co.' (true account 40024)
+1,U01_UNRESOLVED_CUSTOMER,sales_db,receipt_line,CLF-2025-000516|2,panel text 'co.' (true account 40024)
+1,U01_UNRESOLVED_CUSTOMER,sales_db,receipt_line,CLF-2025-000516|3,panel text 'co.' (true account 40024)
+1,U01_UNRESOLVED_CUSTOMER,sales_db,receipt_line,CLF-2025-000516|4,panel text 'co.' (true account 40024)
+1,U01_UNRESOLVED_CUSTOMER,sales_db,receipt_line,SDR-2025-000462|1,panel text 'corp acct' (true account 40025)
+1,U01_UNRESOLVED_CUSTOMER,sales_db,receipt_line,SDR-2025-000462|2,panel text 'corp acct' (true account 40025)
+1,U01_UNRESOLVED_CUSTOMER,sales_db,receipt_line,NNZ-2025-000254|1,panel text 'cash credit' (true account 40013)
+1,U01_UNRESOLVED_CUSTOMER,sales_db,receipt_line,PEC-2025-000271|1,panel text 'corp acct' (true account 40016)
+1,U01_UNRESOLVED_CUSTOMER,sales_db,receipt_line,GBG-2024-000288|1,panel text 'corp acct' (true account 40016)
+1,U01_UNRESOLVED_CUSTOMER,sales_db,receipt_line,GBG-2024-000288|2,panel text 'corp acct' (true account 40016)
+1,U01_UNRESOLVED_CUSTOMER,sales_db,receipt_line,GBG-2024-000288|3,panel text 'corp acct' (true account 40016)
+1,U01_UNRESOLVED_CUSTOMER,sales_db,receipt_line,GBG-2024-000288|4,panel text 'corp acct' (true account 40016)
+1,U01_UNRESOLVED_CUSTOMER,sales_db,receipt_line,GBG-2026-000181|1,panel text 'company' (true account 40013)
+1,U01_UNRESOLVED_CUSTOMER,sales_db,receipt_line,GBG-2026-000181|2,panel text 'company' (true account 40013)
+1,U01_UNRESOLVED_CUSTOMER,sales_db,receipt_line,GBG-2026-000181|3,panel text 'company' (true account 40013)
+1,U01_UNRESOLVED_CUSTOMER,sales_db,receipt_line,GBG-2026-000181|4,panel text 'company' (true account 40013)
+1,R01_MISSING_PRODUCT,sales_db,receipt_line,PEC-2026-000043|3,item_code MISC-OPEN (real MOU-250-BTL)
+1,R01_MISSING_PRODUCT,sales_db,receipt_line,GUL-2024-000457|2,item_code SAMPLE-PCS (real VITD-50000-STR)
+1,R01_MISSING_PRODUCT,sales_db,receipt_line,NZM-2024-000060|1,item_code MISC-OPEN (real LOP-2-STR)
+1,R01_MISSING_PRODUCT,sales_db,receipt_line,GLJ-2024-000206|2,item_code MISC-OPEN (real FEX-180-STR)
+1,R01_MISSING_PRODUCT,sales_db,receipt_line,MLR-2024-000045|3,item_code MISC-OPEN (real BROS-4-BTL)
+1,R01_MISSING_PRODUCT,sales_db,receipt_line,GUL-2024-000083|4,item_code SAMPLE-PCS (real FERS-200-STR)
+1,R01_MISSING_PRODUCT,sales_db,receipt_line,NNZ-2025-000210|3,item_code DISC-0412-STR (real CEL-200-STR)
+1,R01_MISSING_PRODUCT,sales_db,receipt_line,GBG-2024-000270|1,item_code MISC-OPEN (real BROS-4-BTL)
+1,R01_MISSING_PRODUCT,sales_db,receipt_line,GUL-2024-000476|1,item_code SAMPLE-PCS (real LOS-50-STR)
+1,R01_MISSING_PRODUCT,sales_db,receipt_line,GUL-2025-000444|2,item_code MISC-OPEN (real LOR-10-STR)
+1,R01_MISSING_PRODUCT,sales_db,receipt_line,MLR-2025-000054|1,item_code DISC-0412-STR (real CHL-4-STR)
+1,R01_MISSING_PRODUCT,sales_db,receipt_line,PEC-2024-000355|3,item_code DISC-0412-STR (real FERS-200-STR)
+1,R01_MISSING_PRODUCT,sales_db,receipt_line,PEC-2024-000341|2,item_code MISC-OPEN (real SURG-100-PCS)
+1,R01_MISSING_PRODUCT,sales_db,receipt_line,CLF-2025-000301|3,item_code SAMPLE-PCS (real VITD-50000-STR)
+1,R01_MISSING_PRODUCT,sales_db,receipt_line,GBG-2026-000042|2,item_code DISC-0412-STR (real MET-400-STR)
+1,R01_MISSING_PRODUCT,sales_db,receipt_line,PEC-2024-000324|1,item_code MISC-OPEN (real ESO-40-STR)
+1,R01_MISSING_PRODUCT,sales_db,receipt_line,NZM-2023-000039|1,item_code SAMPLE-PCS (real CLO-75-STR)
+1,R01_MISSING_PRODUCT,sales_db,receipt_line,ORG-2025-000068|2,item_code DISC-0412-STR (real ANTL-500-BTL)
+1,R01_MISSING_PRODUCT,sales_db,receipt_line,SDR-2024-000077|1,item_code SAMPLE-PCS (real FOLA-5-STR)
+1,R01_MISSING_PRODUCT,sales_db,receipt_line,GUL-2024-000490|6,item_code DISC-0412-STR (real IBU-200-STR)
+1,R01_MISSING_PRODUCT,sales_db,receipt_line,CLF-2025-000337|1,item_code SAMPLE-PCS (real MEFA-250-STR)
+1,R01_MISSING_PRODUCT,sales_db,receipt_line,GLJ-2025-000074|1,item_code DISC-0412-STR (real GLI-2-STR)
+1,R01_MISSING_PRODUCT,sales_db,receipt_line,NNZ-2024-000056|3,item_code SAMPLE-PCS (real SIT-100-STR)
+1,R01_MISSING_PRODUCT,sales_db,receipt_line,GUL-2024-000458|2,item_code MISC-OPEN (real SALS-2-BTL)
+1,R01_MISSING_PRODUCT,sales_db,receipt_line,GLJ-2024-000341|1,item_code DISC-0412-STR (real CLO-75-STR)
+1,R01_MISSING_PRODUCT,sales_db,receipt_line,GUL-2025-000583|1,item_code DISC-0412-STR (real OND-4-STR)
+1,R01_MISSING_PRODUCT,sales_db,receipt_line,CLF-2026-000168|2,item_code DISC-0412-STR (real FUSAC-2-PCS)
+1,R01_MISSING_PRODUCT,sales_db,receipt_line,SDR-2025-000453|4,item_code DISC-0412-STR (real BABW-80-PCS)
+1,R01_MISSING_PRODUCT,sales_db,receipt_line,CLF-2026-000098|3,item_code DISC-0412-STR (real ADHP-20-PCS)
+1,R01_MISSING_PRODUCT,sales_db,receipt_line,NZM-2025-000321|1,item_code DISC-0412-STR (real ASP-75-STR)
+1,R01_MISSING_PRODUCT,sales_db,receipt_line,MLR-2025-000228|2,item_code MISC-OPEN (real ANTS-200-BTL)
+1,R01_MISSING_PRODUCT,sales_db,receipt_line,SDR-2024-000264|2,item_code MISC-OPEN (real PARC-500-STR)
+1,R01_MISSING_PRODUCT,sales_db,receipt_line,PEC-2025-000095|1,item_code DISC-0412-STR (real DOM-10-STR)
+1,R01_MISSING_PRODUCT,sales_db,receipt_line,GBG-2024-000212|2,item_code SAMPLE-PCS (real ASP-75-STR)
+1,R01_MISSING_PRODUCT,sales_db,receipt_line,NZM-2024-000069|3,item_code DISC-0412-STR (real HYOB-10-STR)
+1,R01_MISSING_PRODUCT,sales_db,receipt_line,SDR-2024-000011|1,item_code DISC-0412-STR (real FUSAC-2-PCS)
+1,R01_MISSING_PRODUCT,sales_db,receipt_line,NNZ-2023-000053|1,item_code MISC-OPEN (real BROS-4-BTL)
+1,R01_MISSING_PRODUCT,sales_db,receipt_line,GBG-2025-000113|2,item_code DISC-0412-STR (real VITADD-15-BTL)
+1,R01_MISSING_PRODUCT,sales_db,receipt_line,SDR-2025-000361|3,item_code MISC-OPEN (real ISPH-35-PCS)
+1,R01_MISSING_PRODUCT,sales_db,receipt_line,SDR-2024-000085|3,item_code SAMPLE-PCS (real FUSAC-2-PCS)
+1,R01_MISSING_PRODUCT,sales_db,receipt_line,GLJ-2025-000277|1,item_code DISC-0412-STR (real COA-625-STR)
+1,R01_MISSING_PRODUCT,sales_db,receipt_line,CLF-2024-000367|1,item_code SAMPLE-PCS (real AML-5-STR)
+1,R01_MISSING_PRODUCT,sales_db,receipt_line,ORG-2024-000091|2,item_code DISC-0412-STR (real ROS-20-STR)
+1,R01_MISSING_PRODUCT,sales_db,receipt_line,PEC-2025-000320|2,item_code SAMPLE-PCS (real LAN-30-STR)
+1,R01_MISSING_PRODUCT,sales_db,receipt_line,NNZ-2026-000239|1,item_code SAMPLE-PCS (real LOR-10-STR)
+1,R01_MISSING_PRODUCT,sales_db,receipt_line,NZM-2024-000362|1,item_code DISC-0412-STR (real VITD-50000-STR)
+1,R01_MISSING_PRODUCT,sales_db,receipt_line,GUL-2026-000366|2,item_code DISC-0412-STR (real FERS-200-STR)
+1,R01_MISSING_PRODUCT,sales_db,receipt_line,NNZ-2026-000114|2,item_code DISC-0412-STR (real CEF-100-BTL)
+1,R01_MISSING_PRODUCT,sales_db,receipt_line,CLF-2025-000359|1,item_code MISC-OPEN (real IROFA-150-STR)
+1,R01_MISSING_PRODUCT,sales_db,receipt_line,NNZ-2026-000168|2,item_code MISC-OPEN (real FAM-20-STR)
+1,R01_MISSING_PRODUCT,sales_db,receipt_line,GUL-2025-000216|1,item_code MISC-OPEN (real COA-156-BTL)
+1,R01_MISSING_PRODUCT,sales_db,receipt_line,SDR-2025-000035|1,item_code SAMPLE-PCS (real AMO-500-STR)
+1,R01_MISSING_PRODUCT,sales_db,receipt_line,SDR-2025-000103|1,item_code MISC-OPEN (real BIS-25-STR)
+1,R01_MISSING_PRODUCT,sales_db,receipt_line,CLF-2024-000009|1,item_code SAMPLE-PCS (real MEFA-250-STR)
+1,R01_MISSING_PRODUCT,sales_db,receipt_line,NZM-2024-000244|1,item_code DISC-0412-STR (real MET-1000-STR)
+1,R01_MISSING_PRODUCT,sales_db,receipt_line,CLF-2024-000020|2,item_code MISC-OPEN (real VITD-50000-STR)
+1,R01_MISSING_PRODUCT,sales_db,receipt_line,GUL-2026-000022|2,item_code SAMPLE-PCS (real BROS-4-BTL)
+1,R01_MISSING_PRODUCT,sales_db,receipt_line,SDR-2026-000274|3,item_code SAMPLE-PCS (real MOIC-100-PCS)
+1,R01_MISSING_PRODUCT,sales_db,receipt_line,MLR-2026-000065|4,item_code MISC-OPEN (real CEL-200-STR)
+1,R01_MISSING_PRODUCT,sales_db,receipt_line,ORG-2025-000287|2,item_code DISC-0412-STR (real ATE-50-STR)
+1,R01_MISSING_PRODUCT,sales_db,receipt_line,GBG-2025-000329|1,item_code DISC-0412-STR (real LOS-100-STR)
+1,R01_MISSING_PRODUCT,sales_db,receipt_line,MLR-2026-000258|1,item_code SAMPLE-PCS (real MEDS-200-BTL)
+1,R01_MISSING_PRODUCT,sales_db,receipt_line,MLR-2024-000135|1,item_code DISC-0412-STR (real FERS-200-STR)
+1,R01_MISSING_PRODUCT,sales_db,receipt_line,SDR-2025-000368|3,item_code DISC-0412-STR (real FERS-200-STR)
+1,R01_MISSING_PRODUCT,sales_db,receipt_line,MLR-2026-000120|3,item_code DISC-0412-STR (real SALS-2-BTL)
+1,R01_MISSING_PRODUCT,sales_db,receipt_line,SDR-2024-000397|1,item_code MISC-OPEN (real ANTL-500-BTL)
+1,R01_MISSING_PRODUCT,sales_db,receipt_line,CLF-2026-000121|1,item_code DISC-0412-STR (real ROS-20-STR)
+1,R01_MISSING_PRODUCT,sales_db,receipt_line,CLF-2025-000191|1,item_code DISC-0412-STR (real OME-20-STR)
+1,R01_MISSING_PRODUCT,sales_db,receipt_line,SDR-2025-000407|1,item_code SAMPLE-PCS (real SIT-100-STR)
+1,R01_MISSING_PRODUCT,sales_db,receipt_line,NNZ-2025-000484|1,item_code MISC-OPEN (real LOR-10-STR)
+1,R01_MISSING_PRODUCT,sales_db,receipt_line,PEC-2024-000127|2,item_code DISC-0412-STR (real MEFA-250-STR)
+1,R01_MISSING_PRODUCT,sales_db,receipt_line,PEC-2024-000064|2,item_code DISC-0412-STR (real FEX-180-STR)
+1,R01_MISSING_PRODUCT,sales_db,receipt_line,NZM-2024-000269|1,item_code DISC-0412-STR (real FERS-200-STR)
+1,R01_MISSING_PRODUCT,sales_db,receipt_line,NNZ-2025-000169|3,item_code SAMPLE-PCS (real BROS-4-BTL)
+1,R01_MISSING_PRODUCT,sales_db,receipt_line,GLJ-2025-000068|1,item_code MISC-OPEN (real AZI-500-STR)
+1,R01_MISSING_PRODUCT,sales_db,receipt_line,PEC-2025-000188|3,item_code MISC-OPEN (real AMO-125-BTL)
+1,R01_MISSING_PRODUCT,sales_db,receipt_line,GUL-2026-000140|3,item_code MISC-OPEN (real SALS-2-BTL)
+1,R01_MISSING_PRODUCT,sales_db,receipt_line,NNZ-2026-000248|1,item_code MISC-OPEN (real FOLA-5-STR)
+1,R01_MISSING_PRODUCT,sales_db,receipt_line,PEC-2026-000013|3,item_code SAMPLE-PCS (real PAR-650-STR)
+1,R01_MISSING_PRODUCT,sales_db,receipt_line,CLF-2025-000041|2,item_code SAMPLE-PCS (real DIGT-1-PCS)
+1,R01_MISSING_PRODUCT,sales_db,receipt_line,GBG-2026-000214|2,item_code SAMPLE-PCS (real CEP-500-STR)
+1,R01_MISSING_PRODUCT,sales_db,receipt_line,CLF-2026-000149|2,item_code SAMPLE-PCS (real FUSAC-2-PCS)
+1,R01_MISSING_PRODUCT,sales_db,receipt_line,SDR-2025-000016|2,item_code MISC-OPEN (real VIL-50-STR)
+1,R01_MISSING_PRODUCT,sales_db,receipt_line,GBG-2026-000206|1,item_code MISC-OPEN (real BROS-4-BTL)
+1,R01_MISSING_PRODUCT,sales_db,receipt_line,ORG-2026-000113|1,item_code SAMPLE-PCS (real DEXS-15-BTL)
+1,R01_MISSING_PRODUCT,sales_db,receipt_line,NZM-2026-000059|1,item_code DISC-0412-STR (real MEFA-250-STR)
+1,R01_MISSING_PRODUCT,sales_db,receipt_line,CLF-2024-000344|1,item_code MISC-OPEN (real ZINS-20-STR)
+1,R01_MISSING_PRODUCT,sales_db,receipt_line,NNZ-2024-000309|2,item_code MISC-OPEN (real ATE-50-STR)
+1,R01_MISSING_PRODUCT,sales_db,receipt_line,NZM-2025-000263|1,item_code SAMPLE-PCS (real OME3-1000-BTL)
+1,R01_MISSING_PRODUCT,sales_db,receipt_line,GUL-2025-000200|3,item_code SAMPLE-PCS (real PAR-650-STR)
+1,R01_MISSING_PRODUCT,sales_db,receipt_line,CLF-2026-000098|2,item_code DISC-0412-STR (real OND-8-STR)
+1,R01_MISSING_PRODUCT,sales_db,receipt_line,NZM-2026-000162|1,item_code MISC-OPEN (real DEXS-15-BTL)
+1,R01_MISSING_PRODUCT,sales_db,receipt_line,PEC-2025-000054|3,item_code DISC-0412-STR (real DOX-100-STR)
+1,R01_MISSING_PRODUCT,sales_db,receipt_line,MLR-2025-000012|2,item_code SAMPLE-PCS (real ASP-300-STR)
+1,R01_MISSING_PRODUCT,sales_db,receipt_line,ORG-2024-000054|2,item_code DISC-0412-STR (real LEV-500-STR)
+1,R01_MISSING_PRODUCT,sales_db,receipt_line,GUL-2025-000011|1,item_code SAMPLE-PCS (real ADHP-20-PCS)
+1,R01_MISSING_PRODUCT,sales_db,receipt_line,ORG-2024-000213|3,item_code MISC-OPEN (real CHL-4-STR)
+1,R01_MISSING_PRODUCT,sales_db,receipt_line,GUL-2025-000613|1,item_code DISC-0412-STR (real AML-5-STR)
+1,R01_MISSING_PRODUCT,sales_db,receipt_line,PEC-2024-000347|3,item_code MISC-OPEN (real ORARS-1-PCS)
+1,R01_MISSING_PRODUCT,sales_db,receipt_line,GLJ-2025-000189|4,item_code MISC-OPEN (real ROS-20-STR)
+1,R01_MISSING_PRODUCT,sales_db,receipt_line,SDR-2026-000261|1,item_code DISC-0412-STR (real FUR-40-STR)
+1,R01_MISSING_PRODUCT,sales_db,receipt_line,GBG-2025-000252|1,item_code DISC-0412-STR (real VITC-500-STR)
+1,R01_MISSING_PRODUCT,sales_db,receipt_line,PEC-2024-000333|2,item_code SAMPLE-PCS (real AZI-250-STR)
+1,R01_MISSING_PRODUCT,sales_db,receipt_line,GLJ-2024-000304|1,item_code SAMPLE-PCS (real BROS-4-BTL)
+1,R01_MISSING_PRODUCT,sales_db,receipt_line,GUL-2025-000512|1,item_code DISC-0412-STR (real CEL-200-STR)
+1,R01_MISSING_PRODUCT,sales_db,receipt_line,CLF-2026-000149|1,item_code SAMPLE-PCS (real MET2-500-STR)
+1,R01_MISSING_PRODUCT,sales_db,receipt_line,GUL-2024-000054|1,item_code MISC-OPEN (real FERS-200-STR)
+1,R01_MISSING_PRODUCT,sales_db,receipt_line,MLR-2026-000033|2,item_code DISC-0412-STR (real PAR-650-STR)
+1,R01_MISSING_PRODUCT,sales_db,receipt_line,NZM-2024-000141|1,item_code MISC-OPEN (real ATO-40-STR)
+1,R01_MISSING_PRODUCT,sales_db,receipt_line,CLF-2025-000248|1,item_code MISC-OPEN (real ORARS-1-PCS)
+1,R01_MISSING_PRODUCT,sales_db,receipt_line,NNZ-2024-000069|4,item_code SAMPLE-PCS (real CLO-75-STR)
+1,R01_MISSING_PRODUCT,sales_db,receipt_line,ORG-2026-000075|2,item_code DISC-0412-STR (real LOS-50-STR)
+1,R01_MISSING_PRODUCT,sales_db,receipt_line,PEC-2025-000116|1,item_code DISC-0412-STR (real VIL-50-STR)
+1,R01_MISSING_PRODUCT,sales_db,receipt_line,GUL-2023-000063|1,item_code DISC-0412-STR (real AMO-125-BTL)
+1,R01_MISSING_PRODUCT,sales_db,receipt_line,CLF-2024-000037|1,item_code SAMPLE-PCS (real CLA-500-STR)
+1,R01_MISSING_PRODUCT,sales_db,receipt_line,GUL-2025-000241|1,item_code MISC-OPEN (real VITC-500-STR)
+1,R01_MISSING_PRODUCT,sales_db,receipt_line,GUL-2025-000362|1,item_code DISC-0412-STR (real MON-5-STR)
+1,R01_MISSING_PRODUCT,sales_db,receipt_line,PEC-2025-000420|1,item_code DISC-0412-STR (real VITD-50000-STR)
+1,R01_MISSING_PRODUCT,sales_db,receipt_line,MLR-2026-000009|2,item_code DISC-0412-STR (real CET-10-STR)
+1,R01_MISSING_PRODUCT,sales_db,receipt_line,NZM-2025-000106|1,item_code DISC-0412-STR (real ASP-75-STR)
+1,R01_MISSING_PRODUCT,sales_db,receipt_line,ORG-2025-000058|2,item_code DISC-0412-STR (real ASP-300-STR)
+1,R01_MISSING_PRODUCT,sales_db,receipt_line,GBG-2024-000165|5,item_code MISC-OPEN (real DICG-1-PCS)
+1,R01_MISSING_PRODUCT,sales_db,receipt_line,GUL-2024-000124|1,item_code MISC-OPEN (real MEFA-500-STR)
+1,R01_MISSING_PRODUCT,sales_db,receipt_line,GUL-2026-000225|1,item_code SAMPLE-PCS (real VITD-50000-STR)
+1,R01_MISSING_PRODUCT,sales_db,receipt_line,NZM-2025-000002|1,item_code MISC-OPEN (real DOM-5-BTL)
+1,R01_MISSING_PRODUCT,sales_db,receipt_line,NZM-2024-000351|3,item_code SAMPLE-PCS (real SALI-100-PCS)
+1,R01_MISSING_PRODUCT,sales_db,receipt_line,NZM-2024-000225|4,item_code DISC-0412-STR (real LOP-2-STR)
+1,R01_MISSING_PRODUCT,sales_db,receipt_line,SDR-2025-000036|2,item_code DISC-0412-STR (real PAR-500-STR)
+1,R01_MISSING_PRODUCT,sales_db,receipt_line,MLR-2025-000191|1,item_code DISC-0412-STR (real LOP-2-STR)
+1,R01_MISSING_PRODUCT,sales_db,receipt_line,SDR-2023-000003|3,item_code SAMPLE-PCS (real FOLA-5-STR)
+1,R01_MISSING_PRODUCT,sales_db,receipt_line,GUL-2024-000303|2,item_code DISC-0412-STR (real AMO-250-STR)
+1,R01_MISSING_PRODUCT,sales_db,receipt_line,GUL-2024-000460|1,item_code SAMPLE-PCS (real DICS-75-STR)
+1,R01_MISSING_PRODUCT,sales_db,receipt_line,GBG-2025-000067|3,item_code SAMPLE-PCS (real CHL-4-STR)
+1,R01_MISSING_PRODUCT,sales_db,receipt_line,SDR-2024-000211|2,item_code SAMPLE-PCS (real MEFA-500-STR)
+1,R01_MISSING_PRODUCT,sales_db,receipt_line,GUL-2024-000120|2,item_code MISC-OPEN (real BIO-5-BTL)
+1,R01_MISSING_PRODUCT,sales_db,receipt_line,NNZ-2025-000240|5,item_code DISC-0412-STR (real EMP-25-STR)
+1,R01_MISSING_PRODUCT,sales_db,receipt_line,CLF-2025-000288|1,item_code DISC-0412-STR (real PAR-650-STR)
+1,R01_MISSING_PRODUCT,sales_db,receipt_line,CLF-2026-000080|1,item_code SAMPLE-PCS (real CIP-500-STR)
+1,R01_MISSING_PRODUCT,sales_db,receipt_line,MLR-2026-000227|1,item_code SAMPLE-PCS (real LOS-50-STR)
+1,R01_MISSING_PRODUCT,sales_db,receipt_line,NNZ-2026-000135|1,item_code SAMPLE-PCS (real CHL-4-STR)
+1,R01_MISSING_PRODUCT,sales_db,receipt_line,GBG-2026-000070|1,item_code SAMPLE-PCS (real AMB-30-STR)
+1,R01_MISSING_PRODUCT,sales_db,receipt_line,MLR-2026-000017|1,item_code SAMPLE-PCS (real FEX-180-STR)
+1,R01_MISSING_PRODUCT,sales_db,receipt_line,CLF-2024-000242|1,item_code MISC-OPEN (real SALI-100-PCS)
+1,R01_MISSING_PRODUCT,sales_db,receipt_line,SDR-2025-000419|1,item_code MISC-OPEN (real SITM-50-STR)
+1,R01_MISSING_PRODUCT,sales_db,receipt_line,CLF-2025-000095|1,item_code DISC-0412-STR (real MON-5-STR)
+1,R01_MISSING_PRODUCT,sales_db,receipt_line,GLJ-2026-000098|2,item_code MISC-OPEN (real ADHP-20-PCS)
+1,R01_MISSING_PRODUCT,sales_db,receipt_line,GUL-2026-000208|3,item_code SAMPLE-PCS (real ISOM-20-STR)
+1,R01_MISSING_PRODUCT,sales_db,receipt_line,SDR-2026-000224|1,item_code MISC-OPEN (real ROS-20-STR)
+1,R01_MISSING_PRODUCT,sales_db,receipt_line,GLJ-2025-000180|2,item_code DISC-0412-STR (real DICS-50-STR)
+1,R01_MISSING_PRODUCT,sales_db,receipt_line,SDR-2026-000170|1,item_code SAMPLE-PCS (real ASP-75-STR)
+1,R01_MISSING_PRODUCT,sales_db,receipt_line,SDR-2024-000322|3,item_code SAMPLE-PCS (real HYD-25-STR)
+1,R01_MISSING_PRODUCT,sales_db,receipt_line,NNZ-2025-000250|2,item_code DISC-0412-STR (real IBU-200-STR)
+1,R01_MISSING_PRODUCT,sales_db,receipt_line,PEC-2025-000084|2,item_code SAMPLE-PCS (real MEDS-200-BTL)
+1,R01_MISSING_PRODUCT,sales_db,receipt_line,NZM-2024-000359|3,item_code SAMPLE-PCS (real HYOB-10-STR)
+1,R01_MISSING_PRODUCT,sales_db,receipt_line,SDR-2026-000215|2,item_code SAMPLE-PCS (real ISOM-20-STR)
+1,R01_MISSING_PRODUCT,sales_db,receipt_line,GLJ-2025-000128|3,item_code SAMPLE-PCS (real PIO-15-STR)
+1,R01_MISSING_PRODUCT,sales_db,receipt_line,GBG-2026-000023|2,item_code DISC-0412-STR (real SIMD-40-BTL)
+1,R01_MISSING_PRODUCT,sales_db,receipt_line,GUL-2024-000535|2,item_code SAMPLE-PCS (real CLO-75-STR)
+1,R01_MISSING_PRODUCT,sales_db,receipt_line,GUL-2024-000548|2,item_code SAMPLE-PCS (real AMBS-15-BTL)
+1,R01_MISSING_PRODUCT,sales_db,receipt_line,PEC-2026-000265|3,item_code MISC-OPEN (real PETJ-100-PCS)
+1,R01_MISSING_PRODUCT,sales_db,receipt_line,PEC-2023-000012|1,item_code SAMPLE-PCS (real MON-5-STR)
+1,R01_MISSING_PRODUCT,sales_db,receipt_line,GUL-2026-000062|2,item_code DISC-0412-STR (real FUSAC-2-PCS)
+1,R01_MISSING_PRODUCT,sales_db,receipt_line,PEC-2026-000243|1,item_code MISC-OPEN (real BIS-5-STR)
+1,R01_MISSING_PRODUCT,sales_db,receipt_line,MLR-2025-000036|1,item_code DISC-0412-STR (real AML-5-STR)
+1,R01_MISSING_PRODUCT,sales_db,receipt_line,GBG-2024-000225|3,item_code MISC-OPEN (real PARC-500-STR)
+1,R01_MISSING_PRODUCT,sales_db,receipt_line,GLJ-2025-000388|2,item_code SAMPLE-PCS (real CHL-4-STR)
+1,R01_MISSING_PRODUCT,sales_db,receipt_line,GLJ-2025-000104|1,item_code SAMPLE-PCS (real GLI-80-STR)
+1,R02_BAD_QTY,sales_db,receipt_line,GBG-2026-000049|2,qty -2.0
+1,R02_BAD_QTY,sales_db,receipt_line,CLF-2024-000018|3,qty 0.0
+1,R02_BAD_QTY,sales_db,receipt_line,NNZ-2026-000020|3,qty -1.0
+1,R02_BAD_QTY,sales_db,receipt_line,NNZ-2024-000079|2,qty -2.0
+1,R02_BAD_QTY,sales_db,receipt_line,MLR-2023-000043|1,qty -1.0
+1,R02_BAD_QTY,sales_db,receipt_line,PEC-2025-000113|1,qty -1.0
+1,R02_BAD_QTY,sales_db,receipt_line,NNZ-2026-000123|5,qty -1.0
+1,R02_BAD_QTY,sales_db,receipt_line,GBG-2026-000011|3,qty 0.0
+1,R02_BAD_QTY,sales_db,receipt_line,GLJ-2025-000136|2,qty -1.0
+1,R02_BAD_QTY,sales_db,receipt_line,CLF-2024-000429|3,qty 0.0
+1,R02_BAD_QTY,sales_db,receipt_line,GUL-2026-000056|1,qty -1.0
+1,R02_BAD_QTY,sales_db,receipt_line,MLR-2024-000238|1,qty 0.0
+1,R02_BAD_QTY,sales_db,receipt_line,PEC-2025-000297|3,qty -2.0
+1,R02_BAD_QTY,sales_db,receipt_line,MLR-2025-000346|3,qty -1.0
+1,R02_BAD_QTY,sales_db,receipt_line,CLF-2025-000512|3,qty -1.0
+1,R02_BAD_QTY,sales_db,receipt_line,NZM-2025-000199|1,qty -2.0
+1,R02_BAD_QTY,sales_db,receipt_line,CLF-2026-000271|3,qty -1.0
+1,R02_BAD_QTY,sales_db,receipt_line,GUL-2026-000292|2,qty 0.0
+1,R02_BAD_QTY,sales_db,receipt_line,SDR-2024-000027|1,qty 0.0
+1,R02_BAD_QTY,sales_db,receipt_line,GBG-2024-000334|2,qty 0.0
+1,R02_BAD_QTY,sales_db,receipt_line,NZM-2025-000083|1,qty 0.0
+1,R02_BAD_QTY,sales_db,receipt_line,CLF-2024-000041|4,qty -2.0
+1,R02_BAD_QTY,sales_db,receipt_line,GLJ-2024-000293|1,qty -2.0
+1,R02_BAD_QTY,sales_db,receipt_line,GBG-2025-000049|2,qty -2.0
+1,R02_BAD_QTY,sales_db,receipt_line,GUL-2024-000402|3,qty 0.0
+1,R02_BAD_QTY,sales_db,receipt_line,NNZ-2024-000276|2,qty -2.0
+1,R02_BAD_QTY,sales_db,receipt_line,GBG-2026-000281|2,qty 0.0
+1,R02_BAD_QTY,sales_db,receipt_line,GBG-2024-000077|2,qty 0.0
+1,R02_BAD_QTY,sales_db,receipt_line,GUL-2023-000032|2,qty 0.0
+1,R02_BAD_QTY,sales_db,receipt_line,NNZ-2025-000039|1,qty 0.0
+1,R02_BAD_QTY,sales_db,receipt_line,NNZ-2026-000187|2,qty 0.0
+1,R02_BAD_QTY,sales_db,receipt_line,NZM-2025-000216|2,qty -2.0
+1,R02_BAD_QTY,sales_db,receipt_line,PEC-2026-000059|1,qty 0.0
+1,R02_BAD_QTY,sales_db,receipt_line,NZM-2025-000070|1,qty -2.0
+1,R02_BAD_QTY,sales_db,receipt_line,CLF-2026-000405|4,qty 0.0
+1,R02_BAD_QTY,sales_db,receipt_line,GUL-2025-000298|2,qty 0.0
+1,R02_BAD_QTY,sales_db,receipt_line,CLF-2024-000312|3,qty 0.0
+1,R02_BAD_QTY,sales_db,receipt_line,NNZ-2026-000361|1,qty -1.0
+1,R02_BAD_QTY,sales_db,receipt_line,GBG-2024-000131|3,qty -2.0
+1,R02_BAD_QTY,sales_db,receipt_line,NNZ-2026-000115|1,qty 0.0
+1,R02_BAD_QTY,sales_db,receipt_line,NZM-2026-000245|3,qty 0.0
+1,R02_BAD_QTY,sales_db,receipt_line,NZM-2024-000275|2,qty -1.0
+1,R02_BAD_QTY,sales_db,receipt_line,NZM-2025-000354|2,qty -2.0
+1,R02_BAD_QTY,sales_db,receipt_line,NZM-2025-000299|3,qty -1.0
+1,R02_BAD_QTY,sales_db,receipt_line,SDR-2026-000019|1,qty -1.0
+1,R02_BAD_QTY,sales_db,receipt_line,NNZ-2024-000208|3,qty -2.0
+1,R02_BAD_QTY,sales_db,receipt_line,GBG-2025-000193|3,qty -2.0
+1,R02_BAD_QTY,sales_db,receipt_line,PEC-2025-000479|2,qty 0.0
+1,R02_BAD_QTY,sales_db,receipt_line,SDR-2025-000485|2,qty 0.0
+1,R02_BAD_QTY,sales_db,receipt_line,MLR-2025-000098|2,qty -1.0
+1,R02_BAD_QTY,sales_db,receipt_line,GLJ-2025-000469|1,qty -1.0
+1,R02_BAD_QTY,sales_db,receipt_line,CLF-2026-000091|2,qty -2.0
+1,R02_BAD_QTY,sales_db,receipt_line,CLF-2024-000363|1,qty -2.0
+1,R02_BAD_QTY,sales_db,receipt_line,PEC-2025-000347|2,qty -2.0
+1,R02_BAD_QTY,sales_db,receipt_line,MLR-2024-000107|1,qty -2.0
+1,R02_BAD_QTY,sales_db,receipt_line,NNZ-2025-000065|1,qty 0.0
+1,R02_BAD_QTY,sales_db,receipt_line,CLF-2026-000264|2,qty -1.0
+1,R02_BAD_QTY,sales_db,receipt_line,PEC-2025-000405|3,qty 0.0
+1,R02_BAD_QTY,sales_db,receipt_line,CLF-2024-000320|1,qty -1.0
+1,R02_BAD_QTY,sales_db,receipt_line,MLR-2024-000210|3,qty -1.0
+1,R02_BAD_QTY,sales_db,receipt_line,NZM-2024-000218|1,qty -1.0
+1,R02_BAD_QTY,sales_db,receipt_line,SDR-2024-000250|2,qty -1.0
+1,R02_BAD_QTY,sales_db,receipt_line,GUL-2024-000406|3,qty -2.0
+1,R02_BAD_QTY,sales_db,receipt_line,GLJ-2025-000176|1,qty 0.0
+1,R02_BAD_QTY,sales_db,receipt_line,NNZ-2025-000117|2,qty 0.0
+1,R02_BAD_QTY,sales_db,receipt_line,GUL-2024-000482|2,qty -1.0
+1,R02_BAD_QTY,sales_db,receipt_line,GUL-2026-000017|1,qty -2.0
+1,R02_BAD_QTY,sales_db,receipt_line,NNZ-2026-000188|1,qty -2.0
+1,R02_BAD_QTY,sales_db,receipt_line,PEC-2023-000042|2,qty 0.0
+1,R02_BAD_QTY,sales_db,receipt_line,CLF-2026-000213|3,qty 0.0
+1,R02_BAD_QTY,sales_db,receipt_line,CLF-2025-000194|2,qty -1.0
+1,R02_BAD_QTY,sales_db,receipt_line,ORG-2025-000203|2,qty -1.0
+1,R02_BAD_QTY,sales_db,receipt_line,NNZ-2024-000227|4,qty -2.0
+1,R02_BAD_QTY,sales_db,receipt_line,NNZ-2024-000104|1,qty -1.0
+1,R02_BAD_QTY,sales_db,receipt_line,SDR-2025-000119|2,qty -1.0
+1,R02_BAD_QTY,sales_db,receipt_line,NZM-2024-000367|1,qty 0.0
+1,R02_BAD_QTY,sales_db,receipt_line,SDR-2026-000116|2,qty -2.0
+1,R02_BAD_QTY,sales_db,receipt_line,NNZ-2026-000111|1,qty -2.0
+1,R02_BAD_QTY,sales_db,receipt_line,SDR-2025-000145|2,qty -1.0
+1,R02_BAD_QTY,sales_db,receipt_line,NNZ-2026-000096|3,qty -2.0
+1,R02_BAD_QTY,sales_db,receipt_line,GUL-2023-000031|1,qty -2.0
+1,R02_BAD_QTY,sales_db,receipt_line,GUL-2025-000297|1,qty 0.0
+1,R02_BAD_QTY,sales_db,receipt_line,NNZ-2026-000332|4,qty -2.0
+1,R02_BAD_QTY,sales_db,receipt_line,GUL-2024-000163|1,qty -2.0
+1,R02_BAD_QTY,sales_db,receipt_line,MLR-2024-000103|2,qty 0.0
+1,R02_BAD_QTY,sales_db,receipt_line,SDR-2024-000226|1,qty -1.0
+1,R02_BAD_QTY,sales_db,receipt_line,GLJ-2024-000029|1,qty -2.0
+1,R02_BAD_QTY,sales_db,receipt_line,GUL-2026-000057|1,qty 0.0
+1,R02_BAD_QTY,sales_db,receipt_line,GUL-2026-000104|2,qty 0.0
+1,R02_BAD_QTY,sales_db,receipt_line,PEC-2026-000217|1,qty 0.0
+1,R02_BAD_QTY,sales_db,receipt_line,GBG-2026-000193|2,qty -1.0
+1,R02_BAD_QTY,sales_db,receipt_line,MLR-2024-000009|1,qty -2.0
+1,R02_BAD_QTY,sales_db,receipt_line,CLF-2024-000066|2,qty -1.0
+1,R02_BAD_QTY,sales_db,receipt_line,GBG-2026-000197|3,qty -2.0
+1,R02_BAD_QTY,sales_db,receipt_line,GUL-2026-000206|2,qty -2.0
+1,R02_BAD_QTY,sales_db,receipt_line,MLR-2025-000244|2,qty -2.0
+1,R02_BAD_QTY,sales_db,receipt_line,CLF-2024-000254|3,qty 0.0
+1,R02_BAD_QTY,sales_db,receipt_line,GLJ-2024-000232|3,qty -1.0
+1,R02_BAD_QTY,sales_db,receipt_line,GUL-2025-000010|3,qty -1.0
+1,R02_BAD_QTY,sales_db,receipt_line,GUL-2025-000052|2,qty -1.0
+1,R02_BAD_QTY,sales_db,receipt_line,GLJ-2024-000182|3,qty 0.0
+1,R02_BAD_QTY,sales_db,receipt_line,CLF-2025-000240|2,qty -1.0
+1,R02_BAD_QTY,sales_db,receipt_line,NZM-2025-000013|3,qty 0.0
+1,R02_BAD_QTY,sales_db,receipt_line,GUL-2025-000624|1,qty -1.0
+1,R02_BAD_QTY,sales_db,receipt_line,GUL-2026-000006|3,qty 0.0
+1,R02_BAD_QTY,sales_db,receipt_line,GLJ-2025-000229|1,qty -2.0
+1,R02_BAD_QTY,sales_db,receipt_line,ORG-2025-000033|5,qty -2.0
+1,R02_BAD_QTY,sales_db,receipt_line,GUL-2025-000275|1,qty 0.0
+1,R02_BAD_QTY,sales_db,receipt_line,GLJ-2026-000313|1,qty -1.0
+1,R02_BAD_QTY,sales_db,receipt_line,NNZ-2026-000026|4,qty 0.0
+1,R02_BAD_QTY,sales_db,receipt_line,CLF-2024-000460|1,qty 0.0
+1,R04_BAD_AMOUNT,sales_db,receipt_line,CLF-2025-000438|2,unit_price_pkr 0.0
+1,R04_BAD_AMOUNT,sales_db,receipt_line,ORG-2026-000010|2,unit_price_pkr 0.0
+1,R04_BAD_AMOUNT,sales_db,receipt_line,NNZ-2025-000502|3,unit_price_pkr -755.0
+1,R04_BAD_AMOUNT,sales_db,receipt_line,PEC-2026-000080|2,unit_price_pkr -297.0
+1,R04_BAD_AMOUNT,sales_db,receipt_line,GLJ-2024-000343|1,unit_price_pkr -247.0
+1,R04_BAD_AMOUNT,sales_db,receipt_line,CLF-2025-000291|2,unit_price_pkr -225.0
+1,R04_BAD_AMOUNT,sales_db,receipt_line,SDR-2024-000299|1,unit_price_pkr -480.0
+1,R04_BAD_AMOUNT,sales_db,receipt_line,GBG-2025-000142|1,unit_price_pkr 0.0
+1,R04_BAD_AMOUNT,sales_db,receipt_line,MLR-2025-000179|1,unit_price_pkr 0.0
+1,R04_BAD_AMOUNT,sales_db,receipt_line,NZM-2025-000245|2,unit_price_pkr -1499.0
+1,R04_BAD_AMOUNT,sales_db,receipt_line,MLR-2025-000093|1,unit_price_pkr 0.0
+1,R04_BAD_AMOUNT,sales_db,receipt_line,PEC-2023-000012|2,unit_price_pkr -26.0
+1,R04_BAD_AMOUNT,sales_db,receipt_line,GLJ-2024-000028|2,unit_price_pkr -47.0
+1,R04_BAD_AMOUNT,sales_db,receipt_line,NZM-2024-000367|2,unit_price_pkr -218.0
+1,R04_BAD_AMOUNT,sales_db,receipt_line,GBG-2024-000020|2,unit_price_pkr 0.0
+1,R04_BAD_AMOUNT,sales_db,receipt_line,ORG-2026-000109|2,unit_price_pkr -55.0
+1,R04_BAD_AMOUNT,sales_db,receipt_line,SDR-2023-000003|1,unit_price_pkr -1399.0
+1,R04_BAD_AMOUNT,sales_db,receipt_line,NZM-2026-000219|1,unit_price_pkr 0.0
+1,R04_BAD_AMOUNT,sales_db,receipt_line,MLR-2024-000299|2,unit_price_pkr 0.0
+1,R04_BAD_AMOUNT,sales_db,receipt_line,CLF-2025-000442|3,unit_price_pkr 0.0
+1,R04_BAD_AMOUNT,sales_db,receipt_line,PEC-2025-000301|4,unit_price_pkr 0.0
+1,R04_BAD_AMOUNT,sales_db,receipt_line,MLR-2026-000075|2,unit_price_pkr -1592.0
+1,R04_BAD_AMOUNT,sales_db,receipt_line,GUL-2024-000537|3,unit_price_pkr -124.0
+1,R04_BAD_AMOUNT,sales_db,receipt_line,NNZ-2024-000442|1,unit_price_pkr -105.0
+1,R04_BAD_AMOUNT,sales_db,receipt_line,CLF-2025-000411|1,unit_price_pkr 0.0
+1,R04_BAD_AMOUNT,sales_db,receipt_line,GLJ-2025-000004|1,unit_price_pkr -51.0
+1,R04_BAD_AMOUNT,sales_db,receipt_line,NZM-2024-000224|2,unit_price_pkr 0.0
+1,R04_BAD_AMOUNT,sales_db,receipt_line,NZM-2025-000173|1,unit_price_pkr 0.0
+1,R04_BAD_AMOUNT,sales_db,receipt_line,GBG-2023-000008|2,unit_price_pkr -410.0
+1,R04_BAD_AMOUNT,sales_db,receipt_line,GBG-2024-000096|4,unit_price_pkr -327.0
+1,R04_BAD_AMOUNT,sales_db,receipt_line,GUL-2026-000288|2,unit_price_pkr -192.0
+1,R04_BAD_AMOUNT,sales_db,receipt_line,NNZ-2026-000276|1,unit_price_pkr -30.0
+1,R04_BAD_AMOUNT,sales_db,receipt_line,MLR-2024-000140|1,unit_price_pkr -325.0
+1,R04_BAD_AMOUNT,sales_db,receipt_line,NNZ-2026-000049|1,unit_price_pkr 0.0
+1,R04_BAD_AMOUNT,sales_db,receipt_line,ORG-2024-000103|1,unit_price_pkr 0.0
+1,R04_BAD_AMOUNT,sales_db,receipt_line,CLF-2026-000069|1,unit_price_pkr -126.0
+1,R04_BAD_AMOUNT,sales_db,receipt_line,MLR-2025-000227|2,unit_price_pkr -640.0
+1,R04_BAD_AMOUNT,sales_db,receipt_line,NZM-2026-000038|3,unit_price_pkr -235.0
+1,R04_BAD_AMOUNT,sales_db,receipt_line,NZM-2026-000119|2,unit_price_pkr -523.0
+1,R04_BAD_AMOUNT,sales_db,receipt_line,MLR-2024-000040|2,unit_price_pkr -191.0
+1,R04_BAD_AMOUNT,sales_db,receipt_line,SDR-2025-000120|1,unit_price_pkr 0.0
+1,R04_BAD_AMOUNT,sales_db,receipt_line,GBG-2025-000393|2,unit_price_pkr -181.0
+1,R04_BAD_AMOUNT,sales_db,receipt_line,GUL-2025-000348|1,unit_price_pkr -262.0
+1,R04_BAD_AMOUNT,sales_db,receipt_line,NNZ-2026-000116|1,unit_price_pkr 0.0
+1,R04_BAD_AMOUNT,sales_db,receipt_line,NNZ-2024-000488|4,unit_price_pkr 0.0
+1,R04_BAD_AMOUNT,sales_db,receipt_line,GLJ-2024-000309|2,unit_price_pkr -517.0
+1,R04_BAD_AMOUNT,sales_db,receipt_line,NZM-2024-000086|3,unit_price_pkr 0.0
+1,R04_BAD_AMOUNT,sales_db,receipt_line,MLR-2026-000011|1,unit_price_pkr -55.0
+1,R04_BAD_AMOUNT,sales_db,receipt_line,ORG-2025-000025|1,unit_price_pkr 0.0
+1,R04_BAD_AMOUNT,sales_db,receipt_line,CLF-2026-000166|1,unit_price_pkr 0.0
+1,R04_BAD_AMOUNT,sales_db,receipt_line,ORG-2025-000015|2,unit_price_pkr 0.0
+1,R04_BAD_AMOUNT,sales_db,receipt_line,GBG-2025-000115|2,unit_price_pkr 0.0
+1,R04_BAD_AMOUNT,sales_db,receipt_line,CLF-2024-000185|1,unit_price_pkr -194.0
+1,R04_BAD_AMOUNT,sales_db,receipt_line,PEC-2024-000382|1,unit_price_pkr 0.0
+1,R04_BAD_AMOUNT,sales_db,receipt_line,NNZ-2026-000032|1,unit_price_pkr -283.0
+1,R04_BAD_AMOUNT,sales_db,receipt_line,GBG-2024-000048|2,unit_price_pkr 0.0
+1,R04_BAD_AMOUNT,sales_db,receipt_line,ORG-2026-000126|3,unit_price_pkr 0.0
+1,R04_BAD_AMOUNT,sales_db,receipt_line,GLJ-2025-000235|2,unit_price_pkr 0.0
+1,R04_BAD_AMOUNT,sales_db,receipt_line,GUL-2025-000457|4,unit_price_pkr -235.0
+1,R04_BAD_AMOUNT,sales_db,receipt_line,SDR-2025-000424|3,unit_price_pkr -131.0
+1,R04_BAD_AMOUNT,sales_db,receipt_line,SDR-2023-000026|2,unit_price_pkr -108.0
+1,R04_BAD_AMOUNT,sales_db,receipt_line,NZM-2025-000276|1,unit_price_pkr -99.0
+1,R04_BAD_AMOUNT,sales_db,receipt_line,ORG-2025-000206|1,unit_price_pkr -131.0
+1,R04_BAD_AMOUNT,sales_db,receipt_line,PEC-2026-000159|1,unit_price_pkr 0.0
+1,R04_BAD_AMOUNT,sales_db,receipt_line,GBG-2024-000027|2,unit_price_pkr -407.0
+1,R04_BAD_AMOUNT,sales_db,receipt_line,SDR-2026-000169|1,unit_price_pkr -126.0
+1,R04_BAD_AMOUNT,sales_db,receipt_line,GLJ-2025-000119|1,unit_price_pkr 0.0
+1,R04_BAD_AMOUNT,sales_db,receipt_line,CLF-2026-000095|3,unit_price_pkr 0.0
+1,R04_BAD_AMOUNT,sales_db,receipt_line,NNZ-2025-000500|2,unit_price_pkr -99.0
+1,R04_BAD_AMOUNT,sales_db,receipt_line,MLR-2024-000144|1,unit_price_pkr -26.0
+1,R04_BAD_AMOUNT,sales_db,receipt_line,PEC-2024-000139|2,unit_price_pkr 0.0
+1,R04_BAD_AMOUNT,sales_db,receipt_line,CLF-2024-000248|2,unit_price_pkr 0.0
+1,R04_BAD_AMOUNT,sales_db,receipt_line,ORG-2024-000231|2,unit_price_pkr 0.0
+1,R04_BAD_AMOUNT,sales_db,receipt_line,CLF-2024-000238|2,unit_price_pkr -175.0
+1,R04_BAD_AMOUNT,sales_db,receipt_line,SDR-2026-000195|2,unit_price_pkr 0.0
+1,R04_BAD_AMOUNT,sales_db,receipt_line,NNZ-2024-000225|2,unit_price_pkr 0.0
+1,R04_BAD_AMOUNT,sales_db,receipt_line,PEC-2026-000007|1,unit_price_pkr -30.0
+1,R04_BAD_AMOUNT,sales_db,receipt_line,SDR-2026-000012|1,unit_price_pkr 0.0
+1,R04_BAD_AMOUNT,sales_db,receipt_line,PEC-2025-000315|1,unit_price_pkr -147.0
+1,R04_BAD_AMOUNT,sales_db,receipt_line,NZM-2025-000345|1,unit_price_pkr 0.0
+1,R04_BAD_AMOUNT,sales_db,receipt_line,CLF-2023-000021|1,unit_price_pkr -147.0
+1,R04_BAD_AMOUNT,sales_db,receipt_line,PEC-2026-000038|1,unit_price_pkr -55.0
+1,R04_BAD_AMOUNT,sales_db,receipt_line,CLF-2024-000072|3,unit_price_pkr -194.0
+1,D01_EXACT_DUPLICATE,sales_db,receipt_line,SDR-2025-000390|1,exported twice by the till export job
+1,D01_EXACT_DUPLICATE,sales_db,receipt_line,GLJ-2026-000308|1,exported twice by the till export job
+1,D01_EXACT_DUPLICATE,sales_db,receipt_line,NNZ-2025-000016|3,exported twice by the till export job
+1,D01_EXACT_DUPLICATE,sales_db,receipt_line,PEC-2025-000333|1,exported twice by the till export job
+1,D01_EXACT_DUPLICATE,sales_db,receipt_line,ORG-2026-000188|1,exported twice by the till export job
+1,D01_EXACT_DUPLICATE,sales_db,receipt_line,CLF-2025-000395|1,exported twice by the till export job
+1,D01_EXACT_DUPLICATE,sales_db,receipt_line,PEC-2025-000171|2,exported twice by the till export job
+1,D01_EXACT_DUPLICATE,sales_db,receipt_line,GLJ-2024-000176|3,exported twice by the till export job
+1,D01_EXACT_DUPLICATE,sales_db,receipt_line,MLR-2025-000103|2,exported twice by the till export job
+1,D01_EXACT_DUPLICATE,sales_db,receipt_line,GBG-2025-000155|4,exported twice by the till export job
+1,D01_EXACT_DUPLICATE,sales_db,receipt_line,GUL-2025-000083|1,exported twice by the till export job
+1,D01_EXACT_DUPLICATE,sales_db,receipt_line,SDR-2024-000295|1,exported twice by the till export job
+1,D01_EXACT_DUPLICATE,sales_db,receipt_line,PEC-2026-000080|1,exported twice by the till export job
+1,D01_EXACT_DUPLICATE,sales_db,receipt_line,CLF-2025-000272|3,exported twice by the till export job
+1,D01_EXACT_DUPLICATE,sales_db,receipt_line,GBG-2025-000372|4,exported twice by the till export job
+1,D01_EXACT_DUPLICATE,sales_db,receipt_line,MLR-2024-000314|3,exported twice by the till export job
+1,D01_EXACT_DUPLICATE,sales_db,receipt_line,NZM-2025-000236|2,exported twice by the till export job
+1,D01_EXACT_DUPLICATE,sales_db,receipt_line,MLR-2023-000011|4,exported twice by the till export job
+1,D01_EXACT_DUPLICATE,sales_db,receipt_line,NNZ-2024-000051|3,exported twice by the till export job
+1,D01_EXACT_DUPLICATE,sales_db,receipt_line,GUL-2024-000370|2,exported twice by the till export job
+1,D01_EXACT_DUPLICATE,sales_db,receipt_line,GLJ-2026-000301|1,exported twice by the till export job
+1,D01_EXACT_DUPLICATE,sales_db,receipt_line,SDR-2024-000040|4,exported twice by the till export job
+1,D01_EXACT_DUPLICATE,sales_db,receipt_line,GUL-2024-000231|2,exported twice by the till export job
+1,D01_EXACT_DUPLICATE,sales_db,receipt_line,GBG-2024-000051|4,exported twice by the till export job
+1,D01_EXACT_DUPLICATE,sales_db,receipt_line,GLJ-2024-000029|2,exported twice by the till export job
+1,D01_EXACT_DUPLICATE,sales_db,receipt_line,SDR-2026-000314|3,exported twice by the till export job
+1,D01_EXACT_DUPLICATE,sales_db,receipt_line,NNZ-2025-000414|2,exported twice by the till export job
+1,D01_EXACT_DUPLICATE,sales_db,receipt_line,GBG-2024-000049|1,exported twice by the till export job
+1,D01_EXACT_DUPLICATE,sales_db,receipt_line,GUL-2025-000274|2,exported twice by the till export job
+1,D01_EXACT_DUPLICATE,sales_db,receipt_line,NZM-2026-000131|4,exported twice by the till export job
+1,D01_EXACT_DUPLICATE,sales_db,receipt_line,MLR-2025-000300|2,exported twice by the till export job
+1,D01_EXACT_DUPLICATE,sales_db,receipt_line,GLJ-2025-000403|1,exported twice by the till export job
+1,D01_EXACT_DUPLICATE,sales_db,receipt_line,GBG-2025-000244|3,exported twice by the till export job
+1,D01_EXACT_DUPLICATE,sales_db,receipt_line,NNZ-2025-000348|2,exported twice by the till export job
+1,D01_EXACT_DUPLICATE,sales_db,receipt_line,CLF-2025-000541|6,exported twice by the till export job
+1,D01_EXACT_DUPLICATE,sales_db,receipt_line,SDR-2024-000080|2,exported twice by the till export job
+1,D01_EXACT_DUPLICATE,sales_db,receipt_line,NNZ-2024-000124|2,exported twice by the till export job
+1,D01_EXACT_DUPLICATE,sales_db,receipt_line,NZM-2024-000124|1,exported twice by the till export job
+1,D01_EXACT_DUPLICATE,sales_db,receipt_line,NNZ-2025-000187|2,exported twice by the till export job
+1,D01_EXACT_DUPLICATE,sales_db,receipt_line,MLR-2023-000041|2,exported twice by the till export job
+1,D01_EXACT_DUPLICATE,sales_db,receipt_line,PEC-2026-000250|4,exported twice by the till export job
+1,D01_EXACT_DUPLICATE,sales_db,receipt_line,GLJ-2025-000373|4,exported twice by the till export job
+1,D01_EXACT_DUPLICATE,sales_db,receipt_line,MLR-2026-000215|1,exported twice by the till export job
+1,D01_EXACT_DUPLICATE,sales_db,receipt_line,GLJ-2025-000458|1,exported twice by the till export job
+1,D01_EXACT_DUPLICATE,sales_db,receipt_line,GBG-2025-000159|5,exported twice by the till export job
+1,D01_EXACT_DUPLICATE,sales_db,receipt_line,NNZ-2025-000064|1,exported twice by the till export job
+1,D01_EXACT_DUPLICATE,sales_db,receipt_line,NNZ-2024-000374|2,exported twice by the till export job
+1,D01_EXACT_DUPLICATE,sales_db,receipt_line,CLF-2025-000478|3,exported twice by the till export job
+1,D01_EXACT_DUPLICATE,sales_db,receipt_line,GUL-2025-000356|3,exported twice by the till export job
+1,D01_EXACT_DUPLICATE,sales_db,receipt_line,PEC-2024-000153|2,exported twice by the till export job
+1,D01_EXACT_DUPLICATE,sales_db,receipt_line,GBG-2026-000091|1,exported twice by the till export job
+1,D01_EXACT_DUPLICATE,sales_db,receipt_line,NNZ-2024-000227|1,exported twice by the till export job
+1,D01_EXACT_DUPLICATE,sales_db,receipt_line,CLF-2023-000049|4,exported twice by the till export job
+1,D01_EXACT_DUPLICATE,sales_db,receipt_line,NZM-2024-000194|2,exported twice by the till export job
+1,D01_EXACT_DUPLICATE,sales_db,receipt_line,GUL-2026-000341|2,exported twice by the till export job
+1,D01_EXACT_DUPLICATE,sales_db,receipt_line,MLR-2025-000322|2,exported twice by the till export job
+1,D01_EXACT_DUPLICATE,sales_db,receipt_line,GUL-2025-000255|2,exported twice by the till export job
+1,D01_EXACT_DUPLICATE,sales_db,receipt_line,NNZ-2023-000041|1,exported twice by the till export job
+1,D01_EXACT_DUPLICATE,sales_db,receipt_line,PEC-2024-000361|4,exported twice by the till export job
+1,D01_EXACT_DUPLICATE,sales_db,receipt_line,GUL-2024-000447|1,exported twice by the till export job
+1,D01_EXACT_DUPLICATE,sales_db,receipt_line,MLR-2025-000002|1,exported twice by the till export job
+1,D01_EXACT_DUPLICATE,sales_db,receipt_line,GUL-2024-000383|1,exported twice by the till export job
+1,D01_EXACT_DUPLICATE,sales_db,receipt_line,GLJ-2025-000441|3,exported twice by the till export job
+1,D01_EXACT_DUPLICATE,sales_db,receipt_line,GBG-2025-000290|3,exported twice by the till export job
+1,D01_EXACT_DUPLICATE,sales_db,receipt_line,ORG-2025-000198|1,exported twice by the till export job
+1,D01_EXACT_DUPLICATE,sales_db,receipt_line,NNZ-2026-000385|2,exported twice by the till export job
+1,D01_EXACT_DUPLICATE,sales_db,receipt_line,NZM-2026-000246|1,exported twice by the till export job
+1,D01_EXACT_DUPLICATE,sales_db,receipt_line,PEC-2026-000307|2,exported twice by the till export job
+1,D01_EXACT_DUPLICATE,sales_db,receipt_line,NZM-2025-000364|1,exported twice by the till export job
+1,D01_EXACT_DUPLICATE,sales_db,receipt_line,GBG-2024-000029|1,exported twice by the till export job
+1,D01_EXACT_DUPLICATE,sales_db,receipt_line,GLJ-2025-000144|1,exported twice by the till export job
+1,D01_EXACT_DUPLICATE,sales_db,receipt_line,NNZ-2025-000271|4,exported twice by the till export job
+1,D01_EXACT_DUPLICATE,sales_db,receipt_line,MLR-2024-000031|3,exported twice by the till export job
+1,D01_EXACT_DUPLICATE,sales_db,receipt_line,NZM-2023-000021|3,exported twice by the till export job
+1,D01_EXACT_DUPLICATE,sales_db,receipt_line,GUL-2025-000577|1,exported twice by the till export job
+1,D01_EXACT_DUPLICATE,sales_db,receipt_line,NNZ-2026-000351|1,exported twice by the till export job
+1,D01_EXACT_DUPLICATE,sales_db,receipt_line,SDR-2025-000131|1,exported twice by the till export job
+1,D01_EXACT_DUPLICATE,sales_db,receipt_line,SDR-2025-000204|2,exported twice by the till export job
+1,D01_EXACT_DUPLICATE,sales_db,receipt_line,MLR-2025-000376|1,exported twice by the till export job
+1,D01_EXACT_DUPLICATE,sales_db,receipt_line,GUL-2024-000105|2,exported twice by the till export job
+1,D01_EXACT_DUPLICATE,sales_db,receipt_line,GUL-2024-000184|1,exported twice by the till export job
+1,D01_EXACT_DUPLICATE,sales_db,receipt_line,CLF-2023-000053|4,exported twice by the till export job
+1,D01_EXACT_DUPLICATE,sales_db,receipt_line,ORG-2024-000166|2,exported twice by the till export job
+1,D01_EXACT_DUPLICATE,sales_db,receipt_line,CLF-2026-000078|1,exported twice by the till export job
+1,D01_EXACT_DUPLICATE,sales_db,receipt_line,MLR-2025-000227|1,exported twice by the till export job
+1,D01_EXACT_DUPLICATE,sales_db,receipt_line,GUL-2025-000449|2,exported twice by the till export job
+1,D01_EXACT_DUPLICATE,sales_db,receipt_line,PEC-2023-000029|2,exported twice by the till export job
+1,D01_EXACT_DUPLICATE,sales_db,receipt_line,PEC-2024-000209|1,exported twice by the till export job
+1,D01_EXACT_DUPLICATE,sales_db,receipt_line,GUL-2024-000391|1,exported twice by the till export job
+1,D01_EXACT_DUPLICATE,sales_db,receipt_line,PEC-2026-000052|1,exported twice by the till export job
+1,D01_EXACT_DUPLICATE,sales_db,receipt_line,NNZ-2026-000157|1,exported twice by the till export job
+1,D01_EXACT_DUPLICATE,sales_db,receipt_line,MLR-2024-000256|1,exported twice by the till export job
+1,D01_EXACT_DUPLICATE,sales_db,receipt_line,ORG-2024-000018|2,exported twice by the till export job
+1,D01_EXACT_DUPLICATE,sales_db,receipt_line,CLF-2023-000015|2,exported twice by the till export job
+1,D01_EXACT_DUPLICATE,sales_db,receipt_line,CLF-2024-000223|1,exported twice by the till export job
+1,D01_EXACT_DUPLICATE,sales_db,receipt_line,CLF-2024-000332|1,exported twice by the till export job
+1,D01_EXACT_DUPLICATE,sales_db,receipt_line,PEC-2025-000227|3,exported twice by the till export job
+1,D01_EXACT_DUPLICATE,sales_db,receipt_line,CLF-2024-000087|2,exported twice by the till export job
+1,D01_EXACT_DUPLICATE,sales_db,receipt_line,GBG-2024-000114|1,exported twice by the till export job
+1,D01_EXACT_DUPLICATE,sales_db,receipt_line,MLR-2024-000103|1,exported twice by the till export job
+1,D01_EXACT_DUPLICATE,sales_db,receipt_line,PEC-2025-000473|1,exported twice by the till export job
+1,D01_EXACT_DUPLICATE,sales_db,receipt_line,PEC-2025-000346|2,exported twice by the till export job
+1,D01_EXACT_DUPLICATE,sales_db,receipt_line,PEC-2024-000122|1,exported twice by the till export job
+1,D01_EXACT_DUPLICATE,sales_db,receipt_line,GUL-2024-000197|2,exported twice by the till export job
+1,D01_EXACT_DUPLICATE,sales_db,receipt_line,CLF-2025-000559|2,exported twice by the till export job
+1,D01_EXACT_DUPLICATE,sales_db,receipt_line,GBG-2023-000029|1,exported twice by the till export job
+1,D01_EXACT_DUPLICATE,sales_db,receipt_line,CLF-2024-000099|1,exported twice by the till export job
+1,D01_EXACT_DUPLICATE,sales_db,receipt_line,GLJ-2024-000045|2,exported twice by the till export job
+1,D01_EXACT_DUPLICATE,sales_db,receipt_line,NZM-2025-000007|1,exported twice by the till export job
+1,D01_EXACT_DUPLICATE,sales_db,receipt_line,GUL-2024-000129|1,exported twice by the till export job
+1,D01_EXACT_DUPLICATE,sales_db,receipt_line,GLJ-2025-000129|3,exported twice by the till export job
+1,D01_EXACT_DUPLICATE,sales_db,receipt_line,NNZ-2025-000266|2,exported twice by the till export job
+1,D01_EXACT_DUPLICATE,sales_db,receipt_line,NNZ-2025-000387|1,exported twice by the till export job
+1,D01_EXACT_DUPLICATE,sales_db,receipt_line,GBG-2023-000038|1,exported twice by the till export job
+1,D01_EXACT_DUPLICATE,sales_db,receipt_line,MLR-2025-000360|2,exported twice by the till export job
+1,D01_EXACT_DUPLICATE,sales_db,receipt_line,SDR-2024-000404|1,exported twice by the till export job
+1,D01_EXACT_DUPLICATE,sales_db,receipt_line,NNZ-2026-000146|1,exported twice by the till export job
+1,D01_EXACT_DUPLICATE,sales_db,receipt_line,NZM-2026-000197|1,exported twice by the till export job
+1,D01_EXACT_DUPLICATE,sales_db,receipt_line,SDR-2025-000350|1,exported twice by the till export job
+1,D01_EXACT_DUPLICATE,sales_db,receipt_line,CLF-2024-000305|1,exported twice by the till export job
+1,D01_EXACT_DUPLICATE,sales_db,receipt_line,GLJ-2026-000181|2,exported twice by the till export job
+1,D01_EXACT_DUPLICATE,sales_db,receipt_line,GLJ-2026-000144|1,exported twice by the till export job
+1,D01_EXACT_DUPLICATE,sales_db,receipt_line,GLJ-2024-000051|3,exported twice by the till export job
+1,D01_EXACT_DUPLICATE,sales_db,receipt_line,GUL-2024-000457|1,exported twice by the till export job
+1,D01_EXACT_DUPLICATE,sales_db,receipt_line,MLR-2026-000082|1,exported twice by the till export job
+1,D01_EXACT_DUPLICATE,sales_db,receipt_line,ORG-2023-000037|3,exported twice by the till export job
+1,D01_EXACT_DUPLICATE,sales_db,receipt_line,GUL-2025-000279|1,exported twice by the till export job
+1,D01_EXACT_DUPLICATE,sales_db,receipt_line,GUL-2026-000069|1,exported twice by the till export job
+1,D01_EXACT_DUPLICATE,sales_db,receipt_line,SDR-2026-000100|1,exported twice by the till export job
+1,D01_EXACT_DUPLICATE,sales_db,receipt_line,SDR-2024-000167|1,exported twice by the till export job
+1,D01_EXACT_DUPLICATE,sales_db,receipt_line,SDR-2025-000139|2,exported twice by the till export job
+1,D01_EXACT_DUPLICATE,sales_db,receipt_line,SDR-2024-000115|2,exported twice by the till export job
+1,D01_EXACT_DUPLICATE,sales_db,receipt_line,GUL-2023-000002|1,exported twice by the till export job
+1,D01_EXACT_DUPLICATE,sales_db,receipt_line,GUL-2025-000190|1,exported twice by the till export job
+1,D01_EXACT_DUPLICATE,sales_db,receipt_line,PEC-2024-000328|4,exported twice by the till export job
+1,D01_EXACT_DUPLICATE,sales_db,receipt_line,CLF-2026-000154|2,exported twice by the till export job
+1,D01_EXACT_DUPLICATE,sales_db,receipt_line,MLR-2025-000063|1,exported twice by the till export job
+1,D01_EXACT_DUPLICATE,sales_db,receipt_line,GBG-2024-000039|2,exported twice by the till export job
+1,D01_EXACT_DUPLICATE,sales_db,receipt_line,GUL-2025-000327|1,exported twice by the till export job
+1,LEGIT_REPEAT,sales_db,receipt_line,GLJ-2026-000189|2,"same item as line 1, new line number: keep"
+1,LEGIT_REPEAT,sales_db,receipt_line,GBG-2024-000354|3,"same item as line 1, new line number: keep"
+1,LEGIT_REPEAT,sales_db,receipt_line,SDR-2024-000318|4,"same item as line 3, new line number: keep"
+1,LEGIT_REPEAT,sales_db,receipt_line,ORG-2025-000276|2,"same item as line 1, new line number: keep"
+1,LEGIT_REPEAT,sales_db,receipt_line,GBG-2025-000387|4,"same item as line 1, new line number: keep"
+1,LEGIT_REPEAT,sales_db,receipt_line,MLR-2026-000040|2,"same item as line 1, new line number: keep"
+1,LEGIT_REPEAT,sales_db,receipt_line,GLJ-2026-000108|4,"same item as line 3, new line number: keep"
+1,LEGIT_REPEAT,sales_db,receipt_line,GBG-2025-000303|3,"same item as line 2, new line number: keep"
+1,LEGIT_REPEAT,sales_db,receipt_line,PEC-2025-000031|4,"same item as line 1, new line number: keep"
+1,LEGIT_REPEAT,sales_db,receipt_line,CLF-2026-000211|3,"same item as line 2, new line number: keep"
+1,LEGIT_REPEAT,sales_db,receipt_line,GBG-2024-000150|5,"same item as line 4, new line number: keep"
+1,LEGIT_REPEAT,sales_db,receipt_line,NZM-2025-000203|4,"same item as line 1, new line number: keep"
+1,LEGIT_REPEAT,sales_db,receipt_line,NNZ-2026-000285|5,"same item as line 4, new line number: keep"
+1,LEGIT_REPEAT,sales_db,receipt_line,GUL-2024-000110|4,"same item as line 3, new line number: keep"
+1,LEGIT_REPEAT,sales_db,receipt_line,ORG-2025-000162|4,"same item as line 2, new line number: keep"
+1,LEGIT_REPEAT,sales_db,receipt_line,GUL-2026-000045|4,"same item as line 1, new line number: keep"
+1,LEGIT_REPEAT,sales_db,receipt_line,MLR-2024-000271|5,"same item as line 2, new line number: keep"
+1,LEGIT_REPEAT,sales_db,receipt_line,PEC-2024-000156|2,"same item as line 1, new line number: keep"
+1,LEGIT_REPEAT,sales_db,receipt_line,GLJ-2024-000079|3,"same item as line 2, new line number: keep"
+1,LEGIT_REPEAT,sales_db,receipt_line,CLF-2025-000291|4,"same item as line 1, new line number: keep"
+1,LEGIT_REPEAT,sales_db,receipt_line,NNZ-2026-000296|3,"same item as line 2, new line number: keep"
+1,LEGIT_REPEAT,sales_db,receipt_line,NZM-2025-000007|6,"same item as line 3, new line number: keep"
+1,LEGIT_REPEAT,sales_db,receipt_line,GUL-2023-000022|3,"same item as line 2, new line number: keep"
+1,LEGIT_REPEAT,sales_db,receipt_line,ORG-2025-000212|3,"same item as line 1, new line number: keep"
+1,LEGIT_REPEAT,sales_db,receipt_line,SDR-2025-000016|4,"same item as line 1, new line number: keep"
+1,LEGIT_REPEAT,sales_db,receipt_line,GBG-2026-000029|3,"same item as line 1, new line number: keep"
+1,LEGIT_REPEAT,sales_db,receipt_line,GLJ-2026-000192|3,"same item as line 1, new line number: keep"
+1,LEGIT_REPEAT,sales_db,receipt_line,PEC-2025-000375|7,"same item as line 5, new line number: keep"
+1,LEGIT_REPEAT,sales_db,receipt_line,PEC-2025-000051|5,"same item as line 3, new line number: keep"
+1,LEGIT_REPEAT,sales_db,receipt_line,CLF-2026-000021|2,"same item as line 1, new line number: keep"
+1,LEGIT_REPEAT,sales_db,receipt_line,GUL-2026-000038|3,"same item as line 2, new line number: keep"
+1,LEGIT_REPEAT,sales_db,receipt_line,NNZ-2024-000119|2,"same item as line 1, new line number: keep"
+1,LEGIT_REPEAT,sales_db,receipt_line,GUL-2024-000274|3,"same item as line 2, new line number: keep"
+1,LEGIT_REPEAT,sales_db,receipt_line,SDR-2024-000089|5,"same item as line 3, new line number: keep"
+1,LEGIT_REPEAT,sales_db,receipt_line,CLF-2025-000032|4,"same item as line 2, new line number: keep"
+1,LEGIT_REPEAT,sales_db,receipt_line,NNZ-2026-000088|5,"same item as line 1, new line number: keep"
+1,LEGIT_REPEAT,sales_db,receipt_line,ORG-2023-000026|4,"same item as line 2, new line number: keep"
+1,LEGIT_REPEAT,sales_db,receipt_line,NZM-2024-000210|3,"same item as line 1, new line number: keep"
+1,LEGIT_REPEAT,sales_db,receipt_line,NNZ-2024-000136|4,"same item as line 2, new line number: keep"
+1,LEGIT_REPEAT,sales_db,receipt_line,GLJ-2024-000077|4,"same item as line 1, new line number: keep"
+1,LEGIT_REPEAT,sales_db,receipt_line,MLR-2024-000089|4,"same item as line 1, new line number: keep"
+1,LEGIT_REPEAT,sales_db,receipt_line,PEC-2026-000182|3,"same item as line 2, new line number: keep"
+1,LEGIT_REPEAT,sales_db,receipt_line,CLF-2026-000127|3,"same item as line 1, new line number: keep"
+1,LEGIT_REPEAT,sales_db,receipt_line,PEC-2024-000115|3,"same item as line 2, new line number: keep"
+1,LEGIT_REPEAT,sales_db,receipt_line,MLR-2023-000037|5,"same item as line 1, new line number: keep"
+1,LEGIT_REPEAT,sales_db,receipt_line,ORG-2026-000063|3,"same item as line 2, new line number: keep"
+1,LEGIT_REPEAT,sales_db,receipt_line,GLJ-2025-000250|4,"same item as line 3, new line number: keep"
+1,LEGIT_REPEAT,sales_db,receipt_line,GBG-2025-000194|4,"same item as line 1, new line number: keep"
+1,LEGIT_REPEAT,sales_db,receipt_line,GBG-2025-000341|3,"same item as line 1, new line number: keep"
+1,LEGIT_REPEAT,sales_db,receipt_line,GLJ-2025-000415|6,"same item as line 2, new line number: keep"
+1,LEGIT_REPEAT,sales_db,receipt_line,ORG-2024-000061|3,"same item as line 1, new line number: keep"
+1,LEGIT_REPEAT,sales_db,receipt_line,CLF-2025-000229|3,"same item as line 2, new line number: keep"
+1,LEGIT_REPEAT,sales_db,receipt_line,GBG-2025-000220|5,"same item as line 1, new line number: keep"
+1,LEGIT_REPEAT,sales_db,receipt_line,NZM-2024-000060|4,"same item as line 2, new line number: keep"
+1,LEGIT_REPEAT,sales_db,receipt_line,NNZ-2026-000004|5,"same item as line 3, new line number: keep"
+1,LEGIT_REPEAT,sales_db,receipt_line,GUL-2025-000343|4,"same item as line 1, new line number: keep"
+1,LEGIT_REPEAT,sales_db,receipt_line,MLR-2023-000054|4,"same item as line 2, new line number: keep"
+1,LEGIT_REPEAT,sales_db,receipt_line,NNZ-2025-000473|4,"same item as line 3, new line number: keep"
+1,LEGIT_REPEAT,sales_db,receipt_line,GUL-2026-000110|5,"same item as line 2, new line number: keep"
+1,LEGIT_REPEAT,sales_db,receipt_line,GUL-2024-000217|2,"same item as line 1, new line number: keep"
+1,LEGIT_REPEAT,sales_db,receipt_line,NNZ-2024-000139|4,"same item as line 2, new line number: keep"
+1,LEGIT_REPEAT,sales_db,receipt_line,GUL-2024-000288|6,"same item as line 4, new line number: keep"
+1,LEGIT_REPEAT,sales_db,receipt_line,MLR-2024-000285|4,"same item as line 1, new line number: keep"
+1,LEGIT_REPEAT,sales_db,receipt_line,NNZ-2026-000349|3,"same item as line 2, new line number: keep"
+1,LEGIT_REPEAT,sales_db,receipt_line,MLR-2025-000039|3,"same item as line 1, new line number: keep"
+1,LEGIT_REPEAT,sales_db,receipt_line,NZM-2024-000147|4,"same item as line 2, new line number: keep"
+1,LEGIT_REPEAT,sales_db,receipt_line,NZM-2023-000013|4,"same item as line 2, new line number: keep"
+1,LEGIT_REPEAT,sales_db,receipt_line,GLJ-2026-000227|4,"same item as line 3, new line number: keep"
+1,LEGIT_REPEAT,sales_db,receipt_line,GBG-2024-000322|3,"same item as line 2, new line number: keep"
+1,LEGIT_REPEAT,sales_db,receipt_line,NNZ-2025-000498|2,"same item as line 1, new line number: keep"
+1,LEGIT_REPEAT,sales_db,receipt_line,GUL-2024-000293|5,"same item as line 3, new line number: keep"
+1,LEGIT_REPEAT,sales_db,receipt_line,NNZ-2023-000065|5,"same item as line 3, new line number: keep"
+1,LEGIT_REPEAT,sales_db,receipt_line,MLR-2024-000224|3,"same item as line 2, new line number: keep"
+1,LEGIT_REPEAT,sales_db,receipt_line,CLF-2023-000075|2,"same item as line 1, new line number: keep"
+1,LEGIT_REPEAT,sales_db,receipt_line,CLF-2024-000228|3,"same item as line 2, new line number: keep"
+1,LEGIT_REPEAT,sales_db,receipt_line,PEC-2025-000258|4,"same item as line 3, new line number: keep"
+1,LEGIT_REPEAT,sales_db,receipt_line,NNZ-2026-000134|3,"same item as line 1, new line number: keep"
+1,LEGIT_REPEAT,sales_db,receipt_line,GBG-2026-000120|4,"same item as line 3, new line number: keep"
+1,LEGIT_REPEAT,sales_db,receipt_line,GBG-2026-000116|4,"same item as line 2, new line number: keep"
+1,LEGIT_REPEAT,sales_db,receipt_line,NZM-2024-000175|3,"same item as line 1, new line number: keep"
+1,LEGIT_REPEAT,sales_db,receipt_line,CLF-2026-000304|6,"same item as line 1, new line number: keep"
+1,LEGIT_REPEAT,sales_db,receipt_line,CLF-2025-000277|3,"same item as line 1, new line number: keep"
+1,LEGIT_REPEAT,sales_db,receipt_line,GBG-2025-000225|4,"same item as line 3, new line number: keep"
+1,LEGIT_REPEAT,sales_db,receipt_line,GBG-2025-000328|5,"same item as line 3, new line number: keep"
+1,LEGIT_REPEAT,sales_db,receipt_line,ORG-2024-000111|5,"same item as line 4, new line number: keep"
+1,LEGIT_REPEAT,sales_db,receipt_line,NNZ-2025-000349|3,"same item as line 2, new line number: keep"
+1,LEGIT_REPEAT,sales_db,receipt_line,GUL-2024-000146|4,"same item as line 1, new line number: keep"
+1,LEGIT_REPEAT,sales_db,receipt_line,CLF-2025-000329|3,"same item as line 2, new line number: keep"
+1,LEGIT_REPEAT,sales_db,receipt_line,NZM-2024-000036|3,"same item as line 1, new line number: keep"
+1,LEGIT_REPEAT,sales_db,receipt_line,NNZ-2026-000064|5,"same item as line 3, new line number: keep"
+1,LEGIT_REPEAT,sales_db,receipt_line,GLJ-2026-000239|3,"same item as line 1, new line number: keep"
+1,LEGIT_REPEAT,sales_db,receipt_line,GLJ-2025-000370|3,"same item as line 1, new line number: keep"
+1,LEGIT_REPEAT,sales_db,receipt_line,NZM-2025-000001|4,"same item as line 2, new line number: keep"
+1,LEGIT_REPEAT,sales_db,receipt_line,SDR-2025-000289|3,"same item as line 2, new line number: keep"
+1,LEGIT_REPEAT,sales_db,receipt_line,GBG-2025-000088|5,"same item as line 4, new line number: keep"
+1,LEGIT_REPEAT,sales_db,receipt_line,GBG-2026-000238|6,"same item as line 2, new line number: keep"
+1,LEGIT_REPEAT,sales_db,receipt_line,SDR-2025-000116|4,"same item as line 2, new line number: keep"
+1,LEGIT_REPEAT,sales_db,receipt_line,SDR-2026-000050|3,"same item as line 2, new line number: keep"
+1,LEGIT_REPEAT,sales_db,receipt_line,PEC-2024-000117|5,"same item as line 4, new line number: keep"
+1,LEGIT_REPEAT,sales_db,receipt_line,SDR-2024-000094|4,"same item as line 2, new line number: keep"
+1,LEGIT_REPEAT,sales_db,receipt_line,GBG-2025-000337|4,"same item as line 1, new line number: keep"
+1,LEGIT_REPEAT,sales_db,receipt_line,CLF-2025-000156|4,"same item as line 3, new line number: keep"
+1,LEGIT_REPEAT,sales_db,receipt_line,CLF-2025-000120|4,"same item as line 3, new line number: keep"
+1,LEGIT_REPEAT,sales_db,receipt_line,CLF-2023-000019|5,"same item as line 3, new line number: keep"
+1,LEGIT_REPEAT,sales_db,receipt_line,CLF-2023-000068|5,"same item as line 1, new line number: keep"
+1,LEGIT_REPEAT,sales_db,receipt_line,ORG-2023-000014|3,"same item as line 1, new line number: keep"
+1,LEGIT_REPEAT,sales_db,receipt_line,ORG-2026-000203|5,"same item as line 1, new line number: keep"
+1,LEGIT_REPEAT,sales_db,receipt_line,PEC-2024-000154|3,"same item as line 1, new line number: keep"
+1,LEGIT_REPEAT,sales_db,receipt_line,CLF-2026-000122|3,"same item as line 1, new line number: keep"
+1,LEGIT_REPEAT,sales_db,receipt_line,NNZ-2024-000293|4,"same item as line 1, new line number: keep"
+1,LEGIT_REPEAT,sales_db,receipt_line,MLR-2023-000032|5,"same item as line 1, new line number: keep"
+1,LEGIT_REPEAT,sales_db,receipt_line,MLR-2024-000088|2,"same item as line 1, new line number: keep"
+1,LEGIT_REPEAT,sales_db,receipt_line,MLR-2025-000053|6,"same item as line 4, new line number: keep"
+1,LEGIT_REPEAT,sales_db,receipt_line,ORG-2023-000037|4,"same item as line 2, new line number: keep"
+1,LEGIT_REPEAT,sales_db,receipt_line,CLF-2024-000157|3,"same item as line 2, new line number: keep"
+1,LEGIT_REPEAT,sales_db,receipt_line,GLJ-2024-000157|4,"same item as line 2, new line number: keep"
+1,LEGIT_REPEAT,sales_db,receipt_line,SDR-2024-000159|3,"same item as line 2, new line number: keep"
+1,LEGIT_REPEAT,sales_db,receipt_line,GLJ-2026-000020|4,"same item as line 1, new line number: keep"
+1,LEGIT_REPEAT,sales_db,receipt_line,GBG-2026-000093|4,"same item as line 2, new line number: keep"
+1,LEGIT_REPEAT,sales_db,receipt_line,CLF-2024-000437|3,"same item as line 2, new line number: keep"
+1,LEGIT_REPEAT,sales_db,receipt_line,MLR-2025-000152|4,"same item as line 3, new line number: keep"
+1,LEGIT_REPEAT,sales_db,receipt_line,GBG-2025-000363|6,"same item as line 2, new line number: keep"
+1,LEGIT_REPEAT,sales_db,receipt_line,CLF-2025-000414|4,"same item as line 3, new line number: keep"
+1,LEGIT_REPEAT,sales_db,receipt_line,NZM-2025-000108|5,"same item as line 1, new line number: keep"
+1,LEGIT_REPEAT,sales_db,receipt_line,CLF-2025-000351|2,"same item as line 1, new line number: keep"
+1,LEGIT_REPEAT,sales_db,receipt_line,PEC-2026-000178|6,"same item as line 1, new line number: keep"
+1,LEGIT_REPEAT,sales_db,receipt_line,MLR-2026-000239|4,"same item as line 3, new line number: keep"
+1,LEGIT_REPEAT,sales_db,receipt_line,NNZ-2024-000259|4,"same item as line 3, new line number: keep"
+1,LEGIT_REPEAT,sales_db,receipt_line,NNZ-2024-000007|4,"same item as line 1, new line number: keep"
+1,LEGIT_REPEAT,sales_db,receipt_line,GBG-2026-000049|5,"same item as line 3, new line number: keep"
+1,LEGIT_REPEAT,sales_db,receipt_line,SDR-2024-000157|3,"same item as line 2, new line number: keep"
+1,LEGIT_REPEAT,sales_db,receipt_line,NNZ-2025-000459|5,"same item as line 1, new line number: keep"
+1,LEGIT_REPEAT,sales_db,receipt_line,GLJ-2026-000296|4,"same item as line 1, new line number: keep"
+1,LEGIT_REPEAT,sales_db,receipt_line,GUL-2024-000087|3,"same item as line 2, new line number: keep"
+1,LEGIT_REPEAT,sales_db,receipt_line,CLF-2024-000091|5,"same item as line 2, new line number: keep"
+1,LEGIT_REPEAT,sales_db,receipt_line,NNZ-2025-000194|4,"same item as line 3, new line number: keep"
+1,LEGIT_REPEAT,sales_db,receipt_line,NZM-2024-000333|5,"same item as line 1, new line number: keep"
+1,LEGIT_REPEAT,sales_db,receipt_line,MLR-2024-000207|2,"same item as line 1, new line number: keep"
+1,LEGIT_REPEAT,sales_db,receipt_line,GUL-2024-000360|5,"same item as line 3, new line number: keep"
+1,LEGIT_REPEAT,sales_db,receipt_line,GLJ-2024-000046|3,"same item as line 1, new line number: keep"
+1,LEGIT_REPEAT,sales_db,receipt_line,ORG-2025-000067|4,"same item as line 2, new line number: keep"
+1,LEGIT_REPEAT,sales_db,receipt_line,NZM-2024-000261|4,"same item as line 3, new line number: keep"
+1,LEGIT_REPEAT,sales_db,receipt_line,NNZ-2025-000515|3,"same item as line 2, new line number: keep"
+1,LEGIT_REPEAT,sales_db,receipt_line,GBG-2024-000175|2,"same item as line 1, new line number: keep"
+1,LEGIT_REPEAT,sales_db,receipt_line,MLR-2026-000146|5,"same item as line 1, new line number: keep"
+1,LEGIT_REPEAT,sales_db,receipt_line,CLF-2026-000200|2,"same item as line 1, new line number: keep"
+1,LEGIT_REPEAT,sales_db,receipt_line,NZM-2025-000218|3,"same item as line 1, new line number: keep"
+1,LEGIT_REPEAT,sales_db,receipt_line,GLJ-2024-000203|2,"same item as line 1, new line number: keep"
+1,LEGIT_REPEAT,sales_db,receipt_line,GBG-2025-000377|3,"same item as line 2, new line number: keep"
+1,LEGIT_REPEAT,sales_db,receipt_line,PEC-2025-000377|4,"same item as line 2, new line number: keep"
+1,LEGIT_REPEAT,sales_db,receipt_line,GLJ-2024-000062|2,"same item as line 1, new line number: keep"
+1,LEGIT_REPEAT,sales_db,receipt_line,ORG-2026-000101|3,"same item as line 1, new line number: keep"
+1,LEGIT_REPEAT,sales_db,receipt_line,NNZ-2025-000323|4,"same item as line 3, new line number: keep"
+1,LEGIT_REPEAT,sales_db,receipt_line,GLJ-2024-000311|7,"same item as line 5, new line number: keep"
+1,LEGIT_REPEAT,sales_db,receipt_line,NZM-2024-000104|5,"same item as line 2, new line number: keep"
+1,LEGIT_REPEAT,sales_db,receipt_line,CLF-2025-000331|3,"same item as line 1, new line number: keep"
+1,LEGIT_REPEAT,sales_db,receipt_line,ORG-2025-000283|5,"same item as line 4, new line number: keep"
+1,LEGIT_REPEAT,sales_db,receipt_line,NZM-2026-000004|5,"same item as line 1, new line number: keep"
+1,LEGIT_REPEAT,sales_db,receipt_line,NNZ-2025-000061|3,"same item as line 2, new line number: keep"
+1,LEGIT_REPEAT,sales_db,receipt_line,GUL-2024-000343|7,"same item as line 5, new line number: keep"
+1,LEGIT_REPEAT,sales_db,receipt_line,CLF-2025-000546|3,"same item as line 1, new line number: keep"
+1,LEGIT_REPEAT,sales_db,receipt_line,GBG-2025-000147|3,"same item as line 1, new line number: keep"
+1,LEGIT_REPEAT,sales_db,receipt_line,ORG-2026-000078|3,"same item as line 2, new line number: keep"
+1,LEGIT_REPEAT,sales_db,receipt_line,NZM-2025-000018|3,"same item as line 1, new line number: keep"
+1,LEGIT_REPEAT,sales_db,receipt_line,GUL-2024-000022|3,"same item as line 1, new line number: keep"
+1,LEGIT_REPEAT,sales_db,receipt_line,GLJ-2026-000154|3,"same item as line 1, new line number: keep"
+1,LEGIT_REPEAT,sales_db,receipt_line,NNZ-2026-000085|4,"same item as line 1, new line number: keep"
+1,LEGIT_REPEAT,sales_db,receipt_line,CLF-2025-000540|4,"same item as line 2, new line number: keep"
+1,LEGIT_REPEAT,sales_db,receipt_line,GUL-2026-000029|4,"same item as line 2, new line number: keep"
+1,LEGIT_REPEAT,sales_db,receipt_line,SDR-2025-000282|3,"same item as line 2, new line number: keep"
+1,LEGIT_REPEAT,sales_db,receipt_line,PEC-2025-000104|3,"same item as line 2, new line number: keep"
+1,LEGIT_REPEAT,sales_db,receipt_line,GUL-2024-000110|5,"same item as line 1, new line number: keep"
+1,LEGIT_REPEAT,sales_db,receipt_line,GBG-2026-000078|2,"same item as line 1, new line number: keep"
+1,LEGIT_REPEAT,sales_db,receipt_line,GLJ-2026-000213|5,"same item as line 2, new line number: keep"
+1,LEGIT_REPEAT,sales_db,receipt_line,NNZ-2024-000141|4,"same item as line 3, new line number: keep"
+1,LEGIT_REPEAT,sales_db,receipt_line,GUL-2026-000211|3,"same item as line 2, new line number: keep"
+1,LEGIT_REPEAT,sales_db,receipt_line,NZM-2024-000150|2,"same item as line 1, new line number: keep"
+1,LEGIT_REPEAT,sales_db,receipt_line,SDR-2024-000074|3,"same item as line 1, new line number: keep"
+1,LEGIT_REPEAT,sales_db,receipt_line,NNZ-2024-000272|2,"same item as line 1, new line number: keep"
+1,LEGIT_REPEAT,sales_db,receipt_line,GUL-2024-000508|5,"same item as line 2, new line number: keep"
+1,LEGIT_REPEAT,sales_db,receipt_line,GBG-2025-000127|5,"same item as line 3, new line number: keep"
+1,LEGIT_REPEAT,sales_db,receipt_line,GBG-2025-000349|3,"same item as line 2, new line number: keep"
+1,LEGIT_REPEAT,sales_db,receipt_line,GUL-2025-000471|3,"same item as line 2, new line number: keep"
+1,LEGIT_REPEAT,sales_db,receipt_line,NZM-2025-000013|6,"same item as line 2, new line number: keep"
+1,LEGIT_REPEAT,sales_db,receipt_line,GUL-2024-000419|2,"same item as line 1, new line number: keep"
+1,LEGIT_REPEAT,sales_db,receipt_line,ORG-2024-000039|5,"same item as line 1, new line number: keep"
+1,LEGIT_REPEAT,sales_db,receipt_line,MLR-2024-000134|6,"same item as line 4, new line number: keep"
+1,LEGIT_REPEAT,sales_db,receipt_line,GBG-2024-000357|4,"same item as line 1, new line number: keep"
+1,LEGIT_REPEAT,sales_db,receipt_line,NNZ-2024-000394|4,"same item as line 1, new line number: keep"
+1,LEGIT_REPEAT,sales_db,receipt_line,CLF-2026-000318|4,"same item as line 1, new line number: keep"
+1,LEGIT_REPEAT,sales_db,receipt_line,NNZ-2025-000536|3,"same item as line 1, new line number: keep"
+1,LEGIT_REPEAT,sales_db,receipt_line,NZM-2026-000122|5,"same item as line 4, new line number: keep"
+1,LEGIT_REPEAT,sales_db,receipt_line,CLF-2026-000315|2,"same item as line 1, new line number: keep"
+1,LEGIT_REPEAT,sales_db,receipt_line,GBG-2025-000330|2,"same item as line 1, new line number: keep"
+1,LEGIT_REPEAT,sales_db,receipt_line,GLJ-2025-000253|3,"same item as line 2, new line number: keep"
+1,LEGIT_REPEAT,sales_db,receipt_line,ORG-2025-000146|3,"same item as line 2, new line number: keep"
+1,LEGIT_REPEAT,sales_db,receipt_line,PEC-2026-000250|6,"same item as line 2, new line number: keep"
+1,LEGIT_REPEAT,sales_db,receipt_line,PEC-2024-000293|3,"same item as line 1, new line number: keep"
+1,LEGIT_REPEAT,sales_db,receipt_line,CLF-2023-000052|3,"same item as line 2, new line number: keep"
+1,LEGIT_REPEAT,sales_db,receipt_line,GLJ-2025-000410|3,"same item as line 1, new line number: keep"
+1,LEGIT_REPEAT,sales_db,receipt_line,ORG-2026-000142|4,"same item as line 2, new line number: keep"
+1,LEGIT_REPEAT,sales_db,receipt_line,NZM-2025-000327|3,"same item as line 2, new line number: keep"
+1,LEGIT_REPEAT,sales_db,receipt_line,ORG-2025-000138|3,"same item as line 1, new line number: keep"
+1,LEGIT_REPEAT,sales_db,receipt_line,PEC-2026-000016|6,"same item as line 1, new line number: keep"
+1,LEGIT_REPEAT,sales_db,receipt_line,NZM-2024-000054|4,"same item as line 1, new line number: keep"
+1,LEGIT_REPEAT,sales_db,receipt_line,GUL-2026-000274|6,"same item as line 1, new line number: keep"
+1,LEGIT_REPEAT,sales_db,receipt_line,GUL-2025-000448|5,"same item as line 2, new line number: keep"
+1,LEGIT_REPEAT,sales_db,receipt_line,CLF-2026-000392|5,"same item as line 1, new line number: keep"
+1,LEGIT_REPEAT,sales_db,receipt_line,CLF-2024-000122|5,"same item as line 3, new line number: keep"
+1,LEGIT_REPEAT,sales_db,receipt_line,NNZ-2025-000280|7,"same item as line 3, new line number: keep"
+1,LEGIT_REPEAT,sales_db,receipt_line,GLJ-2024-000300|5,"same item as line 1, new line number: keep"
+1,LEGIT_REPEAT,sales_db,receipt_line,CLF-2024-000041|5,"same item as line 2, new line number: keep"
+1,LEGIT_REPEAT,sales_db,receipt_line,NZM-2024-000232|2,"same item as line 1, new line number: keep"
+1,LEGIT_REPEAT,sales_db,receipt_line,NNZ-2025-000518|3,"same item as line 1, new line number: keep"
+1,LEGIT_REPEAT,sales_db,receipt_line,NZM-2026-000023|4,"same item as line 2, new line number: keep"
+1,LEGIT_REPEAT,sales_db,receipt_line,PEC-2023-000050|2,"same item as line 1, new line number: keep"
+1,LEGIT_REPEAT,sales_db,receipt_line,GUL-2025-000182|4,"same item as line 2, new line number: keep"
+1,LEGIT_REPEAT,sales_db,receipt_line,PEC-2025-000265|3,"same item as line 1, new line number: keep"
+1,LEGIT_REPEAT,sales_db,receipt_line,CLF-2025-000341|3,"same item as line 2, new line number: keep"
+1,LEGIT_REPEAT,sales_db,receipt_line,ORG-2025-000299|5,"same item as line 3, new line number: keep"
+1,LEGIT_REPEAT,sales_db,receipt_line,GUL-2025-000326|3,"same item as line 1, new line number: keep"
+1,LEGIT_REPEAT,sales_db,receipt_line,CLF-2024-000255|3,"same item as line 1, new line number: keep"
+1,LEGIT_REPEAT,sales_db,receipt_line,CLF-2025-000111|4,"same item as line 3, new line number: keep"
+1,LEGIT_REPEAT,sales_db,receipt_line,GUL-2024-000250|2,"same item as line 1, new line number: keep"
+1,LEGIT_REPEAT,sales_db,receipt_line,CLF-2025-000427|3,"same item as line 1, new line number: keep"
+1,LEGIT_REPEAT,sales_db,receipt_line,GUL-2025-000175|3,"same item as line 1, new line number: keep"
+1,LEGIT_REPEAT,sales_db,receipt_line,SDR-2024-000201|4,"same item as line 1, new line number: keep"
+1,LEGIT_REPEAT,sales_db,receipt_line,NNZ-2025-000338|2,"same item as line 1, new line number: keep"
+1,LEGIT_REPEAT,sales_db,receipt_line,PEC-2024-000018|3,"same item as line 1, new line number: keep"
+1,LEGIT_REPEAT,sales_db,receipt_line,SDR-2024-000321|3,"same item as line 1, new line number: keep"
+1,LEGIT_REPEAT,sales_db,receipt_line,NZM-2026-000132|4,"same item as line 1, new line number: keep"
+1,LEGIT_REPEAT,sales_db,receipt_line,GLJ-2025-000160|3,"same item as line 2, new line number: keep"
+1,LEGIT_REPEAT,sales_db,receipt_line,ORG-2024-000058|4,"same item as line 2, new line number: keep"
+1,LEGIT_REPEAT,sales_db,receipt_line,NZM-2024-000253|4,"same item as line 1, new line number: keep"
+1,LEGIT_REPEAT,sales_db,receipt_line,GBG-2026-000224|4,"same item as line 2, new line number: keep"
+1,LEGIT_REPEAT,sales_db,receipt_line,GLJ-2026-000340|4,"same item as line 3, new line number: keep"
+1,LEGIT_REPEAT,sales_db,receipt_line,NNZ-2024-000246|2,"same item as line 1, new line number: keep"
+1,LEGIT_REPEAT,sales_db,receipt_line,MLR-2026-000146|6,"same item as line 2, new line number: keep"
+1,LEGIT_REPEAT,sales_db,receipt_line,SDR-2026-000330|3,"same item as line 1, new line number: keep"
+1,LEGIT_REPEAT,sales_db,receipt_line,GLJ-2024-000126|3,"same item as line 1, new line number: keep"
+1,LEGIT_REPEAT,sales_db,receipt_line,MLR-2026-000098|5,"same item as line 2, new line number: keep"
+1,LEGIT_REPEAT,sales_db,receipt_line,NNZ-2023-000019|3,"same item as line 2, new line number: keep"
+1,LEGIT_REPEAT,sales_db,receipt_line,GLJ-2024-000005|2,"same item as line 1, new line number: keep"
+1,LEGIT_REPEAT,sales_db,receipt_line,NZM-2024-000094|4,"same item as line 1, new line number: keep"
+1,LEGIT_REPEAT,sales_db,receipt_line,PEC-2025-000118|6,"same item as line 2, new line number: keep"
+1,LEGIT_REPEAT,sales_db,receipt_line,NNZ-2026-000157|4,"same item as line 2, new line number: keep"
+1,LEGIT_REPEAT,sales_db,receipt_line,GLJ-2024-000332|5,"same item as line 2, new line number: keep"
+1,LEGIT_REPEAT,sales_db,receipt_line,SDR-2025-000063|4,"same item as line 1, new line number: keep"
+1,LEGIT_REPEAT,sales_db,receipt_line,NNZ-2026-000095|3,"same item as line 2, new line number: keep"
+1,LEGIT_REPEAT,sales_db,receipt_line,NZM-2025-000057|3,"same item as line 1, new line number: keep"
+1,LEGIT_REPEAT,sales_db,receipt_line,MLR-2026-000090|4,"same item as line 2, new line number: keep"
+1,LEGIT_REPEAT,sales_db,receipt_line,NZM-2024-000199|5,"same item as line 4, new line number: keep"
+1,LEGIT_REPEAT,sales_db,receipt_line,NZM-2023-000041|5,"same item as line 1, new line number: keep"
+1,LEGIT_REPEAT,sales_db,receipt_line,GUL-2025-000632|4,"same item as line 3, new line number: keep"
+1,LEGIT_REPEAT,sales_db,receipt_line,NNZ-2026-000080|4,"same item as line 2, new line number: keep"
+1,LEGIT_REPEAT,sales_db,receipt_line,CLF-2023-000068|6,"same item as line 4, new line number: keep"
+1,LEGIT_REPEAT,sales_db,receipt_line,GLJ-2026-000371|3,"same item as line 2, new line number: keep"
+1,LEGIT_REPEAT,sales_db,receipt_line,SDR-2026-000031|2,"same item as line 1, new line number: keep"
+1,LEGIT_REPEAT,sales_db,receipt_line,CLF-2024-000048|4,"same item as line 1, new line number: keep"
+1,LEGIT_REPEAT,sales_db,receipt_line,SDR-2024-000185|3,"same item as line 1, new line number: keep"
+1,LEGIT_REPEAT,sales_db,receipt_line,MLR-2025-000198|4,"same item as line 1, new line number: keep"
+1,LEGIT_REPEAT,sales_db,receipt_line,GLJ-2026-000139|3,"same item as line 2, new line number: keep"
+1,LEGIT_REPEAT,sales_db,receipt_line,MLR-2025-000102|2,"same item as line 1, new line number: keep"
+1,LEGIT_REPEAT,sales_db,receipt_line,PEC-2024-000074|2,"same item as line 1, new line number: keep"
+1,LEGIT_REPEAT,sales_db,receipt_line,GBG-2025-000029|2,"same item as line 1, new line number: keep"
+1,LEGIT_REPEAT,sales_db,receipt_line,GUL-2024-000502|4,"same item as line 2, new line number: keep"
+1,LEGIT_REPEAT,sales_db,receipt_line,NZM-2024-000149|3,"same item as line 1, new line number: keep"
+1,LEGIT_REPEAT,sales_db,receipt_line,PEC-2024-000164|2,"same item as line 1, new line number: keep"
+1,LEGIT_REPEAT,sales_db,receipt_line,SDR-2026-000265|4,"same item as line 1, new line number: keep"
+1,LEGIT_REPEAT,sales_db,receipt_line,PEC-2024-000183|3,"same item as line 2, new line number: keep"
+1,LEGIT_REPEAT,sales_db,receipt_line,ORG-2026-000120|3,"same item as line 1, new line number: keep"
+1,LEGIT_REPEAT,sales_db,receipt_line,MLR-2025-000274|4,"same item as line 2, new line number: keep"
+1,LEGIT_REPEAT,sales_db,receipt_line,CLF-2024-000089|3,"same item as line 2, new line number: keep"
+1,LEGIT_REPEAT,sales_db,receipt_line,SDR-2024-000225|3,"same item as line 2, new line number: keep"
+1,LEGIT_REPEAT,sales_db,receipt_line,NZM-2026-000089|3,"same item as line 2, new line number: keep"
+1,LEGIT_REPEAT,sales_db,receipt_line,ORG-2026-000146|5,"same item as line 1, new line number: keep"
+1,LEGIT_REPEAT,sales_db,receipt_line,SDR-2025-000042|3,"same item as line 2, new line number: keep"
+1,LEGIT_REPEAT,sales_db,receipt_line,PEC-2025-000097|4,"same item as line 3, new line number: keep"
+1,R03_BAD_DATE,purchasing_db,grn_line,GRN-2025-00463|1,received_at keyed as 2035-10-06 13:07:41 (real 2025-10-06 13:07:41)
+1,R03_BAD_DATE,purchasing_db,grn_line,GRN-2026-00201|1,received_at keyed as 2036-04-18 18:39:13 (real 2026-04-18 18:39:13)
+1,R03_BAD_DATE,purchasing_db,grn_line,GRN-2026-00201|2,received_at keyed as 2036-04-18 18:39:13 (real 2026-04-18 18:39:13)
+1,R03_BAD_DATE,purchasing_db,grn_line,GRN-2026-00201|3,received_at keyed as 2036-04-18 18:39:13 (real 2026-04-18 18:39:13)
+1,R03_BAD_DATE,purchasing_db,grn_line,GRN-2025-00437|1,received_at keyed as 2035-09-22 13:50:08 (real 2025-09-22 13:50:08)
+1,R03_BAD_DATE,purchasing_db,grn_line,GRN-2025-00437|2,received_at keyed as 2035-09-22 13:50:08 (real 2025-09-22 13:50:08)
+1,R03_BAD_DATE,purchasing_db,grn_line,GRN-2026-00264|1,received_at keyed as 2036-05-19 13:47:59 (real 2026-05-19 13:47:59)
+1,R03_BAD_DATE,purchasing_db,grn_line,GRN-2026-00264|2,received_at keyed as 2036-05-19 13:47:59 (real 2026-05-19 13:47:59)
+1,R03_BAD_DATE,purchasing_db,grn_line,GRN-2026-00264|3,received_at keyed as 2036-05-19 13:47:59 (real 2026-05-19 13:47:59)
+1,R03_BAD_DATE,purchasing_db,grn_line,GRN-2025-00248|1,received_at keyed as 2035-06-02 14:22:35 (real 2025-06-02 14:22:35)
+1,R03_BAD_DATE,purchasing_db,grn_line,GRN-2025-00248|2,received_at keyed as 2035-06-02 14:22:35 (real 2025-06-02 14:22:35)
+1,R03_BAD_DATE,purchasing_db,grn_line,GRN-2025-00248|3,received_at keyed as 2035-06-02 14:22:35 (real 2025-06-02 14:22:35)
+1,R03_BAD_DATE,purchasing_db,grn_line,GRN-2025-00438|1,received_at keyed as 2035-09-22 14:10:29 (real 2025-09-22 14:10:29)
+1,R03_BAD_DATE,purchasing_db,grn_line,GRN-2026-00312|1,received_at keyed as 2036-06-13 13:04:44 (real 2026-06-13 13:04:44)
+1,R01_MISSING_PRODUCT,purchasing_db,grn_line,GRN-2026-00209|1,vendor_item_code ZZZ-0002 (real VIS-7575)
+1,R01_MISSING_PRODUCT,purchasing_db,grn_line,GRN-2026-00394|2,vendor_item_code ZZZ-0001 (real MAP-2497)
+1,R01_MISSING_PRODUCT,purchasing_db,grn_line,GRN-2026-00367|1,vendor_item_code ZZZ-0001 (real ALD-6639)
+1,R01_MISSING_PRODUCT,purchasing_db,grn_line,GRN-2026-00194|3,vendor_item_code ZZZ-0002 (real LUM-2978)
+1,R01_MISSING_PRODUCT,purchasing_db,grn_line,GRN-2024-00089|1,vendor_item_code ZZZ-0001 (real WIL-7346)
+1,R01_MISSING_PRODUCT,purchasing_db,grn_line,GRN-2023-00003|1,vendor_item_code ZZZ-0002 (real WIL-9396)
+1,R01_MISSING_PRODUCT,purchasing_db,grn_line,GRN-2024-00190|2,vendor_item_code ZZZ-0002 (real BAS-6461)
+1,R01_MISSING_PRODUCT,purchasing_db,grn_line,GRN-2026-00238|4,vendor_item_code ZZZ-0002 (real WIL-4046)
+1,R01_MISSING_PRODUCT,purchasing_db,grn_line,GRN-2026-00463|2,vendor_item_code ZZZ-0002 (real GAR-9134)
+1,R01_MISSING_PRODUCT,purchasing_db,grn_line,GRN-2025-00033|2,vendor_item_code ZZZ-0001 (real TEA-8173)
+1,R01_MISSING_PRODUCT,purchasing_db,grn_line,GRN-2024-00081|2,vendor_item_code ZZZ-0002 (real HAR-1932)
+1,R01_MISSING_PRODUCT,purchasing_db,grn_line,GRN-2024-00225|1,vendor_item_code ZZZ-0002 (real ZEP-8403)
+1,R01_MISSING_PRODUCT,purchasing_db,grn_line,GRN-2024-00152|1,vendor_item_code ZZZ-0001 (real SAF-4272)
+1,R01_MISSING_PRODUCT,purchasing_db,grn_line,GRN-2025-00200|2,vendor_item_code ZZZ-0002 (real FAL-1548)
+1,R01_MISSING_PRODUCT,purchasing_db,grn_line,GRN-2026-00316|3,vendor_item_code ZZZ-0002 (real HAR-2499)
+1,R01_MISSING_PRODUCT,purchasing_db,grn_line,GRN-2026-00014|1,vendor_item_code ZZZ-0001 (real SAF-4272)
+1,R01_MISSING_PRODUCT,purchasing_db,grn_line,GRN-2024-00410|2,vendor_item_code ZZZ-0001 (real IND-6884)
+1,R01_MISSING_PRODUCT,purchasing_db,grn_line,GRN-2026-00363|3,vendor_item_code ZZZ-0001 (real BAS-3052)
+1,R01_MISSING_PRODUCT,purchasing_db,grn_line,GRN-2025-00015|3,vendor_item_code ZZZ-0001 (real BAS-9653)
+1,R01_MISSING_PRODUCT,purchasing_db,grn_line,GRN-2024-00426|2,vendor_item_code ZZZ-0002 (real NIM-9858)
+1,R01_MISSING_PRODUCT,purchasing_db,grn_line,GRN-2025-00574|2,vendor_item_code ZZZ-0001 (real ZEP-1945)
+1,R01_MISSING_PRODUCT,purchasing_db,grn_line,GRN-2024-00200|1,vendor_item_code ZZZ-0001 (real ZEP-1945)
+1,R01_MISSING_PRODUCT,purchasing_db,grn_line,GRN-2026-00422|2,vendor_item_code ZZZ-0001 (real HAR-1920)
+1,R01_MISSING_PRODUCT,purchasing_db,grn_line,GRN-2024-00536|1,vendor_item_code ZZZ-0001 (real UMB-5844)
+1,R01_MISSING_PRODUCT,purchasing_db,grn_line,GRN-2024-00271|3,vendor_item_code ZZZ-0002 (real UMB-7969)
+1,R01_MISSING_PRODUCT,purchasing_db,grn_line,GRN-2024-00151|1,vendor_item_code ZZZ-0002 (real HAR-7173)
+1,R01_MISSING_PRODUCT,purchasing_db,grn_line,GRN-2026-00188|1,vendor_item_code ZZZ-0001 (real WIL-9881)
+1,R01_MISSING_PRODUCT,purchasing_db,grn_line,GRN-2026-00112|1,vendor_item_code ZZZ-0002 (real WIL-4046)
+1,R02_BAD_QTY,purchasing_db,grn_line,GRN-2025-00480|2,boxes_received 0.0
+1,R02_BAD_QTY,purchasing_db,grn_line,GRN-2025-00616|2,boxes_received -1.0
+1,R02_BAD_QTY,purchasing_db,grn_line,GRN-2024-00327|1,boxes_received 0.0
+1,R02_BAD_QTY,purchasing_db,grn_line,GRN-2024-00274|2,boxes_received -1.0
+1,R02_BAD_QTY,purchasing_db,grn_line,GRN-2025-00431|4,boxes_received -1.0
+1,R02_BAD_QTY,purchasing_db,grn_line,GRN-2025-00427|1,boxes_received 0.0
+1,R02_BAD_QTY,purchasing_db,grn_line,GRN-2025-00554|2,boxes_received -1.0
+1,R02_BAD_QTY,purchasing_db,grn_line,GRN-2025-00573|9,boxes_received -1.0
+1,R02_BAD_QTY,purchasing_db,grn_line,GRN-2024-00370|1,boxes_received -1.0
+1,R02_BAD_QTY,purchasing_db,grn_line,GRN-2024-00010|3,boxes_received -1.0
+1,R02_BAD_QTY,purchasing_db,grn_line,GRN-2023-00022|1,boxes_received -1.0
+1,R02_BAD_QTY,purchasing_db,grn_line,GRN-2026-00406|1,boxes_received -1.0
+1,R02_BAD_QTY,purchasing_db,grn_line,GRN-2025-00202|2,boxes_received -1.0
+1,R02_BAD_QTY,purchasing_db,grn_line,GRN-2026-00320|2,boxes_received 0.0
+1,R02_BAD_QTY,purchasing_db,grn_line,GRN-2025-00086|2,boxes_received 0.0
+1,R02_BAD_QTY,purchasing_db,grn_line,GRN-2025-00520|3,boxes_received -1.0
+1,R02_BAD_QTY,purchasing_db,grn_line,GRN-2024-00113|3,boxes_received 0.0
+1,R02_BAD_QTY,purchasing_db,grn_line,GRN-2025-00514|1,boxes_received -1.0
+1,R02_BAD_QTY,purchasing_db,grn_line,GRN-2024-00142|3,boxes_received -1.0
+1,R04_BAD_AMOUNT,purchasing_db,grn_line,GRN-2024-00075|2,cost_per_box 0.00
+1,R04_BAD_AMOUNT,purchasing_db,grn_line,GRN-2024-00419|1,cost_per_box 0.00
+1,R04_BAD_AMOUNT,purchasing_db,grn_line,GRN-2025-00116|3,cost_per_box 0.00
+1,R04_BAD_AMOUNT,purchasing_db,grn_line,GRN-2026-00087|3,cost_per_box 0.00
+1,R04_BAD_AMOUNT,purchasing_db,grn_line,GRN-2025-00414|2,cost_per_box 0.00
+1,R04_BAD_AMOUNT,purchasing_db,grn_line,GRN-2026-00266|6,cost_per_box 0.00
+1,R04_BAD_AMOUNT,purchasing_db,grn_line,GRN-2025-00364|2,cost_per_box 0.00
+1,R04_BAD_AMOUNT,purchasing_db,grn_line,GRN-2025-00495|2,cost_per_box 0.00
+1,R04_BAD_AMOUNT,purchasing_db,grn_line,GRN-2026-00198|2,cost_per_box 0.00
+1,R04_BAD_AMOUNT,purchasing_db,grn_line,GRN-2024-00241|2,cost_per_box 0.00
+1,R04_BAD_AMOUNT,purchasing_db,grn_line,GRN-2024-00203|2,cost_per_box 0.00
+1,R04_BAD_AMOUNT,purchasing_db,grn_line,GRN-2026-00416|1,cost_per_box 0.00
+1,R04_BAD_AMOUNT,purchasing_db,grn_line,GRN-2024-00213|1,cost_per_box 0.00
+1,R04_BAD_AMOUNT,purchasing_db,grn_line,GRN-2026-00144|2,cost_per_box 0.00
+1,D01_EXACT_DUPLICATE,purchasing_db,grn_line,GRN-2024-00261|1,exported twice
+1,D01_EXACT_DUPLICATE,purchasing_db,grn_line,GRN-2025-00606|3,exported twice
+1,D01_EXACT_DUPLICATE,purchasing_db,grn_line,GRN-2026-00350|3,exported twice
+1,D01_EXACT_DUPLICATE,purchasing_db,grn_line,GRN-2025-00060|4,exported twice
+1,D01_EXACT_DUPLICATE,purchasing_db,grn_line,GRN-2023-00078|3,exported twice
+1,D01_EXACT_DUPLICATE,purchasing_db,grn_line,GRN-2025-00465|4,exported twice
+1,D01_EXACT_DUPLICATE,purchasing_db,grn_line,GRN-2026-00296|2,exported twice
+1,D01_EXACT_DUPLICATE,purchasing_db,grn_line,GRN-2025-00321|3,exported twice
+1,D01_EXACT_DUPLICATE,purchasing_db,grn_line,GRN-2026-00221|2,exported twice
+1,D01_EXACT_DUPLICATE,purchasing_db,grn_line,GRN-2025-00487|4,exported twice
+1,D01_EXACT_DUPLICATE,purchasing_db,grn_line,GRN-2024-00488|1,exported twice
+1,D01_EXACT_DUPLICATE,purchasing_db,grn_line,GRN-2024-00106|4,exported twice
+1,D01_EXACT_DUPLICATE,purchasing_db,grn_line,GRN-2026-00411|1,exported twice
+1,D01_EXACT_DUPLICATE,purchasing_db,grn_line,GRN-2025-00252|2,exported twice
+1,D01_EXACT_DUPLICATE,purchasing_db,grn_line,GRN-2025-00184|3,exported twice
+1,D01_EXACT_DUPLICATE,purchasing_db,grn_line,GRN-2024-00394|3,exported twice
+1,D01_EXACT_DUPLICATE,purchasing_db,grn_line,GRN-2026-00331|2,exported twice
+1,D01_EXACT_DUPLICATE,purchasing_db,grn_line,GRN-2025-00591|3,exported twice
+1,D01_EXACT_DUPLICATE,purchasing_db,grn_line,GRN-2026-00184|3,exported twice
+1,D01_EXACT_DUPLICATE,purchasing_db,grn_line,GRN-2026-00402|3,exported twice
+1,D01_EXACT_DUPLICATE,purchasing_db,grn_line,GRN-2024-00087|2,exported twice
+1,D01_EXACT_DUPLICATE,purchasing_db,grn_line,GRN-2025-00294|1,exported twice
+1,D01_EXACT_DUPLICATE,purchasing_db,grn_line,GRN-2024-00332|2,exported twice
+1,R06_NO_FX_RATE,purchasing_db,grn_line,GRN-2023-90001|1,"USD GRN received 2023-10-27, first FX rate is 2023-11-01"
+1,R06_NO_FX_RATE,purchasing_db,grn_line,GRN-2023-90001|2,"USD GRN received 2023-10-27, first FX rate is 2023-11-01"
+1,R06_NO_FX_RATE,purchasing_db,grn_line,GRN-2023-90002|1,"USD GRN received 2023-10-30, first FX rate is 2023-11-01"
+1,R06_NO_FX_RATE,purchasing_db,grn_line,GRN-2023-90002|2,"USD GRN received 2023-10-30, first FX rate is 2023-11-01"

@@ -1,0 +1,5 @@
+source_system,engine,database_name,department,owner,is_synthetic
+sales_db,MySQL,sales_db,Sales (till / POS),Sales operations,True
+finance_db,MySQL,finance_db,Finance,Finance controller,True
+purchasing_db,PostgreSQL,purchasing_db,Purchasing,Procurement head,True
+inventory,SQLite,inventory.db,Inventory,Inventory control,True

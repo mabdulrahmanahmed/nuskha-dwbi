@@ -1,0 +1,594 @@
+{
+  "units": {
+    "1.01": {
+      "status": "DONE",
+      "attempts": 0,
+      "phase": "1",
+      "title": "Environment (after databases are installed)",
+      "est": 15,
+      "needs": [
+        "1.07"
+      ],
+      "start": 1795293678.8159647,
+      "minutes": 0.0
+    },
+    "1.02": {
+      "status": "DONE",
+      "attempts": 0,
+      "phase": "1",
+      "title": "Repo skeleton",
+      "est": 10,
+      "needs": [],
+      "start": 1795192864.8813274,
+      "minutes": 0.9
+    },
+    "1.03": {
+      "status": "DONE",
+      "attempts": 0,
+      "phase": "1",
+      "title": "Source DDL",
+      "est": 10,
+      "needs": [
+        "1.02"
+      ],
+      "start": 1795192920.533819,
+      "minutes": 1.5
+    },
+    "1.04": {
+      "status": "DONE",
+      "attempts": 0,
+      "phase": "1",
+      "title": "Generator: reference data",
+      "est": 15,
+      "needs": [
+        "1.03"
+      ],
+      "start": 1795193013.0452523,
+      "minutes": 7.5
+    },
+    "1.05": {
+      "status": "DONE",
+      "attempts": 0,
+      "phase": "1",
+      "title": "Generator: stage 1 transactions",
+      "est": 15,
+      "needs": [
+        "1.04"
+      ],
+      "start": 1795193461.8363135,
+      "minutes": 5.7
+    },
+    "1.06": {
+      "status": "DONE",
+      "attempts": 0,
+      "phase": "1",
+      "title": "Generator: defects",
+      "est": 15,
+      "needs": [
+        "1.05"
+      ],
+      "start": 1795193804.9630945,
+      "minutes": 5.2
+    },
+    "1.07": {
+      "status": "DONE",
+      "attempts": 0,
+      "phase": "1",
+      "title": "Generator: stage 2",
+      "est": 15,
+      "needs": [
+        "1.06"
+      ],
+      "start": 1795194115.1700156,
+      "minutes": 5.8
+    },
+    "1.08": {
+      "status": "DONE",
+      "attempts": 0,
+      "phase": "1",
+      "title": "Load and reproducibility",
+      "est": 10,
+      "needs": [
+        "1.01",
+        "1.07"
+      ],
+      "start": 1795293686.0788746,
+      "minutes": 0.4
+    },
+    "1.09": {
+      "status": "DONE",
+      "attempts": 0,
+      "phase": "1",
+      "title": "Source ERDs",
+      "est": 10,
+      "needs": [
+        "1.03"
+      ],
+      "start": 1795194463.4655035,
+      "minutes": 1.4
+    },
+    "2.01": {
+      "status": "DONE",
+      "attempts": 0,
+      "phase": "2",
+      "title": "Warehouse control tables",
+      "est": 10,
+      "needs": [
+        "1.02"
+      ],
+      "start": 1795293855.2903087,
+      "minutes": 0.2
+    },
+    "2.02": {
+      "status": "DONE",
+      "attempts": 0,
+      "phase": "2",
+      "title": "Extract",
+      "est": 15,
+      "needs": [
+        "1.08",
+        "2.01"
+      ],
+      "start": 1795293879.3717854,
+      "minutes": 0.5
+    },
+    "2.03": {
+      "status": "DONE",
+      "attempts": 0,
+      "phase": "2",
+      "title": "Profile before",
+      "est": 10,
+      "needs": [
+        "2.02"
+      ],
+      "start": 1795294028.8619492,
+      "minutes": 0.2
+    },
+    "2.04": {
+      "status": "DONE",
+      "attempts": 0,
+      "phase": "2",
+      "title": "Normalize",
+      "est": 15,
+      "needs": [
+        "2.03"
+      ],
+      "start": 1795294038.9794865,
+      "minutes": 0.6
+    },
+    "2.05": {
+      "status": "DONE",
+      "attempts": 0,
+      "phase": "2",
+      "title": "Profile after",
+      "est": 10,
+      "needs": [
+        "2.04"
+      ],
+      "start": 1795294076.7198186,
+      "minutes": 0.1
+    },
+    "2.06": {
+      "status": "DONE",
+      "attempts": 0,
+      "phase": "2",
+      "title": "Crosswalks",
+      "est": 15,
+      "needs": [
+        "2.04"
+      ],
+      "start": 1795294085.278606,
+      "minutes": 0.2
+    },
+    "2.07": {
+      "status": "DONE",
+      "attempts": 0,
+      "phase": "2",
+      "title": "Pre-join checks",
+      "est": 10,
+      "needs": [
+        "2.06"
+      ],
+      "start": 1795294097.0393002,
+      "minutes": 0.1
+    },
+    "2.08": {
+      "status": "DONE",
+      "attempts": 0,
+      "phase": "2",
+      "title": "Rejects and duplicates",
+      "est": 15,
+      "needs": [
+        "2.07"
+      ],
+      "start": 1795294105.4737391,
+      "minutes": 0.1
+    },
+    "2.09": {
+      "status": "DONE",
+      "attempts": 0,
+      "phase": "2",
+      "title": "Reconciliation batch 1",
+      "est": 10,
+      "needs": [
+        "2.08"
+      ],
+      "start": 1795294114.4290488,
+      "minutes": 0.3
+    },
+    "3.01": {
+      "status": "DONE",
+      "attempts": 0,
+      "phase": "3",
+      "title": "Warehouse DDL",
+      "est": 10,
+      "needs": [
+        "2.01"
+      ],
+      "start": 1795294200.1801426,
+      "minutes": 1.5
+    },
+    "3.02": {
+      "status": "DONE",
+      "attempts": 0,
+      "phase": "3",
+      "title": "Dimensions",
+      "est": 15,
+      "needs": [
+        "3.01",
+        "2.09"
+      ],
+      "start": 1795294288.2083588,
+      "minutes": 1.2
+    },
+    "3.03": {
+      "status": "DONE",
+      "attempts": 0,
+      "phase": "3",
+      "title": "Facts",
+      "est": 15,
+      "needs": [
+        "3.02"
+      ],
+      "start": 1795294361.7818937,
+      "minutes": 2.1
+    },
+    "3.04": {
+      "status": "DONE",
+      "attempts": 0,
+      "phase": "3",
+      "title": "Rerun test",
+      "est": 10,
+      "needs": [
+        "3.03"
+      ],
+      "start": 1795294490.4925957,
+      "minutes": 0.7
+    },
+    "3.05": {
+      "status": "DONE",
+      "attempts": 0,
+      "phase": "3",
+      "title": "Batch 2",
+      "est": 15,
+      "needs": [
+        "3.04"
+      ],
+      "start": 1795294534.1049502,
+      "minutes": 2.9
+    },
+    "3.06": {
+      "status": "DONE",
+      "attempts": 0,
+      "phase": "3",
+      "title": "SCD Type 1",
+      "est": 10,
+      "needs": [
+        "3.05"
+      ],
+      "start": 1795294705.5269058,
+      "minutes": 0.4
+    },
+    "3.07": {
+      "status": "DONE",
+      "attempts": 0,
+      "phase": "3",
+      "title": "Controlled failure",
+      "est": 10,
+      "needs": [
+        "3.05"
+      ],
+      "start": 1795294729.7923222,
+      "minutes": 0.5
+    },
+    "3.08": {
+      "status": "DONE",
+      "attempts": 0,
+      "phase": "3",
+      "title": "Metadata repository",
+      "est": 15,
+      "needs": [
+        "3.05"
+      ],
+      "start": 1795294784.1300218,
+      "minutes": 0.4
+    },
+    "3.09": {
+      "status": "DONE",
+      "attempts": 0,
+      "phase": "3",
+      "title": "Reverse engineering",
+      "est": 15,
+      "needs": [
+        "1.08"
+      ],
+      "start": 1795294813.6614003,
+      "minutes": 0.3
+    },
+    "3.10": {
+      "status": "DONE",
+      "attempts": 0,
+      "phase": "3",
+      "title": "Six traces",
+      "est": 15,
+      "needs": [
+        "3.08"
+      ],
+      "start": 1795294968.9258428,
+      "minutes": 0.5
+    },
+    "3.11": {
+      "status": "DONE",
+      "attempts": 0,
+      "phase": "3",
+      "title": "Validation suite",
+      "est": 15,
+      "needs": [
+        "3.07",
+        "3.10"
+      ],
+      "start": 1795295046.2758884,
+      "minutes": 0.2
+    },
+    "4.01": {
+      "status": "DONE",
+      "attempts": 0,
+      "phase": "4",
+      "title": "Saved views",
+      "est": 10,
+      "needs": [
+        "3.11"
+      ],
+      "start": 1795295083.764947,
+      "minutes": 0.1
+    },
+    "4.02": {
+      "status": "DONE",
+      "attempts": 0,
+      "phase": "4",
+      "title": "Queries A1\u2013A6",
+      "est": 15,
+      "needs": [
+        "4.01"
+      ],
+      "start": 1795295094.53153,
+      "minutes": 0.7
+    },
+    "4.03": {
+      "status": "DONE",
+      "attempts": 0,
+      "phase": "4",
+      "title": "Queries A7\u2013A12",
+      "est": 15,
+      "needs": [
+        "4.01"
+      ],
+      "start": 1795295139.0251276,
+      "minutes": 0.0
+    },
+    "4.04": {
+      "status": "DONE",
+      "attempts": 0,
+      "phase": "4",
+      "title": "Forecast features and baselines",
+      "est": 10,
+      "needs": [
+        "4.01"
+      ],
+      "start": 1795295234.5108562,
+      "minutes": 0.0
+    },
+    "4.05": {
+      "status": "DONE",
+      "attempts": 0,
+      "phase": "4",
+      "title": "Forecast model",
+      "est": 15,
+      "needs": [
+        "4.04"
+      ],
+      "start": 1795295235.1006916,
+      "minutes": 0.0
+    },
+    "4.06": {
+      "status": "DONE",
+      "attempts": 0,
+      "phase": "4",
+      "title": "Anomaly detection",
+      "est": 15,
+      "needs": [
+        "4.01"
+      ],
+      "start": 1795295235.7381978,
+      "minutes": 0.0
+    },
+    "4.07": {
+      "status": "DONE",
+      "attempts": 0,
+      "phase": "4",
+      "title": "Anomaly evaluation and retry",
+      "est": 15,
+      "needs": [
+        "4.05",
+        "4.06"
+      ],
+      "start": 1795295236.3727994,
+      "minutes": 0.0
+    },
+    "4.08": {
+      "status": "DONE",
+      "attempts": 0,
+      "phase": "4",
+      "title": "Power BI data",
+      "est": 10,
+      "needs": [
+        "4.07"
+      ],
+      "start": 1795295249.9620283,
+      "minutes": 0.3
+    },
+    "4.09": {
+      "status": "DONE",
+      "attempts": 0,
+      "phase": "4",
+      "title": "Power BI model",
+      "est": 15,
+      "needs": [
+        "4.08"
+      ],
+      "start": 1795295270.0211112,
+      "minutes": 0.2
+    },
+    "4.10": {
+      "status": "DONE",
+      "attempts": 0,
+      "phase": "4",
+      "title": "Power BI report",
+      "est": 15,
+      "needs": [
+        "4.09"
+      ],
+      "start": 1795295410.44349,
+      "minutes": 0.4
+    },
+    "4.11": {
+      "status": "DONE",
+      "attempts": 0,
+      "phase": "4",
+      "title": "Power BI fallback guide",
+      "est": 10,
+      "needs": [
+        "4.08"
+      ],
+      "start": 1795295473.6738088,
+      "minutes": 0.3
+    },
+    "5.01": {
+      "status": "DONE",
+      "attempts": 0,
+      "phase": "5",
+      "title": "Colab notebook",
+      "est": 15,
+      "needs": [
+        "4.08"
+      ],
+      "start": 1795295593.1740556,
+      "minutes": 0.1
+    },
+    "5.02": {
+      "status": "DONE",
+      "attempts": 0,
+      "phase": "5",
+      "title": "Headless full run",
+      "est": 15,
+      "needs": [
+        "5.01"
+      ],
+      "start": 1795295604.9958506,
+      "minutes": 17.0
+    },
+    "5.03": {
+      "status": "DONE",
+      "attempts": 0,
+      "phase": "5",
+      "title": "Recommendations",
+      "est": 10,
+      "needs": [
+        "4.07"
+      ],
+      "start": 1795296623.4544427,
+      "minutes": 0.0
+    },
+    "5.04": {
+      "status": "DONE",
+      "attempts": 0,
+      "phase": "5",
+      "title": "Report part 1",
+      "est": 15,
+      "needs": [
+        "5.02"
+      ],
+      "start": 1795296628.9494898,
+      "minutes": 0.8
+    },
+    "5.05": {
+      "status": "DONE",
+      "attempts": 0,
+      "phase": "5",
+      "title": "Report part 2",
+      "est": 15,
+      "needs": [
+        "5.04"
+      ],
+      "start": 1795296678.6442091,
+      "minutes": 0.0
+    },
+    "5.06": {
+      "status": "DONE",
+      "attempts": 0,
+      "phase": "5",
+      "title": "README and evidence index",
+      "est": 10,
+      "needs": [
+        "5.05"
+      ],
+      "start": 1795296715.9445574,
+      "minutes": 1.1
+    },
+    "5.07": {
+      "status": "DONE",
+      "attempts": 0,
+      "phase": "5",
+      "title": "Demo script",
+      "est": 10,
+      "needs": [
+        "5.02"
+      ],
+      "start": 1795296790.4505746,
+      "minutes": 3.1
+    },
+    "5.08": {
+      "status": "DONE",
+      "attempts": 0,
+      "phase": "5",
+      "title": "Viva guides",
+      "est": 15,
+      "needs": [
+        "5.06"
+      ],
+      "minutes": -0.0
+    },
+    "5.09": {
+      "status": "DONE",
+      "attempts": 0,
+      "phase": "5",
+      "title": "Final audit",
+      "est": 15,
+      "needs": [
+        "5.08"
+      ],
+      "start": 1795297037.8505807,
+      "minutes": 0.7
+    }
+  }
+}

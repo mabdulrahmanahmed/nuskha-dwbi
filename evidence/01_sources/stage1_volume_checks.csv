@@ -1,0 +1,11 @@
+check,expected,actual,result
+"receipt_line rows (target ~28,000, +-10%)",28000.0,28099.0,PASS
+"grn_line rows (target ~4,700, +-10%)",4700.0,4683.0,PASS
+lines per receipt (target ~2.2),2.2,2.2,PASS
+"GRN lines in USD (%, target ~15)",15.0,16.6,PASS
+"net sales share walk-in (%, ~70)",70.0,69.1,PASS
+"net sales share loyalty (%, ~22)",22.0,21.8,PASS
+"net sales share panel (%, ~8)",8.0,9.1,PASS
+months in stage 1 (Nov 2023 - Aug 2026),34.0,34.0,PASS
+trend: last 12 vs first 12 months net sales (> 1.15),1.15,1.43,PASS
+monthly chart saved,1.0,1.0,PASS
