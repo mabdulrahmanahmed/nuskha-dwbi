@@ -11,6 +11,7 @@ saved SQL views, a Power BI report and two AI tasks (a monthly forecast and anom
 - Design: [`docs/blueprint.md`](docs/blueprint.md)
 - Work plan and acceptance checks: [`docs/PLAN.md`](docs/PLAN.md)
 - Decisions and deviations: [`docs/DECISIONS.md`](docs/DECISIONS.md)
+- **How to run it:** [step-by-step guide](#how-to-run-the-project)
 - **Start here:** [`START_HERE.md`](START_HERE.md) · evidence map: [`evidence/INDEX.md`](evidence/INDEX.md) · report: [`report/report.pdf`](report/report.pdf)
 
 ## Folder layout
@@ -29,27 +30,122 @@ saved SQL views, a Power BI report and two AI tasks (a monthly forecast and anom
 | `report/` | Technical report (`report.md` source, `report.docx`, `report.pdf`) |
 | `docs/` | Blueprint, plan, decisions, recommendations, demo run-sheet, viva guides, audit |
 
-## Setup
+## How to run the project
 
-1. MySQL 8+ and PostgreSQL 14+ running locally (or on Colab: `bash scripts/setup_env.sh colab` installs them).
-2. `cp config/.env.example config/.env` and adjust the connection strings if needed.
-3. Python 3.11+: `pip install -r requirements.txt` (here: `.venv/Scripts/python`).
-4. `bash scripts/setup_env.sh` must print `OK` five times (two MySQL databases, two PostgreSQL databases, SQLite).
+There are two ways to run it. **Option A (Google Colab)** needs nothing installed and is the quickest. **Option B (your own machine)** is for running against local MySQL and PostgreSQL servers. Both run the same 29 steps and give the same numbers.
 
-## Run order
+### Option A: Google Colab (no installation, about 10 minutes)
 
-The whole pipeline is one command, or one notebook (`pipeline.ipynb`, which calls the same steps):
+1. Open [colab.research.google.com](https://colab.research.google.com) and choose **File → Open notebook → GitHub**. Paste `https://github.com/mabdulrahmanahmed/nuskha-dwbi` and open `pipeline.ipynb`.
+2. Insert a new code cell at the **very top** of the notebook and paste:
+   ```python
+   !git clone -q https://github.com/mabdulrahmanahmed/nuskha-dwbi /content/nuskha-dwbi
+   %cd /content/nuskha-dwbi
+   import os; os.environ['NUSKHA_MODE'] = 'FULL_REBUILD'
+   ```
+3. Choose **Runtime → Run all**. The setup cell installs and starts MySQL and PostgreSQL, creates the `nuskha` user and writes `config/.env` for you.
+4. When it finishes, check that the totals printed by the last cell match the [final warehouse totals](#expected-results) below (for example, FY2026 net sales `6230294.70`).
+
+### Option B: Local machine (Windows, macOS or Linux)
+
+#### Step 1. Install the prerequisites
+
+| Software | Version | Notes |
+| --- | --- | --- |
+| Python | 3.11 or newer | Tick "Add Python to PATH" on Windows |
+| MySQL Server | 8 or newer | Hosts the Sales and Finance sources |
+| PostgreSQL | 14 or newer | Hosts the Purchasing source and the warehouse |
+| Git and Git Bash | any | Windows: Git Bash runs the `.sh` scripts |
+| Graphviz | optional | Draws nicer ERDs; without it, matplotlib is used |
+| Power BI Desktop | optional, Windows | Only to open the report in `powerbi/` |
+
+SQLite (Inventory source) needs no installation; Python includes it.
+
+#### Step 2. Get the code
 
 ```bash
-python -m src.pipeline --mode FULL_REBUILD   # empty warehouse -> everything (about 3 minutes)
-python -m src.pipeline --mode CONTINUE       # keep what exists; reruns change nothing
-python -m src.pipeline --list                # the 29 steps and their modules
-python -m src.headless_run                   # executes pipeline.ipynb twice and compares totals
-python -m src.report_build --check           # report.docx / report.pdf + number check
-python -m src.audit                          # every file in evidence/INDEX.md and docs/AUDIT.md exists
+git clone https://github.com/mabdulrahmanahmed/nuskha-dwbi.git
+cd nuskha-dwbi
 ```
 
-Expected results after each step (from the headless run of 22 Nov 2026; every run gives the same numbers):
+#### Step 3. Create the database user and databases (one time only)
+
+The project connects as user `nuskha` with password `nuskha` (local only). Run each script as the database admin:
+
+```bash
+# MySQL: creates user nuskha and the databases sales_db and finance_db
+mysql -u root -p < scripts/local_db_users_mysql.sql
+
+# PostgreSQL: creates role nuskha and the databases purchasing_db and nuskha_dw
+psql -U postgres -f scripts/local_db_users_postgres.sql
+```
+
+On Windows, if `mysql` or `psql` is not on the PATH, use the full path, e.g. `"C:\Program Files\MySQL\MySQL Server 9.3\bin\mysql.exe"` and `"C:\Program Files\PostgreSQL\18\bin\psql.exe"`.
+If you don't know the admin passwords, run `scripts/reset_db_access.ps1` once in PowerShell **as Administrator** (`powershell -ExecutionPolicy Bypass -File scripts\reset_db_access.ps1`). It creates the same user and databases.
+
+#### Step 4. Create the connection file
+
+```bash
+cp config/.env.example config/.env
+```
+
+Edit `config/.env` only if your user, password, host or port differ. It is git-ignored, so it is never committed.
+
+#### Step 5. Prepare Python and check the connections
+
+```bash
+bash scripts/setup_env.sh
+```
+
+This creates the `.venv` virtual environment, installs any packages from `requirements.txt` that are missing, and checks every connection. It must print **`OK` five times** (sales_db, finance_db, purchasing_db, nuskha_dw and the SQLite file). It is safe to run again at any time.
+
+The commands below use `.venv/Scripts/python` (Windows). On macOS or Linux, use `.venv/bin/python` instead.
+
+#### Step 6. Run the pipeline
+
+Either run it from the command line:
+
+```bash
+.venv/Scripts/python -m src.pipeline --mode FULL_REBUILD   # empty warehouse -> everything (about 3 minutes)
+```
+
+Or open `pipeline.ipynb` in Jupyter or VS Code and choose **Run All**. It calls the same steps.
+
+| Mode | What it does |
+| --- | --- |
+| `FULL_REBUILD` | Empties the warehouse and runs all 29 steps from the sources |
+| `CONTINUE` | Keeps what exists; skips steps that would start a batch that already exists; running it again changes nothing |
+
+#### Step 7. Check the results
+
+```bash
+.venv/Scripts/python -m src.pipeline --list      # list the 29 steps and their modules
+.venv/Scripts/python -m src.headless_run         # runs pipeline.ipynb twice and compares totals
+.venv/Scripts/python -m src.report_build --check # rebuilds report.docx / report.pdf and checks every number
+.venv/Scripts/python -m src.audit                # confirms every evidence file exists
+```
+
+Compare your numbers with the tables in [Expected results](#expected-results). Every run gives identical numbers because all randomness uses seed 472.
+
+#### Step 8. Open the Power BI report (optional, Windows)
+
+- Open `powerbi/nuskha.pbix` to see the saved report, or `powerbi/nuskha.pdf` for a static copy.
+- To refresh it from your own run, open `powerbi/nuskha.pbip`. Run `.venv/Scripts/python -m src.powerbi_model` first if you moved the project folder, then choose **Refresh**.
+- Check the three totals in `powerbi/reconciliation.csv` against the report cards.
+
+### Troubleshooting
+
+| Problem | Fix |
+| --- | --- |
+| `setup_env.sh` does not print `OK` five times | Check that the MySQL and PostgreSQL services are running and that Step 3 was done |
+| `Access denied for user 'nuskha'` or `password authentication failed` | The user was not created, or `config/.env` has a different password: repeat Step 3 or edit `.env` |
+| `bash: command not found` on Windows | Run the commands from **Git Bash**, not Command Prompt |
+| `python` not found | Reinstall Python with "Add to PATH" ticked, or use `py` instead of `python` |
+| A step fails halfway | Fix the cause and rerun with `--mode CONTINUE`: batches that already exist are not extracted again, and every other step is an upsert or a check, so nothing is duplicated |
+
+## Expected results
+
+The whole pipeline is one command (Step 6) or one notebook. Expected results after each step (from the headless run of 22 Nov 2026; every run gives the same numbers):
 
 | # | Step(s) | Module | Expected after the step |
 | --- | --- | --- | --- |
